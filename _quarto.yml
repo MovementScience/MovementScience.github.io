@@ -28,7 +28,7 @@ website:
       
   page-footer:
     left: |
-      [![](images/imsi-logo.png){height="36px"}](https://MovementScience.uci.edu)
+      <a href="https://MovementScience.uci.edu"><img src="images/imsi-logo.png" height="36" alt="" style="vertical-align:middle;"></a>
     center:
       - text: "About"
         href: about.qmd

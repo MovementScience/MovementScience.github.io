@@ -1,5 +1,14 @@
 /* css styles */
 
+/* Home page columns: add breathing room between the three feature blocks */
+div.columns {
+  gap: 2rem;
+}
+
+div.column {
+  min-width: 0;
+}
+
 /* Hide description field on the page itself — keep it for listing cards only */
 .quarto-title .description {
   display: none;

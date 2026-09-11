@@ -1,5 +1,35 @@
 /* css styles */
 
+/* Hide description field on the page itself — keep it for listing cards only */
+.quarto-title .description {
+  display: none;
+}
+
+/* Tabset: active tab indicator */
+.panel-tabset .nav-tabs .nav-link {
+  color: #aaa;
+  font-weight: 400;
+  border-bottom: 3px solid transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  padding-bottom: 8px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.panel-tabset .nav-tabs .nav-link:hover {
+  border-bottom: 3px solid #aec6cf;
+  color: #555;
+}
+
+.panel-tabset .nav-tabs .nav-link.active {
+  font-weight: 700;
+  border-bottom: 3px solid #18bc9c;
+  color: #18bc9c;
+  background: none;
+}
+
 .page-navigation .prev::before {
   content: "← Previous: ";
   font-weight: bold;

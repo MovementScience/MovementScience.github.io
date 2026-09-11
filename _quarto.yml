@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "IMSI Movement Science Course"
+  title: "Integrative Movement Science"
   
   navbar:
     left:
@@ -27,7 +27,9 @@ website:
     
       
   page-footer:
-    center: 
+    left: |
+      [![](images/imsi-logo.png){height="36px"}](https://MovementScience.uci.edu)
+    center:
       - text: "About"
         href: about.qmd
       - text: "License"

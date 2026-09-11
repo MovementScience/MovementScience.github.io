@@ -154,5 +154,23 @@
   },
   "all-modules/emg-filtering.qmd": {
     "emg-filtering.html": "56ea2dca"
+  },
+  "paths-folder/getting-started.qmd": {
+    "getting-started.html": "f17b5761"
+  },
+  "paths-folder/muscle-mechanics-modeling.qmd": {
+    "muscle-mechanics-modeling.html": "60937fdf"
+  },
+  "paths-folder/neural-control-balance.qmd": {
+    "neural-control-balance.html": "df14a44d"
+  },
+  "paths-folder/experimental-methods.qmd": {
+    "experimental-methods.html": "a0dff40c"
+  },
+  "paths-folder/InProgress/biomechanics-path.qmd": {
+    "biomechanics-path.html": "0a55b952"
+  },
+  "license.md": {
+    "license.html": "755e6b4c"
   }
 }

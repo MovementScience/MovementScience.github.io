@@ -31,12 +31,10 @@
   {
     "listing": "/pathways.html",
     "items": [
-      "/paths-folder/biomechanics-path.html",
-      "/paths-folder/modeling-path.html",
-      "/paths-folder/data-analysis-path.html",
-      "/paths-folder/intro-pathway.html",
-      "/paths-folder/muscle-phys-path.html",
-      "/paths-folder/motor-control-path.html"
+      "/paths-folder/experimental-methods.html",
+      "/paths-folder/getting-started.html",
+      "/paths-folder/muscle-mechanics-modeling.html",
+      "/paths-folder/neural-control-balance.html"
     ]
   }
 ]

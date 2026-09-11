@@ -8,7 +8,7 @@
 
 <meta name="keywords" content="muscle spindle, proprioception, intrafusal fibers, cross-bridge mechanics, gamma motor drive">
 
-<title>Modeling the muscle spindle – IMSI Movement Science Course</title>
+<title>Modeling the muscle spindle – Integrative Movement Science</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">IMSI Movement Science Course</span>
+    <span class="navbar-title">Integrative Movement Science</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -159,42 +159,32 @@ ul.task-list li input[type="checkbox"] {
 <li>Trace the flow of inputs and outputs through the biophysical spindle model, from muscle tendon unit length and motor activations to receptor potential, and distinguish between forward simulation and optimization modes.</li>
 </ol>
 </section>
-<section id="overview" class="level2">
-<h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<section id="anatomy-and-function-of-the-muscle-spindle" class="level3">
-<h3 class="anchored" data-anchor-id="anatomy-and-function-of-the-muscle-spindle">Anatomy and function of the muscle spindle</h3>
-<p>The muscle spindle is a small sensory structure embedded within skeletal muscle and assumed to lie in parallel with the surrounding extrafusal muscle fibers. Inside its capsule are intrafusal muscle fibers, of which there are three types: bag 1, bag 2, and chain. Because bag 2 and chain fibers have similar mechanical properties, this model groups them together, treating the spindle as containing two functional fiber populations — bag and chain.</p>
-<p>Two afferent pathways relay spindle signals to the central nervous system. The primary 1A afferent reads from all intrafusal fiber types (both bag and chain) and is the focus of this workshop. The group 2 afferent connects only to chain fibers and also contributes to proprioception, but is not modeled here.</p>
-<p>Unlike most sensory organs, the muscle spindle receives its own motor drive, the fusimotor (gamma motor) system. Gamma dynamic motor neurons project to the bag fiber; gamma static motor neurons project to the chain fiber. The larger extrafusal muscle, by contrast, is driven by alpha motor neurons. The 1A afferent monosynaptically synapses onto alpha motor neurons, forming the substrate for the classic tendon tap reflex: tapping the patellar tendon stretches the quadriceps, which stretches the embedded spindle, activating 1A afferents that reflexively contract the muscle.</p>
-<p>The 1B afferent, which originates from the Golgi tendon organ at the interface of the extrafusal muscle and tendon, measures extrafusal force during contraction. It is not part of the muscle spindle and is not included in this model.</p>
-</section>
-<section id="history-dependence-of-spindle-firing" class="level3">
-<h3 class="anchored" data-anchor-id="history-dependence-of-spindle-firing">History dependence of spindle firing</h3>
-<p>A key feature of 1A afferent firing is that it is history-dependent, paralleling the history dependence already known for extrafusal muscle force output. When a resting spindle is first stretched, it produces an initial burst of high firing rate, analogous to short-range stiffness in extrafusal muscle. A subsequent stretch of the same amplitude does not reproduce that burst: the initial high-firing response is lost once the spindle has been previously stretched.</p>
-<p>Cross-bridge dynamics are believed to underlie history dependence in extrafusal muscle force, and evidence in the literature suggests the same mechanism may operate in the spindle. This model is built on that premise: it models all fiber types — extrafusal, bag, and chain — using cross-bridge mechanics, with different parameter sets for each fiber type to capture their distinct mechanical properties.</p>
-</section>
-<section id="model-architecture-and-biophysics" class="level3">
-<h3 class="anchored" data-anchor-id="model-architecture-and-biophysics">Model architecture and biophysics</h3>
-<p>Model inputs are muscle tendon unit (MTU) length, alpha motor activation, and gamma motor activations (dynamic and static). Because the spindle fibers are in parallel with the fascicle rather than the whole MTU, the model first computes fascicle length from a force balance between the fascicle and the tendon. Fascicle length differs from MTU length because alpha motor activation changes fascicle stiffness, so the intrafusal fibers experience fascicle-level length changes rather than MTU-level changes directly.</p>
-<p>Percent activation (0–100%) is internally converted to calcium concentration expressed as pCa (= −log₁₀[Ca²⁺]). A pCa of 4.5 corresponds to 100% activation; a pCa of 9 corresponds to 0% activation.</p>
-<p>The cross-bridge model computes force from each intrafusal fiber type. Yank — the rate of change of force — is computed from the bag fiber only. Negative yank values are discarded via half-wave rectification before the signals are combined. A weighted sum of force and (rectified) yank from the intrafusal fibers produces the receptor potential.</p>
-<p>To convert receptor potential to a firing rate, the model passes the signal through a basic integrate-and-fire function that performs a cumulative integral of the voltage and generates one spike per fixed number of time steps. The model runs at a 1 ms time step (1000 Hz), which imposes a ceiling of 250 spikes per second on the output. The tutorial graphical user interface outputs receptor potential rather than firing rate, so that users can explore a wider parameter range without hitting that ceiling.</p>
-</section>
-<section id="using-the-model-forward-simulation-and-optimization" class="level3">
-<h3 class="anchored" data-anchor-id="using-the-model-forward-simulation-and-optimization">Using the model: forward simulation and optimization</h3>
-<p>The model requires MATLAB 2020A or later and the Signal Processing Toolbox.</p>
-<p>For a forward simulation, users supply MTU length (or fascicle length directly, if available), alpha motor activation, and gamma motor activations. Because gamma motor activity is rarely if ever directly measured in experiments, users who lack that signal can either sweep across a range of gamma activation values to explore the model’s sensitivity, or use the built-in optimization mode.</p>
-<p>In optimization mode, the user provides a measured 1A afferent firing record. The optimizer iteratively guesses gamma motor activations, runs a forward simulation to predict spindle firing, and minimizes the difference between predicted and measured firing. The default solver is fmincon, a gradient-based optimizer; pattern search, a non-gradient alternative, is also available.</p>
-<p>Model parameters were estimated from optical and molecular characterization of intrafusal fibers — including myosin isoform composition — and from fitting to 1A afferent firing recorded from anesthetized rats and cats. Direct mechanical testing of intrafusal fibers has not been performed because they are too small, so the parameter estimates rely on indirect characterization and electrophysiological recordings.</p>
-</section>
-</section>
 <section id="workshop" class="level2">
 <h2 class="anchored" data-anchor-id="workshop">Workshop</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2y1oO3FlXy0?si=tryzDMT_GrS2nKMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 <p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Surabhi Simha</em></p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="anatomy-and-function-of-the-muscle-spindle" class="level3">
+<h3 class="anchored" data-anchor-id="anatomy-and-function-of-the-muscle-spindle">Anatomy and function of the muscle spindle</h3>
+<p>The muscle spindle is a mechanosensory organ embedded in parallel with extrafusal muscle fibers, containing three types of intrafusal fibers — bag 1, bag 2, and chain — grouped here into two functional populations (bag and chain) based on the similar mechanical properties of bag 2 and chain fibers. Two afferent pathways relay spindle signals to the central nervous system: the primary 1A afferent, which reads from both bag and chain fibers, and the group 2 afferent, which connects only to chain fibers; the 1A afferent is the focus of this model. Unlike most sensory organs, the spindle receives its own motor drive: gamma dynamic motor neurons project to bag fibers and gamma static motor neurons to chain fibers, allowing the central nervous system to modulate spindle sensitivity independently of extrafusal muscle activation via alpha motor neurons.</p>
+</section>
+<section id="history-dependence-of-spindle-firing" class="level3">
+<h3 class="anchored" data-anchor-id="history-dependence-of-spindle-firing">History dependence of spindle firing</h3>
+<p>The 1A afferent exhibits history-dependent firing: an initial stretch of a resting spindle produces a high-frequency burst, but a subsequent stretch of the same amplitude does not reproduce that burst once the spindle has been previously stretched. This property parallels history dependence in extrafusal muscle force, where cross-bridge dynamics are the accepted mechanistic explanation, and the same mechanism is hypothesized to govern intrafusal fiber behavior. The biophysical model presented here is built on that cross-bridge premise, applying separate parameter sets to extrafusal, bag, and chain fibers to capture their distinct mechanical properties.</p>
+</section>
+<section id="model-architecture-and-biophysics" class="level3">
+<h3 class="anchored" data-anchor-id="model-architecture-and-biophysics">Model architecture and biophysics</h3>
+<p>Model inputs are muscle tendon unit (MTU) length, alpha motor activation, and gamma motor activations (dynamic and static); because intrafusal fibers are in parallel with the fascicle rather than the full MTU, the model first solves a force balance between fascicle and tendon to obtain fascicle length, which varies with alpha activation-dependent fascicle stiffness. Cross-bridge mechanics compute force in each intrafusal fiber type; yank (the rate of change of force) is computed from the bag fiber only, with negative values discarded by half-wave rectification, and a weighted sum of force and rectified yank produces the receptor potential. The receptor potential is converted to firing rate via an integrate-and-fire function running at a 1 ms time step, imposing a ceiling of 250 spikes per second, though the tutorial interface outputs receptor potential directly to allow wider parameter exploration without hitting that ceiling.</p>
+</section>
+<section id="using-the-model-forward-simulation-and-optimization" class="level3">
+<h3 class="anchored" data-anchor-id="using-the-model-forward-simulation-and-optimization">Using the model: forward simulation and optimization</h3>
+<p>The model requires MATLAB 2020A or later with the Signal Processing Toolbox, and accepts MTU length (or fascicle length directly), alpha activation, and gamma motor activations as inputs for forward simulation. Because gamma motor activity is rarely measured directly in experiments, an optimization mode is provided: the user supplies a measured 1A afferent firing record and the optimizer — using either a gradient-based solver (fmincon) or a gradient-free alternative (pattern search) — iteratively estimates the gamma activations that best reproduce that record. Model parameters were derived from optical and molecular characterization of intrafusal fibers and electrophysiological recordings from anesthetized animals; direct mechanical testing of intrafusal fibers has not been performed due to their small size, so parameter estimates rely on indirect characterization.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

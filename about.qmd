@@ -2,10 +2,10 @@
 title: "About"
 ---
 
-Include information about IMSI here
+Muscle powers every movement an animal makes — from the molecular motors inside a single fiber to the coordinated mechanics of running, balancing, and recovering from a stumble. The Integrative Movement Sciences Institute (IMSI) brings together researchers from across the United States to study how that works, and we are excited that you are interested in joining us through this curriculum!
 
-We can use Quarto to have a public facing website that is hosted on Github. Github can host all the code and PDF files, but videos are best hosted on YouTube.
+IMSI is a National Science Foundation Biology Integration Institute, headquartered at the University of California, Irvine. Our network spans more than 20 institutions and cuts across biomechanics, muscle physiology, biophysics, sensorimotor neuroscience, and rehabilitation science — fields that rarely talk to each other, but that together tell a fuller story of how movement happens.
 
-We could alternatively format this in a more linear book format. See an example here: <https://jjallaire.github.io/hopr/dice.html>
+The modules here are taught by the researchers doing this work. They cover a range of topics and levels — from introductory overviews to advanced experimental and computational methods — and are designed to be explored freely or followed as part of a curated learning pathway. The curriculum is free, fully online, and always growing.
 
-Or more examples quarto websites and books here: <https://quarto.org/docs/gallery/#websites>
+To learn more about IMSI's research, people, and programs visit [MovementScience.uci.edu](https://MovementScience.uci.edu).

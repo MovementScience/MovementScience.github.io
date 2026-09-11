@@ -1,0 +1,108 @@
+---
+title: "Muscle Mechanics & Modeling"
+description: "From cross-bridge biochemistry to computational sarcomere models — a deeper look at how muscles generate, transmit, and store force."
+image: images/muscle-mechanics-modeling.jpg
+page-layout: article
+toc: false
+---
+
+**For:** Learners with a basic foundation in muscle biology &nbsp;|&nbsp; **5 modules** &nbsp;|&nbsp; **~7.5 hours**
+
+This pathway goes beneath the surface of muscle function to examine how force is produced at the molecular level, how the mechanical properties of muscle and tendon are measured and characterized, and how computational models capture these phenomena across scales. The first four workshops move from the biochemistry of the cross-bridge cycle through the mechanics of the muscle-tendon unit and into the computational frameworks used to simulate and interrogate both. A fifth, more specialized module introduces synchrotron X-ray diffraction — a powerful structural imaging technique that underpins much of what is known about the sarcomere at the molecular level.
+
+Click through the tabs below to preview the learning objectives and content of each module, then follow the link to the full workshop.
+
+::: panel-tabset
+## 1. Cross-bridge Kinetics
+
+**Presented by:** *Dr. Bert Tanner & Maddy Chastain*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Describe the major biochemical steps of the actomyosin cross-bridge cycle and explain how phosphate release, ADP release, and ATP binding govern force production and cross-bridge detachment.
+2.  Explain how sinusoidal length perturbation analysis and step-stretch protocols are used to estimate cross-bridge attachment and detachment rates in demembranated fiber preparations, and interpret the elastic and viscous modulus outputs in terms of the ABC process model.
+3.  Relate sarcomere length-dependent changes in cross-bridge kinetics to the cellular basis of the Frank-Starling mechanism and discuss how myosin isoform composition influences the magnitude of this length dependence.
+
+### Overview
+
+Force production in striated muscle is driven by the cyclic interaction of myosin with actin. The sequence of molecular events — calcium activation of the thin filament, myosin binding, the power stroke, and detachment — can be probed directly using demembranated fiber preparations, in which the cell membrane is removed so that the intracellular environment is controlled entirely by the experimenter. Sinusoidal length perturbation analysis and step-stretch protocols applied to these preparations allow researchers to estimate the rates at which cross-bridges attach and detach, and to ask how those rates change with sarcomere length, myosin isoform, and applied load. This workshop covers both the mechanochemical model underlying force generation and the experimental methods used to test it.
+
+[Go to full workshop →](../all-modules/cross-bridge-kinetics.qmd){.btn .btn-primary}
+
+## 2. System Identification
+
+**Presented by:** *Dr. Kiisa Nishikawa & Dr. Adwait Mane*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Describe the difference between first-principles modeling and system identification, and explain when each approach is appropriate for studying biological tissues.
+2.  Identify the components of simple viscoelastic models (spring, damper, Maxwell, Kelvin-Voigt) and predict how each element responds to a step stretch or a step force input.
+3.  Explain how ramp stretch experiments and transfer functions are used to estimate the viscoelastic properties of muscle and tendon, and describe how those properties relate to energy storage, power amplification, and tissue structure.
+
+### Overview
+
+Muscle and tendon are viscoelastic materials: they resist both deformation (like a spring) and rate of deformation (like a damper), and their mechanical behavior depends on the history of loading. System identification is the process of building mathematical models of a dynamical system from experimentally measured input-output data — in this case, using controlled length inputs and recorded force outputs to identify the spring-damper network that best describes each tissue. This workshop introduces the transfer-function framework, the spring-damper building blocks, and the model-selection criteria used to compare candidate descriptions, and presents empirical findings from ramp-stretch experiments on a range of muscle and tendon preparations.
+
+[Go to full workshop →](../all-modules/system-ID.qmd){.btn .btn-primary}
+
+## 3. Series Elasticity
+
+**Presented by:** *Dr. Manny Azizi*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Describe the hierarchical collagen structure of tendon and explain how the crimped resting arrangement of collagen fibers gives rise to the nonlinear (toe region) stress-strain behavior that characterizes viscoelastic connective tissue.
+2.  Distinguish among the three functional roles of in-series elastic elements during locomotion — power conservation, power amplification, and power attenuation — and identify the mechanical and biological conditions that favor each role.
+3.  Explain how the mechanical matching of muscle force capacity and tendon stiffness influences energy storage during explosive movements, and how body size constrains the benefit of spring-driven versus direct muscle actuation.
+
+### Overview
+
+Tendons and aponeuroses are not passive conduits — they store and return mechanical energy, and in some movements they can release energy faster than the muscle alone could deliver it. These elastic structures appear across virtually the entire animal kingdom, from invertebrate spring-loaded mechanisms to the large free tendons of running vertebrates. Understanding their function requires thinking carefully about how stiffness, length, and force capacity are matched between muscle and tendon, and about how scaling with body size changes the trade-offs. This workshop develops the mechanical vocabulary for in-series elastic elements and uses it to interpret locomotor strategies across species.
+
+[Go to full workshop →](../all-modules/series-elasticity.qmd){.btn .btn-primary}
+
+## 4. Computational Modeling
+
+**Presented by:** *Dr. Bert Tanner*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Understand how computational models of muscle contraction have evolved from whole-muscle mechanical descriptions (such as the Hill model) to spatially explicit, molecular-level simulations of actin-myosin cross-bridge interactions.
+2.  Explain how the mechanical properties of thick and thin filaments — specifically their elasticity and compliance — affect the probability of cross-bridge binding and the amount of force produced within a sarcomere.
+3.  Recognize how the physiological geometry of the sarcomere filament lattice (multiple interacting thick and thin filaments) amplifies cross-bridge recruitment and force output compared to simpler two-filament models.
+
+### Overview
+
+No single experiment can observe all the moving parts of a contracting sarcomere simultaneously. Computational models fill that gap by representing the molecular interactions explicitly and allowing researchers to ask "what if" questions that are impossible or impractical to test in the lab. This workshop traces the history of muscle models from A.V. Hill's phenomenological three-component model through Huxley's cross-bridge theory to spatially explicit Monte Carlo simulations that account for filament compliance and the full hexagonal lattice geometry of the sarcomere. A MATLAB implementation of the two-filament model is available for hands-on exploration, making this a natural entry point for learners who want to build or modify muscle simulations of their own.
+
+[Go to full workshop →](../all-modules/computational-modeling-2025.qmd){.btn .btn-primary}
+
+## 5. X-ray Diffraction ✦
+
+**Presented by:** *Dr. Jiangkun Wei, Casey King & Dr. Simon Sponberg*
+
+> **Specialized topic.** This module covers a highly technical, facility-dependent technique used by a subset of muscle biology labs. It is not required to follow the rest of the pathway — but if you want to understand how researchers actually see cross-bridges move in real time, it is one of the most exciting tools in the field.
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Recognize the main features of a muscle X-ray diffraction pattern — equatorial reflections, meridional reflections, and layer lines — and connect each feature to the underlying structural periodicity in the sarcomere.
+2.  Apply Bragg's law to convert the angular position of a diffraction reflection into a real-space structural spacing in the myofilament lattice.
+3.  Describe how synchrotron X-ray sources make it possible to record diffraction patterns from living, contracting muscle at millisecond timescales.
+
+### Overview
+
+The cross-bridge cycle unfolds at nanometer scales and millisecond timescales — far below what light microscopy can resolve and inaccessible to electron microscopy without chemical fixation that kills the preparation. Synchrotron X-ray diffraction fills this gap: by exploiting the constructive interference of X-rays scattered from the regular hexagonal lattice of thick and thin filaments, it can measure lattice spacings and cross-bridge mass distribution in living, contracting muscle in real time. Equatorial reflections report on radial filament spacing and cross-bridge attachment state; meridional reflections and layer lines reveal axial periodicities of the myosin and actin helices. It was this structural evidence — changes in filament compliance and lattice geometry during contraction — that motivated the spatially explicit computational models in the previous module, making this workshop a rewarding complement for anyone who wants to understand where those models came from.
+
+[Go to full workshop →](../all-modules/intro-xray-diffraction.qmd){.btn .btn-primary}
+
+:::

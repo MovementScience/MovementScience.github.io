@@ -1,0 +1,105 @@
+---
+title: "Getting Started in Movement Science"
+description: "Build a foundation across muscle biology, musculoskeletal mechanics, scientific programming, statistics, and computational modeling."
+image: images/james-lee-running-unsplash.jpg
+page-layout: article
+toc: false
+---
+
+**For:** Newcomers to movement science  \|  **5 modules**  \|  **\~7.5 hours**
+
+Movement science draws on anatomy, mechanics, computation, and statistics to understand how animals — including humans — produce and control movement. This pathway is designed for learners who are new to the field and want to build a solid foundation across all four of those threads. The five workshops are sequenced to introduce the biology of muscle first, then the mechanical principles that govern the musculoskeletal system, then the research and computational tools you will need to study it rigorously. No prior background in biomechanics or programming is assumed.
+
+Click through the tabs below to preview the learning objectives and content of each module, then follow the link to the full workshop.
+
+::: panel-tabset
+## 1. Muscle Anatomy & Physiology
+
+**Presented by:** *Dr. Jenna Monroy*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Describe the hierarchical organization of skeletal muscle from the whole organ to the sarcomere level, including the roles of key structural proteins — actin, myosin, and titin — in generating and regulating force.
+2.  Explain the fundamental muscle properties (excitation-contraction coupling, force-length, force-velocity, and force-frequency relationships), identify how each is measured, and articulate the limitations of applying static measurements to predict dynamic movement.
+3.  Evaluate how variation in muscle architecture, fiber type, sarcomere structure, and titin isoform expression tunes muscle function across muscles and across species.
+
+### Overview
+
+The muscular system is one of the most highly conserved systems across the animal kingdom, with fundamental mechanisms of force generation that are remarkably similar from insects to large mammals. At the same time, a single muscle can function as a motor, spring, brake, or strut depending on how it is controlled — and subtle differences in protein isoforms, architecture, or neural control can substantially alter whole-animal performance. This workshop builds the biological vocabulary and conceptual framework that all subsequent movement science topics depend on.
+
+[Go to full workshop →](../all-modules/intro-muscle-anatomy+phys.qmd){.btn .btn-primary}
+
+## 2. Musculoskeletal Mechanics
+
+**Presented by:** *Dr. Katie Knaus*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Define stress, strain, and Young's modulus, and explain how these quantities characterize the mechanical behavior of musculoskeletal tissues.
+2.  Identify the main connective tissue types in the musculoskeletal system — bone, cartilage, tendon, and ligament — and describe how their microstructure determines their mechanical properties.
+3.  Classify joint degrees of freedom and describe how internal loads (tension, compression, bending, torsion) are distributed within biological structures.
+
+### Overview
+
+Mechanics is the study of how bodies react to forces. The musculoskeletal system is subject to forces from gravity, ground contact, and muscle contractions, which combine to produce internal loads in bones, tendons, and ligaments. Understanding these principles helps explain why tissues fail, how joints are designed, and what trade-offs are built into biological structures — providing the physical reasoning behind phenomena that might otherwise seem arbitrary.
+
+[Go to full workshop →](../all-modules/intro-mechs-musculoskeletal.qmd){.btn .btn-primary}
+
+## 3. Best Practices in Scientific Programming
+
+**Presented by:** *Dr. James Finley*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Design a consistent file and folder structure for a scientific study, including naming conventions that support automated analysis and long-term reuse of data.
+2.  Structure a data analysis pipeline as a series of separate, clearly named scripts — each performing a distinct step — moving from raw data through summary statistics and figure creation.
+3.  Write readable, reusable code using functions and meaningful variable names, and apply unit testing to verify that code produces correct results.
+
+### Overview
+
+Good programming practices matter because scientific work can be elegant but fragile when built on weak foundations. Two recurring failure modes motivate this workshop: a researcher who cannot reproduce their own analysis months later, and data or code that becomes unusable after a student moves on. The practices covered here — protocol documentation, consistent file structures, modular pipelines, and readable code — address both problems before they arise.
+
+[Go to full workshop →](../all-modules/best-practices-scientific-programming.qmd){.btn .btn-primary}
+
+## 4. Data Visualization & Statistical Inference
+
+**Presented by:** *Dr. James Finley*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Explain why descriptive statistics alone can be misleading and why visualizing data at every stage of analysis is essential for drawing valid conclusions.
+2.  Describe what a p-value represents, how the false positive rate relates to the conventional significance threshold of p \< 0.05, and why statistical significance does not imply practical importance.
+3.  Identify how sample size, statistical power, and effect size are related, and recognize that small studies are best positioned to detect large effects.
+
+### Overview
+
+Statistics serve as tools for quantifying and explaining variability — but they can mislead when used without careful thought. Anscombe's Quartet famously illustrates how four visually distinct data sets can have nearly identical summary statistics, making the fitted model appear valid when it is not. This workshop builds the critical thinking needed to visualize first, analyze second, and interpret results with appropriate uncertainty.
+
+[Go to full workshop →](../all-modules/data-viz-stat-inf.qmd){.btn .btn-primary}
+
+## 5. Simulating Movement
+
+**Presented by:** *Dr. Christian Hubicki*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Explain that simulating movement means numerically solving differential equations that describe how a system's state changes over time.
+2.  Apply Euler's method to step a simple first-order ordinary differential equation forward in time using a small, fixed time step.
+3.  Describe how to convert a second-order equation of motion into a system of first-order ODEs using state variables, and identify the state vector for a simple spring-mass system.
+
+### Overview
+
+Computer simulations complement physical experiments by allowing researchers to test hypotheses and explore conditions that would be impossible or unethical to impose on a live animal. Simulation means numerically solving differential equations that describe how a system's state changes over time — a skill that opens the door to computational movement science and connects directly to the biological and mechanical foundations introduced in the earlier workshops in this pathway.
+
+[Go to full workshop →](../all-modules/simluating-movement.qmd){.btn .btn-primary}
+:::

@@ -25,22 +25,16 @@ keywords: [movement exploration, pose estimation, kinesiophobia, electrodermal a
 
 ### Measuring functional mobility
 
-The Timed Up and Go (TUG) test is one of the most widely used clinical measures of functional mobility. In the standard protocol, a participant rises from a chair, walks a short distance (3 metres in the original protocol), turns, walks back, and returns to sitting. Its simplicity makes it practical for routine clinical use; however, like many standardised scales, the TUG and related balance assessments can exhibit ceiling and floor effects when applied across populations with widely varying functional capacity. This limits their sensitivity at the extremes of ability — an important consideration when selecting outcome measures for a study.
+The Timed Up and Go (TUG) test is a widely used clinical measure of functional mobility in which a participant rises from a chair, walks 3 metres, turns, and returns to sitting. Like many standardised functional scales, the TUG and related balance assessments can exhibit ceiling and floor effects across populations with widely varying capacity, reducing sensitivity at the extremes of ability and limiting their usefulness as outcome measures in heterogeneous samples.
 
 ### Markerless pose estimation
 
-Marker-based motion capture has long been a laboratory standard for quantifying joint kinematics, but it places practical limits on where and with whom studies can be conducted. Two software tools — AlphaPose and DeepLabCut — allow researchers to extract joint positions directly from ordinary video footage without attaching physical markers to participants.
-
-AlphaPose uses regional multi-person detection to locate body keypoints in video frames. DeepLabCut, originally developed for animal behaviour research, applies deep learning to track user-defined body parts across video and has since been validated for human biomechanics applications. Both tools lower the barrier for collecting movement data in clinical and naturalistic settings.
+Markerless pose estimation tools extract joint positions from standard video without attaching physical markers to participants, extending kinematic data collection to clinical and naturalistic settings. AlphaPose uses regional multi-person detection to locate body keypoints in video frames; DeepLabCut, originally developed for animal behaviour research, applies deep learning to track user-defined landmarks and has since been validated for human biomechanics applications. Both tools substantially lower the logistical barrier to movement data collection outside a traditional motion-capture laboratory.
 
 ### Psychophysiological measures and movement-related anxiety
 
-When studying how anxiety influences movement, researchers often supplement behavioural measures with physiological indices. Electrodermal activity (EDA), also known as skin conductance, reflects sympathetic nervous system arousal and is used as an index of anxiety in psychophysiology research, including studies of motor behaviour.
-
-A related clinical construct is kinesiophobia — defined as fear of movement or physical activity resulting from a perceived vulnerability to painful injury or re-injury. Kinesiophobia is a meaningful concern in rehabilitation contexts because it can lead patients to avoid beneficial movement even after physical recovery, prolonging disability beyond what tissue damage alone would predict.
+Electrodermal activity (EDA), or skin conductance, reflects sympathetic nervous system arousal and is used as a physiological index of anxiety in studies of motor behaviour. A related clinical construct is kinesiophobia — fear of movement resulting from perceived vulnerability to painful re-injury — which can cause patients to avoid beneficial movement even after tissue recovery, prolonging disability beyond what physical damage alone would predict.
 
 ### Virtual reality as a research tool for anxiety induction
 
-Studying the effects of fear on gait and balance presents a practical challenge: exposing participants to genuine fall risk in order to provoke anxiety is unsafe and unethical. Virtual reality offers a controlled alternative. Height-simulating VR environments have been used in balance and gait research to induce anxiety without exposing participants to physical fall risk, enabling investigators to measure how anxiety-related physiological and behavioural changes interact with postural control and walking.
-
-This approach allows systematic manipulation of perceived threat level while keeping participants physically safe, making it possible to study anxiety-movement interactions that would otherwise be difficult to investigate under controlled laboratory conditions.
+Studying how anxiety affects gait and balance requires inducing a sense of threat without exposing participants to genuine fall risk. Height-simulating virtual reality environments provide a controlled alternative, allowing systematic manipulation of perceived threat level while maintaining physical safety and enabling investigators to measure how anxiety-related physiological and behavioural changes interact with postural control and locomotion.

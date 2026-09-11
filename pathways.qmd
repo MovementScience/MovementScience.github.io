@@ -2,14 +2,50 @@
 title: "Learning Pathways"
 toc: false
 listing:
-  - id: complexity-based
+  - id: pathways-grid
     contents: "paths-folder/*.qmd"
     type: grid
 ---
 
-We’ve curated the movement science content into pathways made up of 3-5 modules that can help you get up to speed or learn about specific topics. Choose a pathway below to get started.
+We've curated the movement science content into pathways made up of 3–5 modules that can help you get up to speed or explore specific topics. Choose a pathway below to get started.
 
-::: {#topic-based}
+::: {#pathways-grid}
 :::
 
-## 
+```{=html}
+<script>
+(function () {
+  var attributions = {
+    'Getting Started': 'Photo by <a href="https://unsplash.com/@jbl12761?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">James Lee</a> on <a href="https://unsplash.com/photos/a-blurry-photo-of-a-person-running-_QvszySFByg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+    'Experimental Methods': 'Photo by <a href="https://unsplash.com/@ryigarry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unlimited Motion Ltd</a> on <a href="https://unsplash.com/photos/man-in-black-shirt-standing-near-black-video-camera-whDe_UdHzo8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+    'Neural Control': 'Photo by <a href="https://unsplash.com/@acharki95?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aziz Acharki</a> on <a href="https://unsplash.com/photos/photo-of-silhouette-photo-of-man-standing-on-rock-U3C79SeHa7k?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>',
+    'Muscle Mechanics': 'Photo by <a href="https://unsplash.com/@photosoflogan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Logan Gutierrez</a> on <a href="https://unsplash.com/photos/meiji-techno-microscope-with-objective-lenses-Rl9bIWKCVF0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+  };
+  function addAttribution() {
+    document.querySelectorAll('.quarto-grid-item').forEach(function (card) {
+      var titleEl = card.querySelector('.listing-title');
+      if (!titleEl) return;
+      var imgEl = card.querySelector('img');
+      if (!imgEl) return;
+      var wrapper = imgEl.parentElement;
+      if (!wrapper.classList.contains('card-img-wrapper')) {
+        wrapper.classList.add('card-img-wrapper');
+      }
+      var matchedKey = Object.keys(attributions).find(function (k) {
+        return titleEl.textContent.includes(k);
+      });
+      if (!matchedKey || wrapper.querySelector('.img-attribution-overlay')) return;
+      var overlay = document.createElement('div');
+      overlay.className = 'img-attribution-overlay';
+      overlay.innerHTML = attributions[matchedKey];
+      wrapper.appendChild(overlay);
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', addAttribution);
+  } else {
+    addAttribution();
+  }
+})();
+</script>
+```

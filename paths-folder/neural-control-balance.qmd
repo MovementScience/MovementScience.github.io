@@ -1,0 +1,69 @@
+---
+title: "Neural Control & Balance"
+description: "From the biophysics of proprioceptive sensing to hierarchical neural control and the biomechanics of stability and recovery."
+image: images/neural-control-balance.jpg
+page-layout: article
+toc: false
+---
+
+**For:** Learners interested in neuromechanics and motor control &nbsp;|&nbsp; **3 modules** &nbsp;|&nbsp; **~4.5 hours**
+
+Controlling movement requires the nervous system to continuously sense the body's state, integrate that information across multiple sensory channels, and issue corrective commands fast enough to prevent a fall. This pathway traces that process from the top down — starting with the big picture of how the brain combines sensory signals and organizes balance responses, then zooming into the proprioceptive receptor at the heart of that sensing, and finally examining how stability and agility are defined and measured as biomechanical quantities in the lab.
+
+Click through the tabs below to preview the learning objectives and content of each module, then follow the link to the full workshop.
+
+::: panel-tabset
+## 1. The Brain and Balance
+
+**Presented by:** *Dr. Lena Ting*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Identify the four major sensory systems that contribute to balance — vision, vestibular, cutaneous, and proprioception — and explain why no single system provides sufficient information on its own.
+2.  Describe how the brain's hierarchical control of balance (spinal cord, brainstem, cortex) shifts from automatic to voluntary processing as task difficulty increases or as aging and neurological disease progress.
+3.  Explain why cognitive flexibility and motor adaptability are linked, and how both relate to fall risk in older adults and people with neurological conditions such as Parkinson's disease.
+
+### Overview
+
+Balance is normally automatic — governed by subcortical circuits without conscious effort. But maintaining it requires the nervous system to integrate signals from vision, the vestibular system, cutaneous receptors in the feet, and proprioceptors in the muscles, because no single channel can fully answer whether the body is falling or what its configuration is. These signals are processed through a hierarchy of circuits: the spinal cord generates fast joint-level reflexes, the brainstem integrates whole-body falling direction and selects the appropriate muscle strategy across multiple joints, and the cortex handles deliberate adaptation when automatic responses are insufficient. As aging or disease erodes the efficiency of lower circuits, balance demands more cortical attention — narrowing the cognitive resources available for other tasks and elevating fall risk.
+
+[Go to full workshop →](../all-modules/brain-and-balance.qmd){.btn .btn-primary}
+
+## 2. Modeling the Muscle Spindle
+
+**Presented by:** *Dr. Surabhi Simha*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Identify the anatomical components of the muscle spindle — intrafusal fiber types, afferent types, and fusimotor inputs — and explain the role each plays in generating sensory signals.
+2.  Describe why muscle spindle Ia afferent firing is history-dependent and how cross-bridge dynamics provide a mechanistic explanation for this behavior.
+3.  Trace the flow of inputs and outputs through the biophysical spindle model, from muscle tendon unit length and motor activations to receptor potential, and distinguish between forward simulation and optimization modes.
+
+### Overview
+
+Proprioception — the sense of body position and movement — depends on specialized sensory structures called muscle spindles embedded within skeletal muscle. Each spindle contains intrafusal muscle fibers innervated by both sensory (afferent) and motor (fusimotor) axons, allowing the nervous system not only to read muscle length and velocity but to adjust the sensitivity of the receptor itself. A key feature of spindle firing is that it is history-dependent: the same length can produce different firing rates depending on prior movement, a phenomenon that cross-bridge dynamics in the intrafusal fibers help explain. This workshop covers spindle anatomy, the mechanistic basis of Ia afferent signals, and a biophysical model that can be run in both forward-simulation and optimization modes.
+
+[Go to full workshop →](../all-modules/modeling-muscle-spindles.qmd){.btn .btn-primary}
+
+## 3. Balance, Stability & Agility
+
+**Presented by:** *Dr. Greg Sawicki*
+
+### Learning objectives
+
+By the end of this workshop, you will be able to:
+
+1.  Describe at least four methods researchers use to measure balance during walking — including step placement predictability, angular momentum regulation, margin of stability, and center-of-mass displacement — and explain why perturbation experiments are important for studying balance effectively.
+2.  Explain how ankle exoskeleton assistance can be timed to improve standing balance recovery, and describe the role of whole-body center-of-mass-level control in balance, as distinct from purely local ankle reflexes.
+3.  Distinguish between stability (how quickly a system returns to a steady movement pattern after an unexpected perturbation) and agility (how quickly a system transitions to a new movement target on purpose), and understand how both can be defined and measured using energy-based metrics.
+
+### Overview
+
+Studying balance in the lab requires choosing metrics carefully — not all of them are equally sensitive to impairment. A systematic comparison of six common measures found that step placement predictability outperformed the others, while center-of-mass displacement alone performed no better than chance at detecting imbalance. Beyond which metric to use, this workshop develops a principled framework for what stability and agility actually mean: stability is the rate at which a system's energy returns to a nominal limit cycle after a perturbation, and agility is the rate at which it transitions to a new target. Defining both in a common energy currency makes it possible to compare the costs of stabilization, intentional transitions, and metabolic efficiency within one framework — and to ask how assistive devices such as exoskeletons can best be timed to support balance recovery.
+
+[Go to full workshop →](../all-modules/balance-stability-agility.qmd){.btn .btn-primary}
+:::

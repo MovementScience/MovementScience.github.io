@@ -1,0 +1,88 @@
+---
+title: "Experimental Methods"
+description: "Core tools for studying movement — from clinical assessment and markerless video analysis to motion capture, EMG processing, and ultrasound imaging."
+image: images/experimental-methods-mocap.jpg
+page-layout: article
+toc: false
+---
+
+**For:** Learners preparing to collect or analyze movement data &nbsp;|&nbsp; **4 modules** &nbsp;|&nbsp; **~6 hours**
+
+Movement science research depends on a toolkit of measurement techniques, each suited to different questions, settings, and scales of analysis. This pathway surveys four of the most widely used approaches — from clinical and video-based assessment tools accessible outside the lab, to marker-based motion capture and EMG, to structural imaging of muscle during movement. The modules share a common theme but do not follow a strict sequence; start with the technique most relevant to your work.
+
+Click through the tabs below to preview the learning objectives and content of each module, then follow the link to the full workshop.
+
+::: panel-tabset
+## Movement Exploration
+
+**Presented by:** *Dr. Jill McNitt-Gray & Dr. Kelli Sharp*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Identify validated tools for assessing functional mobility and markerless motion capture, including their appropriate clinical and research applications.
+2.  Explain how psychophysiological and virtual reality methods are used to study anxiety-related movement behaviors, including kinesiophobia.
+3.  Recognize the measurement limitations of standard balance scales, including ceiling and floor effects, when selecting outcome measures across diverse populations.
+
+### Overview
+
+Not all movement research happens in a motion capture lab. This workshop surveys assessment approaches that extend into clinical and naturalistic settings. The Timed Up and Go (TUG) test is one of the most widely used clinical tools for measuring functional mobility, though like many standardized scales it can exhibit ceiling and floor effects that limit its sensitivity across populations with widely varying ability. Markerless pose estimation tools — including AlphaPose and DeepLabCut — allow researchers to extract joint kinematics directly from ordinary video, removing the need for physical markers and lowering the barrier for data collection in the field. The workshop also covers psychophysiological methods for studying how anxiety shapes movement: electrodermal activity as an index of sympathetic arousal, the clinical construct of kinesiophobia, and virtual reality as a safe and controllable way to induce height-related anxiety in balance and gait research.
+
+[Go to full workshop →](../all-modules/movement-exploration.qmd){.btn .btn-primary}
+
+## Motion Capture & EMG
+
+**Presented by:** *Lauren Infantino, Kennedy Kerr, Autumn Routt & Emily Smith*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Explain how inverse kinematics and inverse dynamics are used to compute joint angles and joint moments from motion capture data, and identify the assumptions underlying each approach.
+2.  Describe how muscle action potentials are detected by bipolar electrodes and how surface EMG signals reflect the summed activity of multiple motor units.
+3.  Identify common sources of error in motion capture and EMG data collection and describe practical strategies to minimize them at each stage of the processing pipeline.
+
+### Overview
+
+Motion capture and surface EMG are the paired workhorses of movement science labs: one tracks the kinematics of the skeleton, the other records the electrical activity of the muscles driving it. Neither measurement is direct — joint angles are computed from marker trajectories via inverse kinematics, joint moments via inverse dynamics, and EMG signals reflect a summed electrical field from many motor units rather than a single muscle's output. Error introduced at any step in the pipeline accumulates through every subsequent computation, making careful data collection and protocol design essential. This workshop covers the underlying math and physiology of both techniques, common failure modes (soft tissue artifact, electrode cross-talk, marker occlusion), and the practical recommendations that minimize their impact.
+
+[Go to full workshop →](../all-modules/mocap+emg.qmd){.btn .btn-primary}
+
+## EMG Filtering
+
+**Presented by:** *Dr. Monica Daley*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+- Distinguish between high pass, low pass, and band pass filters, and identify when each type is appropriate for EMG data.
+- Describe the two key filter parameters — cutoff frequency and filter order — and explain the trade-off between filter sharpness and artifact risk.
+- Outline the standard EMG processing pipeline: apply a high pass or band pass filter to raw data, rectify, and optionally create a smooth linear envelope.
+
+### Overview
+
+A raw EMG signal contains the muscle activity you want along with motion artifact, DC offset, and high-frequency noise you do not. Filtering is the step that separates them — but choosing the wrong settings can remove real signal, create ringing artifacts, or blur the timing of muscle bursts. This workshop builds the conceptual foundation for filter design in the frequency domain: what a Bode plot reveals, how cutoff frequency and filter order interact, and how to use a Fast Fourier Transform to inspect your data before choosing settings rather than copying defaults from the literature. The standard processing pipeline — bandpass filter, rectify, low-pass envelope — is covered step by step, with attention to the decisions that most commonly introduce errors in practice.
+
+[Go to full workshop →](../all-modules/emg-filtering.qmd){.btn .btn-primary}
+
+## Ultrasound Imaging
+
+**Presented by:** *Dr. Luke Jessup*
+
+### Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Describe how ultrasound imaging works and explain how different tissue types — including muscle, tendon, bone, nerve, and blood vessels — can be distinguished from one another in an ultrasound image.
+2.  Explain why tracking muscle fascicle length and velocity matters for understanding a muscle's force-generating capacity and its role in whole-body movement efficiency.
+3.  Identify the key steps involved in using fascicle tracking software to extract length measurements from ultrasound video data, and describe the trade-offs between optical flow and line detection approaches.
+
+### Overview
+
+Ultrasound imaging makes it possible to observe muscle fascicles moving in real time during walking, running, and jumping — measurements that would otherwise require invasive procedures. Because force production depends on fascicle length and shortening velocity relative to the muscle's optimum, knowing where a muscle operates on its force-length and force-velocity curves during natural movement is key to understanding why people move the way they do. This workshop covers how ultrasound works (echogenicity, B-mode imaging, tissue identification), the practicalities of strapping flat-form probes to a moving limb, synchronization with motion capture and force data, and the two main automated fascicle tracking approaches implemented in MATLAB — optical flow and line detection — along with guidance on when each is appropriate.
+
+[Go to full workshop →](../all-modules/ultrasound-imaging.qmd){.btn .btn-primary}
+
+:::

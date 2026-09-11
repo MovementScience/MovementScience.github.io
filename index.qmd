@@ -1,7 +1,32 @@
 ---
-title: "Welcome to the IMSI Movement Science Course!"
+title: "Integrative Movement Science"
+subtitle: "A free, online curriculum from the [Integrative Movement Sciences Institute](https://MovementScience.uci.edu)"
+page-layout: article
+toc: false
 ---
 
-The **Integrative Movement Sciences Institute (IMSI)** is a National Science Foundation (NSF) Biology Integration Institute dedicated to advancing the understanding of muscular control of movement across organizational scales—from molecular to organismal and ecological.
+Muscle powers every movement an animal makes — from the molecular motors inside a single fiber to the coordinated mechanics of running, balancing, and recovering from a stumble. This curriculum brings the science to you directly from the researchers doing it: expert-led workshop recordings, curated learning pathways, and open-access resources. Browse freely, or let a pathway guide you.
 
-Our team of leading researchers from universities across the United States is creating a free, fully online course designed to share the excitement of movement science. The course is organized into individual modules covering a variety of movement science topics, which can be explored on their own or combined into curated learning pathways. You can browse modules to find those that spark your curiosity, or follow a recommended pathway to dive deeper into a specific area of the field.
+[Browse all modules](all_modules.qmd){.btn .btn-primary}    [Explore pathways](pathways.qmd){.btn .btn-outline-primary}
+
+------------------------------------------------------------------------
+
+:::::: columns
+::: {.column width="33%"}
+**Expert-led workshops**
+
+Video recordings and written summaries from research scientists across the field of movement science.
+:::
+
+::: {.column width="33%"}
+**Guided pathways**
+
+Curated sequences designed for learners at every stage, from newcomers to specialists.
+:::
+
+::: {.column width="33%"}
+**Free & open access**
+
+No account required. Browse, learn, and share freely.
+:::
+::::::

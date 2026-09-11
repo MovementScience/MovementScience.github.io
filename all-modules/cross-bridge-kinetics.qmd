@@ -1,0 +1,84 @@
+---
+title: "Cross-bridge kinetics & experimental system analysis methods"
+toc: false
+presenter: [Dr. Bert Tanner, Maddy Chastain]
+complexity: NA
+topic: [cross-bridge kinetics, muscle mechanics, system analysis]
+keywords: [cross-bridge cycling, demembranated fibers, sinusoidal analysis, force-length relationship, length-dependent activation]
+---
+
+## Learning objectives
+
+1. Describe the major biochemical steps of the actomyosin cross-bridge cycle and explain how phosphate release, ADP release, and ATP binding govern force production and cross-bridge detachment.
+2. Explain how sinusoidal length perturbation analysis and step-stretch protocols are used to estimate cross-bridge attachment and detachment rates in demembranated fiber preparations, and interpret the elastic and viscous modulus outputs in terms of the ABC process model.
+3. Relate sarcomere length-dependent changes in cross-bridge kinetics to the cellular basis of the Frank-Starling mechanism and discuss how myosin isoform composition influences the magnitude of this length dependence.
+
+## Workshop
+
+Video coming soon
+
+***Presented by:*** *Dr. Bert Tanner & Maddy Chastain*
+
+## Overview
+
+### Experimental preparations
+
+The experiments described in this workshop use demembranated (chemically skinned) muscle fibers, in which the cell membrane has been removed. Without an intact membrane, the intracellular environment is controlled entirely by the bathing solution — calcium concentration, ATP level, and ionic strength can all be set independently. This differs fundamentally from electrically stimulated whole-muscle or intact-fiber preparations.
+
+For cardiac studies, the preparation is a multicellular myocardial strip dissected from the ventricular wall or papillary muscle and trimmed to a small piece of tissue. Published cardiac strip preparations span a wide range of dimensions (roughly 100–500 µm wide and 400–1200 µm long), with specific values depending on laboratory protocol and tissue source. For single skeletal muscle fiber experiments, fibers are trimmed to approximately 2–3 mm in length; fiber diameter typically falls in the range of 50–120 µm, varying by fiber type and species. One end of each preparation is attached to a force transducer and the other to a length-controlling motor. Sarcomere length can be set directly by imaging the regular thick-and-thin-filament striations visible under light microscopy.
+
+### The cross-bridge cycle
+
+Force production in striated muscle is driven by the cyclic interaction of myosin (thick-filament motor) with actin (thin filament). Thin filament activation begins when calcium binds to troponin C (TnC); this propagates through the troponin complex (TnI and TnT), shifting tropomyosin from the blocked to the open state and exposing myosin-binding sites on actin (McKillop & Geeves, 1993).
+
+Myosin binds to actin in a post-hydrolysis state bearing both ADP and inorganic phosphate (Pi) — the M·ADP·Pi state first characterized by Lymn and Taylor (1971). In the widely accepted mechanochemical model, Pi release from the catalytic site is associated with the force-generating conformational change (the power stroke, or lever-arm rotation), producing the strongly-bound, force-bearing cross-bridge. It is important to note, however, that the exact mechanistic ordering of lever-arm rotation and Pi exit remains an area of active investigation. Single-molecule studies have raised the possibility that an initial lever-arm movement precedes Pi departure, with Pi release then stabilizing the post-stroke configuration (Dantzig et al., 1992; Woody et al., 2019). Pi release is therefore best described as functionally coupled to force generation, even if the mechanistic sequence is not fully resolved.
+
+Following Pi release, ADP dissociates from the AM·ADP complex. ADP release is rate-limiting specifically for the detachment transition — it governs how long the cross-bridge remains in the strongly-bound state before ATP can bind. This role is well established at physiological ATP concentrations (Siemankowski et al., 1985; Geeves & Holmes, 1999). Importantly, ADP release is strain-dependent: under mechanical load, ADP release is further slowed, and this is one mechanism by which applied force modulates the cross-bridge cycling rate (Nyitrai & Geeves, 2004). Finally, ATP binding to the rigor AM complex causes rapid myosin detachment from actin. The freed M·ATP complex then hydrolyzes ATP to M·ADP·Pi, restoring the high-actin-affinity pre-stroke state and enabling the next cycle.
+
+### Passive mechanics and the force-length relationship
+
+Striated muscle produces both passive (resting) and active (calcium-activated) force. Passive tension arises from intracellular and extracellular structural proteins. Titin — a giant elastic protein spanning from the Z-disk to the M-line of each sarcomere — is the dominant intracellular spring element, particularly at moderate sarcomere lengths. Collagen in the extracellular matrix (perimysium and endomysium) is the major extracellular contributor and becomes increasingly important at longer lengths (Granzier & Irving, 1995; Wang et al., 1991).
+
+The active force-length relationship follows the classic Gordon-Huxley-Julian description (Gordon et al., 1966): as sarcomere length increases from short lengths, active force rises along an ascending limb as thick-thin filament overlap grows; it plateaus at optimal overlap; and then declines along a descending limb as overlap is lost at very long lengths. Total force at any given length is the sum of passive and active contributions.
+
+### Length-dependent activation and the Frank-Starling mechanism
+
+At the organ level, the Frank-Starling law describes the increase in cardiac stroke volume that accompanies greater ventricular filling. At the cellular and molecular level, the analog is length-dependent activation: increasing sarcomere length within the physiological range augments both peak active force and calcium sensitivity (a leftward shift of the force-pCa curve), independent of changes in filament overlap (Kentish et al., 1986; Allen & Kentish, 1985). This is the established cellular basis of the Frank-Starling mechanism.
+
+Cross-bridge kinetics may also contribute to this length dependence. In rat myocardial strips studied by sinusoidal perturbation analysis, cross-bridge attachment time increases and cycling rate slows as sarcomere length increases. The mechanistic interpretation is that ADP release — the rate-limiting step for the detachment transition — is sensitive to the mechanical strain on the cross-bridge: at longer sarcomere lengths and higher internal forces, the geometry of the catalytic pocket may slow ADP exit, prolonging attachment and increasing force per cross-bridge. This finding is qualitative; the specific quantitative kinetic parameters at each sarcomere length require confirmation and citation from the primary data publication from the Tanner lab.
+
+Conversely, at shorter sarcomere lengths, faster cross-bridge detachment may facilitate relaxation. Together, these sarcomere length-dependent changes in ADP release rate represent a kinetic contribution to the Frank-Starling mechanism that operates alongside, and may amplify, the contributions from calcium sensitivity and filament overlap.
+
+### Myosin isoforms and cross-bridge kinetic sensitivity
+
+The magnitude of length-dependent kinetic sensitivity varies markedly with myosin isoform. In mice and rats, the predominant cardiac myosin isoform is alpha-myosin heavy chain (alpha-MHC, MYH6), which has a high actin-activated ATPase rate and fast shortening velocity (Lompre et al., 1979). In larger animals — guinea pigs and above — beta-myosin heavy chain (beta-MHC, MYH7) predominates; this slower, higher-economy isoform is also the primary human ventricular myosin. Rabbits represent an intermediate case: their ventricles are predominantly beta-MHC but retain a variable alpha-MHC component depending on age and hormonal status.
+
+In skeletal muscle, slow-twitch (type I / beta-MHC) fibers show greater length-dependent sensitivity than fast-twitch (type II / alpha-MHC) fibers. This is most clearly documented for calcium sensitivity of force; the extent to which cross-bridge kinetics specifically (as opposed to steady-state force and calcium sensitivity) are more length-sensitive in slow-twitch fibers is supported by experimental evidence but is less comprehensively characterized. Fast-twitch myosin kinetics appear comparatively insensitive to changes in sarcomere length.
+
+### System analysis: sinusoidal perturbation, step-stretch, and the ABC model
+
+**Sinusoidal analysis.** In sinusoidal length perturbation analysis, the muscle length is oscillated at a series of frequencies while force is recorded. Muscle behaves as a linear viscoelastic system: the force output is also sinusoidal but phase-shifted relative to the length input. The in-phase component defines the elastic modulus (reflecting cross-bridge attachment stiffness); the out-of-phase component defines the viscous modulus (reflecting energy dissipation and cross-bridge cycling dynamics). Mapping how these two moduli change across frequency resolves kinetic processes operating at different time scales. In practice, stochastic (white-noise) length perturbations — a sum of many sine waves applied simultaneously — can be used instead of single-frequency sweeps; the underlying mathematics and the moduli extracted are equivalent, but the raw data appearance differs.
+
+A frequency sweep requires the preparation to remain maximally activated throughout. For slow myosin isoforms or low-temperature experiments where the lowest probe frequencies must be in the 0.1–1 Hz range, a complete sweep can take approximately one to two minutes — long enough for measurable tissue deterioration. This constrains how many sweeps can be obtained from a single preparation.
+
+**Step-stretch analysis.** A step-stretch protocol applies a rapid length step (completed in milliseconds) and records the transient force response, which can be analyzed in a few seconds of record. This dramatically reduces activation time per measurement. In active muscle, a step stretch produces a stereotyped multi-phase transient: Phase 1 is the rapid elastic force rise as cross-bridges are stretched (to T1); Phase 2 is fast tension decay as stretched cross-bridges detach (from T1 toward T2); Phase 3 is a slower tension recovery as new cross-bridges recruit (from T2 toward T3). The T1/T2 tension-transient framework and the mechanistic interpretation of these phases were established by Huxley AF and Simmons RM (1971). The fuller characterization of the Phase 3 recovery — driven by cross-bridge recruitment — was elaborated in the companion study by Ford LE, Huxley AF, and Simmons RM (1977):
+
+> Huxley AF, Simmons RM (1971). Proposed mechanism of force generation in striated muscle. *Nature* 233: 533–538. DOI: 10.1038/233533a0.
+
+> Ford LE, Huxley AF, Simmons RM (1977). Tension responses to sudden length change in stimulated frog muscle fibres near slack length. *J Physiol* 269: 441–515.
+
+Fast-twitch fibers complete their step-stretch transient in ~250 ms; slow-twitch fibers (e.g., soleus) require up to a full second, reflecting slower cross-bridge cycling. These different time scales affect which fitting approaches work best: a dual-exponential function with offset may fit slow-twitch transients cleanly, while fast-twitch transients — where all three phases overlap in time — require more complex methods (e.g., the ABC model in the time domain).
+
+**The ABC process model.** Frequency-domain data from sinusoidal analysis are typically fit to a three-component model introduced by Kawai M and Brandt PW (1980):
+
+> Kawai M, Brandt PW (1980). Sinusoidal analysis: a high resolution method for correlating biochemical reactions with physiological processes in activated skeletal muscles of rabbit, frog and crayfish. *J Muscle Res Cell Motil* 1(3): 279–303.
+
+The three processes, ordered by ascending characteristic frequency, are:
+
+- **Process A** (slowest, rate 2πA): associated with slow regulatory dynamics — including thin filament cooperativity and tropomyosin kinetics — as well as passive viscoelastic elements. Labeling it purely "passive" oversimplifies its biological content, particularly in sub-maximally activated preparations.
+- **Process B** (intermediate, rate 2πB): associated with cross-bridge recruitment — the apparent rate at which myosin attaches to actin.
+- **Process C** (fastest, rate 2πC): associated with the force-generating kinetic step, most often interpreted in terms of the Pi-release / power-stroke transition rate. Its inverse is used as an approximation of cross-bridge attachment time, though it more precisely reflects the forward and reverse rates of the force-generating step rather than the myosin off-rate from actin directly (Kawai & Halvorson, 1991).
+
+This approach was adapted from frequency-domain methods developed earlier for insect asynchronous flight muscle. John Pringle (Oxford) pioneered frequency-dependent mechanical characterization of insect fibrillar muscle from the 1950s onward (Pringle, 1954; Pringle, 1967; Pringle, 1978), establishing the conceptual and analytical foundation before Kawai and Brandt applied sinusoidal analysis to vertebrate preparations.
+
+**Data fitting tools.** MATLAB scripts developed in the Tanner lab (with contributions from Maddy Chastain) implement fitting routines for both sinusoidal and step-stretch data. These scripts extract the ABC process parameters from sinusoidal sweeps and estimate ADP release and ATP binding rates from step-stretch data obtained at varying ATP concentrations. Separate script versions are provided for Windows and macOS (the MATLAB crosshair function used for interactive point selection in some routines is not available on macOS). Data sets include human cardiac sinusoidal data, human cardiac step-stretch data, and rat skeletal muscle step-stretch data from fast-twitch (medial gastrocnemius) and slow-twitch (soleus) fibers.

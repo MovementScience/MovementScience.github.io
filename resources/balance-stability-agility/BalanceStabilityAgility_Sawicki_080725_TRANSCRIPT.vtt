@@ -1,0 +1,4078 @@
+WEBVTT
+
+1
+00:00:01.803 --> 00:00:06.453
+Gregory Sawicki: sharing and okay.
+
+
+2
+00:00:06.873 --> 00:00:09.842
+Gregory Sawicki: You should all be able to see a title slide. I hope.
+
+
+3
+00:00:09.843 --> 00:00:10.843
+Monica Daley (she, her): Yep, we see it.
+
+
+4
+00:00:10.843 --> 00:00:14.612
+Gregory Sawicki: Okay, cool. And let me try to get a pointer going.
+
+
+5
+00:00:16.853 --> 00:00:17.943
+Gregory Sawicki: Okay?
+
+
+6
+00:00:18.393 --> 00:00:22.962
+Gregory Sawicki: Alright. So this one's kind of a
+
+
+7
+00:00:23.333 --> 00:00:27.633
+Gregory Sawicki: mishmash of stuff. I'm gonna I'm gonna start out by covering
+
+
+8
+00:00:27.893 --> 00:00:35.073
+Gregory Sawicki: some ideas on how to measure what balance is and how to measure it from the literature
+
+
+9
+00:00:35.283 --> 00:00:39.953
+Gregory Sawicki: highlight, some work from from the Mc crowd there, too, a little bit hopefully.
+
+
+10
+00:00:40.173 --> 00:00:43.903
+Gregory Sawicki: And then I'm gonna switch to a segment where
+
+
+11
+00:00:44.113 --> 00:00:50.443
+Gregory Sawicki: review some of our labs work on using angular momentum and changes in angular momentum to
+
+
+12
+00:00:50.743 --> 00:01:00.512
+Gregory Sawicki: characterize balance, and then whether or not exoskeletons might be able to help with balance. And then in the last part. Hopefully, we'll get a little bit more interactive.
+
+
+13
+00:01:00.683 --> 00:01:07.052
+Gregory Sawicki: I kind of want to just put out a more general framing for how we might think about
+
+
+14
+00:01:07.163 --> 00:01:19.263
+Gregory Sawicki: stability and agility together, we'll try to derive some simple equations and think about limit cycles, and whether we can use limit cycle and phase portrait kinds of thinking to
+
+
+15
+00:01:19.683 --> 00:01:23.123
+Gregory Sawicki: define what we mean by stability and agility.
+
+
+16
+00:01:23.463 --> 00:01:25.373
+Gregory Sawicki: Okay? So
+
+
+17
+00:01:26.163 --> 00:01:31.293
+Gregory Sawicki: oh, here's the sign in people want to sign in. I'll leave that up there for a sec.
+
+
+18
+00:01:38.923 --> 00:01:44.983
+Gregory Sawicki: That should be enough time, I hope. And moving on. Okay. So
+
+
+19
+00:01:45.844 --> 00:01:59.273
+Gregory Sawicki: a paper just came out in jb, that I think actually, I'm just going to use this to cover like I don't know 50 years worth of literature in here, maybe not quite 50, but at least 20 years worth of literature highlighted in this paper
+
+
+20
+00:01:59.553 --> 00:02:07.763
+Gregory Sawicki: when they review what types of approaches have been used to characterize stability and balance that'll come in a slide from now.
+
+
+21
+00:02:08.143 --> 00:02:15.512
+Gregory Sawicki: But in this study. What the researchers tried to do this is from Steve Collins, lab
+
+
+22
+00:02:15.633 --> 00:02:19.323
+Gregory Sawicki: at Stanford was really just do a nice.
+
+
+23
+00:02:19.723 --> 00:02:24.662
+Gregory Sawicki: formal, and rigorous assessment in a causal way, for whether or not
+
+
+24
+00:02:24.833 --> 00:02:34.642
+Gregory Sawicki: the common measures that we think about in the biomechanics community for balance are are valid, and the way they thought about this was to design an experiment
+
+
+25
+00:02:34.813 --> 00:02:39.743
+Gregory Sawicki: where well, there's a there's a lot going on in here. First, st
+
+
+26
+00:02:39.973 --> 00:02:52.502
+Gregory Sawicki: they use these perturbation experiments. So this is a system that they have called the Bump'em. It is basically like a multi-directional cable system that you can connect to a person's trunk.
+
+
+27
+00:02:53.023 --> 00:02:57.352
+Gregory Sawicki: And when you do so, you can then apply polls
+
+
+28
+00:02:57.573 --> 00:03:05.352
+Gregory Sawicki: on the person's body at different phases during the locomotion, for example, and in different directions whenever you like, and then you can
+
+
+29
+00:03:05.653 --> 00:03:07.713
+Gregory Sawicki: see how the person responds.
+
+
+30
+00:03:08.123 --> 00:03:20.772
+Gregory Sawicki: and you can also then test the what we think of as the standard measurements of balance, and see whether or not they did a good job detecting a difference when the person was in an unstable returning to stable state.
+
+
+31
+00:03:21.203 --> 00:03:24.703
+Gregory Sawicki: So that's what I would call large scale perturbations.
+
+
+32
+00:03:25.123 --> 00:03:36.523
+Gregory Sawicki: Then they did this other thing which I really liked, which was sort of an add-on to the standard kit that I think a lot of people are using in balance now, which is, which is disruption
+
+
+33
+00:03:36.763 --> 00:03:56.703
+Gregory Sawicki: of what we think of as the physiological systems that are responsible for balance, but not in a large scale. Perturbation way just in a constant disruption. So they had people walk in normal shoes. Then they blocked people's eyes. People were in a harness so they couldn't trip, slip or fall over.
+
+
+34
+00:03:57.123 --> 00:03:59.193
+Gregory Sawicki: They locked ankles.
+
+
+35
+00:03:59.483 --> 00:04:04.173
+Gregory Sawicki: And then they did this really creative thing called pneumatic jets, where they would
+
+
+36
+00:04:04.413 --> 00:04:08.793
+Gregory Sawicki: fire a pulse of air onto the swing leg
+
+
+37
+00:04:10.253 --> 00:04:14.142
+Gregory Sawicki: to disrupt the foot placement intent of the person.
+
+
+38
+00:04:14.623 --> 00:04:26.892
+Gregory Sawicki: and then they brought in a whole bunch of subjects. 10. They went through this protocol, where they 1st just walked normally on the treadmill. They went through 8 min of random polls, large-scale perturbations from the Bump'em
+
+
+39
+00:04:27.373 --> 00:04:36.562
+Gregory Sawicki: back to steady state, and then they had steady bouts of walking with each of these 3 disruptions in the balance. Physiology.
+
+
+40
+00:04:37.183 --> 00:04:44.082
+Gregory Sawicki: Okay? So then they drew from the literature.
+
+
+41
+00:04:44.768 --> 00:04:51.312
+Gregory Sawicki: I guess 6 candidate measurements for balance that have been published previously.
+
+
+42
+00:04:51.443 --> 00:04:56.583
+Gregory Sawicki: You've got to go read the paper to get all the citations. I'll mention that.
+
+
+43
+00:04:58.413 --> 00:05:21.173
+Gregory Sawicki: The the step step width or the step placement, predictability, measurement was motivated by a lot of Nidhi Sidipathy's work. Who's part of our group? I'll touch on that in another slide or 2. But let's just go through these. So the 1st one is where people put their step in the frontal plane. So step width.
+
+
+44
+00:05:21.863 --> 00:05:24.323
+Gregory Sawicki: Next one is, step time!
+
+
+45
+00:05:24.703 --> 00:05:33.392
+Gregory Sawicki: How quickly does the foot return to the ground after the perturbation coming out of a swing phase, this next one is
+
+
+46
+00:05:33.603 --> 00:05:42.683
+Gregory Sawicki: called step placement predictability. This is based on a model that if you know the center of mass position and velocity in mid stance.
+
+
+47
+00:05:42.943 --> 00:05:47.902
+Gregory Sawicki: you can use a linear map to predict where the next step is going to go.
+
+
+48
+00:05:48.333 --> 00:05:53.083
+Gregory Sawicki: And that seems to. That's a hypothesis for
+
+
+49
+00:05:53.473 --> 00:06:01.223
+Gregory Sawicki: what kind of control humans and other bipeds, maybe even things with more legs are using right? So center of mass, base step placement.
+
+
+50
+00:06:01.903 --> 00:06:03.335
+Gregory Sawicki: Then they checked.
+
+
+51
+00:06:04.703 --> 00:06:17.062
+Gregory Sawicki: this is called like Lyapanov exponent. So if you plot the gate, the center of mass trajectory on a on a loop like a phase portrait. And there's a disturbance you can measure how quickly the
+
+
+52
+00:06:17.323 --> 00:06:25.452
+Gregory Sawicki: the system returns to the nominal sort of trajectory, and this could be in 3 dimensions or 2 dimensions. However, you define your state
+
+
+53
+00:06:25.573 --> 00:06:33.533
+Gregory Sawicki: next one. Here is margin of stability. This is based on the idea that if I know how fast the center of mass is moving.
+
+
+54
+00:06:34.103 --> 00:06:47.653
+Gregory Sawicki: I know where a foot needs to go to keep me from falling in the time that it takes to take a step, and if my foot falls within that boundary, then I'm safe. So a small margin of stability is is good.
+
+
+55
+00:06:47.763 --> 00:07:07.903
+Gregory Sawicki: and this one's been in the literature for a long time, too. And then this really simple measure of like, how far the center of mass deviates from some steady position. Okay? So they evaluated these 6 criterion. And they're looking for changes in response to either a large scale perturbation
+
+
+56
+00:07:08.273 --> 00:07:17.642
+Gregory Sawicki: or changes in response to those steady changes in the balance system, and what they found was pretty interesting here
+
+
+57
+00:07:18.063 --> 00:07:26.113
+Gregory Sawicki: that the accuracy of each of these 6 measures to detect the perturbation or the unbalanced state.
+
+
+58
+00:07:27.126 --> 00:07:30.653
+Gregory Sawicki: Was it? Was metric, dependent? Right? So
+
+
+59
+00:07:31.183 --> 00:07:53.972
+Gregory Sawicki: if you look here on the left, you can see that foot placement, predictability seems to be outperforming kind of all the measures globally, surprisingly. These sort of ideas from Lyapanov exponent and lateral margin of stability don't perform as well, which was surprising to me, and if you just look at center of mass displacement, you're no better than chance like. You might as well just be guessing.
+
+
+60
+00:07:54.183 --> 00:08:00.213
+Gregory Sawicki: If you just if you just observed the center of mass displacement, you wouldn't be able to tell whether someone was unbalanced.
+
+
+61
+00:08:01.583 --> 00:08:03.013
+Gregory Sawicki: Okay, so.
+
+
+62
+00:08:03.013 --> 00:08:07.202
+Lena Ting (she/her): Do we? Do you want discussion or questions in between? Or do we want to wait.
+
+
+63
+00:08:07.203 --> 00:08:08.503
+Gregory Sawicki: Sure. Yeah.
+
+
+64
+00:08:09.153 --> 00:08:10.162
+Gregory Sawicki: Go for it.
+
+
+65
+00:08:10.888 --> 00:08:12.492
+Lena Ting (she/her): So Lyapanov exponent?
+
+
+66
+00:08:15.043 --> 00:08:25.323
+Lena Ting (she/her): Can you explain what it takes into account? Because I from my understanding, it's really like how much it diverges from one step to another.
+
+
+67
+00:08:26.233 --> 00:08:27.053
+Lena Ting (she/her): Is that right?
+
+
+68
+00:08:27.053 --> 00:08:31.513
+Gregory Sawicki: Yeah. So I I think you
+
+
+69
+00:08:31.693 --> 00:08:39.382
+Gregory Sawicki: what you do is you? You make the phase portrait. So let's just say you plotted the X and Y position.
+
+
+70
+00:08:39.733 --> 00:08:45.932
+Gregory Sawicki: or the three-dimensional position of the center of mass over a gate cycle. It makes some pattern which.
+
+
+71
+00:08:45.933 --> 00:08:46.463
+Lena Ting (she/her): Yeah.
+
+
+72
+00:08:46.463 --> 00:08:50.752
+Gregory Sawicki: Drawing. This has this ribbon thing right? And then, when there's a perturbation.
+
+
+73
+00:08:50.993 --> 00:09:16.593
+Gregory Sawicki: usually, what you do is you pick a point during the gate cycle. Some people refer to that as like a poin cray section. It is a slice through the trajectory like on a plane. And then what you're looking for is over the next some number of steps as the State passes through that plane. How close did it come to a bull's eye which represents the
+
+
+74
+00:09:16.973 --> 00:09:25.163
+Gregory Sawicki: the steady state limit cycle. And what? And then what you're measuring is the exponential decay of the system
+
+
+75
+00:09:26.233 --> 00:09:29.973
+Gregory Sawicki: oversteps back to that point.
+
+
+76
+00:09:31.863 --> 00:09:33.733
+Gregory Sawicki: That's my understanding of how.
+
+
+77
+00:09:33.733 --> 00:09:47.532
+Lena Ting (she/her): That's what I think it is, too, and and I think it has a lot of assumptions on it that about periodicity and what's good or what's bad, because, like a lot of things like center of mass displacement, like people don't come back to
+
+
+78
+00:09:47.873 --> 00:09:51.602
+Lena Ting (she/her): exactly where they started. And it's okay. So.
+
+
+79
+00:09:51.603 --> 00:09:52.013
+Gregory Sawicki: Totally.
+
+
+80
+00:09:52.013 --> 00:09:58.603
+Lena Ting (she/her): I think that people with better balance might actually
+
+
+81
+00:09:59.176 --> 00:10:02.072
+Lena Ting (she/her): not come back to exactly the same.
+
+
+82
+00:10:02.073 --> 00:10:13.472
+Gregory Sawicki: Yeah, they could just find a neighboring stable limit cycle. And that would be okay, too. Right? Yeah. So I agree that like this technique doesn't take into account strategies that might like.
+
+
+83
+00:10:13.683 --> 00:10:17.033
+Gregory Sawicki: just find another limit cycle. That's just as good.
+
+
+84
+00:10:17.223 --> 00:10:25.983
+Gregory Sawicki: And maybe that's part of the reason. It's not. It's not so good here at detecting whether there's imbalance. I don't know the detail. I didn't.
+
+
+85
+00:10:25.983 --> 00:10:26.473
+Lena Ting (she/her): Great. Thank you.
+
+
+86
+00:10:26.473 --> 00:10:29.503
+Lena Ting (she/her): Careful details as homework, for this
+
+
+87
+00:10:29.503 --> 00:10:34.232
+Lena Ting (she/her): is also based on a steady state assumption which.
+
+
+88
+00:10:34.233 --> 00:10:34.923
+Gregory Sawicki: Up.
+
+
+89
+00:10:34.923 --> 00:10:40.863
+Lena Ting (she/her): Like when we were talking about running down a mountain like you are
+
+
+90
+00:10:41.443 --> 00:10:54.213
+Lena Ting (she/her): definitely not at steady state. And, like you manage non-steady state, really, really well versus someone who kind of needs the steady state to be able to manage that. I think those are
+
+
+91
+00:10:54.453 --> 00:10:58.483
+Lena Ting (she/her): 2 really different strategies, and I don't know.
+
+
+92
+00:10:58.483 --> 00:10:59.003
+Gregory Sawicki: Yeah, that's it.
+
+
+93
+00:10:59.003 --> 00:11:00.742
+Lena Ting (she/her): On a, on a.
+
+
+94
+00:11:01.223 --> 00:11:03.503
+Gregory Sawicki: That's an interesting point like, hmm.
+
+
+95
+00:11:03.503 --> 00:11:07.255
+Gregory Sawicki: it does seem like all these definitions, kind of
+
+
+96
+00:11:07.873 --> 00:11:12.763
+Gregory Sawicki: originate for the assumption that things are steady. To begin with, right?
+
+
+97
+00:11:12.763 --> 00:11:14.553
+Monica Daley (she, her): Desirable right, that steady.
+
+
+98
+00:11:14.553 --> 00:11:22.443
+Gregory Sawicki: And that, and that that right, that that's optimal or desirable, or that's like the the chosen state of things. But.
+
+
+99
+00:11:22.913 --> 00:11:26.222
+Gregory Sawicki: Lena's example about downhill is a perfect example of
+
+
+100
+00:11:26.813 --> 00:11:39.452
+Gregory Sawicki: there is no way. Step to step. I'm in a steady limit. Cycle going well, you could be. But you're most often not. And you're just dealing with interactions in the environment to help you stabilize, which is, it's more like.
+
+
+101
+00:11:39.453 --> 00:11:43.062
+Monica Daley (she, her): Step is different in terms of the interaction with the environment. Right.
+
+
+102
+00:11:43.063 --> 00:11:56.092
+Gregory Sawicki: Yeah. And their environment's changing in real time, too. So like you're going to pick, maybe a soft surface versus a hard surface from step to step and so forth, so totally agree that this setup and this experiment
+
+
+103
+00:11:56.203 --> 00:12:00.493
+Gregory Sawicki: doesn't handle a lot of these real world edge cases.
+
+
+104
+00:12:00.493 --> 00:12:00.963
+Lena Ting (she/her): Yeah. The.
+
+
+105
+00:12:00.963 --> 00:12:01.393
+Gregory Sawicki: What it is.
+
+
+106
+00:12:01.393 --> 00:12:23.253
+Lena Ting (she/her): Like with a lot of those measures. You know. They require you to walk for like a minute, and they look at stability. But the reality is that it's always gonna be stable because people aren't actually falling down or going away. So it's not necessarily I don't think it's necessarily a probe of people's balance. It's maybe a probe of their gait, variability.
+
+
+107
+00:12:26.383 --> 00:12:29.872
+Monica Daley (she, her): Yeah. And the question is whether that's functionally meaningful or not.
+
+
+108
+00:12:30.313 --> 00:12:35.232
+Lena Ting (she/her): Yeah, I mean, like in Parkinson's disease. It is okay. So, but it doesn't mean that.
+
+
+109
+00:12:36.159 --> 00:12:37.133
+Lena Ting (she/her): It doesn't.
+
+
+110
+00:12:37.133 --> 00:12:37.833
+Gregory Sawicki: Well, I mean.
+
+
+111
+00:12:37.833 --> 00:12:38.853
+Lena Ting (she/her): It does put.
+
+
+112
+00:12:38.853 --> 00:12:41.463
+Gregory Sawicki: A wrench in our ability, though, to
+
+
+113
+00:12:41.773 --> 00:12:51.762
+Gregory Sawicki: define things that are universally appropriate for measuring, say, stability under different contexts. Right? It might might really need to be very context dependent.
+
+
+114
+00:12:52.593 --> 00:12:54.583
+Gregory Sawicki: Okay, I'm going to keep going.
+
+
+115
+00:12:55.443 --> 00:12:56.183
+Lena Ting (she/her): If.
+
+
+116
+00:12:59.643 --> 00:13:06.632
+Gregory Sawicki: So I just wanted to say a little bit more about the step placement, predictability, idea.
+
+
+117
+00:13:06.803 --> 00:13:07.823
+Gregory Sawicki: And
+
+
+118
+00:13:07.983 --> 00:13:20.363
+Gregory Sawicki: this really comes from Manoj Srinivasan's lab. This is one example of a paper from their group that Nidhi Sidipathy published on running. But there are a number before this by Varun Joshi.
+
+
+119
+00:13:20.473 --> 00:13:22.882
+Gregory Sawicki: Yeah. And
+
+
+120
+00:13:23.723 --> 00:13:32.042
+Gregory Sawicki: not remembering all the other authors. You can go to Google Scholar, and find all of them. There's probably like 4 or 5 good papers in a row.
+
+
+121
+00:13:32.172 --> 00:13:36.963
+Gregory Sawicki: The idea here is that if you just look at this cartoon trajectory over here.
+
+
+122
+00:13:37.473 --> 00:13:47.833
+Gregory Sawicki: times when the trajectory is blue is when there's a foot on the ground and in red is, those are aerial phases. The general idea of this
+
+
+123
+00:13:49.533 --> 00:13:51.203
+Gregory Sawicki: framework is that
+
+
+124
+00:13:51.962 --> 00:14:02.923
+Gregory Sawicki: especially during walking, but I think they also show evidence during running that right around mid stance. If you take the center of mass velocity and position. So the center of mass state.
+
+
+125
+00:14:03.573 --> 00:14:15.562
+Gregory Sawicki: and you relate it to where the next footfall goes. In the next stride, there's a there's a very strong linear relationship between those things, and that's pretty cool, because it suggests that
+
+
+126
+00:14:15.763 --> 00:14:21.283
+Gregory Sawicki: a very complex locomotion system that's got all kinds of nonlinearities might.
+
+
+127
+00:14:21.423 --> 00:14:24.573
+Gregory Sawicki: Basically, it's balancing
+
+
+128
+00:14:25.033 --> 00:14:35.693
+Gregory Sawicki: actions can be explained by a simple. You can fit data to find the mapping between state in the middle of the stance to the next foot placement.
+
+
+129
+00:14:36.783 --> 00:14:45.963
+Gregory Sawicki: So I just wanted to highlight again that this seems to be a thing that lots of data fit to, and also turned out to be the
+
+
+130
+00:14:46.163 --> 00:14:52.683
+Gregory Sawicki: have the highest predictability in the measurements that I presented on the last slide. So maybe 2 checks for
+
+
+131
+00:14:54.443 --> 00:15:03.763
+Gregory Sawicki: another idea that's floated around for a long time, and that we've been exploring in our own lab as well is the idea of angular momentum
+
+
+132
+00:15:04.413 --> 00:15:10.903
+Gregory Sawicki: regulation during walking so like just from physics. This makes a lot of sense that you want to
+
+
+133
+00:15:11.213 --> 00:15:25.773
+Gregory Sawicki: regulate your angular momentum to be on average around 0 when you're moving, so that you don't pitch to the ground. Right? So angular momentum is the sum of all of your segments, and how they pitch, and how the pitch velocity changes over time.
+
+
+134
+00:15:25.903 --> 00:15:34.632
+Gregory Sawicki: and the moments that you place around your body's center of mass, with your feet on the ground are constantly
+
+
+135
+00:15:35.313 --> 00:15:56.262
+Gregory Sawicki: regulating that angular momentum. So the sum of the moments on the ground come up to the change in the 1st derivative of the angular momentum of the body. And this paper pitches the idea that there actually may be. I think it's actually sort of a requirement. It's kind of no surprise to me. The physics say that this should happen.
+
+
+136
+00:15:56.373 --> 00:16:04.672
+Gregory Sawicki: but that you're putting your foot in places on the ground to create moments around your center of mass that keep your angular momentum
+
+
+137
+00:16:04.793 --> 00:16:07.422
+Gregory Sawicki: centered around 0 change.
+
+
+138
+00:16:08.063 --> 00:16:09.073
+Gregory Sawicki: Okay?
+
+
+139
+00:16:09.323 --> 00:16:10.643
+Gregory Sawicki: And
+
+
+140
+00:16:10.803 --> 00:16:25.173
+Gregory Sawicki: that's kind of nice, because it maybe then motivates the idea of using angular momentum as a way to measure how unbalanced or how quickly someone's returning to a balanced or regulated angular momentum state.
+
+
+141
+00:16:25.693 --> 00:16:26.826
+Gregory Sawicki: and then
+
+
+142
+00:16:28.363 --> 00:16:36.112
+Gregory Sawicki: for a long time in the literature. This is work by Anne Silverman. I wanted to highlight her stuff here. People have used angular momentum
+
+
+143
+00:16:36.483 --> 00:16:52.103
+Gregory Sawicki: most of the time, though in steady walking again. So there's not a perturbation here. People didn't really check to see whether the angular momentum hypothesis worked in large scale perturbations till pretty recently. But what's cool about this is that even in steady gait
+
+
+144
+00:16:52.213 --> 00:16:58.242
+Gregory Sawicki: you can notice changes in the in the sway or the fluctuation of the angular momentum
+
+
+145
+00:16:58.383 --> 00:17:08.292
+Gregory Sawicki: that seem to have some relationship to populations that might suffer from imbalance or falls risk. So one example here is from amputees that Anne published.
+
+
+146
+00:17:08.403 --> 00:17:12.883
+Gregory Sawicki: and you can see here the angular momentum in frontal, transverse and sagittal planes.
+
+
+147
+00:17:14.123 --> 00:17:23.932
+Gregory Sawicki: for amputees and non amputees at different walking speeds. That that's what the different colors are, and what you can already notice from the frontal plane, which is usually where the most
+
+
+148
+00:17:24.123 --> 00:17:32.452
+Gregory Sawicki: fluctuation happens, is that at these slow speeds amputees have a much larger amplitude
+
+
+149
+00:17:32.823 --> 00:17:51.143
+Gregory Sawicki: of swing in their frontal plane, angular momentum than non-amputees. And then that that is all just summarized over here in these nice metric graphs that show a clear difference between amputees and non-amputees. And in the way they're regulating their angular momentum just during steady locomotion.
+
+
+150
+00:17:51.663 --> 00:17:59.713
+Gregory Sawicki: Okay? So that's a that's some evidence and support for the idea of using angular momentum as a way to measure balance as well.
+
+
+151
+00:18:00.703 --> 00:18:05.213
+Gregory Sawicki: Okay, so now I'm gonna I introduce a number of concepts. Now.
+
+
+152
+00:18:05.833 --> 00:18:09.193
+Gregory Sawicki: we put 2 checks against foot placement.
+
+
+153
+00:18:09.994 --> 00:18:20.043
+Gregory Sawicki: predictability as one way to think about measuring balance and and return to stability. And then also, I just mentioned angular momentum. And I'm gonna
+
+
+154
+00:18:20.593 --> 00:18:24.063
+Gregory Sawicki: I'm going to stay on the topic of angular momentum for a little bit.
+
+
+155
+00:18:24.273 --> 00:18:27.583
+Gregory Sawicki: Another couple points to make here. So like
+
+
+156
+00:18:28.123 --> 00:18:34.372
+Gregory Sawicki: I feel that only studying steady State locomotion. Lena already kind of alluded to this.
+
+
+157
+00:18:34.523 --> 00:18:41.732
+Gregory Sawicki: It's not the best way to get at how people balance. We should be pushing on people and checking their perturbation response. And I think
+
+
+158
+00:18:42.023 --> 00:18:47.413
+Gregory Sawicki: that hasn't really been a common theme in the literature until pretty recently.
+
+
+159
+00:18:47.523 --> 00:18:59.132
+Gregory Sawicki: with the exception of standing balance world where they've been doing this for ages because they're smarter than locomotion people. Maybe dynamic locomotion community. Or maybe the experiments are just difficult
+
+
+160
+00:18:59.523 --> 00:19:12.802
+Gregory Sawicki: for a person walking to apply large scale perturbations. And now we, we finally have the tools where we can do this. But I think we should really be if we really want to understand balance and stability. We've got to push on the system
+
+
+161
+00:19:13.163 --> 00:19:18.582
+Gregory Sawicki: or give it obstacles or other other challenges that push it out of its steady cycle.
+
+
+162
+00:19:19.163 --> 00:19:27.293
+Gregory Sawicki: And in our group we've we've been trying to do this in a number of different ways. I don't have time to go through all of this stuff today. But
+
+
+163
+00:19:27.403 --> 00:19:34.812
+Gregory Sawicki: if you're interested you can check out some of the work by Taylor Dick, when she was in my lab where we just had people hop vertically
+
+
+164
+00:19:35.043 --> 00:19:48.333
+Gregory Sawicki: and then change the substrate height on them and check to see how they're in this case. We weren't looking at angular momentum. We were using mechanical energetics, which I'm going to argue could also be a nice way to think about balance and stability.
+
+
+165
+00:19:48.533 --> 00:19:54.573
+Gregory Sawicki: Other things you can do are like, slip a treadmill belt. I'll talk a little bit about this in a minute.
+
+
+166
+00:19:54.973 --> 00:20:05.793
+Gregory Sawicki: and then sliding platforms, and this is a case where we slid a platform during standing balance. But I'll show you in a little bit, too, that we now have techniques where we can slide the rug
+
+
+167
+00:20:06.033 --> 00:20:08.473
+Gregory Sawicki: even during dynamic locomotion.
+
+
+168
+00:20:09.463 --> 00:20:14.312
+Gregory Sawicki: So I just want to talk 1st a little bit about standing balance. And this is work with Lena
+
+
+169
+00:20:14.873 --> 00:20:17.913
+Gregory Sawicki: that we did. We completed a couple of years ago. Now
+
+
+170
+00:20:18.053 --> 00:20:21.472
+Gregory Sawicki: the question here was, whether or not if we, if we gave and
+
+
+171
+00:20:21.853 --> 00:20:25.583
+Gregory Sawicki: assistive torque from an angle exoskeleton
+
+
+172
+00:20:25.823 --> 00:20:29.873
+Gregory Sawicki: during a backwards perturbation that would pitch the person forward.
+
+
+173
+00:20:30.093 --> 00:20:32.502
+Gregory Sawicki: Could we keep them from taking a step?
+
+
+174
+00:20:34.943 --> 00:20:45.783
+Gregory Sawicki: Could we? Could they handle a perturbation? Another way to say it is. We evaluated balance by asking how large the perturbation would be before they needed to take a step.
+
+
+175
+00:20:46.603 --> 00:20:51.543
+Gregory Sawicki: and we hypothesized that if we gave them an ankle exoskeleton
+
+
+176
+00:20:51.753 --> 00:21:01.462
+Gregory Sawicki: with timing that was faster than the human's nervous system response that they would be able to withstand a larger, a larger perturbation before they took a step.
+
+
+177
+00:21:01.793 --> 00:21:02.913
+Gregory Sawicki: And
+
+
+178
+00:21:04.883 --> 00:21:14.373
+Gregory Sawicki: So here's just some some simple depiction of the protocol, quick surface displacement.
+
+
+179
+00:21:14.783 --> 00:21:25.853
+Gregory Sawicki: and then the red and blue are exoskeleton torques, which we purposefully applied as fast as we possibly could. After the perturbation onset.
+
+
+180
+00:21:26.243 --> 00:21:51.823
+Gregory Sawicki: the exoskeleton knew when the platform was going to move, so in that sense we were cheating. We told the exoskeleton to turn on as fast as possible in concert with the slide of the platform. Doing that in a real world system would be a little tougher, because you would need to detect something. But this was a basic science question. So you can see here we come on artificially fast, or we delayed to be around the latency
+
+
+181
+00:21:52.053 --> 00:22:05.913
+Gregory Sawicki: of the human response in the gray black background. Here is what a normal torque response looks like for a human reacting to this. So we just aligned the exo with the human's intent, or we made it go faster.
+
+
+182
+00:22:06.323 --> 00:22:07.028
+Gregory Sawicki: And
+
+
+183
+00:22:08.013 --> 00:22:09.762
+Gregory Sawicki: So here's what it looks like.
+
+
+184
+00:22:12.423 --> 00:22:18.713
+Gregory Sawicki: There. The exoskeleton is on. You can see a much more extreme plantar flexion in that right video.
+
+
+185
+00:22:19.043 --> 00:22:24.922
+Gregory Sawicki: And people are able to sort of swing their center of pressure out toward their toe much, much more quickly.
+
+
+186
+00:22:25.033 --> 00:22:30.633
+Gregory Sawicki: which may be a part of the reason they can balance better. And so what we again, what we did here.
+
+
+187
+00:22:30.803 --> 00:22:37.272
+Gregory Sawicki: this is just another approach to measuring balance that is more commonplace in the standing balance world
+
+
+188
+00:22:37.453 --> 00:22:40.632
+Gregory Sawicki: would be a lot more difficult, I think, to do this in
+
+
+189
+00:22:40.973 --> 00:22:44.153
+Gregory Sawicki: in walking, because it's very hard to make people
+
+
+190
+00:22:45.513 --> 00:22:54.813
+Gregory Sawicki: It's very hard to apply perturbations of different sizes in a randomized way during walking that makes this
+
+
+191
+00:22:54.933 --> 00:23:01.193
+Gregory Sawicki: approach viable. I think it's a little bit easier during standing, but the idea here is you just
+
+
+192
+00:23:01.343 --> 00:23:25.582
+Gregory Sawicki: keep giving them a larger and larger perturbation, with random, small perturbations interleaved in until they take a step. And you can fit these psychometric curves to their data to figure out where the 50% breakpoint is, and then that becomes your measure. It is a size of perturbation that causes more than 50% steps.
+
+
+193
+00:23:26.123 --> 00:23:37.882
+Gregory Sawicki: And what we found when we did this was that only in the condition where we gave the exoskeleton assistance. Fast, faster than human were we able to affect the the balance.
+
+
+194
+00:23:38.253 --> 00:23:39.603
+Gregory Sawicki: which was pretty cool.
+
+
+195
+00:23:41.133 --> 00:23:46.262
+Gregory Sawicki: and then there's a whole. You'll need to go read about this. I didn't have time to talk about it today.
+
+
+196
+00:23:46.583 --> 00:24:06.652
+Gregory Sawicki: There's this idea of global rather than local looks like I forgot to paste the key figure in here. But I'll just tell you the punchline we measured Emg and ultrasound around the ankle, and what we found was that in the very fast exoskeleton strategy we actually reduced the amount of stretch
+
+
+197
+00:24:07.143 --> 00:24:15.962
+Gregory Sawicki: in the calf muscles, and therefore probably reduce the the local neural response.
+
+
+198
+00:24:16.243 --> 00:24:26.693
+Gregory Sawicki: We can see that in our emg data. And still people were able to improve their balance. So what that suggests is that people are maybe using this global
+
+
+199
+00:24:26.803 --> 00:24:34.872
+Gregory Sawicki: center of mass level strategy where they use all the sensors in their body to estimate what their center of mass is doing.
+
+
+200
+00:24:35.363 --> 00:24:40.153
+Gregory Sawicki: And then that center of mass estimate is then used to farm out the control
+
+
+201
+00:24:40.333 --> 00:24:54.432
+Gregory Sawicki: kind of like what I was just talking about earlier with the foot placement, predictability idea that that Nidhi and and others have have put forth may be a generalizable principle for balance. And
+
+
+202
+00:24:54.643 --> 00:25:01.513
+Gregory Sawicki: yeah, our anecdotal results from this standing balance experiment suggest that that might be happening also.
+
+
+203
+00:25:02.373 --> 00:25:12.122
+Gregory Sawicki: Okay, I'm gonna pause there and see if people have questions, comments, feedback so far, maybe not.
+
+
+204
+00:25:13.483 --> 00:25:14.543
+Gregory Sawicki: No.
+
+
+205
+00:25:14.543 --> 00:25:15.713
+Jill McNitt-Gray: And quick question.
+
+
+206
+00:25:15.743 --> 00:25:16.343
+Lena Ting (she/her): Oh, good!
+
+
+207
+00:25:16.343 --> 00:25:17.113
+Gregory Sawicki: Yeah.
+
+
+208
+00:25:18.313 --> 00:25:21.433
+Jill McNitt-Gray: When they're farming out control. Did you find that
+
+
+209
+00:25:21.633 --> 00:25:24.673
+Jill McNitt-Gray: the strategies were consistent within individual.
+
+
+210
+00:25:28.803 --> 00:25:43.463
+Gregory Sawicki: Lena can probably speak in more detail to this, because she's got a number of papers on sort of stereotypy and balanced response. The short answer is definitely not. There's a lot of flexibility in
+
+
+211
+00:25:43.573 --> 00:25:45.952
+Gregory Sawicki: how the center of mass states
+
+
+212
+00:25:46.123 --> 00:26:10.183
+Gregory Sawicki: lead to both motor control. So Emg and also joint Torques in the lower limb. What I can tell you is that this is work by Kristin Jakobowski that I'm talking about now. I don't have a slide on it. But she's taken Lena's idea of a sensory motor response model, which is the idea that you can take the center of mass acceleration, velocity and position
+
+
+213
+00:26:10.363 --> 00:26:13.752
+Gregory Sawicki: and map it to emg responses in the leg.
+
+
+214
+00:26:13.903 --> 00:26:41.282
+Gregory Sawicki: Kristen converted that to map, to torque responses in the leg, and basically the model fits that you make to each individual's data come up with different gains. And so what that suggests is that there may be some. There are definitely individual differences between people and sort of how they map the center of mass state to their unique response. Lena, do you want to say more about that?
+
+
+215
+00:26:41.533 --> 00:26:48.652
+Lena Ting (she/her): Yeah, I mean, we did it in standing balance. But then Martin Ashdrift and Friedel de Groot actually translated it to
+
+
+216
+00:26:48.763 --> 00:27:03.013
+Lena Ting (she/her): joint torques during perturbations to walking actually, before we did. But they were looking more at just the amount of torque. And that is is interesting because it's different, because that one applies to the stance leg, and not the stepping leg.
+
+
+217
+00:27:03.013 --> 00:27:05.652
+Jill McNitt-Gray: Yeah, yeah, it's a teamwork thing. Yeah.
+
+
+218
+00:27:05.653 --> 00:27:10.332
+Lena Ting (she/her): But as far, I think, you were asking about the strategies. Are they individual, specific.
+
+
+219
+00:27:10.573 --> 00:27:30.342
+Jill McNitt-Gray: Yeah. So you're getting like, just building on what you said about farming out the control. So there's a detection. And then there's a strategy and the distribution of if you would in terms of, say, ankle, knee, and hip moments to achieve that overall whole body response in terms of angular impulse response.
+
+
+220
+00:27:30.453 --> 00:27:33.583
+Jill McNitt-Gray: I'm I'm guessing. That might be unique to the individual.
+
+
+221
+00:27:34.003 --> 00:27:42.272
+Lena Ting (she/her): Yeah. So we definitely showed that in people during the standing balance, not, maybe not
+
+
+222
+00:27:42.473 --> 00:27:46.459
+Lena Ting (she/her): at the torque level yet, but definitely at the emg level, I think.
+
+
+223
+00:27:47.943 --> 00:27:56.503
+Lena Ting (she/her): yes, so it should apply to the torque level. The other interesting thing that's anecdotal, and maybe we haven't published is that
+
+
+224
+00:27:56.743 --> 00:28:04.353
+Lena Ting (she/her): like when Jenny did these things. Sometimes when people get moved laterally, they like will take a step, or they'll hop, or they'll jump.
+
+
+225
+00:28:04.843 --> 00:28:05.263
+Jill McNitt-Gray: We.
+
+
+226
+00:28:05.263 --> 00:28:08.362
+Lena Ting (she/her): We once had a study when we were
+
+
+227
+00:28:08.853 --> 00:28:13.983
+Lena Ting (she/her): perturbing people in multiple directions, and I had to take a step to recover. And
+
+
+228
+00:28:14.793 --> 00:28:24.692
+Lena Ting (she/her): I really thought this was an error, because, like some people were taking a step with their right leg, and some people were taking a step with their left leg for the same direction of perturbation, and it was like.
+
+
+229
+00:28:25.283 --> 00:28:35.692
+Lena Ting (she/her): I was like, this can't be true so. But it was like some people were doing this like step out and other people doing a crossover step for the same direction, and it was
+
+
+230
+00:28:36.423 --> 00:28:39.752
+Lena Ting (she/her): highly repeatable and specific to the individual.
+
+
+231
+00:28:40.883 --> 00:28:44.053
+Jill McNitt-Gray: So that gets interesting from the reaction force generation that
+
+
+232
+00:28:44.313 --> 00:29:01.803
+Jill McNitt-Gray: that came from that right? So that going back to the net, angular impulse idea. Right? You've got 2 operators here and got 2 legs, and you have a center of mass trajectory. So the moment arms and the relative contribution of each leg gets really interesting. So that's why I was asking that. Yeah.
+
+
+233
+00:29:01.933 --> 00:29:03.842
+Jill McNitt-Gray: there might be something there from strategy.
+
+
+234
+00:29:03.843 --> 00:29:33.232
+Lena Ting (she/her): Yeah. And I don't think the step, the step placement, and the stance leg joint torque thing have really been combined to kind of look at. Okay, what? What is? How do I distribute the balance correction here between the stance leg which is going to be bringing you back to kind of the original trajectory. And then the step leg, which is basically creating a new equilibrium point or trajectory for you to go around.
+
+
+235
+00:29:35.713 --> 00:29:50.213
+Gregory Sawicki: Yeah, just a bit more anecdotal discussion on on these points, Jill. One thing that we see during I'll talk a little bit about Jenny's experiments in a minute, and you'll see this on a pie chart in a slide or 2, but like
+
+
+236
+00:29:50.363 --> 00:29:57.783
+Gregory Sawicki: when people get pitched so that their new stance leg is interfered
+
+
+237
+00:29:58.083 --> 00:30:13.683
+Gregory Sawicki: by their current stance leg. So one example of this is, I'm about to take a step on the ground with my right leg, imagine, and I get pitched backwards and leftward so I can't get my leg through my other leg behind me.
+
+
+238
+00:30:13.953 --> 00:30:14.273
+Jill McNitt-Gray: Right.
+
+
+239
+00:30:14.273 --> 00:30:19.572
+Gregory Sawicki: And what people who are. I don't know if we'll talk about what agile means later. If there's.
+
+
+240
+00:30:19.573 --> 00:30:20.323
+Lena Ting (she/her): Time today, but.
+
+
+241
+00:30:20.323 --> 00:30:21.892
+Jill McNitt-Gray: Oh, good! Some people.
+
+
+242
+00:30:21.893 --> 00:30:22.845
+Gregory Sawicki: 1st of all,
+
+
+243
+00:30:24.613 --> 00:30:31.723
+Gregory Sawicki: recognize this for whatever reason, and they hop on the current stance, leg backwards and leftward
+
+
+244
+00:30:31.853 --> 00:30:41.752
+Gregory Sawicki: to put. But they can't get their new stance leg there. They just use their current stance leg as a pogo stick.
+
+
+245
+00:30:42.233 --> 00:30:43.192
+Jill McNitt-Gray: Which is critical.
+
+
+246
+00:30:43.193 --> 00:30:44.832
+Gregory Sawicki: Like it is definitely
+
+
+247
+00:30:45.523 --> 00:30:55.063
+Gregory Sawicki: whether or not that comes from their center of mass detection and farm out strategy, I mean, who knows but it's a pretty unique strategy, that is.
+
+
+248
+00:30:55.703 --> 00:31:01.392
+Gregory Sawicki: we see it across multiple individuals. So it's not like, Oh, that person's a hopper, you know.
+
+
+249
+00:31:01.753 --> 00:31:10.092
+Jill McNitt-Gray: We see in a lot of sport related activities, right? Because something's blocked that that method or plan a doesn't work anymore. So they, the.
+
+
+250
+00:31:10.863 --> 00:31:11.293
+Lena Ting (she/her): Yeah.
+
+
+251
+00:31:11.293 --> 00:31:16.983
+Jill McNitt-Gray: Anecdotally. The people who avoid entry are the ones who have good plan. B's in uncertain circumstances. So
+
+
+252
+00:31:17.433 --> 00:31:22.493
+Jill McNitt-Gray: we've seen stuff in behavior in this space, so I'm not surprised by it. But it's great. You're detecting it.
+
+
+253
+00:31:22.633 --> 00:31:26.753
+Gregory Sawicki: In a work in a much more controlled scenario. So this is great.
+
+
+254
+00:31:26.873 --> 00:31:27.593
+Jill McNitt-Gray: Thanks.
+
+
+255
+00:31:28.313 --> 00:31:35.834
+Gregory Sawicki: Okay, I'm going to keep going, so we'll come back to the whole body. Angular momentum idea now. But this time
+
+
+256
+00:31:36.713 --> 00:31:41.783
+Gregory Sawicki: going to think about larger scale perturbations during walking.
+
+
+257
+00:31:42.053 --> 00:31:42.923
+Gregory Sawicki: So
+
+
+258
+00:31:42.923 --> 00:31:54.652
+Gregory Sawicki: remember, I mentioned that folks have been using angular momentum regulation to look at differences between, say, populations like amputation or Parkinson's, or stroke
+
+
+259
+00:31:55.053 --> 00:32:01.573
+Gregory Sawicki: during steady state walking, and the idea is that if the swing in the angular momentum during a steady gait is large.
+
+
+260
+00:32:01.773 --> 00:32:07.973
+Gregory Sawicki: that system is more unstable, and might and might be more vulnerable to falls risk
+
+
+261
+00:32:08.153 --> 00:32:19.262
+Gregory Sawicki: and like I mentioned, I think, that that's nice, but it would be good to know whether or not that same system that has angular momentum swing nominally also has trouble
+
+
+262
+00:32:19.383 --> 00:32:31.072
+Gregory Sawicki: responding in terms of angular momentum regulation to large scale perturbations. So that's what we tried to do in this experiment that Jenny led a few years ago. Now in the lab. And
+
+
+263
+00:32:31.490 --> 00:32:39.233
+Gregory Sawicki: a key thing was to be able to use this Karen system that we have, which is the treadmill is now up on a Stewart platform.
+
+
+264
+00:32:39.403 --> 00:32:46.613
+Gregory Sawicki: so we can pretty quickly trigger a acceleration velocity, displacement, perturbation
+
+
+265
+00:32:46.743 --> 00:32:55.473
+Gregory Sawicki: that is phase locked to the gate, and we can do it in multiple sizes. And we can also do it in multiple directions. So we think about this sort of around the whole clock.
+
+
+266
+00:32:55.803 --> 00:33:04.253
+Gregory Sawicki: and then we can observe the whole body, angular momentum pre during and post the perturbation and check to see
+
+
+267
+00:33:04.483 --> 00:33:10.032
+Gregory Sawicki: how well a person's able to bring their angular momentum back to some. Steady is the idea.
+
+
+268
+00:33:10.283 --> 00:33:12.916
+Gregory Sawicki: And so that's kind of
+
+
+269
+00:33:14.003 --> 00:33:23.193
+Gregory Sawicki: pictured here you have some, and this, by the way, we'll talk about this later. But I don't think it needs to be angular momentum. Some representation of the State
+
+
+270
+00:33:24.143 --> 00:33:26.932
+Gregory Sawicki: that you can observe would be good.
+
+
+271
+00:33:27.183 --> 00:33:54.072
+Gregory Sawicki: You apply a perturbation. That thing gets kicked in some way. And now maybe a lot of you are thinking about. If you took system dynamics or like spring mass mechanics, you hit, or any second order system. You hit it, and it sort of comes back to some steady nominal cycle after some time, and then you can measure things like how quickly that happens, how much overshoot there was, etc. So this thinking of knocking people off. Their steady.
+
+
+272
+00:33:54.193 --> 00:33:58.512
+Gregory Sawicki: I think, is useful because we have a lot of analytical tools to
+
+
+273
+00:33:58.643 --> 00:34:03.043
+Gregory Sawicki: come up with metrics, for how well people return, and maybe those are related to stability.
+
+
+274
+00:34:03.443 --> 00:34:07.472
+Gregory Sawicki: So, Jill, this is what I was talking about before these little red.
+
+
+275
+00:34:07.893 --> 00:34:24.003
+Gregory Sawicki: So what let me just 1st describe what we've got here. This is sort of a qualitative look at a large data set. People went through 96 different perturbations that covered lots of magnitude, directions and phases. And here we're trying to distill that down into a
+
+
+276
+00:34:24.333 --> 00:34:26.662
+Gregory Sawicki: sort of an infographic that
+
+
+277
+00:34:27.193 --> 00:34:36.563
+Gregory Sawicki: that categorizes how large the disruption in the angular momentum was in response to different types of perturbations.
+
+
+278
+00:34:36.853 --> 00:34:40.103
+Gregory Sawicki: And so what you can see here is that
+
+
+279
+00:34:40.363 --> 00:34:43.644
+Gregory Sawicki: I don't want to go into all the details. But,
+
+
+280
+00:34:44.433 --> 00:34:57.273
+Gregory Sawicki: There are a lot of situations where you get very large perturbations from different timings. But there's also these key things where people do things like jumping, and they come up with strategies that
+
+
+281
+00:34:57.563 --> 00:35:04.233
+Gregory Sawicki: have one leg leave the ground, for example. And so we can categorize that over sort of all the perturbations.
+
+
+282
+00:35:04.453 --> 00:35:10.203
+Gregory Sawicki: More importantly, these are the kind of data we get. So this is in the sagittal plane.
+
+
+283
+00:35:10.923 --> 00:35:13.693
+Gregory Sawicki: This is the whole body. Angular momentum.
+
+
+284
+00:35:13.693 --> 00:35:14.163
+Lena Ting (she/her): The.
+
+
+285
+00:35:14.163 --> 00:35:21.032
+Gregory Sawicki: Black curve is what you would observe during a steady gate cycle, and the colored curves represent
+
+
+286
+00:35:21.723 --> 00:35:26.483
+Gregory Sawicki: shifts in the angular momentum due to the perturbation which is here in the vertical dotted line
+
+
+287
+00:35:27.023 --> 00:35:37.803
+Gregory Sawicki: due to different directions of the perturbation which are color coded here. Okay? And what's cool about this is, you can see that the experiment does a really nice job of
+
+
+288
+00:35:38.143 --> 00:35:46.363
+Gregory Sawicki: dose response, modifying the whole body. Angular momentum response, which is really nice, gives us big data sets to work with.
+
+
+289
+00:35:46.513 --> 00:35:57.122
+Gregory Sawicki: This is the perturbed step. We can look at it in the next step also, and you can see that system's not back to normal even after one step. It's a multi-step process.
+
+
+290
+00:35:57.833 --> 00:36:00.523
+Gregory Sawicki: This is what it looks like in the frontal plane.
+
+
+291
+00:36:00.733 --> 00:36:14.653
+Gregory Sawicki: Again, really nice variation in what we can do to the frontal plane. Angular momentum. How we can perturb it both on the perturbed step and on the recovery step. So then the question then, is like, Okay, well.
+
+
+292
+00:36:15.423 --> 00:36:24.402
+Gregory Sawicki: what do you do with these data? What do they tell you about balance or not? I think that's still an open question. But our thinking is that
+
+
+293
+00:36:24.563 --> 00:36:31.013
+Gregory Sawicki: what we want to look at is multiple steps and check to see how far the system is from black
+
+
+294
+00:36:31.163 --> 00:36:38.553
+Gregory Sawicki: from the steady and then define some criterion by which we think the system is back near, steady.
+
+
+295
+00:36:39.023 --> 00:36:44.583
+Gregory Sawicki: and then measure the time. Maybe it takes to get back there, or the number of steps or something about time.
+
+
+296
+00:36:44.863 --> 00:36:54.723
+Gregory Sawicki: and maybe then, now we're starting to get at something like a more generalizable or standardized metric for stability. And there's a lot of chinks in that armor, I realize. But
+
+
+297
+00:36:54.973 --> 00:36:59.113
+Gregory Sawicki: that's sort of how we're we're thinking about it in the lab now
+
+
+298
+00:36:59.273 --> 00:37:05.463
+Gregory Sawicki: and then. What what do you do with that? Well, if you can, if if it's
+
+
+299
+00:37:05.743 --> 00:37:13.582
+Gregory Sawicki: if the data without an assistance or a clinical strategy or training suggests that that's a valid thing to do
+
+
+300
+00:37:14.153 --> 00:37:17.602
+Gregory Sawicki: valid thing, meaning use the whole body. Angular momentum
+
+
+301
+00:37:17.863 --> 00:37:21.903
+Gregory Sawicki: measured against steady. So the steady State error in that metric
+
+
+302
+00:37:22.193 --> 00:37:30.393
+Gregory Sawicki: as an indication of the current level of imbalance, then we should be able to estimate it and use it for feedback control.
+
+
+303
+00:37:30.783 --> 00:37:41.292
+Gregory Sawicki: Maybe that's what the nervous system of a person's doing. I think that's what her and Popovich would claim right that there's there's some kind of momentum regulator somewhere in the nervous system.
+
+
+304
+00:37:41.483 --> 00:37:53.282
+Gregory Sawicki: and if we could generate estimates for that angular momentum on our own, and then feed them into either a biofeedback training program or in our case we would love to do this in an exoskeleton.
+
+
+305
+00:37:53.503 --> 00:37:56.692
+Gregory Sawicki: Maybe we can just going back quickly. Here.
+
+
+306
+00:37:58.163 --> 00:38:03.792
+Gregory Sawicki: Take this green curve, for example. Maybe we can attenuate this deviation from black
+
+
+307
+00:38:04.383 --> 00:38:08.763
+Gregory Sawicki: by intervening with an exoskeleton to apply the right torque
+
+
+308
+00:38:09.293 --> 00:38:17.343
+Gregory Sawicki: to put the foot in the right place or regulate the center of pressure. So the idea is control strategies that collapse colors to black.
+
+
+309
+00:38:18.383 --> 00:38:24.192
+Gregory Sawicki: Okay, I'll pause there and see if there's any questions, comments
+
+
+310
+00:38:30.833 --> 00:38:34.472
+Gregory Sawicki: Jill. I see your comment. Do you want to talk it through.
+
+
+311
+00:38:34.733 --> 00:38:36.503
+Jill McNitt-Gray: Sure. So
+
+
+312
+00:38:37.193 --> 00:38:50.472
+Jill McNitt-Gray: a way to the way we've thought about this in well practiced school to rescue tasks are really looking at regulation of linear and angular momentum. So we're really looking at how the individual or opportunities to
+
+
+313
+00:38:50.603 --> 00:39:11.283
+Jill McNitt-Gray: to produce angular impulse, for example, recognizing there's more than one way to achieve that, especially if you've got 2 legs on the ground. You've got a center mass trajectory. And you just think about center mass position relative to the feet. There's a position. Vector, you've got a reaction force with magnitude direction. And you have time on the ground as an impulse. Right? So
+
+
+314
+00:39:11.313 --> 00:39:26.812
+Jill McNitt-Gray: when you look at Antonia Zafiri, who has done a lot of this and dance and other things. We've done stuff in golf, which is a dynamic balance, perturbation. If you think of it that way, but you get to see what the role of each legs are and how individuals solve the problem
+
+
+315
+00:39:26.813 --> 00:39:37.303
+Jill McNitt-Gray: and what we're finding in these again, goal directed, well practiced tasks, is individuals will have different solutions which gets very interesting. That was kind of a basis of my previous question.
+
+
+316
+00:39:37.303 --> 00:40:00.072
+Jill McNitt-Gray: but it does characterize where their priorities are. And then some nice things that Antonia did is. She looked at single double and triple turns, so she was able to see if you need this much angular impulse, what do you do? But if you need more and more, where does that come from? And so this is the management and the regulation of it, and having strategies to amplify, you know.
+
+
+317
+00:40:00.113 --> 00:40:17.773
+Jill McNitt-Gray: and this would be similar to speed or other any other performance objective. But this is, there's at least what we've seen is there's individual differences here to pay attention to, and there's more than one way to get the same regulation. So that's my, yeah. So this is really great to see what you've got here. Thank you.
+
+
+318
+00:40:17.773 --> 00:40:27.813
+Gregory Sawicki: Yeah, I mean, I think, just to piggyback off that. What that might mean is that this generalizable idea isn't isn't generalizable right? We need to pay attention to
+
+
+319
+00:40:28.013 --> 00:40:37.342
+Gregory Sawicki: an individual's baseline balance, response, and feed that prescriptively into their tailored intervention. Possibly right.
+
+
+320
+00:40:37.343 --> 00:40:38.723
+Jill McNitt-Gray: Patrol, Patrol.
+
+
+321
+00:40:38.723 --> 00:40:39.343
+Gregory Sawicki: Okay.
+
+
+322
+00:40:39.343 --> 00:40:42.202
+Jill McNitt-Gray: Choices that they're making right, and
+
+
+323
+00:40:42.473 --> 00:40:44.863
+Jill McNitt-Gray: they might be their their personal.
+
+
+324
+00:40:45.313 --> 00:41:13.823
+Jill McNitt-Gray: You know you could have a situation where they wait that high in terms of the control logic, but it may not work for them right? So so that might be that their go to. But it may be also the source of the problem. Right? So it could be that you use that knowledge about that individuals. And then you figure out, well, that's not going to work. In these circumstances there's a need for discovering an alternative. So that's what.
+
+
+325
+00:41:13.823 --> 00:41:18.853
+Gregory Sawicki: Maybe there are. Maybe there are sort of categories of response to like.
+
+
+326
+00:41:19.043 --> 00:41:27.382
+Gregory Sawicki: yeah, you can. If you could identify who's a jumper versus who's a center of pressure stabilizer versus? Who's a stepper
+
+
+327
+00:41:27.753 --> 00:41:28.773
+Gregory Sawicki: then?
+
+
+328
+00:41:28.933 --> 00:41:38.332
+Gregory Sawicki: And I think that's what you're saying. Maybe maybe populations fall into categories like this. Possibly that would that would make it a little easier to deal with the individual variation right?
+
+
+329
+00:41:38.333 --> 00:41:45.262
+Jill McNitt-Gray: And I think the ability to hop on one leg while off balance is not always available to everybody. So this is the part where we talk about.
+
+
+330
+00:41:45.263 --> 00:41:45.822
+Gregory Sawicki: For sure.
+
+
+331
+00:41:45.823 --> 00:41:50.492
+Jill McNitt-Gray: Individuals capabilities to move into a plan. B, with that is.
+
+
+332
+00:41:51.103 --> 00:41:57.843
+Jill McNitt-Gray: you know what I mean. Like, they may not be available to everyone because of their cap capacities.
+
+
+333
+00:41:59.483 --> 00:42:01.143
+Gregory Sawicki: Okay, I'm going to keep going.
+
+
+334
+00:42:01.453 --> 00:42:14.913
+Gregory Sawicki: Yeah. So again, the general idea here is, bring folks back onto the Karen. But this time with a device where the device is. What we're trying to do actually is use some machine learning techniques to forecast
+
+
+335
+00:42:15.103 --> 00:42:26.963
+Gregory Sawicki: what the joint moment response will be sometime in the future, and then pull that anticipated response to now again trying to be faster than the human, if possible. Right? And this is.
+
+
+336
+00:42:27.083 --> 00:42:30.973
+Gregory Sawicki: I don't know. It's it's a challenging problem. We'll see if we're able to pull it off.
+
+
+337
+00:42:31.843 --> 00:42:34.953
+Gregory Sawicki: Okay? So I want to talk about another
+
+
+338
+00:42:35.303 --> 00:42:39.012
+Gregory Sawicki: perturbation paradigm that we've been using, which is belt slips now.
+
+
+339
+00:42:39.793 --> 00:42:47.643
+Gregory Sawicki: So this one is, I would say, more common than the than the slides during walking, just because it's a little bit easier to do in the lab.
+
+
+340
+00:42:47.783 --> 00:42:48.703
+Gregory Sawicki: But
+
+
+341
+00:42:49.223 --> 00:42:58.463
+Gregory Sawicki: all you do is you and again you can control the timing of this. That's what I'm showing here. We did this, during early and late stance of the stance leg.
+
+
+342
+00:42:58.623 --> 00:43:03.133
+Gregory Sawicki: we accelerated the treadmill belt backwards.
+
+
+343
+00:43:03.713 --> 00:43:18.872
+Gregory Sawicki: and by doing it at different times you can control the mechanical energy flow from the treadmill into the leg to make it either inject or absorb energy. So if you, if you slide the belt during the breaking phase of the gait.
+
+
+344
+00:43:19.243 --> 00:43:33.412
+Gregory Sawicki: What you do is you take energy and put it into the leg. So now the system's got to deal with a higher level of mechanical energy in the ensuing steps. If you wait until late and you slip the belt, the treadmill is sucking energy from the leg.
+
+
+345
+00:43:33.553 --> 00:43:37.203
+Gregory Sawicki: So you put the person at an energy deficit in that case.
+
+
+346
+00:43:37.443 --> 00:43:48.993
+Gregory Sawicki: and that's kind of cool. Because then you can set up the question like, How does the leg? How does the neuromechanics of a leg deal with energy surplus versus energy deficit.
+
+
+347
+00:43:49.293 --> 00:43:52.533
+Gregory Sawicki: And so that's what we try to do in Paul's work. And
+
+
+348
+00:43:53.453 --> 00:44:06.822
+Gregory Sawicki: I don't want to belabor the details here. But what we were able to do is an inverse dynamics analysis, and then we could see which of the joints handled the whole leg energy change best.
+
+
+349
+00:44:06.953 --> 00:44:13.213
+Gregory Sawicki: and what we found was that the contralateral knee? So if I slip your right leg.
+
+
+350
+00:44:13.323 --> 00:44:18.883
+Gregory Sawicki: your left knee's next step is where the action seems to be happening
+
+
+351
+00:44:19.183 --> 00:44:33.622
+Gregory Sawicki: now. Whether or not that's, you know, a generalizable fundamental truth, or has to do with this specific perturbation. We're not sure but it sets up a pretty nice framework, where we kind of know how the joints are dealing with a
+
+
+352
+00:44:33.753 --> 00:44:36.723
+Gregory Sawicki: with an energy change imposed on the body.
+
+
+353
+00:44:37.593 --> 00:44:41.102
+Gregory Sawicki: And then what Paul did is he built a hip exoskeleton.
+
+
+354
+00:44:43.113 --> 00:44:45.453
+Gregory Sawicki: You can see the belt's going to slip here.
+
+
+355
+00:44:46.233 --> 00:44:53.582
+Gregory Sawicki: What we're hoping this device does is help get the person's swing leg out in front of them faster after the belt slips their leg.
+
+
+356
+00:44:54.023 --> 00:45:05.952
+Gregory Sawicki: Okay. So if I have a spring loaded, if I have a spring that's on the front side of my hip, and I and the treadmill pulls that leg backwards. What I do is I load that spring.
+
+
+357
+00:45:06.303 --> 00:45:10.422
+Gregory Sawicki: and then the recoil that is now in that spring
+
+
+358
+00:45:10.533 --> 00:45:17.432
+Gregory Sawicki: should be able to accelerate the next step of that leg and provide a stabilizing response. That was the idea.
+
+
+359
+00:45:17.433 --> 00:45:17.993
+Lena Ting (she/her): Okay.
+
+
+360
+00:45:18.603 --> 00:45:19.583
+Gregory Sawicki: And
+
+
+361
+00:45:21.023 --> 00:45:30.743
+Gregory Sawicki: what we found. Basically, I'm going to speed through these. And again, this is just another approach. Instead of using whole body angular momentum. Now we're summing the joint energies in the leg.
+
+
+362
+00:45:30.883 --> 00:45:38.093
+Gregory Sawicki: and we're asking when the leg joint powers come back to a steady state cycle rather than the momentums around the body.
+
+
+363
+00:45:38.333 --> 00:45:43.392
+Gregory Sawicki: and I I kind of like the energy accounting a bit better because it
+
+
+364
+00:45:43.833 --> 00:45:50.482
+Gregory Sawicki: because it handles both internal and external energy, flows the whole body. Angular momentum
+
+
+365
+00:45:50.723 --> 00:46:00.592
+Gregory Sawicki: really only handles segment energies. With respect to the center of mass, you would need to do something like, Jill said, and add linear momentum into that to really capture everything.
+
+
+366
+00:46:00.853 --> 00:46:08.733
+Gregory Sawicki: If you go straight to inverse dynamics, you capture sort of all the internal energies
+
+
+367
+00:46:09.003 --> 00:46:18.653
+Gregory Sawicki: of the leg and the part of the energy that goes to drive the center of mass all at once. So it kind of it's a 100% pi
+
+
+368
+00:46:18.923 --> 00:46:21.493
+Gregory Sawicki: that things kind of need to add up to
+
+
+369
+00:46:21.673 --> 00:46:27.353
+Gregory Sawicki: from energy, thinking that that we like. And that's so, that's just another approach to thinking about
+
+
+370
+00:46:27.703 --> 00:46:32.422
+Gregory Sawicki: stability. So here again, this is what the whole body angular momentum looks like.
+
+
+371
+00:46:34.323 --> 00:46:44.432
+Gregory Sawicki: We weren't able to really do much with the exoskeleton post-perturbation. We did make the angular momentum in steady state fluctuate more, which
+
+
+372
+00:46:44.633 --> 00:46:52.772
+Gregory Sawicki: you know the community would say you made someone's fall risk. Go up when you put a spring on their body, because their whole body. Angular momentum
+
+
+373
+00:46:52.883 --> 00:46:57.672
+Gregory Sawicki: had a larger amplitude in the steady state. So we don't know that's possible.
+
+
+374
+00:46:57.873 --> 00:47:03.482
+Gregory Sawicki: The key thing that we were looking for is here. Whether or not, the springs of different stiffnesses
+
+
+375
+00:47:03.863 --> 00:47:14.952
+Gregory Sawicki: can can reduce the whole body angular momentum. Below this black bar, which is the amount that the whole body, angular momentum changes due to the perturbation, and the answer was, No, so that was kind of a bummer.
+
+
+376
+00:47:15.433 --> 00:47:21.593
+Gregory Sawicki: And then we also looked at the mechanical energetics just to check another way of measuring stability.
+
+
+377
+00:47:21.933 --> 00:47:27.313
+Gregory Sawicki: and we also found the answer that no, none of the
+
+
+378
+00:47:27.463 --> 00:47:33.662
+Gregory Sawicki: exoskeletons were able to attenuate changes in the mechanical energy due to the perturbation.
+
+
+379
+00:47:34.002 --> 00:47:38.722
+Gregory Sawicki: And this may just be because it's a passive device, and it's a spring.
+
+
+380
+00:47:38.872 --> 00:47:42.743
+Gregory Sawicki: and it's not able to modulate mechanical work.
+
+
+381
+00:47:44.252 --> 00:47:47.432
+Gregory Sawicki: Sort of on an optimal timing.
+
+
+382
+00:47:48.122 --> 00:47:50.353
+Gregory Sawicki: Okay? So I'm going to pause there again.
+
+
+383
+00:47:51.143 --> 00:47:53.122
+Gregory Sawicki: We're going to go into a
+
+
+384
+00:47:53.343 --> 00:47:58.642
+Gregory Sawicki: more interactive whiteboard sort of part of the talk in a minute. But I want to leave it here just to
+
+
+385
+00:47:59.763 --> 00:48:04.553
+Gregory Sawicki: see if folks have any thoughts, comments on which of these approaches for
+
+
+386
+00:48:05.023 --> 00:48:16.392
+Gregory Sawicki: assessing stability, slash balance you've used and which ones you like. What are the trade-offs, etc? We can spend a few minutes talking through that if folks want to.
+
+
+387
+00:48:26.773 --> 00:48:42.433
+Gregory Sawicki: Ok, seems like the crowd is dead. So I just want to before moving on to the next part, like, there's a few key things that I think I've taken over the last 5 plus years of starting to really think about balance in the lab. One is.
+
+
+388
+00:48:42.662 --> 00:48:53.542
+Gregory Sawicki: I don't think you really know much about balance unless you study perturbation response. And so that's sort of a I think, a key hallmark. If you want to study balance, you should.
+
+
+389
+00:48:53.843 --> 00:49:06.963
+Gregory Sawicki: You can go ahead and check things in steady state. But you probably should push the system and see how it responds. If you, if you want to say anything about level and of imbalance, or whether certain scenarios are more stable.
+
+
+390
+00:49:07.063 --> 00:49:15.973
+Gregory Sawicki: And then the other thing is that accounting for the center of mass mechanics in some way
+
+
+391
+00:49:16.373 --> 00:49:27.553
+Gregory Sawicki: seems to be important. And I'll say that based on the idea that there's mounting evidence that there's something special about center of mass
+
+
+392
+00:49:27.693 --> 00:49:36.833
+Gregory Sawicki: state orchestrating the balance response in legged systems. And so we should be looking at. We should be thinking about
+
+
+393
+00:49:37.023 --> 00:49:45.423
+Gregory Sawicki: at least as part of our cocktail, maybe not. Just fluctuations in energy around the center of mass. But also what the center of mass itself is doing.
+
+
+394
+00:49:46.123 --> 00:49:53.092
+Gregory Sawicki: Okay, so let's go on to the next section here. So what I want to do next is
+
+
+395
+00:49:53.633 --> 00:49:56.693
+Gregory Sawicki: try to use a simple model to think about
+
+
+396
+00:49:56.893 --> 00:50:07.873
+Gregory Sawicki: a way to define stability, but also bring in the idea of agility like, what do we? What do we mean when we say stability versus agility? And how might they be different?
+
+
+397
+00:50:08.053 --> 00:50:25.682
+Gregory Sawicki: And so I think I've shown this model a bunch of times in this community before. But we're going to use a simple, vertical, hopping model like I said, it lets us look at the center of mass mechanics directly. Just imagine a mass moving up and down
+
+
+398
+00:50:26.013 --> 00:50:33.043
+Gregory Sawicki: and being driven by a ground reaction force. And in this case I've got a muscle tendon unit that's driving the force on the ground.
+
+
+399
+00:50:33.163 --> 00:50:38.862
+Gregory Sawicki: That's not going to be really that important for what we go through in the next number of slides. But
+
+
+400
+00:50:39.113 --> 00:50:42.852
+Gregory Sawicki: obviously, I'm interested in muscle tendon units. So the actuator
+
+
+401
+00:50:42.983 --> 00:50:48.893
+Gregory Sawicki: that drives the center of mass that we're going to think about is going to be a muscle tendon unit.
+
+
+402
+00:50:49.053 --> 00:50:50.292
+Gregory Sawicki: Okay? And then
+
+
+403
+00:50:50.873 --> 00:50:59.602
+Gregory Sawicki: what this simple model does is it takes a square wave input as sort of a nerve signal on a feedforward clock.
+
+
+404
+00:50:59.833 --> 00:51:04.033
+Gregory Sawicki: and it uses a hill type model to turn that into activation.
+
+
+405
+00:51:04.253 --> 00:51:08.213
+Gregory Sawicki: and then it uses the length, velocity.
+
+
+406
+00:51:08.503 --> 00:51:15.293
+Gregory Sawicki: the force, length, and force velocity relationships to derive what the force is at any given time, and then that gets pushed through a tendon.
+
+
+407
+00:51:15.943 --> 00:51:24.483
+Gregory Sawicki: and the tendon can then modify the length and velocity that the muscle sees in ongoing hops, and that that has an effect on force and work output.
+
+
+408
+00:51:25.133 --> 00:51:27.293
+Gregory Sawicki: Okay, so
+
+
+409
+00:51:27.713 --> 00:51:36.762
+Gregory Sawicki: that's basically the the framing of the model. Now, how do we use a simple model like this to think about, not just stability or economy or agility alone.
+
+
+410
+00:51:36.933 --> 00:51:44.033
+Gregory Sawicki: but maybe the trade-offs between all 3 of them is a question that we've been working on in the lab for a bit. Now.
+
+
+411
+00:51:44.193 --> 00:51:48.513
+Gregory Sawicki: I'm not going to spend really hardly any time on the efficiency part. Today.
+
+
+412
+00:51:48.783 --> 00:52:16.062
+Gregory Sawicki: We're going to talk more about the stability and agility parts. But one thing I want to emphasize here is that all 3 of these things, the way that we're going to talk about them today are defined using energy. So like mechanical energy is at the core of this. And I think that that's important. You could also do the same thing with momentum. But we're going to stick with energy because we can then relate amounts of energy across the domains. How much energy did it take
+
+
+413
+00:52:16.363 --> 00:52:31.343
+Gregory Sawicki: to make an agile maneuver versus? How much energy did it take to dissipate an external perturbation, for example? And then how much metabolic energy did it take to drive the mechanical energy in a limit cycle?
+
+
+414
+00:52:31.533 --> 00:52:44.782
+Gregory Sawicki: Right? So this idea of common currency of energy, I think it makes it nice to then think about multi-objective systems where we might want to sort of have our cake and eat it, too. Do do well at all. 3.
+
+
+415
+00:52:45.513 --> 00:52:46.873
+Gregory Sawicki: Okay, so
+
+
+416
+00:52:50.353 --> 00:53:00.132
+Gregory Sawicki: I already talked about this a little bit. But let's focus on stability and agility. Now, what I want to get to is the idea that stability is
+
+
+417
+00:53:02.003 --> 00:53:06.253
+Gregory Sawicki: from an established limit cycle which we'll try to draw out in a little bit.
+
+
+418
+00:53:06.513 --> 00:53:13.792
+Gregory Sawicki: But you can imagine a circle, and the the system is going around a circle that represents its position and velocity.
+
+
+419
+00:53:14.333 --> 00:53:19.893
+Gregory Sawicki: If the environment, or some unexpected
+
+
+420
+00:53:20.093 --> 00:53:24.762
+Gregory Sawicki: momentum or energy knocks that system off of its steady cycle.
+
+
+421
+00:53:25.803 --> 00:53:44.382
+Gregory Sawicki: we can think about how long it takes for it to get back to steady. Now Alina's already going to raise her hand and say, Wait, we just 20 min ago you agreed that you can go to a different limit cycle, and that would be Ok. For today. The experiment in the lab is that a person's on a metronome.
+
+
+422
+00:53:44.663 --> 00:53:55.273
+Gregory Sawicki: and they're hopping to a certain height. So we've we've set their steady State limit cycle, and they've been instructed to maintain it. So their task level goal is, stay on that limit. Cycle.
+
+
+423
+00:53:55.923 --> 00:54:02.982
+Gregory Sawicki: Okay? And what we want to understand is whether different setups of the muscle tendon unit and nervous system
+
+
+424
+00:54:03.143 --> 00:54:08.933
+Gregory Sawicki: do better at getting back to the limit cycle fast when a perturbation comes.
+
+
+425
+00:54:09.173 --> 00:54:12.543
+Gregory Sawicki: Okay, so keep that idea in your head as a notion of stability.
+
+
+426
+00:54:13.253 --> 00:54:17.042
+Gregory Sawicki: What do I mean by agility? So now, agility.
+
+
+427
+00:54:17.323 --> 00:54:22.783
+Gregory Sawicki: I would like to argue, is different, because it involves a volitional change by the animal, or
+
+
+428
+00:54:22.943 --> 00:54:35.602
+Gregory Sawicki: could be a human animal by the robot, by the system to move to a defined other limit cycle. That's not at the same energy. So now the experiment in the lab is, I'm hopping in place.
+
+
+429
+00:54:35.733 --> 00:54:37.913
+Gregory Sawicki: I'm following a metronome.
+
+
+430
+00:54:38.063 --> 00:54:42.653
+Gregory Sawicki: I am height locked, and I either change the metronome beat.
+
+
+431
+00:54:42.783 --> 00:54:46.333
+Gregory Sawicki: or I change the height that you need to achieve or both.
+
+
+432
+00:54:46.863 --> 00:54:50.552
+Gregory Sawicki: And I ask how quickly the system can get to that new
+
+
+433
+00:54:50.693 --> 00:54:57.203
+Gregory Sawicki: task which is a limit cycle that exists at a different energy level. I could also do that at a lower
+
+
+434
+00:54:57.513 --> 00:55:04.072
+Gregory Sawicki: energy level. I could say I could change the frequency and amplitude of the cycle to either have more or less energy.
+
+
+435
+00:55:04.583 --> 00:55:08.443
+Gregory Sawicki: Okay, so pause any feedback on those ideas.
+
+
+436
+00:55:08.443 --> 00:55:14.143
+Monica Daley (she, her): Greg until I had a conversation with Lena at Cmb. I would have totally agreed with that definition of
+
+
+437
+00:55:14.293 --> 00:55:15.773
+Monica Daley (she, her): agility.
+
+
+438
+00:55:16.053 --> 00:55:24.342
+Monica Daley (she, her): But then Lena challenged it and said, what about Slalom skiing?
+
+
+439
+00:55:24.573 --> 00:55:32.052
+Monica Daley (she, her): That's definitely an agility task where you're basically trying to keep your center of mass
+
+
+440
+00:55:33.323 --> 00:55:39.382
+Monica Daley (she, her): dynamics, basically kind of very smooth. And your legs are going crazy underneath you, right?
+
+
+441
+00:55:39.603 --> 00:55:58.822
+Monica Daley (she, her): And so in that sort of example, you would need to include. If you want an energy based agility metric you would need to include internal energy flows, or something like that right to maintain a desired trajectory given external perturbations away from it.
+
+
+442
+00:55:59.293 --> 00:56:04.982
+Gregory Sawicki: For sure, so I would. I would flip that and say, that's stability, not agility.
+
+
+443
+00:56:04.983 --> 00:56:05.949
+Monica Daley (she, her): Scaling. Yeah.
+
+
+444
+00:56:06.433 --> 00:56:11.422
+Gregory Sawicki: So like you are, you're using agile maneuvers of the leg
+
+
+445
+00:56:11.663 --> 00:56:32.743
+Gregory Sawicki: to keep to maintain the energy of the center of mass within an envelope. So I would actually call that stability. I think that falls under my stability category more than the agility one. There's totally a gray area here. I get. But the way you describe the task goal was like, basically keep my position constant and my velocity within an
+
+
+446
+00:56:32.873 --> 00:56:38.143
+Gregory Sawicki: right like my relative, the relative position of the ground contact to my
+
+
+447
+00:56:38.693 --> 00:56:40.793
+Gregory Sawicki: well, how should I say this
+
+
+448
+00:56:40.903 --> 00:56:58.033
+Gregory Sawicki: if I were to draw sort of the limit cycle of that? Your average position is going downhill at a constant velocity, and you're trying to keep changes away from that position and velocity to a minimum. So it's almost like standing balance in a moving reference frame.
+
+
+449
+00:56:58.443 --> 00:57:15.462
+Gregory Sawicki: And in that case I totally agree that you want to look at not just the energy on the center of mass, but the internal energy exchanges between the segments become important. I think, that gets captured by a full leg. Inverse dynamics approach to characterizing the energy. Maybe.
+
+
+450
+00:57:15.463 --> 00:57:18.993
+Monica Daley (she, her): Well, I have a comment about inverse dynamics, though, as well
+
+
+451
+00:57:19.333 --> 00:57:44.792
+Monica Daley (she, her): is, if you're looking at a joint level, you're not actually capturing all of the relevant energy flows because there are multi-articular muscles in the system. Right? And so if you really wanted to capture all of the relevant energy flows, you'd need to consider the exchange between, like the biarticular hip and knee extensors versus the, you know, multi articular distal limb muscles right.
+
+
+452
+00:57:44.793 --> 00:57:48.573
+Gregory Sawicki: Yeah, totally. Yeah. The buyer articulations are definitely not handled. True.
+
+
+453
+00:57:48.863 --> 00:57:54.542
+Gregory Sawicki: I think you can still see a little bit of exchange between joints. So that's something that gives you.
+
+
+454
+00:57:54.543 --> 00:57:54.913
+Monica Daley (she, her): Sometimes.
+
+
+455
+00:57:54.913 --> 00:57:55.353
+Gregory Sawicki: More, about.
+
+
+456
+00:57:55.353 --> 00:58:09.423
+Monica Daley (she, her): Get a very false impression of, for example, the amount of power that's actually generated at the ankle, which in reality might have been generated by proximal muscles and transferred basically downstream right.
+
+
+457
+00:58:10.013 --> 00:58:10.603
+Gregory Sawicki: Totally.
+
+
+458
+00:58:11.043 --> 00:58:12.283
+Gregory Sawicki: Yeah. I mean.
+
+
+459
+00:58:12.713 --> 00:58:19.983
+Gregory Sawicki: it is conceivable to do all this stuff in a model that has complex biarticular muscles, too. Right? I mean, I think.
+
+
+460
+00:58:20.303 --> 00:58:20.963
+Gregory Sawicki: but I can.
+
+
+461
+00:58:20.963 --> 00:58:25.233
+Monica Daley (she, her): Hard because you have to optimize it. Things like that to get this.
+
+
+462
+00:58:25.233 --> 00:58:26.143
+Gregory Sawicki: For sure.
+
+
+463
+00:58:26.993 --> 00:58:30.383
+Gregory Sawicki: I guess I'm just trying to advocate that. Looking at the energy
+
+
+464
+00:58:30.933 --> 00:58:36.572
+Gregory Sawicki: isn't a bad idea and thinking about how the energy is regulated, maybe isn't a bad idea.
+
+
+465
+00:58:37.333 --> 00:58:42.802
+Gregory Sawicki: because it might help us talk across the agility, stability line and kind of
+
+
+466
+00:58:43.103 --> 00:58:47.912
+Gregory Sawicki: maybe there is a continuum of when behavior switches. Another example is like
+
+
+467
+00:58:48.193 --> 00:58:53.073
+Gregory Sawicki: when I first, st when a person 1st receives a perturbation on the Karen.
+
+
+468
+00:58:53.843 --> 00:59:01.393
+Gregory Sawicki: there is a time period after that which I would think about as Oh, it's a stabilizing
+
+
+469
+00:59:01.903 --> 00:59:08.353
+Gregory Sawicki: action. But then agile maneuvers might be used to stabilize right? It's kind of like.
+
+
+470
+00:59:08.473 --> 00:59:15.113
+Gregory Sawicki: especially if it's a multi-step process like in that 1st step, if I'm still at an energy difference.
+
+
+471
+00:59:15.723 --> 00:59:17.223
+Gregory Sawicki: Now I'm like.
+
+
+472
+00:59:17.653 --> 00:59:31.262
+Gregory Sawicki: now I've had enough time to volitionally decide. I think that's the key thing like it's not the automaticity anymore of intrinsic mechanics or reflexes. Now, I've got volitional feedforward control that I can change.
+
+
+473
+00:59:31.563 --> 00:59:39.903
+Gregory Sawicki: I'm not. Then the line between stability and agility gets really blurry because I'm using agile maneuvers to stabilize at that point.
+
+
+474
+00:59:39.903 --> 00:59:49.883
+Monica Daley (she, her): Right? So I think sometimes we're, there's a lot of language that suggests there's like a direct trade off between stability and agility or something. But, in fact, there's a lot of overlap.
+
+
+475
+00:59:49.883 --> 00:59:50.323
+Gregory Sawicki: Yeah.
+
+
+476
+00:59:50.323 --> 00:59:50.853
+Monica Daley (she, her): Right.
+
+
+477
+00:59:50.853 --> 00:59:51.563
+Gregory Sawicki: Totally.
+
+
+478
+00:59:51.563 --> 00:59:52.243
+Monica Daley (she, her): And.
+
+
+479
+00:59:52.243 --> 00:59:52.903
+Gregory Sawicki: Yeah.
+
+
+480
+00:59:52.903 --> 01:00:11.603
+Monica Daley (she, her): Agility also gets into this idea that Jill was mentioning about capacity right? Like, if you have more capacity, then you're going to be more agile. But then you'll be able to use agile maneuvers to maintain stability across like a wider range of possible energy states and limit cycles right.
+
+
+481
+01:00:12.913 --> 01:00:17.302
+Gregory Sawicki: Yeah, totally. I mean, I think, yeah, there's definitely no hard line.
+
+
+482
+01:00:17.583 --> 01:00:18.963
+Lena Ting (she/her): I think also.
+
+
+483
+01:00:20.193 --> 01:00:31.233
+Lena Ting (she/her): there's also like a lot of people like Jill and sports, people have ideas about what agility is. And I want to make sure we don't make a definition that is like
+
+
+484
+01:00:32.283 --> 01:00:41.223
+Lena Ting (she/her): not considering those and that can apply. Or you think about agile business practices. Right?
+
+
+485
+01:00:41.393 --> 01:00:49.872
+Lena Ting (she/her): It means you. Wanna you can change quickly without expending all of your resources. So there's some
+
+
+486
+01:00:50.733 --> 01:00:55.723
+Lena Ting (she/her): balance there, right? I was just thinking about it. What does it mean? It means like you.
+
+
+487
+01:00:59.263 --> 01:01:02.733
+Lena Ting (she/her): It shouldn't be all about power, or
+
+
+488
+01:01:04.033 --> 01:01:09.613
+Lena Ting (she/her): you know you want to be nimble like a you know. Where does.
+
+
+489
+01:01:09.613 --> 01:01:22.142
+Gregory Sawicki: I mean another another thing that. And this comes from conversations that I've had over the last few weeks with people like Madhu Vankadesen. When I saw him at Amm and Lena, and and Monica at Isb and Cnb.
+
+
+490
+01:01:22.243 --> 01:01:29.613
+Gregory Sawicki: I think there's also in my mind. There's a struggle between thinking about impulse, momentum.
+
+
+491
+01:01:29.723 --> 01:01:34.853
+Gregory Sawicki: which only considers the velocity or the kinetic energy parts of the system
+
+
+492
+01:01:35.023 --> 01:01:41.413
+Gregory Sawicki: versus thinking about work, energy which can, in the case of a system that is
+
+
+493
+01:01:41.643 --> 01:01:56.683
+Gregory Sawicki: a terrestrial animal on Earth. There's a gravitational potential there. There are springs potentially in the leg that can be potential energy wells. And neither you can imagine a case where a muscle tries to respond in an agile way.
+
+
+494
+01:01:57.073 --> 01:02:02.183
+Gregory Sawicki: and it doesn't show up as an immediate change in the kinetic energy of the center of mass.
+
+
+495
+01:02:02.293 --> 01:02:05.092
+Gregory Sawicki: And I'm not sure it's okay to call that agile
+
+
+496
+01:02:05.603 --> 01:02:10.012
+Gregory Sawicki: because the acceleration of the body the change in momentum.
+
+
+497
+01:02:10.773 --> 01:02:30.153
+Gregory Sawicki: It may happen a bit later, because these storage elements can then shuffle it later. But the immediacy of the response doesn't show up the center of mass directly. Right? So I think a key distinction between momentum and energy is that the energy approach captures the energy inputs from the muscles completely.
+
+
+498
+01:02:30.783 --> 01:02:32.852
+Gregory Sawicki: But it but it doesn't.
+
+
+499
+01:02:33.733 --> 01:02:39.093
+Gregory Sawicki: You're not agile if you stand in place and quickly load energy into your tendon right
+
+
+500
+01:02:39.673 --> 01:02:47.132
+Gregory Sawicki: until the center of mass is moved. Anyway, I'm not sure if that's right or not. But there is that complication in terrestrial systems where.
+
+
+501
+01:02:47.959 --> 01:02:51.362
+Gregory Sawicki: the potential energy is a thing, and
+
+
+502
+01:02:51.943 --> 01:02:58.482
+Gregory Sawicki: sometimes the agile task is to just straight up, change your potential energy to like jump up a ledge.
+
+
+503
+01:02:58.833 --> 01:03:06.263
+Gregory Sawicki: and it doesn't really matter whether or not that well, you have to ask yourself whether or not, it matters that that happens quickly.
+
+
+504
+01:03:06.523 --> 01:03:10.993
+Gregory Sawicki: and then, if it happens, if it matters, if if agile means being quick.
+
+
+505
+01:03:11.793 --> 01:03:14.563
+Gregory Sawicki: where's the fair time to start the clock
+
+
+506
+01:03:15.233 --> 01:03:22.013
+Gregory Sawicki: when energy is released from tendons onto the body, or when the animal 1st turned on its muscle.
+
+
+507
+01:03:22.373 --> 01:03:25.233
+Gregory Sawicki: So again and more more food for thought, right?
+
+
+508
+01:03:26.373 --> 01:03:26.703
+Jill McNitt-Gray: Beautiful.
+
+
+509
+01:03:26.703 --> 01:03:29.223
+Gregory Sawicki: So I think it's.
+
+
+510
+01:03:29.223 --> 01:03:29.742
+Monica Daley (she, her): I feel like.
+
+
+511
+01:03:29.743 --> 01:03:30.412
+Gregory Sawicki: Jill, what would you.
+
+
+512
+01:03:30.413 --> 01:03:34.543
+Monica Daley (she, her): Write a whole paper on what is agility at this.
+
+
+513
+01:03:34.543 --> 01:03:59.322
+Jill McNitt-Gray: I would say just that those bend diagrams are really a valuable thing here, because right now you have the circles as equal circles. Right, and you're looking at the overlaps, but in different tasks, like energetics, may not be the most critical thing, but the agility might be so if you use the bend diagram you're acknowledging. There's overlap here. There's not always clarity about where the
+
+
+514
+01:03:59.323 --> 01:04:07.273
+Jill McNitt-Gray: endpoints are of these things, but it allows for things to matter more or less depending on maybe the task objective. So I really
+
+
+515
+01:04:07.273 --> 01:04:14.662
+Jill McNitt-Gray: like that, because this is what we'll figure out together. Right? So it just might be they're not always equal
+
+
+516
+01:04:14.703 --> 01:04:16.362
+Jill McNitt-Gray: in the event. Diagram.
+
+
+517
+01:04:17.083 --> 01:04:20.083
+Gregory Sawicki: Yeah, no, I mean in my diagram with, I wasn't.
+
+
+518
+01:04:20.623 --> 01:04:24.822
+Gregory Sawicki: Hopefully, I was trying not to signal that they should be equal, but that just.
+
+
+519
+01:04:24.823 --> 01:04:26.798
+Jill McNitt-Gray: I don't totally get that.
+
+
+520
+01:04:27.193 --> 01:04:36.092
+Gregory Sawicki: Okay, I think you can also imagine a like objective function and optimization that has 3 terms.
+
+
+521
+01:04:36.703 --> 01:04:46.812
+Gregory Sawicki: That's what I'm trying to think about. Longer term is like, if I have 3 terms and an objective function, let's say I want to create a system that's specialized for agility.
+
+
+522
+01:04:46.953 --> 01:04:57.152
+Gregory Sawicki: I'll just turn the weights to the 2 things that are not agility, stability, and efficiency to 0. And then I'll ask my computer to tell me which muscle tendon unit
+
+
+523
+01:04:57.373 --> 01:05:00.063
+Gregory Sawicki: wins at the game of agility.
+
+
+524
+01:05:01.203 --> 01:05:13.872
+Gregory Sawicki: But we need a definition for agility in that simple system, right? Which is kind of that's that's part of the difficulty, Jill, while we've got you here, and since you've thought about agility for so long.
+
+
+525
+01:05:14.223 --> 01:05:15.612
+Gregory Sawicki: how do you?
+
+
+526
+01:05:15.993 --> 01:05:21.793
+Gregory Sawicki: How do you think about it in your lab, or like, what is, what is the measure that you're
+
+
+527
+01:05:22.433 --> 01:05:25.043
+Gregory Sawicki: that you can get behind the most? Would you say.
+
+
+528
+01:05:26.343 --> 01:05:30.132
+Jill McNitt-Gray: So I have the advantage of having well practiced goal
+
+
+529
+01:05:30.927 --> 01:05:59.322
+Jill McNitt-Gray: well practiced goal directed tasks like, what are you trying to achieve is defined. It's kind of like you're hopping to music or rhythm or something, right? And then you're allowing choice how you're going to achieve that, you know. Stay on beat with your metronome? Right? So so what that affords is people to choose how they're going to satisfy that higher level objective? And then the way we look at it is, how is that achieved? And then
+
+
+530
+01:05:59.906 --> 01:06:09.753
+Jill McNitt-Gray: how is it coordinated? So you may end up getting a reaction force relative to the center mass, but do it with a knee moment
+
+
+531
+01:06:10.043 --> 01:06:34.552
+Jill McNitt-Gray: dominated strategy or equal knee hip distribution. This is the part about I forget who talked about the distribution part. But that's where that gets interesting. And then you link it to which muscles are basically providing those Torques. And now you're into okay. Great idea. This is how it was achieved. What was the cost? So we often look at energetics as the consequence of the
+
+
+532
+01:06:34.783 --> 01:06:36.783
+Jill McNitt-Gray: strategy chosen.
+
+
+533
+01:06:36.953 --> 01:06:45.873
+Jill McNitt-Gray: and then no surprise. You see, the joint net joint moments and the emg matches right? But there's probably higher level.
+
+
+534
+01:06:46.213 --> 01:06:50.692
+Jill McNitt-Gray: energetic consequences. But if you get the task done
+
+
+535
+01:06:50.843 --> 01:07:14.592
+Jill McNitt-Gray: oftentimes these are tasks that are more technical and not long distance running type where energetics matter a lot. Right? So and with impact and things, you know, you're preserving the system's integrity much more than you are caring at all about what the energy expenditure is. So this is the part where the energy circle might be really small, and most of the tasks I've looked at, whereas the
+
+
+536
+01:07:14.863 --> 01:07:20.002
+Jill McNitt-Gray: but the choice on the control maybe in the agility side to then achieve.
+
+
+537
+01:07:20.473 --> 01:07:26.604
+Jill McNitt-Gray: You know, I don't know if that helps but it, I would definitely say I'm dealing with Venn diagrams, with unequal circles.
+
+
+538
+01:07:27.243 --> 01:07:27.863
+Gregory Sawicki: Yeah.
+
+
+539
+01:07:28.003 --> 01:07:35.243
+Gregory Sawicki: Yeah. So what I hear you saying is for you. It's more about flexibility in the strategy that makes.
+
+
+540
+01:07:36.043 --> 01:07:41.743
+Gregory Sawicki: Would it be fair to say that someone who is more agile has more options.
+
+
+541
+01:07:42.013 --> 01:07:48.153
+Jill McNitt-Gray: Well, I think that's a capacity thing. Right? So options come because you can.
+
+
+542
+01:07:48.713 --> 01:08:08.602
+Jill McNitt-Gray: Right? So this is about preparing to play. If you think about an athlete. Not every person can do a triple jump at 17 meters. There's so many skill sets in there, and so much adaptation of tissue that allows you to do those kinds of things. And that's where the training comes in. Your capacities aren't static.
+
+
+543
+01:08:08.603 --> 01:08:20.653
+Jill McNitt-Gray: They change with time, they adapt with progressive increases in load and challenges. So now your capabilities match the task you're being asked to do in the playing field or in competition, right? So
+
+
+544
+01:08:20.683 --> 01:08:23.772
+Jill McNitt-Gray: the capacities afford.
+
+
+545
+01:08:24.363 --> 01:08:29.833
+Jill McNitt-Gray: Plan a plan. B, baby plan C, and you practice those because
+
+
+546
+01:08:30.593 --> 01:08:36.762
+Jill McNitt-Gray: unexpected circumstances are going to happen right? And you plan for those as well. Right? So
+
+
+547
+01:08:37.403 --> 01:08:57.903
+Jill McNitt-Gray: there aren't a million plan. B's right. There's a couple that work, and there's, you know, it's not like you have infinite amount. I'm sure you can do optimization to figure out all of them. But people present, at least at the national team level with a couple. There's like 2 or 3 strategies that seem to be really effective. I don't know if that helps.
+
+
+548
+01:08:59.943 --> 01:09:01.683
+Gregory Sawicki: Yeah, super interesting.
+
+
+549
+01:09:01.813 --> 01:09:13.152
+Gregory Sawicki: I mean, my engineering brain wants to have a met like, Oh, it's Peak. It's peak velocity, or it's acceleration, or it's the time it takes to achieve the task. And what I hear you saying is.
+
+
+550
+01:09:13.363 --> 01:09:26.642
+Gregory Sawicki: yeah, okay, engineered like, the world's way, more complicated than that. And agility is really about capacity to have options to solve a task in more ways than one.
+
+
+551
+01:09:27.033 --> 01:09:28.343
+Gregory Sawicki: It's about flexibility.
+
+
+552
+01:09:29.053 --> 01:09:34.093
+Gregory Sawicki: And then but coming up with ways to measure that, I think is tough, right like
+
+
+553
+01:09:36.773 --> 01:09:40.563
+Gregory Sawicki: like, how would how do you pick the most agile athlete in your lab?
+
+
+554
+01:09:41.203 --> 01:09:43.823
+Jill McNitt-Gray: I don't really care about who's most agile.
+
+
+555
+01:09:43.823 --> 01:09:44.952
+Gregory Sawicki: It doesn't matter. You're saying.
+
+
+556
+01:09:44.953 --> 01:10:04.841
+Jill McNitt-Gray: It doesn't. If you're most agile or most energetic, it it matters. Do you have the linear, angular momentum at last contact to do the aerial skill. So, however, you get that, that's on you right? That's great idea how you're gonna get there. But it allows for versatile, you know, more than one solution.
+
+
+557
+01:10:05.203 --> 01:10:20.062
+Jill McNitt-Gray: and then you're trying to map. This is what the people competing are trying to do. But there might be more than one way to get there. And this is the part where I'm finding para athletes are really interesting because they have.
+
+
+558
+01:10:20.693 --> 01:10:45.323
+Jill McNitt-Gray: Shifts in capacities, and so it opens your mind to what the versatility of achieving those objectives might be. If you don't have certain capabilities, and you have others, because there's some neural responses that are actually really advantageous for some of our para athletes, like regulating stiffness and things that makes them more effective in generating the reaction forces they need to do the task.
+
+
+559
+01:10:47.963 --> 01:10:48.323
+Gregory Sawicki: Makes sense.
+
+
+560
+01:10:48.323 --> 01:10:49.803
+Jill McNitt-Gray: Lisa has her hand up. Yeah.
+
+
+561
+01:10:49.943 --> 01:10:50.893
+Gregory Sawicki: Yeah.
+
+
+562
+01:10:50.893 --> 01:11:13.633
+Kiisa Carla Nishikawa: Yeah, so this is definitely not my area. And not something I've really thought a lot about. But it occurred to me that, like one definition of agility, might be like the ability to maintain consistent performance, despite like variations in the initial condition. So you know, like you, you put your foot, you know
+
+
+563
+01:11:15.123 --> 01:11:33.622
+Kiisa Carla Nishikawa: you. You plant your foot on the plate like in the triple jump, a little bit differently every time, and Monica says like, that's robustness. But I'm just trying to like. I mean, it seems like it seems like there should be definitions of these things that differentiate them.
+
+
+564
+01:11:33.893 --> 01:11:41.362
+Kiisa Carla Nishikawa: you know, like from each other, and maybe that's not possible. But yeah, I don't know if other people have ideas about like.
+
+
+565
+01:11:41.703 --> 01:11:50.673
+Kiisa Carla Nishikawa: you know, how could you differentiate between like agility versus robustness versus. Yeah. I don't know.
+
+
+566
+01:11:50.673 --> 01:12:08.932
+Jill McNitt-Gray: But I think you bring up a good point, because it's the state of the system, right? So you know, you fly through the air, and you go to land again. What's the state of the system prior to touchdown? What do you have available to you to then configure for an effective ground contact. So the state of the system is really important in that. Can you.
+
+
+567
+01:12:09.183 --> 01:12:29.162
+Jill McNitt-Gray: in the words of Greg Luganis, make all the right moves from all the wrong places right? And that is what happens if you're on a springboard and well, that didn't go well on the hurdle. Now, what I still need to get, you know, nines and tens on my dive. And that's the part
+
+
+568
+01:12:30.513 --> 01:12:41.404
+Jill McNitt-Gray: where, if you practice plan B, you can then be really effective in competition, because life doesn't isn't always so consistent.
+
+
+569
+01:12:45.343 --> 01:12:50.503
+Gregory Sawicki: Okay, awesome discussion. I put 4 words that
+
+
+570
+01:12:51.143 --> 01:12:53.403
+Gregory Sawicki: added 2 more words to the mix that
+
+
+571
+01:12:53.863 --> 01:12:59.403
+Gregory Sawicki: maybe captures some of the nuances that started with stability versus agility, debate. But
+
+
+572
+01:12:59.813 --> 01:13:04.822
+Gregory Sawicki: Lena and I have, and many others have also brought up the word robustness before.
+
+
+573
+01:13:04.963 --> 01:13:11.313
+Gregory Sawicki: and and then versatility, I think, fits a lot of what Jill was talking about. Maybe.
+
+
+574
+01:13:11.453 --> 01:13:17.932
+Gregory Sawicki: anyway, it would be fun to keep talking about this stuff in the last few minutes. I was hoping to.
+
+
+575
+01:13:18.033 --> 01:13:23.622
+Gregory Sawicki: Maybe we were going to draw all this out, but I'm probably just going to skip to the slides that
+
+
+576
+01:13:23.723 --> 01:13:24.922
+Gregory Sawicki: have the answer.
+
+
+577
+01:13:25.383 --> 01:13:28.472
+Gregory Sawicki: Since we're we're running at a time. But
+
+
+578
+01:13:28.613 --> 01:13:36.662
+Gregory Sawicki: the idea from before was that if you again were going from a very contrived task, definition in the lab which
+
+
+579
+01:13:36.793 --> 01:13:42.283
+Gregory Sawicki: now we've heard from others like that's important. Right? If you have a well-defined task goal.
+
+
+580
+01:13:42.483 --> 01:13:46.002
+Gregory Sawicki: then you can start to think about within that task goal.
+
+
+581
+01:13:46.373 --> 01:13:49.032
+Gregory Sawicki: What does it mean to be stable or agile.
+
+
+582
+01:13:49.243 --> 01:13:55.612
+Gregory Sawicki: And so we in in our lab, we like this simple hopping model, but we can also extend that to a
+
+
+583
+01:13:55.883 --> 01:14:04.722
+Gregory Sawicki: foot pedal dynamometer which you all heard about last summer, which we now have a working motorized version of thanks to feedback from the from the crew.
+
+
+584
+01:14:04.933 --> 01:14:09.992
+Gregory Sawicki: and on this dynamometer you can. You can just do a cyclical ankle task.
+
+
+585
+01:14:10.523 --> 01:14:18.663
+Gregory Sawicki: and that. And the dynamometer feels like a mass in gravity. So it's like you're bouncing. But you're lying prone on a table.
+
+
+586
+01:14:18.953 --> 01:14:23.262
+Gregory Sawicki: Your plantar flexors feel as if you're if you're vertically bouncing.
+
+
+587
+01:14:23.483 --> 01:14:30.673
+Gregory Sawicki: and then we can show people what their position is on a screen.
+
+
+588
+01:14:31.333 --> 01:14:35.033
+Gregory Sawicki: and we can also show them what their velocity is that
+
+
+589
+01:14:35.303 --> 01:14:38.912
+Gregory Sawicki: that would create a limit cycle if we wanted to show them this whole thing.
+
+
+590
+01:14:39.313 --> 01:14:43.063
+Gregory Sawicki: Another option is to show them the time series of what they're doing
+
+
+591
+01:14:43.233 --> 01:14:48.342
+Gregory Sawicki: and ask them to maintain a peak ankle target that would be like.
+
+
+592
+01:14:48.703 --> 01:14:56.132
+Gregory Sawicki: maintain the the distance between the center of this limit cycle and and an amplitude and an amplitude.
+
+
+593
+01:14:56.903 --> 01:15:06.702
+Gregory Sawicki: Right? So the amplitude and time is the distance between plus and minus theta. On this. On this limit cycle, the amplitude and velocity
+
+
+594
+01:15:06.903 --> 01:15:13.622
+Gregory Sawicki: is the distance between the peak and the minimum and maximum values on this part of the plot.
+
+
+595
+01:15:13.733 --> 01:15:21.472
+Gregory Sawicki: and again, you can kind of see the cartoon here as you go around and push the pedal against the gravitational load
+
+
+596
+01:15:21.813 --> 01:15:29.603
+Gregory Sawicki: over here in the left half plane is where muscles are bringing the velocity back up to
+
+
+597
+01:15:29.743 --> 01:15:35.832
+Gregory Sawicki: some set value. And over here is where the subject would relax and gravitational
+
+
+598
+01:15:35.943 --> 01:15:45.003
+Gregory Sawicki: accelerations bring the velocity back down. So you have this interplay between muscle action pushing you up from quadrant 3 to 2,
+
+
+599
+01:15:45.103 --> 01:15:50.003
+Gregory Sawicki: and then action of gravity pulling you down and through Quadrant one and 2
+
+
+600
+01:15:50.433 --> 01:15:53.263
+Gregory Sawicki: few people on people following that so far.
+
+
+601
+01:15:53.263 --> 01:15:53.963
+Lena Ting (she/her): How does the graph.
+
+
+602
+01:15:53.963 --> 01:16:01.542
+Gregory Sawicki: Then the gravity is programmed as an offset torque
+
+
+603
+01:16:02.133 --> 01:16:03.972
+Gregory Sawicki: that the person feels in wonder.
+
+
+604
+01:16:03.973 --> 01:16:07.503
+Lena Ting (she/her): Oh, oh, oh, sorry you have it connected to this load. Got it.
+
+
+605
+01:16:07.503 --> 01:16:15.612
+Gregory Sawicki: Yeah, it's connected to a load, so you can think of it as vertically bouncing without an aerial face.
+
+
+606
+01:16:16.303 --> 01:16:20.973
+Gregory Sawicki: Only you're lying prone, and you're only doing it with your ankle.
+
+
+607
+01:16:20.973 --> 01:16:25.253
+Lena Ting (she/her): Sorry gravity is happening when you're plantar flexing. So that's like stance phase.
+
+
+608
+01:16:27.353 --> 01:16:30.403
+Gregory Sawicki: Yeah, gravity is happening all the time.
+
+
+609
+01:16:30.983 --> 01:16:37.173
+Gregory Sawicki: but in only part of the phase portrait are you counteracting it with a with a torque?
+
+
+610
+01:16:37.923 --> 01:16:44.923
+Gregory Sawicki: So if I did nothing, this thing would just go off and out the left-hand side of the page.
+
+
+611
+01:16:45.533 --> 01:16:50.193
+Gregory Sawicki: So over here I'm I'm following a flow which just comes from gravity
+
+
+612
+01:16:50.353 --> 01:16:53.812
+Gregory Sawicki: until a point when I engage my muscles, and I and the
+
+
+613
+01:16:54.133 --> 01:17:01.982
+Gregory Sawicki: the torque coming from my muscles. If that's greater than the gravitational torque. It pushes my net velocity back up.
+
+
+614
+01:17:02.623 --> 01:17:09.112
+Gregory Sawicki: and then I relax, push it back up just like bouncing would happen. So you get a rhythmic emg pattern out of this task.
+
+
+615
+01:17:09.583 --> 01:17:12.723
+Gregory Sawicki: and the person's instructed to just
+
+
+616
+01:17:12.913 --> 01:17:18.563
+Gregory Sawicki: generate an initial cadence based on a metronome, and they need to touch
+
+
+617
+01:17:18.773 --> 01:17:21.912
+Gregory Sawicki: a a peak ankle joint target.
+
+
+618
+01:17:22.363 --> 01:17:26.572
+Gregory Sawicki: and the task is, stay on that metronome and target. So boop.
+
+
+619
+01:17:29.933 --> 01:17:35.332
+Gregory Sawicki: they learn to use their muscles to do that. And the way that this phase portrait works
+
+
+620
+01:17:35.433 --> 01:17:39.072
+Gregory Sawicki: is in the left-hand plane is where where you are.
+
+
+621
+01:17:40.843 --> 01:17:42.122
+Gregory Sawicki: Sorry I haven't.
+
+
+622
+01:17:42.643 --> 01:17:53.482
+Gregory Sawicki: Your confusion is because the cartoon's backwards here. The right half plane is where the muscle action's happening. I apologize, and the left half plane is where gravity is taking over.
+
+
+623
+01:17:54.813 --> 01:18:01.453
+Gregory Sawicki: You can draw it the other way. You would just flip the sign on the Theta, and that's the one that I drew out in my notebook. Sorry.
+
+
+624
+01:18:01.713 --> 01:18:02.923
+Gregory Sawicki: Okay, so you're
+
+
+625
+01:18:04.943 --> 01:18:13.312
+Gregory Sawicki: You are raising the center of mass in the right half plane, and then gravity is lowering you. So plantar, flexion, dorsiflexion, plantar, flexion, dorsiflexion.
+
+
+626
+01:18:13.893 --> 01:18:20.273
+Gregory Sawicki: And then what we can do with this motor is at some point along this trajectory, we can
+
+
+627
+01:18:20.613 --> 01:18:26.903
+Gregory Sawicki: insert a change in either the we can insert a change in the angular velocity by just programming it.
+
+
+628
+01:18:27.193 --> 01:18:31.972
+Gregory Sawicki: So we give you a a blip in angular velocity, and then
+
+
+629
+01:18:32.193 --> 01:18:37.673
+Gregory Sawicki: the task still remains. The person still has to maintain. They have to try to get back to that boop, boop.
+
+
+630
+01:18:39.253 --> 01:18:40.283
+Lena Ting (she/her): And.
+
+
+631
+01:18:40.843 --> 01:18:44.943
+Gregory Sawicki: One thing we can do to measure the stability might be
+
+
+632
+01:18:46.153 --> 01:18:51.173
+Gregory Sawicki: to calculate the total energy of the system, which in this case is easy. It's just one half
+
+
+633
+01:18:52.033 --> 01:18:56.742
+Gregory Sawicki: times M. Times the velocity squared.
+
+
+634
+01:18:56.873 --> 01:19:11.792
+Gregory Sawicki: If you put that in rotational terms, there's a moment of inertia that the person is overcoming with their torques. So at any point on here, Theta dot squared times. The inertia that we're applying through the motor times. One half is the is the current kinetic energy.
+
+
+635
+01:19:12.153 --> 01:19:22.543
+Gregory Sawicki: And at any any time on here the gravitational potential energy can just be computed as Mg. Times the Delta H that comes from the
+
+
+636
+01:19:24.053 --> 01:19:29.063
+Gregory Sawicki: the change in the angle. So we know the potential in kinetic energy at all times we can calculate it.
+
+
+637
+01:19:30.053 --> 01:19:36.512
+Gregory Sawicki: Then we also know how much the energy is going to change when we push the person off of their limit cycle.
+
+
+638
+01:19:37.073 --> 01:19:40.923
+Gregory Sawicki: And then what we can do is something like this.
+
+
+639
+01:19:41.833 --> 01:19:52.003
+Gregory Sawicki: where we say, here is E 0. That's the total kinetic plus potential energy at any point along the limit cycle
+
+
+640
+01:19:52.223 --> 01:20:00.473
+Gregory Sawicki: which has to be the same. There's a constant energy anywhere you are just. Sometimes it will be more kinetic and sometimes it will be more potential.
+
+
+641
+01:20:00.573 --> 01:20:04.543
+Gregory Sawicki: But there is a constant energy in the steady state limit cycle.
+
+
+642
+01:20:04.833 --> 01:20:10.573
+Gregory Sawicki: And then what I'm gonna do is push you off of that
+
+
+643
+01:20:13.303 --> 01:20:17.463
+Gregory Sawicki: by injecting kinetic energy coming from a velocity.
+
+
+644
+01:20:17.643 --> 01:20:19.782
+Gregory Sawicki: And then I'm going to check to see
+
+
+645
+01:20:20.063 --> 01:20:22.173
+Gregory Sawicki: how long it takes you to get back.
+
+
+646
+01:20:22.543 --> 01:20:24.983
+Gregory Sawicki: and you can measure the time constant
+
+
+647
+01:20:25.623 --> 01:20:31.533
+Gregory Sawicki: here by just tracking the energy of the system until it gets back within
+
+
+648
+01:20:31.783 --> 01:20:40.972
+Gregory Sawicki: some tolerance of E. 0. And then that lets you say something like you can make graphs that are like E over E, 0
+
+
+649
+01:20:41.313 --> 01:20:42.912
+Gregory Sawicki: versus T.
+
+
+650
+01:20:43.873 --> 01:20:45.922
+Gregory Sawicki: And T. 0. Here
+
+
+651
+01:20:46.613 --> 01:20:54.312
+Gregory Sawicki: is just one over the frequency. This would be a way to compare limit cycles that have different energies.
+
+
+652
+01:20:55.883 --> 01:21:05.512
+Gregory Sawicki: Okay, so pause there. That's the idea for stability is that set task that's got a limit cycle that's easy to define and calculate the energy of.
+
+
+653
+01:21:05.863 --> 01:21:07.033
+Gregory Sawicki: And then
+
+
+654
+01:21:07.173 --> 01:21:14.463
+Gregory Sawicki: a system that's able to to inject energy, and you could do that at any point in the phase here as well.
+
+
+655
+01:21:16.243 --> 01:21:20.092
+Gregory Sawicki: and ask how they deal with it in a phase dependent way.
+
+
+656
+01:21:20.853 --> 01:21:28.082
+Lena Ting (she/her): So if you were going to do this with different loads, then would that be like
+
+
+657
+01:21:28.633 --> 01:21:31.403
+Lena Ting (she/her): robustness like how that.
+
+
+658
+01:21:31.403 --> 01:21:35.992
+Gregory Sawicki: Interesting. Yeah? Or maybe versatility.
+
+
+659
+01:21:35.993 --> 01:21:54.002
+Lena Ting (she/her): You know. Like, if you were to say a higher load, and now it takes me longer to come back, or now I just can't come like there's gonna be a point at which people can't load. They can't do right. And right before that, it's going to be a load that is, takes a much longer to get back, or maybe a squirrely path. Maybe it's not like an exponential decay.
+
+
+660
+01:21:54.253 --> 01:21:59.303
+Gregory Sawicki: Totally. So. I'll think about robustness. Maybe in this way let me pick a different color.
+
+
+661
+01:21:59.573 --> 01:22:04.442
+Gregory Sawicki: There is a outer limit which might not be a circle.
+
+
+662
+01:22:06.003 --> 01:22:09.632
+Lena Ting (she/her): Beyond which, no matter what you do, you can't get back.
+
+
+663
+01:22:09.993 --> 01:22:10.623
+Lena Ting (she/her): Yeah.
+
+
+664
+01:22:10.623 --> 01:22:14.333
+Gregory Sawicki: And yeah, yes, totally, Lena, you could use load.
+
+
+665
+01:22:14.333 --> 01:22:14.963
+Lena Ting (she/her): Yeah.
+
+
+666
+01:22:14.963 --> 01:22:18.513
+Gregory Sawicki: You could use the load to get
+
+
+667
+01:22:18.513 --> 01:22:22.613
+Gregory Sawicki: limit cycle that is near the edge. But you there's other ways. You could do that, too.
+
+
+668
+01:22:22.613 --> 01:22:25.012
+Lena Ting (she/her): You could use load or frequency.
+
+
+669
+01:22:25.013 --> 01:22:27.752
+Gregory Sawicki: You could use frequency and amplitude for sure.
+
+
+670
+01:22:27.753 --> 01:22:28.303
+Lena Ting (she/her): Oh, God!
+
+
+671
+01:22:28.303 --> 01:22:31.993
+Gregory Sawicki: Frequency and amplitude are the easiest way to change the size of the thing.
+
+
+672
+01:22:32.643 --> 01:22:44.573
+Gregory Sawicki: but you could also push them like really far, and then see whether they can get back right. So robustness to me is like, how big is the space.
+
+
+673
+01:22:46.013 --> 01:22:47.722
+Monica Daley (she, her): That you can return from.
+
+
+674
+01:22:48.153 --> 01:22:49.903
+Lena Ting (she/her): Yeah, yeah, but load.
+
+
+675
+01:22:50.583 --> 01:22:59.173
+Lena Ting (she/her): But okay, for each person. When you give us particular load, they're going to be at A, they're going to have a different size circle, right?
+
+
+676
+01:22:59.343 --> 01:23:03.282
+Gregory Sawicki: Yup. Their nominal limit cycle will be at a different energy level.
+
+
+677
+01:23:03.283 --> 01:23:05.503
+Lena Ting (she/her): No, are you? Is there a metronome? Sorry?
+
+
+678
+01:23:05.903 --> 01:23:08.412
+Gregory Sawicki: Yeah, there's a metronome and an amplitude.
+
+
+679
+01:23:08.413 --> 01:23:11.342
+Lena Ting (she/her): Okay. But if there's a metronome, then they have to.
+
+
+680
+01:23:11.603 --> 01:23:13.033
+Monica Daley (she, her): They have to return.
+
+
+681
+01:23:13.973 --> 01:23:17.773
+Gregory Sawicki: Where asking them to return to the nominal limit cycle. But
+
+
+682
+01:23:17.933 --> 01:23:21.253
+Gregory Sawicki: but we're not telling them how fast or how to do it.
+
+
+683
+01:23:21.253 --> 01:23:25.412
+Lena Ting (she/her): And it might not be circular, because people might have to like.
+
+
+684
+01:23:26.373 --> 01:23:27.623
+Gregory Sawicki: Oh, I drew this.
+
+
+685
+01:23:28.983 --> 01:23:34.103
+Gregory Sawicki: Yeah, totally like this thing could be an ellipse. By the way, I just made it a circle like.
+
+
+686
+01:23:34.103 --> 01:23:36.242
+Lena Ting (she/her): It could be non.
+
+
+687
+01:23:36.243 --> 01:23:42.572
+Gregory Sawicki: They each have. It could also be not circular, I guess, if they do weird things at different phases, but
+
+
+688
+01:23:42.753 --> 01:23:49.732
+Gregory Sawicki: just for purposes of simple. I don't know what this circle. I don't know what this circle will look like when I ask a human to do it, yet
+
+
+689
+01:23:50.033 --> 01:23:51.643
+Gregory Sawicki: it depends on
+
+
+690
+01:23:52.123 --> 01:23:59.432
+Gregory Sawicki: what their joint angle and angular velocity are, and how they choose to exert the torque to get the task done right.
+
+
+691
+01:23:59.953 --> 01:24:05.203
+Gregory Sawicki: Whatever they decide to do in steady state. I think I'm just saying there's something.
+
+
+692
+01:24:05.353 --> 01:24:11.293
+Gregory Sawicki: and we can push them at different points and then measure the energetics of the transient response.
+
+
+693
+01:24:11.293 --> 01:24:14.362
+Lena Ting (she/her): Here's an idea like you change the load.
+
+
+694
+01:24:14.503 --> 01:24:18.943
+Lena Ting (she/her): And then you look at the shape of that thing for a person. Yeah.
+
+
+695
+01:24:19.103 --> 01:24:33.763
+Lena Ting (she/her): And this is from our gate signature stuff. It's like at some point that shape is no longer going to be that shape, and it's going to break down, because now, they're like really struggling, and I feel like the consistency of that shape across the loads is gonna kind of tell you, the range.
+
+
+696
+01:24:33.763 --> 01:24:34.253
+Gregory Sawicki: Oh, huh!
+
+
+697
+01:24:34.253 --> 01:24:34.823
+Lena Ting (she/her): But you can.
+
+
+698
+01:24:34.823 --> 01:24:35.503
+Gregory Sawicki: Interesting.
+
+
+699
+01:24:35.503 --> 01:25:00.733
+Lena Ting (she/her): That strategy. So I mean, we see this in like people use the same dynamics until it gets people stroke until they get too fast, and then they're like trying all kinds of stuff. That's the same as us, like people are walking across the floor across a fat beam, and when they get to a narrow beam. Then, okay, it doesn't resemble that anymore. Right? So you've gotten past the thing that you're good at. You could see what what's my nominal strategy? What's the range of
+
+
+700
+01:25:00.903 --> 01:25:05.172
+Lena Ting (she/her): loads or challenges that I can maintain that strategy?
+
+
+701
+01:25:07.083 --> 01:25:08.513
+Lena Ting (she/her): All right, I'm liking that.
+
+
+702
+01:25:09.853 --> 01:25:11.894
+Monica Daley (she, her): Can I ask a question?
+
+
+703
+01:25:13.813 --> 01:25:14.803
+Monica Daley (she, her): Yep, what's
+
+
+704
+01:25:14.803 --> 01:25:23.852
+Monica Daley (she, her): what is overall in your view? The advantage of this setup, compared to having someone do the equivalent whole body task so like.
+
+
+705
+01:25:24.053 --> 01:25:31.193
+Monica Daley (she, her): have them standing and bouncing without an aerial phase to a metronome.
+
+
+706
+01:25:31.703 --> 01:25:37.763
+Monica Daley (she, her): and having a harness on them where you can perturb them by like pulling down.
+
+
+707
+01:25:37.763 --> 01:25:40.542
+Gregory Sawicki: Yeah, I mean, I I love that experiment, too.
+
+
+708
+01:25:40.673 --> 01:25:41.843
+Monica Daley (she, her): I think.
+
+
+709
+01:25:42.553 --> 01:25:48.123
+Gregory Sawicki: The complication of all these sources of energy. Now to mix.
+
+
+710
+01:25:48.123 --> 01:25:49.253
+Monica Daley (she, her): Use, your interpreter.
+
+
+711
+01:25:49.253 --> 01:25:50.943
+Gregory Sawicki: Ability yeah, right.
+
+
+712
+01:25:50.943 --> 01:25:52.073
+Monica Daley (she, her): Compensate, rather.
+
+
+713
+01:25:52.073 --> 01:25:56.543
+Gregory Sawicki: For me. It's just about interpretability. But where we would want to go after this is
+
+
+714
+01:25:57.163 --> 01:26:09.132
+Gregory Sawicki: like we. I like the isolated join as a start just to try to understand whether even this framework makes any sense. If it does, your idea for that experiment would be great, because then you can ask
+
+
+715
+01:26:09.613 --> 01:26:13.743
+Gregory Sawicki: how the multi-joint system this gets back to versatility in some.
+
+
+716
+01:26:13.743 --> 01:26:14.223
+Monica Daley (she, her): Increase.
+
+
+717
+01:26:14.223 --> 01:26:15.162
+Gregory Sawicki: Joe's Ideas.
+
+
+718
+01:26:15.163 --> 01:26:15.723
+Monica Daley (she, her): Yeah, yeah.
+
+
+719
+01:26:15.723 --> 01:26:18.662
+Gregory Sawicki: Yeah. Totally like, once I give you a second joint.
+
+
+720
+01:26:19.203 --> 01:26:28.333
+Gregory Sawicki: Does the time constant of recovery like, how does this time constant of recovery depend on how many degrees of freedom I give you is another interesting question. Right? Like
+
+
+721
+01:26:28.773 --> 01:26:34.593
+Gregory Sawicki: right now, just for simplicity's sake, is, I would say, the only reason we're doing it this way.
+
+
+722
+01:26:34.593 --> 01:26:35.163
+Monica Daley (she, her): Right? It's
+
+
+723
+01:26:35.163 --> 01:26:40.563
+Monica Daley (she, her): the other thing is, we can we can also get the muscle level measurements off the system
+
+
+724
+01:26:41.103 --> 01:26:46.683
+Gregory Sawicki: Right like when we can. We can really study the muscle tendon unit kind of directly.
+
+
+725
+01:26:46.833 --> 01:26:48.682
+Gregory Sawicki: I think we're at time.
+
+
+726
+01:26:49.563 --> 01:26:56.872
+Gregory Sawicki: There's 1 more thing I want to say which is what is agility? And
+
+
+727
+01:26:57.293 --> 01:27:04.463
+Gregory Sawicki: it just means, instead of the motor pushing you off, I,
+
+
+728
+01:27:04.653 --> 01:27:07.822
+Gregory Sawicki: through the feedback system, tell you a new task.
+
+
+729
+01:27:08.763 --> 01:27:13.262
+Gregory Sawicki: So it's literally the same exact calculation. But this time
+
+
+730
+01:27:16.203 --> 01:27:21.153
+Gregory Sawicki: the change in energy is not from a perturbation down.
+
+
+731
+01:27:21.363 --> 01:27:27.262
+Gregory Sawicki: It is to a. And actually I drew it sort of already. It's to a new red line.
+
+
+732
+01:27:27.543 --> 01:27:31.863
+Gregory Sawicki: And so this would look like would look like this.
+
+
+733
+01:27:32.773 --> 01:27:37.763
+Gregory Sawicki: and the time comes, and you could also put the red line again. This is energy.
+
+
+734
+01:27:39.113 --> 01:27:42.703
+Gregory Sawicki: It's E over E, 0.
+
+
+735
+01:27:42.883 --> 01:27:49.413
+Gregory Sawicki: And then I create a situation that requires a change in energy, either higher or lower.
+
+
+736
+01:27:49.703 --> 01:27:55.372
+Gregory Sawicki: and I check to see how well the person can get to that new reachable space, how quickly.
+
+
+737
+01:27:55.373 --> 01:28:00.222
+Monica Daley (she, her): But how quickly, when you say how well like, how quickly they can match the new target.
+
+
+738
+01:28:00.393 --> 01:28:02.333
+Gregory Sawicki: How quickly. Yeah. So this time.
+
+
+739
+01:28:02.913 --> 01:28:09.502
+Gregory Sawicki: which you can, you can fit a I think you can fit a 1st order thing to this. I don't know if it'll be 1st order. That would be sweet if it is.
+
+
+740
+01:28:09.603 --> 01:28:12.872
+Gregory Sawicki: But you can fit a time, constant, or you can measure a time.
+
+
+741
+01:28:13.303 --> 01:28:16.793
+Gregory Sawicki: or you can calculate the average power over this time.
+
+
+742
+01:28:17.753 --> 01:28:23.733
+Gregory Sawicki: which is the change in energy divided by the time those would all be
+
+
+743
+01:28:23.893 --> 01:28:31.272
+Gregory Sawicki: equivalent ways to get at the and then higher numbers. An average power would be better, more agile.
+
+
+744
+01:28:31.483 --> 01:28:33.963
+Gregory Sawicki: us shorter times would be more agile.
+
+
+745
+01:28:34.463 --> 01:28:39.262
+Gregory Sawicki: and then the stability one is again. It's I bump you to a
+
+
+746
+01:28:40.744 --> 01:28:45.562
+Gregory Sawicki: a new energy. And I checked to see how how quickly you get back to
+
+
+747
+01:28:46.413 --> 01:28:48.122
+Gregory Sawicki: E over E 0.
+
+
+748
+01:28:49.261 --> 01:28:54.803
+Gregory Sawicki: Of 1 point. Oh, right, this is the nominal limit cycle.
+
+
+749
+01:28:55.223 --> 01:28:56.033
+Gregory Sawicki: Okay?
+
+
+750
+01:28:56.223 --> 01:28:58.782
+Jill McNitt-Gray: I want to throw learning into this, because I'm not sure.
+
+
+751
+01:28:58.783 --> 01:28:59.283
+Gregory Sawicki: Yeah.
+
+
+752
+01:28:59.283 --> 01:29:02.583
+Jill McNitt-Gray: Quickly you learn is as important as the quality
+
+
+753
+01:29:03.173 --> 01:29:12.972
+Jill McNitt-Gray: that you acquire over time. So be careful about making how quickly you get something. The goal versus how
+
+
+754
+01:29:14.363 --> 01:29:17.403
+Jill McNitt-Gray: robust, perhaps the solutions are.
+
+
+755
+01:29:17.403 --> 01:29:17.903
+Gregory Sawicki: Yeah.
+
+
+756
+01:29:17.903 --> 01:29:20.792
+Jill McNitt-Gray: I don't know what word to use anymore on anything.
+
+
+757
+01:29:20.793 --> 01:29:26.183
+Monica Daley (she, her): You'd have to have repeated measures of this and see how well they actually match the targeted.
+
+
+758
+01:29:26.183 --> 01:29:46.432
+Jill McNitt-Gray: Or how long it takes to come up with a viable solution that fits within the performance margins right? Because that would be good that ends up being what's good enough? And then this is always a good question. Have you prepared the person to play right? Is it good enough for the challenges you put forward, so that in their skill sets
+
+
+759
+01:29:46.603 --> 01:29:54.553
+Jill McNitt-Gray: to put, you know, to do what you've asked them to do, and this keeps them out of risk. Sorry I'm doing. Core 4 on you guys here. That's.
+
+
+760
+01:29:54.553 --> 01:29:54.983
+Gregory Sawicki: Who's.
+
+
+761
+01:29:54.983 --> 01:30:01.473
+Jill McNitt-Gray: That's the context here, right of the learning and the risk and the reward. Right? So yeah.
+
+
+762
+01:30:01.473 --> 01:30:03.913
+Gregory Sawicki: Yeah, the idea of like, how well people.
+
+
+763
+01:30:04.473 --> 01:30:07.293
+Gregory Sawicki: how how people change over time is.
+
+
+764
+01:30:07.703 --> 01:30:08.112
+Jill McNitt-Gray: Room.
+
+
+765
+01:30:08.113 --> 01:30:16.652
+Gregory Sawicki: Totally within reach. Within this paradigm, too, I think, wouldn't be the 1st experiments we do. But you're right, that if like, let's say, people came back.
+
+
+766
+01:30:16.953 --> 01:30:21.023
+Gregory Sawicki: Well, 1st of all, we'll give them repeated trials of this, I think, even.
+
+
+767
+01:30:21.023 --> 01:30:21.353
+Jill McNitt-Gray: And then.
+
+
+768
+01:30:21.353 --> 01:30:25.773
+Gregory Sawicki: 1st experiment, but you could have them come back multi-session, right? And you can ask
+
+
+769
+01:30:25.893 --> 01:30:35.933
+Gregory Sawicki: whether or not in this context of the task goal, which is, they know they're going to see the same task again. Can they make their time constant, better?
+
+
+770
+01:30:36.073 --> 01:30:42.053
+Gregory Sawicki: And then how are they doing that right? So the change in the time constant over repeated visits would be
+
+
+771
+01:30:42.303 --> 01:30:43.753
+Gregory Sawicki: also pretty interesting.
+
+
+772
+01:30:43.753 --> 01:30:49.282
+Monica Daley (she, her): But I think time constant alone doesn't fully capture performance is also Jill's point, because.
+
+
+773
+01:30:49.283 --> 01:30:50.203
+Gregory Sawicki: Yeah.
+
+
+774
+01:30:50.203 --> 01:30:57.393
+Monica Daley (she, her): You would have the distribution of how well they actually matched that target right at all. Like did they.
+
+
+775
+01:30:57.393 --> 01:31:03.052
+Gregory Sawicki: Yeah, like, what? How I see like, how how good they are at even following the instructions. Gotcha.
+
+
+776
+01:31:03.053 --> 01:31:03.832
+Monica Daley (she, her): Right, yeah.
+
+
+777
+01:31:04.418 --> 01:31:17.563
+Jill McNitt-Gray: Think the other part that I struggle with on this, too, is, I can't think of. Movements were getting the kinematics the same as a goal as compared to getting the force production, that the goal right.
+
+
+778
+01:31:18.223 --> 01:31:23.583
+Jill McNitt-Gray: Do you know what I mean by that? Because, like in this task, the goal is to maintain the kinematics.
+
+
+779
+01:31:24.933 --> 01:31:25.743
+Gregory Sawicki: Yup!
+
+
+780
+01:31:25.743 --> 01:31:27.453
+Jill McNitt-Gray: And you know you can get that.
+
+
+781
+01:31:27.453 --> 01:31:28.583
+Lena Ting (she/her): Oh, yeah. Yeah. Well.
+
+
+782
+01:31:28.583 --> 01:31:32.523
+Jill McNitt-Gray: You know, I mean in this particular one, right versus.
+
+
+783
+01:31:32.523 --> 01:31:32.853
+Gregory Sawicki: Yes.
+
+
+784
+01:31:32.853 --> 01:31:36.972
+Jill McNitt-Gray: Generating force to create a yeah whole body movement that
+
+
+785
+01:31:36.973 --> 01:31:43.103
+Jill McNitt-Gray: just trying to say there may be value. But this is after you get through the one joint. Can I measure stuff? I guess? Yeah.
+
+
+786
+01:31:43.543 --> 01:31:49.033
+Gregory Sawicki: Yeah, I hear you like we struggled with whether we would we should give the feedback on torque versus, on
+
+
+787
+01:31:49.663 --> 01:32:01.942
+Gregory Sawicki: on join Angle, because you could show people their torque through time instead, and then you could solve for the torque through time. They need to maintain a limit cycle.
+
+
+788
+01:32:02.193 --> 01:32:04.823
+Gregory Sawicki: and asked him to just attend to that torque.
+
+
+789
+01:32:05.879 --> 01:32:13.413
+Gregory Sawicki: So that's you know that that flips the task to a explicit force control versus an explicit position control task.
+
+
+790
+01:32:13.773 --> 01:32:15.193
+Gregory Sawicki: I don't know. I don't know.
+
+
+791
+01:32:15.193 --> 01:32:33.243
+Lena Ting (she/her): It depends on what what you're trying to model. But I always think about pictures, and they're like, don't tell them exactly how to throw it as long as they're like direction. Velocity's good at the release, then you're fine, but when you don't have a when you have one degree of freedom. It's hard to dissociate a lot of these things.
+
+
+792
+01:32:33.243 --> 01:32:45.273
+Jill McNitt-Gray: I also suggested a springboard version here. If you wanted to play around with the energetics where you have a deformable surface and interacting with it. It's comments up there that might be a functional way to play with this also.
+
+
+793
+01:32:46.333 --> 01:32:52.323
+Gregory Sawicki: That's a super cool idea. And again, that would be like an energy. Well.
+
+
+794
+01:32:52.323 --> 01:32:58.702
+Jill McNitt-Gray: Yeah system, but not attached to it that the person could give to and take from. And you know
+
+
+795
+01:32:58.773 --> 01:33:00.742
+Jill McNitt-Gray: you go, which I think you know.
+
+
+796
+01:33:00.743 --> 01:33:02.123
+Lena Ting (she/her): You know Greg's into that.
+
+
+797
+01:33:02.123 --> 01:33:02.832
+Gregory Sawicki: Adam, Adam.
+
+
+798
+01:33:02.833 --> 01:33:15.142
+Jill McNitt-Gray: I like this because it's your interaction with your world, right? What can you get out of the environment you're in to get the job done right, so it'd be great happy to talk about this. At length.
+
+
+799
+01:33:15.143 --> 01:33:15.963
+Gregory Sawicki: Okay.
+
+
+800
+01:33:16.273 --> 01:33:16.763
+Lena Ting (she/her): Well.
+
+
+801
+01:33:16.763 --> 01:33:25.313
+Gregory Sawicki: I want to. We're over a bit. I want to make sure I can hang out. But other people might need to go. I should also probably go.
+
+
+802
+01:33:25.313 --> 01:33:26.482
+Monica Daley (she, her): Yeah, we should probably wrap up.
+
+
+803
+01:33:26.753 --> 01:33:27.023
+Gregory Sawicki: Today.
+
+
+804
+01:33:27.023 --> 01:33:30.311
+Monica Daley (she, her): We'll have more more discussion in the future.
+
+
+805
+01:33:31.073 --> 01:33:36.073
+Gregory Sawicki: Thanks for listening hopefully. You got something out of it. Fun, discussion.
+
+
+806
+01:33:36.733 --> 01:33:42.193
+Gregory Sawicki: I'll try to share these slides once my computer is functioning properly again.
+
+
+807
+01:33:42.443 --> 01:33:52.572
+Gregory Sawicki: Right now I'm running off like 300 MB of hard drive space, because my dropbox tried to overrun my computer when I came back to the Us. So
+
+
+808
+01:33:52.843 --> 01:33:58.382
+Gregory Sawicki: just hold tight, and I will send the slides through the slack at some point.
+
+
+809
+01:33:58.863 --> 01:34:01.833
+Monica Daley (she, her): And see you all around, I guess. Cool. Thanks.
+
+
+810
+01:34:02.623 --> 01:34:03.102
+Monica Daley (she, her): That was fun.
+
+
+811
+01:34:03.103 --> 01:34:03.633
+Gregory Sawicki: Right.
+
+
+812
+01:34:03.633 --> 01:34:14.453
+Victoria Wood: Quick. One announcement, next week's workshop will be on Tuesday for those of you that are joining. Not on Thursday. So I'll send out announcements about that, but for those of you that are here.
+
+
+813
+01:34:14.453 --> 01:34:20.403
+Monica Daley (she, her): We should probably send that on slack and email, just to make sure everybody gets it. Yeah, thank you. All right.
+
+
+814
+01:34:20.403 --> 01:34:22.733
+Gregory Sawicki: Thanks for organizing. See you all later.
+
+
+815
+01:34:22.733 --> 01:34:23.803
+Monica Daley (she, her): So bye.
+
+
+

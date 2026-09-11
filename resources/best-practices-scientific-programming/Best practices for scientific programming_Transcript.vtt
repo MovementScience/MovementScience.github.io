@@ -1,0 +1,2590 @@
+WEBVTT
+
+1
+00:03:26.530 --> 00:03:28.479
+Victoria Wood: Hello, hello! How are you?
+
+2
+00:03:28.810 --> 00:03:30.669
+James Finley: Doing well, how are you?
+
+3
+00:03:30.670 --> 00:03:31.650
+Victoria Wood: Not bad.
+
+4
+00:03:58.780 --> 00:04:00.039
+Emory Watch Party: I'm an alpha.
+
+5
+00:04:58.070 --> 00:05:00.739
+James Finley: Victoria can typically give people a few minutes to arrive.
+
+6
+00:05:03.370 --> 00:05:05.729
+Victoria Wood: Yeah, maybe just another minute or two.
+
+7
+00:05:07.500 --> 00:05:08.750
+Victoria Wood: You're okay with that?
+
+8
+00:06:47.380 --> 00:06:51.199
+Victoria Wood: Alright, I think you should be good to go ahead and start now, if you're ready.
+
+9
+00:06:53.820 --> 00:06:57.810
+James Finley: Hmm… So, let's see, good morning, and…
+
+10
+00:06:58.270 --> 00:07:08.269
+James Finley: Just afternoon, everyone. Today, I'll be leading a… an interactive session on best practices for scientific programming.
+
+11
+00:07:08.410 --> 00:07:11.169
+James Finley: Thank you also a,
+
+12
+00:07:11.830 --> 00:07:17.710
+James Finley: recorded version of me last week, but here I am, I guess, in the flesh, virtually.
+
+13
+00:07:17.750 --> 00:07:34.149
+James Finley: So I'm James Finley, I'm an associate professor in the Division of Biokinesiology and Physical Therapy at USC. A little bit of personal background, so my training is, primarily in engineering, mechanical and biomedical engineering.
+
+14
+00:07:34.150 --> 00:07:40.409
+James Finley: After completing my PhD, I then did a postdoc in neuroscience.
+
+15
+00:07:40.670 --> 00:07:52.490
+James Finley: And as I said at the beginning, I'm currently, working in the physical therapy department. So, the work that I do spans, all of those disciplines.
+
+16
+00:07:52.760 --> 00:08:02.730
+James Finley: I consider the work we do within the lab to be very interdisciplinary, and this is one of the things I've been most excited about as a member of IMC.
+
+17
+00:08:02.870 --> 00:08:18.289
+James Finley: And today, we'll talk about one of the things that I think is most important, in the research process, and that's really making sure that you employ best practices for programming.
+
+18
+00:08:18.450 --> 00:08:36.459
+James Finley: So we're going to cover a few different topics today. We have, for the next hour and a half, we'll do some, hands-on examples, if you're able to follow along. And, I'll just want to plug the link in the chat to the Google Drive folder.
+
+19
+00:08:36.460 --> 00:08:41.890
+James Finley: So, I will actually… let's see if I can… There…
+
+20
+00:08:44.340 --> 00:08:55.299
+James Finley: So, I just uploaded a few additional, files to that Google Drive folder. What you hopefully all had a chance to review was the,
+
+21
+00:08:55.680 --> 00:09:02.890
+James Finley: excuse me, the PDF on Principles for Reliable and Efficient and Adaptable Coding.
+
+22
+00:09:03.150 --> 00:09:08.129
+James Finley: I've added a PDF of the slides that we're going to cover today.
+
+23
+00:09:08.310 --> 00:09:14.810
+James Finley: a few MATLAB files, so we'll run those as an example of how to,
+
+24
+00:09:14.950 --> 00:09:20.310
+James Finley: To take your data analysis pipeline and separate that into individual scripts.
+
+25
+00:09:20.770 --> 00:09:36.090
+James Finley: And then, finally, there's another PDF that is a paper on 10 simple rules for computational modeling. So if you do modeling as part of your research workflow, this is, almost like the modeling Bible for me in some sense.
+
+26
+00:09:36.320 --> 00:09:45.019
+James Finley: I won't be talking about that today, but if we have time and people have questions, I might highlight a few, few key points from that, from that paper.
+
+27
+00:09:46.930 --> 00:09:52.749
+James Finley: Okay, so let's motivate, why we are here today.
+
+28
+00:09:53.190 --> 00:10:07.889
+James Finley: One thing to keep in mind, or that I'll maybe start with, is that in my program, my master's and PhD in Biokinesiology at USC, I teach research methods for all of our first-year graduate students.
+
+29
+00:10:07.890 --> 00:10:14.030
+James Finley: And we spend, many weeks introducing students to scientific programming, primarily in MATLAB.
+
+30
+00:10:14.030 --> 00:10:23.910
+James Finley: So a lot of what I'm going to cover today is taken from snippets of that course. So there's gonna be a lot of stuff we don't get to.
+
+31
+00:10:24.170 --> 00:10:27.089
+James Finley: But happy to point you to resources if you have questions.
+
+32
+00:10:27.240 --> 00:10:44.010
+James Finley: We're gonna show this again at the end, but feel free to go ahead and sign in for, all… everyone who's there, who's here today. The QR code should take you to the sign-in form, and I believe there are some, some questions to answer that,
+
+33
+00:10:44.010 --> 00:10:56.080
+James Finley: I think will be best to answer at the end of today's session. So again, I'll bring this up at the end of the session, but I wanted to put it here in case people want to sort of get a head start.
+
+34
+00:10:57.120 --> 00:11:09.999
+James Finley: Okay, one of the… my favorite analogies that I've heard about certain types of science is that, in some cases, the science that we do is like a house of cards.
+
+35
+00:11:10.120 --> 00:11:16.269
+James Finley: And there are two key features of a House of Cards that I wanted to highlight.
+
+36
+00:11:16.340 --> 00:11:30.069
+James Finley: So, on the positive side, I think a house of cards is, you know, these can be beautiful and elegant structures, right? They have nice symmetry, there's something about the fact that they exist.
+
+37
+00:11:30.070 --> 00:11:36.599
+James Finley: That is impressive. But, the dominant feature of a house of cards is that it's really fragile.
+
+38
+00:11:36.910 --> 00:11:54.499
+James Finley: And the first time I heard this analogy used, was when someone in a seminar presented a set of results that was… and those results were based on, a lot of weak results from other studies. So, this is…
+
+39
+00:11:54.520 --> 00:12:12.259
+James Finley: you know, the way that we do science, of course, is that we build a foundation from existing work, and we try to extend that work in novel and interesting directions. However, our ability to do, you know, good, rigorous science depends on building from a really strong foundation.
+
+40
+00:12:12.500 --> 00:12:15.160
+James Finley: And so, in one…
+
+41
+00:12:15.160 --> 00:12:39.730
+James Finley: you know, maybe dominant sense, that strong foundation is the quality of prior work. Within our own workflows and individual studies, right, our conclusions require that all the steps in our reasoning, study design, and analysis process are also very strong. And so today, we're really going to be focusing on the analysis part of that
+
+42
+00:12:39.730 --> 00:12:45.879
+James Finley: That structure, as we build the… or try to draw conclusions about our own science.
+
+43
+00:12:46.210 --> 00:12:54.150
+James Finley: So, let me see if I can do this here. So I'm gonna stop sharing just to do a quick informal poll.
+
+44
+00:12:54.560 --> 00:13:09.010
+James Finley: So I'm trying to see… I see we have some faculty here, which is great. So, this is a poll for anyone who has, published any papers in your career.
+
+45
+00:13:09.530 --> 00:13:21.819
+James Finley: So the first question, and you can answer by using the React feature in Zoom to raise your hand, has anyone had an experience where they've submitted a paper.
+
+46
+00:13:22.060 --> 00:13:26.550
+James Finley: Received feedback, maybe months later.
+
+47
+00:13:26.600 --> 00:13:45.219
+James Finley: the reviewers requested that you make some changes, either running new experiments or reanalyzing your data. And, immediately, as your response, immediately panicked because you realized that your data and or code was not well organized.
+
+48
+00:13:45.270 --> 00:13:49.659
+James Finley: So, if you've ever had that experience, please raise your hand.
+
+49
+00:13:49.990 --> 00:14:08.209
+James Finley: I think this is important for those of you who are… for the trainees in this program. You're often at the very early stages of your research, and you're not necessarily thinking about the end game, but ultimately, we want to publish our work to make it available to the field so that, again, we can progress our science.
+
+50
+00:14:08.290 --> 00:14:10.970
+James Finley: So, I'll just go ahead and raise my hand here.
+
+51
+00:14:11.080 --> 00:14:20.510
+James Finley: This is probably one of the worst experiences, or worst parts of science for me, when this happened as in my days as a graduate student.
+
+52
+00:14:20.510 --> 00:14:34.249
+James Finley: I was really excited, I submitted my first paper, I was really excited about the results, and then the reviewers came back and had, several questions about the analysis, and I had to go back and reanalyze my data.
+
+53
+00:14:34.570 --> 00:14:39.340
+James Finley: And so, the next slide, I think I have, I'll just…
+
+54
+00:14:39.630 --> 00:14:41.180
+James Finley: Make sure I have it here…
+
+55
+00:14:43.050 --> 00:14:46.580
+James Finley: Oh, okay, so I'll, I'll reorder this slide real quick.
+
+56
+00:14:46.990 --> 00:14:50.290
+James Finley: Alright, so… There we go.
+
+57
+00:14:50.680 --> 00:14:54.680
+James Finley: Reshare again, you can… Lower your hands.
+
+58
+00:14:55.630 --> 00:15:02.470
+James Finley: And so the problem was that my files looked something like this, right? So,
+
+59
+00:15:02.750 --> 00:15:12.329
+James Finley: In other words, I had many different files, whether it was data, actual analysis scripts that I used to create the figures.
+
+60
+00:15:12.370 --> 00:15:24.870
+James Finley: drafts of analysis scripts that I no longer use, and it was all sort of jumbled in one or more, folders. And so, going back to sort through this was an absolute, nightmare.
+
+61
+00:15:25.760 --> 00:15:30.499
+James Finley: So I'll ask another question, so this will be the last one.
+
+62
+00:15:31.090 --> 00:15:42.559
+James Finley: Again, for the maybe postdocs or faculty who are here, have you ever had a student defend or leave your lab for other reasons? And,
+
+63
+00:15:42.780 --> 00:15:55.039
+James Finley: realize that you would like to go back to that data and maybe make it available to a new student, or, try to publish that data on your own. Has anyone ever had that experience?
+
+64
+00:15:55.400 --> 00:16:02.139
+James Finley: Where you realized you didn't really understand how your own student organized their code or data.
+
+65
+00:16:06.220 --> 00:16:20.349
+James Finley: Hey, so we, you all are better than I am. So thank you, we have, we have one who co-signed this experience. So the other experience that motivated a lot of what we have discussed today is I've, you know, I've had students who defended
+
+66
+00:16:20.660 --> 00:16:34.320
+James Finley: Maybe we were working on their papers, or maybe I decide later on a new student or postdoc comes along, and I think about, previous data that we've collected that I want to make available to an existing student, or a new student.
+
+67
+00:16:34.760 --> 00:16:43.539
+James Finley: So again, that's really hard to do if things aren't very well organized. So that's where we're really going to, to start today.
+
+68
+00:16:44.130 --> 00:16:59.110
+James Finley: So, in the, the paper that I shared, one of the things that they start with is this idea of, different steps in your data analysis and programming workflow.
+
+69
+00:16:59.980 --> 00:17:08.960
+James Finley: And, so, I want to walk through a couple key points from, from this, this figure here.
+
+70
+00:17:09.700 --> 00:17:23.190
+James Finley: One of the things that we often start with, whether you have existing data, or maybe even if you're doing simulation work, we often start with what we might consider to be more of a phase of exploration.
+
+71
+00:17:23.490 --> 00:17:26.859
+James Finley: And here, they use the term, prototyping.
+
+72
+00:17:26.970 --> 00:17:44.079
+James Finley: And one of the, I think, important things that at least I've observed over time is that in many cases in our science, we may not actually leave the prototyping phase. So, we add different, you know, test cases or different analyses to a single script.
+
+73
+00:17:44.310 --> 00:17:59.429
+James Finley: We might reuse existing code, and we end up with something that works at the time, but we don't necessarily take the time to refine it, make sure it's robust, and make sure it's able to be shared.
+
+74
+00:18:00.010 --> 00:18:04.750
+James Finley: So, one of the big themes for today is that
+
+75
+00:18:04.750 --> 00:18:28.709
+James Finley: As you move through your science, while it's perfectly fine and really expected to start in a prototyping phase so that you can move quickly, and try to find… get things working, ultimately what you want to do is always make sure you move your, your codebase and files to what we might consider a more, development level of, of quality.
+
+76
+00:18:29.340 --> 00:18:36.059
+James Finley: And so, we'll talk a little bit about how we can ensure that the code we write is of high quality.
+
+77
+00:18:36.090 --> 00:18:50.520
+James Finley: And ultimately, we won't really have time to talk about this today, but what we should all be doing, is really sharing what we do at the end, right? So a lot of the work that we do, personally, right, from my perspective, is
+
+78
+00:18:50.520 --> 00:18:55.989
+James Finley: Funded by taxpayer dollars, and therefore, should be made available to the public.
+
+79
+00:18:55.990 --> 00:19:11.129
+James Finley: But in order to make your data available, accessible, and usable, you do need to spend some time making sure that things are documented and archived or saved in a way that's easy for people to understand.
+
+80
+00:19:11.320 --> 00:19:15.719
+James Finley: So we'll give some examples of how we do that in my lab as we go along.
+
+81
+00:19:16.500 --> 00:19:22.659
+James Finley: If you have questions as we go, feel free to just unmute and pose them, or drop them in the chat.
+
+82
+00:19:22.780 --> 00:19:28.489
+James Finley: You don't have to just sort of listen to me, ramble on as we go.
+
+83
+00:19:28.940 --> 00:19:36.279
+James Finley: Alright, so, this paper starts with, 10 principles for research programming.
+
+84
+00:19:36.280 --> 00:19:50.109
+James Finley: And we won't talk about each of them individually, but I do really like how the author separated these principles into things related to the organization of your code, and really, this is both
+
+85
+00:19:50.110 --> 00:19:53.650
+James Finley: I think about this as files in general, that could be data.
+
+86
+00:19:53.670 --> 00:19:55.010
+James Finley: or code.
+
+87
+00:19:56.300 --> 00:20:10.639
+James Finley: once your code is organized, how to make sure that it's reusable, so really thinking about the quality of your code, and then they end by talking about collaborative programming or coding.
+
+88
+00:20:10.640 --> 00:20:22.379
+James Finley: So we won't get to this last part, but this is a really important principle, you know, use others in your lab, whether you're learning together or you have more senior members who you can go to to ask questions.
+
+89
+00:20:22.630 --> 00:20:37.510
+James Finley: Programming and science in general are not the, you know, one person sitting in a dark room and sort of thinking and working by themselves, and definitely this is really a team, you know, event and a process.
+
+90
+00:20:38.270 --> 00:20:39.140
+James Finley: Okay.
+
+91
+00:20:39.610 --> 00:20:50.149
+James Finley: So, before, most of the… I think most everyone here is probably doing some sort of experimental work, or building on experiments that someone else has done.
+
+92
+00:20:50.330 --> 00:21:03.790
+James Finley: And, before we talk about the data or the code, I think it's really important to make sure that you have your experimental protocol documented really clearly.
+
+93
+00:21:04.690 --> 00:21:24.560
+James Finley: So, you know, we write very detailed experimental protocols, just in Word files or Google Docs, that list every step of the experiment, you know, what we do, human subjects research, so what were the actual, verbatim instructions you give to your participants, how do you consent them.
+
+94
+00:21:24.640 --> 00:21:28.659
+James Finley: What are each of the steps in the experiment, and so on.
+
+95
+00:21:29.580 --> 00:21:41.800
+James Finley: In recent years, we've gone even further than this by adding, screenshots to indicate the software we use, you know, which checkboxes you need to select, and so on.
+
+96
+00:21:41.850 --> 00:21:52.590
+James Finley: I tell all my students, I have never seen an experimental protocol that is too detailed, so you should, you know, never be shy about adding detail.
+
+97
+00:21:53.310 --> 00:21:58.479
+James Finley: Because ultimately, to me, the best case scenario with a protocol is that
+
+98
+00:21:58.500 --> 00:22:17.299
+James Finley: a, you know, senior student, you know, can give their protocol to somebody who is new to the lab. If that student understands, how the basic equipment in the lab works, they should be able to just go through and follow, you know, A, B, C, D to execute that, that senior student's protocol.
+
+99
+00:22:17.740 --> 00:22:18.790
+James Finley: And
+
+100
+00:22:19.060 --> 00:22:30.690
+James Finley: When we are doing this, you know, in the most rigorous way, we will have another student execute a new protocol written by a given student in the lab.
+
+101
+00:22:30.830 --> 00:22:32.180
+James Finley: So,
+
+102
+00:22:32.340 --> 00:22:44.240
+James Finley: One of the reasons why this is helpful is because when you actually have somebody try to execute your protocol, they will very quickly identify things that are not well-defined. So it's a really useful, process.
+
+103
+00:22:45.330 --> 00:22:55.129
+James Finley: So, so then we're gonna keep that protocol somewhere accessible, you know, Google Drive, OneDrive, whatever it is, so that it can easily be shared.
+
+104
+00:22:56.660 --> 00:23:06.319
+James Finley: Alright, so the next thing, a lot of this sort of foundational information is very, I think it's boring, but, some of the most important steps in the process.
+
+105
+00:23:06.740 --> 00:23:24.589
+James Finley: As I mentioned earlier, when I was a PhD student, even to some extent as a postdoc, I didn't really have a defined, structure for organizing, my code and data, right? I sort of came up with a new structure sometimes for different projects, for each new project.
+
+106
+00:23:25.440 --> 00:23:34.049
+James Finley: So, if you haven't done so already, I highly recommend defining a structure for your study.
+
+107
+00:23:34.120 --> 00:23:48.240
+James Finley: So, as an example here, we have some, you know, you can give your study some name. For our work with human subjects research, we might have a folder for each individual subject.
+
+108
+00:23:48.610 --> 00:24:00.079
+James Finley: Where maybe that subject's data is included in the folder, maybe individual code, we'll talk… I'll show an example of exactly how we do this for my lab later.
+
+109
+00:24:01.150 --> 00:24:19.120
+James Finley: We then might have a folder for our group data, so once we analyze the individual data, we might store those, those results in a group data structure or table, and then have a separate folder to analyze that group data.
+
+110
+00:24:19.320 --> 00:24:24.599
+James Finley: And maybe a folder for your, papers, or presentations, and so on.
+
+111
+00:24:25.530 --> 00:24:44.159
+James Finley: So, the idea here is that you have a single folder that you can easily share with somebody else, and if things are organized well, they can spend, you know, some time to look through your folder and its documentation and easily understand where things are located.
+
+112
+00:24:45.660 --> 00:25:00.279
+James Finley: Alright, so the next basic and somewhat boring thing that's really important is the naming and file structure. So once you have your subject folders, you want to make sure you're using that same structure for all of your participants.
+
+113
+00:25:00.950 --> 00:25:12.840
+James Finley: And, one of the things that I always recommend is that, you know, we spend a lot of time designing experiments, and generally, we're really happy once we collect our, you know, first participant.
+
+114
+00:25:13.130 --> 00:25:18.210
+James Finley: And most people are really excited just to get through the data collection.
+
+115
+00:25:19.010 --> 00:25:24.189
+James Finley: And, again, when I was going through my training, I would often, sort of.
+
+116
+00:25:24.420 --> 00:25:41.419
+James Finley: wait until the end and do my analysis. But what you really want to do is, once you get the first participant's data, first, you know, animal or whatever you're studying, once you have a full data set, you want to go through and do all of your analysis.
+
+117
+00:25:41.620 --> 00:25:48.839
+James Finley: And this is really useful because, it will often show you parts of your analysis pipeline that aren't very well defined.
+
+118
+00:25:49.200 --> 00:25:58.400
+James Finley: Okay, so you then refine your pipeline so that you are confident with the quality of your analysis before you go through and collect all the data.
+
+119
+00:25:59.200 --> 00:26:15.330
+James Finley: The last thing I'll say about this is the other thing you often find as you start to analyze your initial participants is that there may be something you decide that you want to change about your protocol. Maybe there's something that you… a feature you didn't include in an assessment that you think is important.
+
+120
+00:26:15.570 --> 00:26:19.669
+James Finley: But often you may not realize that until you go through your full analysis.
+
+121
+00:26:19.990 --> 00:26:21.820
+James Finley: So I highly recommend doing that.
+
+122
+00:26:24.320 --> 00:26:36.439
+James Finley: Alright, so, once you're kind of comfortable with your analysis, at the same time, you want to be thinking about what is the convention that you use to name all of your files.
+
+123
+00:26:36.530 --> 00:26:45.989
+James Finley: So, we do a lot of motion capture data or studies where we use a particular program called Qualysis Track Manager.
+
+124
+00:26:46.250 --> 00:26:54.210
+James Finley: And, we, you know, input a file name, and it might automatically increment the last number of that file name.
+
+125
+00:26:55.050 --> 00:26:58.139
+James Finley: So you can be really creative with these file names.
+
+126
+00:26:58.560 --> 00:27:09.490
+James Finley: But ideally, in the best case, you have a naming convention that helps… that gives as much information as possible about that piece of data.
+
+127
+00:27:09.880 --> 00:27:14.480
+James Finley: So, in this case, you see this is a fairly strange naming convention.
+
+128
+00:27:14.690 --> 00:27:33.299
+James Finley: but we might have a different, you know, one cohort that, you know, the C stands for cohort. Within each cohort, maybe you have different groups, subjects, and trials. So you can embed, quite a bit of information in your file names without making them too unwieldy.
+
+129
+00:27:33.700 --> 00:27:48.959
+James Finley: Now, if… the reason why this is really helpful is because if things are machine-readable, which we'll talk about in a moment, you can very easily write code that iterates through your cohort, or group, or subject, or trial.
+
+130
+00:27:48.960 --> 00:27:57.460
+James Finley: Really, really important thing to do as, you know, before you start collecting your data, is figure out how you want to name your files.
+
+131
+00:27:58.700 --> 00:28:05.789
+James Finley: When it comes to these file names, you want to make sure that they are machine readable. This is both your folder names, ideally,
+
+132
+00:28:05.890 --> 00:28:14.190
+James Finley: This is less of a problem than it used to be in the, you know, earlier days, but ideally, you don't have spaces in your folder names.
+
+133
+00:28:14.330 --> 00:28:31.939
+James Finley: One important thing for those of you who are doing human subjects data is that you should never use your participant's name or initials in the file names. This is, this is no longer… that would no longer be HIPAA compliant, because then those data are identifiable, okay?
+
+134
+00:28:31.940 --> 00:28:42.620
+James Finley: So, you should have some sort of subject ID number that cannot be easily matched to your particular participants, or that a naive person would not be able to match.
+
+135
+00:28:43.980 --> 00:29:02.420
+James Finley: You want to make sure your file names have a consistent capitalization, so even though all of these file names have the same letters and numbers, they're all different, right? So if you're writing code to cycle through your data, you're going to run into errors if you don't use consistent capitalization, and so on.
+
+136
+00:29:05.300 --> 00:29:21.600
+James Finley: When thinking about the… using numbers in your file name, so incrementing numbers, something that's very basic is you want to think about how many total subjects or trials you might have, and make sure you use a consistent number of digits for all those numbers.
+
+137
+00:29:22.430 --> 00:29:34.340
+James Finley: Why is this the case? So let's say I start naming my participants, you know, subject 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, then 11.
+
+138
+00:29:34.830 --> 00:29:41.130
+James Finley: The problem, then, is that if I try to cycle through things, by file name.
+
+139
+00:29:41.420 --> 00:29:47.779
+James Finley: Subject 11 will come before subject 2, right, because it's the 1 after, after subject.
+
+140
+00:29:48.170 --> 00:29:55.170
+James Finley: So, just make sure you think… you use the same number of digits for all of your numbers.
+
+141
+00:29:56.500 --> 00:30:03.850
+James Finley: And then, last couple of things related to naming. If you want to include dates.
+
+142
+00:30:03.950 --> 00:30:22.600
+James Finley: It's generally best to do year, month, day, and then use 24-hour format for time, again, so that things are organized in a, logical, consistent way, and that helps use
+
+143
+00:30:22.860 --> 00:30:24.690
+James Finley: Accelerate your analysis.
+
+144
+00:30:30.180 --> 00:30:30.930
+James Finley: Okay.
+
+145
+00:30:31.170 --> 00:30:44.080
+James Finley: The, one of the last pieces of information to think about are what are called metadata, and in some cases, classically, these are things you might write in something like a lab notebook,
+
+146
+00:30:44.080 --> 00:30:51.920
+James Finley: But now, since we want to include as much information as we can with our data, these are usually text files.
+
+147
+00:30:51.920 --> 00:30:54.790
+James Finley: We often will call it, refer to them as README files.
+
+148
+00:30:54.790 --> 00:31:01.550
+James Finley: That have, additional information that might not be, obvious from just looking at your data.
+
+149
+00:31:01.880 --> 00:31:17.539
+James Finley: So, you might describe different analyses you're doing, you might have information about how specific variables are coded, so if you're coding sex, you might have one for female, two for male. We do clinical exams quite often in our studies.
+
+150
+00:31:17.970 --> 00:31:37.410
+James Finley: But there may be cases where you omit part of a clinical exam so that the scoring is a little bit different. And so these are things, pieces of information that are really critical for somebody who takes your data to make sense of it, but are not easy to embed in your standard data files.
+
+151
+00:31:38.210 --> 00:31:48.839
+James Finley: And, one way to think about these metadata are that this includes, details about your methods that are useful, so if you
+
+152
+00:31:48.910 --> 00:32:02.499
+James Finley: And we do this frequently, right? If you want to go back to data from several years ago, and you don't remember all these details, you can read the file, and then get up to speed really quickly on your data.
+
+153
+00:32:03.740 --> 00:32:15.610
+James Finley: So we often will keep this with our experimental protocol, so that we can easily combine data if we need to, or pass it along to a new person in the lab.
+
+154
+00:32:17.180 --> 00:32:27.870
+James Finley: Alright, so I'm going to show an example of the process that we instituted in my lab about a year ago, and this is, again, motivated by the fact that
+
+155
+00:32:27.870 --> 00:32:45.900
+James Finley: you know, students would leave the lab, we would then want to reuse that data to answer some new question, and I would have to go, you know, track down alumni and ask them about how things are organized, what are the files, and so on. It was very tedious and, you know, often failed because of the amount of work required.
+
+156
+00:32:46.930 --> 00:32:55.499
+James Finley: So, this is just a Slack message that I shared with my lab about a year ago, and, so what we currently have is what we call an off-boarding checklist.
+
+157
+00:32:55.870 --> 00:33:02.430
+James Finley: This is for, you know, students who are preparing to defend or graduate.
+
+158
+00:33:02.430 --> 00:33:15.910
+James Finley: This is, for me, literally what I do is say, you need to have all of these things organized, and we need to go through them together before, you know, I sign off on your defense. So it's, a requirement for graduation in my group.
+
+159
+00:33:17.300 --> 00:33:22.609
+James Finley: So for our work, we often have a set of physical documents, so if you're doing…
+
+160
+00:33:22.930 --> 00:33:41.050
+James Finley: human subjects research, you have, consent forms, other forms you might use for your IRB, you might have data collection sheets that you're manually completing as you perform your experiment. Maybe you have, clinical exams that you're doing by… on paper.
+
+161
+00:33:41.320 --> 00:33:45.190
+James Finley: And so they're gonna be some set of physical documents associated with your work.
+
+162
+00:33:45.520 --> 00:33:53.899
+James Finley: So you want… you need to have a README file that explains, you know, what those documents are and where they are located.
+
+163
+00:33:54.630 --> 00:34:04.249
+James Finley: Each student will, you know, compile all their physical documents in a binder that is for that one particular study.
+
+164
+00:34:05.410 --> 00:34:17.059
+James Finley: So literally, even right now, we are going back to data that were collected maybe 8 years ago, and using these physical documents to make sure to,
+
+165
+00:34:17.190 --> 00:34:21.830
+James Finley: Interpret what happened in each of the files from their experiment.
+
+166
+00:34:23.940 --> 00:34:40.250
+James Finley: Then, most of what we do now, right, are digital files. Those could also be clinical exam data, so we might use something like REDCap to collect some clinical exam data, and then our experiment data.
+
+167
+00:34:40.730 --> 00:34:49.509
+James Finley: So, how we organize that data in our lab is that we often will use MATLAB or Python or, you know,
+
+168
+00:34:49.800 --> 00:35:01.480
+James Finley: Unity, many different languages to run our experiments. So we have a folder that has the code for those experiments, with a file that explains how to run them.
+
+169
+00:35:02.030 --> 00:35:08.430
+James Finley: Another folder for our data, another folder that contains the analysis scripts.
+
+170
+00:35:08.810 --> 00:35:17.249
+James Finley: In some cases, we do simulation work or computational modeling, and we, you know, have a separate folder for anything that's a simulation-based project.
+
+171
+00:35:17.960 --> 00:35:18.690
+James Finley: Hit.
+
+172
+00:35:19.060 --> 00:35:24.660
+James Finley: So I'll show how this looks for us, and then, open up for any questions.
+
+173
+00:35:25.770 --> 00:35:28.499
+James Finley: So let me switch gear…
+
+174
+00:35:31.840 --> 00:35:36.499
+James Finley: Alright, so can everyone see, this SharePoint folder? Great.
+
+175
+00:35:37.200 --> 00:35:38.690
+James Finley: Alright, so this is,
+
+176
+00:35:39.000 --> 00:35:45.109
+James Finley: A folder that was created by a student who graduated, a little over a year ago.
+
+177
+00:35:45.220 --> 00:35:50.910
+James Finley: And so, this is… one of her exper… or two of the aims from her dissertation were experimental.
+
+178
+00:35:51.020 --> 00:35:58.900
+James Finley: And just as I highlighted on the previous slide, we have separate folders for the experiment, data, and analysis.
+
+179
+00:36:00.030 --> 00:36:02.780
+James Finley: So, if I go to my experiment folder.
+
+180
+00:36:03.930 --> 00:36:08.110
+James Finley: I see several folder, or a couple folders, and a couple files.
+
+181
+00:36:08.490 --> 00:36:15.249
+James Finley: So what I do first, if I was to give this folder to a student or a postdoc, that person would first go to the README document here.
+
+182
+00:36:16.250 --> 00:36:24.579
+James Finley: And, here the student has a link to a GitHub that contains all the code to run the experiment.
+
+183
+00:36:25.100 --> 00:36:33.359
+James Finley: In this Word document are… is a description of each of those files on GitHub, the file name, what the file does.
+
+184
+00:36:34.290 --> 00:36:39.299
+James Finley: And then, we move on to explain the contents of the folder that we just saw.
+
+185
+00:36:40.400 --> 00:36:44.590
+James Finley: So there's a folder called Experiment Documents. Here's what those are.
+
+186
+00:36:44.840 --> 00:36:50.249
+James Finley: There's a folder called QTM Settings for our motion capture. Here's what's included there.
+
+187
+00:36:51.840 --> 00:36:57.170
+James Finley: We have an Excel file for our participant demographics, and here's the information in that Excel file.
+
+188
+00:36:58.530 --> 00:37:18.219
+James Finley: So, again, documentation is one of the more boring parts of research, but once things are really well documented, it makes your life tremendously easier, and also helps make your data and work more available to your community.
+
+189
+00:37:22.650 --> 00:37:27.080
+James Finley: Okay, so that's an example for the experiment folder.
+
+190
+00:37:28.480 --> 00:37:35.360
+James Finley: We then go to Data, So, same thing, there's a README file for the data.
+
+191
+00:37:36.560 --> 00:37:44.210
+James Finley: In our MATLAB folder, we might save data for each individual participant, and data for the whole group.
+
+192
+00:37:44.670 --> 00:38:00.829
+James Finley: You want to explain what each of those map files is, what are the variables that they include, what are the units, and so on. So again, I've never seen, any set of data that is overly documented, right? I've never, you can…
+
+193
+00:38:00.830 --> 00:38:07.350
+James Finley: Almost never provide too much information for a future user of your data.
+
+194
+00:38:09.560 --> 00:38:19.809
+James Finley: Okay, so just to maybe make this a little bit more real, so just this year,
+
+195
+00:38:20.710 --> 00:38:33.929
+James Finley: one of the members of our lab, we were interested in a research question related to control of balance in people post-stroke. We were thinking about a study design, and then realized, like, oh, we already have data that we could use to answer this question.
+
+196
+00:38:34.130 --> 00:38:44.480
+James Finley: So, I literally, pointed, the postdoc for young, he's probably here, pointed him to this folder, said, the data are here, take a look at it.
+
+197
+00:38:44.480 --> 00:38:55.950
+James Finley: And in the next week, or, you know, two weeks later, we had results, right? So he was able to go through, without any additional help, make sense of the folder, how the data were organized.
+
+198
+00:38:56.020 --> 00:38:58.909
+James Finley: And then run some analysis on that, on that data.
+
+199
+00:39:00.650 --> 00:39:08.790
+James Finley: All right, so I want to just pause here to, see if there are any questions by anyone in the audience.
+
+200
+00:39:13.780 --> 00:39:21.780
+Victoria Wood: Do you have a way in your lab that you, like, after you have each individual create these folders, that you then keep track of
+
+201
+00:39:22.070 --> 00:39:26.419
+Victoria Wood: The different types of data that you have across your lab for future potential use cases.
+
+202
+00:39:27.700 --> 00:39:39.020
+James Finley: Yeah, that's the, no, is the answer. That's something that… That's really tough. Yeah, yeah, yeah, so it… so it's something that I've thought a lot about, this year, so…
+
+203
+00:39:40.590 --> 00:39:43.420
+James Finley: in other work that I do,
+
+204
+00:39:44.170 --> 00:39:55.680
+James Finley: We are actually doing, you know, trying to develop some sort of best practices for data, you know, collection, saving, sharing,
+
+205
+00:39:55.710 --> 00:40:05.049
+James Finley: And compiling across different studies. And in just doing that, it made me… it's made me realize that, oh, wow, we have, you know, terabytes of data.
+
+206
+00:40:05.150 --> 00:40:13.400
+James Finley: That could be really useful to answer some of the current questions that we have. But the data was not, at the time.
+
+207
+00:40:13.770 --> 00:40:21.919
+James Finley: collected, stored, documented for future use, right? We thought about it only for that particular project.
+
+208
+00:40:22.050 --> 00:40:27.510
+James Finley: So we're literally going back through now to organize some of our existing data, and
+
+209
+00:40:28.300 --> 00:40:37.059
+James Finley: it's nice because I'm starting to think much more about research questions that we could answer with existing data, because it's much less resource intensive.
+
+210
+00:40:38.540 --> 00:40:50.010
+Victoria Wood: Awesome, yeah, thank you. Yeah, the compilation across individuals and everything is such a huge problem. But having it so organized like this within individuals is… seems very helpful.
+
+211
+00:40:50.440 --> 00:41:09.349
+James Finley: Yeah, and so, you know, in our experiments, we collect, you know, tons of data from people, right? So we do full-body motion capture often, we have ground reaction forces from our treadmill, and we might have them doing, you know, clinical assessments, cognitive, all sorts of things, and we sort of
+
+212
+00:41:09.350 --> 00:41:15.560
+James Finley: answer a couple of questions, and then the next person comes in, collects a whole new set of data. So…
+
+213
+00:41:15.810 --> 00:41:20.650
+James Finley: We also want to make sure that we're not… or be mindful that we're not, sort of, wasting, data.
+
+214
+00:41:22.400 --> 00:41:25.170
+James Finley: Other… Questions?
+
+215
+00:41:30.830 --> 00:41:31.570
+James Finley: Okay.
+
+216
+00:41:32.600 --> 00:41:39.780
+James Finley: So, now I know that, let's see, we have at least… one watch party.
+
+217
+00:41:42.320 --> 00:41:46.740
+James Finley: We may come back to do this at the end, just because we might need to do some breakout rooms.
+
+218
+00:41:50.650 --> 00:41:54.429
+James Finley: Let me just get a sense. Victoria, do you know how many people we have here?
+
+219
+00:41:59.200 --> 00:42:00.140
+Victoria Wood: We have…
+
+220
+00:42:01.170 --> 00:42:08.189
+Victoria Wood: 27 attendees, but 3 of those are watch parties, so I'm not actually totally sure how many we have, or 4 of them.
+
+221
+00:42:08.190 --> 00:42:11.300
+James Finley: Are you able to create a breakout room? Yes.
+
+222
+00:42:11.300 --> 00:42:11.929
+Victoria Wood: Yeah, I'll tell me.
+
+223
+00:42:11.930 --> 00:42:16.550
+James Finley: You're… Let's see… 6 breakout rooms.
+
+224
+00:42:19.080 --> 00:42:23.249
+James Finley: And, we'll do this for… we'll just do this for 5 minutes.
+
+225
+00:42:23.680 --> 00:42:29.330
+James Finley: So, there are a few questions, here that hopefully you all can see.
+
+226
+00:42:30.680 --> 00:42:33.109
+James Finley: And let me modify zoom…
+
+227
+00:42:33.780 --> 00:42:50.170
+James Finley: So, in these breakout rooms, you're going to be, of course, mixed across labs, but, I just want you to spend a few minutes answering these questions. And, you know, the answer may be no to the first question, but,
+
+228
+00:42:50.460 --> 00:42:59.359
+James Finley: I want everybody to spend a little bit of time to think about how you might be able to implement some of these principles for data organization and file management in your own work.
+
+229
+00:42:59.470 --> 00:43:06.590
+James Finley: So the first question, is, do you know if your team uses a defined convention for
+
+230
+00:43:06.860 --> 00:43:09.540
+James Finley: Organizing files and naming them.
+
+231
+00:43:10.380 --> 00:43:14.860
+James Finley: What are some ways that you might improve your team's standards?
+
+232
+00:43:15.060 --> 00:43:20.980
+James Finley: And then, are there any personal strategies that you use, that we haven't discussed so far?
+
+233
+00:43:21.230 --> 00:43:27.450
+James Finley: So, we'll do this for, again, we'll do this in breakout rooms for 5 minutes each.
+
+234
+00:43:34.910 --> 00:43:39.040
+Victoria Wood: Do you want the watch parties to join a breakout room, or just discuss on their own?
+
+235
+00:43:40.330 --> 00:43:43.439
+James Finley: They can join the breakout rooms, I think that might be easiest.
+
+236
+00:43:44.170 --> 00:43:44.899
+Victoria Wood: Sounds good.
+
+237
+00:44:09.600 --> 00:44:12.589
+James Finley: Just hang here instead of joining them.
+
+238
+00:44:12.780 --> 00:44:19.499
+Victoria Wood: Oh wait, I accidentally… room 6 only had 2 people somehow? Can I move you to room 6, if you're gonna join one?
+
+239
+00:44:19.870 --> 00:44:22.460
+James Finley: Oh, I'm just gonna hang here so they can… Okay. Yeah.
+
+240
+00:44:22.750 --> 00:44:23.430
+Victoria Wood: That's fine.
+
+241
+00:45:12.980 --> 00:45:15.909
+James Finley: Is it possible for you to share
+
+242
+00:45:16.010 --> 00:45:19.299
+James Finley: Information with each of the, rooms.
+
+243
+00:45:19.720 --> 00:45:21.280
+James Finley: I always forget how this works.
+
+244
+00:45:21.280 --> 00:45:22.170
+Victoria Wood: Yeah, I can…
+
+245
+00:45:22.290 --> 00:45:25.030
+James Finley: Manually per room, or can you broadcast it?
+
+246
+00:45:25.030 --> 00:45:27.959
+Victoria Wood: Yeah, I can broadcast. Yeah, if that's…
+
+247
+00:45:27.960 --> 00:45:28.849
+James Finley: Oh, jeez.
+
+248
+00:45:29.090 --> 00:45:31.430
+James Finley: I'm gonna post the questions in the chat.
+
+249
+00:45:31.680 --> 00:45:34.129
+James Finley: Just in case people don't remember.
+
+250
+00:45:34.680 --> 00:45:37.070
+James Finley: So if you can broadcast that information out to me.
+
+251
+00:45:37.410 --> 00:45:38.210
+Victoria Wood: Perfect.
+
+252
+00:45:38.370 --> 00:45:43.570
+Victoria Wood: Yeah, if you… I can also send a screenshot… a screenshot into the Slack.
+
+253
+00:45:44.080 --> 00:45:45.850
+James Finley: Okay. Yes, that's…
+
+254
+00:45:45.850 --> 00:45:47.000
+Victoria Wood: eager to…
+
+255
+00:45:56.500 --> 00:46:05.710
+Victoria Wood: Hmm… Yeah, because the broadcast is a very, small, Character count.
+
+256
+00:46:06.520 --> 00:46:10.839
+James Finley: Okay, so I'm doing a screenshot now, so…
+
+257
+00:46:12.060 --> 00:46:15.699
+James Finley: Should I just drop that screenshot into the chat?
+
+258
+00:46:18.610 --> 00:46:19.680
+Victoria Wood: Yeah, that works.
+
+259
+00:46:58.190 --> 00:47:04.410
+Victoria Wood: yeah, I can only fit two of the discussion questions into the broadcast message, so I can do them one at a time, but they might disappear.
+
+260
+00:47:04.410 --> 00:47:05.220
+James Finley: Okay.
+
+261
+00:47:05.890 --> 00:47:08.170
+James Finley: I think they probably all have it figured out.
+
+262
+00:47:09.000 --> 00:47:10.750
+James Finley: How much more time do we have?
+
+263
+00:47:13.020 --> 00:47:14.520
+Victoria Wood: For the folk, there's…
+
+264
+00:47:14.520 --> 00:47:16.920
+James Finley: For the breakout rooms.
+
+265
+00:47:17.820 --> 00:47:19.520
+Victoria Wood: Up to you how much time…
+
+266
+00:47:19.520 --> 00:47:21.410
+James Finley: Oh, okay. G1.
+
+267
+00:47:21.410 --> 00:47:23.049
+Victoria Wood: Yeah, sorry, I did not.
+
+268
+00:47:23.260 --> 00:47:25.310
+Victoria Wood: Start tracking when we started this?
+
+269
+00:47:27.090 --> 00:47:28.539
+James Finley: Not a problem.
+
+270
+00:47:33.630 --> 00:47:35.389
+James Finley: So we'll just do 2 more minutes here.
+
+271
+00:47:36.100 --> 00:47:39.839
+Victoria Wood: I'll set out a one-minute warning in one minute then.
+
+272
+00:47:39.980 --> 00:47:40.900
+James Finley: Okay, great.
+
+273
+00:47:43.840 --> 00:47:45.010
+Victoria Wood: the,
+
+274
+00:47:45.210 --> 00:47:49.240
+Victoria Wood: the watch party last week, I think, actually went pretty well. We got a lot of positive feedback in the.
+
+275
+00:47:49.240 --> 00:47:49.860
+James Finley: Oh, wow.
+
+276
+00:47:49.860 --> 00:47:53.050
+Victoria Wood: form, so… It's a good one.
+
+277
+00:47:53.420 --> 00:47:56.300
+James Finley: Yeah, I was thinking, I was like, I haven't even watched that, I don't even…
+
+278
+00:47:57.100 --> 00:48:00.529
+James Finley: Hey, you know, I know what's created. Okay, good, good.
+
+279
+00:48:01.990 --> 00:48:08.359
+Victoria Wood: Yeah, and I mean, the code and stuff that you posted is very easy to follow, because you commented it very well, so…
+
+280
+00:48:08.360 --> 00:48:10.340
+James Finley: Yay! Ray.
+
+281
+00:48:11.460 --> 00:48:20.729
+James Finley: Yeah, sharing code is always fun. I always, imagine that, like, somebody's gonna be ultra-critical when nobody agrees.
+
+282
+00:48:21.540 --> 00:48:25.709
+James Finley: Okay, so we have 45 minutes. I think we're doing pretty well on time.
+
+283
+00:48:25.960 --> 00:48:33.659
+James Finley: That's… you have just kind of 3 other demos to do, and about 12 slides, so I think that should work with the time we have.
+
+284
+00:48:37.220 --> 00:48:38.440
+Victoria Wood: Sounds good.
+
+285
+00:48:41.850 --> 00:48:44.699
+Victoria Wood: Go ahead and, send the…
+
+286
+00:48:45.030 --> 00:48:49.599
+Victoria Wood: closing, thing, which means that they have 1 minute left. Okay.
+
+287
+00:49:25.160 --> 00:49:31.519
+Victoria Wood: Yeah, I accidentally made room 4 very big, and room 6 very small, so… That's my bad.
+
+288
+00:49:33.640 --> 00:49:34.709
+James Finley: Oh my gosh.
+
+289
+00:49:34.920 --> 00:49:37.319
+James Finley: Get people actively involved.
+
+290
+00:50:08.260 --> 00:50:11.420
+James Finley: Everybody's trickling back in…
+
+291
+00:50:25.130 --> 00:50:33.970
+James Finley: Okay, so we'll take just a couple of minutes here to hopefully get some volunteers to share. So,
+
+292
+00:50:34.240 --> 00:50:45.910
+James Finley: Does anybody want to volunteer, to describe a convention that you all… that you might use in your own lab for file organization and naming?
+
+293
+00:50:54.770 --> 00:51:06.620
+UCI Watch Group: Alright, ours is pretty much exactly what you described that we use here at UCI. We put in subject name, trial types, if it was collected over multiple days, we'll put the data in.
+
+294
+00:51:06.860 --> 00:51:09.369
+UCI Watch Group: I don't know what else.
+
+295
+00:51:09.670 --> 00:51:15.089
+UCI Watch Group: I think we typically use, like, underscores to separate each of those sections, but very similar.
+
+296
+00:51:15.490 --> 00:51:16.330
+UCI Watch Group: Great.
+
+297
+00:51:16.940 --> 00:51:19.580
+James Finley: Anybody else use anything different?
+
+298
+00:51:21.390 --> 00:51:29.169
+Bertrand Tanner: Part of what I was talking about, my name's Bert Tanner, I'm a faculty member at Washington State University, and we do a lot of,
+
+299
+00:51:29.400 --> 00:51:37.000
+Bertrand Tanner: like, muscle mechanics, single fiber type work, and I was telling the people in my breakout group that
+
+300
+00:51:37.150 --> 00:51:46.309
+Bertrand Tanner: We're, like, very regimented and organized in terms of our data acquisition, and what we do with where we store our data, how we name our data.
+
+301
+00:51:46.830 --> 00:51:52.730
+Bertrand Tanner: But then, once it goes into, like, the analysis pipeline, that's, like, totally not…
+
+302
+00:51:52.860 --> 00:51:59.790
+Bertrand Tanner: consistent at all, so I was thinking about, when we were asking these questions, like, there's two halves of the coin that we have where
+
+303
+00:51:59.980 --> 00:52:11.709
+Bertrand Tanner: We're really good at where the data is, and how it's structured, and how we organize it with, like, you know, what species it comes from, what date the dissection was done on, when the experiment was run, things like that.
+
+304
+00:52:11.960 --> 00:52:21.499
+Bertrand Tanner: But then, as it goes into, like, different people analyzing it, it sort of takes on its own form that they put on it, which, you know, that has…
+
+305
+00:52:21.660 --> 00:52:33.479
+Bertrand Tanner: Some advantages for flexibility and freedom of thinking for those people, but it also is impossible to, like, keep up with and repeat if you need to go back to it, like you were talking about, so…
+
+306
+00:52:33.930 --> 00:52:38.519
+James Finley: Yeah, yeah, this is, I mean, this is the reality of our science, is that,
+
+307
+00:52:39.050 --> 00:52:52.460
+James Finley: especially when it comes to analysis, right? We're rarely working in a team at that point. It's often a student, a postdoc, an individual faculty member who's writing the code for the analysis, and they have their own
+
+308
+00:52:52.900 --> 00:52:58.170
+James Finley: You know, sometimes standards, sometimes things they make up on the fly.
+
+309
+00:52:58.330 --> 00:53:11.800
+James Finley: And so we'll talk a little bit, as we go on, that even if that's what you do, you can still document those things, make sure your code is well commented, and then optimize your code so that somebody else can understand it.
+
+310
+00:53:12.220 --> 00:53:21.919
+James Finley: Does anybody have any personal strategies for file or data management that we haven't discussed so far that they'd like to share with the group?
+
+311
+00:53:31.200 --> 00:53:46.459
+James Finley: The last thing I'll say on this topic is, in recent years, one of the things I've noticed just in teaching is that, students, graduate students, often will come into my class, maybe they don't have programming experience.
+
+312
+00:53:46.550 --> 00:54:00.380
+James Finley: And when I start to share files with them, either, you know, on our, it used to be Blackboard, it's Brightspace now, or maybe, they collect some data in the lab, I share scripts with them.
+
+313
+00:54:00.730 --> 00:54:17.010
+James Finley: I started to notice that students would just, like, keep everything in the downloads folder, which was really strange to me until I realized that a lot of people's, you know, use of technology is primarily driven through their phone, where you often will just save things, essentially, to your downloads folder.
+
+314
+00:54:17.010 --> 00:54:23.470
+James Finley: So, the idea of creating file structures and doing things really systematically
+
+315
+00:54:24.240 --> 00:54:32.050
+James Finley: was newer, for many people than I initially expected, and then it was, you know, 10 years ago.
+
+316
+00:54:32.950 --> 00:54:36.339
+James Finley: Alright, so now let's, move on to data analysis.
+
+317
+00:54:36.610 --> 00:54:55.450
+James Finley: So, now that you've had… you've, you know, designed your experiment, your data are… you're starting to collect data, you have good file naming and file management strategies, what are some things to consider as you start to try to draw inference about your… your scientific question?
+
+318
+00:54:56.250 --> 00:55:08.310
+James Finley: So, generally, I like to outline several steps in the typical data analysis pipeline, and I'll highlight some of these as we go. The first is making sure you know your data.
+
+319
+00:55:08.470 --> 00:55:17.480
+James Finley: Know what you're trying to do. This is often the hardest part for people who are new to science or data analysis.
+
+320
+00:55:17.880 --> 00:55:23.880
+James Finley: You then need to import your data into some environment. We're talking about programming today.
+
+321
+00:55:24.780 --> 00:55:33.389
+James Finley: If you want to do some quality control, do what we might call pre-processing, computing summary measures, make figures.
+
+322
+00:55:33.510 --> 00:55:43.870
+James Finley: do stats, and then save the results. And, one of the things that I really try to highlight in my group is that steps
+
+323
+00:55:44.190 --> 00:55:53.090
+James Finley: 3 through 9 should really be automated and, you know, as concise as possible, as we'll discuss later on.
+
+324
+00:55:54.150 --> 00:56:12.929
+James Finley: Alright, so what does it mean to know your data? It's really… when you do things from scratch, often just by nature of moving things forward, you will have a very good understanding of your data, but often you might join a group where the data already exists, or you download data that exists from prior studies.
+
+325
+00:56:13.120 --> 00:56:21.429
+James Finley: So things you want to make sure you understand. How were the data collected? What was the exact protocol? What was the hardware that was used?
+
+326
+00:56:21.550 --> 00:56:24.979
+James Finley: Because that might influence different properties of your data.
+
+327
+00:56:25.350 --> 00:56:39.159
+James Finley: For a lot of the work that we do, we deal with time series data, so things like force, EMG, marker positions, what have you. Time could also be multiple measurements over days.
+
+328
+00:56:39.460 --> 00:56:54.219
+James Finley: So you always want to make sure that you know the frequency with which your data are sampled. So, if you have 1,000 data points, how far apart in time are those data? That is not all… you don't always have a time
+
+329
+00:56:54.250 --> 00:56:59.939
+James Finley: You know, vector that corresponds to your data, so if you don't, you need to at least know your sample frequency.
+
+330
+00:57:00.990 --> 00:57:11.979
+James Finley: Another thing that is often, you know, not embedded in your data is… are the units. If you just have a matrix, right, that… those are just sets of numbers.
+
+331
+00:57:13.440 --> 00:57:21.940
+James Finley: Always, always make sure you know what units you're dealing with. This happens all the time, where people are thinking they're dealing with
+
+332
+00:57:22.190 --> 00:57:32.799
+James Finley: meters, and it's millimeters. They think they're dealing with degrees, but it's radians. You think the data are in percent, but they're in, they're fractional, right?
+
+333
+00:57:33.080 --> 00:57:36.929
+James Finley: So, really basic thing that's really important.
+
+334
+00:57:37.440 --> 00:57:53.819
+James Finley: And then the last thing, which we won't… which is… we won't have a lot of time to talk about today, is accuracy and reliability. So just because you have numbers does not mean those numbers are an accurate and valid reflection of the thing you're studying.
+
+335
+00:57:53.950 --> 00:58:12.720
+James Finley: We do metabolic testing quite frequently in our research, where we measure oxygen consumption, and if I have somebody walk at, you know, 1 meter per second for 6 minutes, and I look at the metabolic data, right, it's highly variable. That is both a property of the measurement system and the physiology.
+
+336
+00:58:12.720 --> 00:58:25.640
+James Finley: So, you really need to understand how much of the variability in your data is true physiological behavioral variability versus variability due to your methods and antiquity.
+
+337
+00:58:27.220 --> 00:58:40.920
+James Finley: So, talking about variability, again, when we have variability that's due to our methods and equipment, we're generally talking about errors, so hopefully,
+
+338
+00:58:40.980 --> 00:58:50.890
+James Finley: You know, this may or may not happen in your… in a summer research experience, but you're receiving some training to perform your, to do your experiment.
+
+339
+00:58:51.350 --> 00:58:57.869
+James Finley: And hopefully you have some sense of how reliable your methods are by essentially
+
+340
+00:58:58.030 --> 00:59:13.119
+James Finley: you might do this by testing the exact same participant under the same condition one week apart, right? Where you would expect the same behavior and outcome, and you can, you know, do formal assessments of how reliable those outcomes are.
+
+341
+00:59:14.180 --> 00:59:26.829
+James Finley: For your measurement instruments, you… if you have some flexibility in the tools you use to make your measurements, make sure you understand how accurate and reliable those tools are.
+
+342
+00:59:27.680 --> 00:59:42.360
+James Finley: And then lastly, we're all studying some aspect of human and animal behavior, and so, you want to think about potential sources of variability in the actual, signal that you're measuring, right? So, what…
+
+343
+00:59:42.480 --> 00:59:47.029
+James Finley: Elements of that variability are due to the things you're controlling in your experiment.
+
+344
+00:59:47.370 --> 00:59:54.639
+James Finley: So, let's say speed, if I'm walking, versus things that are not critical to your research question.
+
+345
+00:59:54.820 --> 01:00:08.000
+James Finley: So for instance, getting used to walking on a treadmill might not be part of my research question, so I want to make sure that I have a sufficient acclimation period so that that, is… does not influence my measurements.
+
+346
+01:00:09.690 --> 01:00:10.430
+James Finley: Okay.
+
+347
+01:00:10.600 --> 01:00:21.509
+James Finley: The last things about knowing your data are understanding the format that your data are stored, and, what we already discussed today about how individual files are organized.
+
+348
+01:00:22.560 --> 01:00:41.599
+James Finley: So, across all of our labs and studies, you may run across different file formats. So, just some basics for… if this is new for people. One of the biggest differences across these formats is whether they are proprietary or,
+
+349
+01:00:41.600 --> 01:00:46.030
+James Finley: Able to be used interchangeably across different platforms and pieces of software.
+
+350
+01:00:46.750 --> 01:01:04.069
+James Finley: So, in general, you want to be… you want to save data in formats that are interoperable across or independent of your analysis software. So, things like CSV files, to a certain extent Excel files, and even sometimes JSON files.
+
+351
+01:01:04.470 --> 01:01:13.129
+James Finley: Can be read in any programming language, or in some cases, imported into statistical analysis software.
+
+352
+01:01:14.130 --> 01:01:20.339
+James Finley: even though we'll talk a lot about MATLAB today, map files, which we use in MATLAB,
+
+353
+01:01:20.550 --> 01:01:38.159
+James Finley: And for motion capture C3D files, these, particularly MAT files, are proprietary in the sense that they are built only for MATLAB, and you may not be able to read them into other pieces of analysis software.
+
+354
+01:01:38.590 --> 01:01:48.280
+James Finley: So, you know, talk with your PI about the types of file formats and the pros and cons of these different formats for your purposes.
+
+355
+01:01:48.520 --> 01:01:51.659
+James Finley: Ultimately, my goal is for people to share their data.
+
+356
+01:01:52.010 --> 01:02:00.159
+James Finley: I don't care if you share it as a map file or a CSV file, sharing something is better than sharing nothing, so, just keep that in mind.
+
+357
+01:02:01.570 --> 01:02:12.299
+James Finley: Alright, so, the next step in your analysis process is to really clearly know what you're trying to do, and, so I separate this into a few different questions.
+
+358
+01:02:13.330 --> 01:02:15.560
+James Finley: So, the first thing is that…
+
+359
+01:02:15.970 --> 01:02:28.149
+James Finley: you know, you shouldn't collect data just to have the data. That data should be collected to answer a particular question, so you need to know what that question is and be able to state it, really clearly.
+
+360
+01:02:29.620 --> 01:02:35.790
+James Finley: So, as you're starting to develop, analysis pipelines, if you're new to this.
+
+361
+01:02:35.900 --> 01:02:46.560
+James Finley: This is essentially like, you know, solving word problems in algebra in middle school, right? So, you're gonna have a research question, which is a word problem.
+
+362
+01:02:46.730 --> 01:02:52.129
+James Finley: You're gonna start somewhere, you know, you have some measurements that you've made.
+
+363
+01:02:52.710 --> 01:02:58.610
+James Finley: Then, one of the things that people sometimes forget is, well, how do you know if you've answered your question?
+
+364
+01:02:58.880 --> 01:03:00.229
+James Finley: In other words.
+
+365
+01:03:00.400 --> 01:03:13.770
+James Finley: on the back end of your analysis, what is the figure you're going to create, what is the number you're going to compute that allows you to know if you've answered your question. So you always, always need to keep that in mind.
+
+366
+01:03:15.110 --> 01:03:25.470
+James Finley: Then, you want to write, or at least think through, the step-by-step procedure for going from input to output.
+
+367
+01:03:25.760 --> 01:03:34.000
+James Finley: So, this is what I refer to as your… the development of your analysis process or algorithm. And so you're gonna have a bunch of steps
+
+368
+01:03:34.130 --> 01:03:36.340
+James Finley: To go from input to output.
+
+369
+01:03:37.080 --> 01:03:40.299
+James Finley: Now, again, one of the…
+
+370
+01:03:40.410 --> 01:03:50.230
+James Finley: the kind of burning topics of the day that we don't have a lot of time to cover is when, is AI useful in your data analysis process?
+
+371
+01:03:50.880 --> 01:03:55.040
+James Finley: So, we probably all have differing opinions about this.
+
+372
+01:03:55.580 --> 01:04:00.550
+James Finley: I think that once you get to this step, if you are new to data analysis.
+
+373
+01:04:00.800 --> 01:04:09.050
+James Finley: this is a very good use of AI, is here is my research question, here are the data that I'm collecting.
+
+374
+01:04:09.400 --> 01:04:11.250
+James Finley: Help me…
+
+375
+01:04:12.050 --> 01:04:20.830
+James Finley: write a set of analysis process to answer this question, right? I'm using MATLAB, I'm using Python, I'm using these packages.
+
+376
+01:04:20.990 --> 01:04:29.780
+James Finley: highlight potential functions that might be useful. So you're, you're using, you know, AI, like,
+
+377
+01:04:30.100 --> 01:04:34.589
+James Finley: A colleague to help you lay out your process.
+
+378
+01:04:35.810 --> 01:04:48.499
+James Finley: Or maybe you have an algorithm or a step of… a set of steps that you've outlined yourself. You can help use AI to understand what are the, you know, the strengths and limitations of those steps.
+
+379
+01:04:50.890 --> 01:04:54.309
+James Finley: Once you know what you're trying to do, and you have a roadmap.
+
+380
+01:04:54.430 --> 01:05:05.140
+James Finley: then you want to convert that to, to code. Okay, so this is for people just starting out. These two steps are the hardest thing that you're probably going to do.
+
+381
+01:05:05.470 --> 01:05:10.230
+James Finley: And, again, we can argue about the use of AI.
+
+382
+01:05:10.860 --> 01:05:26.410
+James Finley: So, you could, in MATLAB, in Copilot, in Claude, just ask it to write your whole analysis script. Here's where I'm starting, here's where I'm trying to go, write an analysis script to do this.
+
+383
+01:05:26.590 --> 01:05:32.310
+James Finley: And it's going to give you code. The code's probably gonna look great.
+
+384
+01:05:32.490 --> 01:05:44.769
+James Finley: But it's a lot… it's often going to be a lot of code that you then have to interpret and quality control, okay? So, my belief is that you definitely do not want to just ask for the full process.
+
+385
+01:05:44.980 --> 01:05:54.360
+James Finley: But you can use AI as a consultant as you go along to help you write accurate and efficient code.
+
+386
+01:05:56.070 --> 01:06:06.409
+James Finley: So common things that you're going to be doing at this… these steps, you, you know, once you start writing your code, you need to define some variables, you might apply a function.
+
+387
+01:06:06.570 --> 01:06:10.750
+James Finley: Just a laser pointer.
+
+388
+01:06:12.000 --> 01:06:19.140
+James Finley: You often will have a set of numbers where you need to extract certain elements, so you need to define rules to extract those elements.
+
+389
+01:06:19.650 --> 01:06:26.510
+James Finley: Maybe you have interactive code where, you know, I use this for, quality control sometimes.
+
+390
+01:06:26.890 --> 01:06:29.719
+James Finley: So lots of different things that you might think of.
+
+391
+01:06:30.250 --> 01:06:34.510
+James Finley: as a general rule, what I tell most of the people I work with is that
+
+392
+01:06:34.660 --> 01:06:52.649
+James Finley: Again, we primarily use MATLAB, but if there is something that you think could be done with code, there's a good chance you can do it with code, that somebody else has already done it, and that that code exists. Either it's built into MATLAB, or it's something that you can download, from the web.
+
+393
+01:06:53.000 --> 01:06:56.919
+James Finley: So try not to, reinvent the wheel if you can help it.
+
+394
+01:06:59.880 --> 01:07:04.230
+James Finley: Alright, basic things, you know, you always…
+
+395
+01:07:04.350 --> 01:07:08.499
+James Finley: Write a snippet of code, check that it works, save it.
+
+396
+01:07:08.710 --> 01:07:09.779
+James Finley: move on.
+
+397
+01:07:11.950 --> 01:07:14.030
+James Finley: Maybe, I don't know if we're gonna have…
+
+398
+01:07:14.220 --> 01:07:17.949
+James Finley: Victoria, do you know if we've ever had a GitHub tutorial for MC?
+
+399
+01:07:18.340 --> 01:07:20.940
+James Finley: Or does anybody… What's that? What happened?
+
+400
+01:07:20.940 --> 01:07:21.849
+Victoria Wood: We have not, but that'.
+
+401
+01:07:21.850 --> 01:07:22.200
+James Finley: Okay.
+
+402
+01:07:22.200 --> 01:07:23.900
+Victoria Wood: That's actually a great idea.
+
+403
+01:07:23.900 --> 01:07:25.060
+James Finley: So,
+
+404
+01:07:25.510 --> 01:07:40.939
+James Finley: So, version control is… you can do what's called version control in different ways. What version control means is that as you change a file, you save a history of those changes. The most basic way to do version control
+
+405
+01:07:41.050 --> 01:07:51.779
+James Finley: is once your code is working, save it with a new name, and then start working on that new file if you add new features, right? So the old version is still… it still exists.
+
+406
+01:07:51.950 --> 01:07:56.829
+James Finley: Nowadays, you know, you use GitHub for a lot of this stuff.
+
+407
+01:07:59.280 --> 01:08:15.250
+James Finley: maybe we can talk about that later this summer. I am not a GitHub expert, this came about after I learned all of my bad habits, but super, super useful, both to organize your code, share code with people in your lab, and to do version control.
+
+408
+01:08:16.930 --> 01:08:19.140
+James Finley: Okay, so…
+
+409
+01:08:20.569 --> 01:08:27.570
+James Finley: Alright, so we just have a few slides left, and then we'll go through some, some examples, some… a few hands-on examples.
+
+410
+01:08:30.439 --> 01:08:43.710
+James Finley: One of the things that, for people who are new to programming, that I have observed over the years, is if you come from, a field, a background, where most of your training has to do with
+
+411
+01:08:43.880 --> 01:08:49.859
+James Finley: I'm gonna say, sort of memorizing information, you know…
+
+412
+01:08:49.979 --> 01:08:53.909
+James Finley: Making written arguments, right, and not programming.
+
+413
+01:08:54.160 --> 01:08:57.870
+James Finley: Programming is a very different type of learning than what you might be accustomed to.
+
+414
+01:08:58.399 --> 01:09:03.710
+James Finley: Specifically, you learn Mostly through negative feedback.
+
+415
+01:09:03.950 --> 01:09:14.759
+James Finley: So, you write some code, you run it, you get an error message. If you have your audio on, you will get some sound from MATLAB, and it will maybe drive you crazy.
+
+416
+01:09:15.580 --> 01:09:23.620
+James Finley: The thing to keep in mind is that these messages are… yes, they're frustrating, but they are meant to help you fix your problems.
+
+417
+01:09:24.000 --> 01:09:39.549
+James Finley: Again, nowadays, you should… you can, even within MATLAB, so MATLAB has an AI tool, Copilot, built in, you can ask MATLAB to help you identify the source of the problem.
+
+418
+01:09:39.560 --> 01:09:49.450
+James Finley: Interpret the words in the error file, or error message, excuse me, and, suggest ways to solve, to fix that error, okay?
+
+419
+01:09:49.750 --> 01:09:57.359
+James Finley: So, Negative feedback is your friend. It's helping make sure that your code, operates
+
+420
+01:09:57.870 --> 01:10:05.959
+James Finley: At least make sure… helps you make sure that your code runs, and then it's up to you to ensure that it runs properly, which we'll talk about shortly.
+
+421
+01:10:09.030 --> 01:10:12.880
+James Finley: Alright, last few things here, so…
+
+422
+01:10:13.700 --> 01:10:28.340
+James Finley: one of the things that you need to always do is to make sure that your code is correct, okay? So, one of the biggest problems I have seen over the years, and I continue to see, is when people run code
+
+423
+01:10:28.480 --> 01:10:39.699
+James Finley: that code produces a result. Because there are no errors, and the result looks plausible, people think the result is correct. Okay, so plausible is not the same as accurate.
+
+424
+01:10:40.070 --> 01:10:44.450
+James Finley: So here's an example, where you have two…
+
+425
+01:10:45.410 --> 01:11:00.599
+James Finley: vectors here, X and Y, and I'm going to make a plot. I want to look at the relationship between how people score on some exam changes as a… sorry, score changes as a function of repeated testing. And you get a figure that looks like this.
+
+426
+01:11:00.850 --> 01:11:06.060
+James Finley: So, my axes are labeled correctly.
+
+427
+01:11:06.180 --> 01:11:15.750
+James Finley: I have a figure, I didn't get any errors, and you might conclude that, oh, with, you know, with practice, people get better, right? The scores go up over time.
+
+428
+01:11:15.920 --> 01:11:18.130
+James Finley: That is a plausible result.
+
+429
+01:11:18.310 --> 01:11:20.120
+James Finley: And you didn't get any errors.
+
+430
+01:11:20.340 --> 01:11:28.380
+James Finley: But this is… this is wrong, right? If you look closely at the code, you might be able to find what this error is.
+
+431
+01:11:28.620 --> 01:11:37.810
+James Finley: I'm supposed to be plotting X… the X variable on the x-axis, the Y variable on the y-axis, but I'm plotting the exact same variable on both axes.
+
+432
+01:11:38.240 --> 01:11:40.219
+James Finley: When you fix the problem.
+
+433
+01:11:40.420 --> 01:11:52.440
+James Finley: So here, my second input is now Y. Now you see that there's some variability from session to session, but no clear trend. So, very basic example.
+
+434
+01:11:52.440 --> 01:12:02.580
+James Finley: But always, always keep in mind that the lack of errors does not mean that… or the lack of an error message does not mean that there are no errors in your code.
+
+435
+01:12:05.340 --> 01:12:06.080
+James Finley: Alright.
+
+436
+01:12:06.900 --> 01:12:08.679
+James Finley: Last two slides here.
+
+437
+01:12:09.400 --> 01:12:13.659
+James Finley: Things that you want to do, and let me actually make this a little simpler.
+
+438
+01:12:14.380 --> 01:12:15.140
+James Finley: See what I can…
+
+439
+01:12:27.220 --> 01:12:33.359
+James Finley: Okay, so this is… some of this is maybe more useful for people who have more experience.
+
+440
+01:12:34.260 --> 01:12:50.240
+James Finley: Try not to write really long lines of code, right? It may work, but it's not human readable. Always think about making code that is as human-readable as possible, so that often will involve breaking up things that are complex over multiple lines of code.
+
+441
+01:12:50.380 --> 01:12:59.690
+James Finley: I like to really bold this. Variables like X, Y, I, J,
+
+442
+01:12:59.800 --> 01:13:01.659
+James Finley: Are not useful at all, like…
+
+443
+01:13:02.280 --> 01:13:14.299
+James Finley: Stop doing that. We all start doing it, especially writing for loops for i equals blah blah blah. Nobody knows what i is. So just give it a meaningful, human-readable name.
+
+444
+01:13:14.650 --> 01:13:25.589
+James Finley: So, for example, I'm cycling in a for loop through different participants. I just use my looping variable, which normally you might call I, just call it participant.
+
+445
+01:13:25.830 --> 01:13:31.689
+James Finley: That it's really easy for somebody to read your code and say, oh, this loop cycles through the participants.
+
+446
+01:13:32.610 --> 01:13:34.639
+James Finley: One of the…
+
+447
+01:13:35.490 --> 01:13:42.999
+James Finley: I'm not a computer scientist, but, I've heard this stated multiple times from people who have more formal programming training.
+
+448
+01:13:43.130 --> 01:13:44.470
+James Finley: is that…
+
+449
+01:13:44.720 --> 01:14:02.810
+James Finley: really well-written code does not require a lot of comments, okay? So, again, if you use human-readable variable names, you break your code into individual lines, it's actually… it becomes very easy to see what's happening, so that you don't need excessive comments, okay?
+
+450
+01:14:03.370 --> 01:14:13.269
+James Finley: You can always still add comments as you write your code, but, using, like I said, meaningful names goes a long way to making your code easy to understand.
+
+451
+01:14:15.950 --> 01:14:23.689
+James Finley: So, a couple of things that we're gonna do now are talk about ways to organize code and make it more concise.
+
+452
+01:14:24.160 --> 01:14:29.620
+James Finley: So, using functions is a big part of that.
+
+453
+01:14:31.280 --> 01:14:46.159
+James Finley: For those with experience, and again, we'll do a by show of hands here, raise your hand in Zoom if you frequently use functions, or you write functions in your code.
+
+454
+01:14:46.620 --> 01:14:54.339
+James Finley: Okay, so a function is not a script, a function has a defined name, defined inputs and outputs.
+
+455
+01:15:00.750 --> 01:15:02.270
+James Finley: Alright, so we have,
+
+456
+01:15:03.230 --> 01:15:10.200
+James Finley: yeah, maybe a handful of people here. I'm gonna assume that a lot of people who didn't raise their hand are maybe new to programming.
+
+457
+01:15:11.740 --> 01:15:20.679
+James Finley: So, let's take a look at a couple of examples about how we might make our code more concise.
+
+458
+01:15:21.500 --> 01:15:31.189
+James Finley: So I'm gonna switch to, the online MATLAB tutorial that was linked in Slack that Victoria shared with you last week.
+
+459
+01:15:32.970 --> 01:15:34.949
+James Finley: I don't think we are…
+
+460
+01:15:38.810 --> 01:15:39.660
+James Finley: Let's see…
+
+461
+01:15:44.670 --> 01:15:59.149
+James Finley: Okay, so, you know, most people who are new to MATLAB, hopefully you have completed what's called the MATLAB on-ramp, so I'm just gonna navigate, show you how to navigate to this, this resource.
+
+462
+01:16:00.360 --> 01:16:03.059
+James Finley: Alright, so if I go to…
+
+463
+01:16:04.980 --> 01:16:12.339
+James Finley: MathWorks.com, the main website for MATLAB. I can log in with my university account.
+
+464
+01:16:12.900 --> 01:16:19.659
+James Finley: Go to Learn, And, go to Self-Paced Online Courses.
+
+465
+01:16:20.760 --> 01:16:24.330
+James Finley: This is one of the things I love most about MATLAB.
+
+466
+01:16:24.510 --> 01:16:38.220
+James Finley: is… and this is sort of what universities are paying for. So they have a really great set of resources that are well organized, that are provided for you to learn, you know, countless skills in MATLAB.
+
+467
+01:16:38.840 --> 01:16:49.670
+James Finley: So, today we're going to talk about writing functions, and let's see… Stop.
+
+468
+01:16:55.810 --> 01:17:01.310
+James Finley: Alright, so you can just… it's probably easiest… well, I'll drop this.
+
+469
+01:17:05.710 --> 01:17:08.670
+James Finley: Alright, so I just dropped a link in the chat to this,
+
+470
+01:17:09.640 --> 01:17:21.039
+James Finley: to this course. So, if you… if you're not accustomed to writing functions, MATLAB has a course for that. It takes a couple hours, or I think… I know this one's only about an hour, so it's pretty easy to do.
+
+471
+01:17:22.180 --> 01:17:25.790
+James Finley: So, let's see, we wanted to…
+
+472
+01:17:26.200 --> 01:17:38.059
+James Finley: So there are two different ways, or two different types of functions you might write in MATLAB. One is referred to as a local function, the other is referred to as a function file.
+
+473
+01:17:38.230 --> 01:17:44.460
+James Finley: So, in the interest of time, we're gonna jump right to the example.
+
+474
+01:17:45.690 --> 01:17:55.630
+James Finley: So typically, when you are starting out in… with programming, you… and if you're using MATLAB specifically, your… your script
+
+475
+01:17:55.890 --> 01:18:07.029
+James Finley: has a set of actions that you perform, and those actions are performed sequentially, right? So, you might import data, preprocess it, make a figure.
+
+476
+01:18:07.150 --> 01:18:11.450
+James Finley: export the figure, or something like that, right? So that would be a script.
+
+477
+01:18:12.310 --> 01:18:16.680
+James Finley: So here's an example of a script in the tutorial that does just that.
+
+478
+01:18:16.900 --> 01:18:28.239
+James Finley: So there's some data about city temperatures. It's first loaded in… into the workspace. There are specific variables that are loaded into the workspace.
+
+479
+01:18:28.500 --> 01:18:34.589
+James Finley: Then, in this code, there's gonna be some statistics calculated for the minimum
+
+480
+01:18:34.980 --> 01:18:45.190
+James Finley: These are descriptive statistics about the temperature in Chicago, and then a figure that plots those descriptive statistics. Okay, so very basic analysis script.
+
+481
+01:18:46.300 --> 01:18:55.900
+James Finley: Now, let's say that I want to do the same thing, compute these descriptive statistics, and make a plot for each of these 5 cities.
+
+482
+01:18:57.600 --> 01:19:07.020
+James Finley: what… You know, you would typically do, if you're often new to programming, is, say, copy this code.
+
+483
+01:19:07.260 --> 01:19:12.330
+James Finley: paste it, and then change wherever, everywhere it says Chicago, change that to Dallas.
+
+484
+01:19:12.880 --> 01:19:15.740
+James Finley: Then you paste it again, change it to Las Vegas.
+
+485
+01:19:16.870 --> 01:19:26.489
+James Finley: Now, that… can work, right? You can do that, and your code will be correct, and that's fine.
+
+486
+01:19:27.540 --> 01:19:31.379
+James Finley: However, it is a very inefficient way to code.
+
+487
+01:19:31.860 --> 01:19:47.670
+James Finley: Does anybody want to offer the reason why that is an inefficient and dangerous way to code? In other words, copying… copying and pasting the same code multiple times, and then changing, you know, things like variable names. What's the problem there?
+
+488
+01:19:57.350 --> 01:20:02.010
+Adwait Mane: It's cumbersome, and you have to copy-paste in multiple places.
+
+489
+01:20:02.560 --> 01:20:03.020
+James Finley: Okay.
+
+490
+01:20:03.020 --> 01:20:04.090
+Adwait Mane: For one change.
+
+491
+01:20:04.510 --> 01:20:08.039
+James Finley: It's cumbersome, so the code becomes longer,
+
+492
+01:20:08.600 --> 01:20:21.559
+James Finley: Monica says, you will make errors. This is the number one problem, is that you will all… the more you do that, the higher the probability that you forget to change something when you've pasted, okay?
+
+493
+01:20:21.810 --> 01:20:27.220
+James Finley: This is one of the most dangerous things you can do when you program.
+
+494
+01:20:28.080 --> 01:20:43.140
+James Finley: Because often, again, as I said earlier, the code will run, you will get a result, that result may look plausible, but it may, you may have a innocuous error, somewhere in the code that's hard to catch.
+
+495
+01:20:43.690 --> 01:20:49.789
+James Finley: So, instead, what you should be doing is,
+
+496
+01:20:50.430 --> 01:20:56.150
+James Finley: using functions, right? If I'm going to repeat the same set of steps, then I need… I need to use a function.
+
+497
+01:20:56.780 --> 01:21:06.320
+James Finley: MATLAB has a really cool way to convert code to a function. I just learned about this in the fall when I was teaching… reteaching this course. And this is called refactoring.
+
+498
+01:21:06.740 --> 01:21:14.910
+James Finley: So, what we're gonna do, it says refactor the… these lines of code to convert them into a function.
+
+499
+01:21:16.030 --> 01:21:20.669
+James Finley: So all I have to do is select the code, right-click.
+
+500
+01:21:21.740 --> 01:21:26.540
+James Finley: And go convert to a, local function.
+
+501
+01:21:28.710 --> 01:21:33.080
+James Finley: So now I can see in my script, my code disappears.
+
+502
+01:21:34.220 --> 01:21:37.750
+James Finley: And it brings… it creates a function at the bottom of the code.
+
+503
+01:21:38.400 --> 01:21:49.019
+James Finley: Okay, so right now, the function has no name, or the name of the function is untitled, it has the data for Chicago as input, and it outputs the task for Chicago.
+
+504
+01:21:50.460 --> 01:21:54.409
+James Finley: Okay, so that's the first part. So we're gonna work through full refactoring here.
+
+505
+01:22:01.350 --> 01:22:05.530
+James Finley: So now we want to make this, this refactored code, useful.
+
+506
+01:22:06.160 --> 01:22:23.399
+James Finley: So if you're new to functions, the way that a function is, structured, the syntax of the function, you have the name here. Well, first, you have, you declare that, at this point in my code, I have a function, so that this… these blue words are protected words in MATLAB.
+
+507
+01:22:23.580 --> 01:22:25.779
+James Finley: You then have the name of your function.
+
+508
+01:22:25.970 --> 01:22:35.310
+James Finley: In parentheses, one or more inputs, or sorry, zero or more inputs, and then on the left-hand side, zero or more outputs or assignments.
+
+509
+01:22:36.470 --> 01:22:45.420
+James Finley: You designate end to be the last… to show where that function declaration ends, and then inside you have your code.
+
+510
+01:22:46.160 --> 01:22:48.480
+James Finley: Alright, so let's, let's finish this up.
+
+511
+01:22:49.540 --> 01:22:57.890
+James Finley: Alright, so now we have this local function called, untitled. It's not… Complete yet.
+
+512
+01:22:58.710 --> 01:23:05.199
+James Finley: So first, we need to make sure we're using the same, we want to give this function a useful name.
+
+513
+01:23:05.440 --> 01:23:09.610
+James Finley: Alright, so this says to rename the function to calcStats.
+
+514
+01:23:13.560 --> 01:23:15.890
+James Finley: So we're gonna rename it there.
+
+515
+01:23:17.500 --> 01:23:22.240
+James Finley: Now that's a more, general name. Oh, and I need to rename it.
+
+516
+01:23:22.490 --> 01:23:23.740
+James Finley: up here…
+
+517
+01:23:37.950 --> 01:23:45.949
+James Finley: Now, we, need to update the inputs and the variables within this function.
+
+518
+01:23:47.490 --> 01:23:56.400
+James Finley: So now, we're gonna start by changing the input, right? We don't always want to operate on Chicago, we want to operate on…
+
+519
+01:23:56.510 --> 01:23:58.959
+James Finley: You know, different cities.
+
+520
+01:23:59.830 --> 01:24:09.459
+James Finley: And we want to make sure that this variable city is used throughout the function, so I'm gonna… there's a shortcut, Shift-Enter, to change the others. We're gonna do that.
+
+521
+01:24:16.010 --> 01:24:23.059
+James Finley: Now, we want our output not to be Chicago stats, we want it to be more general, so we'll change that to stats.
+
+522
+01:24:24.510 --> 01:24:32.689
+James Finley: So now you see we have a general function that's going to calculate the statistics for any given city, and output those as a variable called stats.
+
+523
+01:24:38.770 --> 01:24:45.480
+James Finley: And then, now we can go up here, we can count stats for Chicago.
+
+524
+01:24:46.810 --> 01:24:50.849
+James Finley: We can do the same thing, or… New York.
+
+525
+01:24:52.370 --> 01:24:58.760
+James Finley: By calling our function, with New York as the, input.
+
+526
+01:25:05.380 --> 01:25:06.040
+James Finley: Okay.
+
+527
+01:25:06.250 --> 01:25:22.190
+James Finley: So… so here we can see, this is a much more compact way to do the same thing multiple times than taking this code and pasting it, you know, two or five times, and manually changing all the names.
+
+528
+01:25:23.900 --> 01:25:27.250
+James Finley: Any general questions about functions?
+
+529
+01:25:31.130 --> 01:25:31.810
+James Finley: Here.
+
+530
+01:25:33.250 --> 01:25:33.930
+James Finley: Right.
+
+531
+01:25:37.260 --> 01:25:49.909
+James Finley: So I didn't… we don't have time to go through function files, so what we did was a local function, in other words, that we defined the function in the same script where, our… the rest of our code lives.
+
+532
+01:25:50.920 --> 01:25:57.939
+James Finley: the… That is most useful if you don't think you'll ever use that function again, for other analysis.
+
+533
+01:25:58.270 --> 01:26:03.120
+James Finley: If you think you might use that function for other analysis, you would want to save it as a separate script.
+
+534
+01:26:05.780 --> 01:26:07.500
+James Finley: The last thing, and…
+
+535
+01:26:07.660 --> 01:26:16.769
+James Finley: We'll probably mostly just spend the rest of the time answering any questions you have, is how do you make sure that your, programs are correct?
+
+536
+01:26:17.090 --> 01:26:26.720
+James Finley: So… Oftentimes, you might do this, indirectly, right? You…
+
+537
+01:26:27.010 --> 01:26:36.060
+James Finley: You know, you might check that certain conditions hold when you write your code, that there are no errors, that the results, again, look plausible.
+
+538
+01:26:36.420 --> 01:26:44.079
+James Finley: However, you can be a lot more direct about how you check, and verify whether your code is correct.
+
+539
+01:26:44.500 --> 01:26:49.689
+James Finley: And so, I'll show one last theme in the MATLAB tutorials.
+
+540
+01:26:49.800 --> 01:27:05.929
+James Finley: There is, again, a sort of formal process in, I want to say, computer science referred to as unit testing. So, just like there's a tutorial on functions, there's a MATLAB tutorial on unit testing.
+
+541
+01:27:06.130 --> 01:27:18.800
+James Finley: And the basic idea here is that you write code that tests your… you write, you write, testing code that evaluates your analysis code.
+
+542
+01:27:19.100 --> 01:27:25.450
+James Finley: So, for example, if I wrote a function that computes the area of a circle.
+
+543
+01:27:25.700 --> 01:27:41.909
+James Finley: I might write a test script that gives a known radius and evaluates whether my function provides the right answer, okay? So, in other words, you have a case where you know what the output should be, and you
+
+544
+01:27:41.980 --> 01:27:48.710
+James Finley: In your code, you verify that your script, your function, gives the correct output.
+
+545
+01:27:49.290 --> 01:27:59.249
+James Finley: Alright, now, there's a decent amount of art that goes into unit testing, because you can test
+
+546
+01:27:59.250 --> 01:28:11.190
+James Finley: anything, right? You could provide any sort of input and any sort of output. So you really want to think carefully about what are the places where my code is likely to fail. In other words, we might call those edge cases.
+
+547
+01:28:11.590 --> 01:28:22.099
+James Finley: You know, do I need to make sure that I, you know, can handle or provide an error if I try to divide by zero, right? Something like this. So…
+
+548
+01:28:23.320 --> 01:28:33.960
+James Finley: as you are writing your code, you always want to think about, how can I verify that this particular set of steps is always going to be correct?
+
+549
+01:28:34.580 --> 01:28:44.979
+James Finley: and potentially give me an error, a meaningful error, when, let's say I'm providing an input that is not, appropriate.
+
+550
+01:28:46.180 --> 01:28:49.620
+James Finley: So… Let's see where I can go…
+
+551
+01:29:07.850 --> 01:29:27.630
+James Finley: I'll stop there. I'll put the link in there. So you all can… I would, again, highly recommend going through that unit testing tutorial. I think this one might take an hour or two, or something like that. A very helpful way and tool that you can integrate into your data processing and analysis pipeline.
+
+552
+01:29:29.530 --> 01:29:46.250
+James Finley: Okay, so, to conclude here, a lot of the reason why we are covering this topic is that, you know, writing code is a form of writing, a form of communication, and so, like all communication, you want to think about who your audience is.
+
+553
+01:29:46.450 --> 01:30:00.699
+James Finley: Most of the time, people write code and think that their audience, well, they may implicitly only write for themselves at that time. You're obviously writing for your computer, because the computer runs the code.
+
+554
+01:30:01.060 --> 01:30:12.439
+James Finley: You are also writing for your colleagues, so people may use your code in the future to analyze your data, and as I said earlier, your future self.
+
+555
+01:30:12.540 --> 01:30:19.670
+James Finley: So you always want to make sure that if I have to come back to this code in a week, in a month, in a year, that I can make sense of it.
+
+556
+01:30:20.050 --> 01:30:26.109
+James Finley: And a lot of these principles that we covered will help… help you accomplish that goal.
+
+557
+01:30:27.250 --> 01:30:31.300
+James Finley: So, we will end there.
+
+558
+01:30:31.420 --> 01:30:51.200
+James Finley: For those of you who didn't do so already, please go ahead and sign in, provide feedback about the workshop, and use the last few minutes here to answer any questions you have, or if you have any tips that you find to be useful, you can share those as well.
+
+559
+01:30:51.860 --> 01:30:52.630
+James Finley: Thank you.
+
+560
+01:31:13.840 --> 01:31:20.969
+James Finley: So, since we have a couple of minutes, I want to share one example. So you have… there's some code that I wrote,
+
+561
+01:31:21.570 --> 01:31:28.690
+James Finley: To give an example of how I like to separate different aspects of my analysis pipeline, so I will now just…
+
+562
+01:31:29.100 --> 01:31:31.259
+James Finley: demo that really quickly to MATLAB.
+
+563
+01:31:31.600 --> 01:31:34.400
+James Finley: So let's… Close that.
+
+564
+01:31:42.980 --> 01:31:48.190
+James Finley: Okay, so, if you go to the MC MATLAB, the folder that we shared for today's workshop.
+
+565
+01:31:48.650 --> 01:31:52.180
+James Finley: You're gonna see a set of 4, scripts.
+
+566
+01:31:52.350 --> 01:31:54.570
+James Finley: So there are… sort of…
+
+567
+01:31:54.900 --> 01:32:00.429
+James Finley: Name… there are two things that I did with the naming of these scripts.
+
+568
+01:32:00.590 --> 01:32:09.869
+James Finley: The first is that, they're meant to be run in order, so I've named them in a way that it's clear what the order is, so script 1, 2, 3, 4.
+
+569
+01:32:10.330 --> 01:32:15.380
+James Finley: The second thing that's really important when you name your scripts is, to use
+
+570
+01:32:15.630 --> 01:32:24.480
+James Finley: ideally verbs in the name, so you should… the name should actually tell you what the script does, or what the function does, okay? So…
+
+571
+01:32:24.580 --> 01:32:32.919
+James Finley: We're gonna… this is some… to give an example of data analysis pipelines, I'm gonna simulate some data.
+
+572
+01:32:33.050 --> 01:32:37.609
+James Finley: We're gonna then combine data, that's combine it across multiple participants.
+
+573
+01:32:37.840 --> 01:32:40.449
+James Finley: Summarize it, and then create figures.
+
+574
+01:32:40.830 --> 01:32:42.959
+James Finley: So this is often how I…
+
+575
+01:32:43.380 --> 01:32:50.099
+James Finley: you know, when I do my own analysis, how I separate my steps, and then often what I expect from people in the lab.
+
+576
+01:32:51.720 --> 01:32:57.200
+James Finley: So, if you… Run the first… Oops.
+
+577
+01:33:02.520 --> 01:33:05.879
+James Finley: If you run the first, script.
+
+578
+01:33:06.260 --> 01:33:10.520
+James Finley: What this is going to do… is…
+
+579
+01:33:11.350 --> 01:33:14.049
+James Finley: I can just specify the number of participants.
+
+580
+01:33:15.600 --> 01:33:19.059
+James Finley: So I'm gonna simulate data from 10 participants.
+
+581
+01:33:20.210 --> 01:33:27.020
+James Finley: And this is meant to represent something called adaptation data, some type of behavior that we study in the lab.
+
+582
+01:33:27.510 --> 01:33:37.339
+James Finley: Here is my simulated data. This looks like data we might collect in the lab for an adaptation study.
+
+583
+01:33:39.550 --> 01:33:43.530
+James Finley: In this script, you can look at it in your own time.
+
+584
+01:33:44.790 --> 01:33:52.179
+James Finley: I've tried to, you know, add comments that explain exactly what we're doing, throughout the whole script.
+
+585
+01:33:52.810 --> 01:33:57.320
+James Finley: But the basic thing it does is it generates… creates a folder.
+
+586
+01:33:57.810 --> 01:34:05.509
+James Finley: in that folder, I have, you know, 10… Synthetic or artificial participants.
+
+587
+01:34:05.680 --> 01:34:09.260
+James Finley: Tried to use a reasonable naming convention for the folders.
+
+588
+01:34:09.780 --> 01:34:17.019
+James Finley: Within each folder, there's a file for that participant, and their data is saved as a CSV.
+
+589
+01:34:22.770 --> 01:34:30.370
+James Finley: then I can run code to combine… the data… Oops.
+
+590
+01:34:37.790 --> 01:34:43.609
+James Finley: That creates a variable called dataAll that just combines data across my 10 participants.
+
+591
+01:34:44.990 --> 01:34:48.319
+James Finley: I then have a script that will summarize the data.
+
+592
+01:34:52.330 --> 01:35:00.760
+James Finley: This computes different fits to the data, so we're gonna extract some parameters about how fast people adapt or learn.
+
+593
+01:35:01.300 --> 01:35:05.660
+James Finley: And then finally, I have a script that creates my figures.
+
+594
+01:35:06.500 --> 01:35:19.619
+James Finley: So, the key figure here is, a comparison of some estimated parameter to its true value, so I can see if I can recover, you know, something about these participants.
+
+595
+01:35:20.080 --> 01:35:26.649
+James Finley: And, if you look closely at that script, it also, I think this was part of last week's
+
+596
+01:35:27.170 --> 01:35:39.400
+James Finley: tutorial that I did, it's… we're gonna create the figure, add labels, do all of this in MATLAB, export it as a PDF, and you, you know, submit that to the journal when you write your paper.
+
+597
+01:35:39.820 --> 01:35:43.810
+James Finley: So, again, it's a full pipeline, all in MATLAB.
+
+598
+01:35:44.020 --> 01:35:51.349
+James Finley: Synthetic data, compiling data, Doing analysis, doing statistics, making figures.
+
+599
+01:35:51.570 --> 01:35:53.500
+James Finley: And then I can just share that with anyone.
+
+600
+01:35:54.560 --> 01:36:02.369
+James Finley: All right, so I'll, stop there for today, and I'll hang out for a minute or two if people have any other… any questions.
+
+601
+01:36:13.140 --> 01:36:15.810
+James Finley: Have a good, holiday weekend, everyone.
+
+602
+01:36:15.810 --> 01:36:17.020
+Monica Daley (she, her): Thank you!
+
+603
+01:36:17.390 --> 01:36:18.400
+James Finley: You're welcome.
+
+604
+01:36:26.070 --> 01:36:28.350
+Adwait Mane: I have a question, Dr. Finley.
+
+605
+01:36:28.350 --> 01:36:28.960
+James Finley: Yes.
+
+606
+01:36:29.270 --> 01:36:38.020
+Adwait Mane: So I'm Mane from, NAU here, my postdoc here. I'm just curious, what is your philosophy regarding,
+
+607
+01:36:38.310 --> 01:36:45.930
+Adwait Mane: using MATLAB, is it… The norm in your community to use?
+
+608
+01:36:46.150 --> 01:37:05.290
+Adwait Mane: MATLAB for programming, because there are pros and cons. In my experience, the biggest advantage is installation and dependency management is very easy, it's often just one click, but it's a much smaller user community if you look outside universities overall.
+
+609
+01:37:06.180 --> 01:37:08.629
+James Finley: Yeah, this is, a continuous…
+
+610
+01:37:08.980 --> 01:37:14.390
+James Finley: debate in our, I'd say my department slash field.
+
+611
+01:37:14.600 --> 01:37:22.440
+James Finley: So, yeah, I like MATLAB for the reasons you described, because that's what I historically know… what I know best from my own experience.
+
+612
+01:37:22.620 --> 01:37:31.119
+James Finley: The… in general, so I'm in more of the movement science and biomechanics community.
+
+613
+01:37:31.280 --> 01:37:36.559
+James Finley: Pretty much, you know, the majority of that community still uses MATLAB.
+
+614
+01:37:36.980 --> 01:37:39.740
+James Finley: And so… because these are academics.
+
+615
+01:37:39.880 --> 01:37:44.600
+James Finley: And many of them aren't… don't really come from a sort of computer science background.
+
+616
+01:37:46.790 --> 01:37:54.510
+James Finley: However, if you do, for example, neuroimaging, most people in that community are… have moved to Python. They did this, you know.
+
+617
+01:37:55.000 --> 01:37:58.030
+James Finley: Years ago, because they're much further ahead of us.
+
+618
+01:37:58.300 --> 01:38:03.480
+James Finley: In terms of… Kind of open science practices.
+
+619
+01:38:04.110 --> 01:38:05.320
+James Finley: So…
+
+620
+01:38:06.350 --> 01:38:15.070
+James Finley: you know, my general philosophy is I like MATLAB, it's easy to teach, don't have to deal with a lot of the overhead that you do with other languages.
+
+621
+01:38:15.270 --> 01:38:19.149
+James Finley: The resources are, you know.
+
+622
+01:38:19.360 --> 01:38:22.799
+James Finley: It's well documented, the resources are centralized.
+
+623
+01:38:22.970 --> 01:38:31.890
+James Finley: Now, if a student wants to go work in industry or another lab, and wants to use Python, or even R,
+
+624
+01:38:32.020 --> 01:38:38.170
+James Finley: That's much easier to learn once you have some foundation. So… I think that…
+
+625
+01:38:38.420 --> 01:38:45.290
+James Finley: The skills are still useful. In our curriculum, actually, in our two courses ahead of mine.
+
+626
+01:38:45.420 --> 01:38:51.370
+James Finley: everything is done in R, so most of our students get MATLAB and R, so they are getting some open source
+
+627
+01:38:51.550 --> 01:38:53.139
+James Finley: coding experience.
+
+628
+01:38:55.030 --> 01:38:57.919
+James Finley: So that I'm not super concerned about that.
+
+629
+01:38:58.060 --> 01:39:02.139
+James Finley: The last thing I'll say is that, this is where…
+
+630
+01:39:02.660 --> 01:39:14.359
+James Finley: the difference, so we can still share data, even if we do everything in MATLAB, I can still export my data in CSV and text files, so that's… anybody can use it. The hard part is that they might not be able to use my code.
+
+631
+01:39:15.510 --> 01:39:16.120
+James Finley: Yep.
+
+632
+01:39:16.120 --> 01:39:18.060
+Adwait Mane: Got it. Yeah, thank you for sharing.
+
+633
+01:39:18.060 --> 01:39:19.219
+James Finley: Alright, no problem.
+
+634
+01:39:22.230 --> 01:39:23.779
+Adwait Mane: And, have a good weekend.
+
+635
+01:39:24.020 --> 01:39:24.820
+James Finley: You too, take care.
+
+636
+01:39:24.820 --> 01:39:25.450
+Adwait Mane: we can.
+
+637
+01:39:26.880 --> 01:39:30.040
+James Finley: Victoria, anything else that we… Need?
+
+638
+01:39:30.600 --> 01:39:38.929
+Victoria Wood: I don't think so. I think this is about it. Okay. I will… I'm a little bit behind on this, but hopefully early next week, I'll send you,
+
+639
+01:39:39.170 --> 01:39:51.400
+Victoria Wood: if you're comfortable with this, we're turning all of our workshops into the online curriculum, and building out some text and things with that, so I'll send you a form just to help me put that online.
+
+640
+01:39:51.400 --> 01:39:52.370
+James Finley: Right.
+
+641
+01:39:52.370 --> 01:40:01.599
+Victoria Wood: I'll aim to do that next week. I don't know… I was kind of doing last year's workshops in waves. I'm not sure if I talked to you about last year's workshop for that as well, but…
+
+642
+01:40:02.840 --> 01:40:05.040
+James Finley: Think so, yeah, so…
+
+643
+01:40:05.230 --> 01:40:15.160
+Victoria Wood: then I'll reach out to you about that as well. But that's, you know, lower priority, so whenever you have a chance, I would love to have your help with actually getting that ready for our online curriculum.
+
+644
+01:40:16.620 --> 01:40:18.129
+James Finley: Okay. Sounds good.
+
+645
+01:40:18.130 --> 01:40:19.560
+Victoria Wood: Awesome, thank you so much!
+
+646
+01:40:19.560 --> 01:40:20.920
+James Finley: You're welcome, take care.
+
+647
+01:40:20.920 --> 01:40:21.510
+Victoria Wood: Bye.
+

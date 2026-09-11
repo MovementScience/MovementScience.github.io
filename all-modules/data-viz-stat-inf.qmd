@@ -3,12 +3,17 @@ title: "Data visualization and statistical inference for biomechanics"
 toc: false
 presenter: [Dr. James Finley]
 complexity: beginner
-topic: [data analysis]
+topic: [data analysis, statistics, data visualization]
+keywords: [Anscombe's quartet, data visualization, p-values, statistical power, effect size]
 ---
 
 ## Learning objectives
 
-TBD
+By the end of this workshop, learners will be able to:
+
+1.  Explain why descriptive statistics alone can be misleading and why visualizing data at every stage of analysis is essential for drawing valid conclusions.
+2.  Describe what a p-value represents, how the false positive rate relates to the conventional significance threshold of p \< 0.05, and why statistical significance does not imply practical importance.
+3.  Identify how sample size, statistical power, and effect size are related, and recognize that small studies are best positioned to detect large effects.
 
 ## Workshop
 
@@ -17,3 +22,41 @@ TBD
 </iframe>
 
 ***Presented by:*** *Dr. James Finley*
+
+## Overview
+
+### Research goals and sources of variability
+
+Scientific research typically falls into one of four broad categories: descriptive studies that characterize populations; methods-development studies focused on the validity and reliability of measurement tools; studies of relationships between variables using tools such as correlation and regression; and experimental studies aimed at establishing cause-and-effect relationships.
+
+Understanding variability is central to research design. Three types are relevant. Concomitant variation — the change in a dependent variable when the independent variable is manipulated — is the variability that enables causal inference. Extraneous variability, introduced by inconsistent measurement across sessions, imprecise or inaccurate instruments, or uncontrolled participant characteristics such as fluctuating alertness, reduces the ability to detect true effects. Confounding variables constitute a third source that can prevent researchers from establishing causality altogether. Statistics serve as tools for both quantifying and explaining these sources of variability.
+
+### Anscombe's Quartet: the limits of summary statistics
+
+Anscombe's Quartet illustrates the dangers of relying on summary statistics alone. The Quartet consists of four data sets that are visually very different but share nearly identical statistical properties. Computing the mean and standard deviation of each data set's X and Y values, and fitting a linear regression to each, yields slope, intercept, and R-squared values that are essentially identical across all four data sets. Yet when the data are plotted, it is immediately clear that a linear model is only appropriate for the first data set; the others show curvature, outliers, or degenerate structure that makes the fitted line meaningless.
+
+The key insight is that summary statistics alone — whether descriptive statistics such as mean and standard deviation, or inferential statistics such as R-squared — do not reveal how the underlying data actually look. This problem is especially pronounced with small samples, which are common in biomechanics, human, and animal model research. The practical recommendation is to visualize data early and often throughout the entire analysis pipeline, from the moment of data collection through each subsequent processing step.
+
+### Making publication-ready figures in MATLAB
+
+A particularly instructive comparison for communicating data honestly is between a bar plot with error bars and a dot plot showing individual data points and medians. When displayed as a bar chart, all four Anscombe data sets appear similar in spread. When displayed as a dot plot, differences in the distribution and the presence of outliers become immediately apparent. The choice of visualization method itself can either reveal or conceal the structure of data.
+
+Best practices for figure formatting include: always labeling axes with full words and units; using MATLAB's `set` function to control properties such as face color, edge color, line width, and font size in code rather than by post-processing in a separate illustration program; and specifying figure dimensions in centimeters so that the exported file matches the intended print size (for example, one and a half columns in a standard two-column journal format). Figures should be saved in multiple formats: a MATLAB `.fig` file for later in-program editing, a PDF for annotation or presentation, and a TIFF for journal submission — TIFF files preserve more image information than JPEG, which uses lossy compression. Sub-panel labels (A, B, etc.) can be added directly in MATLAB code using the `text` command, specifying X and Y coordinates for label placement. Encoding all figure formatting choices in code ensures that figures can be regenerated automatically when analyses are revised.
+
+### Understanding p-values through simulation
+
+A useful way to make the meaning of p-values concrete is through simulation. Consider 1,000 independent studies each testing whether drinking one ounce of water improved long-jump performance in Olympic male athletes. Because the intervention has no plausible effect on jump distance, the null hypothesis is known to be true by construction. Each study draws 100 participants from a control population with a mean long-jump distance of 8 meters and a standard deviation of 20 cm, and 100 participants from an identically specified test population, then compares the two groups using a t-test.
+
+Across 1,000 simulations, the resulting p-values follow a roughly uniform distribution between 0 and 1. The false positive rate — the proportion of experiments that return p \< 0.05 despite the null hypothesis being true — is approximately 0.048, close to 0.05. This gives concrete meaning to the standard definition: the p-value is the probability of obtaining a result at least as extreme as the observed one if the null hypothesis were true. A p-value does not indicate how important or scientifically meaningful a finding is.
+
+A 2015 paper titled "Estimating the Reproducibility of Psychological Science" documented this problem empirically: a large group of researchers attempted to replicate findings from prominent psychology journals. In the original published studies, nearly all had p-values below 0.05; in the replications, the median p-value was above 0.2, and only a small percentage of studies replicated at the conventional threshold. It is also important to recognize that p-values are influenced by sample size: with very large data sets, p \< 0.05 is almost always obtained, but this only means that very small effects can be detected — not that those effects are meaningful.
+
+### Sample size, statistical power, and effect size
+
+Sample size, statistical power, and effect size are interrelated quantities. MATLAB includes a built-in function for computing required sample size given a specified statistical test, the expected distribution under the null hypothesis, the expected difference between groups (effect size), and the desired power level. As an illustrative example, consider a study comparing vertical jump height between two groups of students where pilot data show a mean jump of 50 cm with a standard deviation of 4 cm. To detect a group difference of 2 cm with adequate power, the function returns a required sample size of 34 individuals per group.
+
+The general relationships between these quantities are: higher desired power requires a larger sample, and smaller effect sizes also require larger samples to detect. Conversely, when researchers are limited in the participants or observations they can collect, they are best positioned to study effects that are likely to be large.
+
+An important distinction separates statistical significance from practical importance. The word "significant" in everyday language implies importance, but p \< 0.05 does not guarantee that a finding is practically meaningful. Effect sizes and their uncertainty — rather than p-values alone — are the more informative quantities to report and interpret.
+
+Determining what effect size is meaningful often requires domain-specific judgment. In clinical research, practitioners sometimes define a minimally clinically important difference — for example, a 0.4 meters per second change in walking speed, which might allow a person to cross a street before a traffic light changes. Equivalent benchmarks are rarely available in basic science research, and researchers must make and defend their own judgments about what effect magnitudes matter, considering what a difference would enable functionally. Confidence intervals and Bayesian methods provide additional tools for characterizing uncertainty in effect estimates beyond the p-value.

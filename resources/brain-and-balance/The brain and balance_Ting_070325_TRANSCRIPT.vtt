@@ -1,0 +1,2918 @@
+WEBVTT
+
+1
+00:00:09.395 --> 00:00:12.425
+Victoria Wood: All right. I'd say you can go ahead and start if you're ready.
+
+
+2
+00:00:13.455 --> 00:00:14.375
+Lena Ting (she/her): I'm ready.
+
+
+3
+00:00:14.995 --> 00:00:15.635
+Victoria Wood: Alright!
+
+
+4
+00:00:17.815 --> 00:00:19.675
+Lena Ting (she/her): Okay, welcome everyone.
+
+
+5
+00:00:21.105 --> 00:00:28.005
+Lena Ting (she/her): I'm going to talk to you about brains and balance. There's been a lot of talk about balance control. And
+
+
+6
+00:00:30.545 --> 00:00:45.855
+Lena Ting (she/her): I thought I should share with you some of our work on on balance and control and things to think about in control of balance. So I'm going to try to advance my slides
+
+
+7
+00:00:46.035 --> 00:01:10.775
+Lena Ting (she/her): just the background on me. I know we've done this before. But in my lab, we're really interested in fundamental science and engineering principles to understand mobility disorders in a very personalized way, and our work ranges from sort of basic physiology underlying motor control focused especially on balance control and on individual differences across those
+
+
+8
+00:01:10.775 --> 00:01:23.395
+Lena Ting (she/her): behaviors, developing these sort of what I call physiologically interpretable analyses, and then using those to look at those impairments in various
+
+
+9
+00:01:24.945 --> 00:01:29.734
+Lena Ting (she/her): populations. Aging stroke and Parkinson's disease are current
+
+
+10
+00:01:30.875 --> 00:01:42.214
+Lena Ting (she/her): sort of populations of study. And then sort of thinking about, how did we translate those findings into rehabilitation assessments, training devices and things like that.
+
+
+11
+00:01:42.915 --> 00:01:56.974
+Lena Ting (she/her): So I use balance control because we can identify a lot of principles that have generalized to walking. But we can do a lot more there. But when we are talking about balance control.
+
+
+12
+00:01:57.165 --> 00:02:01.545
+Lena Ting (she/her): so let me just say, why is balance control important? When I was a
+
+
+13
+00:02:01.915 --> 00:02:16.105
+Lena Ting (she/her): grad student. I was definitely interested in locomotion, and there were people in the lab studying balance control. And I thought, like this, this is not even like a motor behavior like the whole point is that nothing moves, and it turns out that it's
+
+
+14
+00:02:16.125 --> 00:02:42.304
+Lena Ting (she/her): really complex. And multi like involves all parts of your nervous system. Balance control is fundamental to all voluntary movements or balance control and postural control. Let's say babies need to be able to stand before they can walk, and if they lose that ability, then they can't do all of the other things we want to do with our body. And in people over 65 falls
+
+
+15
+00:02:42.375 --> 00:03:03.824
+Lena Ting (she/her): are a really really large cause of what we call morbidity and mortality. So that means, like some kind of injury that impairs you where you lose your independence, mobility, quality of life, and that might cause sort of a negative spiral that causes people's health to overall degenerate.
+
+
+16
+00:03:04.035 --> 00:03:16.315
+Lena Ting (she/her): So one of the things about balance control is it's impaired in almost any kind of disorder you can think of ranging from musculoskeletal to neurological
+
+
+17
+00:03:16.455 --> 00:03:22.354
+Lena Ting (she/her): psychological. You know, psychiatric as well. And that's because it really
+
+
+18
+00:03:22.745 --> 00:03:39.044
+Lena Ting (she/her): involves all parts of the body. This is sensory systems, motor systems. And as we'll talk about the cognitive systems as well, and one of the things you should know about balance is that another indication of balance impairments.
+
+
+19
+00:03:39.045 --> 00:03:54.365
+Lena Ting (she/her): in especially older adults and in patients in hospitals is medication. So medications can cause a lot of drowsiness and attentiveness and other factors that will cause people to act in ways that will
+
+
+20
+00:03:54.785 --> 00:03:57.235
+Lena Ting (she/her): put them at high risk for falls.
+
+
+21
+00:03:59.695 --> 00:04:04.904
+Lena Ting (she/her): So today. Oh, so, so balance control, I want to say, is like,
+
+
+22
+00:04:05.535 --> 00:04:23.225
+Lena Ting (she/her): it's what we call an automatic behavior, a lot like breathing. You can control it for many different neural circuits, so just painted like a spinal cord, a brain. And we have what we call subcortical structures and cortical structures, and so normally just like
+
+
+23
+00:04:23.255 --> 00:04:42.415
+Lena Ting (she/her): in breathing you. You don't think about it. So that means this sort of part of your brain, the spinal cord and the sort of brain stem. Subcortical areas are used to control that behavior. And so that's sort of indicated by the fact that you could like walk
+
+
+24
+00:04:42.455 --> 00:05:00.845
+Lena Ting (she/her): and text. And when you're young and like, there's you can still do all these things without thinking about it right? But in certain circumstances that control of balance or walking or breathing could shift to higher levels in the in the brain which we call
+
+
+25
+00:05:01.195 --> 00:05:15.825
+Lena Ting (she/her): cortical circuits, where you're more aware of what's what's going on and controlling things in a more voluntary way. And so this is a natural sort of flexible behavior that happens.
+
+
+26
+00:05:16.405 --> 00:05:20.255
+Lena Ting (she/her): you know, as we move in challenging environments.
+
+
+27
+00:05:20.385 --> 00:05:39.225
+Lena Ting (she/her): doing a more difficult type of task, and then, in aging or other diseases, it might be that because of loss of all of these functions, I'll tell you about neural sensory motor that people might be just sort of more on the right side of this
+
+
+28
+00:05:39.275 --> 00:05:52.505
+Lena Ting (she/her): continuum all the time. So they're engaging their cortical circuits for things that are maybe more automatic in people without those impairments.
+
+
+29
+00:05:53.105 --> 00:06:03.475
+Lena Ting (she/her): And before I continue, I just I want to encourage you to ask questions as I go along, because things will build from here. And and it's more fun. So
+
+
+30
+00:06:04.679 --> 00:06:16.275
+Lena Ting (she/her): so in in our lab, the way that we look at balance control, you know, in a scientific way is to, you know, have this moving platform. We instrument people with
+
+
+31
+00:06:16.965 --> 00:06:34.905
+Lena Ting (she/her): motion, capture Emg. And now, Eeg, which is measuring electrical signals from the brain, and that allows us to have very well controlled conditions in which we can kind of look at the neuromuscular control of balance whoops.
+
+
+32
+00:06:35.245 --> 00:06:55.685
+Lena Ting (she/her): And so one of the fundamental principles is that there's a hierarchical system of neural control which which actually makes it very difficult to understand what's going on in balance, and where where the deficits are. So if we were to. So we literally like pull the rug out from under people's
+
+
+33
+00:06:56.475 --> 00:07:07.215
+Lena Ting (she/her): feet. That causes a lot of sensory information to be generated. Those signals can go through multiple pathways. I've painted 3 here
+
+
+34
+00:07:07.365 --> 00:07:11.214
+Lena Ting (she/her): that the spinal cord there should be about 50 for people
+
+
+35
+00:07:11.285 --> 00:07:38.655
+Lena Ting (she/her): brain stem, which takes about twice as long for the signals to travel up and come back down to the muscle and then into areas of your brain. And we can make recordings of the output in the muscles. So this is a muscle activity over time, and the perturbation starts. Floor starts to slip this dotted line, and we see a response at about 100 ms, which is
+
+
+36
+00:07:38.825 --> 00:08:04.694
+Lena Ting (she/her): brain stem mediated. And I'll tell you a little bit later about the difference between these different layers, and then we can now measure stuff in the brain that happens at about the same time. So signals are going up, splitting one's coming down, one's going to the brain, and they all converge upon the muscle output. So the output that we see is a sum of all of these different types of behavior loops
+
+
+37
+00:08:05.055 --> 00:08:07.684
+Lena Ting (she/her): of processing. And you know, I'll talk about how this
+
+
+38
+00:08:07.915 --> 00:08:11.874
+Lena Ting (she/her): brain signal might be driving later parts of the muscle activity.
+
+
+39
+00:08:13.285 --> 00:08:19.034
+Lena Ting (she/her): Okay? So some take-home messages that I have. As you need, all of your senses for balance.
+
+
+40
+00:08:19.365 --> 00:08:24.114
+Lena Ting (she/her): There are many different neural and muscular strategies for balance.
+
+
+41
+00:08:24.425 --> 00:08:35.365
+Lena Ting (she/her): and then brain activity for balance increases in aging and many diseases. So balance becomes less automatic. And it turns out because you're using
+
+
+42
+00:08:35.475 --> 00:08:43.214
+Lena Ting (she/her): these parts of your brain that aren't usually used for for movement balance health is is related to cognitive health.
+
+
+43
+00:08:43.655 --> 00:08:55.394
+Lena Ting (she/her): and I'll show you that individual differences in the brain activity that we see may help us quantify this sort of differences in balance health before people begin to fall.
+
+
+44
+00:08:57.425 --> 00:09:12.734
+Lena Ting (she/her): So this is the outline of the talk. Balance control requires coordination across all levels of the nervous system. I'll talk about the sensory inputs, coordinating muscles, brain activity. And then this cognitive interactions.
+
+
+45
+00:09:12.875 --> 00:09:21.304
+Lena Ting (she/her): And on the right is sort of the picture that I think of is that we have a level of what I call execution level control, things that we can measure
+
+
+46
+00:09:21.465 --> 00:09:50.194
+Lena Ting (she/her): like muscles, activity, movements of the body pressure on the feet. Those things are. The sensory information that we get is sort of has to be interpreted by the brain. And then as to which way you're falling. And then you have to figure out, okay, what muscles do. I activate? These processes are very multifaceted, and that makes it really hard to study and interesting to study at the same time.
+
+
+47
+00:09:51.395 --> 00:09:52.545
+Lena Ting (she/her): So
+
+
+48
+00:09:52.895 --> 00:10:10.254
+Lena Ting (she/her): for balance control, we need multiple senses and some of the things, some definitions I want to give in balance control is okay. What do you need to know to maintain your balance?
+
+
+49
+00:10:10.925 --> 00:10:14.014
+Lena Ting (she/her): So first, st you need to know which way is up.
+
+
+50
+00:10:16.005 --> 00:10:23.225
+Lena Ting (she/her): balance only is relevant because we live in a gravitational field. And so it's important to know which way that is
+
+
+51
+00:10:23.911 --> 00:10:30.035
+Lena Ting (she/her): so that I would call like postural orientation. So am I aligned with the gravity, vector or am I not?
+
+
+52
+00:10:30.907 --> 00:10:39.934
+Lena Ting (she/her): The second would be, am I falling like, am I in equilibrium, or am I in disequilibrium? So this I would call balance.
+
+
+53
+00:10:40.629 --> 00:10:46.284
+Lena Ting (she/her): So this is, do I have forces so that I am
+
+
+54
+00:10:46.425 --> 00:10:59.944
+Lena Ting (she/her): stable in this gravitational field, and typically, we talk about this in standing balance as being keeping my center of mass over the base of support. So when you're standing here, you know, it's the space between your feet.
+
+
+55
+00:11:00.700 --> 00:11:11.354
+Lena Ting (she/her): So you want to. If your center of mass projection stays in it. Generally people can stay upright if it goes beyond it. Okay, that's when you're going to start
+
+
+56
+00:11:11.485 --> 00:11:26.154
+Lena Ting (she/her): falling. And you can do things like extend your base of support by taking a step or by holding on to something. It's just where are your points of contact with the environment that that can support that?
+
+
+57
+00:11:26.605 --> 00:11:37.725
+Lena Ting (she/her): Okay, so that's different from what I would call posture, posture or postural control has to do with my body configuration.
+
+
+58
+00:11:37.795 --> 00:11:48.424
+Lena Ting (she/her): So sometimes so in the literature, literature is very confusing on this, so often postural control and balance control are used interchangeably.
+
+
+59
+00:11:48.485 --> 00:12:11.755
+Lena Ting (she/her): but they're really not the same thing. So posture would be, I maintain, a body configuration, and I maintain the relative positions of body, and that's not always a good balance strategy. In fact, people with Parkinson's tend to be very rigid, and their body's all aligned, and you push them, and then they fall like a tree, and their posture is perfectly maintained.
+
+
+60
+00:12:11.845 --> 00:12:14.695
+Lena Ting (she/her): And yet they're not in balance at all.
+
+
+61
+00:12:15.045 --> 00:12:40.434
+Lena Ting (she/her): So in order to do these things, it's really the relative motion and position of myself to the outside world. So that requires what we call exteroception. So sensing things in the environment. And then it also requires proprioception, which is sensing my own body, and where it is relative to it, and then making a computation about how those 2 things are aligned.
+
+
+62
+00:12:41.015 --> 00:12:41.905
+Lena Ting (she/her): Question.
+
+
+63
+00:12:44.574 --> 00:12:46.494
+Monica Daley (she, her): So can you hear me? Okay.
+
+
+64
+00:12:46.495 --> 00:12:46.800
+Lena Ting (she/her): Yup!
+
+
+65
+00:12:47.955 --> 00:12:57.824
+Monica Daley (she, her): You talked about the multiple circuits involved in balance control and the example you showed it involved a brain stem level circuit
+
+
+66
+00:12:58.005 --> 00:13:00.545
+Monica Daley (she, her): showing up in the emg. Do you ever see
+
+
+67
+00:13:00.705 --> 00:13:06.194
+Monica Daley (she, her): in some muscles short latency and long latency responses in the same in the Emg.
+
+
+68
+00:13:06.195 --> 00:13:07.935
+Lena Ting (she/her): Yeah, we'll get there. We'll get there.
+
+
+69
+00:13:07.935 --> 00:13:08.415
+Monica Daley (she, her): Okay?
+
+
+70
+00:13:09.285 --> 00:13:18.465
+Monica Daley (she, her): And one other kind of general question. Do you think that the circuits involved in balance control for standing are the same, or fundamentally different from those in like walking.
+
+
+71
+00:13:19.362 --> 00:13:20.764
+Lena Ting (she/her): They're the same.
+
+
+72
+00:13:21.015 --> 00:13:21.755
+Monica Daley (she, her): Okay.
+
+
+73
+00:13:22.245 --> 00:13:42.145
+Lena Ting (she/her): They're the same. We're doing valid studies, and even the principles are the same. I didn't put it here, and I meant to add a slide showing that, like the center of mass control mechanism, Frieda has shown works to predict sort of corrective torques and and perturbed walking as well. And we're also working on that right now with Kristen, Jakubowski and Aaron Young.
+
+
+74
+00:13:42.315 --> 00:13:48.914
+Lena Ting (she/her): So it's just a really good way to figure it out and balance, but figuring it out, and walking is very, very difficult.
+
+
+75
+00:13:49.335 --> 00:13:51.285
+Monica Daley (she, her): There's so many things going on and walking all at once.
+
+
+76
+00:13:51.285 --> 00:14:01.724
+Lena Ting (she/her): There's things going on, and so you don't know what's feet forward and what feedback and it's hard to dissociate the torques that are for that the gate pattern versus the correction.
+
+
+77
+00:14:03.425 --> 00:14:04.885
+Monica Daley (she, her): Cool thanks.
+
+
+78
+00:14:04.885 --> 00:14:05.655
+Lena Ting (she/her): Sure.
+
+
+79
+00:14:05.775 --> 00:14:18.004
+Lena Ting (she/her): all right. So I'm gonna go through the senses. And and and actually, I'm gonna ask you. So if I needed to find out these things like? And I had vision. Which of these questions would I be able to
+
+
+80
+00:14:18.875 --> 00:14:19.945
+Lena Ting (she/her): answer
+
+
+81
+00:14:24.585 --> 00:14:26.125
+Lena Ting (she/her): any ideas out there?
+
+
+82
+00:14:27.835 --> 00:14:32.875
+Lena Ting (she/her): So would I know which way is up. Would I know if I'm falling, and would I know what my posture is?
+
+
+83
+00:14:38.475 --> 00:14:41.674
+Monica Daley (she, her): Any trainees want to venture some ideas.
+
+
+84
+00:14:43.615 --> 00:14:46.314
+Lena Ting (she/her): This happens for the next 4 slides, so get ready.
+
+
+85
+00:14:51.115 --> 00:14:53.365
+Justin Quan: Can you tell when you're falling.
+
+
+86
+00:14:55.175 --> 00:15:00.615
+Lena Ting (she/her): Maybe, and which way is up? Maybe
+
+
+87
+00:15:01.285 --> 00:15:04.985
+Lena Ting (she/her): alright. So that's gonna depend on whether you you have a good visual reference.
+
+
+88
+00:15:05.255 --> 00:15:14.614
+Lena Ting (she/her): So if you have a horizon, or a tree or a wall, and you trust it to be vertical. Then that might help, you know which way is up, and we use that quite a lot.
+
+
+89
+00:15:15.088 --> 00:15:26.325
+Lena Ting (she/her): You're falling may be my motion relative to that, but I could also have motion relative to that, because I moved right, and I certainly can't tell my posture, because I unless I'm looking at my body.
+
+
+90
+00:15:27.007 --> 00:15:30.784
+Lena Ting (she/her): So the visual system it it, you know
+
+
+91
+00:15:31.275 --> 00:15:41.185
+Lena Ting (she/her): it. You can see motion of the world, and like it, might cause a postural like a balanced response. Right? So if you stand on strain platform and a.
+
+
+92
+00:15:41.285 --> 00:15:58.135
+Lena Ting (she/her): it's like your whole visual field, and it moves a lot of times. You jump right. That's a balanced response balance correcting response, because that vision gave you the illusion that you were falling. And that's because the visual system
+
+
+93
+00:15:59.425 --> 00:16:15.405
+Lena Ting (she/her): just tells you relative motion. And then you have to decide whether that means I'm moving or the world is moving, and since you did it I didn't voluntarily move. It's like, Oh, maybe something pushed me right. And so you get that so you can't tell the difference between
+
+
+94
+00:16:15.505 --> 00:16:31.775
+Lena Ting (she/her): my motion and the others, and it's also just in my eyes. So it's about where my eyes are. Which could you know relative to my body could be very different, and I would need to know what muscles to activate, and without knowing where my eyes were relative to my body, I wouldn't be able to do that.
+
+
+95
+00:16:33.037 --> 00:16:35.565
+Lena Ting (she/her): You can also maintain your balance with your eyes closed.
+
+
+96
+00:16:38.055 --> 00:16:40.575
+Lena Ting (she/her): Okay, there's there's a vestibular system.
+
+
+97
+00:16:41.055 --> 00:16:46.534
+Lena Ting (she/her): and he and he guesses. Oh, look! See, I put the answers here because my slides are bad, but
+
+
+98
+00:16:47.705 --> 00:17:02.325
+Lena Ting (she/her): the vestibular system I don't know how many of you are familiar with it. It's often called the balance organ. It's a part of your inner ear, so can it tell you which way is up?
+
+
+99
+00:17:04.515 --> 00:17:09.195
+Lena Ting (she/her): Any any guesses on that or which way you're falling.
+
+
+100
+00:17:14.655 --> 00:17:18.704
+Lena Ting (she/her): All right. We got a quiet group today, so I'll just keep going.
+
+
+101
+00:17:20.445 --> 00:17:22.494
+Monica Daley (she, her): No, no! Wait it out! Wait it out!
+
+
+102
+00:17:22.495 --> 00:17:25.404
+Lena Ting (she/her): I could wait it out. We have more stuff to do.
+
+
+103
+00:17:25.405 --> 00:17:26.055
+Monica Daley (she, her): Okay.
+
+
+104
+00:17:26.466 --> 00:17:28.524
+Lena Ting (she/her): I can wait it out.
+
+
+105
+00:17:29.005 --> 00:17:51.655
+Lena Ting (she/her): I did that on Tuesday when I gave this lecture, but just to talk about the vestibular system a little bit. I know Victoria can tell you a lot more about it. There are fluid filled canals that are in 3 planes, and so when that fluid moves. It means you're rotating. And there's also an Otolith system here which is basically
+
+
+106
+00:17:53.545 --> 00:17:58.525
+Lena Ting (she/her): I like to think about lobsters when I talk about vestibular system they have.
+
+
+107
+00:17:59.695 --> 00:18:04.844
+Lena Ting (she/her): Think about a ball with a bunch of hair cells on it and some rocks inside of it.
+
+
+108
+00:18:05.055 --> 00:18:08.882
+Lena Ting (she/her): So wherever the rock lands you get a signal and
+
+
+109
+00:18:09.505 --> 00:18:16.964
+Lena Ting (she/her): so that's going to tell me which way is up. But it's also going to move when I accelerate in different directions.
+
+
+110
+00:18:17.095 --> 00:18:23.124
+Lena Ting (she/her): So if I accelerate sideways, or if I tilt my head down, basically get the same signal
+
+
+111
+00:18:23.275 --> 00:18:26.025
+Lena Ting (she/her): so it can tell me something about my
+
+
+112
+00:18:26.765 --> 00:18:40.425
+Lena Ting (she/her): which way is up. As long as I am not also accelerating. So you know, you might get that tilting sensation when you're like in a car and a amusement park ride. That type of a thing.
+
+
+113
+00:18:40.735 --> 00:18:51.025
+Lena Ting (she/her): And again, these are head-based sensors. So it doesn't tell you about your posture. It might tell you you're falling. I went snowboarding once in a whiteout, and I
+
+
+114
+00:18:51.265 --> 00:19:05.885
+Lena Ting (she/her): I was like I can't see which way is down. And I thought, Lena, you have a vestibular system. This should work. But the next thing I know is like really close to the ground, and I had no idea. And that's because some of the like, the it takes a bit of
+
+
+115
+00:19:08.385 --> 00:19:14.644
+Lena Ting (she/her): higher frequency sort of motion to like activate the fluid moving in the canals.
+
+
+116
+00:19:14.915 --> 00:19:20.955
+Lena Ting (she/her): You know, it's it's there, but it's not. It's also not enough to control your balance.
+
+
+117
+00:19:22.105 --> 00:19:24.815
+Lena Ting (she/her): Okay, we also have this metasensory system.
+
+
+118
+00:19:26.255 --> 00:19:29.995
+Lena Ting (she/her): So anyone have any guesses of like what this?
+
+
+119
+00:19:30.165 --> 00:19:41.455
+Lena Ting (she/her): These are sensors in the skin Cutanese receptors? Could they help contribute to these questions? Of which way am I? Is up? Am I falling? What's my body? Configuration.
+
+
+120
+00:19:48.545 --> 00:19:52.225
+UCI Watch Crew: We can tell if we're falling, because we can feel our center of pressure in our feet.
+
+
+121
+00:19:52.665 --> 00:19:53.255
+Lena Ting (she/her): Yeah.
+
+
+122
+00:19:55.735 --> 00:20:07.854
+Lena Ting (she/her): yep. So we, there's a lot of these in the feet and the feet. The sensation of the center pressure of the feet is extremely important for for balance control. So if you like, cool your feet.
+
+
+123
+00:20:08.475 --> 00:20:09.974
+Lena Ting (she/her): it's hard to stand up.
+
+
+124
+00:20:10.455 --> 00:20:13.454
+Lena Ting (she/her): So yeah, there's a paper about. The
+
+
+125
+00:20:13.835 --> 00:20:17.614
+Lena Ting (she/her): footsol is a dynamometric map of balance.
+
+
+126
+00:20:18.362 --> 00:20:21.285
+Lena Ting (she/her): You, you know which way is up.
+
+
+127
+00:20:21.655 --> 00:20:30.224
+Lena Ting (she/her): Am I falling? Certainly not. It might give you some body configuration. So there's evidence now that, like skin stretch in my joints
+
+
+128
+00:20:30.795 --> 00:20:36.645
+Lena Ting (she/her): around, my joints can can provide some information about joint motion.
+
+
+129
+00:20:39.465 --> 00:20:47.694
+Lena Ting (she/her): Okay, let's see, proprioceptors are very, very important for balance.
+
+
+130
+00:20:48.075 --> 00:20:51.944
+Lena Ting (she/her): So the proprioceptors are the other 6th sense.
+
+
+131
+00:20:55.215 --> 00:21:11.055
+Lena Ting (she/her): there's a competition. So muscle spindles are sort of modified muscles that are turned into sensory organs that fire when typically, when muscles are stretched.
+
+
+132
+00:21:11.125 --> 00:21:31.685
+Lena Ting (she/her): you also have Golgi tendon organs that are at the muscle tendon Junction that respond to sort of any kind of tension on that piece of tendon, and together they give us a sense of kinesthesia, and where our bodies are relative to each other, the tendon
+
+
+133
+00:21:31.875 --> 00:21:43.944
+Lena Ting (she/her): sorry the muscle spindle is what's responsible for this knee jerk response in you have at the doctor, where basically you hit the tendon. It stretches
+
+
+134
+00:21:44.055 --> 00:21:53.385
+Lena Ting (she/her): a little bit causes firing in the muscle spindle. Then it goes back to the spinal cord and causes that same muscle to contract. So it's like a little feedback control system.
+
+
+135
+00:21:53.565 --> 00:22:01.015
+Lena Ting (she/her): All right. So what do we think about proprioceptors? They tell us which way is up. If you're falling, or what your body configuration is.
+
+
+136
+00:22:08.615 --> 00:22:13.604
+Caitlin Bemis: Definitely, if you're falling, I'll answer an easy one. So then trainees can try some harder ones.
+
+
+137
+00:22:14.375 --> 00:22:16.824
+Lena Ting (she/her): It what I didn't get that.
+
+
+138
+00:22:17.205 --> 00:22:19.175
+Caitlin Bemis: I said definitely, if you're falling.
+
+
+139
+00:22:20.495 --> 00:22:22.515
+Lena Ting (she/her): It can tell you if it's if you're falling.
+
+
+140
+00:22:22.675 --> 00:22:23.405
+Caitlin Bemis: Yeah.
+
+
+141
+00:22:24.445 --> 00:22:25.664
+Lena Ting (she/her): And how.
+
+
+142
+00:22:26.585 --> 00:22:31.784
+Caitlin Bemis: I don't know. I mean you'll feel the the weight of you break from underneath you.
+
+
+143
+00:22:32.585 --> 00:22:33.415
+Lena Ting (she/her): So that.
+
+
+144
+00:22:33.415 --> 00:22:33.975
+Monica Daley (she, her): I guess.
+
+
+145
+00:22:33.975 --> 00:22:41.815
+Lena Ting (she/her): It's good. Yeah. So you yeah. So there's forces on your muscles, and you might not have it so you might feel the loss of sort of ground support, right?
+
+
+146
+00:22:41.985 --> 00:22:42.564
+Lena Ting (she/her): So that.
+
+
+147
+00:22:42.565 --> 00:22:46.424
+Monica Daley (she, her): Or like. If you're leaning, you would feel a stretch in certain muscles right.
+
+
+148
+00:22:46.425 --> 00:23:05.795
+Lena Ting (she/her): Yes, but so it might. It might. Yeah, it might tell you that motion. It's it's sort of the most important at telling us what our body configuration is. So where are my, where's my head? How is my neck turned relative to the rest of my body, so that I know what I'm looking at something. It's
+
+
+149
+00:23:06.035 --> 00:23:16.715
+Lena Ting (she/her): if you know it's sliding that way. It's a forward backward, and if the same visual signal is here, it means left right, so it can tell me which way it's up.
+
+
+150
+00:23:17.835 --> 00:23:21.975
+Lena Ting (she/her): If I trust the horizon. If I trust the tree, if I trust
+
+
+151
+00:23:23.555 --> 00:23:30.055
+Lena Ting (she/her): the motion of the walls in the boat that I'm standing on right? So that information may not be vertical.
+
+
+152
+00:23:31.075 --> 00:23:59.015
+Lena Ting (she/her): Great. Okay? So as I've gone through this, I think you can see that basically, none of these senses can answer all the questions I need to answer to maintain balance. And so, just as an example of some of the ways in which your brain handles. This is that it has to integrate multiple senses to balance. So, as an example, you can integrate vestibular, you need and integrate vestibular and proprioceptive information.
+
+
+153
+00:23:59.795 --> 00:24:10.635
+Lena Ting (she/her): And so this is a kind of experiment. Then by Bob Paterka, Prime, and many others where you
+
+
+154
+00:24:10.955 --> 00:24:16.264
+Lena Ting (she/her): stand on a moving surface. And in this case, unlike our lab, the platform tilts.
+
+
+155
+00:24:16.515 --> 00:24:25.874
+Lena Ting (she/her): Okay? So it's tilting. And they blindfold people so that they can't use vision, although there are some other interesting
+
+
+156
+00:24:25.975 --> 00:24:34.954
+Lena Ting (she/her): manipulations there. And so what you see is you, you look at how much the body sways relative to how much the platform tilts.
+
+
+157
+00:24:35.305 --> 00:24:45.314
+Lena Ting (she/her): Okay, so on the bottom axis, I have the platform tilting the root mean square of the tilt, and on the y-axis I have how much the body sways.
+
+
+158
+00:24:45.445 --> 00:24:49.575
+Lena Ting (she/her): And so basically, if you follow this black dotted line.
+
+
+159
+00:24:50.024 --> 00:24:57.035
+Lena Ting (she/her): it means there's a 1-to-one correlation so as much as the platform tilts. My body will tilt with it. Okay? So
+
+
+160
+00:24:57.685 --> 00:25:23.135
+Lena Ting (she/her): when you have a very small tilt, so this is 0 point 5 degrees, not very much. You can see that the body, in fact, does that so? This is a pretty small amplitude. It might not get picked up by your vestibular system that much, or I might not see it even when I'm standing with my eyes open. And so what? Which of the senses is sort of
+
+
+161
+00:25:23.865 --> 00:25:26.635
+Lena Ting (she/her): might be helping me maintain that tilt?
+
+
+162
+00:25:27.443 --> 00:25:29.085
+Lena Ting (she/her): With respect to the ground.
+
+
+163
+00:25:40.625 --> 00:25:45.985
+Lena Ting (she/her): I can only see Skylar and like video. So column. But.
+
+
+164
+00:25:47.725 --> 00:25:54.744
+Monica Daley (she, her): It'd be great if trainees were willing to speak up. It's okay. If you don't know the answer, you could make a guess.
+
+
+165
+00:25:54.985 --> 00:25:56.414
+UCI Watch Crew: I can talk up on this one.
+
+
+166
+00:25:56.715 --> 00:25:57.145
+Monica Daley (she, her): Yeah.
+
+
+167
+00:25:57.575 --> 00:26:02.685
+UCI Watch Crew: The vestibular system, and then at least, the proprioceptive.
+
+
+168
+00:26:04.675 --> 00:26:07.225
+UCI Watch Crew: Sensors in your feet can change.
+
+
+169
+00:26:07.745 --> 00:26:09.665
+UCI Watch Crew: feel a change of center of pressure.
+
+
+170
+00:26:10.355 --> 00:26:23.235
+Lena Ting (she/her): So you could be the center pressure, maybe, but it's probably in this case, I'm going to say proprioceptive, because what you do is you try to maintain. Your body's
+
+
+171
+00:26:23.405 --> 00:26:29.325
+Lena Ting (she/her): the the posture, right? So basically try to keep my ankle at a right angle to the
+
+
+172
+00:26:31.175 --> 00:26:32.255
+Lena Ting (she/her): up to the floor.
+
+
+173
+00:26:33.594 --> 00:26:42.854
+Lena Ting (she/her): And it's not just my ankles, and I have to make sure my knees are straight, my hips are straight. Everything is so this thing here I would call a postural strategy.
+
+
+174
+00:26:43.505 --> 00:26:48.864
+Lena Ting (she/her): and as long as I have this proprioceptive information I can do that. And then what you can see is as
+
+
+175
+00:26:49.755 --> 00:26:52.605
+Lena Ting (she/her): the the tilting gets larger.
+
+
+176
+00:26:53.035 --> 00:26:57.285
+Lena Ting (she/her): Then it's not such a good strategy anymore. But you can see that people
+
+
+177
+00:26:57.595 --> 00:27:11.344
+Lena Ting (she/her): fit don't increase how much they tilt. So that means that I'm only swinging a little bit, and the ground is tilting below me. Right? So now my ankles go free and my head is reasonably stable to 0 point 5
+
+
+178
+00:27:11.515 --> 00:27:12.565
+Lena Ting (she/her): degrees.
+
+
+179
+00:27:12.795 --> 00:27:28.375
+Lena Ting (she/her): And so that would be an indication that my vestibular system is kicking in and telling me like, Hey, keep this gravity vector here. Don't tilt my head like this. Okay, so then, if you have people with vestibular loss.
+
+
+180
+00:27:28.605 --> 00:27:30.495
+Lena Ting (she/her): they don't have that signal anymore.
+
+
+181
+00:27:30.835 --> 00:27:38.445
+Lena Ting (she/her): And so what happens is as you increase the tilt of the platform. They just keep tilting with the ground.
+
+
+182
+00:27:39.055 --> 00:27:49.895
+Lena Ting (she/her): Okay, so you might need to use this kind of strategy like this is like standing on a boat right? One strategy is to just keep my orientation with the deck.
+
+
+183
+00:27:52.015 --> 00:27:55.145
+Lena Ting (she/her): And then, if
+
+
+184
+00:27:56.535 --> 00:28:11.225
+Lena Ting (she/her): this, this can happen when you're below deck right, because even if you have this visual information like, you're still aligned with the doors. But everything is moving, and this sensory conflict is something that can
+
+
+185
+00:28:11.535 --> 00:28:12.995
+Lena Ting (she/her): cause motion, sickness.
+
+
+186
+00:28:13.985 --> 00:28:17.335
+Lena Ting (she/her): all right, and that's why they tell you to go. Look at, go outside, look at the horizon.
+
+
+187
+00:28:17.755 --> 00:28:21.004
+Lena Ting (she/her): Have have a reference that's actually
+
+
+188
+00:28:21.585 --> 00:28:25.454
+Lena Ting (she/her): a good one for for vertical and gravity.
+
+
+189
+00:28:27.775 --> 00:28:44.374
+Lena Ting (she/her): Okay, so this multi-sensory integration is very critical for balance control. And it's highly flexible. So if I'm standing on a boat. Or you know, if I'm in a whiteout, you know, you may at different times
+
+
+190
+00:28:44.495 --> 00:28:59.755
+Lena Ting (she/her): use different combinations of sensory information for balance control. And your brain basically takes in all that information and has to decide which ones are reliable. And then sort of make a decision. On which way am I following? And what do I need to do?
+
+
+191
+00:29:00.115 --> 00:29:05.484
+Lena Ting (she/her): And so you're shifting all the time between these, and
+
+
+192
+00:29:06.305 --> 00:29:24.775
+Lena Ting (she/her): that's a sign of a healthy brain. If you lose one of those then now you might be sort of overly more reliant on some of the other senses. If people have diabetic neuropathy or something, or losing sensation in the feet. They can compensate with these other sensors to an extent.
+
+
+193
+00:29:25.655 --> 00:29:28.714
+Lena Ting (she/her): Okay, all right. Any questions so far.
+
+
+194
+00:29:34.245 --> 00:29:36.855
+Lena Ting (she/her): Okay, so
+
+
+195
+00:29:37.085 --> 00:29:44.924
+Lena Ting (she/her): in our lab. So you know, why? Why do we care about this sensation? You need to know which way you're falling in order to move?
+
+
+196
+00:29:46.117 --> 00:29:48.262
+Lena Ting (she/her): So we
+
+
+197
+00:29:49.515 --> 00:30:05.174
+Lena Ting (she/her): have started to study perceptual control of whole body motion in the platform that I showed you. And this is a psychophysical experiment. Where we have people standing on a platform, we move them directly backwards.
+
+
+198
+00:30:05.495 --> 00:30:13.664
+Lena Ting (she/her): and then, 5 seconds later, after they've stabilized again, we perturb them backwards and to the side by some
+
+
+199
+00:30:13.895 --> 00:30:17.944
+Lena Ting (she/her): number of degrees, like 3 degrees 15 degrees something like that.
+
+
+200
+00:30:18.165 --> 00:30:25.864
+Lena Ting (she/her): and then we ask them to make a judgment about those 2 perturbations of whether or not they're in the same direction or in different directions.
+
+
+201
+00:30:26.325 --> 00:30:30.845
+Lena Ting (she/her): And typically, this is done in sensory experiments where there's like, you know.
+
+
+202
+00:30:31.465 --> 00:30:47.405
+Lena Ting (she/her): touching your finger or showing you a stimulus. And there's no motor action here. We, the person, has actually successfully maintained their balance both times, and then they're going to tell us if these are in the same or different directions. And we want to find what's called a
+
+
+203
+00:30:49.155 --> 00:30:56.805
+Lena Ting (she/her): perceptual threshold. So that's the point at which they're they're saying same and different at 50% of the time.
+
+
+204
+00:30:57.095 --> 00:31:08.055
+Lena Ting (she/her): So that's the line at which you know, if you have a larger difference, they're going to be more likely to say that they're different. And if you have a smaller one, they're more likely to say that they're the same.
+
+
+205
+00:31:08.415 --> 00:31:15.304
+Lena Ting (she/her): And you can. We can build a psychometric curve and put it in here. So in young adults, we see a threshold of about
+
+
+206
+00:31:15.415 --> 00:31:22.794
+Lena Ting (she/her): here at 9 and a half degrees that increases in older adults, and it increases even further in people with Parkinson's disease
+
+
+207
+00:31:22.995 --> 00:31:24.464
+Lena Ting (she/her): as well as stroke.
+
+
+208
+00:31:25.195 --> 00:31:39.684
+Lena Ting (she/her): So that means that in this case, in young adults, we can anywhere from 5 to 12 degrees is about what we see. And it means that people with Parkinson's basically
+
+
+209
+00:31:40.065 --> 00:31:46.405
+Lena Ting (she/her): often don't know that they're falling sort of backwards and to the left.
+
+
+210
+00:31:48.135 --> 00:31:50.345
+Lena Ting (she/her): So if you're trying to use
+
+
+211
+00:31:50.615 --> 00:31:58.465
+Lena Ting (she/her): a voluntary strategy to correct your balance. You know you may not have the right information that you need to do that.
+
+
+212
+00:31:58.725 --> 00:31:59.520
+Lena Ting (she/her): So
+
+
+213
+00:32:00.485 --> 00:32:22.934
+Lena Ting (she/her): It may, in a study that we did, we showed that the poor perceptual whole body perception is actually related to sort of balance deficits, so it may not be related to inability to activate muscles, but simply to know how to do it. So in this case, on the X-axis we have perceptual threshold.
+
+
+214
+00:32:23.301 --> 00:32:34.365
+Lena Ting (she/her): That ranges from about 12 all the way up to 30 degrees. So that means I did a perturbation out to here, and they thought it felt the same as one that was directly backwards.
+
+
+215
+00:32:34.842 --> 00:32:40.550
+Lena Ting (she/her): And in stroke we've now seen out to like 50 degrees, which is crazy.
+
+
+216
+00:32:41.765 --> 00:33:04.564
+Lena Ting (she/her): and so on. The y-axis, I have what's called a Mini best score. This is a clinical test of balance. It has many different parts, and it gets rated, and so the lower the score your worst, your balance, and it tops out at 28 here. So in older adults we did find differences in perceptual thresholds ranging out to about 20 degrees, but there was
+
+
+217
+00:33:04.565 --> 00:33:21.454
+Lena Ting (she/her): no correlation with their clinical balance score, whereas in people with Parkinson's disease, and I think this is playing out in stroke as well. We see this pretty strong correlation to their inability to actually perceive their body motion.
+
+
+218
+00:33:21.785 --> 00:33:26.715
+Lena Ting (she/her): So it begs the question of whether these balance deficits are actually motor deficits or not.
+
+
+219
+00:33:28.425 --> 00:33:40.765
+Victoria Wood: There. Have you, like you, or any other groups been able to tease out which of the different components of the multi sensory integration system are contributing to this? Or is it everything.
+
+
+220
+00:33:40.765 --> 00:34:07.374
+Lena Ting (she/her): We? I mean, we are not able to do this. We do, we blindfold people. So we are getting rid of vision. But there have been all sorts of sort of sensory deficits that have been identified in Parkinson's disease. That, but not very many studies on it. So another thing is, there's a study where people walk on a split treadmill, and they change the velocity between the 2.
+
+
+221
+00:34:07.615 --> 00:34:23.085
+Lena Ting (she/her): And you have to say, you know, you hit a button when you're like, Oh, yeah, they're different. And then that people with Parkinson's they have to be almost in phase before they will detect the difference, whereas healthy young adults are very, very sensitive to differences in phase.
+
+
+222
+00:34:24.615 --> 00:34:32.335
+Lena Ting (she/her): so that would probably be more of a proprioceptive one, right? But there's visual processing deficits. There's all sorts of sorts of sensory deficits.
+
+
+223
+00:34:34.515 --> 00:34:49.124
+CHP221: So I have a question about this line of research, have you, or has your group looked at? Instead of comparing 2 different perturbations, just looking at the threshold for detection of perturbation or not.
+
+
+224
+00:34:50.109 --> 00:34:58.400
+Lena Ting (she/her): No, we haven't. We tried, but it's very difficult to do with the motor systems that we have to reliably
+
+
+225
+00:35:00.375 --> 00:35:09.674
+Lena Ting (she/her): deliver the very small perturbations. So because we are so sensitive. So there's a little stiction. There's also this parameter like
+
+
+226
+00:35:10.005 --> 00:35:20.465
+Lena Ting (she/her): redundancy. So what's bigger or smaller, you have displacement, velocity or acceleration that we can all sense. And so there's lots of different combinations, and like keeping all those sort of
+
+
+227
+00:35:21.305 --> 00:35:22.425
+Lena Ting (she/her): scaled
+
+
+228
+00:35:22.655 --> 00:35:29.475
+Lena Ting (she/her): is is difficult. And then we don't actually know which sort of sensor it is. So we we originally tried to do that. And
+
+
+229
+00:35:29.715 --> 00:35:35.045
+Lena Ting (she/her): we actually, we've tried on 2 different machines in the arm and the leg. And it's it's just not reliable
+
+
+230
+00:35:35.905 --> 00:35:37.105
+Lena Ting (she/her): sure, thanks
+
+
+231
+00:35:40.135 --> 00:36:01.315
+Lena Ting (she/her): so one of the things we're looking at is like, okay, what's happening in your brain to do this. And so when we record brain activity whoops, we are looking at sort of brain activity just prior to those perturbations. And so you get electrical signals from the brain, and they're categorized
+
+
+232
+00:36:01.535 --> 00:36:08.325
+Lena Ting (she/her): in different frequency ranges and they just have Greek letter names
+
+
+233
+00:36:09.505 --> 00:36:29.325
+Lena Ting (she/her): for lack of imagination. Or you know some other system of categorization. I'm going to show you things in the Beta range which is typically thought of as a sensory motor signal. And there isn't any rhyme or reason as to why it's called that, but it is there sort of
+
+
+234
+00:36:29.565 --> 00:36:38.255
+Lena Ting (she/her): based on empirical measures, demonstrating, like the appearance of these types of oscillations during sensory motor tasks.
+
+
+235
+00:36:38.385 --> 00:36:55.845
+Lena Ting (she/her): So one of the questions we ask is, why do people have different perceptual thresholds? And can we explain that it may not be the fact that they're like sensors in the periphery have any problems. This could be a central processing problem. So here we have our same experiment
+
+
+236
+00:36:56.005 --> 00:37:00.995
+Lena Ting (she/her): and we this is a sort of
+
+
+237
+00:37:01.685 --> 00:37:18.574
+Lena Ting (she/her): spectrogram where I have time on the x-axis. And so my perturbation happens in the pink dotted line. And then this red thing is sort of the response to the perturbation. And what we're going to do, what we're doing is looking before the perturbation when they're just standing there.
+
+
+238
+00:37:18.795 --> 00:37:34.944
+Lena Ting (she/her): What's the level of activity in a beta range? So basically, this is like 13 to 30 Hertz. And then the color here blue indicates there's not much going on right. And then this other individual that has a higher perceptual threshold. So that means worse
+
+
+239
+00:37:35.305 --> 00:37:47.511
+Lena Ting (she/her): perception. They have a lot more power in the Beta range beforehand, and the Beta beta oscillations are like there. If you hold a funny posture you'll have a higher beta
+
+
+240
+00:37:48.245 --> 00:38:10.575
+Lena Ting (she/her): People with Parkinson's disease have higher Beta just pathologically. And so what we found incredibly, is this strong relationship between the perceptual threshold of each individual and the amount of beta power in a particular part of their brain which I'll talk about later, just before that perturbation.
+
+
+241
+00:38:10.915 --> 00:38:34.285
+Lena Ting (she/her): And so now, people are thinking about, yeah. So lots of beta power. So beta as gating sensory information to the brain. So it's yeah. People who who can't detect until 10 degrees are, we think, centrally in their brain is saying, don't pay attention to this information
+
+
+242
+00:38:34.565 --> 00:38:35.375
+Lena Ting (she/her): right?
+
+
+243
+00:38:38.385 --> 00:38:54.864
+Lena Ting (she/her): So back to the Parkinson's disease story, we haven't published this yet, but we have looked at. We're now collecting data to see if we can get the same same thing. But in a different analysis of data, we looked at data power as they were standing, not while they're doing a perceptual task.
+
+
+244
+00:38:54.975 --> 00:38:59.735
+Lena Ting (she/her): and that was also correlated with their balance score.
+
+
+245
+00:39:00.005 --> 00:39:08.794
+Lena Ting (she/her): So this suggests, yeah, that they just have elevated Beta all the time, and that contributes to their sensory perception
+
+
+246
+00:39:08.925 --> 00:39:30.544
+Lena Ting (she/her): impairments which then contributes to their balance. Impairments would be the conjecture there not showing it here, but Beta fluctuates over time. Just there's a little burst of it. And so we did show, even on a trial by trial basis. When Beta appears, you're less likely to detect the difference between the 2 stimuli, and that was
+
+
+247
+00:39:31.261 --> 00:39:40.635
+Lena Ting (she/her): also shown in a discrimination task in in haptic, haptic, and visual, like other other sort of more standard sensory perception, tasks.
+
+
+248
+00:39:42.160 --> 00:39:42.895
+CHP221: Tim.
+
+
+249
+00:39:44.790 --> 00:40:00.475
+CHP221: Don't know if you have like information about the young adults, for example, what was the activities that they do in their daily lives to maybe see if that could be influencing the way their brains are given like this different.
+
+
+250
+00:40:00.795 --> 00:40:04.415
+Lena Ting (she/her): Yeah, that's a good. That's a good question. We didn't
+
+
+251
+00:40:05.195 --> 00:40:12.795
+Lena Ting (she/her): do it in this cohort, although I'll show some other data on other brain activity where we did look at that.
+
+
+252
+00:40:14.685 --> 00:40:33.325
+Lena Ting (she/her): But this is, you know, definitely right, and, as I said, like Beta may be more active if people are co-activating. So it could be people who are less confident in what they're doing or scared that we see a lot of co-activation in older adults that may be related to some
+
+
+253
+00:40:33.525 --> 00:40:36.014
+Lena Ting (she/her): increased beta oscillations in the brain.
+
+
+254
+00:40:36.815 --> 00:40:37.405
+CHP221: Okay. Thank you.
+
+
+255
+00:40:37.405 --> 00:40:44.214
+Monica Daley (she, her): We also have a question in the chat from Emma. Does Parkinson's alter other brain waves besides the Beta wave.
+
+
+256
+00:40:46.825 --> 00:40:53.944
+Lena Ting (she/her): I mean, it alters a lot of things. So, Beta, there's
+
+
+257
+00:40:54.545 --> 00:41:05.125
+Lena Ting (she/her): I don't know about the you know. I'm not an expert on all of these, and it also depends on the different areas of the brain in which the beta oscillations are increased.
+
+
+258
+00:41:05.325 --> 00:41:11.984
+Lena Ting (she/her): We're looking at the supplementary motor area which we can talk about. And it's also emanating from deep in the brain.
+
+
+259
+00:41:13.425 --> 00:41:15.925
+Lena Ting (she/her): That's the canonical one that people talk about.
+
+
+260
+00:41:16.035 --> 00:41:23.825
+Lena Ting (she/her): I've seen other ranges, gamma, which is like high frequency local processing. But
+
+
+261
+00:41:24.785 --> 00:41:28.444
+Lena Ting (she/her): if you look for a deficit in Parkinson's you could probably find it anywhere.
+
+
+262
+00:41:30.675 --> 00:41:33.075
+Kennedy Kerr: One more thing about the activity.
+
+
+263
+00:41:33.075 --> 00:41:33.495
+Lena Ting (she/her): Cool.
+
+
+264
+00:41:33.842 --> 00:41:40.794
+Kennedy Kerr: In this study. I just happened to know that there were 2 dancers in the young adult study, and they
+
+
+265
+00:41:41.165 --> 00:41:50.544
+Kennedy Kerr: didn't have super, good or bad thresholds, but they, the like psychometric curve of their threshold, was super sharp.
+
+
+266
+00:41:50.645 --> 00:41:58.555
+Kennedy Kerr: so like if you went a little bit over the threshold, they would always say same, and if you went a little bit below they would always say different or
+
+
+267
+00:41:58.715 --> 00:41:59.495
+Kennedy Kerr: better.
+
+
+268
+00:41:59.495 --> 00:42:08.355
+Lena Ting (she/her): So when they make that choice, you're saying they're much more confident in that choice. If you have a psychometric curve that's very steep.
+
+
+269
+00:42:09.975 --> 00:42:11.695
+Kennedy Kerr: Yeah, there was less like
+
+
+270
+00:42:12.245 --> 00:42:16.695
+Kennedy Kerr: times where they would say different answers in response to the same angle
+
+
+271
+00:42:16.975 --> 00:42:18.815
+Kennedy Kerr: once you get close to the threshold.
+
+
+272
+00:42:20.095 --> 00:42:21.195
+Lena Ting (she/her): Okay.
+
+
+273
+00:42:21.195 --> 00:42:25.394
+Kennedy Kerr: Perceptual acuity, or something is high, even though their threshold was just at.
+
+
+274
+00:42:25.395 --> 00:42:31.774
+Lena Ting (she/her): I think we call it sensitivity. Acuity is like the threshold, and sensitivity is the slope.
+
+
+275
+00:42:31.775 --> 00:42:32.365
+Kennedy Kerr: Oh, yeah.
+
+
+276
+00:42:32.365 --> 00:42:33.385
+Lena Ting (she/her): Changes yep.
+
+
+277
+00:42:34.335 --> 00:42:35.275
+Kennedy Kerr: Oh, it's kind of interesting.
+
+
+278
+00:42:35.275 --> 00:42:36.475
+Lena Ting (she/her): Thanks, Kennedy.
+
+
+279
+00:42:38.345 --> 00:43:00.074
+Lena Ting (she/her): Okay, so takes a lot of senses. And then we're gonna talk about coordinating muscles. I gotta keep going. So there are many, you know. Now you got to know you're falling which way you're falling. There are many different muscle coordination patterns you can use for a backward perturbation ankle strategy, a hip strategy.
+
+
+280
+00:43:00.265 --> 00:43:19.424
+Lena Ting (she/her): You can use different muscles depending on your posture or what you're holding onto, and then a whole nother strategy. If you're going to take a step or grab onto something. So again, there's no singular relationship between, like, I'm falling in a particular direction. And I want to activate a particular set of muscles.
+
+
+281
+00:43:19.955 --> 00:43:24.062
+Lena Ting (she/her): and this is where now we can start to look at the
+
+
+282
+00:43:24.735 --> 00:43:26.644
+Lena Ting (she/her): I don't know how to stop this video.
+
+
+283
+00:43:26.955 --> 00:43:32.415
+Lena Ting (she/her): Oh, you guys made me a gift. Okay, that's that's why so
+
+
+284
+00:43:33.365 --> 00:43:58.215
+Lena Ting (she/her): it's distracting, though. Okay? So when we look at these systems involved in balance, like there are 3 different ones here, but they're all kind of doing different things and at different delays. So when we look at the spinal cord signal, we're looking at joint level sort of muscle and reflex feedback. So I would call this a postural controller and not a balance controller.
+
+
+285
+00:43:58.985 --> 00:44:04.735
+Lena Ting (she/her): Okay, spinal cord and just proprioception. It's only one sensory modality
+
+
+286
+00:44:05.355 --> 00:44:07.834
+Lena Ting (she/her): when we move to the brain stem.
+
+
+287
+00:44:08.639 --> 00:44:13.814
+Lena Ting (she/her): We move to what I call task level control of actually which way you're falling.
+
+
+288
+00:44:13.895 --> 00:44:31.634
+Lena Ting (she/her): And then when we move to the brain sort of think about, it's more like assessing. Okay, are things. Is this working? And what should I do about it? Should I change my strategy, and that's even slower. So when we look at the contributions to this muscle response, the early part
+
+
+289
+00:44:31.655 --> 00:44:44.195
+Lena Ting (she/her): actually about 50 ms, you would see a spinal response. We don't see it here. Then a brain stem response, and then a cortical response. And of course, knowing everything out here would be a combination of all of that.
+
+
+290
+00:44:45.735 --> 00:44:53.894
+Lena Ting (she/her): because it takes. You know we're watching things kick in. That's another issue with the locomotion is that it's hard to know when things are kicking in
+
+
+291
+00:44:55.100 --> 00:44:55.635
+Lena Ting (she/her): so
+
+
+292
+00:44:55.755 --> 00:45:23.274
+Lena Ting (she/her): so balance, so postural control like instantaneously. When you have muscle co-activation, you can have sort of stiffening of the joint that gets reinforced by the spinal reflex response, right? Which then all maintains a joint position. So that's like the standing in the boat and then at the brainstem level. You, you integrate that, and then you can make this decision. So
+
+
+293
+00:45:23.975 --> 00:45:41.465
+Lena Ting (she/her): just to reinforce this difference. When I translate the platform backwards, I stretch my calf muscle, and then it causes both instantaneous stiffness, response, and a reflex response that will like contract it.
+
+
+294
+00:45:41.785 --> 00:45:50.294
+Lena Ting (she/her): My body will pitch forward so the center of mass is moving forward, and I would activate it even more to maintain balance.
+
+
+295
+00:45:50.545 --> 00:46:04.744
+Lena Ting (she/her): But if I now tilt the platform here, I'll stretch the calf muscle, but my body will be falling backwards. And so, if I continue to activate that calf muscle, I will throw myself down
+
+
+296
+00:46:05.513 --> 00:46:09.895
+Lena Ting (she/her): backwards. And so what happens is that muscle then shuts off.
+
+
+297
+00:46:10.295 --> 00:46:14.754
+Lena Ting (she/her): and then the antagonist muscle, the tibialis anterior will activate.
+
+
+298
+00:46:15.115 --> 00:46:20.195
+Lena Ting (she/her): And so this is where you see a switch between a postural controller and a balanced controller.
+
+
+299
+00:46:22.695 --> 00:46:44.865
+Lena Ting (she/her): And so, you know, if you're just relying on co-contraction and stretch reflexes, that's not very useful when the floor tilts and you know we do see more co-contraction in older adults and less co-contraction in dancers say so. The stiffening is a postural strategy and not a balance strategy.
+
+
+300
+00:46:47.015 --> 00:46:53.944
+Jill McNitt-Gray: Lena. Has this been done in different body configurations like standing versus a squat.
+
+
+301
+00:46:54.895 --> 00:46:55.634
+Lena Ting (she/her): I don't know.
+
+
+302
+00:46:57.785 --> 00:47:00.625
+Jill McNitt-Gray: Just wondering how that configuration may give option.
+
+
+303
+00:47:01.842 --> 00:47:05.304
+Lena Ting (she/her): I mean, I've done it in cats on 4 legs, and it's the same.
+
+
+304
+00:47:08.095 --> 00:47:11.695
+Lena Ting (she/her): So we see the same principles in quadrupedal stance.
+
+
+305
+00:47:15.765 --> 00:47:18.445
+Lena Ting (she/her): Okay. So when you're when you like.
+
+
+306
+00:47:18.835 --> 00:47:46.614
+Lena Ting (she/her): if that all fails, you go to your cortical input and it's like, Oh, I'm going to change my strategy. I'm going to change to a stepping strategy. I'm going to reach for something. And what's what's important in driving this response is sort of the direction of your body and not of the joints, and the joints can move in all different ways, and that's what we showed in cats is like the leg could be. The joints could be like moving in completely opposite directions. But your body, your brain, needs to tell you which way you're falling.
+
+
+307
+00:47:46.735 --> 00:48:04.304
+Lena Ting (she/her): and then some of you may have heard of muscle synergies, and these sort of are recruited, based on the direction of falling across multiple types of these strategies. So I may have a strategy for pushing to the left or pushing to the right, and that can hold, regardless of sort of what
+
+
+308
+00:48:04.465 --> 00:48:10.115
+Lena Ting (she/her): kind of motor strategy I'm I'm trying to accomplish.
+
+
+309
+00:48:11.525 --> 00:48:13.224
+Lena Ting (she/her): Okay. So
+
+
+310
+00:48:13.845 --> 00:48:33.505
+Lena Ting (she/her): we noticed that when we had expert dancers walking across a beam versus novices, walking across a beam that they were using similar muscle synergies in this brainstem mediated time window of reactive balance as when they're walking
+
+
+311
+00:48:33.735 --> 00:48:36.904
+Lena Ting (she/her): on the ground and walking on a beam.
+
+
+312
+00:48:37.035 --> 00:48:45.604
+Lena Ting (she/her): So they were experts could walk further. These are ballet dancers, and they were using
+
+
+313
+00:48:45.965 --> 00:48:53.995
+Lena Ting (she/her): shared modules. So that means sort of the same motor patterns for walking on a beam, reactive balance and walking on the ground.
+
+
+314
+00:48:54.315 --> 00:49:08.474
+Lena Ting (she/her): So that would suggest they're using this automatic portion of their brain because it's the same motor patterns. And then the novices, they start to separate. And, in fact, when people with stroke on their control leg or sort of on their.
+
+
+315
+00:49:09.295 --> 00:49:16.044
+Lena Ting (she/her): these are controls. People with stroke also have a reduced
+
+
+316
+00:49:17.055 --> 00:49:38.034
+Lena Ting (she/her): sort of more sharing of modules across different tasks when they're better performance or walking speed. So that here's the idea is that as long as my motor control remains automatic in the brainstem, that that would be a better motor pattern than the cortically controlled one which I already said was sort of voluntary, and you don't want to rely on it all the time.
+
+
+317
+00:49:38.835 --> 00:49:43.194
+Lena Ting (she/her): Okay, so this is sort of circumstantial evidence. And that led us to.
+
+
+318
+00:49:43.395 --> 00:49:54.055
+Lena Ting (she/her): Let's skip over that. Let us to then say, well, we can't really say where these muscle patterns are coming from. This is, we should just measure from the brain directly.
+
+
+319
+00:49:55.085 --> 00:50:10.475
+Lena Ting (she/her): And so that's when we started to measure from the brain. Because we, although we know that the brain is being used and the measures of that are all observational, like people can't walk and talk at the same time.
+
+
+320
+00:50:10.855 --> 00:50:15.984
+Lena Ting (she/her): and that's an indicator of people, you know, having fall risk.
+
+
+321
+00:50:16.195 --> 00:50:33.554
+Lena Ting (she/her): And then a really common clinical test of this is timed up, and go where people like get up from a chair, walk around a cone, and then what you do is you have them, and then come back and sit down. You time them, and then you have them do it by while they're also counting backwards by threes.
+
+
+322
+00:50:33.785 --> 00:50:49.284
+Lena Ting (she/her): And then what happens is that you know they may slow down if they're already using these cortical resources for walking, and they have to now have a divided attention to do both the walking task and the counting task.
+
+
+323
+00:50:49.698 --> 00:50:53.805
+Lena Ting (she/her): But the the score is just like, how many seconds longer did it take?
+
+
+324
+00:50:53.985 --> 00:51:03.265
+Lena Ting (she/her): So that was sort of not satisfactory for us. We want to actually see what what circuits are being used as they're doing this. And so when we add
+
+
+325
+00:51:03.875 --> 00:51:10.335
+Lena Ting (she/her): add brain activity to this task. Here is a movie of the
+
+
+326
+00:51:10.995 --> 00:51:22.505
+Lena Ting (she/her): voltage on the top of the brain during this perturbation. So you can see a really salient response. And it's sort of centered at the middle of the brain.
+
+
+327
+00:51:22.895 --> 00:51:26.585
+Lena Ting (she/her): And we can then start to look at that signal.
+
+
+328
+00:51:26.685 --> 00:51:35.315
+Lena Ting (she/her): All right, I'm gonna quit that one. So what we see is that as we increase the oops.
+
+
+329
+00:51:36.155 --> 00:51:58.305
+Lena Ting (she/her): as we increase the size of the perturbation, even in a young adult, you see increased activity in the brain. So that makes sense right? It gets more difficult. Then we switch to an older adult. This is actually an older gentleman with Parkinson's disease. You can see we have a very small perturbation, and even at the very small perturbations you start to see brain activity involved
+
+
+330
+00:51:58.465 --> 00:52:03.594
+Lena Ting (she/her): right? And that increases as they go up. And so we had to give smaller perturbations here.
+
+
+331
+00:52:06.390 --> 00:52:07.475
+Lena Ting (she/her): So
+
+
+332
+00:52:08.065 --> 00:52:15.844
+Lena Ting (she/her): we can also just look at one electrode at the top of the brain and look at its response. And this
+
+
+333
+00:52:16.125 --> 00:52:32.445
+Lena Ting (she/her): is a negative deflection in voltage of 50 microvolts which is really huge for an Eeg signal. It's localized in what's called the supplementary motor area, which is sort of between your premotor and your
+
+
+334
+00:52:32.635 --> 00:52:37.725
+Lena Ting (she/her): motor cortex urban the front. So it's involved in like
+
+
+335
+00:52:38.195 --> 00:52:41.135
+Lena Ting (she/her): sequence motor planning and things like that.
+
+
+336
+00:52:41.565 --> 00:52:50.504
+Lena Ting (she/her): So this negative deflection of the brain is called an n 1 potential. And it's been known since the eighties. But it's
+
+
+337
+00:52:51.475 --> 00:53:01.994
+Lena Ting (she/her): smaller. It's it's what we think of as a balance error, assessment signal that really tells me like, what? How bad is this
+
+
+338
+00:53:02.395 --> 00:53:13.464
+Lena Ting (she/her): event for me? So if I'm distracted. I'm not paying attention. It'll be smaller if I'm surprised. It's bigger. If people have fear of falling, it's bigger.
+
+
+339
+00:53:13.475 --> 00:53:29.174
+Lena Ting (she/her): And so we think about this as like a combination between, like my own sort of cognitive assessment of myself and my motor ability and the actual task difficulty which we're calling balance challenge
+
+
+340
+00:53:29.175 --> 00:53:47.554
+Lena Ting (she/her): right. So, as you saw before, like a really small perturbation could be challenging to an older adult. And so that's the intersection of the sort of objective difficulty of the task. And then something about that individual. And so the size of this n, 1 potential, we're hypothesizing kind of tells me that challenge level.
+
+
+341
+00:53:48.695 --> 00:54:05.425
+Lena Ting (she/her): And so in young adults, what we saw is that people who, if they're standing on a platform, they have different site amplitudes of this response. And this is like a really huge one, over a hundred microvolts, and the people with a really large
+
+
+342
+00:54:06.865 --> 00:54:25.255
+Lena Ting (she/her): responses of this n 1 response, which is related to like what's called a cognitive error, related negativity. When people make mistakes, it's also referred to as the Oh shit response. So that's those people are the ones who could not walk as far across this beam.
+
+
+343
+00:54:25.525 --> 00:54:31.854
+Lena Ting (she/her): and the people who had a smaller response in their brain were the people who could walk
+
+
+344
+00:54:32.155 --> 00:54:47.025
+Lena Ting (she/her): further along this beam. So we were able to demonstrate, in fact, that this is why we think that this n 1 response really indicates the level of challenge posed by the same perturbation to a group of individuals
+
+
+345
+00:54:47.355 --> 00:54:49.225
+Lena Ting (she/her): differentially right?
+
+
+346
+00:54:50.025 --> 00:54:51.913
+Lena Ting (she/her): And in older adults.
+
+
+347
+00:54:52.795 --> 00:55:03.585
+Lena Ting (she/her): we didn't have the beam test. So the Mini best score was not great, but the amplitude was related to balance confidence, the more confident they were, the less of a brain signal there was.
+
+
+348
+00:55:05.265 --> 00:55:06.075
+Lena Ting (she/her): And
+
+
+349
+00:55:07.435 --> 00:55:09.455
+Lena Ting (she/her): That's just like a questionnaire.
+
+
+350
+00:55:10.235 --> 00:55:26.095
+Lena Ting (she/her): and then that's supposed to come up. The surprising thing. Now we bring in the cognitive stuff is that their amplitude was larger. If they had poor what we call cognitive set shifting.
+
+
+351
+00:55:27.665 --> 00:55:48.494
+Lena Ting (she/her): and I'll explain what that is. But it's an executive function of the brain. So again, there's 2 different sort of tasks, and the slower they are, the bigger that amplitude. So it's very strange that, like a brain evoked potential during standing, would have anything to do with the cognitive task, except this cognitive task of set shifting is actually associated with falls
+
+
+352
+00:55:48.915 --> 00:55:52.755
+Lena Ting (she/her): in older adults and in people with Parkinson's disease.
+
+
+353
+00:55:53.295 --> 00:56:00.264
+Lena Ting (she/her): So I see, I put this in a different place. I'm gonna skip that for now.
+
+
+354
+00:56:01.795 --> 00:56:08.814
+Lena Ting (she/her): And talk about how this signal might be a way to kind of
+
+
+355
+00:56:09.015 --> 00:56:18.474
+Lena Ting (she/her): identify people who have less automatic control of balance, even if they don't have any problems on a clinical test.
+
+
+356
+00:56:18.715 --> 00:56:26.034
+Lena Ting (she/her): and that it might help identify this idea of a challenge point for training. Right? So
+
+
+357
+00:56:26.665 --> 00:56:34.614
+Lena Ting (she/her): if you have, here's the idea is that when you want to train people, then you want to give them a task
+
+
+358
+00:56:34.805 --> 00:56:45.445
+Lena Ting (she/her): like, how do you pick the right difficulty? Right? You don't want people. You don't want to give people a task that is so hard that they fail all the time.
+
+
+359
+00:56:45.635 --> 00:57:10.925
+Lena Ting (she/her): So that's in these beginners. But that same task for an expert might be pretty easy. And so they're not going to learn. So you want people to learn right as they're on this curve between it being too hard and too easy and potentially that n 1 response could give you an index of that, as we're seeing that it scales with an individual's ability to do a related task.
+
+
+360
+00:57:11.425 --> 00:57:27.645
+Lena Ting (she/her): Okay? So you could then maybe evaluate intervention effects, or, you know, look at assistive devices and things like that. So this is one of the ways we're thinking about stratifying individual differences in balance control that might be difficult to measure otherwise.
+
+
+361
+00:57:28.965 --> 00:57:30.654
+Lena Ting (she/her): Okay, how much time do I have left.
+
+
+362
+00:57:33.145 --> 00:57:34.614
+Victoria Wood: About about 30 min.
+
+
+363
+00:57:34.615 --> 00:57:54.364
+Lena Ting (she/her): Oh, okay, great. So in support of that, we recently had a paper showing that like this, n, 1 response is quite reliable over time. So that's really important. When you have a measure that's characterizing something that that measure is stable over time.
+
+
+364
+00:57:54.475 --> 00:57:59.184
+Lena Ting (she/her): Right? So here we have tested people
+
+
+365
+00:57:59.595 --> 00:58:20.635
+Lena Ting (she/her): a week apart on 2 different days, and then, in some cases for older deaths a year apart, just because we happen to recruit the same people, and so on average, things look pretty similar at those different time points. For this potential and on the right is what you're seeing is each set of lines here represents a different individual
+
+
+366
+00:58:21.639 --> 00:58:26.855
+Lena Ting (she/her): and so you can see that they're the shapes of these
+
+
+367
+00:58:27.125 --> 00:58:50.875
+Lena Ting (she/her): brain potentials look very similar across different time points that even span out to a year, and in some cases they may have changed some within a year, and that's where we might look for you know whether there was a fall, or hopefully, it could go the other way, too, if they had a successful sort of rehabilitation intervention to improve their balance.
+
+
+368
+00:58:52.744 --> 00:58:57.085
+Lena Ting (she/her): Okay? So we did that.
+
+
+369
+00:58:57.195 --> 00:59:02.244
+Lena Ting (she/her): Okay, any questions so far because I'm going to go into one last piece
+
+
+370
+00:59:09.135 --> 00:59:10.004
+Lena Ting (she/her): all right.
+
+
+371
+00:59:12.255 --> 00:59:22.345
+Lena Ting (she/her): Oh, they're gonna okay. So I mentioned this idea that, like cognitive and motor
+
+
+372
+00:59:22.625 --> 00:59:28.244
+Lena Ting (she/her): functions are are related, and this was not something we intended to study. But it
+
+
+373
+00:59:29.284 --> 00:59:51.864
+Lena Ting (she/her): definitely happened because of that result that we showed you. And so let me just talk about what this cognitive function is of set shifting that we've been using a lot so cognitive. Set shifting is really the ability to change your behavior based on
+
+
+374
+00:59:51.985 --> 00:59:54.295
+Lena Ting (she/her): like a changing set of rules.
+
+
+375
+00:59:54.784 --> 01:00:17.094
+Lena Ting (she/her): And so clinically, the way you do it is you do what's called a trail making test which. There's a piece of paper, and there are a bunch of letters and numbers, and you have to connect them in order. So in part A of the test. You are connecting the dots between the numbers 1, 2, 3, 4, 5, and there are only numbers on the page.
+
+
+376
+01:00:17.815 --> 01:00:35.315
+Lena Ting (she/her): and then in part B. There are numbers and letters, and what you need to do is alternate between the numbers and letters, one, a, 2 B, 3 C, and again, like this clinical test. You just measure how much time it takes for people to complete the task.
+
+
+377
+01:00:35.425 --> 01:00:58.155
+Lena Ting (she/her): And because there's the same number of targets, it sort of controls, for like slowness of movement, so any additional because they're connecting the same number of targets with the same distance. Then any additional time it takes to do. Part B is attributed to this idea of cognitive set shifting that I have to be like switching like. Oh, now I have to go to a letter. Now I have to go to a number.
+
+
+378
+01:00:58.685 --> 01:01:06.085
+Lena Ting (she/her): So this cognitive set shifting like, why is this related to false
+
+
+379
+01:01:09.515 --> 01:01:11.885
+Lena Ting (she/her): like? So it's it's a
+
+
+380
+01:01:12.155 --> 01:01:24.825
+Lena Ting (she/her): this sort of behavioral flexibility isn't something that's just limited to cognitive tasks, but it's also necessary for motor tasks, right? So like I showed you like the the way in which
+
+
+381
+01:01:25.075 --> 01:01:29.454
+Lena Ting (she/her): we activate our muscles to balance depends on
+
+
+382
+01:01:29.925 --> 01:01:42.085
+Lena Ting (she/her): lots of things. If I'm on my hands and knees, if I'm holding a cane or not right. And so this idea of motor set shifting can also be
+
+
+383
+01:01:42.445 --> 01:02:01.225
+Lena Ting (she/her): a problem for being able to appropriately move in the world. So this is an experiment done by Fay Horak, where people again were just standing on a platform. They perturb them. Posterior chain of muscles is activated in response.
+
+
+384
+01:02:01.755 --> 01:02:05.095
+Lena Ting (she/her): and then they immediately put people in a chair.
+
+
+385
+01:02:05.275 --> 01:02:16.265
+Lena Ting (she/her): and then they did the same backward perturbation, and in this case you can see the abdominal muscles are activated, and then the leg muscles are inactivated.
+
+
+386
+01:02:16.555 --> 01:02:45.735
+Lena Ting (she/her): That makes sense. That's like I change the rules of my biomechanics. And then I change the activity appropriately. Now, people with Parkinson's disease have problems in both in cognitive set shifting, and it looks like that also extends to what I would call motor set shifting. So on the left is the same person with Parkinson's. Now they do tend to activate both the sort of posterior chain, and then the front muscles sort of in this
+
+
+387
+01:02:45.955 --> 01:03:14.155
+Lena Ting (she/her): alternating pattern. They tend to oscillate a bit and have more co-activation. But so that's abnormal. But when you put them in a seated position you can see that you maintain those timings of the muscles and the leg muscles do not are not attenuated. So they're still activating these muscles in the legs, even though they're not
+
+
+388
+01:03:14.385 --> 01:03:18.305
+Lena Ting (she/her): participating in restoring their seated balance.
+
+
+389
+01:03:18.505 --> 01:03:19.375
+Lena Ting (she/her): Right?
+
+
+390
+01:03:20.026 --> 01:03:23.585
+Lena Ting (she/her): So if you think about what
+
+
+391
+01:03:23.775 --> 01:03:31.855
+Lena Ting (she/her): what the implications could be for falling right, let's say you're walking around and you are switching from a
+
+
+392
+01:03:32.935 --> 01:03:51.764
+Lena Ting (she/her): carpet surface to a tile surface, and you fail to account for that in your motor plan that could lead to a fall. So there are many. Our environments outside are constantly changing. My body posture is constantly changing, and if I fail to update my motor plan for that.
+
+
+393
+01:03:52.085 --> 01:03:55.705
+Lena Ting (she/her): I may fail in that task. So again, like the
+
+
+394
+01:03:55.865 --> 01:04:08.945
+Lena Ting (she/her): the falling in Parkinson's disease, some of it could be to this poor motor output, but some of it could be just inability to actually alter that motor output for the situation that I'm in.
+
+
+395
+01:04:10.475 --> 01:04:14.575
+Jill McNitt-Gray: Quick question in this, in this study
+
+
+396
+01:04:15.115 --> 01:04:19.635
+Jill McNitt-Gray: was, did they do upright? And then seated all the time, or was order switched.
+
+
+397
+01:04:20.085 --> 01:04:27.244
+Lena Ting (she/her): So they typically for these types of experiments, you see the
+
+
+398
+01:04:28.445 --> 01:04:36.974
+Lena Ting (she/her): In order to see these changes, you have to go from the more difficult task to the easier task. Right? If you go from the easier task to the more difficult task.
+
+
+399
+01:04:37.185 --> 01:05:06.215
+Lena Ting (she/her): you typically get immediate feedback to kind of change them. So there are similar experiments with sensory information where it's like they give you this moving environment, and then they take it away, and you continue to act as if that's happening in a easier condition where it actually doesn't matter, right? So there's no negative consequence of actually having your
+
+
+400
+01:05:06.685 --> 01:05:12.475
+Lena Ting (she/her): legs activated here. Right. So there's no feedback showing you that like. Oh, I should turn it off.
+
+
+401
+01:05:12.695 --> 01:05:13.275
+Jill McNitt-Gray: Got it.
+
+
+402
+01:05:13.275 --> 01:05:30.354
+Lena Ting (she/her): And so that makes it a really nice way to see that it's happening. It would have to be. It would probably you'd probably see it if you went the other day other way. But you'd have to do experiment like I did. And just look at like, you know, a matter of milliseconds before the feedback loop would come back on and say, like, Hey, that that's a bad thing to do.
+
+
+403
+01:05:31.945 --> 01:05:32.695
+Jill McNitt-Gray: Fix.
+
+
+404
+01:05:32.785 --> 01:05:33.565
+Lena Ting (she/her): Yeah.
+
+
+405
+01:05:33.745 --> 01:05:42.854
+Lena Ting (she/her): so yeah, so this is a probe of like, what is the nervous system kind of estimating? And then, in a feed forward sense before, like
+
+
+406
+01:05:43.385 --> 01:05:44.125
+Lena Ting (she/her): the feedback.
+
+
+407
+01:05:45.095 --> 01:05:50.355
+Caitlin Bemis: Yeah, I do have a question. So I don't. And this might be a stupid question, you know. But
+
+
+408
+01:05:50.735 --> 01:06:07.625
+Caitlin Bemis: there might be right now. No, I'm just kidding, but I don't know much about Parkinson's disease, right? Because I don't do a lot of it. Is it only the feed forward that's affected? Or is there some feedback in the system, like muscle spindles, or proprioception that is also altered.
+
+
+409
+01:06:08.125 --> 01:06:22.505
+Lena Ting (she/her): I mean, the the receptors themselves don't seem to be altered except in the fact that they might be like overactive, because there's motor drive to them. But like, when we look at it, I didn't show our data. It's like
+
+
+410
+01:06:23.065 --> 01:06:46.184
+Lena Ting (she/her): it doesn't look that different than healthy people. It's just that. It's on in both directions, but it's very closely locked time locked to the proprioceptive sensory information. So we don't think it's a loss of sensory information we can like reproduce every little blip based on their center of mass, acceleration, velocity, and position. So it's the same circuit. It's just sort of
+
+
+411
+01:06:47.785 --> 01:06:50.224
+Lena Ting (she/her): you know, in the same way that they can't figure out
+
+
+412
+01:06:50.775 --> 01:06:58.095
+Lena Ting (she/her): standing from seated. It's also that maybe they don't know forward from backward. Actually, I have another slide on that coming up.
+
+
+413
+01:06:58.849 --> 01:07:05.194
+Lena Ting (she/her): So set shifting is also, you know, impaired in older adults and in a bunch of other sort of
+
+
+414
+01:07:05.335 --> 01:07:08.095
+Lena Ting (she/her): diseases, neurological disorders.
+
+
+415
+01:07:09.815 --> 01:07:10.945
+Caitlin Bemis: Cool. Thank you.
+
+
+416
+01:07:13.515 --> 01:07:30.485
+Lena Ting (she/her): All right. That came out wrong. Okay? So like. So we also showed in older adults this time that these individual variations of what we're calling cognitive stiffness or cognitive inflexibility is actually associated with their motor stiffness.
+
+
+417
+01:07:30.815 --> 01:07:39.994
+Lena Ting (she/her): So on the left is the center of mass displacement, like how far the body moved forwards or backwards, and we gave, like 3 different
+
+
+418
+01:07:40.365 --> 01:07:56.844
+Lena Ting (she/her): amplitudes of perturbation in both directions, anterior and posterior. And you can see these individual differences here, too. So on the left, someone who moves a lot and someone who doesn't move very much. Now we have definitely have arguments about what's better, somebody who moves less after perturbation, or somebody who moves more.
+
+
+419
+01:07:57.065 --> 01:07:59.385
+Lena Ting (she/her): Any any comments on that?
+
+
+420
+01:07:59.575 --> 01:08:02.054
+Lena Ting (she/her): Who do you think has better balance.
+
+
+421
+01:08:05.345 --> 01:08:07.605
+Monica Daley (she, her): We have arguments like this a lot too.
+
+
+422
+01:08:13.465 --> 01:08:15.825
+Jill McNitt-Gray: It's always better. In what sense?
+
+
+423
+01:08:16.545 --> 01:08:18.225
+Jill McNitt-Gray: Better? For what purpose?
+
+
+424
+01:08:18.225 --> 01:08:19.295
+Lena Ting (she/her): Balance.
+
+
+425
+01:08:20.835 --> 01:08:25.065
+Jill McNitt-Gray: Time 2 deviations, I mean, there's lots of.
+
+
+426
+01:08:25.065 --> 01:08:25.555
+Monica Daley (she, her): I mean.
+
+
+427
+01:08:25.555 --> 01:08:26.244
+Jill McNitt-Gray: Pieces of that.
+
+
+428
+01:08:26.245 --> 01:08:29.964
+Monica Daley (she, her): If the looser person doesn't fall, then
+
+
+429
+01:08:30.205 --> 01:08:32.465
+Monica Daley (she, her): it seems like it's fine, right.
+
+
+430
+01:08:33.185 --> 01:08:34.595
+Jill McNitt-Gray: No harm, no foul.
+
+
+431
+01:08:35.215 --> 01:08:38.225
+Lena Ting (she/her): Right. So.
+
+
+432
+01:08:38.595 --> 01:08:46.255
+Lena Ting (she/her): Oh, let me any other you want. How about a show of hands for the the person on the right having better balance.
+
+
+433
+01:08:51.205 --> 01:08:56.384
+Lena Ting (she/her): I can't actually see if anyone actually raised their hand virtually or in reality.
+
+
+434
+01:08:58.975 --> 01:09:07.425
+Lena Ting (she/her): And then how many of you say, peep! The person on the left has better balance. Okay, great.
+
+
+435
+01:09:09.215 --> 01:09:17.375
+Lena Ting (she/her): more left than righty. So great. So one of the things we did is take. Just let's say we take the amplitudes of how much they moved and then
+
+
+436
+01:09:17.685 --> 01:09:23.234
+Lena Ting (she/her): relate it to their trail, making test. So this is a trail making test where
+
+
+437
+01:09:23.375 --> 01:09:37.085
+Lena Ting (she/her): this person out here took 80 seconds longer to do connect the dots when they had to alternate between letters and numbers than just connect them. And that person center of mass moved the least.
+
+
+438
+01:09:38.005 --> 01:09:40.575
+Lena Ting (she/her): So that's this person here. Right?
+
+
+439
+01:09:40.915 --> 01:09:44.805
+Lena Ting (she/her): So this is across all amplitudes. We only have to look at one of these lines so.
+
+
+440
+01:09:45.275 --> 01:09:51.375
+Lena Ting (she/her): and then the person who did it in like an additional say, 20 seconds.
+
+
+441
+01:09:51.705 --> 01:09:53.705
+Lena Ting (she/her): Their center of mass move the most.
+
+
+442
+01:09:55.025 --> 01:10:02.704
+Lena Ting (she/her): Okay. So the sway is not necessarily well, we don't know. Well, it turns out, if you now look at their muscle activity
+
+
+443
+01:10:02.825 --> 01:10:08.464
+Lena Ting (she/her): when they're perturbed. There are more muscles co-activated on the person on the right.
+
+
+444
+01:10:08.875 --> 01:10:10.794
+Lena Ting (she/her): And what did I tell you about co-activation?
+
+
+445
+01:10:10.985 --> 01:10:14.625
+Lena Ting (she/her): It's a postural strategy, not a balance strategy.
+
+
+446
+01:10:16.715 --> 01:10:21.545
+Lena Ting (she/her): So we can look at one muscle. And this is the way we do it. So the muscle.
+
+
+447
+01:10:21.925 --> 01:10:31.595
+Lena Ting (she/her): This is a tibialis anterior, and in a forward perturbation you need to turn it on to as an agonist. So that's indicated here
+
+
+448
+01:10:32.415 --> 01:10:41.244
+Lena Ting (she/her): in purple, and for the person on the left and on the right, and purple for the person here is purple. So that's the one it's supposed to be on
+
+
+449
+01:10:41.605 --> 01:10:44.524
+Lena Ting (she/her): when we perturb them in the backward direction.
+
+
+450
+01:10:45.925 --> 01:10:49.974
+Lena Ting (she/her): You want to shut that muscle off, otherwise it's fighting
+
+
+451
+01:10:50.215 --> 01:11:08.924
+Lena Ting (she/her): the the gastrocs or the calf muscles. And so this person you can see they're turning their tibialis anterior on in the forward direction and off in the backward direction. And then this other person, who's very stiff. They're turning it on in the forward direction. And you can see that in this 1st brain stem time window, it's actually still off
+
+
+452
+01:11:09.065 --> 01:11:10.934
+Lena Ting (she/her): in the backward perturbation.
+
+
+453
+01:11:11.095 --> 01:11:19.634
+Lena Ting (she/her): however, in this later time, then, which we think is when the cortical control can kick in, it's turned on
+
+
+454
+01:11:19.835 --> 01:11:26.085
+Lena Ting (she/her): to the same or greater extent than it is when it's being an an agonist.
+
+
+455
+01:11:26.785 --> 01:11:39.214
+Lena Ting (she/her): So this is this idea of like, I don't know which way I'm falling like we didn't test their perceptual acuity here, but maybe they don't know which they can't distinguish forward and backward. And so the answer is just to turn on all your muscles.
+
+
+456
+01:11:39.495 --> 01:12:01.234
+Lena Ting (she/her): And so we see an extreme version of that in Parkinson's disease. But here these are older adults, with no overt cognitive or motor deficits. In many cases their cognitive scores were fine. And it was just this one element of that test that was impaired. And we see this co-activation of muscles.
+
+
+457
+01:12:01.385 --> 01:12:02.395
+Lena Ting (she/her): So
+
+
+458
+01:12:02.545 --> 01:12:13.465
+Lena Ting (she/her): so maybe it's like, I don't know which way I'm falling, or I don't know how to tune my, you know, change my strategy of balancing based on the direction of movement.
+
+
+459
+01:12:16.755 --> 01:12:17.215
+Lena Ting (she/her): Okay?
+
+
+460
+01:12:18.325 --> 01:12:22.455
+Lena Ting (she/her): And then, so that's next one. Any more questions on this one.
+
+
+461
+01:12:26.235 --> 01:12:34.465
+CHP221: I have a question on the yeah, on this one. So on the figure on the right. The biggest effect seems to be the different colors. What are the different colors.
+
+
+462
+01:12:34.765 --> 01:12:38.945
+Lena Ting (she/her): The colors. Sorry the colors here are just the different sizes of perturbation. We gave.
+
+
+463
+01:12:39.775 --> 01:12:40.315
+CHP221: Okay.
+
+
+464
+01:12:40.315 --> 01:12:51.065
+Lena Ting (she/her): So we had a big one, smaller and smaller. So these are basically all the same idea. We can just look at the black one for the largest effect when they, on this largest perturbation. Here.
+
+
+465
+01:12:51.265 --> 01:12:51.805
+CHP221: Okay?
+
+
+466
+01:12:51.985 --> 01:12:55.645
+CHP221: And so in this task, what? What's the instruction to the participant.
+
+
+467
+01:12:56.868 --> 01:13:00.555
+Lena Ting (she/her): We just tell them to stand and maintain their balance. We don't give them.
+
+
+468
+01:13:02.845 --> 01:13:07.434
+CHP221: Yeah, I guess you know, to your question about who's sort of better.
+
+
+469
+01:13:07.995 --> 01:13:13.674
+CHP221: And maybe this is what others were suggesting. Like it. To me. It depends a lot on how we describe better.
+
+
+470
+01:13:14.035 --> 01:13:21.315
+CHP221: because some people might describe better as returning back to your original state the quickest.
+
+
+471
+01:13:22.015 --> 01:13:22.595
+Lena Ting (she/her): Yep.
+
+
+472
+01:13:23.395 --> 01:13:30.535
+Lena Ting (she/her): sorry. Let me get back. That's right. And we and you can see here that a lot of people here they don't actually come back
+
+
+473
+01:13:30.665 --> 01:13:56.715
+Lena Ting (she/her): right? So that's not necessarily a priority. We often don't see people coming all the way back, because you basically have to get yourself back into the base of support, and then it's kind of good enough, so we don't. We don't tell them they have to go back to their initial posture, that's for sure, and they're doing it many times. So there may be an element of like, I know this is going to happen a whole bunch of times. So I have to adopt a strategy. So I can finish this experiment.
+
+
+474
+01:13:58.505 --> 01:14:02.844
+Lena Ting (she/her): But those strategies can change a lot, depending on, like what you know, what we
+
+
+475
+01:14:03.895 --> 01:14:11.854
+Lena Ting (she/her): the order that we present perturbations and things like that. So you can play around with randomization or predictable things. And and these will definitely change.
+
+
+476
+01:14:12.715 --> 01:14:21.974
+CHP221: And what would you expect? So I think you all also done for studies, looking at the threshold at which people take step so- so like.
+
+
+477
+01:14:22.165 --> 01:14:29.984
+CHP221: Would you imagine that there are differences between the looser versus different individuals in terms of when they need to take a step like that?
+
+
+478
+01:14:29.985 --> 01:14:33.265
+Lena Ting (she/her): Absolutely. If you do this strategy, you're going to fall like a tree.
+
+
+479
+01:14:33.265 --> 01:14:37.874
+CHP221: Okay, yeah. So that I think with that information, and it'd be like, Oh, that that person is definitely
+
+
+480
+01:14:38.225 --> 01:14:43.254
+CHP221: poorer balance because they have less of an ability to make to
+
+
+481
+01:14:43.655 --> 01:14:45.734
+CHP221: stay within their basic support without.
+
+
+482
+01:14:45.865 --> 01:14:46.415
+Lena Ting (she/her): Yeah.
+
+
+483
+01:14:46.415 --> 01:14:52.975
+Lena Ting (she/her): So from like an engineering perspective, you would say, Oh, they've returned faster. So they're like time. Constant is better.
+
+
+484
+01:14:52.975 --> 01:14:53.575
+CHP221: Right.
+
+
+485
+01:14:54.091 --> 01:15:03.324
+Lena Ting (she/her): But from that's only if we assume that that behavior persists across all perturbation sizes.
+
+
+486
+01:15:04.425 --> 01:15:15.654
+Lena Ting (she/her): And that we basically have a linear system. So but we don't. And so this we have to think about robustness, which is how large of a perturbation can I handle?
+
+
+487
+01:15:15.775 --> 01:15:23.874
+Lena Ting (she/her): And in this case, the you know people who do this? I don't know. If you remember the other video we gave like a tiny perturbation. And they're moving
+
+
+488
+01:15:24.115 --> 01:15:36.205
+Lena Ting (she/her): very stiffly and quickly. That's not. And the specific retropulsion test or reactive balance test that you can give. And you can see when people take a step, or we can do it with our platform.
+
+
+489
+01:15:37.455 --> 01:15:46.755
+CHP221: Yeah, it's interesting, because there are a lot of people papers that look at that recovery time as the measure of the goodness of someone's balance. So.
+
+
+490
+01:15:46.755 --> 01:15:48.685
+Lena Ting (she/her): Yeah, I don't think it's a good measure.
+
+
+491
+01:15:48.685 --> 01:15:49.035
+CHP221: Hmm.
+
+
+492
+01:15:51.345 --> 01:15:59.434
+Lena Ting (she/her): I mean, and sometimes it can be because people can't generate enough torque. So that's been shown in older adults. But like, it could just be that they're co-activating, and if they
+
+
+493
+01:15:59.895 --> 01:16:01.964
+Lena Ting (she/her): shut off one muscle it wouldn't be so bad.
+
+
+494
+01:16:03.365 --> 01:16:08.465
+Lena Ting (she/her): right if they knew which way to to activate their muscle.
+
+
+495
+01:16:10.085 --> 01:16:10.815
+CHP221: Thanks.
+
+
+496
+01:16:13.425 --> 01:16:16.975
+Lena Ting (she/her): Okay, so the last data slide I think I have is that
+
+
+497
+01:16:17.405 --> 01:16:19.804
+Lena Ting (she/her): you know, back to this brain potential.
+
+
+498
+01:16:21.115 --> 01:16:32.025
+Lena Ting (she/her): this brain potential in younger adults and older adults and stroke, you know it. It does get smaller, but that we don't know. That may be
+
+
+499
+01:16:33.215 --> 01:16:49.085
+Lena Ting (she/her): due to shrinking brains. So we can't really compare the amplitude across these different populations. But what we can do is compare the amplitude of these perturbations during that experiment, where there is
+
+
+500
+01:16:49.745 --> 01:16:55.585
+Lena Ting (she/her): one perturbation that happens like every 30 seconds to a minute.
+
+
+501
+01:16:55.815 --> 01:17:05.814
+Lena Ting (she/her): and another perturbation that happens exactly 5 seconds after the other one. So one is sort of less predictable in time, and the other one is very precisely predictable in time.
+
+
+502
+01:17:06.165 --> 01:17:17.884
+Lena Ting (she/her): and so the darker ones here are the 1st perturbation response in the brain, and the second one is the response to the second perturbation.
+
+
+503
+01:17:18.005 --> 01:17:22.875
+Lena Ting (she/her): So it's like, Oh, I have a 1st perturbation. I know that there's going to be one coming up in 5
+
+
+504
+01:17:23.605 --> 01:17:28.275
+Lena Ting (she/her): 5 seconds. And so it's sort of less surprising to me.
+
+
+505
+01:17:28.405 --> 01:17:47.734
+Lena Ting (she/her): Right? I'm anticipating it. So this is the balance error assessment of like I'm expecting it, I can handle it. So we see this modulation between the 1st perturbation and the second perturbation, and in younger adults it's always smaller. In the second. You see that in older adults, and it's starting to flatten out and then sort of less of a modulation and stroke
+
+
+506
+01:17:48.945 --> 01:17:54.165
+Lena Ting (she/her): and we're collecting the data now in Parkinson's disease, as I said, and it's like sometimes it's just completely flat.
+
+
+507
+01:17:54.485 --> 01:18:00.705
+Lena Ting (she/her): like every perturbation is as surprising as the last, regardless of what
+
+
+508
+01:18:00.885 --> 01:18:14.655
+Lena Ting (she/her): you know how predictable that is. So they have. Again, this is just another indication of behavioral inflexibility, inability to modify their neural response to a
+
+
+509
+01:18:14.875 --> 01:18:26.375
+Lena Ting (she/her): the context in which it's happening. Oops. I don't. I didn't put the slides here, but you know they get like a hundred perturbations, and over in young adults the pairs will then decrease
+
+
+510
+01:18:26.785 --> 01:18:37.924
+Lena Ting (she/her): same thing in older adults, and in some cases people with stroke or Parkinson's disease are just flatline. The 1st one has the same amplitude as the 101.
+
+
+511
+01:18:38.295 --> 01:18:41.384
+Lena Ting (she/her): And so there's like no adaptation to that
+
+
+512
+01:18:41.685 --> 01:18:45.435
+Lena Ting (she/her): sort of very predictable set of conditions.
+
+
+513
+01:18:46.125 --> 01:18:47.130
+Lena Ting (she/her): So
+
+
+514
+01:18:48.855 --> 01:19:02.355
+Lena Ting (she/her): all right. So yes, so this balance impairments could be related to inflexibility in our ability, in our repertoire and our ability to account for the situation and modify our output.
+
+
+515
+01:19:02.565 --> 01:19:17.354
+Lena Ting (she/her): And so you know, the overall idea is that your brain has multiple, sensory and planning functions that affect balance, and that you could use to maybe probe
+
+
+516
+01:19:17.545 --> 01:19:46.785
+Lena Ting (she/her): balance health because of these sort of intersection things. It's very hard to think about balance as just a motor function. And these changes, when we measure the brain might help us measure, change compensatory changes that precede any overt, measurable balance impairments, even though these things are happening and can stratify individuals
+
+
+517
+01:19:47.175 --> 01:19:49.834
+Lena Ting (she/her): based on sort of what I call balance health.
+
+
+518
+01:19:50.055 --> 01:19:54.664
+Lena Ting (she/her): And then what we're trying to do now is then. Now look even deeper, not just at this one
+
+
+519
+01:19:54.775 --> 01:20:05.004
+Lena Ting (she/her): brain potential, but the different neural circuits that are engaged to see sort of different processes in the brain that could be contributing to those balance impairments.
+
+
+520
+01:20:06.435 --> 01:20:10.234
+Lena Ting (she/her): Okay, that's the end of the talk. So you're supposed to get feedback here.
+
+
+521
+01:20:13.815 --> 01:20:14.785
+Monica Daley (she, her): Thank you.
+
+
+522
+01:20:17.145 --> 01:20:19.254
+Monica Daley (she, her): We have any other questions.
+
+
+523
+01:20:22.835 --> 01:20:24.935
+Monica Daley (she, her): Okay, Chinese.
+
+
+524
+01:20:27.095 --> 01:20:29.725
+Lena Ting (she/her): Can stop sharing if I can figure out how to do it.
+
+
+525
+01:20:32.825 --> 01:20:35.304
+Monica Daley (she, her): Okay, I have a question, Lena. So
+
+
+526
+01:20:35.435 --> 01:20:38.375
+Monica Daley (she, her): for those of us who don't have Eeg systems.
+
+
+527
+01:20:39.495 --> 01:20:50.434
+Monica Daley (she, her): if we wanted to make some measurements, that kind of assess people's cognitive flexibility. But we want to do a limited set of additional things. What's the best
+
+
+528
+01:20:51.115 --> 01:20:54.464
+Monica Daley (she, her): tools to what are the best tools to use to measure that, and.
+
+
+529
+01:20:54.465 --> 01:21:02.625
+Lena Ting (she/her): It depends on what population you're looking at, right, you know, at least in the older adults. Even with the pen and paper test.
+
+
+530
+01:21:03.105 --> 01:21:04.555
+Lena Ting (she/her): we get it right.
+
+
+531
+01:21:06.182 --> 01:21:13.794
+Lena Ting (she/her): We get a difference. I don't know how sensitive that would be, for, like healthy young adults.
+
+
+532
+01:21:14.445 --> 01:21:18.245
+Monica Daley (she, her): I don't know. Katie and Iran are here. You can tell us what that should be.
+
+
+533
+01:21:20.825 --> 01:21:21.591
+Catie Mason: Yes. Hello.
+
+
+534
+01:21:22.735 --> 01:21:23.145
+Monica Daley (she, her): Hey!
+
+
+535
+01:21:23.145 --> 01:21:27.225
+Catie Mason: You mean, like the different types of dual tasking things, I mean.
+
+
+536
+01:21:27.225 --> 01:21:27.745
+Lena Ting (she/her): Kind of like.
+
+
+537
+01:21:27.745 --> 01:21:29.085
+Catie Mason: Timed up and go.
+
+
+538
+01:21:29.085 --> 01:21:36.404
+Lena Ting (she/her): Now what kind of setting set? What kind of set, shifting task would be sensitive
+
+
+539
+01:21:37.435 --> 01:21:40.765
+Lena Ting (she/her): to variations across? Let's say, young adults.
+
+
+540
+01:21:41.245 --> 01:21:58.023
+Monica Daley (she, her): We just want any kind of like either survey or task. That doesn't take too long, that we could add to a protocol to sort of assess this in our in our participants, as one of the things that might explain individual variation.
+
+
+541
+01:21:59.675 --> 01:22:07.784
+Catie Mason: for young adults. I'm not, I know. Trails is a big one, like trails A and B and Ron probably knows even more about that than I do. But
+
+
+542
+01:22:08.615 --> 01:22:09.535
+Catie Mason: I don't.
+
+
+543
+01:22:09.725 --> 01:22:15.776
+Catie Mason: I know it's used a lot more with older adults, young adults. It's really hard to get those differences.
+
+
+544
+01:22:16.285 --> 01:22:20.034
+Catie Mason: because it's really hard to challenge them in a hard way.
+
+
+545
+01:22:21.195 --> 01:22:27.695
+Catie Mason: I guess. Yeah, I mean, there's balance like in cognitive dual tasking. If you make those hard enough. You can do that as well. But
+
+
+546
+01:22:29.225 --> 01:22:34.174
+Catie Mason: I don't know. Ron, help me out. Do you know ones for young adults? Specifically.
+
+
+547
+01:22:34.175 --> 01:22:34.744
+Lena Ting (she/her): I don't know if she's.
+
+
+548
+01:22:34.745 --> 01:22:35.611
+Monica Daley (she, her): Are. There?
+
+
+549
+01:22:37.185 --> 01:22:46.714
+Monica Daley (she, her): Are there differences, if you like, recruited, experienced athletes and dancers versus sedentary young adults, that you could measure differences in.
+
+
+550
+01:22:46.715 --> 01:23:00.665
+Lena Ting (she/her): So I mean, definitely, the beamwalking task is there for balance. But that's like all the things put together. And then I'm guessing there's probably some type of computerized task in which things start coming at you faster and faster.
+
+
+551
+01:23:01.105 --> 01:23:02.304
+Lena Ting (she/her): And you have to like.
+
+
+552
+01:23:02.305 --> 01:23:02.735
+Catie Mason: Oh!
+
+
+553
+01:23:02.735 --> 01:23:03.834
+Lena Ting (she/her): Make a decision right?
+
+
+554
+01:23:03.835 --> 01:23:04.395
+Catie Mason: Yes.
+
+
+555
+01:23:05.175 --> 01:23:14.010
+Catie Mason: yeah. There are things like, I know, the n back task, which is what I do in my experiment. You can actually change the timing and the
+
+
+556
+01:23:14.555 --> 01:23:35.531
+Catie Mason: a number of letters. So you have to like press the button when you see a letter that's the same as the one shown to before it in the 2 back. Or if you you can increase like the number of letters in between, that, you'd have to remember what the target was, and so you can do a 3 back, or God forbid a 4 back, which I think people would hate. But you can also increase the time like the amount of time that
+
+
+557
+01:23:35.775 --> 01:23:41.344
+Lena Ting (she/her): But, Katie, that's not a that's not necessarily a set, shifting task, though right.
+
+
+558
+01:23:41.635 --> 01:23:44.905
+Catie Mason: Yeah, right? Or combined with something else. It it could be right.
+
+
+559
+01:23:44.905 --> 01:23:55.494
+Lena Ting (she/her): Yeah, I mean, I don't know. There we could. We could maybe think about what kind of tests could be done. But the in the 1st one we give everyone the paper and pencil test for trail making.
+
+
+560
+01:23:55.495 --> 01:23:56.075
+Catie Mason: Right.
+
+
+561
+01:23:57.155 --> 01:23:59.044
+Lena Ting (she/her): And it's easy to administer.
+
+
+562
+01:24:00.235 --> 01:24:05.345
+Lena Ting (she/her): But Iran's designing a new task. That's like a computer task where you do stuff and you like
+
+
+563
+01:24:05.595 --> 01:24:07.415
+Lena Ting (she/her): hit hit buttons.
+
+
+564
+01:24:07.585 --> 01:24:14.055
+Lena Ting (she/her): There are various versions of that that you could potentially give, or, yeah.
+
+
+565
+01:24:14.555 --> 01:24:15.605
+Monica Daley (she, her): How long do they take.
+
+
+566
+01:24:17.315 --> 01:24:20.275
+Lena Ting (she/her): That, but I don't know. A couple of minutes.
+
+
+567
+01:24:22.685 --> 01:24:23.645
+Monica Daley (she, her): Cool.
+
+
+568
+01:24:26.055 --> 01:24:26.380
+Lena Ting (she/her): Yep.
+
+
+569
+01:24:42.685 --> 01:24:48.605
+Monica Daley (she, her): Alright any other questions before we wrap up discussion points.
+
+
+570
+01:24:54.105 --> 01:24:54.690
+Monica Daley (she, her): right.
+
+
+571
+01:24:56.585 --> 01:24:59.565
+Lena Ting (she/her): Everyone have a good holiday weekend. Thanks for coming.
+
+
+572
+01:24:59.565 --> 01:25:01.845
+Monica Daley (she, her): Everybody enjoy your 4th of July.
+
+
+573
+01:25:03.155 --> 01:25:05.695
+Monica Daley (she, her): Thanks for this, Lena. It's really helpful.
+
+
+574
+01:25:06.195 --> 01:25:06.955
+Lena Ting (she/her): Great.
+
+
+575
+01:25:06.955 --> 01:25:18.445
+Victoria Wood: This was great. Thank you. I did want to. Real quick announce. Next week's workshop will be on data, visualization and statistical inference for biomechanics, and that will be led by Dr. James Finley.
+
+
+576
+01:25:18.575 --> 01:25:21.394
+Victoria Wood: So make sure you attend that next Thursday.
+
+
+577
+01:25:22.645 --> 01:25:23.635
+CHP221: Alright, thanks!
+
+
+578
+01:25:23.635 --> 01:25:26.965
+CHP221: We're still here. Bring be prepared to use Matlab next week.
+
+
+579
+01:25:27.445 --> 01:25:27.875
+Victoria Wood: Good to know.
+
+
+580
+01:25:27.875 --> 01:25:34.854
+Monica Daley (she, her): Okay. Install, Matlab. Maybe we can announce that on the slack to make sure everybody hears. Yeah, thanks. Bye.
+
+
+581
+01:25:34.855 --> 01:25:35.934
+Lena Ting (she/her): Alright. See? You guys.
+
+
+582
+01:25:36.625 --> 01:25:37.415
+Victoria Wood: Bye.
+
+
+583
+01:25:38.275 --> 01:25:39.415
+Monica Daley (she, her): Thank you, Lena.
+
+
+

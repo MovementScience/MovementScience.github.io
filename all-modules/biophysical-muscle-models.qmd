@@ -1,0 +1,58 @@
+---
+title: "Biophysical muscle models"
+toc: false
+presenter: [Dr. Hansol Ryu]
+complexity: NA
+topic: [muscle modeling, cross-bridge mechanics, biophysics]
+keywords: [biophysical muscle model, cross-bridge mechanics, Hill-type muscle model, history-dependent properties, balance control]
+---
+
+## Learning objectives
+
+By the end of this workshop, you should be able to:
+
+1.  Explain the difference between Hill-type (phenomenological) and biophysical (cross-bridge) approaches to modeling muscle force, and identify which type of question each model is best suited to answer.
+2.  Describe how cross-bridge attachment and detachment rates determine active muscle force, and explain how this framework gives rise to history-dependent muscle behavior as an emergent property.
+3.  Recognize how biophysical muscle models are applied to study balance responses to perturbations, and how differences in tendon compliance across joints relate to joint-specific torque patterns.
+
+## Workshop
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VfILeD4jD04?si=JxG3we9wF-hfm1Jd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+***Presented by:*** *Dr. Hansol Ryu*
+
+## Overview
+
+### Why Model Muscles?
+
+When we move, "everything comes from the muscle" — muscles pull our bones and drive our bodies through space. To simulate, study, or predict movement and posture control, researchers need accurate models of how much force a muscle generates given its activation, length, and velocity. Muscle models are used in two main ways: (1) forward simulation of movement, such as modeling a balance response to a perturbation on a moving platform; and (2) inverse estimation of muscle forces from motion capture and EMG measurements, for example using tools like OpenSim.
+
+### The Conventional Approach: Hill-Type Models
+
+The Hill-type muscle model is the most widely used approach in biomechanics. In this phenomenological model, muscle force is estimated as the product of three quantities: activation, a force-length curve, and a force-velocity curve. These curves capture the known fact that muscles produce maximum isometric force at an optimal length and that force decreases at higher shortening velocities. However, the Hill-type model does not capture any history-dependent properties — muscle force is simply a function of current activation, length, and velocity, with no way to account for what the muscle was doing beforehand.
+
+### History Dependence: A Problem for Hill-Type Models
+
+Real muscles exhibit substantial history dependence across multiple levels. At the fiber level, a single muscle fiber subjected to a conditioning stretch produces different forces during two portions of lengthening that involve the same velocity and length change — because one portion follows a resting state and the other follows prior movement. At the muscle level, data show different force outputs for the same length trajectory depending on what history preceded it. At the movement level, the "knee pendulum test" demonstrates that a leg dropped from the same height oscillates differently depending on whether it was held still or moving beforehand. In each case, the Hill-type model would predict the same force for identical current states, even though actual forces differ.
+
+### The Biophysical Approach: Cross-Bridge Models
+
+The biophysical muscle model is built on the molecular mechanism of active force generation. Active force in muscle comes from cross-bridges — molecular bindings between myosin (thick filament) and actin (thin filament) deep inside muscle fibers; passive force comes from other structural elements. In the simplest version of the model, a cross-bridge is treated as a spring that can exist in two states: attached or detached. Within a muscle, many cross-bridges exist at different displacement lengths from their resting state. The model tracks the distribution of bound cross-bridges across those lengths at each time step, computing how many will transition between states using attachment and detachment rate functions. Attachment rate is highest near zero displacement (resting length) and decreases as cross-bridges are pulled further from equilibrium; detachment rate increases with displacement. Total active muscle force is then the sum of spring forces from all bound cross-bridges.
+
+### History Dependence as an Emergent Property
+
+A key insight from the cross-bridge framework is that history dependence arises naturally — it is "an emerging property, rather than we explicitly kept track of the history of everything." At any instant, the distribution of bound cross-bridges reflects the accumulated history of muscle activation and movement. If a muscle arrives at the same length and activation level via two different paths, it carries different cross-bridge distributions and therefore generates different forces — exactly the behavior observed experimentally, and exactly what the Hill-type model cannot reproduce.
+
+### Extending the Model: More States and Calcium Activation
+
+The basic two-state (attached/detached) model can be extended by adding additional states. For example, myosin can enter a "super-relaxed" state in which it is not ready to bind to actin. More importantly, the availability of actin binding sites is controlled by calcium: when the nervous system activates a muscle, calcium ions are released into the muscle fiber, enabling actin sites to become available for cross-bridge binding. Calcium concentration is therefore the activation control signal in simulations. Whether to use a two-state, three-state, or higher-order model depends on which phenomena the researcher needs to reproduce.
+
+### Comparing Models: When Does the Transient Matter?
+
+An interactive MATLAB GUI — originally developed for a tutorial at the International Society for Biomechanics (ISB) annual meeting — allows direct comparison of cross-bridge model predictions to Hill-type model predictions. Overall, the two approaches produce comparable force estimates at steady state. The critical difference lies in transient behavior, particularly at the onset of lengthening or shortening. For questions about overall force at steady state, the Hill-type model may be sufficient; for questions where transient force development matters, the cross-bridge model may be more appropriate.
+
+### Application: Balance Control and Short-Range Stiffness
+
+Dr. Ryu applies the cross-bridge model to study how humans recover balance after postural perturbations. Experimentally, different joints show distinct torque patterns: the hip develops torque rapidly and then decreases, while ankle torque rises more slowly and remains elevated. When a conventional Hill-type model is used to simulate the first 100 milliseconds after a perturbation, it overestimates the initial body movement — an issue that prior work has linked to the absence of short-range stiffness in the model. Dr. Ryu's approach grounds this stiffness in cross-bridge mechanics, with the hope that stiffness arising from the physiological process will prove more generalizable across perturbation directions and amplitudes than stiffness prescribed by hand. Coupling the cross-bridge model to an inverted pendulum with tendons of varying compliance suggests that joint-specific torque patterns may reflect a gradient in tendon compliance across the lower limb — a hypothesis that preliminary literature values appear to support. The resulting simulation captures most of the key trends seen in human perturbation data across joints.

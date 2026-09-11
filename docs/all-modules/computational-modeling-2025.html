@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="keywords" content="sarcomere mechanics, crossbridge theory, spatially explicit modeling, Monte Carlo simulation, filament compliance">
 
 <title>Computational modeling – IMSI Movement Science Course</title>
 <style>
@@ -139,21 +140,68 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>sarcomere mechanics, crossbridge theory, spatially explicit modeling, Monte Carlo simulation, filament compliance</p>
+  </div>
+</div>
 
 </header>
 
 
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p>TBD</p>
+<ol type="1">
+<li>Understand how computational models of muscle contraction have evolved from whole-muscle mechanical descriptions (such as the Hill model) to spatially explicit, molecular-level simulations of actin–myosin crossbridge interactions.</li>
+<li>Learn how the mechanical properties of thick and thin filaments—specifically their elasticity and compliance—affect the probability of crossbridge binding and the amount of force produced within a sarcomere.</li>
+<li>Recognize how the physiological geometry of the sarcomere filament lattice (multiple interacting thick and thin filaments) amplifies crossbridge recruitment and force output compared to simpler two-filament models.</li>
+</ol>
 </section>
 <section id="workshop" class="level2">
 <h2 class="anchored" data-anchor-id="workshop">Workshop</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VXU6B909z1s?si=vcbu_83tM-mkTYoi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 <p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Bert Tanner</em></p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="introduction-to-computational-modeling-in-muscle-biology" class="level3">
+<h3 class="anchored" data-anchor-id="introduction-to-computational-modeling-in-muscle-biology">Introduction to Computational Modeling in Muscle Biology</h3>
+<p>Computational modeling uses mathematics and computation to study complex biological systems across different organizational scales. In the context of muscle biology, models range from describing simple chemical reactions—such as how two molecular species combine to form a third, captured by a set of differential equations—all the way up to simulating the coordinated mechanics of many interacting filaments within a sarcomere. Dr.&nbsp;Tanner’s lab integrates computational modeling with biophysical experiments (primarily single-fiber mechanics using skinned fibers) to investigate the molecular mechanisms of muscle contraction. The proteins at the center of these models include the thin filaments (primarily actin), the thick filaments (myosin), and regulatory proteins such as troponin, tropomyosin, and myosin binding protein C.</p>
+</section>
+<section id="a-brief-history-the-hill-model" class="level3">
+<h3 class="anchored" data-anchor-id="a-brief-history-the-hill-model">A Brief History: The Hill Model</h3>
+<p>One of the earliest influential models of muscle force production was developed by A.V. Hill, who shared the 1922 Nobel Prize for linking heat production and mechanical work in muscles. The Hill model represented muscle as three components: a passive element, a contractile element, and a series element (which can be thought of as representing the tendon or other in-series compliance). Together these produced a force-length relationship with recognizable features: the passive component contributes little force at resting length but grows substantially at longer lengths; the active (contractile) component shows an ascending limb, a plateau, and a descending limb; and the total (combined) force reflects a trade-off between these two contributions. Despite its simplicity, this framework has remained widely useful for describing how muscle force changes with length.</p>
+</section>
+<section id="crossbridge-theory-the-huxley-1957-model" class="level3">
+<h3 class="anchored" data-anchor-id="crossbridge-theory-the-huxley-1957-model">Crossbridge Theory: The Huxley 1957 Model</h3>
+<p>A major conceptual advance came from Andrew Huxley’s 1957 paper, which introduced the idea that myosin crossbridges interact with actin binding sites in a position-dependent manner as the filaments slide past one another. In this model, the rate of crossbridge attachment (called f) and the rate of detachment (called g) both depend on the spatial position or distortion of the crossbridge—that is, how far the myosin head is displaced from its optimal alignment relative to the nearest actin binding site. When filaments are not moving (isometric conditions), a high proportion of crossbridges are bound and substantial force is generated. As shortening velocity increases, the distribution of bound crossbridges shifts and total force decreases, reproducing the well-known force-velocity relationship. A further refinement came from Huxley and Simmons in their 1971 paper, which proposed a crossbridge power stroke: a conformational change in the neck region of the myosin head (visible in structural data as the head moving from one angular position to another) that constitutes the force-generating event.</p>
+</section>
+<section id="spatially-explicit-two-filament-models" class="level3">
+<h3 class="anchored" data-anchor-id="spatially-explicit-two-filament-models">Spatially Explicit Two-Filament Models</h3>
+<p>Through much of the history of muscle modeling it was assumed that thick and thin filaments are rigid—that all the compliance in the system comes from the crossbridges themselves. If the filaments do not stretch, then the mechanical state of one actin–myosin pair is identical to every other pair, and a single interaction can represent the whole population. However, X-ray diffraction measurements from the mid-1990s provided evidence that both thick and thin filaments are themselves elastic (extensible). This finding meant that neighboring crossbridges along a filament can be in different mechanical states depending on whether and how their neighbors are bound, making a population-level spatial model necessary.</p>
+<p>This motivated the two-filament spatially explicit model published by Daniel and colleagues in 1998. The model represented a half-sarcomere using 20 thick filament nodes (positions from which crossbridges extend) and 30 actin binding sites on the thin filament, with linear elastic springs connecting adjacent nodes along each filament. The different node counts reflect the different periodicities of the two filament types (approximately 43 nm for the thick filament and approximately 37 nm for the thin filament, though the transcript wording was garbled on this point). Because solving large systems of ordinary or partial differential equations for position-dependent crossbridge kinetics is computationally difficult, the model used Monte Carlo (stochastic) algorithms in which crossbridge attachment and detachment are governed by probabilities derived from position-dependent rate functions rather than solved analytically.</p>
+</section>
+<section id="multiple-filament-models-and-physiological-geometry" class="level3">
+<h3 class="anchored" data-anchor-id="multiple-filament-models-and-physiological-geometry">Multiple Filament Models and Physiological Geometry</h3>
+<p>In the physiological sarcomere, the filament arrangement is not a simple one-to-one pairing: each thick filament interacts with six thin filaments, and each thin filament interacts with three thick filaments. Dr.&nbsp;Tanner’s doctoral work extended the two-filament framework to simulate this physiological lattice geometry. To avoid the edge effects that arise in a finite lattice, the model simulated 4 thick filaments and 8 thin filaments but applied periodic boundary conditions—effectively wrapping the edges of the simulated region onto each other to approximate an infinite lattice with a finite number of filaments. The model also incorporated calcium-dependent thin filament activation through a three-state kinetic cycle.</p>
+<p>When compared to the two-filament model at the same calcium levels, the multiple-filament model predicted substantially higher force per myosin and greater crossbridge binding. At a high calcium level (pCa 4), the multiple-filament model predicted approximately 2 piconewtons per crossbridge, compared to approximately 0.5 piconewtons for the two-filament model—values that aligned better with data from single-molecule experiments. The key mechanism underlying this difference is compliant realignment: when a crossbridge binds and undergoes its power stroke, it displaces the thin filament relative to the thick filament, bringing neighboring crossbridge heads into more favorable alignment for binding. This cooperative recruitment is amplified as more filaments interact, because each binding event affects a larger mechanical neighborhood.</p>
+</section>
+<section id="extensions-to-the-spatially-explicit-framework" class="level3">
+<h3 class="anchored" data-anchor-id="extensions-to-the-spatially-explicit-framework">Extensions to the Spatially Explicit Framework</h3>
+<p>Several groups have extended these spatially explicit models in different directions. Some models have added titin as a passive spring element connecting the free end of the myosin to the Z disk, showing that titin has a significant effect on passive force as sarcomere length changes. Others have incorporated myosin binding protein C (located in the C zone of the thick filament), which competes with actin binding—reducing crossbridge availability—through a kinetic scheme that represents its stabilizing effect on the myosin head. Additional work has addressed the three-dimensional nature of crossbridge motion, since crossbridges undergo both a longitudinal (along-filament) displacement and a torsional or transverse component during the power stroke, with implications for lattice spacing as muscle length changes. One group has also used spatially explicit frameworks to simulate muscle twitches and work loops, allowing examination of stress, strain, and energy use during dynamic contractions.</p>
+</section>
+<section id="code-demonstration" class="level3">
+<h3 class="anchored" data-anchor-id="code-demonstration">Code Demonstration</h3>
+<p>Dr.&nbsp;Tanner demonstrated a MATLAB implementation of the two-filament Monte Carlo model, written to closely follow the Daniel et al.&nbsp;1998 framework and made available for download in the workshop research folder. The main script calls a parameter file (where values such as filament spring constants can be modified), a model-building function that establishes node positions and tracks which crossbridge nodes can interact with which actin binding sites, and a kinetics rate function that evaluates position-dependent attachment and detachment probabilities. The model is run multiple times (e.g., 25 repetitions) and forces are averaged across runs to reduce stochastic variability. Outputs include mean force (in piconewtons) and the fraction of crossbridge heads bound, both plotted as a function of time; an exponential fit extracts the asymptotic force level and the rate constant to half-maximum. In a live demonstration, reducing thin filament stiffness to one-tenth of its default value produced slightly less force (because more mechanical energy was absorbed by filament stretching rather than converted to force output) while increasing the fraction of bound crossbridges—illustrating the interplay between filament compliance and force production that motivated this class of models in the first place.</p>
+</section>
+<section id="qa-thick-filament-activation-disease-and-choosing-a-model" class="level3">
+<h3 class="anchored" data-anchor-id="qa-thick-filament-activation-disease-and-choosing-a-model">Q&amp;A: Thick Filament Activation, Disease, and Choosing a Model</h3>
+<p>During the Q&amp;A portion of the workshop, participants raised several topics extending beyond the main presentation. On thick filament activation and the super-relaxed state of myosin: Dr.&nbsp;Tanner described how this could in principle be incorporated by adding a mechanically sensitive transition in the kinetic scheme, where the rate of transition from the super-relaxed state to the disordered-relaxed state (which makes myosin heads available to interact with actin) would depend on the local mechanical strain along the thick filament—the stretch of the spring segments between thick filament nodes. On disease and injury: the discussion noted that molecular-level mutations affecting troponin, tropomyosin, or myosin kinetics (for example, prolonged crossbridge attachment due to impaired detachment) could be simulated by changing kinetic rate functions, while tissue-level changes such as collagen deposition during injury recovery could be incorporated as modified passive mechanical elements, analogous to the parallel passive element in the Hill model. On choosing the right model for a given question: Dr.&nbsp;Tanner emphasized that the model must include a parameter or subsystem representing the process being studied—if there is no “control knob” for the variable of interest, the model cannot answer the question. The key practical challenge is deciding how much to include, since incorporating full spatial detail greatly increases computational cost.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

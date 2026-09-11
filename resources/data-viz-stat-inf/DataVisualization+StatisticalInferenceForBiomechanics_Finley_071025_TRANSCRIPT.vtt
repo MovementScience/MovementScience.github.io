@@ -1,0 +1,3298 @@
+WEBVTT
+
+1
+00:00:07.313 --> 00:00:10.892
+CHP221: For those of you on Zoom. Can people see my desktop.
+
+
+2
+00:00:12.673 --> 00:00:13.973
+Victoria Wood: Yes, I can.
+
+
+3
+00:00:39.448 --> 00:00:42.903
+CHP221: In the room from the speakers.
+
+
+4
+00:00:43.263 --> 00:00:45.693
+CHP221: It's it's Max.
+
+
+5
+00:00:59.423 --> 00:01:01.022
+CHP221: It's a good phone.
+
+
+6
+00:01:01.283 --> 00:01:02.733
+CHP221: As a speaker.
+
+
+7
+00:01:11.933 --> 00:01:12.273
+CHP221: You.
+
+
+8
+00:01:48.946 --> 00:01:50.233
+CHP221: Good morning.
+
+
+9
+00:02:50.833 --> 00:02:52.463
+Victoria Wood: How's everyone doing this morning.
+
+
+10
+00:02:53.773 --> 00:02:55.043
+CHP221: Doing. Great.
+
+
+11
+00:02:56.803 --> 00:03:00.512
+CHP221: Let's see, do you have any announcements before we get started?
+
+
+12
+00:03:00.999 --> 00:03:06.836
+Victoria Wood: Yes, I am going to be sending out the capstone symposium
+
+
+13
+00:03:07.453 --> 00:03:23.333
+Victoria Wood: Rsvp. Today. I guess you can call it an Rsvp. We're going to have 4 presentation sessions across the mornings of September 4th and September 5.th I'm going to ask that you discuss with your teams
+
+
+14
+00:03:24.087 --> 00:03:44.123
+Victoria Wood: and find the Times like the different sessions that work for everybody on your team and have one member of your team, Rsvp. To select to let me know which of the sessions would work for you. If all of them work. That's great, it'll make my life easier scheduling. I'm going to do my best to make sure everybody gets into a session that they can all the whole team can present.
+
+
+15
+00:03:46.143 --> 00:03:58.632
+Victoria Wood: but I can't guarantee that if somebody can't make it, we will be asking that there's like a recorded component, as all the trainees are required to present. So just keep an eye out for that email from me today I'll send some more information in that email as well.
+
+
+16
+00:03:59.399 --> 00:04:01.622
+Victoria Wood: That's all I have.
+
+
+17
+00:04:02.783 --> 00:04:10.342
+Victoria Wood: And I think we're at about the amount that we usually have. So if you are ready to start.
+
+
+18
+00:04:10.983 --> 00:04:11.453
+CHP221: Okay.
+
+
+19
+00:04:11.453 --> 00:04:12.403
+Victoria Wood: I think you can.
+
+
+20
+00:04:13.543 --> 00:04:31.953
+CHP221: Okay. Good morning, everyone. So I'm James Finley. I'm an associate professor at Usc. Those of you who don't know me. My appointment is in the division of biokinesiology and physical therapy. And in my role I direct the locomotor control lab here. So
+
+
+21
+00:04:32.113 --> 00:04:38.262
+CHP221: my research focuses on the neural control and biomechanics of human locomotion.
+
+
+22
+00:04:38.263 --> 00:04:40.223
+Monica Daley (she, her): Hi! Everyone. Sorry I lost track of time.
+
+
+23
+00:04:40.413 --> 00:05:02.513
+CHP221: As it relates both to fundamental principles of control. So thinking about the factors that dictate when we choose to move, where and how we move. And then we also investigate these principles in populations with movement impairments such as people after stroke, or people with Parkinson's disease.
+
+
+24
+00:05:02.883 --> 00:05:19.552
+CHP221: So today I'm going to be leading an interactive workshop on statistical analysis and data visualization. This is the content from today is taken from largely taken from a course that I teach in research methods in our division.
+
+
+25
+00:05:19.553 --> 00:05:35.653
+CHP221: But many of the topics are spread, typically spread over maybe 4 different lectures or more. So picking and choosing what was appropriate for today is a little bit challenging. But hopefully you all learned something useful.
+
+
+26
+00:05:36.702 --> 00:05:40.193
+CHP221: One of the things that I was doing as
+
+
+27
+00:05:40.233 --> 00:05:53.983
+CHP221: I was putting together. This material is thinking about, you know, who is this? For we have a pretty diverse group here, particularly across career stages. So from undergraduates through full professors.
+
+
+28
+00:05:53.983 --> 00:06:11.272
+CHP221: And so the content today is really focused on some fundamental aspects of largely statistics, and how they relate how data visualization can really help us better understand what we're doing once we get to the point where we're doing statistical inference.
+
+
+29
+00:06:12.283 --> 00:06:33.123
+CHP221: So if you haven't already, please use the QR code to sign in here and we're gonna start with a little interactive poll to get everybody hopefully engaged here. So there's 2 ways you can access this poll. You can just type this URL into either your.
+
+
+30
+00:06:33.353 --> 00:06:37.192
+CHP221: you know, laptop, computer browser or on your phone
+
+
+31
+00:06:37.633 --> 00:06:41.053
+CHP221: and should that should work.
+
+
+32
+00:06:41.653 --> 00:06:44.003
+CHP221: So give you one second to do that.
+
+
+33
+00:06:44.583 --> 00:06:51.343
+CHP221: if that this will also be shown in a smaller form on the following slide.
+
+
+34
+00:06:52.583 --> 00:06:58.807
+CHP221: And the purpose of this initial poll is just to, you know, frame our discussion,
+
+
+35
+00:06:59.613 --> 00:07:07.422
+CHP221: and spend a little bit of time thinking and maybe discussing issues surrounding what we're all really trying to do here.
+
+
+36
+00:07:08.573 --> 00:07:24.442
+CHP221: So if you type in that, URL, it's going to pose a question which is, what is our primary goal as scientists? This is a really broad, open-ended question. But I think it's really important to guide today's discussion.
+
+
+37
+00:07:24.853 --> 00:07:26.452
+CHP221: It's you have the
+
+
+38
+00:07:26.843 --> 00:07:33.713
+CHP221: opportunity to upvote people's answers. So if you see an answer that you agree with. Please
+
+
+39
+00:07:34.043 --> 00:07:41.383
+CHP221: give a thumbs up, and we'll see if we can come to any sort of general consensus here.
+
+
+40
+00:07:47.353 --> 00:07:55.252
+CHP221: Thanks everybody for chiming in. We already have lots of responses. Sometimes this happen. We do this and we get 0 responses. So this is nice.
+
+
+41
+00:07:56.103 --> 00:07:57.713
+CHP221: I'll also state that it's.
+
+
+42
+00:07:58.223 --> 00:08:07.065
+CHP221: you know for those for those people who are leading these workshops. It's often a little hard to manage. I can't see who all is there.
+
+
+43
+00:08:08.043 --> 00:08:09.712
+CHP221: Let's see if I can change this.
+
+
+44
+00:08:10.783 --> 00:08:17.902
+CHP221: let's see that there are 38 35 participants, including some watch party. So we have a nice set of nice sample of people here.
+
+
+45
+00:08:20.103 --> 00:08:21.503
+CHP221: Okay, so
+
+
+46
+00:08:23.233 --> 00:08:29.573
+CHP221: lots of answers here. And I think we are at a point where we can start thinking about consistent themes.
+
+
+47
+00:08:30.213 --> 00:08:43.433
+CHP221: So I have in just these 1st 4 responses. We have 2 things right? We have answering questions generating knowledge. Okay, so that's a pretty common
+
+
+48
+00:08:44.296 --> 00:08:50.499
+CHP221: theme across all of these responses. Some people have things related to truth. So that's
+
+
+49
+00:08:51.193 --> 00:08:53.563
+CHP221: a very whoops, I guess.
+
+
+50
+00:08:53.693 --> 00:08:56.922
+CHP221: Deep topic. Oh, going the wrong way here.
+
+
+51
+00:08:59.063 --> 00:09:09.275
+CHP221: And so but basically, the general idea is that we want to learn things about the world.
+
+
+52
+00:09:09.913 --> 00:09:17.992
+CHP221: in learning things, we generate knowledge. And I think that's, you know, a consistent theme across everyone's response.
+
+
+53
+00:09:18.243 --> 00:09:44.112
+CHP221: So one of the things I want everybody to keep in mind as we go through today is, how do we? How can we be confident about the knowledge that we generate? What are some of the assumptions that underlie the methods we use when we generate knowledge? And, more importantly, how can we make sense of that knowledge and do what we call generalize it to things outside of our particular research studies?
+
+
+54
+00:09:45.023 --> 00:10:00.393
+CHP221: So if you have any comments as we go feel free to interact. I'll point out if people haven't seen it posted a link in our Mc. Chat with a link to a Google drive that has some Matlab code that we'll be working on today.
+
+
+55
+00:10:01.853 --> 00:10:04.123
+CHP221: Can you share that link in our lab slack?
+
+
+56
+00:10:06.018 --> 00:10:14.933
+CHP221: He's asking me permission for the okay, you can just request. And I think somebody can give you access.
+
+
+57
+00:10:14.933 --> 00:10:17.293
+Victoria Wood: Yeah, I can share access if needed.
+
+
+58
+00:10:17.553 --> 00:10:19.263
+CHP221: Okay, thank you, Victoria.
+
+
+59
+00:10:20.343 --> 00:10:28.393
+CHP221: Alright. So let's talk a little bit about, you know, types of research. So everybody in involved in Mc is doing.
+
+
+60
+00:10:28.883 --> 00:10:36.202
+CHP221: presumably one of these types of research. And I think it's important to acknowledge that our research might have different goals.
+
+
+61
+00:10:37.183 --> 00:10:51.592
+CHP221: So in some cases we're interested in just in doing descriptive studies where maybe we're studying a population of people, other organisms. And we want to to characterize something that we observe in those.
+
+
+62
+00:10:51.783 --> 00:10:54.332
+CHP221: you know, participants, if you will.
+
+
+63
+00:10:54.493 --> 00:11:01.213
+CHP221: And so there, we're not necessarily doing hypothesis testing. But we're interested in in what we're going to call descriptive statistics.
+
+
+64
+00:11:02.383 --> 00:11:28.272
+CHP221: In other cases we might be developing or developing methods. So we're developing, for instance, measurement tools for assessments when we're dealing with animal behavior. One of the things that's really important about these these tools is their we might call their validity and reliability. Right? So how accurate are our tools. And if we were to make the same recording from the same.
+
+
+65
+00:11:28.373 --> 00:11:34.032
+CHP221: You know, person organism in the same context. How consistent are those responses?
+
+
+66
+00:11:34.323 --> 00:11:41.282
+CHP221: So both of those answering both of those questions about validity and reliability require one or more types of statistics.
+
+
+67
+00:11:42.803 --> 00:11:43.623
+CHP221: Oh.
+
+
+68
+00:11:43.853 --> 00:12:03.773
+CHP221: moving sort of maybe in some ways up the hierarchy. We often do studies where we're interested in relationships. So we're measuring multiple variables. And we want to know how they relate or co-vary with one another. So there are various statistical tests, regression, correlation that we might use to capture these relationships.
+
+
+69
+00:12:04.143 --> 00:12:25.173
+CHP221: And then one of the big goals of what most of us do is to try to understand cause effect relationships. So while we can easily establish correlation, it can often be much more difficult to determine cause effect relationships. So that's really the purpose of experimental research.
+
+
+70
+00:12:25.453 --> 00:12:32.603
+CHP221: And we have time we can talk about, you know, factors that influence our ability to to establish those those relationships.
+
+
+71
+00:12:35.423 --> 00:12:43.412
+CHP221: Alright. So there, there's kind of 2 challenges that I want to start with to set set up the rest of today's workshop.
+
+
+72
+00:12:43.623 --> 00:12:46.832
+CHP221: The 1st is this idea of generalization.
+
+
+73
+00:12:47.253 --> 00:12:48.453
+CHP221: So
+
+
+74
+00:12:48.573 --> 00:12:58.893
+CHP221: when we talk about generating knowledge, answering questions. One of the things that we often do in science is that we're actually interested in some some population.
+
+
+75
+00:12:59.003 --> 00:13:00.153
+CHP221: So
+
+
+76
+00:13:00.383 --> 00:13:22.742
+CHP221: so in our work. If let's say, we're working with people post stroke. And we're interested in factors that influence balance control. Really, what we care about is in the large population of people. Post stroke who have certain characteristics. How do they maintain balance? What are the factors that influence that?
+
+
+77
+00:13:23.463 --> 00:13:24.153
+CHP221: But
+
+
+78
+00:13:25.323 --> 00:13:33.722
+CHP221: In almost all cases, right? We we can't study the whole population so clearly. We do, you know, studies in the lab where we sample from this population.
+
+
+79
+00:13:33.963 --> 00:13:52.642
+CHP221: And so this is the set of people organisms from which we actually observe behavior, and our assumption oftentimes is that what we observe in this sample is representative of the whole representative of the population.
+
+
+80
+00:13:53.033 --> 00:13:54.442
+CHP221: Okay, so we'll talk about some
+
+
+81
+00:13:54.995 --> 00:13:58.503
+CHP221: issues when that is, and it maybe is not the the case.
+
+
+82
+00:14:00.163 --> 00:14:08.202
+CHP221: The second challenge is in other cases, we're not necessarily interested in a population. But maybe we're interested in an individual.
+
+
+83
+00:14:08.283 --> 00:14:34.863
+CHP221: So you may have one or more types of organisms that we study depending on your lab. And what we're trying to infer is something about the individual right? And so, for instance, in our lab, we study decision making. And one of the things that we would like to know is what are individual differences in how people weigh things like risk and effort during walking.
+
+
+84
+00:14:35.213 --> 00:14:47.522
+CHP221: So so there, we're going to make, you know, some sort of some set of measurements on an individual level. And again, we have a similar challenge is what was illustrated on the previous slide.
+
+
+85
+00:14:48.373 --> 00:15:03.832
+CHP221: Right? So we, you know, at a high level, we know that if I just measure like one measurement on an individual. I don't necessarily think that I can't necessarily infer much about that person's priorities. Right? So I need multiple measurements.
+
+
+86
+00:15:04.993 --> 00:15:19.552
+CHP221: So this is still a sampling question or an issue at an individual level. So we can think about how much data do I need from an individual, so that I can be confident about the knowledge I generate about that again, person slash organism.
+
+
+87
+00:15:20.933 --> 00:15:21.758
+CHP221: So
+
+
+88
+00:15:22.793 --> 00:15:34.213
+CHP221: so I mentioned this, you know that we're often interested in identifying causal relationships. And generally we think that there are 3 different things that we need if we want to know if you know a causes. B,
+
+
+89
+00:15:35.123 --> 00:15:40.472
+CHP221: so a lot of the the of what we'll talk about today is related to issues of of variability.
+
+
+90
+00:15:41.153 --> 00:15:47.723
+CHP221: And so there are types of variability that we might think of. We can consider good. And then those that we want to minimize.
+
+
+91
+00:15:47.863 --> 00:15:55.273
+CHP221: So this 1st idea here concomitant variation is basically the good variability.
+
+
+92
+00:15:56.013 --> 00:16:18.082
+CHP221: So if I'm manipulating something. So the thing I control right? We call our independent variable. I measure something. We call it our dependent, variable. I hope that there's variation right in our dependent variable. When I change the thing I'm controlling. So that's that's the variation that we really like. We need that variation. If we're going to establish relationships.
+
+
+93
+00:16:19.403 --> 00:16:27.442
+CHP221: The second thing that we need to establish causality is this idea of the cause and the effect have to Co occur.
+
+
+94
+00:16:27.693 --> 00:16:30.213
+CHP221: We won't talk a lot about this. But
+
+
+95
+00:16:30.403 --> 00:16:36.063
+CHP221: basic idea is that if some effect is already present, then I can't establish a cause and effect.
+
+
+96
+00:16:38.223 --> 00:16:58.822
+CHP221: The last point, is one that's more important for today, which is control of other sources of variability. So here we can think about these what are called internal agents or confounding variables as being the variability we we don't like. So we
+
+
+97
+00:16:59.273 --> 00:17:07.162
+CHP221: either want to minimize those sources of variability, or can you know, measure things that capture those sources of variability.
+
+
+98
+00:17:08.143 --> 00:17:15.882
+CHP221: So this last point is really kind of the core of some of what we'll be discussing today, both with statistics and data visualization.
+
+
+99
+00:17:18.423 --> 00:17:27.813
+CHP221: Okay, so when we talk about these these sort of variability that we maybe don't want we can think about different classes.
+
+
+100
+00:17:28.283 --> 00:17:35.373
+CHP221: So there's what's called extraneous variability. So this often has to do with
+
+
+101
+00:17:35.493 --> 00:17:39.665
+CHP221: you. You could think about variability that you introduce into your data,
+
+
+102
+00:17:40.463 --> 00:17:55.033
+CHP221: potentially yourself. Right? So if I'm making multiple measurements on a set of participants. Maybe I'm inconsistent from day to day. Right? So that adds variability that is not useful for my statistical analysis.
+
+
+103
+00:17:55.974 --> 00:18:07.702
+CHP221: If I have tools that are imprecise and inaccurate, that's going to generate variability, that again reduces my ability to detect or determine cause and effect.
+
+
+104
+00:18:07.943 --> 00:18:19.952
+CHP221: And then there are lots of different characteristics of our, you know, participants. Who that also introduce sources of variability that we may not be interested in.
+
+
+105
+00:18:20.613 --> 00:18:38.512
+CHP221: So as an example, right in our study when we were interested in decision making and human behavior. One of the things that is highly variable that we can't always control is the issue of I'm going to generally call this alertness.
+
+
+106
+00:18:39.093 --> 00:18:53.112
+CHP221: There are different characteristics that might relate to this, and that's misspelled. But the general idea is that you know how much are people paying attention and staying on task? Clearly people's attention waxes and wanes during an experiment.
+
+
+107
+00:18:53.343 --> 00:18:56.093
+CHP221: and that's going to contribute to some of our variability.
+
+
+108
+00:18:58.613 --> 00:19:08.063
+CHP221: And then, lastly, we can think about this idea of confounding variables where these are things that are going to again prevent us from determining cause and effect.
+
+
+109
+00:19:10.493 --> 00:19:12.183
+CHP221: Okay, so
+
+
+110
+00:19:12.313 --> 00:19:24.673
+CHP221: variability is kind of the core of today's discussion. And I like to think about statistics as really being tools that we use to both quantify and explain sources of variability.
+
+
+111
+00:19:24.973 --> 00:19:42.833
+CHP221: One thing that I'll say was maybe as a bit of background. My degrees are in engineering, and I will hand Waverly say that engineers are often not very good at statistics. I don't feel like I had a very strong training in statistics as an engineer.
+
+
+112
+00:19:42.933 --> 00:20:06.442
+CHP221: even though we did a lot of math. And so when we're doing statistics and experimental or in research, we're often using tools that assume that we have large quantities of data. That's the 1st part. And we are like, we said earlier, trying to infer something about a population from a sample that we studied.
+
+
+113
+00:20:06.963 --> 00:20:26.673
+CHP221: And so we're going to use 2 different types of statistics, mostly in our work. We're going to use descriptive statistics to summarize our data. And then what most people are interested in is the result of inferential statistics. Right? So we do our t-test, our anova, our regression.
+
+
+114
+00:20:27.503 --> 00:20:44.193
+CHP221: And one thing that may or may not be clear to everyone. Here is that when we do inferential statistics, we are doing that under the assumption of some sort of model of our of our data behavior population.
+
+
+115
+00:20:46.383 --> 00:20:53.212
+CHP221: So let's start with thinking about some some factors that we want to be careful about when when using descriptive statistics.
+
+
+116
+00:20:54.623 --> 00:20:56.063
+CHP221: So I'll
+
+
+117
+00:20:56.563 --> 00:21:02.603
+CHP221: breeze through these. So I think most everybody is familiar with basic terms that we use a descriptive statistics
+
+
+118
+00:21:03.483 --> 00:21:07.072
+CHP221: so often. We, you know, are thinking about. For instance.
+
+
+119
+00:21:07.233 --> 00:21:12.573
+CHP221: a set of measurements that we might represent like this right? This is on
+
+
+120
+00:21:13.303 --> 00:21:32.563
+CHP221: probability distribution of our measures, or something like a histogram. We're often interested in the midpoint measure of central tendency, which we might illustrate as our mean and the spread and the data which we might quantify as our standard deviation.
+
+
+121
+00:21:34.502 --> 00:21:41.702
+CHP221: You know, basic ideas here are that when we report the mean and standard deviation of a set of measurements.
+
+
+122
+00:21:41.803 --> 00:21:46.242
+CHP221: we're in essence assuming that those measurements come from a normal distribution.
+
+
+123
+00:21:47.983 --> 00:22:04.682
+CHP221: We might also be interested in the relationship between multiple measurements, right? Where, if I have 2 measurements here and I have many values. Maybe I want to think about how tightly related or correlated those measures are.
+
+
+124
+00:22:05.803 --> 00:22:11.423
+CHP221: And then we've already, you know, introduced our measures of of dispersion up here.
+
+
+125
+00:22:16.113 --> 00:22:28.103
+CHP221: so the one key point I want to just make here is that when we think about measures of dispersion, one term that comes up a lot in the world of statistics is this idea of variance.
+
+
+126
+00:22:28.703 --> 00:22:40.202
+CHP221: And so invariance, of course, is the, you know, essentially the the average you think about is the average deviation of all of your data points from the the mean of your data set
+
+
+127
+00:22:41.333 --> 00:22:42.108
+CHP221: and
+
+
+128
+00:22:43.653 --> 00:23:09.543
+CHP221: you know, the equation for variance is here. We won't spend much time looking at this, but we're going to look at some data sets shortly that have essentially the same statistical properties, but are very different. And one of the key take home points from today is that you know, looking at your data early and often through your analysis, is really critical for making sense of the statistical results that you obtain.
+
+
+129
+00:23:11.113 --> 00:23:34.542
+CHP221: So what we're going to do is we're going to look at. We're going to start by looking at this set of data referred to as Anscombe's quartet. I don't know if there's not an easy way to poll people. Hopefully, I'm assuming some people have heard of this, and maybe many haven't. But these are 4 different data sets that when you see them are clearly very different. But they have the exact same statistical properties.
+
+
+130
+00:23:34.713 --> 00:23:40.762
+CHP221: So this is one of my favorite illustrations of how how statistics can be essentially misleading.
+
+
+131
+00:23:41.843 --> 00:23:58.153
+CHP221: So what we're going to do, we're going to move over to Matlab. Now, there is a script in the Google drive called Enstone's Quartet. And you can basically run that script. And we're going to look. And we're going to answer the following questions here.
+
+
+132
+00:23:59.273 --> 00:24:02.882
+CHP221: Alright. So let's see if I can easily do this.
+
+
+133
+00:24:05.373 --> 00:24:11.203
+CHP221: So we need to go here here.
+
+
+134
+00:24:12.703 --> 00:24:15.633
+CHP221: Okay, can you all see my Matlab window now.
+
+
+135
+00:24:19.393 --> 00:24:19.983
+Miles Valencia: Yeah.
+
+
+136
+00:24:20.393 --> 00:24:21.273
+CHP221: Okay, great.
+
+
+137
+00:24:21.933 --> 00:24:23.653
+CHP221: Okay, where are we?
+
+
+138
+00:24:25.453 --> 00:24:35.402
+CHP221: Okay? So so in the files that you downloaded, there's a Csv file called Enscomb Quartet.
+
+
+139
+00:24:35.603 --> 00:24:43.453
+CHP221: So what we're going to do is we're going to read the data from that Csv file into Matlab. We're going to create a variable just called data.
+
+
+140
+00:24:44.383 --> 00:24:49.952
+CHP221: And essentially, what this script is going to do is just plot the data.
+
+
+141
+00:24:51.413 --> 00:24:56.681
+CHP221: So for you know, for those of you who are maybe new to Matlab programming.
+
+
+142
+00:24:57.173 --> 00:25:08.303
+CHP221: we're gonna store some information, some statistical information about these data sets. So we're gonna generate that statistical information in a loop starting here at line 12.
+
+
+143
+00:25:09.233 --> 00:25:19.132
+CHP221: So I'm starting by doing what's called pre-allocation, where I set aside space in Matlab to store the outcomes of our essentially statistical analysis.
+
+
+144
+00:25:20.323 --> 00:25:27.303
+CHP221: we're gonna generate a figure, and then the we'll take a look at the data first, st
+
+
+145
+00:25:28.533 --> 00:25:39.343
+CHP221: so you can go ahead and press. Run. Should work if make sure that your Csv file is stored in the same folder as this script.
+
+
+146
+00:25:52.783 --> 00:25:56.112
+CHP221: So hopefully, that's working for people. Does that work for people here?
+
+
+147
+00:25:56.243 --> 00:25:57.383
+CHP221: Yes, correct.
+
+
+148
+00:25:58.783 --> 00:26:02.613
+CHP221: So here's what what's generated when you run this script.
+
+
+149
+00:26:03.513 --> 00:26:04.813
+CHP221: So
+
+
+150
+00:26:04.923 --> 00:26:13.402
+CHP221: first, st what we're gonna do is is briefly look at the data matrix. And then the figure. So if you go to your
+
+
+151
+00:26:13.633 --> 00:26:15.893
+CHP221: Matlab Workspace.
+
+
+152
+00:26:19.123 --> 00:26:29.543
+CHP221: so for those, again who are are new to Matlab, your Matlab interface, probably look some a little bit different from mine. We're interested right now in the workspace.
+
+
+153
+00:26:29.983 --> 00:26:40.592
+CHP221: So here's where we can see all the variables that are that we've generated. And so the the variable data has 11 rows and 8 columns.
+
+
+154
+00:26:41.133 --> 00:26:45.703
+CHP221: So I can, you know, easily visualize that here.
+
+
+155
+00:26:47.593 --> 00:26:53.073
+CHP221: And the way these data are organized is that they're organized in pairs of columns.
+
+
+156
+00:26:53.483 --> 00:27:03.873
+CHP221: So the 1st 2 columns are. The 1st is we call this x 1 y. One, then columns 3 and 4 would be x 2 y. 2, and so on.
+
+
+157
+00:27:04.893 --> 00:27:14.372
+CHP221: So the figure is going to plot the data from the 1st 2 pairs as data, set one the second pair as data, set 2 and and so on.
+
+
+158
+00:27:16.273 --> 00:27:17.832
+CHP221: So let's take a look at this figure.
+
+
+159
+00:27:19.254 --> 00:27:27.603
+CHP221: So for data, set each of the data sets, we're plotting the X values along the horizontal axis the Y values along the vertical axis.
+
+
+160
+00:27:28.613 --> 00:27:37.382
+CHP221: And so it's pretty straightforward. I think, if we were to visualize these data sets. Everybody would say that these data sets are quite different.
+
+
+161
+00:27:39.133 --> 00:27:42.593
+CHP221: And what we're doing the line, there is a a.
+
+
+162
+00:27:42.833 --> 00:27:46.132
+CHP221: a linear least squares fit to the data.
+
+
+163
+00:27:46.963 --> 00:27:54.743
+CHP221: And again, intuitively, we would say, Hey, that line really is only appropriate. In this 1st data set
+
+
+164
+00:27:55.303 --> 00:28:02.893
+CHP221: right? And all these other data sets, there are issues with the data that make it such that fitting a line really doesn't make make any sense.
+
+
+165
+00:28:05.133 --> 00:28:15.952
+CHP221: So now let's imagine that some group has published this data, and you don't have this figure. But instead, all you have are are the summary statistics from each 4. Each of the 4 data sets.
+
+
+166
+00:28:17.593 --> 00:28:22.373
+CHP221: So the 1st question is, well, let's let's get some descriptive statistics.
+
+
+167
+00:28:23.153 --> 00:28:30.532
+CHP221: So what we're going to do is compute the average or the mean of the X and Y values for all 4 of these data sets.
+
+
+168
+00:28:32.063 --> 00:28:35.442
+CHP221: So we can go to our command window.
+
+
+169
+00:28:36.473 --> 00:28:39.612
+CHP221: If I just type mean of data.
+
+
+170
+00:28:39.873 --> 00:28:46.082
+CHP221: what this is going to do is compute the mean across every column in this data set.
+
+
+171
+00:28:47.253 --> 00:28:51.032
+CHP221: So we know the data look different. Let's see if the means are different.
+
+
+172
+00:28:52.813 --> 00:29:03.162
+CHP221: So again, the data are pairwise. So we have x 1 y. One. So 9 and 7.5 x 2 y. 2 9 and 7.5, and so on.
+
+
+173
+00:29:05.003 --> 00:29:12.153
+CHP221: So even though the data look very different, the means of all the data sets are exact, basically exactly the same.
+
+
+174
+00:29:14.393 --> 00:29:17.343
+CHP221: Now let's do the same thing with the standard deviation.
+
+
+175
+00:29:17.703 --> 00:29:24.113
+CHP221: I'll try not to do shortcuts here. So if I type, you know Std of data.
+
+
+176
+00:29:24.923 --> 00:29:36.092
+CHP221: now give a standard deviation of each column. And I see the same pattern, right? All the data. Each data set has the same standard deviation from the X and Y values.
+
+
+177
+00:29:38.263 --> 00:29:43.892
+CHP221: Okay? So that seems curious. If I just look at the data set. And you know, we were to place a bet ahead of time. Most.
+
+
+178
+00:29:44.053 --> 00:29:48.703
+CHP221: you know you and you hadn't seen this data before, you wouldn't assume that these statistics are the same.
+
+
+179
+00:29:50.493 --> 00:29:55.362
+CHP221: And so finally, what we're gonna do is look at our our regression statistics.
+
+
+180
+00:29:56.233 --> 00:30:15.192
+CHP221: So when we fit a line to our data, what we're going to do is we're going to several parameters that we're going to obtain. We're going to get a set of coefficients. We might call them betas that characterize the the Y intercept of the data set and the slope of this line.
+
+
+181
+00:30:16.123 --> 00:30:27.062
+CHP221: We're also going to get a measure of R squared, which is the you know, the variance in our in, you know, in Y, that's explained by X. And we typically think about this as the goodness of fit.
+
+
+182
+00:30:28.373 --> 00:30:37.113
+CHP221: So again, intuitively, if we look at these data sets, we would say that this line does not fit the data well for data set 2
+
+
+183
+00:30:37.671 --> 00:30:45.182
+CHP221: it doesn't seem to fit the data well for data set 4 right? So we might expect our square values that differ across these data sets.
+
+
+184
+00:30:46.703 --> 00:30:54.143
+CHP221: So in our simulation code, not or analysis code, if we scroll down to our for loop.
+
+
+185
+00:30:55.445 --> 00:31:01.353
+CHP221: we're we use a function called regress in Matlab to do a linear regression
+
+
+186
+00:31:01.492 --> 00:31:05.633
+CHP221: of for each data set. We're regressing Y onto to X,
+
+
+187
+00:31:07.183 --> 00:31:14.123
+CHP221: and we have a variable B that stores our slope and intercept for each of those regression models.
+
+
+188
+00:31:14.283 --> 00:31:20.342
+CHP221: and then we have a variable stats where the 1st column and stats holds all of our R square values.
+
+
+189
+00:31:22.016 --> 00:31:24.382
+CHP221: so you can probably see where this is going
+
+
+190
+00:31:24.663 --> 00:31:30.593
+CHP221: if I look at my my model parameters in V.
+
+
+191
+00:31:31.703 --> 00:31:40.232
+CHP221: So the 1st is my intercept, and the second parameter is my or sorry. Let me make sure I'm doing this.
+
+
+192
+00:31:41.493 --> 00:31:48.002
+CHP221: Sorry. The 1st parameter is my slope. The second is my intercept. So slope on row, one intercept on row 2.
+
+
+193
+00:31:48.923 --> 00:31:51.232
+CHP221: Each column is a different data set.
+
+
+194
+00:31:52.103 --> 00:31:59.492
+CHP221: So again, here I see that my regression model fits are the exact same for all 4 of those data sets.
+
+
+195
+00:32:00.143 --> 00:32:08.113
+CHP221: And lastly, if I check my R square values which are in the 1st column of the stats. Matrix.
+
+
+196
+00:32:08.763 --> 00:32:11.702
+CHP221: I see that my, our square values are basically all the same.
+
+
+197
+00:32:12.243 --> 00:32:12.943
+CHP221: Okay.
+
+
+198
+00:32:14.723 --> 00:32:41.245
+CHP221: all right. So this is something that, I think, for people who anybody who does statistics, you should just burn this into your memory, looking at summary statistics alone, whether they are descriptive, right, mean and standard deviation, or whether they are inferential bottle parameters. R squared values? Not. They don't necessarily tell you much about the how the underlying data look.
+
+
+199
+00:32:44.123 --> 00:33:09.422
+CHP221: All right. So the sort of intermediate take home points here are essentially rewording what I just said, descriptive statistics may not fully capture the key characteristics of your data. This is particularly true when we have small samples which is pretty common for a lot of the work we do. And you know whether it's biomechanics, human models, animal models. We have to be very careful about what we're inferring.
+
+
+200
+00:33:10.103 --> 00:33:28.533
+CHP221: And one of the key tools that you have to better understand. Your data is, of course, visualizing your data. So you know, I'm a firm believer that you should visualize your data at every step in your from the time you collect it through each step. In your analysis, pipeline, as you lose information along the way.
+
+
+201
+00:33:29.963 --> 00:33:36.343
+CHP221: Alright, I'll just pause here for a minute in case there are people have any questions, comments, thoughts.
+
+
+202
+00:33:42.993 --> 00:33:44.932
+CHP221: Thank God, I can't see anybody.
+
+
+203
+00:33:48.023 --> 00:33:50.623
+CHP221: So you have a question. So
+
+
+204
+00:33:51.215 --> 00:34:10.412
+CHP221: for the variability of my data in this way, it would be the variance, a way to characterize the variability of my data better. Yeah, so there. So there's so the question is, how how? What are ways to characterize the variability in your data. So we can, you know, compute our
+
+
+205
+00:34:10.643 --> 00:34:18.698
+CHP221: measures of, you know whether it's the range or the standard deviation right? These are quantitative measures of variation.
+
+
+206
+00:34:19.373 --> 00:34:24.772
+CHP221: but I think that you want to do these in addition to visualizing the data right? Because
+
+
+207
+00:34:25.313 --> 00:34:32.062
+CHP221: if you compute the standard deviation. But you have outliers. Right? It's going to be sensitive to those those outliers. Okay.
+
+
+208
+00:34:33.773 --> 00:34:35.002
+Victoria Wood: Any other questions.
+
+
+209
+00:34:35.483 --> 00:34:41.523
+Victoria Wood: Oh, we have a question here in the chat from Hansel. Do you have comments on different definitions of R. Squared.
+
+
+210
+00:34:42.387 --> 00:34:46.738
+CHP221: I do not. So I think this might
+
+
+211
+00:34:47.383 --> 00:35:00.914
+CHP221: you know, relate to things related to the you know. Variance. Explain versus the what is it? The I forget the other term off off the top of my head. But there, there are different, essentially sort of
+
+
+212
+00:35:02.133 --> 00:35:08.103
+CHP221: ways. You can compute R squared and some slight, slightly different interpretations that's kind of beyond.
+
+
+213
+00:35:08.283 --> 00:35:11.672
+CHP221: I think, what I was at least prepared for discussing today.
+
+
+214
+00:35:11.923 --> 00:35:13.632
+CHP221: Console. Do you have any comments.
+
+
+215
+00:35:16.433 --> 00:35:34.763
+Hansol Ryu: Not really. I'm just confused about a little time. Most of the times we do correlation coefficient and get the squared of that value and call it r squared. But for some fields it seems like
+
+
+216
+00:35:35.033 --> 00:35:42.963
+Hansol Ryu: they do one minus something which can sometimes give you value less than 0.
+
+
+217
+00:35:43.403 --> 00:35:43.943
+Hansol Ryu: So.
+
+
+218
+00:35:44.615 --> 00:35:45.960
+CHP221: Okay, so
+
+
+219
+00:35:49.913 --> 00:35:51.403
+Monica Daley (she, her): Okay, I can.
+
+
+220
+00:35:52.143 --> 00:35:54.963
+CHP221: And at least sort of sketch. What you're saying here.
+
+
+221
+00:35:57.233 --> 00:36:03.343
+CHP221: So one idea is that you know you have your data.
+
+
+222
+00:36:03.963 --> 00:36:07.613
+CHP221: You you compute the correlation coefficient.
+
+
+223
+00:36:07.733 --> 00:36:19.712
+CHP221: Right? So R is equal to 0 point 8. And then what you're saying is that you know, like you can say R squared is going to be, you know, 0 point 6 4. Right? You just square r.
+
+
+224
+00:36:19.883 --> 00:36:26.412
+CHP221: another way that people will compute. This is one minus the
+
+
+225
+00:36:26.523 --> 00:36:35.973
+CHP221: variants of your residuals. I think over the variance in your original data, something like this.
+
+
+226
+00:36:37.031 --> 00:36:45.633
+CHP221: And so sometimes you can fit. If your model is really poor, the numerator can be bigger than the denominator, and you can get negative values here.
+
+
+227
+00:36:45.883 --> 00:36:49.006
+CHP221: So I don't actually have a good
+
+
+228
+00:36:49.853 --> 00:36:54.452
+CHP221: Frankly, good understanding of when one is is more appropriate than the other.
+
+
+229
+00:36:54.693 --> 00:36:58.522
+CHP221: If I'll try to find something and share it on on our Kinsey slack.
+
+
+230
+00:37:03.043 --> 00:37:06.412
+CHP221: and if anybody else has an answer to that question feel free.
+
+
+231
+00:37:07.155 --> 00:37:09.973
+CHP221: To chime in. I'm not a statistician.
+
+
+232
+00:37:13.583 --> 00:37:14.642
+Monica Daley (she, her): Has her hand up.
+
+
+233
+00:37:16.153 --> 00:37:30.423
+Kiisa Carla Nishikawa: Yeah, I was. I think I was just going to quickly say that. You know, I think, like goodness of fit tests is an area where there's currently been a lot of controversy. And I know that
+
+
+234
+00:37:30.613 --> 00:37:42.365
+Kiisa Carla Nishikawa: I've had lengthy discussions with Madhu Vankadesen about this recently, and you can find a lot of papers online.
+
+
+235
+00:37:43.643 --> 00:37:48.886
+Kiisa Carla Nishikawa: talking about, you know why our squared is positively misleading. And
+
+
+236
+00:37:50.154 --> 00:37:54.082
+Kiisa Carla Nishikawa: so. And I think most of the
+
+
+237
+00:37:54.423 --> 00:37:58.203
+Kiisa Carla Nishikawa: examples are coming from like economics
+
+
+238
+00:37:58.383 --> 00:38:02.703
+Kiisa Carla Nishikawa: and predicting like the price of, you know, like
+
+
+239
+00:38:03.324 --> 00:38:08.803
+Kiisa Carla Nishikawa: pork bellies in, you know, 6 months, or something like that, or you know.
+
+
+240
+00:38:08.923 --> 00:38:15.613
+Kiisa Carla Nishikawa: anyway, the point being, there are typically models that have, like a lot of independent variables
+
+
+241
+00:38:15.883 --> 00:38:25.012
+Kiisa Carla Nishikawa: that are trying to be used to predict, like a single like output variable. But the point being, I think, you know.
+
+
+242
+00:38:25.493 --> 00:38:33.511
+Kiisa Carla Nishikawa: figuring out whether R. Squared is the appropriate goodness of fit measurement for your data is another whole can of worms.
+
+
+243
+00:38:33.893 --> 00:38:39.372
+CHP221: Okay, got so so this is related to an important point that I didn't.
+
+
+244
+00:38:39.583 --> 00:38:42.173
+CHP221: you know, plan to discuss so
+
+
+245
+00:38:44.153 --> 00:38:49.192
+CHP221: and so there are 2 terms that we think about when we're doing regression.
+
+
+246
+00:38:50.303 --> 00:39:00.082
+CHP221: So when we fit a model to our data right? And we get an R squared, what we're really doing. We're explaining very variance in our measures.
+
+
+247
+00:39:00.313 --> 00:39:06.643
+CHP221: Now, the problem is that sometimes we use the terminology of our independent variables as predictors.
+
+
+248
+00:39:07.063 --> 00:39:15.413
+CHP221: So in, you know, sort of formal statistics, machine learning. Pick your field. That's actually not. We're not doing prediction.
+
+
+249
+00:39:15.833 --> 00:39:31.982
+CHP221: So, and with prediction, what we might do is start with a model and given some values of our independent, variable, we then compute from that model what the dependent variable should be, and we compare that with reality.
+
+
+250
+00:39:33.063 --> 00:39:39.903
+CHP221: So to. To Keisha's point, the more parameters you add in a model, the better your explanation.
+
+
+251
+00:39:40.083 --> 00:39:43.543
+CHP221: But you can also. You can also make your prediction worse.
+
+
+252
+00:39:43.713 --> 00:39:49.282
+CHP221: So that's a thing we you always have to be careful about within our in statistical modeling.
+
+
+253
+00:39:50.523 --> 00:39:55.933
+CHP221: Okay, okay, so
+
+
+254
+00:39:57.263 --> 00:40:01.283
+CHP221: so yeah, so that's a you know, a general. Take home Point. I think I have sort of.
+
+
+255
+00:40:01.533 --> 00:40:05.993
+CHP221: I think there's 3 3 scripts and 3 major take home points for today.
+
+
+256
+00:40:07.083 --> 00:40:20.103
+CHP221: All right. So the the you know what we learned from Anscom's quartet is that you know really the only reason why we know that those descriptive statistics are misleading is because we visualized our data. If you didn't do that, you would have no idea.
+
+
+257
+00:40:21.823 --> 00:40:26.593
+CHP221: And so what are, what do we think about when we actually do data visualization.
+
+
+258
+00:40:27.423 --> 00:40:34.842
+CHP221: So this is going to be a, you know, rapid overview of the paper that I really like. So for those
+
+
+259
+00:40:35.073 --> 00:40:50.103
+CHP221: you may or may not be familiar with. So plos computational biology is a journal that has a series called 10 Simple rules. These are really nice papers, kind of perspectives that different authors groups will write.
+
+
+260
+00:40:50.103 --> 00:41:05.482
+CHP221: and this will give you 10 tips for all sorts of things. It could be here. We're talking data, visualization. You can find papers on how to run your lab, how to make usable software and research all sorts of things so highly recommend this series.
+
+
+261
+00:41:07.553 --> 00:41:11.843
+CHP221: And so one of the things that I always, you know, like to do this is.
+
+
+262
+00:41:12.463 --> 00:41:20.433
+CHP221: if this could actually be my well, I won't say that. Sometimes I think it's my my alternate career would just be data visualization. Because I think it's a lot of fun.
+
+
+263
+00:41:20.703 --> 00:41:39.633
+CHP221: This is an example of a figure that you might see in something like the New York Times, right? Which is illustrating causes of cancer, death among men and women, using, you know, color text shading to illustrate many features of the data set.
+
+
+264
+00:41:40.593 --> 00:41:41.223
+CHP221: Now.
+
+
+265
+00:41:42.333 --> 00:41:54.342
+CHP221: one of the things I used to think when I saw figures like this is that oh, there was some illustrator who used some data visualization program to really make this look very clean.
+
+
+266
+00:41:54.633 --> 00:42:01.422
+CHP221: And the reality is that you can create this exact figure in Matlab, using only only code.
+
+
+267
+00:42:01.813 --> 00:42:10.143
+CHP221: So, Major, take on point, for this next section is when you generate figures. Particularly if you're going to share them with anybody else.
+
+
+268
+00:42:10.333 --> 00:42:17.552
+CHP221: Take the time to make sure that your figures are conveying the the key ideas that you that you'd like them to.
+
+
+269
+00:42:18.483 --> 00:42:21.183
+CHP221: So what are some steps for for this process.
+
+
+270
+00:42:22.243 --> 00:42:33.002
+CHP221: So the main 1st thing is, don't trust the defaults. So regardless of what program you're using. The default settings are, gonna be bad.
+
+
+271
+00:42:33.253 --> 00:42:42.003
+CHP221: So there are different features of your data, your your figures that you can. You can control.
+
+
+272
+00:42:42.413 --> 00:42:48.993
+CHP221: And you know this is my personal opinion about Matlab figures. The fonts often too small lines are too thin.
+
+
+273
+00:42:49.759 --> 00:42:57.583
+CHP221: And so what we're gonna do is is try to, you know, get comfortable specifying the settings of our figure using using code.
+
+
+274
+00:42:58.883 --> 00:43:04.103
+CHP221: So we're gonna move back to Matlab. And we're gonna run this script called show the data.
+
+
+275
+00:43:04.913 --> 00:43:08.893
+CHP221: So let's go back to our Matlab editor.
+
+
+276
+00:43:15.123 --> 00:43:22.233
+CHP221: Alright. So we're gonna use the exact same data set. Because we simple
+
+
+277
+00:43:22.673 --> 00:43:25.442
+CHP221: and we're gonna do a couple of things here.
+
+
+278
+00:43:25.703 --> 00:43:27.302
+CHP221: So first, st we're gonna sort of.
+
+
+279
+00:43:27.513 --> 00:43:31.363
+CHP221: I'm gonna reiterate the 1st point I made with this data set in a slightly different way.
+
+
+280
+00:43:32.283 --> 00:43:44.902
+CHP221: So we're going to create a figure that has 2 panels. And the 1st panel is going to be a bar plot of the Y values in each data set. And so we might call this error bar plot. We're going to have some error bars.
+
+
+281
+00:43:45.213 --> 00:43:46.645
+CHP221: And then the second
+
+
+282
+00:43:47.283 --> 00:43:53.242
+CHP221: figure or panel is going to be what's called a dot plot, where we show the medians of each data set.
+
+
+283
+00:43:54.393 --> 00:43:57.712
+CHP221: So there's a lot of code that's commented out because we're going to come back to that.
+
+
+284
+00:43:58.793 --> 00:44:05.962
+CHP221: So now if I just create a bar plot with error bars and a dot plot in Matlab. So if you just press run
+
+
+285
+00:44:06.440 --> 00:44:11.082
+CHP221: this is going to generate a figure with all of the Matlab defaults.
+
+
+286
+00:44:12.803 --> 00:44:14.763
+CHP221: And for me this is what it looks like.
+
+
+287
+00:44:17.973 --> 00:44:23.082
+CHP221: This is horrible right? This is a very. This is like a hideous figure.
+
+
+288
+00:44:25.753 --> 00:44:30.173
+CHP221: You would hopefully not see this in most of the papers that that you read.
+
+
+289
+00:44:30.453 --> 00:44:32.972
+CHP221: But if you don't do anything else. This is the baseline.
+
+
+290
+00:44:33.773 --> 00:44:48.403
+CHP221: When I was a grad student, what I would do is take a figure like this. I would export it to illustrator. I would resize the, you know, axes. I would change all the colors. I'd add some labels. It was very tedious.
+
+
+291
+00:44:49.263 --> 00:44:51.422
+CHP221: I think a lot of people still do that.
+
+
+292
+00:44:51.893 --> 00:44:59.983
+CHP221: And that was because I, at the time I had no idea how to modify these things. What I'll say is, you know programmatically right writing code to set everything that I that I want.
+
+
+293
+00:45:02.053 --> 00:45:02.883
+CHP221: So
+
+
+294
+00:45:04.663 --> 00:45:22.903
+CHP221: yeah. So the the take home point of this figure, right is again, if I take that same data set, I do a bar plot with error bars. It looks like all my data sets are the same. But if I do a dot plot right? I can see that the spread. The data are spread in very different ways. Some data sets have outliers and so on.
+
+
+295
+00:45:25.383 --> 00:45:29.573
+CHP221: So what are some of the principles that we want to consider when we're making figures?
+
+
+296
+00:45:30.323 --> 00:45:33.923
+CHP221: So I'm gonna go back to map to our Powerpoint here.
+
+
+297
+00:45:34.663 --> 00:45:40.443
+CHP221: See how we're doing on times 30 think we're running time.
+
+
+298
+00:45:41.843 --> 00:45:45.839
+CHP221: Alright? So these are 8 steps that this is just what I
+
+
+299
+00:45:46.323 --> 00:45:52.043
+CHP221: this is not gospel. These are just 8 steps that I use, and you can replace Matlab with, you know
+
+
+300
+00:45:52.173 --> 00:45:56.202
+CHP221: R, or Python, or whatever your tool of choice is.
+
+
+301
+00:45:57.546 --> 00:46:05.112
+CHP221: But one of the things that I think is always important when you start making figures is having, you know, systematic process.
+
+
+302
+00:46:05.673 --> 00:46:10.852
+CHP221: So we'll talk about each of these 8 steps, and hopefully everybody learns at least
+
+
+303
+00:46:11.053 --> 00:46:13.103
+CHP221: one thing that might be useful.
+
+
+304
+00:46:14.503 --> 00:46:20.173
+CHP221: So the 1st thing is, of course, you wanna always want to determine why you're making a figure.
+
+
+305
+00:46:20.523 --> 00:46:38.083
+CHP221: So people in my lab will know. So I use slack a lot in the lab. One of my favorite things is that people send me data. I almost always just stop what I'm doing. And I look at the data because it's really exciting. But what I what I don't like is if somebody just says, here's the, here's the data, right?
+
+
+306
+00:46:38.243 --> 00:46:46.903
+CHP221: And so what you always want to do when you're sharing data is to say what was the goal. Right? You share your data. And what did you interpret?
+
+
+307
+00:46:47.663 --> 00:46:48.493
+CHP221: So?
+
+
+308
+00:46:49.523 --> 00:46:56.242
+CHP221: so you always want to think about what? Before I make a figure? What is the the point? What am I trying to communicate to my my audience?
+
+
+309
+00:46:56.723 --> 00:47:05.843
+CHP221: And this could be any number of the things that we've discussed already descriptive statistics, associations, inferential statistics.
+
+
+310
+00:47:07.538 --> 00:47:22.313
+CHP221: The way I think about data visualization is that we want to make a figure when you know an illustration is a better way to convey a piece of information than text. So sometimes text is sufficient. Other times you need to visually convey.
+
+
+311
+00:47:24.260 --> 00:47:32.013
+CHP221: I like to do a lot of sketching. So I like to think about how I expect the data to look before I make a figure.
+
+
+312
+00:47:32.143 --> 00:47:40.382
+CHP221: So these are just some, you know, hand drawn sketches where I can think about different ways to illustrate a set of data.
+
+
+313
+00:47:41.173 --> 00:47:46.383
+CHP221: So at the top I have a histogram with a probability, density or distribution.
+
+
+314
+00:47:46.970 --> 00:47:52.402
+CHP221: The bottom. 3 examples. I think these are most relevant. For right now.
+
+
+315
+00:47:52.983 --> 00:48:02.172
+CHP221: right? So we in the figure we just generated in Matlab. We can have the same data set where we can visualize it as a bar bar plot with error bars
+
+
+316
+00:48:02.283 --> 00:48:03.623
+CHP221: or a dot plot.
+
+
+317
+00:48:04.543 --> 00:48:14.653
+CHP221: And you're, I think people's intuitive understanding of the data differs. You know, wildly based on how the the variability of the data is is illustrated.
+
+
+318
+00:48:16.893 --> 00:48:23.453
+CHP221: So then, once you have an idea of what you would like to show. You then move on to selecting an appropriate function.
+
+
+319
+00:48:24.363 --> 00:48:35.263
+CHP221: So one thing I like to tell people is that if you can think about a way to visualize data again, I historically, primarily use Matlab. But the same is true for most other languages.
+
+
+320
+00:48:35.363 --> 00:48:38.792
+CHP221: There's probably a way to create that figure in Matlab.
+
+
+321
+00:48:39.813 --> 00:48:56.352
+CHP221: So here's just a subset of functions that you might use for data visualization in Matlab. I highly encourage people to look at the Matlab help for all these functions, so that you know what the what kinds of characteristics or or features you can change.
+
+
+322
+00:48:57.453 --> 00:49:10.313
+CHP221: And then, finally, you know, Matlab has what's called the file exchange, and this is a place where people will create custom bits of code from everything, from data, visualization to machine learning.
+
+
+323
+00:49:10.643 --> 00:49:14.263
+CHP221: They'll share that code with other users.
+
+
+324
+00:49:14.463 --> 00:49:20.723
+CHP221: And so you can often find useful functions there, useful scripts that someone else has has created.
+
+
+325
+00:49:22.053 --> 00:49:30.932
+CHP221: If you yourself create scripts that you think might be useful for other people highly recommend, you know, sharing them on the file, exchange or or other places.
+
+
+326
+00:49:33.893 --> 00:49:40.563
+CHP221: Alright. So now you know what what function you want to use. The next thing is, of course, to create your your figure.
+
+
+327
+00:49:41.633 --> 00:49:50.802
+CHP221: the key thing that happens. I think when most people start making figures is you use, you know, plot or scatter, or whatever. And then you show someone the data.
+
+
+328
+00:49:51.224 --> 00:49:55.723
+CHP221: But hopefully, most of you have already had this drilled into your heads. But
+
+
+329
+00:49:56.033 --> 00:50:00.402
+CHP221: you always want to add informative access labels
+
+
+330
+00:50:00.583 --> 00:50:11.923
+CHP221: ideally, you know, using full words and units, so that people know what you're showing on on each value, each axis, and they can interpret the numerical values.
+
+
+331
+00:50:13.333 --> 00:50:31.602
+CHP221: You can even do things in Matlab like, add text to your figures. I've written code like, if I want to compare, it shows statistical significance. You can just write code that draws lines to do your little statistical significance indication and add your your asterisk, or whatever
+
+
+332
+00:50:31.883 --> 00:50:33.572
+CHP221: character you'd like.
+
+
+333
+00:50:35.053 --> 00:50:44.532
+CHP221: So some basic functions that we're gonna use are, you know, labeling our axes. Maybe adding legends. Text is the one that you use to generate text on your figure.
+
+
+334
+00:50:47.603 --> 00:50:58.803
+CHP221: So once you generate your figure and the data are illustrated appropriately, and you have your things labeled. Next is the part where you can start to get a lot more control.
+
+
+335
+00:50:59.673 --> 00:51:02.332
+CHP221: So here's some things that I will often do.
+
+
+336
+00:51:03.923 --> 00:51:13.122
+CHP221: again. When I was a Phd. Student I would generate figures in Matlab, often use the default, or sort of like manually adjust things.
+
+
+337
+00:51:13.773 --> 00:51:18.813
+CHP221: and I would export it, manipulate it in illustrator, and then submit it to the journal.
+
+
+338
+00:51:19.263 --> 00:51:23.612
+CHP221: And there were a couple of times where once my! The proofs came back for my paper
+
+
+339
+00:51:23.943 --> 00:51:32.302
+CHP221: often. The figure was, you know, unreasonably large, right? It's like, Why, why is this figure so big on this journal page this, this looks silly.
+
+
+340
+00:51:32.773 --> 00:51:41.432
+CHP221: And it's because the actual image file that I submitted was was large. I didn't have a good sense of how to scale. My, my illustrations.
+
+
+341
+00:51:42.503 --> 00:51:59.623
+CHP221: So one of the things that I like to do in Matlab and I'll show you how to do this in code shortly is, decide. Okay, if I want to publish this figure, do I want it to be one column wide, one and a half columns or 2 columns in a typical 2 column journal format.
+
+
+342
+00:52:00.633 --> 00:52:10.582
+CHP221: So you can get these dimensions from many different journals. But once you know how large you want your figure to be in print. You can set those parameters in your code.
+
+
+343
+00:52:11.903 --> 00:52:23.323
+CHP221: And so, you know, I'll do things like specify font sizes, marker types, all sorts of things that I used to do manually in illustrator. And just put it in the code.
+
+
+344
+00:52:24.503 --> 00:52:34.643
+CHP221: One of the reasons why this is really helpful is because, for you know, we often will work hard on data analysis, making the figure submitting it to a journal.
+
+
+345
+00:52:34.763 --> 00:52:44.703
+CHP221: But then, if my reviewers ask me to redo some of the analysis and generate a new figure. I don't want to go through the process of manually having to add these features in a separate program.
+
+
+346
+00:52:46.993 --> 00:52:55.692
+CHP221: Alright. So then finally, what we're gonna do is export and save our figure. So of course, give it some informative name, not, you know. Fig. One, fig. 2
+
+
+347
+00:52:56.593 --> 00:53:01.113
+CHP221: and I will often export multiple versions of the figure. So
+
+
+348
+00:53:01.413 --> 00:53:06.742
+CHP221: you know, I'll save this sort of Matlab version in case I want to edit it later in Matlab.
+
+
+349
+00:53:06.933 --> 00:53:09.123
+CHP221: I'll export a Pdf.
+
+
+350
+00:53:09.593 --> 00:53:16.163
+CHP221: both because, you know, if you need to annotate it in another program. Pdfs are easy to work with.
+
+
+351
+00:53:16.633 --> 00:53:18.853
+CHP221: and then sometimes I just use the Pdf
+
+
+352
+00:53:19.251 --> 00:53:24.723
+CHP221: you know, sort of screen, capture the image in some way, and use and export that for a presentation.
+
+
+353
+00:53:25.633 --> 00:53:39.923
+CHP221: and then finally, some journals require. You know, image specific files. So tiff files are the the highest one of the highest resolution image types that you can use for for journals.
+
+
+354
+00:53:42.083 --> 00:53:49.623
+CHP221: Alright. So now, let's work through an example. So we're gonna go back to our script to show the data in Matlab
+
+
+355
+00:53:51.213 --> 00:53:52.662
+CHP221: click over here.
+
+
+356
+00:53:55.503 --> 00:54:00.043
+CHP221: So now we're gonna you know, uncover some of these these features.
+
+
+357
+00:54:00.923 --> 00:54:10.533
+CHP221: So on lines 11 through 17, he, the this is an example of me specifying the features of our bar plot.
+
+
+358
+00:54:10.893 --> 00:54:17.613
+CHP221: So one thing that you may or may not have noticed. So when I use each of these pot functions.
+
+
+359
+00:54:17.833 --> 00:54:21.083
+CHP221: I'm actually assigning a variable
+
+
+360
+00:54:21.423 --> 00:54:26.263
+CHP221: assigning the plot to a variable. So I have D for my error, bar B for bar.
+
+
+361
+00:54:27.673 --> 00:54:35.653
+CHP221: The reason I do that is because then I can use the Matlab function set to specify the parameters of those figures.
+
+
+362
+00:54:36.163 --> 00:54:46.433
+CHP221: So for my bar graph, you know, the bar has both of what we call face color. That's the main color as well as an edge color, which is the outside line with
+
+
+363
+00:54:47.083 --> 00:54:51.763
+CHP221: many different properties. Same thing for the error bar. I can specify some of those properties.
+
+
+364
+00:54:53.073 --> 00:55:02.662
+CHP221: I then specify the you know X and Y limits add some labels, specify my X labels.
+
+
+365
+00:55:03.233 --> 00:55:05.962
+CHP221: Remove the box from the outside of the figure.
+
+
+366
+00:55:06.843 --> 00:55:15.352
+CHP221: So what I'm gonna do is highlight lines 11 through 17. And I'm just gonna uncomment those. So I can right click
+
+
+367
+00:55:15.523 --> 00:55:20.803
+CHP221: and uncomment, or I can do control shift r, or
+
+
+368
+00:55:21.223 --> 00:55:23.342
+CHP221: the comparable thing on a on a Mac.
+
+
+369
+00:55:27.213 --> 00:55:31.762
+CHP221: So again, I just removed the commenting from Lines 11 through 17.
+
+
+370
+00:55:34.353 --> 00:55:42.272
+CHP221: So just as a reminder, you know, this is our original figure. So this is the one we're gonna try to make what I'm gonna call publication ready.
+
+
+371
+00:55:44.383 --> 00:55:58.292
+CHP221: So for our dot plot. By default, right? Our dots are. I think they're different colors, or the lines are different. Color. No, the lines from a Medians are different colors. It's hard to see those lines.
+
+
+372
+00:55:58.846 --> 00:56:04.772
+CHP221: The range of my axes is very different from figure one to panel 2.
+
+
+373
+00:56:05.103 --> 00:56:06.922
+CHP221: So let's try to make this a little nicer.
+
+
+374
+00:56:08.333 --> 00:56:13.073
+CHP221: So now I'm gonna uncomment lines 25 through 29.
+
+
+375
+00:56:15.923 --> 00:56:22.093
+CHP221: So again, for my Doc plot. Now I like to specify the the line width for each of those points.
+
+
+376
+00:56:22.543 --> 00:56:30.032
+CHP221: I like to have, you know, black outline with a gray face. I think it looks a little better, a little better.
+
+
+377
+00:56:30.943 --> 00:56:36.963
+CHP221: And then I'm gonna specify for my axis how thick the lines are for the axis and add some some labels.
+
+
+378
+00:56:42.833 --> 00:56:52.492
+CHP221: So finally, what I'm gonna do is set the figure dimensions for for publication. So again, I I these are the numbers that I often will will use.
+
+
+379
+00:56:53.243 --> 00:57:00.363
+CHP221: So I've decided that I want this figure because it has 2 panels. I want it to be one and a half columns in the paper, so I'll have the
+
+
+380
+00:57:00.783 --> 00:57:05.123
+CHP221: in the paper. The figure is one and a half columns, and maybe my legend is to the right thing.
+
+
+381
+00:57:06.773 --> 00:57:11.153
+CHP221: So I'm gonna uncomment lines 33, through 38.
+
+
+382
+00:57:13.533 --> 00:57:17.403
+CHP221: So here's where I specify my width. So this is in centimeters.
+
+
+383
+00:57:18.303 --> 00:57:20.832
+CHP221: I then use set again
+
+
+384
+00:57:22.453 --> 00:57:31.402
+CHP221: the. So now when I use set instead of you know, feeding it, the name of my figure I had S up here I had E and B.
+
+
+385
+00:57:32.363 --> 00:57:34.532
+CHP221: I use something called Gcf.
+
+
+386
+00:57:34.813 --> 00:57:43.653
+CHP221: and this basically, this stands for get current figure. So it says, Okay, whatever figure is open, set its units to centimeters.
+
+
+387
+00:57:44.543 --> 00:57:49.313
+CHP221: And then the position property of this figure is where I'm going to specify the size of the figure.
+
+
+388
+00:57:50.973 --> 00:57:54.572
+CHP221: And then, finally, I'm going to save it as a fig file and a and a Pdf.
+
+
+389
+00:57:57.293 --> 00:58:01.882
+CHP221: so now you should be able to run this code again.
+
+
+390
+00:58:04.183 --> 00:58:07.883
+CHP221: and we can compare them, you know, before and and after.
+
+
+391
+00:58:16.873 --> 00:58:26.242
+CHP221: So here's our before figure 2 for me. Here's our after figure 3.
+
+
+392
+00:58:27.333 --> 00:58:32.716
+CHP221: So now I have nice labels on my X axis for each of my my groups.
+
+
+393
+00:58:33.163 --> 00:58:40.712
+CHP221: the font size seems appropriate for this. The scale of the figure. I've cleaned up my bar graphs made things gray, scale
+
+
+394
+00:58:40.943 --> 00:58:43.453
+CHP221: and change the dimensions.
+
+
+395
+00:58:44.653 --> 00:58:50.712
+CHP221: So to get a better intuitive understanding of what it means to set the dimensions of the figure.
+
+
+396
+00:58:51.153 --> 00:58:57.193
+CHP221: If you go to your Matlab, command window.
+
+
+397
+00:58:59.463 --> 00:59:04.772
+CHP221: if you go to your current folder. Hopefully, you have this current folder sub window visible.
+
+
+398
+00:59:05.023 --> 00:59:06.582
+CHP221: If not, it's okay.
+
+
+399
+00:59:06.713 --> 00:59:09.583
+CHP221: But we're gonna open the Pdf that we created.
+
+
+400
+00:59:12.163 --> 00:59:16.842
+CHP221: So I have a I think I saved it as, yes, show the data. Pdf.
+
+
+401
+00:59:18.683 --> 00:59:29.603
+CHP221: so for me, in in windows, I can just right click this file and choose open outside of Matlab, and that's going to use acrobat to open the figure.
+
+
+402
+00:59:33.773 --> 00:59:36.242
+CHP221: So it's opening now.
+
+
+403
+00:59:37.703 --> 00:59:44.193
+CHP221: And so now, when I look at my figure.
+
+
+404
+00:59:46.633 --> 00:59:49.838
+CHP221: Get my windows working properly. Whoops.
+
+
+405
+00:59:53.293 --> 00:59:53.963
+CHP221: Okay?
+
+
+406
+00:59:56.453 --> 00:59:59.842
+CHP221: So now in illustrator, right? I can see that this is.
+
+
+407
+01:00:00.083 --> 01:00:03.203
+CHP221: you know, an 8 and a half by 11 sheet of paper.
+
+
+408
+01:00:03.373 --> 01:00:09.362
+CHP221: And my figure, you know, this were in a journal, would be about one and a half columns.
+
+
+409
+01:00:10.923 --> 01:00:13.973
+CHP221: And it looks, you know, clean and appropriately sized.
+
+
+410
+01:00:16.333 --> 01:00:26.403
+CHP221: Okay, so that wraps up our sort of second part of today's workshop. So any questions, comments.
+
+
+411
+01:00:26.513 --> 01:00:28.208
+CHP221: things that you
+
+
+412
+01:00:29.263 --> 01:00:32.813
+CHP221: you know, things that you like to do when you when you when you generate figures.
+
+
+413
+01:00:34.273 --> 01:00:35.103
+CHP221: Minute.
+
+
+414
+01:00:41.503 --> 01:00:42.203
+CHP221: Okay?
+
+
+415
+01:00:43.413 --> 01:00:51.670
+CHP221: So saving Jpg would lose like quality of the image. So you know a Jpeg is an image. So
+
+
+416
+01:00:52.333 --> 01:01:04.483
+CHP221: you know, when you generate an image. The you know a Jpeg is what's called a compressed image. So it's it's a smaller file size than a a tiff file. So a tiff file has more information.
+
+
+417
+01:01:04.883 --> 01:01:06.272
+CHP221: These are things that are
+
+
+418
+01:01:06.633 --> 01:01:17.522
+CHP221: often most important when you have very detailed images like photos. And things doesn't matter as much for like line graphs. But yeah, I just have
+
+
+419
+01:01:17.673 --> 01:01:20.692
+CHP221: personally choose to say anything in the higher resolution.
+
+
+420
+01:01:22.993 --> 01:01:31.693
+Victoria Wood: Do you still move this over to Illustrator or Powerpoint, or something to add in like a sub panel, like A and B labels.
+
+
+421
+01:01:32.393 --> 01:01:37.612
+CHP221: Great question. My I basically got to the point where I
+
+
+422
+01:01:37.983 --> 01:01:40.382
+CHP221: force myself to try to do everything in my lab.
+
+
+423
+01:01:40.563 --> 01:01:55.872
+CHP221: And it turns out that you can also add, you know, using the text command in Matlab, you can add, let me see if I can have my cursor. Let's say, I want to add B here, right and and A here, you can just use the text command in Matlab.
+
+
+424
+01:01:56.223 --> 01:02:03.752
+CHP221: And so the way that text command works that you feed it, the X and Y values of where you want your text to be.
+
+
+425
+01:02:04.433 --> 01:02:06.292
+CHP221: And so if I wanted to be sort of
+
+
+426
+01:02:06.463 --> 01:02:18.753
+CHP221: to the top left of this panel. My X value is going to be negative, right? So it's you know, 0 is here. So it's gonna be like negative one. My Y value might be 14.
+
+
+427
+01:02:20.633 --> 01:02:29.383
+CHP221: So and you can. You know, I've written code. That sort of like normalizes the position based on the range of the Y axis and stuff like that. So
+
+
+428
+01:02:29.833 --> 01:02:37.502
+CHP221: you, I'm basically convinced that almost everything we would normally do in illustrator. You could just write code to do that.
+
+
+429
+01:02:41.473 --> 01:02:44.223
+Victoria Wood: Thanks. Other questions, though.
+
+
+430
+01:02:46.923 --> 01:02:52.113
+CHP221: Alright. So let's move to the final part of today's workshop.
+
+
+431
+01:02:52.493 --> 01:03:06.572
+CHP221: So we're going to go back to statistics. So a lot of what we've been talking about so far is really related to descriptive statistics. So thinking about what we compute, how that relates to what we, what we see, and making sure those things are
+
+
+432
+01:03:06.753 --> 01:03:11.512
+CHP221: either consistent, or at least that we're making the proper proper interpretation.
+
+
+433
+01:03:12.533 --> 01:03:20.363
+CHP221: So now we're going to talk a little bit about inferential statistics. So so what happens when we actually want to do hypothesis testing?
+
+
+434
+01:03:20.803 --> 01:03:28.903
+CHP221: Now again, this could be a whole course. So, figuring out exactly what I wanted to share today is a bit of a challenge. So I'm gonna focus really on on
+
+
+435
+01:03:29.473 --> 01:03:36.412
+CHP221: kind of one major issue and and place of confusion that at least I had for many, many years.
+
+
+436
+01:03:37.613 --> 01:03:40.693
+CHP221: And that's the end game. So what are we actually trying to do?
+
+
+437
+01:03:41.153 --> 01:03:48.022
+CHP221: So? This is a, you know a figure that illustrates the idea of a data analysis pipeline.
+
+
+438
+01:03:48.473 --> 01:03:49.583
+CHP221: So we.
+
+
+439
+01:03:49.973 --> 01:04:01.123
+CHP221: you know, we start with some experimental design. We then collect data. We get raw data process it, we fit some statistical model. And then finally, at the end of the day, we get a P value.
+
+
+440
+01:04:01.413 --> 01:04:08.112
+CHP221: And so for a lot of us. You know, whole fields, individual people.
+
+
+441
+01:04:08.553 --> 01:04:11.733
+CHP221: We sort of live and die by by the p-value.
+
+
+442
+01:04:11.933 --> 01:04:24.132
+CHP221: And if P. Is we talked about this yesterday, right. If P. Is point o. 5 1 we like have a breakdown. If P. Is point O. 4 9, we're, you know, as happy as can be right? So that's.
+
+
+443
+01:04:24.413 --> 01:04:26.413
+CHP221: you know a lot how a lot of science
+
+
+444
+01:04:27.192 --> 01:04:38.332
+CHP221: for people work. And so we'll talk a little bit about like, what are we even doing? What is, what is the p-value? How do we? How should we really be thinking about this? And and what's maybe an alternative to to the norm?
+
+
+445
+01:04:39.493 --> 01:04:42.004
+CHP221: So the thing that really got me
+
+
+446
+01:04:42.763 --> 01:04:52.752
+CHP221: thinking about this issue more deeply, like a lot of people in science, is this paper that came out in 2015, which is called estimating the reproducibility of psychological science.
+
+
+447
+01:04:53.223 --> 01:04:56.713
+CHP221: This is basically a large group of people in psychology.
+
+
+448
+01:04:56.933 --> 01:05:17.343
+CHP221: that what they did was essentially they chose a range of studies that were published in prominent psychology journals, and they tried to reproduce the effects. So they worked with the original authors. They got the original study materials, and they just reran the study in a new sample. And they did this for many different studies.
+
+
+449
+01:05:18.402 --> 01:05:28.433
+CHP221: So the most striking figure from this paper is that if you look at the p-values for the original studies, so that's on the left here.
+
+
+450
+01:05:28.862 --> 01:05:33.532
+CHP221: this horizontal dash line is P is point 0 5.
+
+
+451
+01:05:34.283 --> 01:05:40.983
+CHP221: So, unsurprisingly, almost every study that was published had a p-value of less than 0 point 0 5.
+
+
+452
+01:05:41.793 --> 01:05:46.692
+CHP221: However, in the replications you see a much wider distribution of p-values.
+
+
+453
+01:05:47.453 --> 01:05:51.323
+CHP221: So this white.is the median p value.
+
+
+454
+01:05:51.543 --> 01:06:06.202
+CHP221: So over half the studies had a p-value of above like point 2 in replication, and only a very small percentage of those studies would what we would say replicated in the sense that there was a P. Less than 0 point 0 5.
+
+
+455
+01:06:07.403 --> 01:06:12.782
+CHP221: So this paper is in the folder that we shared today highly recommend everybody.
+
+
+456
+01:06:14.353 --> 01:06:36.243
+CHP221: So if we have time, we can really, we can get into sort of what the problem is here, but at a high level. There are several factors that dictate. You know, whether we choose to publish how stringent we are in evaluating the rigor of our results. And this has major implications. For whether our results generalize to the real world.
+
+
+457
+01:06:37.333 --> 01:06:44.013
+CHP221: So we're gonna do is one of my favorite things to do is to, you know, build some intuition about P values.
+
+
+458
+01:06:44.803 --> 01:06:52.253
+CHP221: So first, st the definition, everybody who takes statistics probably gets this definition at some time.
+
+
+459
+01:06:52.733 --> 01:06:58.422
+CHP221: So our P value, which we often call significance level, is a probability.
+
+
+460
+01:06:58.853 --> 01:07:00.193
+CHP221: And so.
+
+
+461
+01:07:01.143 --> 01:07:12.613
+CHP221: you know, I can read it here even just reading. It never sounds very helpful. The probability of rejecting the null hypothesis when the null hypothesis is true. Right? That's really wordy like. What are we even talking about here.
+
+
+462
+01:07:13.343 --> 01:07:23.483
+CHP221: It's also confusing, because people will say, Oh, this is related to our your false, positive rate or your type. One error so additional jargon that's really confused. This is before you even do any statistics.
+
+
+463
+01:07:24.753 --> 01:07:34.872
+CHP221: So first, st we need to think about okay, what is a null hypothesis. So the the fundamental idea when we talk about P values is that the null hypothesis is true.
+
+
+464
+01:07:37.233 --> 01:07:41.383
+CHP221: So here's an example. Right? So let's say, I'm I'm a sports biomechan biomechanist.
+
+
+465
+01:07:41.533 --> 01:07:44.482
+CHP221: and I'm interested in sports, in in hamstrings injury.
+
+
+466
+01:07:45.383 --> 01:07:50.362
+CHP221: Well, maybe I'm studying a set of distance runners or soccer players.
+
+
+467
+01:07:50.593 --> 01:08:01.313
+CHP221: and I'm interested in whether the total distance people run each week is associated with the, you know, frequency or severity of hamstring injuries.
+
+
+468
+01:08:02.253 --> 01:08:09.152
+CHP221: So my null might be that there's no relationship right? So the weekly running distance is not associated with hamstring strength.
+
+
+469
+01:08:10.103 --> 01:08:13.793
+CHP221: So it's a little counterintuitive, because we never. We often just like we don't.
+
+
+470
+01:08:13.893 --> 01:08:20.932
+CHP221: Sometimes we don't express a null hypothesis, or we just don't believe we go into a study believing that the null hypothesis is false.
+
+
+471
+01:08:22.543 --> 01:08:29.472
+CHP221: So now what we're gonna do is is take some time to understand a p-value. So we're gonna use a simulation to 1st
+
+
+472
+01:08:29.893 --> 01:08:32.822
+CHP221: create a case where our null hypothesis is true.
+
+
+473
+01:08:33.193 --> 01:08:37.393
+CHP221: Then we're going to run a bunch of simulations
+
+
+474
+01:08:37.563 --> 01:08:43.302
+CHP221: where we see how often we're going to reject null hypothesis.
+
+
+475
+01:08:44.863 --> 01:08:54.062
+CHP221: So rejecting the null hypothesis, right? We when we say P is less than 0 point 0 5 for most people. That's sufficient information to reject the null hypothesis.
+
+
+476
+01:08:55.773 --> 01:09:00.522
+CHP221: So let's see what happens if we do. You know many studies where the null hypothesis is true.
+
+
+477
+01:09:02.133 --> 01:09:07.563
+CHP221: So let's unopen this script. Understanding key values.
+
+
+478
+01:09:18.243 --> 01:09:20.733
+CHP221: Alright. So lots of introduction here. So
+
+
+479
+01:09:22.153 --> 01:09:25.553
+CHP221: we're gonna create a sort of synthetic experiment.
+
+
+480
+01:09:26.673 --> 01:09:42.602
+CHP221: So let's imagine that we are again, we're sports biomechanist. And we were doing an experiment where we want to test the effects of this supplement. We want to see how well this supplement increases. Long jump performance. In Olympic male athletes we have population, we have an intervention.
+
+
+481
+01:09:43.053 --> 01:09:50.962
+CHP221: So what's our magic supplement is water. So our supplement is going to be one ounce of plain tap water.
+
+
+482
+01:09:51.333 --> 01:09:59.093
+CHP221: So we're going to have 2 groups right? A control group that doesn't take the supplement, an intervention group that drinks an ounce of water.
+
+
+483
+01:09:59.273 --> 01:10:03.833
+CHP221: and we want to see, you know, if their long jump performance differs.
+
+
+484
+01:10:04.313 --> 01:10:08.923
+CHP221: And so this is setting up an idea where, like, in this case, the null hypothesis
+
+
+485
+01:10:09.113 --> 01:10:15.172
+CHP221: basically has to be true. There's no way that drinking an ounce of water is going to affect your long jump performance.
+
+
+486
+01:10:16.883 --> 01:10:28.332
+CHP221: So now let's think about what happens if we run many, many experiments where you know, let's say, 1,000 different labs ran an experiment to test this hypothesis.
+
+
+487
+01:10:30.413 --> 01:10:39.613
+CHP221: So the key idea here is that we have a population right? This is all of our male Olympic long jumpers.
+
+
+488
+01:10:40.876 --> 01:10:44.313
+CHP221: We're gonna specify some parameters of our population. So the
+
+
+489
+01:10:44.493 --> 01:10:53.113
+CHP221: you know, in our control population, the average long jump is going to be 8 meters plus or minus, you know, 20 cm
+
+
+490
+01:10:54.113 --> 01:11:01.253
+CHP221: in our test group that drinks one ounce of water. Same thing should be true right? There's we know that there's no effect. So this is our population.
+
+
+491
+01:11:03.013 --> 01:11:09.082
+CHP221: Now, what we're going to do in simulation, we're going to sample from that population right? This is what we do in an experiment.
+
+
+492
+01:11:09.703 --> 01:11:16.422
+CHP221: So I'm just arbitrarily setting the sample size at 100. So we're going to take 100 people from each of these populations.
+
+
+493
+01:11:18.033 --> 01:11:21.023
+CHP221: And then we're gonna simulate an experiment.
+
+
+494
+01:11:22.403 --> 01:11:32.452
+CHP221: So we don't have a lot of time here. But basically, if I want to sample from a population, and I know the the mean and the very and the standard deviation of that population.
+
+
+495
+01:11:33.033 --> 01:11:37.453
+CHP221: This is basically all I need to do in simulation.
+
+
+496
+01:11:37.713 --> 01:11:47.552
+CHP221: So I am going to generate some random numbers that set of random numbers. So it has the same number of values as our sample size.
+
+
+497
+01:11:48.173 --> 01:12:00.462
+CHP221: going to multiply all those random numbers by the standard deviation of our population. And I'm going to add the mean. So it's going to give me a data, a data set that looks like it's sampled from the population.
+
+
+498
+01:12:01.953 --> 01:12:05.123
+CHP221: And so I have a control group and a test group.
+
+
+499
+01:12:06.393 --> 01:12:15.783
+CHP221: So this is just going to give me the long jump distances. For in this case 100 control participants and 100 test participants.
+
+
+500
+01:12:17.533 --> 01:12:24.682
+CHP221: Then what I'm going to do is run a T test. So I'm just going to compare the average long jump distance between the control and test group.
+
+
+501
+01:12:26.773 --> 01:12:37.623
+CHP221: So now, if I know that the null hypothesis is true, then I should. My, my, essentially all of my p-values, you might expect would be greater than 0 point 0 5.
+
+
+502
+01:12:39.333 --> 01:12:44.023
+CHP221: So let's see what we get when we do this. Okay? So we're going to run.
+
+
+503
+01:12:45.303 --> 01:12:47.372
+CHP221: First, st we're going to start with just one experiment.
+
+
+504
+01:12:47.563 --> 01:12:49.953
+CHP221: Okay? So let's run, press, run here.
+
+
+505
+01:12:54.053 --> 01:12:57.853
+CHP221: So I think a couple of figures should pop up, maybe just one
+
+
+506
+01:12:59.183 --> 01:13:05.252
+CHP221: This figure doesn't make a lot of sense right now, because we only have one experiment. But what we can do is we can
+
+
+507
+01:13:05.633 --> 01:13:08.783
+CHP221: get our P. Value for this one experiment.
+
+
+508
+01:13:08.883 --> 01:13:17.572
+CHP221: So if I go to my main Matlab window, I scroll down to P.
+
+
+509
+01:13:18.383 --> 01:13:27.443
+CHP221: So P. Is for me is point 1 8. So, in other words, I run this simulated experiment, and I don't reject the null hypothesis.
+
+
+510
+01:13:28.523 --> 01:13:32.872
+CHP221: So my experiment is actually consistent with, with reality, with with the population.
+
+
+511
+01:13:35.933 --> 01:13:40.802
+CHP221: Now let's do this instead of just doing one experiment, let's do 1,000 experiments.
+
+
+512
+01:13:42.613 --> 01:13:46.653
+CHP221: So on line 25. I'm just going to change the warning to 1,000.
+
+
+513
+01:13:48.153 --> 01:13:52.783
+CHP221: And the key thing that we're going to see is of these 1,000 experiments.
+
+
+514
+01:13:53.143 --> 01:13:56.333
+CHP221: How many of them get P. Less than point O. 5.
+
+
+515
+01:13:57.463 --> 01:14:03.112
+CHP221: Does anybody have any guesses as to how many of the experiments will have? P. Less than 0 point 0 5.
+
+
+516
+01:14:03.563 --> 01:14:05.362
+CHP221: If you do, you can just drop it in the chat.
+
+
+517
+01:14:12.453 --> 01:14:15.243
+CHP221: So my hope is that after this
+
+
+518
+01:14:15.843 --> 01:14:18.922
+CHP221: everyone will have a much more intuitive sense of what p-values are.
+
+
+519
+01:14:20.323 --> 01:14:22.172
+CHP221: So if I press run
+
+
+520
+01:14:22.683 --> 01:14:25.653
+CHP221: I just ran a thousand experiments in, you know.
+
+
+521
+01:14:25.933 --> 01:14:29.232
+CHP221: 40 ms or the 200 ms.
+
+
+522
+01:14:29.883 --> 01:14:33.003
+CHP221: and I get a distribution of p-values.
+
+
+523
+01:14:35.023 --> 01:14:40.852
+CHP221: So I get P values between 0 and one, right? It's a probability. So we know that's the that's the range.
+
+
+524
+01:14:41.843 --> 01:14:43.893
+CHP221: This distribution is
+
+
+525
+01:14:44.263 --> 01:14:50.863
+CHP221: more or less what we would call a uniform. If I did. You know 1 million simulations, this would be flat.
+
+
+526
+01:14:51.753 --> 01:14:54.552
+CHP221: And so what do we know about a uniform distribution.
+
+
+527
+01:14:54.903 --> 01:15:02.192
+CHP221: We know that any value within this interval between 0 and one has an equal likelihood of happening.
+
+
+528
+01:15:03.633 --> 01:15:12.943
+CHP221: So we can't really see right. So you know these bars. This is from 0 to point. Oh, one. So we can't really see how many times P. Is less than point. Oh, 5.
+
+
+529
+01:15:15.693 --> 01:15:21.793
+CHP221: So at the very end of the code I have, there's a line of code that computes the false positive rate.
+
+
+530
+01:15:22.513 --> 01:15:33.362
+CHP221: So here, what we're going to do is we're going to from our 1,000 experiments. We're going to add up all the times that P is less than 0 point 0 5. So this would be. These are our false positives.
+
+
+531
+01:15:34.443 --> 01:15:38.922
+CHP221: We're gonna divide that by the number of experiments, and that's gonna be our false, positive rate.
+
+
+532
+01:15:42.083 --> 01:15:44.773
+CHP221: So if we go back here.
+
+
+533
+01:15:44.943 --> 01:15:50.793
+CHP221: What we can see is our false positive rate is point 0 4 8. So basically point 0 5.
+
+
+534
+01:15:52.083 --> 01:15:54.712
+CHP221: So this is literally the p-value. Right.
+
+
+535
+01:15:55.283 --> 01:16:01.412
+CHP221: This is how frequently we reject the null hypothesis when the null hypothesis is true.
+
+
+536
+01:16:03.673 --> 01:16:08.083
+CHP221: So, in other words, and I'll maybe reiterate this at the end.
+
+
+537
+01:16:08.293 --> 01:16:15.852
+CHP221: The p-value tells you like, how surprising are your results, or how you know likely would you expect in a result to be that extreme?
+
+
+538
+01:16:17.173 --> 01:16:25.553
+CHP221: And this doesn't really tell you anything about how important or interesting your your results are. We'll talk about how to do that.
+
+
+539
+01:16:25.663 --> 01:16:33.723
+CHP221: shorten any general questions at this point.
+
+
+540
+01:16:40.733 --> 01:16:41.443
+CHP221: Alright.
+
+
+541
+01:16:42.273 --> 01:16:48.833
+CHP221: okay, so so we'll try to finish up here. Let's see if I want to cover the rest of it.
+
+
+542
+01:16:52.653 --> 01:16:56.603
+CHP221: Yeah. So the last point, that we'll cover today.
+
+
+543
+01:16:57.313 --> 01:17:03.333
+CHP221: And I'm gonna move over this quickly. And then we because I wanna make sure we have time for for discussion at the end.
+
+
+544
+01:17:04.783 --> 01:17:10.753
+CHP221: So when we're doing statistical inference. There are, you know, 2 other things that we're often very interested in.
+
+
+545
+01:17:11.223 --> 01:17:16.492
+CHP221: One is, how much data do we need? Right? This is the sample size question.
+
+
+546
+01:17:17.503 --> 01:17:24.963
+CHP221: Now, regardless, you know, in our 1st example, go back to the beginning.
+
+
+547
+01:17:26.073 --> 01:17:34.822
+CHP221: right? So when we're trying to infer something about a population. Our sample size refers to how many you know individuals do we do? We study?
+
+
+548
+01:17:36.073 --> 01:17:43.562
+CHP221: And there are several factors that might influence how many people or people were approved for a study. How many animals we test?
+
+
+549
+01:17:45.203 --> 01:18:00.103
+CHP221: The problem also happens if we're interested in an individual, right? So if I have, I'm interested in individual behavior. How many times do I need to measure that behavior? So I can be confident about whether this is a what I call it a trait of the person, something that's consistent.
+
+
+550
+01:18:00.343 --> 01:18:04.862
+CHP221: a state, something that might change with time or just noise.
+
+
+551
+01:18:11.043 --> 01:18:13.152
+CHP221: So let's see.
+
+
+552
+01:18:14.003 --> 01:18:14.703
+CHP221: Okay.
+
+
+553
+01:18:16.263 --> 01:18:23.013
+CHP221: so we won't. You do this example. In Matlab. I've just already kind of generated the results.
+
+
+554
+01:18:23.303 --> 01:18:28.402
+CHP221: One of the things that I think is is useful to play with. To get again, better. Statistical inference
+
+
+555
+01:18:28.613 --> 01:18:37.762
+CHP221: or intuition is in Matlab. There's a function that you can use to compute statistical power or sample size.
+
+
+556
+01:18:38.333 --> 01:18:40.962
+CHP221: And it's basically called sam sample size power.
+
+
+557
+01:18:42.453 --> 01:18:51.193
+CHP221: So if you'd like to compute the size, the number of people you need in a study, or the number of observations, there are a few things, pieces of information that you need.
+
+
+558
+01:18:52.443 --> 01:18:56.603
+CHP221: So first, st you need to specify the type of statistical test you're going to do.
+
+
+559
+01:18:57.416 --> 01:18:58.502
+CHP221: I'm stupid.
+
+
+560
+01:18:59.083 --> 01:19:04.302
+CHP221: This Matlab function is fairly limited to just a few different types of statistical tests.
+
+
+561
+01:19:05.723 --> 01:19:23.722
+CHP221: You then input what you expect to observe. If the null hypothesis is true. So this might be, you know the difference between 2 groups, or, for instance, the mean and standard deviation of some measurement in your control group.
+
+
+562
+01:19:25.033 --> 01:19:38.192
+CHP221: You then need information about the what we call the mean under the alternative. So if I'm doing an intervention, how large of a difference do I expect between my control group and my intervention group.
+
+
+563
+01:19:38.863 --> 01:19:41.733
+CHP221: Okay, so the difference in those means is what we
+
+
+564
+01:19:41.953 --> 01:19:44.663
+CHP221: referred to as a an effect size
+
+
+565
+01:19:45.873 --> 01:19:49.182
+CHP221: and then statistical power. So we won't have time to really
+
+
+566
+01:19:49.353 --> 01:19:52.833
+CHP221: get into this in detail. But this is another probability.
+
+
+567
+01:19:53.393 --> 01:19:56.843
+CHP221: So generally we want high probability, which, or high power.
+
+
+568
+01:19:57.113 --> 01:20:02.962
+CHP221: which means that if you know, if there is an effect, I want to be very certain that I can detect that that effect.
+
+
+569
+01:20:05.943 --> 01:20:06.677
+CHP221: So
+
+
+570
+01:20:07.813 --> 01:20:13.822
+CHP221: So what we, what I do here is is again. Do some sort of simulated example. Let's now imagine that I'm
+
+
+571
+01:20:14.043 --> 01:20:17.823
+CHP221: wanna compare the vertical jump height between 2 groups of students.
+
+
+572
+01:20:19.296 --> 01:20:28.343
+CHP221: I have pilot data for one group that says their average vertical height is, or jump is 50 plus or minus 4 cm.
+
+
+573
+01:20:30.113 --> 01:20:33.523
+CHP221: I then wanted to determine my sample size for a study.
+
+
+574
+01:20:34.463 --> 01:20:35.583
+CHP221: So
+
+
+575
+01:20:35.813 --> 01:20:43.952
+CHP221: you know, a key point here is that when you determine sample size, you, you have to say upfront how big of an effect you want to detect.
+
+
+576
+01:20:45.033 --> 01:20:53.843
+CHP221: And so this is illustrated right here. So so if I say a difference in height of 2 cm.
+
+
+577
+01:20:55.203 --> 01:20:57.473
+CHP221: so the key point. Here, at least.
+
+
+578
+01:20:57.703 --> 01:21:05.673
+CHP221: my perspective is that I'm upfront, dictating how big of a difference, I think, is is interesting or or important.
+
+
+579
+01:21:07.363 --> 01:21:12.313
+CHP221: And then in Matlab, I'm going to compute a sample size, and it comes out to be 34 individuals.
+
+
+580
+01:21:14.883 --> 01:21:25.753
+CHP221: So if you're not familiar with how these things relate specifically sample size and statistical power. That's what we're going to do on the on the next slide.
+
+
+581
+01:21:26.883 --> 01:21:30.873
+CHP221: So the key things we might want to ask or questions we might want to answer
+
+
+582
+01:21:31.173 --> 01:21:36.702
+CHP221: are, you know, if I want higher statistical power, how does my sample size change?
+
+
+583
+01:21:37.653 --> 01:21:42.023
+CHP221: Or if I want to detect large versus smaller differences between my groups.
+
+
+584
+01:21:44.523 --> 01:21:57.042
+CHP221: So again, you can just write code to do something like a simulation here, where, if I, you know, want higher statistical power, I want to be very certain that I can detect an effect
+
+
+585
+01:21:57.523 --> 01:22:00.232
+CHP221: that's moving from the left to right on the X-axis.
+
+
+586
+01:22:01.543 --> 01:22:02.313
+CHP221: Oops.
+
+
+587
+01:22:03.993 --> 01:22:08.283
+CHP221: Sorry the higher the power. I would like the bigger the sample I I need.
+
+
+588
+01:22:09.613 --> 01:22:10.903
+CHP221: Conversely.
+
+
+589
+01:22:11.003 --> 01:22:18.593
+CHP221: small samples are often what we call underpowered. You can't really be confident in your ability to detect true effects.
+
+
+590
+01:22:21.747 --> 01:22:30.033
+CHP221: Finally, if I think about the size of the effect that I care about, you get essentially this opposite relationship.
+
+
+591
+01:22:31.063 --> 01:22:38.003
+CHP221: so the larger the effect that I'm interested in detecting the smaller the sample size that I need.
+
+
+592
+01:22:39.523 --> 01:22:51.733
+CHP221: Conversely, if what I'm you know, if I'm studying an intervention, for example, and the effects are small. Then I need a lot of measurements to be able to detect that.
+
+
+593
+01:22:53.643 --> 01:23:02.933
+CHP221: So one of the, you know, take home points that I would, you know, generally like to make at this point is that you know, oftentimes we're very limited in our ability to collect large samples.
+
+
+594
+01:23:03.383 --> 01:23:11.063
+CHP221: and when that's true. If you have small samples, then what you would ideally like to do is to study things that are likely to have large effects.
+
+
+595
+01:23:13.063 --> 01:23:16.193
+CHP221: Maybe we'll have time to discuss how you might might do that
+
+
+596
+01:23:17.813 --> 01:23:20.452
+CHP221: alright. So what are our take home points.
+
+
+597
+01:23:21.473 --> 01:23:30.413
+CHP221: variability is your is what I call your your best frenemy. Right? You. You want variability when you're manipulating something and measuring the effects.
+
+
+598
+01:23:30.883 --> 01:23:36.333
+CHP221: However, you want to minimize these. What we call extraneous sources of variability.
+
+
+599
+01:23:37.323 --> 01:23:53.083
+CHP221: We're going to use data visualization to understand variability, and then the sources of variability, and to make sure that we are not misleading ourselves or others by how? By, you know, our descriptive or inferential statistics.
+
+
+600
+01:23:54.953 --> 01:24:13.642
+CHP221: The 3rd point here is that for at least personally, I don't feel like I really gained a good understanding of statistics until I started doing simulations. And I think this is one of the best tools you can use to understand these sometimes abstract concepts about probability
+
+
+601
+01:24:16.453 --> 01:24:31.893
+CHP221: last few points when we think about p-values. Right? You know, p-values are not the goal right? A p-value is essentially telling you how surprising your results are. And I said, this earlier right, the null hypothesis is true, and P is less than 0 point 0 5.
+
+
+602
+01:24:32.123 --> 01:24:37.342
+CHP221: Essentially, your conclusion is like, oh, these results are are surprising under that that assumption.
+
+
+603
+01:24:38.623 --> 01:24:46.182
+CHP221: But what we're really interested in this goes back to the beginning, where we all said, we're interested in understanding the world. Generating knowledge.
+
+
+604
+01:24:46.443 --> 01:24:57.283
+CHP221: What we really care about is, if we observe an effect in our, you know, study, sample, we really care about how important is that effect right?
+
+
+605
+01:24:58.713 --> 01:25:05.413
+CHP221: And the challenge is that statistically significant does not mean important.
+
+
+606
+01:25:06.063 --> 01:25:10.112
+CHP221: The terminology is a little bit, I think, problematic because
+
+
+607
+01:25:10.263 --> 01:25:18.373
+CHP221: significant in everyday language often means important. That is not true when we're thinking about statistics.
+
+
+608
+01:25:19.513 --> 01:25:24.573
+CHP221: And so the final point is, when we think about how we want to interpret our results.
+
+
+609
+01:25:24.733 --> 01:25:34.653
+CHP221: Really, the thing that I'm going to argue is most important is how large are the effects that we observe and how certain are we about these effect sizes.
+
+
+610
+01:25:35.143 --> 01:25:35.953
+CHP221: This is
+
+
+611
+01:25:36.223 --> 01:25:50.563
+CHP221: challenging for people sometimes because often we have to have some subjective assessment of how important something is right like how big of a coefficient, of a correlation coefficient is important. How large of a difference between groups is interesting.
+
+
+612
+01:25:51.043 --> 01:25:55.243
+CHP221: This is really the the core of of our our objective here.
+
+
+613
+01:25:56.703 --> 01:26:07.223
+CHP221: Alright. So with that, I'll wrap up. We have a few more minutes. Please, if you haven't signed in, please use the QR. Code to sign in, and then, please provide feedback at the link here.
+
+
+614
+01:26:08.343 --> 01:26:15.832
+CHP221: So we have 5 more minutes in case there are any points for discussion or questions that people might have.
+
+
+615
+01:26:16.393 --> 01:26:17.113
+CHP221: Hey?
+
+
+616
+01:26:20.683 --> 01:26:34.382
+CHP221: Dr. Finney. So for establishing that difference, it depends more like, what's your you defining your project, or you based on previous research, or what ways? Yeah, so so this question is about like, how do you determine
+
+
+617
+01:26:34.893 --> 01:26:37.463
+CHP221: how big of an effect is interesting? Right?
+
+
+618
+01:26:37.893 --> 01:26:43.883
+CHP221: So in the clinical world, right? They have people have what's called a minimally clinically important difference. So if
+
+
+619
+01:26:44.123 --> 01:26:50.973
+CHP221: you know, if I'm studying walking speed, and I can have a change in walking speed of, let's say, 0 point 4 meters per second from an intervention
+
+
+620
+01:26:51.153 --> 01:26:54.773
+CHP221: that might allow somebody to cross the street safely if there's a stoplight.
+
+
+621
+01:26:55.703 --> 01:27:08.103
+CHP221: So that's great. If you can have that for most of I would say what most of us do at Mc. We don't really have that. We don't have a clinically important difference. So we have to think about. And I think
+
+
+622
+01:27:09.103 --> 01:27:17.752
+CHP221: Monica has a point here. Right? So we have to think about, okay, what does this allow? If it's about function, does this difference allow something that we think might be important?
+
+
+623
+01:27:17.883 --> 01:27:25.583
+CHP221: We have to make that argument, and there's no like one way to do that. So I think this is
+
+
+624
+01:27:25.933 --> 01:27:27.904
+CHP221: at least how I was trained.
+
+
+625
+01:27:28.533 --> 01:27:38.423
+CHP221: we didn't really talk about this point in a lot of my training. But it's the key thing that we really care about. How important is this effect that we're studying?
+
+
+626
+01:27:44.293 --> 01:27:49.962
+CHP221: Yeah. And so there's this question about, you know, P. Right? Like, right above the threshold.
+
+
+627
+01:27:50.953 --> 01:27:52.163
+CHP221: So
+
+
+628
+01:27:52.613 --> 01:28:00.432
+CHP221: you know this, I'm not gonna say what to do. But oftentimes, what even if P. Is point 0 4 9.
+
+
+629
+01:28:00.633 --> 01:28:06.942
+CHP221: You should still be talking about the size of the effects, the the variance in that effect across participants.
+
+
+630
+01:28:07.436 --> 01:28:20.042
+CHP221: Because even if he is less than point 0 5. Maybe you have one person who had a huge effect, and the others were all really small, right, maybe, or maybe on average, the effect is just really small and still not important.
+
+
+631
+01:28:21.523 --> 01:28:26.683
+CHP221: Similarly, you could have P. Equal point O, 6. And you have.
+
+
+632
+01:28:27.163 --> 01:28:37.032
+CHP221: you know, a what am I trying to say? A lot of variability in the effect across your participants organisms? And maybe that's important to to better understand.
+
+
+633
+01:28:38.073 --> 01:28:57.242
+CHP221: So the major take Home Point is really thinking about. And there I initially thought I would present about this. But there are other statistical methods you can use. For instance, you know, reporting confidence intervals is always important. Bayesian methods are useful. So, for example.
+
+
+634
+01:28:57.603 --> 01:29:06.882
+CHP221: you can use Bayesian models to understand the uncertainty in your estimates for a given individual as well as for the set of of individuals
+
+
+635
+01:29:07.833 --> 01:29:13.252
+CHP221: and there are some other, you know, a lot, a lot of resources available on
+
+
+636
+01:29:13.513 --> 01:29:19.742
+CHP221: ways to reframe your results without relying solely on on p-values
+
+
+637
+01:29:23.423 --> 01:29:25.433
+CHP221: other questions coming.
+
+
+638
+01:29:35.653 --> 01:29:38.455
+CHP221: Do we always need the values?
+
+
+639
+01:29:40.363 --> 01:29:43.530
+CHP221: yeah, it's a hard question. So really, I mean this.
+
+
+640
+01:29:44.893 --> 01:29:49.653
+CHP221: our use of p values is largely determined by
+
+
+641
+01:29:49.753 --> 01:29:55.243
+CHP221: both journal requirements and expectations from reviewers.
+
+
+642
+01:29:55.523 --> 01:29:58.023
+CHP221: So some of these expectations are like.
+
+
+643
+01:29:58.143 --> 01:30:00.272
+CHP221: I would say, rigorous right, based on
+
+
+644
+01:30:00.373 --> 01:30:04.522
+CHP221: of objective reasoning. Other expectations are based on history.
+
+
+645
+01:30:04.733 --> 01:30:09.903
+CHP221: So in some sense, we need them, because that's what everybody is accustomed to.
+
+
+646
+01:30:10.486 --> 01:30:18.023
+CHP221: But I just think it's important to think beyond the p-value when you discuss your your results.
+
+
+647
+01:30:18.623 --> 01:30:24.882
+CHP221: And we're you know, many of us who are here are faculty. And you know, some of like, I had to
+
+
+648
+01:30:25.123 --> 01:30:29.553
+CHP221: change how I think about results. And it's it's a hard switch. I'm not gonna say it's
+
+
+649
+01:30:30.393 --> 01:30:32.662
+CHP221: I've completely even even done this.
+
+
+650
+01:30:33.883 --> 01:30:34.643
+CHP221: Oh.
+
+
+651
+01:30:35.073 --> 01:30:49.143
+CHP221: the other point that I didn't really have time to get into. But p values are also largely a function of the size of your data set. So if you have a really, you know, a really huge data set you almost always we're going to find P less than 0 point 0 5. It just means that you can detect really small effects.
+
+
+652
+01:30:53.893 --> 01:31:01.043
+CHP221: Okay, so we're at 1030 now, happy to answer any other questions people may have via slack
+
+
+653
+01:31:01.283 --> 01:31:14.452
+CHP221: again. I'm not a statistician. Statistics as a whole field to itself, where a lot of these things are still debated. So if you have other resources, perspectives to share, feel free to share them on slack as well.
+
+
+654
+01:31:16.003 --> 01:31:17.202
+CHP221: And thank you.
+
+
+655
+01:31:18.873 --> 01:31:19.573
+CHP221: Let's see.
+
+
+656
+01:31:26.163 --> 01:31:37.892
+Victoria Wood: Amazing. Thank you so much, Dr. Finley. This was great. I think it was a good intro to people who might be new to this, and a lot of interesting points for people who are experienced as well. So.
+
+
+657
+01:31:38.343 --> 01:31:39.032
+CHP221: Thank you.
+
+
+658
+01:31:39.733 --> 01:31:40.863
+CHP221: Alright! Take care!
+
+
+659
+01:31:41.473 --> 01:31:42.213
+CHP221: Right.
+
+
+

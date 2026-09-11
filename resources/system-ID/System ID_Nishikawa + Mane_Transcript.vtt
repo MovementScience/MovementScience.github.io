@@ -1,0 +1,2870 @@
+WEBVTT
+
+1
+00:06:00.060 --> 00:06:01.280
+Kiisa Nishikawa: Hi, Manny!
+
+2
+00:06:01.740 --> 00:06:03.440
+Adwait Mane: Good morning, Dr. Nishikawa.
+
+3
+00:06:03.440 --> 00:06:06.119
+Kiisa Nishikawa: Oh, hang on, my son… go… try again.
+
+4
+00:06:06.610 --> 00:06:08.360
+Adwait Mane: It's all good, I can hear you.
+
+5
+00:06:08.360 --> 00:06:12.999
+Kiisa Nishikawa: Oh, good, I can hear you now, too. This is my hotel room.
+
+6
+00:06:13.000 --> 00:06:14.230
+Adwait Mane: That's lovely.
+
+7
+00:06:14.670 --> 00:06:18.620
+Kiisa Nishikawa: I wonder if I should… I could try to find a background, but…
+
+8
+00:06:18.710 --> 00:06:23.030
+Kiisa Nishikawa: I… let's see, at 9… from 9 to 10.15, I…
+
+9
+00:06:23.090 --> 00:06:40.009
+Kiisa Nishikawa: was moving my daughter's stuff up to her new apartment, which, in the extremely humid, hot Chicago weather. And then when I got back to the hotel room, I was like, you have to reconcile your P-card now.
+
+10
+00:06:40.010 --> 00:06:41.760
+Adwait Mane: Oh, wow, okay, some glitch.
+
+11
+00:06:41.760 --> 00:06:44.890
+Kiisa Nishikawa: So, that was not…
+
+12
+00:06:45.320 --> 00:06:49.380
+Adwait Mane: Did you see my message about the acknowledgement slide? I…
+
+13
+00:06:49.380 --> 00:06:52.210
+Kiisa Nishikawa: I did, and I put some in.
+
+14
+00:06:52.210 --> 00:06:53.360
+Adwait Mane: Okay, yeah.
+
+15
+00:06:53.360 --> 00:06:53.960
+Kiisa Nishikawa: Yep.
+
+16
+00:06:54.300 --> 00:06:54.970
+Adwait Mane: Yeah.
+
+17
+00:06:54.970 --> 00:06:58.760
+Kiisa Nishikawa: I did text you, and I did say, working on it, but maybe you didn't get it.
+
+18
+00:06:59.590 --> 00:07:00.240
+Adwait Mane: Okay.
+
+19
+00:07:02.110 --> 00:07:02.570
+Kiisa Nishikawa: Anyway.
+
+20
+00:07:02.570 --> 00:07:05.589
+Adwait Mane: I hope my laptop cooperates.
+
+21
+00:07:06.200 --> 00:07:07.760
+Adwait Mane: Because,
+
+22
+00:07:08.060 --> 00:07:14.989
+Kiisa Nishikawa: Worst case scenario, I can project, and you can just tell me if you want me to change this slide.
+
+23
+00:07:15.800 --> 00:07:16.830
+Adwait Mane: Yeah.
+
+24
+00:07:17.820 --> 00:07:18.690
+Adwait Mane: Okay.
+
+25
+00:07:20.780 --> 00:07:24.090
+Kiisa Nishikawa: What was… what's going on with your… will that work?
+
+26
+00:07:25.600 --> 00:07:32.659
+Adwait Mane: Oh, yeah, that should… I guess…
+
+27
+00:07:35.280 --> 00:07:41.229
+Adwait Mane: Yeah, if I'm not… if I don't have Google Slides open on my end, then,
+
+28
+00:07:41.850 --> 00:07:44.959
+Adwait Mane: It might work. Less RAM.
+
+29
+00:07:45.210 --> 00:07:46.100
+Adwait Mane: usage.
+
+30
+00:07:46.100 --> 00:07:52.550
+Kiisa Nishikawa: Oh, yeah, okay, do you want to just all… I'll project the slides, and
+
+31
+00:07:53.460 --> 00:07:56.309
+Adwait Mane: So, we'll just,
+
+32
+00:07:57.150 --> 00:08:06.300
+Adwait Mane: I'll present the overview and mathematical background, then for the viscoelastic models section, you present that, and then I'll present
+
+33
+00:08:06.450 --> 00:08:13.029
+Adwait Mane: The transfer functions of viscoelastic models, and then the last one, utility, again, you will present.
+
+34
+00:08:13.160 --> 00:08:16.740
+Kiisa Nishikawa: That's right, yeah, and we'll stop maybe between each section and ask.
+
+35
+00:08:16.740 --> 00:08:17.270
+Adwait Mane: Yeah.
+
+36
+00:08:17.270 --> 00:08:24.540
+Kiisa Nishikawa: And if people… we can also ask if people have any ideas about how you could apply this to your work.
+
+37
+00:08:24.660 --> 00:08:28.080
+Kiisa Nishikawa: And, yeah, hopefully… Yeah.
+
+38
+00:08:28.080 --> 00:08:30.340
+Adwait Mane: Now you have a halo on your head.
+
+39
+00:08:30.340 --> 00:08:33.240
+Kiisa Nishikawa: I'm an angel.
+
+40
+00:08:33.240 --> 00:08:34.300
+Adwait Mane: They're an angel.
+
+41
+00:08:34.309 --> 00:08:44.049
+Kiisa Nishikawa: Yeah, I don't know, I just thought it was maybe better not to see the other room. Maybe that's… I don't know, maybe that's better.
+
+42
+00:08:44.049 --> 00:08:44.609
+Adwait Mane: Yeah, it's fine.
+
+43
+00:08:47.720 --> 00:08:51.790
+Adwait Mane: Okay, I want to close other windows to free up.
+
+44
+00:08:52.240 --> 00:08:54.239
+Adwait Mane: And as much as possible.
+
+45
+00:08:55.160 --> 00:08:59.130
+Kiisa Nishikawa: Should I try? I might just try sharing.
+
+46
+00:08:59.840 --> 00:09:00.870
+Kiisa Nishikawa: Yeah. And,
+
+47
+00:09:00.870 --> 00:09:01.549
+Adwait Mane: I think that would be…
+
+48
+00:09:01.550 --> 00:09:07.910
+Kiisa Nishikawa: And then… Let's see, share… And then
+
+49
+00:09:08.730 --> 00:09:11.069
+Kiisa Nishikawa: Okay, let's get rid of this.
+
+50
+00:09:11.710 --> 00:09:17.890
+Kiisa Nishikawa: Let's get rid of this… Oh no, I think that was the global rats.
+
+51
+00:09:18.440 --> 00:09:19.610
+Kiisa Nishikawa: Okay…
+
+52
+00:09:23.500 --> 00:09:29.010
+Kiisa Nishikawa: This is why it's always good to… Okay…
+
+53
+00:09:32.900 --> 00:09:38.349
+Adwait Mane: I… I saw that… Two of the videos were playing.
+
+54
+00:09:39.330 --> 00:09:45.480
+Adwait Mane: I don't know if you managed to get everything that you want, all the videos you wanted in there.
+
+55
+00:09:45.480 --> 00:09:46.220
+Kiisa Nishikawa: to…
+
+56
+00:09:46.220 --> 00:09:49.910
+Adwait Mane: At this point, you know, we will just go with whatever we have.
+
+57
+00:10:04.750 --> 00:10:07.230
+Adwait Mane: I would select presenter view as well.
+
+58
+00:10:07.910 --> 00:10:10.130
+Adwait Mane: I guess if you want, present a view.
+
+59
+00:10:10.810 --> 00:10:12.690
+Kiisa Nishikawa: Yeah, I don't have any notes, and…
+
+60
+00:10:12.730 --> 00:10:13.390
+Adwait Mane: Oh.
+
+61
+00:10:13.540 --> 00:10:14.430
+Adwait Mane: Okay.
+
+62
+00:10:14.710 --> 00:10:16.290
+Kiisa Nishikawa: The only… yeah.
+
+63
+00:10:18.460 --> 00:10:21.069
+Kiisa Nishikawa: Okay, let's just see if the…
+
+64
+00:10:26.030 --> 00:10:29.760
+Kiisa Nishikawa: If the movies play, or what I have to do to make them play.
+
+65
+00:10:34.190 --> 00:10:37.439
+Kiisa Nishikawa: All the dots look okay. Yeah.
+
+66
+00:10:40.300 --> 00:10:48.599
+Kiisa Nishikawa: And I… oh, interesting. That's the one without the arrows, although there's an arrow down… only this arrow is showing. Well, it doesn't matter.
+
+67
+00:10:48.600 --> 00:10:56.790
+Adwait Mane: Also, over there, in the… on slide 21, I… in the middle, I labeled it Kelvin void solid.
+
+68
+00:10:56.790 --> 00:10:57.400
+Kiisa Nishikawa: Oh, okay.
+
+69
+00:10:57.400 --> 00:10:59.600
+Adwait Mane: which we call Hill Model.
+
+70
+00:10:59.600 --> 00:11:02.969
+Kiisa Nishikawa: Yeah, yeah, good, good, good, yeah, that's good.
+
+71
+00:11:08.440 --> 00:11:12.890
+Kiisa Nishikawa: Oh, and that… that, okay.
+
+72
+00:11:17.560 --> 00:11:18.929
+Kiisa Nishikawa: Okay, good.
+
+73
+00:11:34.340 --> 00:11:37.300
+Kiisa Nishikawa: Hi, Victoria. Hi, Carissa.
+
+74
+00:11:37.310 --> 00:11:38.110
+Carissa J Mallonee: Hi!
+
+75
+00:11:38.820 --> 00:11:39.530
+Victoria Wood: Heck?
+
+76
+00:11:39.720 --> 00:11:45.060
+Kiisa Nishikawa: We're just checking, because we're use… I'm using Google Slides for the first time.
+
+77
+00:11:45.060 --> 00:11:45.670
+Victoria Wood: It was so fun.
+
+78
+00:11:45.670 --> 00:11:46.440
+Kiisa Nishikawa: Only.
+
+79
+00:11:46.700 --> 00:11:50.839
+Kiisa Nishikawa: One thing that's messed up so far…
+
+80
+00:11:52.260 --> 00:11:54.290
+Kiisa Nishikawa: Oh, this is in here twice.
+
+81
+00:11:54.810 --> 00:11:58.360
+Kiisa Nishikawa: I guess… That's okay.
+
+82
+00:12:12.970 --> 00:12:14.850
+Kiisa Nishikawa: Gape, okay.
+
+83
+00:12:15.110 --> 00:12:19.460
+Kiisa Nishikawa: Which was the one that… let me just find the one that was a little messed up here.
+
+84
+00:12:20.810 --> 00:12:21.510
+Kiisa Nishikawa: Okay.
+
+85
+00:12:22.100 --> 00:12:23.389
+Kiisa Nishikawa: Yeah, it is.
+
+86
+00:12:24.600 --> 00:12:25.829
+Kiisa Nishikawa: I don't know…
+
+87
+00:12:28.740 --> 00:12:30.640
+Adwait Mane: So, what do you…
+
+88
+00:12:30.980 --> 00:12:36.449
+Kiisa Nishikawa: I… I just want… I guess I want to move this so it's not covered up by the…
+
+89
+00:12:36.720 --> 00:12:37.420
+Adwait Mane: Yeah.
+
+90
+00:12:37.420 --> 00:12:38.700
+Kiisa Nishikawa: Okay, fair.
+
+91
+00:12:39.840 --> 00:12:48.110
+Kiisa Nishikawa: Okay, I think we might be… I think we might be ready. Awesome. Victoria, I,
+
+92
+00:12:48.480 --> 00:12:50.380
+Kiisa Nishikawa: I think,
+
+93
+00:12:50.780 --> 00:13:08.170
+Kiisa Nishikawa: the way we'll start is that I will… I'll do the slides. Mane, you want me to do the slides. And I'll start by introducing Mane and telling everyone how excited we are to have him join our MC community. And,
+
+94
+00:13:09.300 --> 00:13:16.589
+Kiisa Nishikawa: Yeah, so, and then Mane's gonna do, like, the first few, and I'll…
+
+95
+00:13:16.620 --> 00:13:37.879
+Kiisa Nishikawa: I'll control the slides, the first few parts of the outline, then I'll do this part, then Mane will do this part, and then I'll do this part, and we're gonna ask for questions at the end of every part, or… and not just questions, but discussions, so any questions, and do you have any thoughts about how you might apply these ideas to what you're doing?
+
+96
+00:13:37.920 --> 00:13:47.769
+Kiisa Nishikawa: And then, at the end, I don't know whether we really need a breakout room, but we thought, you know, maybe people could talk in small groups about how to apply this.
+
+97
+00:13:48.820 --> 00:13:49.400
+Victoria Wood: Yep.
+
+98
+00:13:49.720 --> 00:13:51.570
+Victoria Wood: Yeah, happy to help facilitate that.
+
+99
+00:13:51.570 --> 00:13:55.279
+Kiisa Nishikawa: Yeah, so that's the only breakout group thing. Hi, Miles!
+
+100
+00:13:56.280 --> 00:13:57.370
+Kiisa Nishikawa: Thank you.
+
+101
+00:13:57.370 --> 00:13:58.020
+Miles Valencia: Ethan?
+
+102
+00:13:58.160 --> 00:13:58.870
+Miles Valencia: How you doing?
+
+103
+00:13:59.500 --> 00:14:00.540
+Kiisa Nishikawa: Good!
+
+104
+00:14:00.790 --> 00:14:02.280
+Kiisa Nishikawa: How are you?
+
+105
+00:14:02.630 --> 00:14:06.780
+Miles Valencia: Doing good! Yeah, doing good.
+
+106
+00:14:07.020 --> 00:14:08.860
+Miles Valencia: Doing a lot of research.
+
+107
+00:14:08.860 --> 00:14:13.930
+Kiisa Nishikawa: I'm good! Well, I hope to model whatever data you're collecting.
+
+108
+00:14:13.930 --> 00:14:14.805
+Miles Valencia: Yeah.
+
+109
+00:14:17.100 --> 00:14:18.020
+Kiisa Nishikawa: Yay.
+
+110
+00:14:18.020 --> 00:14:28.399
+Adwait Mane: So, Dr. Nishika, a quick comment. I think, it'll be helpful if I can use my mouse pointer to point at stuff.
+
+111
+00:14:29.520 --> 00:14:31.289
+Kiisa Nishikawa: How can I make that happen?
+
+112
+00:14:31.290 --> 00:14:34.929
+Adwait Mane: So, for that, I think I will need to share my screen.
+
+113
+00:14:34.930 --> 00:14:42.749
+Kiisa Nishikawa: Oh, okay. Do you want me to stop sharing? You start, and I'll just… We can switch when…
+
+114
+00:14:42.750 --> 00:14:45.500
+Adwait Mane: Yeah, maybe we just switch for our part.
+
+115
+00:14:45.500 --> 00:14:47.199
+Kiisa Nishikawa: Okay, go for it.
+
+116
+00:14:48.350 --> 00:14:52.340
+Adwait Mane: Yeah, so I'll be starting, so let me do that.
+
+117
+00:14:57.260 --> 00:15:03.819
+Victoria Wood: Sounds good. We'll give people just a few more minutes to arrive. I want to start out with,
+
+118
+00:15:03.960 --> 00:15:11.170
+Victoria Wood: just some quick announcements, too, just for a minute, if that's alright. And I'll let you guys introduce yourselves and take it away.
+
+119
+00:15:27.100 --> 00:15:30.320
+Adwait Mane: Okay, so… Now I share my screen.
+
+120
+00:15:38.670 --> 00:15:40.860
+Adwait Mane: Can you guys see my screen?
+
+121
+00:15:41.590 --> 00:15:42.000
+Victoria Wood: Yes.
+
+122
+00:15:42.000 --> 00:15:42.340
+Kiisa Nishikawa: Yep.
+
+123
+00:15:42.550 --> 00:15:43.300
+Adwait Mane: Okay, cool.
+
+124
+00:15:45.290 --> 00:15:52.890
+Adwait Mane: So, I can stop, and then resume once you've finished our announcements.
+
+125
+00:15:52.890 --> 00:15:55.520
+Victoria Wood: leave it up, I don't need to pull any slides up, so that's fine.
+
+126
+00:15:55.520 --> 00:15:56.490
+Adwait Mane: Alright, fine.
+
+127
+00:15:56.930 --> 00:15:58.229
+Victoria Wood: You can have it prepped.
+
+128
+00:15:59.160 --> 00:16:02.029
+Victoria Wood: Okay, so I can go ahead and st…
+
+129
+00:16:02.160 --> 00:16:16.800
+Victoria Wood: start just with some of those announcements now. You guys have all already heard this many times. Well, first of all, welcome everybody. Thanks for joining. But you have, all already heard my announcement about RSVPing for Capstone Symposium many times.
+
+130
+00:16:16.800 --> 00:16:32.229
+Victoria Wood: But please do, if you haven't RSVP'd yet, especially if you're attending in person, do that by the end of this week. I'm going to place the catering orders, next week. I'll be able to update them, but just by a few numbers, as we get closer to the event, so the closer we have.
+
+131
+00:16:32.230 --> 00:16:40.859
+Victoria Wood: to the accurate, amount of people that will be attending, the better. So please do submit that RSVP so that I can, have you included there.
+
+132
+00:16:41.870 --> 00:16:58.220
+Victoria Wood: And then, the other announcement that I have is, CCB abstract submissions have opened. I know, a lot of our trainees last year made use of CCB, the Society of,
+
+133
+00:16:58.730 --> 00:17:01.650
+Victoria Wood: Why am I forgetting what CICB stands for right now? I'm forgetting what Z stands for.
+
+134
+00:17:01.650 --> 00:17:03.200
+Kiisa Nishikawa: I'm doing computer biology.
+
+135
+00:17:03.200 --> 00:17:20.199
+Victoria Wood: There you go. Thank you, Kiisa. So this is probably one of the most likely ones that our summer trainees will present at. I'm going to send out the application form for funding, in the next few days here, so please keep an eye out for that, and talk to your teams about,
+
+136
+00:17:20.770 --> 00:17:25.989
+Victoria Wood: Whether or not you want to submit an abstract, for a conference.
+
+137
+00:17:26.550 --> 00:17:30.950
+Victoria Wood: And then, I think that that's all I have.
+
+138
+00:17:31.510 --> 00:17:38.559
+Victoria Wood: If… I don't… I think Monica's with the, UCI watch crew, or if anybody else has any announcements you want to make.
+
+139
+00:17:38.710 --> 00:17:39.560
+Victoria Wood: Feel free.
+
+140
+00:17:41.270 --> 00:17:44.300
+Kiisa Nishikawa: Shall I go ahead and get started, Victoria?
+
+141
+00:17:44.650 --> 00:17:46.260
+Victoria Wood: Yeah, yeah, you can go ahead.
+
+142
+00:17:46.260 --> 00:18:09.279
+Kiisa Nishikawa: Yeah, so everyone, if you want to sign in and you have a reflection about the workshop, we have the SCAMI here, but it will also appear at the end for those who sign in late or want to wait until the end to do it. Oh, the name of the conference, Isabel, is the Society for Integrative and Comparative Biology.
+
+143
+00:18:09.550 --> 00:18:23.160
+Kiisa Nishikawa: And it's a very student-supportive and trainee-supportive conference, so I highly recommend thinking about going. I've been sent… my fir… the first time I went was in 1984, when I was a postdoc.
+
+144
+00:18:23.160 --> 00:18:43.850
+Kiisa Nishikawa: So anyway, yeah, so, it's my great pleasure to introduce Adwait Mane. He goes by Mane, and he's a new postdoc in my lab, and we're just very pleased to welcome him to the, Integrative Movement Sciences Institute community. So, he'll,
+
+145
+00:18:43.850 --> 00:18:51.179
+Kiisa Nishikawa: be presenting first, but I wanted to introduce him, and… okay, now, let's see…
+
+146
+00:18:51.270 --> 00:18:57.360
+Kiisa Nishikawa: Okay, Mane, you have control of the slides, so, could you just advance one for now?
+
+147
+00:18:58.620 --> 00:18:59.470
+Adwait Mane: Sure.
+
+148
+00:18:59.470 --> 00:19:08.819
+Kiisa Nishikawa: Yeah, so, so we particularly want, so the, the title of our workshop is System Identification, and,
+
+149
+00:19:08.850 --> 00:19:25.310
+Kiisa Nishikawa: Which is a complicated topic, but we hope to break it down for you, and we hope that you might be able to find ways that you can apply it to, questions that you're interested in. And I see… oops, there's a typo in the first slide. Okay, Juani, next slide.
+
+150
+00:19:25.720 --> 00:19:33.290
+Kiisa Nishikawa: We particularly want to thank Rick Castler, who's the brains behind our,
+
+151
+00:19:33.540 --> 00:19:50.999
+Kiisa Nishikawa: tools for system identification, which we plan to make available to everybody in the IMSI community and beyond. And I particularly also wanted to thank our IMSI leadership team, including our fearless leader, Monica Daly, and,
+
+152
+00:19:51.000 --> 00:20:09.920
+Kiisa Nishikawa: fellow colleagues Jill McNick-Gray, Ann Silverman, and Simon Sponberg, the Integrative Movement Sciences Institute community, which is so awesome, and the National Science Foundation for supporting our research. So, now I'm going to hand over to Mane, and he'll give the first few parts of the presentation.
+
+153
+00:20:14.700 --> 00:20:20.049
+Adwait Mane: Yeah, so thank you for the introduction, Dr. Nishikawa, and welcome, everyone.
+
+154
+00:20:20.200 --> 00:20:27.099
+Adwait Mane: So I'll get right into the presentation. By the way, can you all see my mouse pointer?
+
+155
+00:20:28.120 --> 00:20:29.210
+Adwait Mane: Okay, good.
+
+156
+00:20:30.570 --> 00:20:39.040
+Adwait Mane: So, outline of the talk, we'll start with an overview of modeling and system identification, a little bit of mathematical background.
+
+157
+00:20:39.230 --> 00:20:47.820
+Adwait Mane: Then we'll get into viscoelastic models, and then transfer functions of those models. Finally, we'll end with
+
+158
+00:20:48.010 --> 00:20:53.650
+Adwait Mane: Ways we can use the viscoelastic models of tendons and muscles.
+
+159
+00:20:55.470 --> 00:20:57.799
+Adwait Mane: So first is the overview.
+
+160
+00:20:59.410 --> 00:21:04.520
+Adwait Mane: There are two broad categories of modeling paradigms. One is…
+
+161
+00:21:05.250 --> 00:21:12.859
+Adwait Mane: Deriving models from first principles, so that's when we derive governing equations from the fundamental laws of physics.
+
+162
+00:21:13.130 --> 00:21:15.899
+Adwait Mane: Such as Newton's laws of motion.
+
+163
+00:21:16.160 --> 00:21:21.640
+Adwait Mane: Or laws of thermodynamics, or electromagnetism and such.
+
+164
+00:21:22.000 --> 00:21:31.299
+Adwait Mane: And another category is system identification, where we rely heavily on using experimental input-output data.
+
+165
+00:21:33.910 --> 00:21:45.090
+Adwait Mane: So, system identification, a useful definition, is the process of building mathematical models of dynamical systems based on experimentally measured data from the system.
+
+166
+00:21:46.540 --> 00:21:56.619
+Adwait Mane: So, and system identification models can be used to analyze or understand the behavior of a system.
+
+167
+00:21:57.010 --> 00:22:01.510
+Adwait Mane: They can also be used to predict the output of a system from the input.
+
+168
+00:22:02.000 --> 00:22:10.449
+Adwait Mane: And, they can be used to derive a control system or a controller, to interact with the system.
+
+169
+00:22:11.180 --> 00:22:20.439
+Adwait Mane: So this is an example of system identification in biology. We have a fish here, in brown, inside a tube, which has a pattern on the side.
+
+170
+00:22:20.620 --> 00:22:22.130
+Adwait Mane: This is the top view.
+
+171
+00:22:23.040 --> 00:22:29.970
+Adwait Mane: So, R and X are the longitudinal position of the tube and the fish.
+
+172
+00:22:30.630 --> 00:22:38.990
+Adwait Mane: And these are defined as the input and the output. So, the tube position is the input, fish position is the output.
+
+173
+00:22:40.050 --> 00:22:52.380
+Adwait Mane: And then an oscillatory input is provided to the tube, and the fish tries to maintain a constant offset E.
+
+174
+00:22:54.050 --> 00:23:01.070
+Adwait Mane: So, that's the system. And the authors in this study, they used system identification to…
+
+175
+00:23:01.260 --> 00:23:12.289
+Adwait Mane: Identify the input-output transfer function, For this combined controller and locomotion dynamics system, so…
+
+176
+00:23:12.670 --> 00:23:20.519
+Adwait Mane: the input is R, the output is, is X in this case.
+
+177
+00:23:20.750 --> 00:23:24.419
+Adwait Mane: So these are the kinds of systems that can be modeled.
+
+178
+00:23:24.910 --> 00:23:28.750
+Adwait Mane: And this extends to a variety of domains.
+
+179
+00:23:31.220 --> 00:23:38.559
+Adwait Mane: So these modeling paradigms that I mentioned, in practice, we usually, use a blend of these two.
+
+180
+00:23:38.800 --> 00:23:44.039
+Adwait Mane: Which gives us 3 broad categories of system identification models.
+
+181
+00:23:44.540 --> 00:23:47.059
+Adwait Mane: White box, gray box, and black box.
+
+182
+00:23:47.550 --> 00:23:56.719
+Adwait Mane: White box models mean they have a high structure and fidelity, which means the governing equations for the system are well established.
+
+183
+00:23:56.860 --> 00:24:08.460
+Adwait Mane: And, all the parameters have a physical interpretation, and the system identification is used primarily to determine those physical parameters on the system.
+
+184
+00:24:09.430 --> 00:24:11.720
+Adwait Mane: The unknown physical parameters of the system.
+
+185
+00:24:12.070 --> 00:24:21.029
+Adwait Mane: And gray and black box models, rely less on the governing equations and more on the external… on the experimental input-output data.
+
+186
+00:24:25.530 --> 00:24:31.040
+Adwait Mane: And, okay, I wanna mention some terminology here.
+
+187
+00:24:31.510 --> 00:24:39.210
+Adwait Mane: There are broad categories of… Dynamical… dynamic or dynamical system, and static systems.
+
+188
+00:24:39.940 --> 00:24:48.410
+Adwait Mane: These terms are used in a variety of domains that extend beyond physics and the sciences.
+
+189
+00:24:48.650 --> 00:24:56.529
+Adwait Mane: So, a dynamic system is one whose state evolves over time, and a static system is one that is at equilibrium.
+
+190
+00:24:56.750 --> 00:25:03.340
+Adwait Mane: So, example of… Domains that use
+
+191
+00:25:03.470 --> 00:25:06.769
+Adwait Mane: These dynamic systems and static systems are.
+
+192
+00:25:06.930 --> 00:25:14.609
+Adwait Mane: Something like financial markets, and even population, dynamics of a species.
+
+193
+00:25:15.100 --> 00:25:20.279
+Adwait Mane: So that's the very broad category.
+
+194
+00:25:21.330 --> 00:25:26.700
+Adwait Mane: Now, some other categories and terms are constitutive model.
+
+195
+00:25:26.830 --> 00:25:34.150
+Adwait Mane: So, that usually refers to, and describes the response of a specific material
+
+196
+00:25:34.270 --> 00:25:41.380
+Adwait Mane: To some physical phenomena, such as a mechanical load, or a thermal load, or it could even be a magnetic or an electric field.
+
+197
+00:25:42.770 --> 00:25:46.030
+Adwait Mane: Constitutive models can be static or dynamic.
+
+198
+00:25:46.890 --> 00:25:53.649
+Adwait Mane: And then a subcategory of considerative models is Newtonian considerative models.
+
+199
+00:25:53.960 --> 00:26:00.059
+Adwait Mane: Which means models governed by Newton's laws of motion. Again, these can be static or dynamic.
+
+200
+00:26:01.110 --> 00:26:17.739
+Adwait Mane: And then some categories within the dynamic ones are kinematic models, which describe the geometry of motion, quasi-static models, which… in which inertial forces are negligible compared to viscous and spring-type forces.
+
+201
+00:26:19.240 --> 00:26:21.799
+Adwait Mane: And then, dynamic models, so…
+
+202
+00:26:21.980 --> 00:26:31.050
+Adwait Mane: This, which means, in this case, it means the effect of forces on motion is, is being considered.
+
+203
+00:26:31.670 --> 00:26:39.440
+Adwait Mane: So, this is where it can get confusing, because dynamic can refer to this broad category of anything that evolves with time.
+
+204
+00:26:39.690 --> 00:26:45.819
+Adwait Mane: And also in this very specific sense of considering…
+
+205
+00:26:46.110 --> 00:26:52.890
+Adwait Mane: The, motion of a system, as forces act upon it.
+
+206
+00:26:53.400 --> 00:26:56.930
+Adwait Mane: So… It's an overloaded term.
+
+207
+00:26:58.700 --> 00:27:06.190
+Adwait Mane: best practices to specify a Newtonian dynamic model when… if that is what you mean, and that is what I will do in this presentation.
+
+208
+00:27:09.490 --> 00:27:13.159
+Adwait Mane: Now, I shall talk about some of the mathematical background.
+
+209
+00:27:14.780 --> 00:27:18.669
+Adwait Mane: So first is, time domain models, so…
+
+210
+00:27:18.810 --> 00:27:25.349
+Adwait Mane: best to describe this using an example. Here we have a damped oscillator.
+
+211
+00:27:25.460 --> 00:27:29.969
+Adwait Mane: Which is a mask connected via a spring and a damper.
+
+212
+00:27:30.530 --> 00:27:34.669
+Adwait Mane: And it has a force acting on it, and X defines the position of the mass.
+
+213
+00:27:35.500 --> 00:27:49.800
+Adwait Mane: If we apply Newton's second law, which is this principle here, then we get this model, which is the time domain model, time domain Newtonian dynamic model of this system.
+
+214
+00:27:52.650 --> 00:27:59.039
+Adwait Mane: There's a useful framework called, Laplace Transform,
+
+215
+00:27:59.750 --> 00:28:13.699
+Adwait Mane: which briefly, transforms… goes from the time domain to the frequency domain, so S here is a complex number. I represents the imaginary number, which is the root of negative 1.
+
+216
+00:28:15.270 --> 00:28:23.450
+Adwait Mane: So, Laplace transform, takes in a function in the time domain and returns a…
+
+217
+00:28:23.590 --> 00:28:29.209
+Adwait Mane: function in the Laplace domain, which is determined by capital F of S.
+
+218
+00:28:30.200 --> 00:28:36.339
+Adwait Mane: This is the, the, precise formula for a Laplace transform of a function.
+
+219
+00:28:36.630 --> 00:28:43.849
+Adwait Mane: And, we can also go the other way, from the Laplace domain to the time domain, using the inverse Laplace transform.
+
+220
+00:28:44.310 --> 00:28:49.049
+Adwait Mane: Now, this is a pretty complicated integral. Fortunately,
+
+221
+00:28:49.680 --> 00:29:05.309
+Adwait Mane: We, in practice, we, very rarely compute this integral, because we have tables of Laplace transform that allow us to go from the time domain here into the Laplace domain, and vice versa.
+
+222
+00:29:06.630 --> 00:29:09.630
+Adwait Mane: Yeah.
+
+223
+00:29:12.860 --> 00:29:23.299
+Adwait Mane: So, this transform helps us use, derive what we call Laplace domain models. For these models, we assume that the system is linear and has zero initial conditions.
+
+224
+00:29:23.720 --> 00:29:29.030
+Adwait Mane: Continuing with our example, this is the time domain model of the oscillator.
+
+225
+00:29:29.380 --> 00:29:35.550
+Adwait Mane: If we… when we take the Laplace transform, we get the, this model in the Laplace domain.
+
+226
+00:29:36.150 --> 00:29:45.249
+Adwait Mane: And notice that now, all the time, icons are replaced by the Laplace variable S.
+
+227
+00:29:46.280 --> 00:30:01.820
+Adwait Mane: So the advantage of doing this now is we can do some algebraic manipulation to isolate the input and the output, the input being X, and the output being… sorry, the input being F, and the output being X, and arrange it in this format.
+
+228
+00:30:01.850 --> 00:30:06.330
+Adwait Mane: Which is very difficult to do in the time domain. Like, if you try… if you try to write…
+
+229
+00:30:06.410 --> 00:30:21.879
+Adwait Mane: X of t over f of t, you're gonna have all these derivative terms, which makes… which can complicate the analysis. So, the advantage of the Laplace domain is now we can do algebraic manipulations to
+
+230
+00:30:22.320 --> 00:30:24.789
+Adwait Mane: Derive modules like this.
+
+231
+00:30:26.720 --> 00:30:41.549
+Adwait Mane: And we use this concept called a transfer function, so this is the plus domain model from before. We just write it in this form to get the transfer function from the force input to the position output.
+
+232
+00:30:42.710 --> 00:30:44.270
+Adwait Mane: And,
+
+233
+00:30:44.430 --> 00:31:04.219
+Adwait Mane: In this framework, when we calculate the roots of the numerator, we get the zeros of the transfer function, and the roots of the polynomial in the denominator, so if you calculate the roots of this expression, we get the poles, and the poles and the zeros determine the behavior of the system.
+
+234
+00:31:06.810 --> 00:31:20.930
+Adwait Mane: Now, for linear systems, there are very nice analogs between, mechanical systems, and electrical systems. So, as an example, we can,
+
+235
+00:31:22.340 --> 00:31:29.380
+Adwait Mane: We can, equate the velocity to the voltage and the force to the current.
+
+236
+00:31:29.540 --> 00:31:39.300
+Adwait Mane: And, represent a mechanical system as an electrical system. And this is the process that we used for our system identification.
+
+237
+00:31:43.600 --> 00:31:51.530
+Adwait Mane: So now, Dr. Nishika… Oh, I'd like to pause here, in case there are any questions or comments.
+
+238
+00:31:55.100 --> 00:32:13.060
+Kiisa Nishikawa: Mane, while you pause, why don't you stop sharing, and then I'll start sharing. Yeah, any questions for Mane, or any ideas about how you might, like, use an input-output system ID to investigate a problem that you're interested in in the MC framework?
+
+239
+00:32:28.710 --> 00:32:29.580
+Kiisa Nishikawa: Oops.
+
+240
+00:32:31.340 --> 00:32:35.339
+Victoria Wood: If, anybody's in a watch party and is having,
+
+241
+00:32:35.780 --> 00:32:47.249
+Victoria Wood: trouble asking questions using the chat or unmuting, I, also posted in the Slack, so you can just, reply to that, and I'll monitor and relay any questions you might have.
+
+242
+00:32:49.050 --> 00:33:04.579
+Kiisa Nishikawa: Yeah, and I was gonna just pause here for a minute, maybe, while people think about questions, and go back to this table that Mane showed. And so, one thing I think is really cool about this electrical quantity and mechanical analog
+
+243
+00:33:04.580 --> 00:33:26.070
+Kiisa Nishikawa: So I'm in Chicago helping my daughter move into a new apartment, and yesterday we landed in a very wet and slippery airport, so the pilot had to break the plane really hard. But the same math that's used to design the ailerons and the control system of the ailerons to break the airplane on the runway.
+
+244
+00:33:26.070 --> 00:33:37.430
+Kiisa Nishikawa: is what we're using to understand muscle properties, and so, so, Rick Castler being a,
+
+245
+00:33:37.430 --> 00:33:47.340
+Kiisa Nishikawa: Systems engineer has designed and controlled many a motor in, wearable prostheses, and also even in,
+
+246
+00:33:47.340 --> 00:34:00.100
+Kiisa Nishikawa: you know, designing packaging for DNA testing kits, and so, so there's a lot of powerful historical work that's gone into developing these,
+
+247
+00:34:00.290 --> 00:34:08.060
+Kiisa Nishikawa: tools that we have, and, want to share with everyone. And,
+
+248
+00:34:08.590 --> 00:34:13.420
+Kiisa Nishikawa: There was one other thing, maybe it'll come back to me in a minute, but
+
+249
+00:34:13.429 --> 00:34:30.640
+Kiisa Nishikawa: Oh, and I was going to say, and as Mane cited, Lenardt Jun, who's a Swedish engineer, has developed the system identification toolbox in MATLAB, and that's the primary tool that we've been using for our system ID.
+
+250
+00:34:31.260 --> 00:34:33.159
+Kiisa Nishikawa: So, it's no questions.
+
+251
+00:34:33.870 --> 00:34:52.130
+Kiisa Nishikawa: So far? Okay, okay. So, in the next part of the talk, I want to talk about how we can specifically use system identification to develop viscoelastic models that we can use to test biological materials, including
+
+252
+00:34:52.130 --> 00:34:58.270
+Kiisa Nishikawa: Muscles and tendons from humans and other animals, as well as
+
+253
+00:34:58.430 --> 00:35:13.689
+Kiisa Nishikawa: For example, I recently met David LeBont, and we talked about, using these tools to investigate the, apodemes, which are sort of the functional equivalents of tendons in insects.
+
+254
+00:35:14.830 --> 00:35:18.229
+Kiisa Nishikawa: So we start with,
+
+255
+00:35:18.540 --> 00:35:34.970
+Kiisa Nishikawa: The very simplest model, and this model, using, Monet's terminology, would be a static Newtonian model, where we just look at the stress-strain relationship of a linear spring, and can you guys see my,
+
+256
+00:35:35.530 --> 00:35:38.290
+Kiisa Nishikawa: Pointer as well.
+
+257
+00:35:39.990 --> 00:35:48.790
+Kiisa Nishikawa: I hope you can. So, so with a linear spring, we see that as we deform the spring using a,
+
+258
+00:35:49.370 --> 00:35:58.710
+Kiisa Nishikawa: Weights of increasing mass that the spring deforms linearly,
+
+259
+00:35:59.130 --> 00:36:13.639
+Kiisa Nishikawa: as a function of the force applied to it, in this case, the mass times the force of gravity. And so, for a linear spring, we have Hooke's Law, where the force is equal to the spring constant k times X.
+
+260
+00:36:13.710 --> 00:36:28.560
+Kiisa Nishikawa: And, where, K… and X is the displacement of the spring. And interestingly enough, you can see this is a static model, because there's no time-varying behavior, right, anywhere in the equation.
+
+261
+00:36:28.630 --> 00:36:51.299
+Kiisa Nishikawa: And, it's important to note that, that the, F and K and X, like, we'd have newtons, and meters, and then the units of the spring constant would be Newtons divided by meters, but this would be specific to this particular spring, and if we wanted to compare this spring, for example, to another spring with different properties.
+
+262
+00:36:51.410 --> 00:36:55.740
+Kiisa Nishikawa: We have to non-dimensionalize these quantities, so we have,
+
+263
+00:36:55.990 --> 00:37:10.749
+Kiisa Nishikawa: stress, which is equal to force divided by cross-sectional area, and strain, which is the change in length divided by the resting length. And here you see the behavior of the,
+
+264
+00:37:11.070 --> 00:37:25.779
+Kiisa Nishikawa: system, so we have strain on the x-axis and stress on the y-axis, and the linear spring, the stress, increases linearly with strain. And for many materials, they're only linear within a particular range.
+
+265
+00:37:26.480 --> 00:37:27.880
+Kiisa Nishikawa: Okay.
+
+266
+00:37:28.370 --> 00:37:36.940
+Kiisa Nishikawa: How do I… There. Okay, so, here's a stress-strain relationship now of a linear damper.
+
+267
+00:37:37.060 --> 00:37:46.380
+Kiisa Nishikawa: And actually, here we have, the time and the, strain on the x-axis.
+
+268
+00:37:46.490 --> 00:37:57.040
+Kiisa Nishikawa: And a linear damper is like a piston, where you actually apply a force which changes… displaces the piston a distance X,
+
+269
+00:37:57.160 --> 00:38:13.209
+Kiisa Nishikawa: And what happens is the internal friction of the fluid escaping around the edges of the piston produces a force that's linear with respect to the strain rate. And so we have a similar equation where force is equal to
+
+270
+00:38:13.290 --> 00:38:19.109
+Kiisa Nishikawa: the dampen constant, B, times the strain rate, X dot.
+
+271
+00:38:19.220 --> 00:38:42.810
+Kiisa Nishikawa: And so… and in the previous slides that Mane showed, he had an X double dot, so here we're using the dot notation to indicate the first derivative of displacement, which is velocity, and the double dot is the second derivative of displacement, which is acceleration. And here we see that this damper, even though it's a very similar, simple equation.
+
+272
+00:38:42.810 --> 00:38:49.079
+Kiisa Nishikawa: It's actually a dynamic model because we have the time in the X dot, term.
+
+273
+00:38:49.200 --> 00:38:56.820
+Kiisa Nishikawa: And the non-dimensional, form of the equation here is… is shown here.
+
+274
+00:38:58.520 --> 00:39:11.919
+Kiisa Nishikawa: Okay, and now we can look at the behavior of a simple… some really simple viscally elastic models. So this is a Maxwell model here, which is a spring in series with a damper.
+
+275
+00:39:11.920 --> 00:39:25.010
+Kiisa Nishikawa: And below, we have a Kelvin-Voigt model here, which is a spring in parallel with a damper, and these systems were investigated by the very famous physicist John Clerk Maxwell.
+
+276
+00:39:25.010 --> 00:39:35.870
+Kiisa Nishikawa: Sir, or Lord Kelvin, and Voigt, whom I'm less familiar with. And so, if we look at the Maxwell model first, we see that this
+
+277
+00:39:35.870 --> 00:39:54.729
+Kiisa Nishikawa: that being in series, the stress in the spring and the damper are equal, but the strain is distributed unequally between them. And so we can write that the force as a function of time is equal to the spring constant times the displacement over time.
+
+278
+00:39:54.860 --> 00:39:59.399
+Kiisa Nishikawa: And that's equal to the damping constant times the velocity over time.
+
+279
+00:39:59.750 --> 00:40:18.729
+Kiisa Nishikawa: For a Kelvin-Voigt element, it's just the opposite. The strain and the spring and damper are equal because they're both independently stretched by the same amount by the applied force, but the stress is distributed between them, and so here we write the force as a function of time is equal to the spring constant.
+
+280
+00:40:18.730 --> 00:40:25.510
+Kiisa Nishikawa: times the displacement plus the damping constant times the velocity. Any questions so far?
+
+281
+00:40:29.470 --> 00:40:31.580
+Kiisa Nishikawa: Okay, I'll keep going.
+
+282
+00:40:31.850 --> 00:40:50.009
+Kiisa Nishikawa: Okay, and here we can see some simple input-output relationships of these simple viscoelastic models. So here, here we have the Maxwell model in the left-hand column, and the Kelvin-Voigt model in the right-hand column, and now we're just going to do some simple tests.
+
+283
+00:40:50.350 --> 00:40:59.950
+Kiisa Nishikawa: So here we actually, produce a, a stretch and hold a length depth, So we stretch.
+
+284
+00:41:01.010 --> 00:41:11.530
+Kiisa Nishikawa: the Maxwell element and then hold it at a final length, and what happens with the Maxwell element is that the force first rises during the stretch.
+
+285
+00:41:11.850 --> 00:41:16.909
+Kiisa Nishikawa: And that's due to the resistance in both the damper and the spring.
+
+286
+00:41:17.060 --> 00:41:35.730
+Kiisa Nishikawa: And then the force, actually, over time, will decay to zero. And so, we call this a Maxwell fluid because it can't hold onto the force, infinitely. In the Kelvin-Voigt element, when we do the same experiment, we see that we get a big increase in force
+
+287
+00:41:35.830 --> 00:41:44.310
+Kiisa Nishikawa: In response to the step length change, the viscous part of the forest decays really rapidly, and the
+
+288
+00:41:44.490 --> 00:41:49.789
+Kiisa Nishikawa: the, Elastic part of the force.
+
+289
+00:41:50.170 --> 00:41:54.679
+Kiisa Nishikawa: Remains forever until we return the,
+
+290
+00:41:55.430 --> 00:41:58.389
+Kiisa Nishikawa: The material back to its original length.
+
+291
+00:41:59.220 --> 00:42:09.629
+Kiisa Nishikawa: Here's a different experiment. This time… so here, the deformation X is the input, and the force is the output. But down here, we actually have a force
+
+292
+00:42:09.810 --> 00:42:10.780
+Kiisa Nishikawa: step.
+
+293
+00:42:11.080 --> 00:42:30.479
+Kiisa Nishikawa: And then we return to the original force. So here, the force is the input, and the length is the output. And here you can see that the Maxwell model creeps over time as the force is held, whereas the, Kelvin-VoIP model slowly develops force.
+
+294
+00:42:30.480 --> 00:42:39.190
+Kiisa Nishikawa: Also creeping a bit over time. And then when we relax, The viscous part goes…
+
+295
+00:42:39.810 --> 00:42:51.350
+Kiisa Nishikawa: the force relaxes in this manner, whereas here we have a time constant of force relaxation of the Kelvin void element, and that'll come up later.
+
+296
+00:42:52.270 --> 00:43:07.439
+Kiisa Nishikawa: So now you can kind of see where we're go… and I should say… I meant to say here, too, that the length relaxes with the time constant that's equal to the, damping coefficient divided by the spring coefficient.
+
+297
+00:43:08.640 --> 00:43:18.980
+Kiisa Nishikawa: Okay, and so here, now we have… now we can build up from these simple elements a lot more complicated, viscoelastic materials.
+
+298
+00:43:18.980 --> 00:43:29.159
+Kiisa Nishikawa: So, here we have the simple two-element viscoelastic materials. We can have ones with three elements. So, this one is with,
+
+299
+00:43:29.340 --> 00:43:39.620
+Kiisa Nishikawa: spring in parallel to a spring and damper is called a Maxwell solid, and this one, which looks a lot like a hill model to you, muscle enthusiasts.
+
+300
+00:43:39.750 --> 00:43:46.120
+Kiisa Nishikawa: has a spring in series with a spring in damper, and that's called a Kelvin-Voigt solid.
+
+301
+00:43:46.120 --> 00:44:00.069
+Kiisa Nishikawa: We can have two Maxwell elements in parallel. We could have two Kelvin-Voigt elements in parallel. We could have two Maxwell elements in series, or two Kelvin-Voigt elements in series, and we can, on and on.
+
+302
+00:44:00.140 --> 00:44:05.120
+Kiisa Nishikawa: We can, keep adding,
+
+303
+00:44:05.580 --> 00:44:23.209
+Kiisa Nishikawa: elements to make as complex a model as we need. And… and actually, maybe I'll just say here quickly that, that in our, research so far in using the system ID tools that we've developed, we have modeled muscles
+
+304
+00:44:23.410 --> 00:44:33.179
+Kiisa Nishikawa: We've modeled cat soleus muscles, frogs, semitendinosis, and sartorius muscles, rat tail tendons, rat…
+
+305
+00:44:33.510 --> 00:44:45.170
+Kiisa Nishikawa: Medial gastrocnemius, muscle tendon units, a variety of mouse soleus and etial muscles from wild-type, transgenic, and mutant mice.
+
+306
+00:44:45.300 --> 00:44:51.120
+Kiisa Nishikawa: And the interesting thing is that all the muscles look like two Kelvin-Voigt elements in series.
+
+307
+00:44:51.270 --> 00:44:57.289
+Kiisa Nishikawa: And the tendons, so far, that we've looked at look like a Kelvin-Voigt solid.
+
+308
+00:44:58.040 --> 00:44:59.040
+Kiisa Nishikawa: Okay.
+
+309
+00:45:01.000 --> 00:45:02.050
+Kiisa Nishikawa: So…
+
+310
+00:45:02.420 --> 00:45:19.140
+Kiisa Nishikawa: So those are the viscoelastic models, and you've seen from, you know, some of the system behavior that we can do experiments like ramp stretch and hold experiments, or, force ramp experiments.
+
+311
+00:45:19.290 --> 00:45:29.249
+Kiisa Nishikawa: to investigate viscoelastic properties. And using the transfer functions that, Mane described in the,
+
+312
+00:45:29.470 --> 00:45:38.060
+Kiisa Nishikawa: Frequency domain, there's a couple of other experiments that we can use to try and estimate the viscoelastic properties.
+
+313
+00:45:38.290 --> 00:45:47.909
+Kiisa Nishikawa: So one is the ramp stretch, which you saw earlier, and this is an experiment that we've used quite a bit to characterize muscles.
+
+314
+00:45:47.960 --> 00:46:07.310
+Kiisa Nishikawa: Another experiment that we can do that will enable us to retrieve the viscoelastic parameters and estimate the viscoelastic model is sinusoidal perturbations, where when we have a sinusoidal input.
+
+315
+00:46:07.390 --> 00:46:26.399
+Kiisa Nishikawa: We have, the… a material will respond with a… the elastic parts of the material will be in phase, with the perturbation, and the viscous materials will be out of phase with the phase related to the time constant.
+
+316
+00:46:26.510 --> 00:46:36.799
+Kiisa Nishikawa: Of the, damper, right? The… the, time that it takes for the damping forces to…
+
+317
+00:46:36.830 --> 00:46:55.690
+Kiisa Nishikawa: stress relax. And then the third type of experiment is a white noise experiment. And in a white noise experiment, you do, like, purely random or pseudo-random changes in a length as the input here. So for all of these experiments, length is the input and force is the output.
+
+318
+00:46:56.010 --> 00:46:59.699
+Kiisa Nishikawa: And so you randomly change the,
+
+319
+00:47:00.320 --> 00:47:07.589
+Kiisa Nishikawa: length of the material. You can do that with… at a low amplitude, or a…
+
+320
+00:47:07.590 --> 00:47:20.459
+Kiisa Nishikawa: higher amplitude, or a lower frequency, or a higher frequency. So here, this is, like, 0.4 millimeters, and the frequency bandwidth is, like, 0 to 15 Hz.
+
+321
+00:47:20.460 --> 00:47:31.770
+Kiisa Nishikawa: And here, this is a bigger amplitude, 1.6 millimeters and 90 Hz. So, in principle, any of these measurements should… could be used to identify the,
+
+322
+00:47:31.870 --> 00:47:44.490
+Kiisa Nishikawa: viscoelastic model and determine the parameters. They have some advantages and disadvantages, that we could talk about later.
+
+323
+00:47:45.120 --> 00:47:49.170
+Kiisa Nishikawa: But all in principle, should give you the same results.
+
+324
+00:47:51.680 --> 00:47:55.289
+Kiisa Nishikawa: So what we've done,
+
+325
+00:47:56.000 --> 00:48:19.999
+Kiisa Nishikawa: is ramp, stretch, and hold experiments, and actually, maybe I'll go back one just for a minute. And I think one of the things that we did, we didn't know it was a good thing to do at the time, but one of the things that's been particularly important in understanding muscle viscoelastic properties is that we did these ramp, stretch, and hold experiments over the entire physiological range
+
+326
+00:48:20.000 --> 00:48:22.340
+Kiisa Nishikawa: Of lengths that muscles
+
+327
+00:48:22.550 --> 00:48:31.109
+Kiisa Nishikawa: Experience in vivo, from 0.8% of their optimal length all the way up to 1.2% of their optimal length.
+
+328
+00:48:31.450 --> 00:48:37.609
+Kiisa Nishikawa: And in these ramp… In the… and here we see some data from,
+
+329
+00:48:37.830 --> 00:48:56.099
+Kiisa Nishikawa: ramp, stretch, and hold experiment in a isolated muscle in a bath. And so here we do the ramp, stretch, and hold experiment. We do it in a purely passive muscle, and you can see the response is very like the,
+
+330
+00:48:56.350 --> 00:49:02.950
+Kiisa Nishikawa: Kelvin Voigt element that I showed you earlier, so we get a force spike, and then a…
+
+331
+00:49:03.280 --> 00:49:08.180
+Kiisa Nishikawa: Decay at some rate that represents one or more time constants.
+
+332
+00:49:08.220 --> 00:49:25.290
+Kiisa Nishikawa: Here's what happens when… if we stimulate the muscle isometrically, and here's what happens if we stimulate the muscle isometrically at a shorter length, and then stretch the muscle to the same length as the isometric force. We get… and you can see we get a much bigger
+
+333
+00:49:25.330 --> 00:49:42.270
+Kiisa Nishikawa: response to the initial stretch. And actually, it's a little bit hard to see, but the decay is definitely slower in the active stretch than it is in the passive stretch, so it looks like our passive and active muscles are going to have different viscoelastic properties.
+
+334
+00:49:42.570 --> 00:49:51.830
+Kiisa Nishikawa: And the last thing I wanted to point out here is that, so here we see in this little thumbnail, we see the actual length ramp here.
+
+335
+00:49:52.680 --> 00:49:56.380
+Kiisa Nishikawa: And, plotted in the,
+
+336
+00:49:56.570 --> 00:50:15.450
+Kiisa Nishikawa: solid orange line here is actually the velocity, and the dashed line here is the acceleration. And so you can see that when we go around these corners in the ramp stretch and hold, we actually have pretty big,
+
+337
+00:50:15.760 --> 00:50:19.510
+Kiisa Nishikawa: velocity transients.
+
+338
+00:50:19.950 --> 00:50:28.689
+Kiisa Nishikawa: And therefore acceleration. And depending on the speed of the stretch, we're sampling over a range of frequencies.
+
+339
+00:50:28.800 --> 00:50:37.470
+Kiisa Nishikawa: In the, RAMP stretch and hold experiments, just like we are in the,
+
+340
+00:50:38.050 --> 00:50:55.310
+Kiisa Nishikawa: random, case. And so, we think that the advantages of the ramp stretch over the other methods are that they're most like in vivo perturbations, where a force is applied by the environment. It could be an antagonistic muscle, it could be the ground.
+
+341
+00:50:55.360 --> 00:51:00.920
+Kiisa Nishikawa: It could be a perturbation, like a gust of wind in an eagle's wings.
+
+342
+00:51:04.210 --> 00:51:21.810
+Kiisa Nishikawa: there… it's easy to vary the activation level and start length and do lots and lots of experiments with minimal fatigue. Hedia, who's, participating in my lab, is doing these experiments right now on mouse soleus muscles, and she does, like, you know.
+
+343
+00:51:21.810 --> 00:51:34.349
+Kiisa Nishikawa: She probes the whole length range at multiple amplitudes and velocities, and particularly the soleus muscles are quite resistant to fatigue, so you can do a lot of these experiments in a single prep.
+
+344
+00:51:34.740 --> 00:51:41.329
+Kiisa Nishikawa: Yeah, and and the disadvantages are that this is actually a pretty complicated response.
+
+345
+00:51:41.540 --> 00:51:54.410
+Kiisa Nishikawa: And biologists have looked at this response in terms that they… so they measure what's the difference between the isometric force and the, active force, and
+
+346
+00:51:54.410 --> 00:52:06.589
+Kiisa Nishikawa: debate what particular mechanisms inside muscles, is it the cross bridges, or the titan, or extracellular matrix that's producing this response?
+
+347
+00:52:06.670 --> 00:52:17.020
+Kiisa Nishikawa: But we're going to use system identification to try and ask what viscoelastic models can explain that. Any questions before I go on?
+
+348
+00:52:17.830 --> 00:52:18.710
+Kiisa Nishikawa: Okay.
+
+349
+00:52:20.030 --> 00:52:36.269
+Kiisa Nishikawa: Okay, so I'm gonna hand back to… I'm gonna stop sharing and hand back to Mane, and if anybody has any questions thus far, or again, like, sees, how could I apply this to my… something I'm interested in biology?
+
+350
+00:52:39.470 --> 00:52:41.269
+Victoria Wood: I have a question. You might have…
+
+351
+00:52:41.290 --> 00:52:53.119
+Victoria Wood: kind of already gone over this a little bit, and I just missed it, but, you said when you're modeling this data, sometimes you… you put different, like, Kelvin, Voigt elements in series, or… or…
+
+352
+00:52:53.120 --> 00:53:02.610
+Victoria Wood: have a single one, or different configurations and things like that. How do you go about determining how many elements actually need to go into a model to make it most effective?
+
+353
+00:53:03.170 --> 00:53:13.509
+Kiisa Nishikawa: Victoria, that's a great question. So, so the system identification toolbox produced by Leonard Young and the software that Rick wrote
+
+354
+00:53:13.860 --> 00:53:16.830
+Kiisa Nishikawa: Can actually… so we have two codes.
+
+355
+00:53:16.900 --> 00:53:29.250
+Kiisa Nishikawa: One of them, as you'll see later, one of them is really dedicated to probing the, you know, forest work energy power of a… of the…
+
+356
+00:53:29.250 --> 00:53:38.079
+Kiisa Nishikawa: two Kelvin void elements in series model, and the other one allows you to specify the number of zeros and poles
+
+357
+00:53:38.270 --> 00:53:48.619
+Kiisa Nishikawa: In the transfer function, which is related to the model structure. And I'll talk a little bit more about that when we get back to my part after Mane's.
+
+358
+00:53:48.620 --> 00:53:58.509
+Kiisa Nishikawa: But the idea being that we can test… we can get an R squared to the observed experimental data for virtually any
+
+359
+00:53:58.510 --> 00:54:05.080
+Kiisa Nishikawa: model that has, N pole… poles and K0s.
+
+360
+00:54:05.080 --> 00:54:13.580
+Kiisa Nishikawa: And by doing that, we can, so then we… so we can say which model fits the best.
+
+361
+00:54:13.580 --> 00:54:28.800
+Kiisa Nishikawa: And we can use, like, R-squared or RMSE to make the decision, but we can also use tools like the Akaik and Bayesian information criteria, which actually debit the models
+
+362
+00:54:28.900 --> 00:54:48.100
+Kiisa Nishikawa: that have more parameters. So obviously, a more complicated model is likely to have a better fit to data, but that can be due to overfitting. And so we can take into account not only the goodness of fit, but also the number of parameters in the model.
+
+363
+00:54:48.820 --> 00:54:50.540
+Kiisa Nishikawa: Did that answer your question?
+
+364
+00:54:50.540 --> 00:54:51.589
+Victoria Wood: It did. Thank you.
+
+365
+00:54:57.010 --> 00:54:58.359
+Adwait Mane: Any other questions?
+
+366
+00:55:00.960 --> 00:55:02.109
+Adwait Mane: Question.
+
+367
+00:55:02.110 --> 00:55:05.019
+Damien Callahan: I'm trying to raise my hand, but I'm not very good at Zoom still.
+
+368
+00:55:05.490 --> 00:55:06.260
+Adwait Mane: Excellent.
+
+369
+00:55:06.260 --> 00:55:08.839
+Damien Callahan: This is, Damien Callahan. I have a quick question.
+
+370
+00:55:09.010 --> 00:55:09.570
+Adwait Mane: Yeah.
+
+371
+00:55:10.490 --> 00:55:23.430
+Damien Callahan: So these are really, they appear to be more phenomenological models, as opposed to mechanistic, so more Hill and less Huxley for a muscle person.
+
+372
+00:55:23.930 --> 00:55:31.730
+Damien Callahan: To what extent do you think you'll be able to translate, and maybe these… this is what's coming up next, but, elements of the model
+
+373
+00:55:31.730 --> 00:55:47.510
+Damien Callahan: with a, you know, with the physiological antecedent, you know, what is the element in the model representing from a structural and physiological standpoint? Do you think you'll be able to get there? Is that the point, or is it… does it not matter as long as you're mathematically matching the outcome?
+
+374
+00:55:48.300 --> 00:55:58.099
+Kiisa Nishikawa: Yeah, so that's a great question, Damien, really great question. And, so… so I think at one level.
+
+375
+00:55:59.200 --> 00:56:06.730
+Kiisa Nishikawa: You know, so at the level of material properties, I think that this is a white box model.
+
+376
+00:56:06.810 --> 00:56:21.229
+Kiisa Nishikawa: We're using white box models that really tell us of what viscoelastic structure best corresponds, but at the level of what are the mechanisms inside muscle sarcomeres, it's more gray box, as you just pointed out.
+
+377
+00:56:21.230 --> 00:56:29.579
+Kiisa Nishikawa: I think also that very often times, cross-bridge models, the… those cross-bridge models for which the…
+
+378
+00:56:29.690 --> 00:56:34.359
+Kiisa Nishikawa: Parameters, which there's often, you know, you know.
+
+379
+00:56:34.940 --> 00:56:49.029
+Kiisa Nishikawa: more than 4 free parameters. If you're fitting the parameters to the data, cross-bridge models are also phenomenological, so I don't think it's fair to characterize cross-bridge models as not phenomenological and other ones as.
+
+380
+00:56:49.340 --> 00:56:54.729
+Kiisa Nishikawa: But now I'm getting to the meat of your question, which is, these models are very abstract.
+
+381
+00:56:54.920 --> 00:56:59.069
+Kiisa Nishikawa: Right? How many springs and dampers, and in what configuration?
+
+382
+00:56:59.540 --> 00:57:07.289
+Kiisa Nishikawa: And in order to determine… and I'll give you… I might have an opportunity to give you some examples of this later.
+
+383
+00:57:07.340 --> 00:57:20.549
+Kiisa Nishikawa: But I think you have to do experiments in order to infer what different structures correspond to. So, maybe I'll go back just for a minute. Oh, I can't, because Mane has.
+
+384
+00:57:20.550 --> 00:57:21.000
+Adwait Mane: Yes.
+
+385
+00:57:21.210 --> 00:57:26.539
+Kiisa Nishikawa: Monica, do you want to go back to the slide that has all the different viscoelastic models on it?
+
+386
+00:57:26.690 --> 00:57:27.290
+Adwait Mane: Yep.
+
+387
+00:57:28.910 --> 00:57:40.330
+Kiisa Nishikawa: So for… that's… yeah, perfect. So we found that tendons are that Kelvin-Voigt solid. This was work… work we did with Miles and Manny on rat tail tendons.
+
+388
+00:57:40.740 --> 00:57:46.980
+Kiisa Nishikawa: And Miles and Manny had this beautiful dataset in which they had used,
+
+389
+00:57:47.260 --> 00:57:57.230
+Kiisa Nishikawa: Aged mice, so there were old and young mice, as well as the compound genipin, which is a collagen cross-linker.
+
+390
+00:57:57.620 --> 00:58:03.660
+Kiisa Nishikawa: And so we have a paper that's in revision at the Journal of Biomechanics.
+
+391
+00:58:03.790 --> 00:58:11.149
+Kiisa Nishikawa: And what we found was that only the, parameters of the Kelvin-VoIt element
+
+392
+00:58:11.330 --> 00:58:28.320
+Kiisa Nishikawa: changed with the Jennapin cross-linking treatment, and only the series spring changed with age. We also found that the, collagen fibers have a, have a stiffness of, like.
+
+393
+00:58:28.460 --> 00:58:43.519
+Kiisa Nishikawa: you know, 3 to 10 gigapascals, and we found that the stiffness of the Kelvin Voigt element was, like, right in between 5 gigapascals, whereas the, the, series spring is much less stiff.
+
+394
+00:58:43.860 --> 00:58:48.850
+Kiisa Nishikawa: And the other interesting thing, which I'm going to talk about later, is,
+
+395
+00:58:50.060 --> 00:59:04.509
+Kiisa Nishikawa: That, it turns out that the energy stored, so tendons are famous for storing energy and returning it, right? To, amplify the power of our movements.
+
+396
+00:59:04.620 --> 00:59:23.719
+Kiisa Nishikawa: For example, in human running. So, what we found is… so the energy stored in this Kellman Voigt solid, as I'll talk about later, is going to be equal to 1 half the force squared over the stiffness. So when we ask which one of these elements, the collagen fibers or the proteoglycan matrix.
+
+397
+00:59:25.660 --> 00:59:34.799
+Kiisa Nishikawa: contributes more to energy storage in muscles, it's the proteoglycan matrix, and that makes some sense with experimental data from
+
+398
+00:59:37.580 --> 00:59:47.869
+Kiisa Nishikawa: Nicole Donos and Manny and other people showing that as we age, the… our tendons get very stiff, and that limits our energy storage ability.
+
+399
+00:59:48.100 --> 00:59:51.860
+Kiisa Nishikawa: As for mussels, there's a whole other story there, and how we've…
+
+400
+00:59:51.860 --> 01:00:10.509
+Kiisa Nishikawa: attributed these elements to particular structures in muscle, namely Titan. I know this is a really long-winded answer, but I think it's a really important question, is by using mutant and transgenic mice with, changes in their Titan isoform.
+
+401
+01:00:10.560 --> 01:00:26.790
+Kiisa Nishikawa: That have big impacts, again, on the viscoelastic properties and allow us to, to some extent, to interpret the… which underlying structures in the muscle sarcomere correspond to these different structures.
+
+402
+01:00:26.930 --> 01:00:31.960
+Kiisa Nishikawa: So, sorry for the long-winded answer, but I hope… I think it's an important question.
+
+403
+01:00:32.490 --> 01:00:37.889
+Damien Callahan: I love the long-form response, and I love asking you questions, Kiisa. I always learn something. Awesome, thank you.
+
+404
+01:00:38.380 --> 01:00:40.880
+Kiisa Nishikawa: Okay, take it away, Mane.
+
+405
+01:00:41.900 --> 01:00:42.750
+Adwait Mane: Okay.
+
+406
+01:00:43.790 --> 01:01:01.059
+Adwait Mane: So, with that background on viscoelastic models for tendons and muscles, I'll talk about the transfer functions for those models. So, this is the Kelvin… this is the tendon model, Kelvin-Voit with spring and series. It's got a force acting on it.
+
+407
+01:01:01.440 --> 01:01:04.809
+Adwait Mane: This is the transfer function.
+
+408
+01:01:05.300 --> 01:01:18.329
+Adwait Mane: that we used. It's called an impedance transfer function, which is a ratio of the velocity of a force. So, notice that previously we were looking at position, now it's velocity.
+
+409
+01:01:18.480 --> 01:01:22.150
+Adwait Mane: And, the parameters for the model are defined here.
+
+410
+01:01:23.330 --> 01:01:41.140
+Adwait Mane: Similarly for the muscle model, you have two Kelvin-wired elements in series and a force acting on it, and this one, this would be the transfer function for the muscle model. This one has two zeros and two poles, the tendon has two zeros and one pole.
+
+411
+01:01:42.910 --> 01:01:52.730
+Adwait Mane: And then the method used to estimate the,
+
+412
+01:01:52.920 --> 01:02:10.800
+Adwait Mane: stiffness and damping coefficients is a method developed by Leonard Leung, which Dr. Nishikawa mentioned him before. He's one of the masterminds behind the system identification toolbox in MATLAB.
+
+413
+01:02:11.800 --> 01:02:17.379
+Adwait Mane: So, the basic idea is we take the model responses and the experimental measurements.
+
+414
+01:02:17.460 --> 01:02:32.100
+Adwait Mane: And we compute the error between them, and then try to minimize the sum of squared error, using a least squares method, and that gives us these… the parameters of the model.
+
+415
+01:02:32.700 --> 01:02:36.649
+Adwait Mane: There are some additional steps, in here, but,
+
+416
+01:02:37.030 --> 01:02:40.860
+Adwait Mane: For the sake of simplicity and time, I've… -Oh.
+
+417
+01:02:41.240 --> 01:02:43.980
+Adwait Mane: I'm only mentioning the highlights.
+
+418
+01:02:46.870 --> 01:02:54.510
+Adwait Mane: yeah, and now we'll transition again to Dr. Nishikawa. I'll stop sharing my screen.
+
+419
+01:03:01.370 --> 01:03:03.710
+Adwait Mane: You are muted.
+
+420
+01:03:06.110 --> 01:03:23.670
+Kiisa Nishikawa: So here I am in a hotel in Chicago, and there's a baby crying in the next room, so that's why I muted myself, so I apologize for any background noise. Maybe with luck you can't hear it. Yeah, so any questions before we go on to the…
+
+421
+01:03:24.020 --> 01:03:26.539
+Kiisa Nishikawa: To the next part.
+
+422
+01:03:27.220 --> 01:03:29.970
+Kiisa Nishikawa: Okay.
+
+423
+01:03:30.460 --> 01:03:36.709
+Kiisa Nishikawa: I'll go ahead and share… And actually, what's going on here?
+
+424
+01:03:36.710 --> 01:03:37.759
+Ariel Vieira: Oh my gosh!
+
+425
+01:03:39.400 --> 01:03:44.480
+Kiisa Nishikawa: Hang on… -Oh.
+
+426
+01:03:44.690 --> 01:03:49.639
+Kiisa Nishikawa: Alright, I might have to go back to Google. Sorry. Bear with me.
+
+427
+01:03:49.790 --> 01:03:52.600
+Kiisa Nishikawa: Maybe I'll stop sharing until I get there.
+
+428
+01:03:54.060 --> 01:03:54.910
+Kiisa Nishikawa: Okay.
+
+429
+01:04:09.010 --> 01:04:17.890
+Kiisa Nishikawa: So I will say that this is, this is my… This part of this,
+
+430
+01:04:19.070 --> 01:04:22.150
+Kiisa Nishikawa: talk that I'm the most excited about.
+
+431
+01:04:22.440 --> 01:04:27.269
+Kiisa Nishikawa: Okay, so there's the presentation. I'll go to the slide that we're on.
+
+432
+01:04:34.040 --> 01:04:38.060
+Kiisa Nishikawa: So this is the final section, now I'll share.
+
+433
+01:04:38.530 --> 01:04:48.940
+Kiisa Nishikawa: on… How can we use… System identification in the service of the science that we're interested in.
+
+434
+01:04:49.740 --> 01:04:54.530
+Kiisa Nishikawa: And, okay.
+
+435
+01:04:54.760 --> 01:05:00.749
+Kiisa Nishikawa: Okay, so I…
+
+436
+01:05:01.260 --> 01:05:07.740
+Kiisa Nishikawa: This is just bad, because now it's in presenter mode. Do you… are you seeing things properly?
+
+437
+01:05:07.740 --> 01:05:10.010
+Adwait Mane: Yeah, we see the slides.
+
+438
+01:05:10.010 --> 01:05:19.309
+Kiisa Nishikawa: Okay, so let me… okay, all right. So yeah, how can we use system identification to, investigate things that we're interested in?
+
+439
+01:05:19.470 --> 01:05:35.640
+Kiisa Nishikawa: And so, so I want to talk about in vivo data. I just, you know, really, am so grateful for the, long-term collaboration that I've had with Monica Daly, and I think that her experiments are so,
+
+440
+01:05:35.990 --> 01:05:53.890
+Kiisa Nishikawa: you know, so interesting. And so here's a guinea fowl running over an obstacle. It doesn't know that it's going to crash into the floor, and yet it just recovers perfectly. And this type of perturbation suggests that muscles
+
+441
+01:05:54.000 --> 01:06:05.720
+Kiisa Nishikawa: store energy and dissipate power. So if we look at some of the data from Monica's, you know, beautiful surgical implantations of sensors.
+
+442
+01:06:05.720 --> 01:06:17.630
+Kiisa Nishikawa: She has sonomicrometry crystals to measure the muscle length in vivo, in the running guinea fowl, the muscle fascicle length, tendon buckles to measure the muscle force.
+
+443
+01:06:17.630 --> 01:06:38.629
+Kiisa Nishikawa: an indwelling EMG to measure the muscle activation. So over here we see in gray the level stride when the bird doesn't fall into the hole, and in red, we see the stride when the bird does fall. So what happens is the muscle's being passively stretched by antagonists as the limb is extending.
+
+444
+01:06:38.630 --> 01:06:47.200
+Kiisa Nishikawa: The limb begins to retract, and the foot hits the ground here when it's just the level,
+
+445
+01:06:47.320 --> 01:06:55.829
+Kiisa Nishikawa: wood surface, but the… The foot falls through a bigger angle when the bird falls into the hole.
+
+446
+01:06:56.180 --> 01:07:11.120
+Kiisa Nishikawa: And here we see the force that the muscle produces, and so you might think F equals MA, the force would be bigger when the bird falls through a longer distance into the hole, but the force is actually much less.
+
+447
+01:07:11.120 --> 01:07:27.240
+Kiisa Nishikawa: And that seems like the musculoskeletal system is absorbing the power and dissipating the power. And here, again, we see an even bigger sign of it, that it's probably the muscle intrinsic properties
+
+448
+01:07:27.300 --> 01:07:35.110
+Kiisa Nishikawa: And the passive properties of the system that are doing this, because the muscle activation is actually larger.
+
+449
+01:07:35.200 --> 01:07:49.370
+Kiisa Nishikawa: when the bird steps into the hole than it is on the level surface, despite the fact that the force produced by that muscle is much lower. So, any question about that before I go on?
+
+450
+01:07:49.370 --> 01:08:08.650
+Kiisa Nishikawa: So energy is being stored as the muscle is stretched, energy is being dissipated. As the muscle's shortening, more energy is dissipated when you, shorten more, and so even despite the bigger EMG, you get less force out of the muscle.
+
+451
+01:08:08.700 --> 01:08:15.019
+Kiisa Nishikawa: Which is really good, and is an important mechanism for preventing injuries.
+
+452
+01:08:15.110 --> 01:08:17.430
+Kiisa Nishikawa: But how can we study
+
+453
+01:08:18.210 --> 01:08:24.429
+Kiisa Nishikawa: this phenomenon in muscles? Like, what experiments could we do to try and understand that?
+
+454
+01:08:24.779 --> 01:08:29.029
+Kiisa Nishikawa: And here's another beautiful example from Monica's research.
+
+455
+01:08:29.160 --> 01:08:34.410
+Kiisa Nishikawa: And this is the case where the guinea fowl is running over these obstacles.
+
+456
+01:08:34.510 --> 01:08:48.290
+Kiisa Nishikawa: And and in the no-obstacle case, you see that pretty much every stride looks the same in terms of the length trajectory, very similar in terms of the EMG, and very similar in terms of the force.
+
+457
+01:08:48.370 --> 01:09:05.719
+Kiisa Nishikawa: But what happens when a bird steps up with the instrumented leg onto the treadmill is that you can see that the… there's a perturbation here, and the muscle, it takes longer to return to its length.
+
+458
+01:09:06.000 --> 01:09:17.600
+Kiisa Nishikawa: And the EMG, is a little bit bigger here, the force is a lot bigger here, and very similar to stepping into a hole when the instrumented leg steps down.
+
+459
+01:09:17.660 --> 01:09:24.340
+Kiisa Nishikawa: What you can see is, like, here, you have, actually the… the leg falls through a longer…
+
+460
+01:09:24.390 --> 01:09:40.170
+Kiisa Nishikawa: distance before the foot hits the ground, you have a huge EMG and almost no force. And so what we think is happening in this situation is that the power, as I explained earlier, is being
+
+461
+01:09:40.170 --> 01:09:47.449
+Kiisa Nishikawa: Amplified, dissipated here in the step down, and the power is being amplified in the step up.
+
+462
+01:09:47.710 --> 01:10:04.120
+Kiisa Nishikawa: So the… the EMG to force ratio is, different and, lower than it is, for example, in the level step. And we'll see that in…
+
+463
+01:10:05.260 --> 01:10:15.769
+Kiisa Nishikawa: bit more clearly in the next few slides. So here, what we see is that when the bird steps into the hole, the muscle is actually, shortened
+
+464
+01:10:16.240 --> 01:10:18.920
+Kiisa Nishikawa: the most. So the…
+
+465
+01:10:20.260 --> 01:10:36.339
+Kiisa Nishikawa: Sorry. The muscle is at its short… its shortest length, right? It's stretched during extension, and it shortens during retraction and foot contact. So here, the muscle is at its shortest lengths, it's dissipated the most energy.
+
+466
+01:10:36.400 --> 01:10:48.609
+Kiisa Nishikawa: Here, the muscle is at its longest length, and so what happens is that most of the energy stored can be translated into the muscle force, and of course, the level step is in between.
+
+467
+01:10:48.790 --> 01:10:54.470
+Kiisa Nishikawa: And here you can just see this pattern in a large number of steps.
+
+468
+01:10:54.570 --> 01:11:08.969
+Kiisa Nishikawa: So, in red here, we have all the steps up from the treadmill onto the obstacle, and you can see the force is always bigger than average, but the EMG can be quite large, or it can be quite average.
+
+469
+01:11:08.970 --> 01:11:16.299
+Kiisa Nishikawa: And here we can see the blue is the steps of the instrumented leg down from obstacle onto treadmill.
+
+470
+01:11:16.300 --> 01:11:32.529
+Kiisa Nishikawa: And you can see, again, the force is always smaller, but the EMG can be quite a bit larger, or it can be perfectly average. And so this suggests that viscoel elastic structures in the muscle are amplifying the force
+
+471
+01:11:33.070 --> 01:11:40.670
+Kiisa Nishikawa: in the step up, and dissipating the force in the step down. But how can we study this?
+
+472
+01:11:40.840 --> 01:11:53.860
+Kiisa Nishikawa: well, ramp stretch experiments to the rescue. So, so using the system identification of these,
+
+473
+01:11:54.880 --> 01:12:06.199
+Kiisa Nishikawa: muscles over a large range of… physiological range of muscle lengths, and in the passive and the active muscles. And I just wanted to acknowledge Sue
+
+474
+01:12:06.260 --> 01:12:19.769
+Kiisa Nishikawa: Zhang and Jenna Monroy, who contributed to these experiments, we can determine the viscoelastic properties, and from those viscoelastic properties, we can look at all kinds of work.
+
+475
+01:12:20.100 --> 01:12:23.300
+Kiisa Nishikawa: Energy and Power Relationships.
+
+476
+01:12:23.430 --> 01:12:39.900
+Kiisa Nishikawa: So again, these are the viscoelastic models. For tendons, we… tendons seem to have this structure, muscles seem to have this structure, and so I'm going to tell you a little bit about the frog muscle research, that was done in the,
+
+477
+01:12:40.010 --> 01:12:55.949
+Kiisa Nishikawa: By, you know, Miles, Manny, Caitlin, Manra, oh, sorry, Natalie, Holt, Hank Granzier, Jenna Monroy, and, numerous IMSI trainees in the last,
+
+478
+01:12:56.500 --> 01:13:00.539
+Kiisa Nishikawa: MC Summer Research Project last summer.
+
+479
+01:13:00.850 --> 01:13:17.709
+Kiisa Nishikawa: So in addition to all the math that I've already showed you, that Mane and I have already showed you, we can take these a step farther. So, if we know the viscoelastic properties, the K's and the B's, and the viscoelastic structure.
+
+480
+01:13:17.710 --> 01:13:25.260
+Kiisa Nishikawa: We can calculate all kinds of things. So we can calculate the force of the individual,
+
+481
+01:13:25.520 --> 01:13:42.110
+Kiisa Nishikawa: Kelvin Voigt elements in our muscle model, which is equal to KX, which is also equal to mass times acceleration. We can calculate the work of the individual elements, which is the area under the force displacement curve, which has the same
+
+482
+01:13:42.110 --> 01:13:46.600
+Kiisa Nishikawa: formula, actually, for the energy. We can…
+
+483
+01:13:46.670 --> 01:14:05.180
+Kiisa Nishikawa: calculate the energy stored by each individual Kelvin voit element and by the two of them in series, and that's equal to 1 half KX squared, which is also equal, as I told you earlier, to 1 half 4 squared divided by stiffness. And so here we see that
+
+484
+01:14:05.180 --> 01:14:10.230
+Kiisa Nishikawa: Because the Kelvin-Voigt elements are in series, they have to have the same force.
+
+485
+01:14:10.340 --> 01:14:17.870
+Kiisa Nishikawa: But they have different Ks, and the element that has the lower K is obviously going to store the most force.
+
+486
+01:14:18.090 --> 01:14:19.990
+Kiisa Nishikawa: I mean, store the most energy.
+
+487
+01:14:21.230 --> 01:14:34.730
+Kiisa Nishikawa: So, it also turns out that two-thirds of the viscous force dissipates in tau seconds, where tau is the time constant, and tau is equal to, as I mentioned earlier, the damping constant divided by the stiffness.
+
+488
+01:14:34.850 --> 01:14:49.029
+Kiisa Nishikawa: And then lastly, we have power equals work divided by time, which is equal to k times X squared divided by time, which is also equal to force times velocity.
+
+489
+01:14:49.030 --> 01:15:00.330
+Kiisa Nishikawa: And so now we actually can see that power amplification, so that the viscoelastic elements in the muscle sarcomere can amplify the crossbridge
+
+490
+01:15:01.210 --> 01:15:19.210
+Kiisa Nishikawa: forces, and negative power can dissipate the crossbridge forces, and so a viscoelastic transmission in muscle sarcomeres could be providing those properties that we can see in Monica's data at the whole organism level.
+
+491
+01:15:19.990 --> 01:15:26.599
+Kiisa Nishikawa: So, let me just tell you a little bit more about, the research that we did last…
+
+492
+01:15:26.970 --> 01:15:46.920
+Kiisa Nishikawa: summer, in the Summer Research Institute. So, in, Natalie's lab, she works a lot with frog muscles, and so she collected these data from the sartorius, iliofibularis, and semitendinosus muscles of frogs, which are all, thigh muscles of the frogs.
+
+493
+01:15:47.140 --> 01:16:01.369
+Kiisa Nishikawa: And here you can see the normalized, force of these muscles, so the maximum is 100% of their maximum isometric force, and you see the typical sort of bell-shaped
+
+494
+01:16:01.490 --> 01:16:05.659
+Kiisa Nishikawa: Force-length curve with optimal muscle length.
+
+495
+01:16:05.880 --> 01:16:24.489
+Kiisa Nishikawa: At one muscle optimal length. And here we see the passive tension curves for these muscles as well. So this is the normalized segment length, and what you can see is the force develops at the shortest length in the sartorius muscle, meaning it's the stiffest.
+
+496
+01:16:24.570 --> 01:16:33.099
+Kiisa Nishikawa: And at the longest lengths in the semitendinosus muscle, meaning it's the most compliant, and the iliofibrillaris is in the middle.
+
+497
+01:16:33.420 --> 01:16:45.999
+Kiisa Nishikawa: So Natalie sent some of these frog muscles to Hank Granzier's lab, where they ground them up and looked at the Titan isoforms, and they found that there were 3 isoforms in these different frog muscles.
+
+498
+01:16:46.000 --> 01:16:56.040
+Kiisa Nishikawa: This light blue one is the most compliant isoform, and they called it N2A1. That means it has the longest… it's the longest
+
+499
+01:16:56.180 --> 01:17:01.559
+Kiisa Nishikawa: It has the longest I-band Titan spring.
+
+500
+01:17:01.560 --> 01:17:18.109
+Kiisa Nishikawa: The N2A isoform was somewhat shorter and stiffer, and the dark blue one, N2A3, was the stiffest. So you can see that there's a correlation with the stiffest muscle having the least of the most compliant isoform, and the most of the stiffest.
+
+501
+01:17:18.110 --> 01:17:19.250
+Kiisa Nishikawa: Isoform.
+
+502
+01:17:19.410 --> 01:17:36.150
+Kiisa Nishikawa: So, in the Summer Research Institute, Apollo, Ibanez, and, and Caitlin Manross and other students did some ramp stretch experiments on the sartorius and the semitendinosus muscles.
+
+503
+01:17:36.380 --> 01:17:49.400
+Kiisa Nishikawa: And so what I'm showing here is just a small, select number of results from these muscles, but that I hope will excite you about the kinds of things that you can learn.
+
+504
+01:17:49.620 --> 01:17:58.449
+Kiisa Nishikawa: about muscles from using system identification beyond just the list of, like, the parameters, the K's and B's, and the time constants.
+
+505
+01:17:58.810 --> 01:18:10.149
+Kiisa Nishikawa: So here, what we actually see is just the sartorius muscle, and we have here in blue, if you can see it, this thin blue line is the change in muscle length.
+
+506
+01:18:11.200 --> 01:18:27.799
+Kiisa Nishikawa: And here we have the passive muscles and the active muscles. And here we actually see the energy storage as a function of time. The solid orange line is the total energy stored. The,
+
+507
+01:18:27.840 --> 01:18:47.149
+Kiisa Nishikawa: dotted line is in the first Kelvin void element, and the dashed line is in the second Kelvin void element. And you can see in the passive muscles that, yeah, the KV1 is less stiff, so it stores more energy, but the pattern of energy storage in the two of them is very similar.
+
+508
+01:18:47.230 --> 01:19:03.309
+Kiisa Nishikawa: But what happens when we activate the muscle is that the, KV2 becomes very stiff and stores almost no energy, and so, like, 95% plus of the energy stored in the active muscle is in KV1.
+
+509
+01:19:03.860 --> 01:19:07.949
+Kiisa Nishikawa: Now… Marco Linari.
+
+510
+01:19:08.400 --> 01:19:20.880
+Kiisa Nishikawa: And, Roger Woolidge and Nancy Curtin, back in 2003, stretched some single frog muscle fibers, and they measured the heat and work produced by the muscles.
+
+511
+01:19:21.050 --> 01:19:30.690
+Kiisa Nishikawa: Using a thermopile. And they use this creative kind of normalization, of…
+
+512
+01:19:30.860 --> 01:19:41.219
+Kiisa Nishikawa: quantifying how much energy was stored by the muscles in terms of P0 and L0. So P0 is the maximum isometric force of a muscle, and L0 is the optimal length.
+
+513
+01:19:41.470 --> 01:19:54.799
+Kiisa Nishikawa: And they found when they stretched the muscles the farthest, they got the most energy storage, and the most energy stored that they observed in their study was approximately 10% of P0-L0.
+
+514
+01:19:54.800 --> 01:20:06.530
+Kiisa Nishikawa: Right? But then they tried to explain all of this energy based on the cross bridges. It turns out that the cross bridges only store about 2% of the total energy.
+
+515
+01:20:06.540 --> 01:20:11.819
+Kiisa Nishikawa: They looked at the… used the spot follower device that they have, or the striation follower
+
+516
+01:20:12.090 --> 01:20:22.960
+Kiisa Nishikawa: device that Marco has in his lab, so they could exactly quantify how much was contributed by the internal connective tissues in the fibers.
+
+517
+01:20:23.120 --> 01:20:29.159
+Kiisa Nishikawa: The stiffness of the thick and the thin filaments, and they could… and even passive tighten.
+
+518
+01:20:29.230 --> 01:20:33.790
+Kiisa Nishikawa: And they could only explain one-third of the stored energy.
+
+519
+01:20:33.800 --> 01:20:39.070
+Kiisa Nishikawa: So now we can take these energy measurements that were made last summer.
+
+520
+01:20:39.070 --> 01:20:54.759
+Kiisa Nishikawa: And we can actually, ask, in units of P0, L0, how much energy did this frog sartorius muscle store? And it turns out in the passive muscle, it was a very, very small fraction, like, not even 1% of P0L0.
+
+521
+01:20:54.760 --> 01:21:05.079
+Kiisa Nishikawa: But in the active muscles, It was, like, 0.06, which exactly corresponds to the missing energy.
+
+522
+01:21:05.430 --> 01:21:08.839
+Kiisa Nishikawa: in Lenari et al.'s study.
+
+523
+01:21:09.010 --> 01:21:21.080
+Kiisa Nishikawa: So now the next thing we can do is ask about energy storage in the sartorius versus the semitendinosus muscle. So over here, this is the data that I just showed you before.
+
+524
+01:21:21.810 --> 01:21:40.330
+Kiisa Nishikawa: And over here, we have the data for the semitendinosis, and you'll see that the, the energy stored in the semitendinosis in the passive muscle is actually less, which we'd expect, right, based on the,
+
+525
+01:21:42.640 --> 01:21:55.640
+Kiisa Nishikawa: passive tension and other properties, but in the active muscle, it's actually at least as much or a little bit more. So the… in the energy storage, in the semitendinosis increased from
+
+526
+01:21:55.640 --> 01:22:05.600
+Kiisa Nishikawa: a relatively small number in the passive, I should say, actually, I was comparing the wrong… sorry, it's a little bit more, because unfortunately, these…
+
+527
+01:22:05.650 --> 01:22:07.919
+Kiisa Nishikawa: Axes aren't the same.
+
+528
+01:22:08.110 --> 01:22:14.379
+Kiisa Nishikawa: And and in the active muscles, almost as much.
+
+529
+01:22:14.580 --> 01:22:21.909
+Kiisa Nishikawa: So we can quantify and compare from muscle to muscle how much energy is stored during stretching.
+
+530
+01:22:23.000 --> 01:22:34.420
+Kiisa Nishikawa: And we can also look at power amplification and dissipation. So here we have, oh, and this was supposed to be covered up and just say total stretch, but…
+
+531
+01:22:34.650 --> 01:22:35.660
+Kiisa Nishikawa: Whatever.
+
+532
+01:22:35.770 --> 01:22:42.149
+Kiisa Nishikawa: Here we look at power amplification and dissipation, so now we actually have…
+
+533
+01:22:42.320 --> 01:22:48.080
+Kiisa Nishikawa: Time and power in joules per second, or watts.
+
+534
+01:22:48.320 --> 01:22:57.259
+Kiisa Nishikawa: And so here we see for the sartorius, we see that the power of the first Kelvin void element is always positive.
+
+535
+01:22:57.500 --> 01:23:13.619
+Kiisa Nishikawa: The power of the second Kelvin-Voigt element is less during the stretch, and then becomes negative at the end of stretching, and then out for some time after that. And when we activate the muscle, the
+
+536
+01:23:14.120 --> 01:23:19.690
+Kiisa Nishikawa: power dissipation by the second Kelvin-Voigt element, you know, more than doubles.
+
+537
+01:23:20.180 --> 01:23:27.920
+Kiisa Nishikawa: So we have, About a 100-fold increase in…
+
+538
+01:23:28.750 --> 01:23:43.330
+Kiisa Nishikawa: positive total power, upon activation, and we see that the one Kelvin voigt element is largely responsible for the power amplification, and the other one is largely responsible for the power dissipation.
+
+539
+01:23:44.320 --> 01:23:58.749
+Kiisa Nishikawa: And then when we compare these between our sartorius and semitendinosus muscle, what we see is actually that in the semitendinosus muscle, we get a really, really big increase in
+
+540
+01:23:58.750 --> 01:24:08.610
+Kiisa Nishikawa: total power upon activation. And interestingly, even though the, semitendinosis is less stiff
+
+541
+01:24:08.700 --> 01:24:25.179
+Kiisa Nishikawa: than the sartorius, the, increase in power with activation doesn't necessarily… or the increased stiffness of the sartorius muscle doesn't necessarily translate into higher power. So, so…
+
+542
+01:24:25.240 --> 01:24:44.409
+Kiisa Nishikawa: I hope that I've convinced you, maybe I'll stop sharing before we do the breakout room thing, but I hope that I've convinced you that we can really look not only at… just get the parameters of models like stiffness and damping coefficients and what the viscoelastic structure is.
+
+543
+01:24:44.410 --> 01:24:55.009
+Kiisa Nishikawa: But also really understand some things about muscle performance in vivo that we really care about using these viscoelastic models.
+
+544
+01:24:55.080 --> 01:25:04.189
+Kiisa Nishikawa: So, maybe we can stop for questions, and then maybe we can have a quick breakout session where you could talk about how you guys might,
+
+545
+01:25:04.390 --> 01:25:09.570
+Kiisa Nishikawa: Think about using these tools in your own research, and then report back.
+
+546
+01:25:30.280 --> 01:25:39.360
+Chastain, Maddy: I had a question, Kiisa. So when you show the Calvin White, it's showing that the active
+
+547
+01:25:39.490 --> 01:25:44.529
+Chastain, Maddy: has less of the Coven Voight 2 versus the Covenpoint 1.
+
+548
+01:25:44.820 --> 01:25:46.430
+Chastain, Maddy: Activation, right?
+
+549
+01:25:46.620 --> 01:25:50.039
+Chastain, Maddy: Yeah. Kind of more of a clarifying question. Okay, cool.
+
+550
+01:25:50.040 --> 01:25:59.579
+Kiisa Nishikawa: Yeah, yeah, so, and Maddie, just to follow up on your question, because I think that's a really good question, too, what this suggests to me
+
+551
+01:26:00.020 --> 01:26:08.899
+Kiisa Nishikawa: Is that, over evolutionary time, different parts of… so…
+
+552
+01:26:09.530 --> 01:26:18.189
+Kiisa Nishikawa: you know, I haven't really gone a lot into the details, but it… from, you know, from Damien's question, what we think is that
+
+553
+01:26:19.930 --> 01:26:34.019
+Kiisa Nishikawa: the Kelvin-Voigt elements in muscle correspond to regions of the PVK region of Titan, and that comes from the fact that in a transgenic mouse that has a big deletion in Titan.
+
+554
+01:26:34.220 --> 01:26:42.509
+Kiisa Nishikawa: We actually get in the transgenic mouse a single Kelvin Voigt element in series with a spring.
+
+555
+01:26:42.800 --> 01:26:49.490
+Kiisa Nishikawa: Another piece of data supporting that is that the gene expression, we have a mutant.
+
+556
+01:26:49.490 --> 01:27:04.909
+Kiisa Nishikawa: that has altered gene expression with a stiffer… in which, you know, two-thirds of the PVK region is stiffer in the mutant, or shorter and stiffer in the mutant than it is in the wild type, and we can pick up that signature in the…
+
+557
+01:27:04.910 --> 01:27:18.479
+Kiisa Nishikawa: viscoelastic properties. So we think that the muscle Kelvin-Voigt elements 1 and 2 are parts of Titan, and we're pretty excited to think that the… the properties of Titan
+
+558
+01:27:18.970 --> 01:27:29.350
+Kiisa Nishikawa: are clearly not uniform throughout the entire PVK region, and some of the PVK region appears to, yeah, provide the dissipative
+
+559
+01:27:29.630 --> 01:27:37.000
+Kiisa Nishikawa: Function, and the other part seems to be specialized for power amplification.
+
+560
+01:27:37.780 --> 01:27:42.920
+Kiisa Nishikawa: And you could translate that as residual force enhancement.
+
+561
+01:27:42.920 --> 01:27:47.999
+Chastain, Maddy: Do you think, like, the IG, region, or domain…
+
+562
+01:27:48.260 --> 01:27:51.359
+Chastain, Maddy: Oh, I can't remember what it's called, the IG tandem.
+
+563
+01:27:51.680 --> 01:27:58.300
+Chastain, Maddy: Plays any part in it as well, or do you think it's mainly just the BUVK?
+
+564
+01:27:59.200 --> 01:28:03.349
+Kiisa Nishikawa: So we think… so in…
+
+565
+01:28:03.880 --> 01:28:10.590
+Kiisa Nishikawa: So the P… so the tandem IG region, is,
+
+566
+01:28:11.310 --> 01:28:14.739
+Kiisa Nishikawa: We think it's not a spring or a damper.
+
+567
+01:28:14.880 --> 01:28:21.120
+Kiisa Nishikawa: You know, and it's a… it's a… Strange structure that's,
+
+568
+01:28:22.240 --> 01:28:27.960
+Kiisa Nishikawa: Called an entropic spring, so it extends under very low force.
+
+569
+01:28:28.410 --> 01:28:31.889
+Kiisa Nishikawa: And so even in the passive,
+
+570
+01:28:32.250 --> 01:28:42.020
+Kiisa Nishikawa: In the passive model, we don't think that the tandem IG region contributes much to the… Viscoelastic properties.
+
+571
+01:28:42.320 --> 01:28:59.609
+Kiisa Nishikawa: So it might actually limit extension of the, of the PVK region, but it's the extension of the PEVK region itself that is related to forced development. So the PVK extends with no forced development if that
+
+572
+01:28:59.640 --> 01:29:13.029
+Kiisa Nishikawa: explains. And another… another sort of supporting fact for why we think that the… the KV elements in muscle correspond to Titan is the fact that,
+
+573
+01:29:13.100 --> 01:29:21.650
+Kiisa Nishikawa: We see a three orders of magnitude, a thousand-fold variation in the stiffness of passive muscles.
+
+574
+01:29:21.750 --> 01:29:38.400
+Kiisa Nishikawa: From 0.8 L0 up to 1.2 L0, the values of the spring constant change from approximately 1 to approximately 1,000, and that's just the exact… what you'd expect from Titan, which is an exponential spring.
+
+575
+01:29:39.740 --> 01:29:40.550
+Chastain, Maddy: Okay.
+
+576
+01:29:43.240 --> 01:29:45.529
+Chastain, Maddy: I had one more question.
+
+577
+01:29:45.530 --> 01:29:45.990
+Kiisa Nishikawa: Go for it.
+
+578
+01:29:46.870 --> 01:29:48.919
+Chastain, Maddy: I was wondering, like.
+
+579
+01:29:49.170 --> 01:30:03.269
+Chastain, Maddy: So there's been, like, a lot of exploration around the N2A, like, but I was wondering more about the N2B within the cardiac and N2BA, and what, like, your predictions around that were for it.
+
+580
+01:30:03.770 --> 01:30:08.070
+Kiisa Nishikawa: That is such a cool question that I'm so excited about.
+
+581
+01:30:08.210 --> 01:30:21.269
+Kiisa Nishikawa: So, so there's our three isoforms of Titan, for those of you who are not Titan aficionados, and there's N2A, N2B, and N2BA.
+
+582
+01:30:21.600 --> 01:30:31.419
+Kiisa Nishikawa: And one interesting observation about… in order to explain what I think is going on with N2B, which has never been tested and is purely a prediction.
+
+583
+01:30:31.640 --> 01:30:35.690
+Kiisa Nishikawa: I'm gonna start by telling you what I think about N2A.
+
+584
+01:30:35.800 --> 01:30:48.210
+Kiisa Nishikawa: So, in all skeletal muscles except for, the soleus muscle, The N2A region is,
+
+585
+01:30:50.380 --> 01:31:08.840
+Kiisa Nishikawa: I'm just trying to exactly think. It's about, let's just say, like, it's 1.5 nanometers from the Z disc in all skeletal muscles, except for the soleus, and then it's, like, 1.75 nanometers in soleus, so it's farther away.
+
+586
+01:31:08.840 --> 01:31:17.980
+Kiisa Nishikawa: Soleus muscles are really compliant compared to all the other muscles, and we think that moving the… N2A,
+
+587
+01:31:18.060 --> 01:31:21.710
+Kiisa Nishikawa: Closer to the Z disc makes muscles stiffer.
+
+588
+01:31:22.730 --> 01:31:29.059
+Kiisa Nishikawa: So now we come to N2B. So N2B is an insertion in the…
+
+589
+01:31:29.490 --> 01:31:36.429
+Kiisa Nishikawa: tandem Ig region that makes the tandem IG region about 40 nanometers longer.
+
+590
+01:31:36.530 --> 01:31:50.689
+Kiisa Nishikawa: And that's moving the place where there might be binding of the titan to the actin 40 nanometers closer to the M line. And so that should make muscles
+
+591
+01:31:52.120 --> 01:32:05.089
+Kiisa Nishikawa: more compliant, even more compliant than soleus muscles, all other things equal. But then cardiac muscles have a very, very short… like, so the number of,
+
+592
+01:32:05.090 --> 01:32:13.750
+Kiisa Nishikawa: a very, very short PVK domain. So, in soleus muscles, there's 2,000 plus amino acids in the
+
+593
+01:32:14.560 --> 01:32:18.450
+Kiisa Nishikawa: PVK, and there's only 63 in…
+
+594
+01:32:18.640 --> 01:32:22.010
+Kiisa Nishikawa: cardiac muscle. I mean, a big, big, big difference.
+
+595
+01:32:22.130 --> 01:32:31.570
+Kiisa Nishikawa: So… so it seems… so it'd be really great to look at the biophysics of…
+
+596
+01:32:31.850 --> 01:32:47.200
+Kiisa Nishikawa: those different isoforms from the point of view of viscoelastic properties, and how do things change on activation. And we actually do see, for example, in EDL versus soleus, that when you activate a musc… the
+
+597
+01:32:47.500 --> 01:32:51.500
+Kiisa Nishikawa: the… The…
+
+598
+01:32:52.300 --> 01:33:00.949
+Kiisa Nishikawa: EDL muscles, they get stiffer than when you activate the soleus muscles, and we think it might be due to the difference in N2A location.
+
+599
+01:33:05.210 --> 01:33:08.530
+Kiisa Nishikawa: That was a long-winded answer again, but did that answer your question?
+
+600
+01:33:08.530 --> 01:33:10.350
+Chastain, Maddy: Yeah. Yes.
+
+601
+01:33:10.680 --> 01:33:13.079
+Chastain, Maddy: No, that made sense. Thank you.
+
+602
+01:33:14.190 --> 01:33:15.710
+Kiisa Nishikawa: Any more questions?
+
+603
+01:33:28.600 --> 01:33:35.450
+Kiisa Nishikawa: Do we have time for a breakout room, or would people rather just… Finish up.
+
+604
+01:33:40.100 --> 01:33:41.999
+Victoria Wood: I think this might be just a little bit…
+
+605
+01:33:42.300 --> 01:33:42.750
+Kiisa Nishikawa: That's right.
+
+606
+01:33:42.750 --> 01:33:43.960
+Victoria Wood: For a breakout room here.
+
+607
+01:33:43.960 --> 01:34:00.800
+Kiisa Nishikawa: Yeah, I agree with that. So, if you have ideas for how you could use… so we'll be… we plan, you know, Mane and I are planning to make all of these system identification tools freely available to the NC community and beyond.
+
+608
+01:34:00.910 --> 01:34:11.600
+Kiisa Nishikawa: And if you see any way in which these tools could be useful to you in your research, we'd love to collaborate with you and,
+
+609
+01:34:12.260 --> 01:34:23.530
+Kiisa Nishikawa: yeah, help you to use the software. So, thanks very much for listening, and thanks again, MC Community, for being so…
+
+610
+01:34:24.090 --> 01:34:27.189
+Kiisa Nishikawa: Supportive, and so much fun to work with.
+
+611
+01:34:27.430 --> 01:34:30.630
+Kiisa Nishikawa: And, yeah, we look forward to the next workshop.
+
+612
+01:34:34.480 --> 01:34:52.060
+Miles Valencia: I also just want to give a quick plug, like, you… you just need to send a message to someone if you feel like they can help collaborate and, you know, utilize your data set, because that's what I did with Kiisa, where I was just like, I have this data that I know, I'm trying to do something, but I can't really do it.
+
+613
+01:34:52.060 --> 01:35:03.190
+Miles Valencia: and then would turn it into a paper that's just about published, you know? So, you know, it's really nice just, collaborating, especially with, you know, this whole group that's, like, you know.
+
+614
+01:35:03.260 --> 01:35:11.929
+Miles Valencia: very spread out, but still very much aligned in our research. So, yeah, don't be afraid to send that first message.
+
+615
+01:35:12.850 --> 01:35:13.560
+Miles Valencia: Hmph.
+
+616
+01:35:14.590 --> 01:35:16.780
+Kiisa Nishikawa: Thanks for that, Miles. Yeah.
+
+617
+01:35:17.280 --> 01:35:18.340
+Kiisa Nishikawa: Yeah.
+
+618
+01:35:19.450 --> 01:35:20.300
+Miles Valencia: Great talk today.
+
+619
+01:35:20.690 --> 01:35:21.840
+Kiisa Nishikawa: Yeah, thanks.
+
+620
+01:35:21.840 --> 01:35:22.490
+Miles Valencia: Hey everyone.
+
+621
+01:35:22.770 --> 01:35:24.180
+Kiisa Nishikawa: Yep, okay.
+
+622
+01:35:24.460 --> 01:35:33.419
+Kiisa Nishikawa: Thanks, Mane, too. And, yeah, nice to see everyone. We look forward to collaborating in the future.
+
+623
+01:35:34.330 --> 01:35:34.820
+Chastain, Maddy: Yay.
+
+624
+01:35:34.820 --> 01:35:35.200
+Victoria Wood: Kissa.
+
+625
+01:35:35.200 --> 01:35:38.540
+Adwait Mane: Thank you all for attending, and for the questions.
+
+626
+01:35:42.160 --> 01:35:46.830
+Victoria Wood: Oh, Mane, real quick, unless anybody else has questions before they leave.
+
+627
+01:35:54.240 --> 01:35:55.800
+Victoria Wood: I'll just give people a second.
+
+628
+01:35:56.460 --> 01:35:57.220
+Adwait Mane: Okay.
+
+629
+01:36:01.460 --> 01:36:03.429
+Kiisa Nishikawa: Oh, we forgot to project the…
+
+630
+01:36:04.750 --> 01:36:10.489
+Adwait Mane: For the sign-in. She put the link in… Victoria shared the link in the chat.
+
+631
+01:36:10.490 --> 01:36:14.079
+Victoria Wood: you shared at the beginning, and then the link's in the chat, the link is, I think.
+
+632
+01:36:14.230 --> 01:36:18.629
+Victoria Wood: We haven't been having issues with attendees actually signing in, so it should be fine.
+
+633
+01:36:19.980 --> 01:36:26.879
+Victoria Wood: Okay, so I… I don't think there's any questions for people who are left, but,
+
+634
+01:36:27.450 --> 01:36:36.910
+Victoria Wood: Real quick, Mane, would you be willing to help, with moderating one of the panel discussions, at the Capstone Symposium? I…
+
+635
+01:36:37.390 --> 01:36:46.620
+Victoria Wood: can email you some more details about that, but the… the panel discussion we'll have, on Thursday.
+
+636
+01:36:46.620 --> 01:37:01.229
+Victoria Wood: It will be, muscle mechanisms and modeling, and so I've asked Jun Kuhn from Simon's group to also help moderate, so basically, moderators will just be responsible for introducing the panelists, which, like, Kiisa and Simon and a few others.
+
+637
+01:37:01.230 --> 01:37:06.839
+Victoria Wood: And then, just asking a few questions to start us off, and then helping engage the audience there.
+
+638
+01:37:07.350 --> 01:37:07.870
+Victoria Wood: Okay.
+
+639
+01:37:08.460 --> 01:37:12.040
+Adwait Mane: Yeah, I've not done this before, but I'm happy to.
+
+640
+01:37:12.040 --> 01:37:15.929
+Victoria Wood: It'll be low stress, it's just a way to get the audience engaged and get some.
+
+641
+01:37:15.930 --> 01:37:18.680
+Adwait Mane: So it's a panel discussion, right, you said? Yeah.
+
+642
+01:37:18.680 --> 01:37:26.959
+Victoria Wood: It… yeah, the goal is really just to have a group discussion for everybody to have a chance to ask questions and bounce ideas off of each other, but
+
+643
+01:37:27.360 --> 01:37:33.080
+Victoria Wood: Having it a bit more structured to help engage the… the group in that is what we're going for.
+
+644
+01:37:33.490 --> 01:37:39.049
+Adwait Mane: Sure, happy to… To do what I can.
+
+645
+01:37:39.050 --> 01:37:43.649
+Victoria Wood: Okay, awesome. Yeah, if, Kiisa, I mean, I know you're on the panel, but if you wanna…
+
+646
+01:37:44.050 --> 01:37:49.079
+Victoria Wood: pose any questions that you want asked as well, you guys can work together on that.
+
+647
+01:37:49.080 --> 01:38:03.090
+Kiisa Nishikawa: Yeah, so I think it's… I think, you know, so Monica and I and Mane were at this Junelia farm conference last spring, and they did kind of seed the…
+
+648
+01:38:03.300 --> 01:38:07.079
+Kiisa Nishikawa: you know, so I think it might be good if each moderator
+
+649
+01:38:07.810 --> 01:38:30.870
+Kiisa Nishikawa: if we ask each moderator in advance, or not moderator, if we ask the moderators and panel members, and maybe even the whole IMSI community, so that we can come up with some questions before, because people tend to just, like, stare and not ask questions at the last minute, so that way we have, like, a bank of questions that
+
+650
+01:38:30.870 --> 01:38:33.590
+Kiisa Nishikawa: You know, we know will get discussed.
+
+651
+01:38:34.090 --> 01:38:34.680
+Victoria Wood: That's a great idea.
+
+652
+01:38:34.680 --> 01:38:43.139
+Kiisa Nishikawa: happy to contribute some questions, and Mane and I can talk about, possible questions, but I think it'd be really good to…
+
+653
+01:38:43.540 --> 01:38:48.009
+Kiisa Nishikawa: Have… ask other people to contribute questions in advance, too.
+
+654
+01:38:48.460 --> 01:39:08.409
+Victoria Wood: Perfect. Yeah, that's a good idea. I'll send out a request for that. It will also basically be the built-in, like, discussion period for the presentations of the morning, as well, so it'll be at the end of all of the muscle mechanisms and modeling presentations we have that day. So it'll be, you know, a chance for people to follow up on some of the
+
+655
+01:39:08.500 --> 01:39:09.510
+Victoria Wood: projects.
+
+656
+01:39:09.710 --> 01:39:12.400
+Victoria Wood: That sounds great. Which is… yeah.
+
+657
+01:39:12.760 --> 01:39:18.899
+Kiisa Nishikawa: Yeah, perfect. And you have… you know that we're all coming, and Brandon's good to present when he's.
+
+658
+01:39:19.410 --> 01:39:20.130
+Victoria Wood: Yeah, perfect.
+
+659
+01:39:21.290 --> 01:39:36.319
+Victoria Wood: Thank you. Yeah, I didn't get, I think you said nobody in your group had any dietary restrictions, or anything, but if anybody does, since I inputted people's responses for the RSVP just from you, if anybody does have anything, just tell them to reach out to me.
+
+660
+01:39:36.720 --> 01:39:45.249
+Kiisa Nishikawa: Okay, great. I'll, when I get back from Chicago, I will… I got so sweaty this morning moving.
+
+661
+01:39:45.630 --> 01:39:52.340
+Kiisa Nishikawa: up with my daughter in the, like, 85 degree, 99% humidity Chicago.
+
+662
+01:39:52.340 --> 01:39:56.239
+Victoria Wood: Oh man, you're a hero. I'm sure she appreciates it a lot.
+
+663
+01:39:56.240 --> 01:39:58.010
+Kiisa Nishikawa: And then when I got back.
+
+664
+01:39:58.990 --> 01:40:08.020
+Kiisa Nishikawa: I… there was this email, like, you have to, validate your P-card purchases within the next 15 minutes.
+
+665
+01:40:08.020 --> 01:40:09.840
+Victoria Wood: Oh my goodness!
+
+666
+01:40:11.160 --> 01:40:12.130
+Kiisa Nishikawa: Really?
+
+667
+01:40:12.360 --> 01:40:14.559
+Kiisa Nishikawa: happening to me? Anyway, I'm whining now.
+
+668
+01:40:14.560 --> 01:40:15.120
+Victoria Wood: But…
+
+669
+01:40:15.680 --> 01:40:24.000
+Kiisa Nishikawa: But when I… as soon as I get back, I will definitely say, please, if you do have dietary restrictions, let Victoria know on Slack.
+
+670
+01:40:24.440 --> 01:40:25.130
+Victoria Wood: Sounds good.
+
+671
+01:40:25.640 --> 01:40:26.360
+Kiisa Nishikawa: Alright.
+
+672
+01:40:26.360 --> 01:40:27.279
+Victoria Wood: Thank you. Ducky!
+
+673
+01:40:27.280 --> 01:40:34.280
+Kiisa Nishikawa: And we'll be putting some stuff, we'll put our presentation, and we'll put, you know, maybe a derivation of the…
+
+674
+01:40:35.380 --> 01:40:35.850
+Victoria Wood: Yes.
+
+675
+01:40:35.850 --> 01:40:40.050
+Kiisa Nishikawa: In the… in the folder, so people have a few more resources.
+
+676
+01:40:40.050 --> 01:40:58.660
+Victoria Wood: That would be great. I'm going to… I keep saying this, and then it keeps getting postponed and postponed, but I will be drafting up this… this workshop in the online curriculum, and I'll send it to you guys for review and anything you want to add and everything like that. So I'll… if you have any resources, additional reading.
+
+677
+01:40:59.850 --> 01:41:09.740
+Victoria Wood: I don't know, equations, text, or anything that you want to add in there. I'll build it off of just, like, the workshop today to start with, and then hand it off to you guys for edits and improvements.
+
+678
+01:41:10.110 --> 01:41:14.540
+Kiisa Nishikawa: That sounds great. Do you think we did a good job of making it accessible?
+
+679
+01:41:14.540 --> 01:41:16.229
+Victoria Wood: It was accessible to me.
+
+680
+01:41:16.230 --> 01:41:18.280
+Kiisa Nishikawa: So, thank you.
+
+681
+01:41:18.330 --> 01:41:20.250
+Victoria Wood: I think it was good.
+
+682
+01:41:20.250 --> 01:41:29.370
+Kiisa Nishikawa: Yeah, you know, it's inevitable that it is going to go over some people's heads, but you don't want it to be, like, the majority of people, yeah.
+
+683
+01:41:29.370 --> 01:41:47.630
+Victoria Wood: Yeah, yeah, I think it was good. It is tough with these presentations because it's meant for faculty and for trainees. We've had a little bit less faculty involvement this summer than last summer, which has been a bit of a bummer there. But I think it's been more approachable to trainees as a result. So you win some, you lose some.
+
+684
+01:41:48.140 --> 01:41:49.060
+Kiisa Nishikawa: Yeah, yeah.
+
+685
+01:41:49.490 --> 01:41:55.620
+Adwait Mane: Yeah, I thought my part was quite text-heavy. Usually, I try to have more graphics and…
+
+686
+01:41:55.880 --> 01:41:59.020
+Adwait Mane: keep it more engaging, but I just did not have the time, but…
+
+687
+01:41:59.830 --> 01:42:06.419
+Victoria Wood: It's good to have that to refer back to, too, with the recording and such, to actually have the details,
+
+688
+01:42:06.710 --> 01:42:08.780
+Victoria Wood: I think that's not always a bad thing.
+
+689
+01:42:10.420 --> 01:42:18.620
+Adwait Mane: Yeah, happy to receive any feedback if you… Have about just… Delivery and stuff as well.
+
+690
+01:42:19.090 --> 01:42:24.289
+Victoria Wood: In the reflection form, there's a section that I ask if anybody has any questions.
+
+691
+01:42:24.290 --> 01:42:24.859
+Adwait Mane: How are you?
+
+692
+01:42:24.860 --> 01:42:35.399
+Victoria Wood: I can forward that to you guys if you want to post any responses as well. That, mostly, I've been saving for developing the online,
+
+693
+01:42:36.100 --> 01:42:46.140
+Victoria Wood: curriculum, so we can answer any of those questions in, like, a Q&A portion at the bottom, but if you want to answer them already for people who came today, I can send out an email or whatever.
+
+694
+01:42:46.140 --> 01:42:47.480
+Adwait Mane: Yeah, I mean, I'll put…
+
+695
+01:42:47.990 --> 01:42:48.690
+Victoria Wood: Okay.
+
+696
+01:42:48.690 --> 01:42:53.030
+Kiisa Nishikawa: Thanks so much, Victoria. Thank you, Mane. We did it! High five!
+
+697
+01:42:53.030 --> 01:42:53.650
+Adwait Mane: You did it!
+
+698
+01:42:55.320 --> 01:42:58.749
+Adwait Mane: I look forward to meeting you in person, Victoria.
+
+699
+01:42:58.750 --> 01:43:00.259
+Victoria Wood: Yes, you too!
+
+700
+01:43:00.260 --> 01:43:02.080
+Adwait Mane: Are you… where are you based? Are you…
+
+701
+01:43:02.260 --> 01:43:05.950
+Victoria Wood: I'm actually in Philadelphia, so, yeah.
+
+702
+01:43:05.950 --> 01:43:07.210
+Adwait Mane: Wow, okay.
+
+703
+01:43:07.210 --> 01:43:16.899
+Victoria Wood: Yeah, I work remotely for the grant, but… so it's great for me to go in person to UCI as well, to get to see everybody in the one time of year.
+
+704
+01:43:16.900 --> 01:43:17.610
+Adwait Mane: Yeah.
+
+705
+01:43:17.610 --> 01:43:24.180
+Kiisa Nishikawa: Yeah, those little… Check-ins are just really, really… important thing.
+
+706
+01:43:24.180 --> 01:43:26.150
+Victoria Wood: Yeah. Yeah.
+
+707
+01:43:26.580 --> 01:43:29.620
+Kiisa Nishikawa: Okay, well, we're looking forward to seeing you soon.
+
+708
+01:43:29.620 --> 01:43:30.769
+Victoria Wood: Yes, me too.
+
+709
+01:43:30.770 --> 01:43:31.470
+Kiisa Nishikawa: Yeah, okay.
+
+710
+01:43:31.470 --> 01:43:33.419
+Victoria Wood: Have a good rest of your trip in Chicago.
+
+711
+01:43:33.630 --> 01:43:37.509
+Kiisa Nishikawa: Yeah, thanks. Yeah, schlepping stuff for my daughter.
+
+712
+01:43:38.210 --> 01:43:38.910
+Victoria Wood: Gotta get strong.
+
+713
+01:43:38.910 --> 01:43:48.029
+Kiisa Nishikawa: We have a bed and a table that I'm a little concerned about, but the air conditioner is done. That's crucial.
+
+714
+01:43:48.030 --> 01:43:53.859
+Adwait Mane: West. Yeah. It's, quite, quite a project. Yeah. It goes smoothly.
+
+715
+01:43:54.110 --> 01:43:56.650
+Kiisa Nishikawa: Labor of love. Okay.
+
+716
+01:43:57.180 --> 01:43:58.000
+Victoria Wood: File.
+
+717
+01:43:58.000 --> 01:43:58.720
+Adwait Mane: Bye.
+

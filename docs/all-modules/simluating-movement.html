@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="keywords" content="dynamical systems, Euler’s method, ordinary differential equations, spring-loaded inverted pendulum, numerical integration">
 
 <title>So you want to simulate movement? – IMSI Movement Science Course</title>
 <style>
@@ -139,21 +140,62 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>dynamical systems, Euler’s method, ordinary differential equations, spring-loaded inverted pendulum, numerical integration</p>
+  </div>
+</div>
 
 </header>
 
 
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p>TBD</p>
+<ol type="1">
+<li>Explain that simulating movement means numerically solving differential equations that describe how a system’s state changes over time.</li>
+<li>Apply Euler’s method to step a simple first-order ordinary differential equation forward in time using a small, fixed time step.</li>
+<li>Describe how to convert a second-order equation of motion into a system of first-order ODEs using state variables, and identify the state vector for a simple spring-mass system.</li>
+</ol>
 </section>
 <section id="workshop" class="level2">
 <h2 class="anchored" data-anchor-id="workshop">Workshop</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U78D5LDGmCI?si=gg6qf9Q6Bc_liXmx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 <p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Christian Hubicki</em></p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="why-simulate-movement" class="level3">
+<h3 class="anchored" data-anchor-id="why-simulate-movement">Why Simulate Movement?</h3>
+<p>Dr.&nbsp;Hubicki opened by explaining that simulation connects experimental biology and robotics. In his research, he builds computer simulations of robots to develop controllers for walking machines. He introduced the guinea fowl as an example of an animal studied experimentally by Dr.&nbsp;Monica Daley, noting that experiments are essential for collecting data but that simulations offer a complementary way to interrogate motion. A simulation allows researchers to test hypotheses and explore conditions that would be impossible to apply to a live animal—without requiring further experiments, or in direct complement to them.</p>
+</section>
+<section id="math-models-come-in-many-forms" class="level3">
+<h3 class="anchored" data-anchor-id="math-models-come-in-many-forms">Math Models Come in Many Forms</h3>
+<p>Dr.&nbsp;Hubicki showed that math models of movement can range from highly detailed musculoskeletal models—such as those built in OpenSim (which Dr.&nbsp;Hubicki noted has been downloaded hundreds of thousands of times)—to very simple reduced-order models. He described a 2006 paper by Monica Daley in which a spring-loaded inverted pendulum (SLIP) model was used to study how a guinea fowl maintains stability when stepping into an obstacle. Simple models are also central to robotics: a bio-inspired reduced-order model can, in principle, yield animal-like movement as a consequence of optimizing control within that model.</p>
+</section>
+<section id="dynamical-systems-and-differential-equations" class="level3">
+<h3 class="anchored" data-anchor-id="dynamical-systems-and-differential-equations">Dynamical Systems and Differential Equations</h3>
+<p>To simulate movement, a mathematical model of the system is needed—specifically, a dynamical system: a system whose behavior changes over time and is described by the time derivatives of key variables called state variables. These relationships are expressed as differential equations, which are equations that contain derivatives. Dr.&nbsp;Hubicki used a simple population growth model (dP/dt = αP) as a first example. Its exact analytical solution is the exponential function P(t) = Ce^(αt), where the constant C is set by the initial condition (the starting population). He then introduced the pendulum: its governing differential equation (d²θ/dt² = −(g/L)sin(θ)) cannot be solved exactly using elementary functions such as sines, cosines, or exponentials—a long-established mathematical fact—so a different approach is needed.</p>
+</section>
+<section id="eulers-method-numerical-approximation" class="level3">
+<h3 class="anchored" data-anchor-id="eulers-method-numerical-approximation">Euler’s Method: Numerical Approximation</h3>
+<p>Because many differential equations cannot be solved analytically, simulation relies on approximate numerical solutions. The simplest such approach is Euler’s method, derived directly from the definition of a derivative: X(t+Δt) ≈ X(t) + (dX/dt)·Δt. By repeatedly applying this update rule with a small time step Δt, the simulation steps forward through time. Dr.&nbsp;Hubicki implemented this in MATLAB with the population growth model, producing an exponential growth curve consistent with the analytical solution. He demonstrated that accuracy depends on the size of the time step: using too large a Δt caused a simulated conservative spring system to spuriously gain energy over time, while reducing Δt substantially corrected the error.</p>
+</section>
+<section id="state-variables-and-systems-of-first-order-odes" class="level3">
+<h3 class="anchored" data-anchor-id="state-variables-and-systems-of-first-order-odes">State Variables and Systems of First-Order ODEs</h3>
+<p>Euler’s method as derived applies only to first-order ordinary differential equations (ODEs)—equations containing a single time derivative. Mechanical systems governed by Newton’s second law (F = ma) typically involve second-order derivatives (acceleration). To handle this, Dr.&nbsp;Hubicki introduced state variables: by defining both position and velocity as separate variables, a second-order equation can be rewritten as two coupled first-order ODEs. The collection of these variables is called the state vector. He emphasized that the state vector must contain exactly the information needed to simulate the system forward in time—for a moving mass, that is its current position and velocity.</p>
+</section>
+<section id="simulating-the-1d-spring-loaded-inverted-pendulum-in-matlab" class="level3">
+<h3 class="anchored" data-anchor-id="simulating-the-1d-spring-loaded-inverted-pendulum-in-matlab">Simulating the 1D Spring-Loaded Inverted Pendulum in MATLAB</h3>
+<p>Dr.&nbsp;Hubicki built a one-dimensional SLIP model in MATLAB from scratch: a point mass on a spring under gravity, with vertical position Z(t) as the single coordinate. The equation of motion, derived by summing forces (gravity downward and spring force upward), is MZ̈ = −Mg + K(L₀ − Z), where M is the mass, g is gravitational acceleration, K is the spring constant, and L₀ is the spring rest length. Defining state variables Z and dZ/dt, he derived two first-order ODEs and applied Euler’s method in a for loop, pre-allocating output arrays before the loop for efficiency. He then introduced MATLAB’s built-in ODE45 solver, which automatically adapts its time step by comparing the results of 4th- and 5th-order Runge-Kutta integration steps, producing more accurate simulations without manual tuning of Δt.</p>
+</section>
+<section id="hybrid-dynamics-liftoff-and-qa" class="level3">
+<h3 class="anchored" data-anchor-id="hybrid-dynamics-liftoff-and-qa">Hybrid Dynamics, Liftoff, and Q&amp;A</h3>
+<p>To allow the SLIP model to leave the ground and hop, Dr.&nbsp;Hubicki explained that the system becomes a hybrid dynamical system—one whose governing equations switch between different forms depending on the phase of motion (stance versus flight). In the flight phase, only gravity acts on the mass; in stance, the spring force is also active. He implemented this as a simple conditional in MATLAB: when height Z exceeds the spring rest length L₀, the spring force is set to zero. During the Q&amp;A, he explained this switching condition in physical terms—ground contact is unilateral, meaning the ground can only push up and cannot pull the foot down, so once the spring passes its natural length and would need to tug the mass earthward, the foot leaves the ground and flight begins. He also noted that ODE45 includes an event detection feature that can identify the precise moment of liftoff or touchdown, enabling more accurate handling of these phase transitions than a simple conditional check within a fixed-step loop.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

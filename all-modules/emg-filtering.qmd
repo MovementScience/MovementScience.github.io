@@ -1,0 +1,104 @@
+---
+title: "EMG filtering"
+toc: false
+presenter: [Dr. Monica Daley]
+complexity: intermediate
+topic: [EMG, signal processing, filtering]
+keywords: [electromyography, EMG filtering, Butterworth filter, frequency analysis, linear envelope]
+---
+
+## Learning objectives
+
+- Distinguish between high pass, low pass, and band pass filters, and identify when each type is appropriate for EMG data.
+- Describe the two key filter parameters — cutoff frequency and filter order — and explain the trade-off between filter sharpness and artifact risk.
+- Outline the standard EMG processing pipeline: apply a high pass or band pass filter to raw data, rectify, and optionally create a smooth linear envelope.
+
+## Workshop
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VxtVjP23bGg?si=dqHBqlThold-w77z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+***Presented by:*** *Dr. Monica Daley*
+
+## Overview
+
+### Introduction to Filter Theory
+
+EMG signals are recorded in the time domain, but filter design is grounded in the frequency domain. The underlying principle is that any signal can be theoretically reconstructed as a sum of sine waves at different frequencies and amplitudes. A filter exploits this property by selectively attenuating components at certain frequency ranges while leaving others unchanged. The frequencies preserved are called the **pass band**, and those removed fall in the **stop band**.
+
+A **Bode plot** is a standard tool for visualizing filter behavior. It displays the magnitude of the filtered signal (often in decibels) as a function of frequency, allowing you to see how sharply the filter transitions between pass and stop bands. A decibel (dB) scale is logarithmic rather than linear: a change in power by a factor of 10 corresponds to a 10 dB change in level. In practice, attenuation of around 40 dB below the original magnitude means that frequency component has been effectively removed.
+
+Before choosing filter settings, it helps to examine the frequency composition of your raw signal using a **Fast Fourier Transform (FFT)**. Plotting the FFT of a section of baseline data alongside a section of active data lets you see where the real signal energy lies and whether any obvious noise peaks are present. This inspection should inform your filter design rather than simply copying settings from the literature.
+
+### Filter Types: High Pass, Low Pass, and Band Pass
+
+Three filter types are commonly used in EMG analysis:
+
+- A **high pass filter** removes low-frequency components while preserving high-frequency components. It is useful for eliminating motion artifact and DC offset (a zero-frequency baseline shift).
+- A **low pass filter** removes high-frequency content while preserving low-frequency content. It is used when creating a smooth activation envelope from rectified EMG.
+- A **band pass filter** applies both a high pass and a low pass cutoff simultaneously, preserving a specified frequency range and discarding frequencies both below and above it.
+
+The terminology can be confusing at first. "High pass" means the filter *passes* high frequencies and blocks low ones. "Low pass" means the filter *passes* low frequencies and blocks high ones. A band pass filter is the combination.
+
+### Common Sources of EMG Noise and the Physiological Signal Range
+
+Designing a good filter requires knowing something about both the noise you want to remove and the physiological signal you want to keep.
+
+**Common noise sources include:**
+
+- **Motion artifact** — arises when wires or electrodes move during recording, acting as an antenna. This is more common with wired systems than wireless ones. Motion artifact typically appears at frequencies below approximately 20 Hz, with some literature citing up to 25 Hz (De Luca, Gilmore & Kuznetsov, 2010).
+- **AC electrical line noise** — appears at 60 Hz in the United States and at 50 Hz in countries using that electrical standard. A hardware notch filter is often used to attenuate this frequency before data are saved; you can detect its presence in your data by looking for a characteristic dip at 60 Hz in the FFT.
+- **Radio frequency interference** — can occur if a strong broadcast signal is present near the recording environment.
+- **Ultrasound interference from sonomicrometry** — when sonomicrometry and EMG are recorded simultaneously, the ultrasound pulses can be picked up by EMG electrodes. The interference frequency depends on the instrument's pulse repetition rate and configuration; confirm the affected range from your system's documentation and by inspecting the FFT of your own data.
+- **Cardiac artifact** — the heart's electrical signal (ECG) can appear as noise in EMG recordings, particularly in recordings from muscles near the chest.
+
+**The physiologically relevant EMG frequency range:** Motor unit action potentials span roughly 20 Hz to 450 Hz, and this range guides filter design. The lower boundary overlaps with some noise sources (motion artifact, 60 Hz line noise), which is why the exact filter settings matter and should be chosen thoughtfully rather than copied from the literature without inspection.
+
+### Filter Parameters: Cutoff Frequency and Filter Order
+
+Two parameters define a digital filter:
+
+**Cutoff frequency** marks the transition between the pass band and stop band. In practice, no filter has a perfectly vertical transition, so the stop band and pass band are specified as separate frequencies, and the cutoff falls between them in the roll-off region. In MATLAB, filter design functions work with frequencies normalized to the **Nyquist frequency** (= sampling frequency ÷ 2), which is the theoretical upper limit on analyzable signal content.
+
+**Filter order** controls the sharpness of the roll-off. A higher order produces a steeper transition — more closely approximating an ideal square-wave filter — but introduces a real cost: high-order filters can introduce **ringing artifacts** into the filtered signal. For example, a signal that is entirely positive in the raw data may briefly dip below zero after filtering with a high-order filter. This is not a property of the data; it is an artifact of the filter design. The general recommendation is to use the lowest filter order that is adequate for your data, and to always compare the raw and filtered signals visually as a reality check.
+
+MATLAB's `filtfilt` function applies the filter forward and then backward through the data. This zero-phase approach prevents time shifts in the filtered signal, but it also **doubles the effective filter order** relative to the specified design order. If you specify a second-order Butterworth filter and apply it with `filtfilt`, the result has an effective order of four.
+
+### Practical EMG Filtering in MATLAB
+
+The core MATLAB functions for Butterworth filter design and application are:
+
+- **`buttord`** — determines the minimum filter order and cutoff frequency needed to meet specified stop band and pass band performance criteria (including stop band attenuation and pass band ripple tolerances).
+- **`butter`** — computes the filter coefficients from the order and cutoff frequency.
+- **`filtfilt`** — applies the filter forward and backward for zero-phase filtering.
+
+For a **high pass filter**, a single stop band frequency and pass band frequency are provided. For a **band pass filter**, vectors of two frequencies are provided for each; providing two values automatically configures MATLAB's Butterworth functions for bandpass mode.
+
+**Example: high pass filter.** With a stop band at 30 Hz (to remove motion artifact) and a pass band starting at 90 Hz (to additionally clear 60 Hz noise), with a 5,000 Hz sampling rate, `buttord` yields filter order 5 with a cutoff frequency of approximately 75 Hz. Because this example dataset had already been processed with a hardware notch filter at 60 Hz, the main effect of the high pass filter was removal of the DC offset.
+
+**Example: band pass filter.** With stop bands at 30 Hz and 1,200 Hz and a pass band of 90–800 Hz, `buttord` yields filter order 9 with cutoffs at approximately 83 Hz and 855 Hz. A band pass filter is appropriate when noise at higher frequencies — for example, from a sonomicrometry system — needs to be removed in addition to low-frequency noise.
+
+When evaluating filter settings, always plot filtered and raw signals together. Useful checks: Is the overall shape preserved? Does the filtered signal ever cross zero in regions where the raw signal clearly should not? Is there obvious attenuation of peaks that should represent real physiological activity? Adjust parameters and repeat the visual inspection rather than committing to settings without this step.
+
+Hardware filtering provided by a data acquisition system (such as a bandpass hardware filter in a wireless EMG system) reduces the need for aggressive software filtering. When hardware has already attenuated most noise sources, a simpler software filter — for example, a second-order high pass filter at 25 Hz applied with `filtfilt` — may be fully adequate.
+
+### Creating a Smooth Linear Envelope
+
+After applying the initial high pass or band pass filter to the raw EMG, the signal can be **rectified** (taking the absolute value of each sample) to convert it to a fully positive representation. The positive and negative deflections in raw EMG are not independently meaningful; rectification pools them.
+
+A second, low pass filter applied to the rectified signal produces a **smooth linear envelope** — a curve that approximates the time course of muscle activation. A widely used approach is a 4th order low pass Butterworth filter with a 10 Hz cutoff (Winter, 2009); because `filtfilt` doubles the effective order, specifying 2nd order in MATLAB achieves this. The optimal cutoff depends on movement speed: slower movements (e.g., walking) may warrant a lower cutoff (3–6 Hz), while faster tasks may require a higher one (up to ~20 Hz).
+
+**The order of operations matters.** The high pass or band pass filter must be applied to the raw (un-rectified) signal first. Applying a high pass filter to an already-rectified signal can introduce artifacts because the rectified signal is always positive, and the high pass filter may force portions of it below zero — introducing a feature that was not present in the original data.
+
+A limitation of the smooth linear envelope approach is that applying a single low pass filter attenuates higher-frequency components of the signal more than lower-frequency ones. As a result, it better captures the activation timing of slow motor units and may miss fast bursts of activity. A wavelet-based alternative addresses this by using a bank of filters spanning the physiological action potential range (approximately 20–450 Hz). Each wavelet in the bank acts as a narrow band pass filter; summing magnitudes across all wavelets produces an envelope that captures activation at both slow and fast frequencies more evenly than a single low pass filter.
+
+### Surface EMG Considerations and Electrode Configuration
+
+Surface EMG and indwelling (needle or wire) EMG differ in several practically relevant ways. Surface EMG is typically sampled at approximately 1,000 Hz, in line with SENIAM guidelines (Hermens et al., 2000), whereas indwelling recordings often use higher rates (e.g., 5,000 Hz) to capture a broader frequency range. Surface EMG is subject to **crosstalk** — signal from adjacent muscles contaminating the recording — and the signal characteristics vary with electrode placement relative to the motor end plate.
+
+When frequency composition needs to be precisely characterized at the individual muscle level, indwelling electrodes provide cleaner isolation. For most surface EMG applications, anatomical knowledge and careful electrode placement are sufficient to minimize crosstalk.
+
+**High-density electrode arrays** offer a middle ground: multiple electrodes placed in a grid allow spatial decomposition of EMG components, analogous to the spatial filtering used in EEG. Software provided with dedicated high-density EMG systems automates much of this decomposition.
+
+When using FFT analysis to characterize noise and signal composition, a useful strategy is to compute the FFT on a segment of baseline (pre-task) data and on a segment containing the signal of interest, then compare the two spectra. This makes it easier to identify which frequency bands contain real signal versus noise, and to select filter settings accordingly.

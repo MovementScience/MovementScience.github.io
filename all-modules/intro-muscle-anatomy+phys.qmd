@@ -1,0 +1,130 @@
+---
+title: "Introduction to muscle anatomy and physiology"
+toc: false
+presenter: [Dr. Jenna Monroy]
+complexity: NA
+topic: [muscle physiology, comparative biomechanics, molecular physiology]
+keywords: [sarcomere, titin, excitation-contraction coupling, force-velocity relationship, muscle architecture]
+---
+
+## Learning objectives
+
+By the end of this workshop, participants should be able to:
+
+1. Describe the hierarchical organization of skeletal muscle from the whole organ to the sarcomere level, including the roles of key structural proteins—actin, myosin, and titin—in generating and regulating force.
+2. Explain the fundamental muscle properties (excitation-contraction coupling, force-length, force-velocity, and force-frequency relationships), identify how each is measured, and articulate the limitations of applying static or quasi-static measurements to predict dynamic, natural movements.
+3. Evaluate how variation in muscle architecture, fiber type, sarcomere structure, and titin isoform expression tunes muscle function across muscles within an organism and across species.
+
+## Workshop
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-Fu0KWTXlYM?si=yKguu9jJE60PD5-I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+</iframe>
+
+***Presented by:*** *Dr. Jenna Monroy*
+
+## Overview
+
+### The Conserved and Versatile Muscular System
+
+The muscular system is one of the most highly conserved systems across the animal kingdom. The fundamental organization of muscle, the mechanisms of force generation, and the responses to changes in length and activation level are remarkably similar from insects to large mammals (Burkholder & Lieber, 2001). This conservation allows researchers to identify common principles and make broad comparative claims about muscle function across species.
+
+At the same time, muscles are versatile and adaptive. A muscle can function not only as a motor—generating mechanical work to power movement—but also as a spring (storing and returning elastic energy), a brake (absorbing energy during active lengthening), or a strut (transmitting force while changing length minimally). Subtle differences in muscle structure, protein isoform expression, architecture, or neural control can substantially alter whole-animal performance. Understanding muscle function therefore requires considering both its conserved principles and the specializations that adapt it to particular behaviors.
+
+### Sarcomere Structure and Hierarchical Organization
+
+Skeletal muscle is organized hierarchically. The whole muscle is composed of fascicles, which contain individual muscle fibers. A single muscle fiber is a multinucleated cell that can span the entire length of the muscle. Within each fiber, myofibrils run longitudinally, and each myofibril is composed of repeating contractile units called sarcomeres.
+
+The sarcomere is the fundamental unit of force generation. In vertebrates, sarcomere resting length is typically 2.0–2.5 µm, a dimension that is highly conserved across species (Gordon et al., 1966; Burkholder & Lieber, 2001). The sarcomere is bounded at each end by the Z-disc. Thin filaments (composed primarily of actin) extend inward from each Z-disc. Thick filaments (composed of myosin) are anchored at the M-line at the center of the sarcomere. Myosin molecules project cross-bridge heads that can bind to actin and undergo a power stroke, drawing the thin filaments toward the center and shortening the sarcomere.
+
+A third filament, titin, connects the Z-disc to the M-line and provides passive stiffness to the sarcomere. Titin functions as a molecular spring and is responsible for much of the passive elastic resistance felt when a resting muscle is stretched (Labeit & Kolmerer, 1995).
+
+Sarcomere dimensions can vary substantially in invertebrates. Obliquely striated muscles found in some invertebrates—including nematodes and other soft-bodied animals—can elongate substantially beyond the range of vertebrate striated muscle while still maintaining force, a property termed superelongation (Rosenbluth, 1967). This extended operating range contrasts with the narrower force-generating range of typical vertebrate sarcomeres.
+
+### Excitation-Contraction Coupling
+
+Excitation-contraction coupling (ECC) refers to the sequence of events linking an action potential at the muscle fiber membrane to mechanical contraction at the sarcomere. An action potential propagates along the sarcolemma and into the T-tubule network, triggering calcium release from the sarcoplasmic reticulum (SR) through ryanodine receptor channels. The rapid rise in intracellular calcium concentration causes calcium to bind to troponin on the thin filament, inducing a conformational change that exposes myosin-binding sites on actin. Myosin cross-bridges then attach and cycle, generating force and shortening (Bers, 2002).
+
+Relaxation occurs as calcium is pumped back into the SR by SERCA (sarcoplasmic/endoplasmic reticulum Ca²⁺-ATPase) pumps—an energy-requiring process. Because calcium reuptake is slower than its release, the time to full relaxation is longer than the time to peak force development. This kinetic asymmetry underlies temporal summation: if a second stimulus arrives before the muscle has fully relaxed, the resulting twitches sum to produce greater force.
+
+ECC kinetics vary across muscle types and species. Muscles that contract at high frequencies have higher SR density and faster Ca²⁺ cycling machinery than slow muscles (Berchtold et al., 2000). The distinction between fast-twitch and slow-twitch fibers reflects, in part, differences in the molecular components governing ECC speed and the rate of calcium handling.
+
+### Force-Frequency Relationship
+
+The force output of a muscle is strongly influenced by the frequency at which motor neurons stimulate it. At low stimulation frequencies, each stimulus produces a discrete twitch and the muscle fully relaxes between contractions. As frequency increases, successive twitches begin to overlap before relaxation is complete—a phenomenon called summation. At intermediate frequencies, incomplete tetanus produces a rippled, elevated force plateau. At high frequencies, twitches fuse completely into a smooth, sustained contraction called fused tetanus, which represents the maximum force the muscle can generate under those conditions (Lieber, 2002).
+
+The force-frequency relationship arises from calcium dynamics: higher stimulation frequencies allow calcium to accumulate in the cytosol, activating more cross-bridges and increasing force. Force production reaches a ceiling at fused tetanus, constrained by the total number of available cross-bridges and sarcomere geometry.
+
+In intact animals, the nervous system dynamically modulates stimulation frequency (rate coding) to regulate force output. Motor unit recruitment and firing rate interact to produce the graded forces seen in natural movements. Simple isometric force-frequency measurements do not fully capture this complexity—brief, high-frequency bursts followed by lower frequencies (doublet potentiation) can enhance force beyond what steady-state measurements predict.
+
+### Force-Length Relationship
+
+The force a muscle can generate depends on the length at which it is activated. The active force-length curve follows an inverted-U shape, peaking at an optimal length (L₀) where cross-bridge overlap between thick and thin filaments is greatest. At shorter lengths, steric interference reduces the number of productive cross-bridges. At longer lengths, overlap diminishes, fewer cross-bridges can form, and active force declines (Gordon et al., 1966). Passive force also increases with length, primarily due to the elastic properties of titin and the extracellular matrix, so the total force at any length is the sum of active and passive contributions.
+
+The shape and operating range of the force-length curve differ across species. Many vertebrate muscles operate near the descending limb during natural movements, but some invertebrate muscles have much broader curves. Species with large sarcomeres can maintain force over a much wider range of lengths, allowing behaviors that require extreme limb or body excursions. Some chameleon tongue retractor muscles are classified as super-contracting: the proposed mechanism allows thick filaments to pass through gaps in the Z-disc and interact with thin filaments of adjacent sarcomeres, enabling force generation at extremely short lengths (Herrel et al., 2001). It is important to note that the accelerator muscles of the chameleon tongue operate through a different mechanism—elastic energy storage and release—rather than supercontraction.
+
+The force-length relationship is a quasi-static measure obtained under isometric conditions. Natural movements involve dynamic length changes, and muscle force during active stretching or shortening can deviate substantially from predictions based on this static curve alone.
+
+### Force-Velocity Relationship and Muscle Architecture
+
+The force a muscle generates during active shortening decreases with increasing shortening velocity—the force-velocity relationship. At maximum shortening velocity (V_max), the muscle produces no net force. As velocity decreases toward zero (isometric), force rises to its maximum. This relationship reflects cross-bridge cycling kinetics: at higher velocities, myosin heads have less time to remain attached and generate force (Hill, 1938). Power output—the product of force and velocity—peaks at an intermediate shortening velocity (approximately one-third of V_max in many vertebrate muscles; Josephson, 1993), then declines toward both extremes.
+
+The force-velocity relationship varies with fiber type. Fast-twitch fibers have higher myosin ATPase activity, faster cross-bridge cycling rates, and higher V_max than slow-twitch fibers, and thus reach higher peak power. This relationship has been characterized across species with diverse locomotor demands.
+
+Muscle architecture—the arrangement of fibers relative to the line of action—also determines the force and velocity characteristics of a whole muscle. In parallel-fibered muscles, fibers run roughly parallel to the tendon, placing more sarcomeres in series and maximizing shortening speed and excursion. In pennate muscles, fibers attach at an angle (the pennation angle) to the central tendon. This geometry allows more fibers to be packed into a given volume, increasing physiological cross-sectional area and, consequently, maximum force production, at some cost to shortening velocity (Lieber & Fridén, 2000). Comparative studies of frog species illustrate this principle: muscles specialized for swimming show different relationships between cross-sectional area and fiber length compared with muscles specialized for jumping or walking.
+
+The force-velocity relationship is typically measured under isotonic conditions with maximal activation—conditions that poorly represent the submaximal, dynamically changing activation and length conditions of natural movements. History-dependent effects (such as increased force following active stretch) and contributions of elastic structures such as titin are not captured by this relationship.
+
+### Titin as a Tunable Viscoelastic Spring
+
+Titin is the largest known protein and the third filament of the sarcomere, spanning continuously from the Z-disc to the M-line (Labeit & Kolmerer, 1995). Its mechanical properties help maintain sarcomere structural integrity and contribute to both passive and active muscle mechanics.
+
+The I-band region of titin—the segment that extends when the sarcomere is elongated—contains mechanically distinct regions. The tandem immunoglobulin (Ig) domain segment acts as a compliant spring at low forces, straightening progressively as the sarcomere is stretched. The PEVK domain (named for its high content of proline, glutamate, valine, and lysine residues) contributes the steeper, exponential rise in passive force at longer sarcomere lengths (Granzier & Labeit, 2004). The N2A element, positioned between these spring regions, is a unique sequence. Both the tandem Ig segment and the PEVK domain are sites of alternative splicing that generate titin isoforms of different lengths and stiffnesses (Labeit & Kolmerer, 1995; Buck et al., 2014).
+
+Evidence from in vitro and in situ experiments supports the hypothesis that the N2A region of titin can interact with actin in a calcium-dependent manner, stiffening titin during active muscle contraction (Dutta et al., 2018; Nishikawa, 2020). If confirmed, this would mean that calcium activation does not only trigger cross-bridge cycling but also engages titin as an additional active spring, particularly during active stretch. This mechanism is an active area of investigation and is not yet universally accepted as established.
+
+In vertebrates, titin is encoded by a single gene (TTN) that undergoes extensive alternative splicing to produce isoforms differing in length and composition (Labeit & Kolmerer, 1995). Long titin isoforms, as found in the soleus, confer lower passive stiffness. Shorter isoforms, as found in the psoas, confer higher passive stiffness (Granzier & Labeit, 2004). This isoform variation allows muscles with different mechanical demands within the same organism to tune their passive elastic properties.
+
+In invertebrates such as Drosophila, multiple distinct titin-like genes—including projectin and sallimus (D-titin, encoded by the sls gene)—encode proteins with analogous structural roles (Burkart et al., 2007; Bullard et al., 2005). Rather than diversifying through alternative splicing of a single gene, invertebrates can generate mechanical diversity through expression of multiple distinct genes.
+
+The functional significance of titin isoform variation within an organism is illustrated by studies of muscles with contrasting mechanical roles in the same animal. In toads, the plantaris muscle (which shortens to produce mechanical power during jumping) is mechanically compliant in its passive properties, while the anconeus muscle (which actively lengthens to absorb energy during landing) is substantially stiffer (Azizi, 2014). These passive mechanical differences likely reflect differences in titin isoform expression, though the molecular correspondence requires further investigation.
+
+---
+
+### References
+
+Azizi E (2014). Locomotor function shapes the passive mechanical properties and operating lengths of muscle. *Proc Biol Sci* 281: 20132914. <https://doi.org/10.1098/rspb.2013.2914>
+
+Berchtold MW, Brinkmeier H, Müntener M (2000). Calcium ion in skeletal muscle: its crucial role for muscle function, plasticity, and disease. *Physiol Rev* 80(3): 1215–1265. <https://doi.org/10.1152/physrev.2000.80.3.1215>
+
+Bers DM (2002). Cardiac excitation-contraction coupling. *Nature* 415: 198–205. <https://doi.org/10.1038/415198a>
+
+Buck D, Smith JE III, Chung CS, et al. (2014). Removal of immunoglobulin-like domains from titin's spring segment alters titin splicing in mouse skeletal muscle and causes myopathy. *J Gen Physiol* 143(2): 215–230. <https://doi.org/10.1085/jgp.201311129>
+
+Bullard B, Garcia T, Benes V, et al. (2005). The molecular chaperone, αB-crystallin, and the small heat shock protein, cvHsp, are members of the IFM lattice of Drosophila flight muscle. *J Biol Chem* (Note: kettin is a product of the sls gene in Drosophila, not a separate gene; see Burkart et al. 2007.)
+
+Burkart C, Qiu F, Brendel S, et al. (2007). Modular proteins from the Drosophila sallimus (sls) gene and their expression in muscles with different extensibility. *J Mol Biol* 367(4): 953–969. <https://doi.org/10.1016/j.jmb.2007.01.059>
+
+Burkholder TJ, Lieber RL (2001). Sarcomere length operating range of vertebrate muscles during movement. *J Exp Biol* 204(9): 1529–1536. PMID: 11296141.
+
+Dutta S, Tsiros C, Sundar SL, et al. (2018). Calcium increases titin N2A binding to F-actin and regulated thin filaments. *Sci Rep* 8: 14575. <https://doi.org/10.1038/s41598-018-32952-8>
+
+Gordon AM, Huxley AF, Julian FJ (1966). The variation in isometric tension with sarcomere length in vertebrate muscle fibres. *J Physiol* 184(1): 170–192. <https://doi.org/10.1113/jphysiol.1966.sp007909>
+
+Granzier HL, Labeit S (2004). The giant protein titin: a major player in myocardial mechanics, signaling, and disease. *Circ Res* 94(3): 284–295. <https://doi.org/10.1161/01.RES.0000117769.88862.F8>
+
+Herrel A, Meyers JJ, Aerts P, Nishikawa KC (2001). Functional implications of supercontracting muscle in the chameleon tongue retractors. *J Exp Biol* 204(21): 3621–3627. PMID: 11719528.
+
+Hill AV (1938). The heat of shortening and the dynamic constants of muscle. *Proc R Soc Lond B* 126(843): 136–195. <https://doi.org/10.1098/rspb.1938.0050>
+
+Josephson RK (1993). Contraction dynamics and power output of skeletal muscle. *Annu Rev Physiol* 55: 527–546. <https://doi.org/10.1146/annurev.ph.55.030193.002523>
+
+Labeit S, Kolmerer B (1995). Titins: giant proteins in charge of muscle ultrastructure and elasticity. *Science* 270(5234): 293–296. <https://doi.org/10.1126/science.270.5234.293>
+
+Lieber RL (2002). *Skeletal Muscle Structure, Function, and Plasticity* (2nd ed.). Lippincott Williams & Wilkins.
+
+Lieber RL, Fridén J (2000). Functional and clinical significance of skeletal muscle architecture. *Muscle Nerve* 23(11): 1647–1666. <https://doi.org/10.1002/1097-4598(200011)23:11%3C1647::AID-MUS1%3E3.0.CO;2-M>
+
+Nishikawa KC (2020). Titin: a tunable spring in active muscle. *Physiology* 35(3): 209–217. <https://doi.org/10.1152/physiol.00036.2019>
+
+Rosenbluth J (1967). Obliquely striated muscle. III. Contraction mechanism of Ascaris body muscle. *J Cell Biol* 34(1): 15–33. <https://doi.org/10.1083/jcb.34.1.15>

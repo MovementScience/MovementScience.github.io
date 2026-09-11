@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="keywords" content="muscle fascicle tracking, ultrasound imaging, optical flow, force-length relationship, muscle architecture">
 
 <title>Ultrasound imaging – IMSI Movement Science Course</title>
 <style>
@@ -139,21 +140,66 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>muscle fascicle tracking, ultrasound imaging, optical flow, force-length relationship, muscle architecture</p>
+  </div>
+</div>
 
 </header>
 
 
 <section id="learning-objectives" class="level2">
 <h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
-<p>TBD</p>
+<ol type="1">
+<li>Describe how ultrasound imaging works and explain how different tissue types — including muscle, tendon, bone, nerve, and blood vessels — can be distinguished from one another in an ultrasound image.</li>
+<li>Explain why tracking muscle fascicle length and velocity matters for understanding a muscle’s force-generating capacity and its role in whole-body movement efficiency.</li>
+<li>Identify the key steps involved in using fascicle tracking software to extract length measurements from ultrasound video data, and describe the trade-offs between optical flow and line detection approaches.</li>
+</ol>
 </section>
 <section id="workshop" class="level2">
 <h2 class="anchored" data-anchor-id="workshop">Workshop</h2>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qRD8rxpK2TQ?si=X0wHrtt-rRe15EWX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 <p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Luke Jessup</em></p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="why-measuring-muscle-fascicle-length-and-velocity-matters" class="level3">
+<h3 class="anchored" data-anchor-id="why-measuring-muscle-fascicle-length-and-velocity-matters">Why Measuring Muscle Fascicle Length and Velocity Matters</h3>
+<p>Knowing the instantaneous length and velocity of a muscle relative to its optimum provides an estimate of that muscle’s current force-generating capacity. The force-length relationship of skeletal muscle follows a characteristic curve with an ascending limb, a plateau at which maximum active force is produced, and a descending limb. Separately, the force-velocity relationship is sigmoidal: positive velocities correspond to muscle shortening and negative velocities to lengthening, with force output changing accordingly. By measuring how fascicle length and velocity shift during real movement, researchers can infer how a muscle’s operating capacity changes from moment to moment — information that is relevant for understanding both why people move the way they do and how movement might be supported or improved.</p>
+<p>Workshop-presented research illustrated these principles concretely. Work by Rubensen and colleagues (as presented in this workshop) combined a dynamometer with ultrasound over the soleus muscle to build force-length profiles for individual participants by setting the ankle at different joint angles and measuring maximal voluntary force. When participants then walked with the same ultrasound probe in place, soleus was found to operate around the ascending portion of the force-length plateau — a region that may balance force production with the capacity to resist perturbations or injury-inducing rapid stretch. A separate line of research (presented without confirmed author attribution) showed that the preferred speed at which people choose to transition from walking to running keeps the soleus operating near its optimal fascicle length and at shorter shortening velocities, both of which favor force production. Notably, remaining in a walking gait past this preferred transition speed would cause the energetic cost of walking to exceed that of running. Dr.&nbsp;Jessup’s own group has also demonstrated tight relationships between metabolic cost and fascicle shortening and shortening velocity of calf and quadriceps muscles across different hopping conditions.</p>
+</section>
+<section id="how-ultrasound-works" class="level3">
+<h3 class="anchored" data-anchor-id="how-ultrasound-works">How Ultrasound Works</h3>
+<p>An ultrasound transducer sends high-frequency acoustic waves into the body. When those waves encounter a structure, they reflect back to the transducer, and the computer software converts the speed and strength of those returning echoes into a two-dimensional image. The key property that governs how a structure appears is its echogenicity — that is, how strongly it reflects ultrasonic waves relative to the surrounding tissue. Blood and other fluids are anechoic: they do not reflect ultrasound waves and therefore appear dark in the image, making blood vessels straightforwardly identifiable as dark circles or tubes. By contrast, bone, connective tissue within muscle, tendon, and nerves are echogenic and appear bright white. The outer surface of bone reflects so strongly that ultrasound waves cannot penetrate further, producing a bright white line with a shadow beneath it. Musculoskeletal imaging is performed in B-mode (brightness mode); a separate setting called Doppler mode is used when measuring blood-flow velocity.</p>
+</section>
+<section id="identifying-tissue-structures-in-ultrasound-images" class="level3">
+<h3 class="anchored" data-anchor-id="identifying-tissue-structures-in-ultrasound-images">Identifying Tissue Structures in Ultrasound Images</h3>
+<p>Distinguishing between structures in an ultrasound image requires practice and hands-on experience, but some general rules of appearance are useful starting points. Muscle is usually straightforward to identify because of characteristic striations created by interspersed connective tissue and aponeuroses surrounding the muscle belly. Tendon appears circular in cross-section, changes in diameter along its length, and can be traced from the muscle toward its insertion or origin. Nerves are also circular but, unlike tendons, maintain a consistent diameter along their length. Nerves typically run adjacent to blood vessels, and the clinical mnemonic VAN (vein-artery-nerve) can help identify them: the presence of a pulsing anechoic vessel alongside a brighter circular structure is a useful cue. Holding the probe transversely across a limb is generally best for differentiating between structures, while a longitudinal orientation is preferred when the goal is to visualize and track fascicles.</p>
+</section>
+<section id="ultrasound-probe-setup-and-integration-with-motion-capture" class="level3">
+<h3 class="anchored" data-anchor-id="ultrasound-probe-setup-and-integration-with-motion-capture">Ultrasound Probe Setup and Integration with Motion Capture</h3>
+<p>Standard handheld clinical probes cannot be used for measuring fascicle dynamics during movement because they cannot be fixed to the skin while a participant walks, runs, or jumps. Instead, flat-form-factor probes — originally developed for veterinary use and now widely adopted in musculoskeletal biomechanics — can be strapped directly to the limb. Dr.&nbsp;Jessup described placing a foam block of roughly the same dimensions as the probe alongside it within the strapping; the additional surface area this creates helps prevent the probe from rotating or shifting during movement. Cohesive bandage (Co-band) is used to secure the assembly, with the strap tension balanced between probe stability and avoiding excessive deformation of the underlying muscle.</p>
+<p>To synchronize ultrasound data with motion capture and force data, the ultrasound module is connected to the broader data-acquisition chain via an analog signal box. A trigger signal — sent simultaneously to both the motion capture system and the ultrasound module — ensures that recording starts and stops at the same time across devices. A return signal from the ultrasound module back to the analog box can serve as a frame-timing check to help realign data if synchronization is disrupted. When using Echo Wave software, a dedicated sync plug-in must be enabled for the system to register external start/stop trigger signals correctly.</p>
+</section>
+<section id="fascicle-tracking-software-ultratimtrack-and-ultrack" class="level3">
+<h3 class="anchored" data-anchor-id="fascicle-tracking-software-ultratimtrack-and-ultrack">Fascicle Tracking Software: UltraTimTrack and UlTrack</h3>
+<p>Two software tools implemented in MATLAB were demonstrated in this workshop for automated fascicle tracking. The first, UltraTimTrack (developed by Dr.&nbsp;Tim Vanderzee), fuses two computer-vision methods: optical flow and line detection. Optical flow tracks the motion of key pixels or points between consecutive video frames and handles image noise well but is prone to accumulating drift over time. Line detection operates on each frame independently, identifying line-like structures (the fascicles), and is robust to drift but sensitive to noisy images. By combining both methods — with a tunable weighting parameter — UltraTimTrack achieves a balance between noise tolerance and drift resistance, and it performs particularly well for dynamic, high-movement conditions. A sensitivity analysis function within the software allows users to evaluate how the weighting parameter affects the resulting fascicle-length trace.</p>
+<p>The second tool, UlTrack (v5.3), uses optical flow alone and is better suited to slow, controlled movements such as passive joint rotations in a dynamometer or a sit-to-stand task. Because it lacks the line-detection component, it is more vulnerable to drift in highly dynamic trials; however, the software includes a keyframe-correction feature that allows the user to anchor fascicle length at defined, repeatable points in the movement cycle and interpolate between them to remove accumulated drift. Both tools allow the user to define the region of interest (the region between the deep and superficial aponeuroses) and to set or import a fascicle manually. The Simple Muscle Architecture plug-in for ImageJ, developed by Neil Cronin, can be used to detect fascicles automatically, with the resulting coordinates imported into UlTrack to remove subjectivity from fascicle selection.</p>
+</section>
+<section id="recommended-acquisition-settings-and-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="recommended-acquisition-settings-and-limitations">Recommended Acquisition Settings and Limitations</h3>
+<p>A frame rate of approximately 150 Hz is recommended as a practical trade-off between temporal resolution and image quality, with the maximum achievable frame rate on the systems discussed in this workshop being approximately 210–220 frames per second. Below approximately 100–120 Hz, automated tracking methods show markedly increased noise and inconsistency. Higher frame rates are obtained at the cost of image quality and can require reducing the depth and width of the field of view; settings that most strongly affect frame rate include image depth, image width, and the number of ultrasonic beams used per scan. A field of view of approximately 50 mm depth by 40 mm width was used in the examples shown.</p>
+</section>
+<section id="advantages-limitations-and-qa-discussion" class="level3">
+<h3 class="anchored" data-anchor-id="advantages-limitations-and-qa-discussion">Advantages, Limitations, and Q&amp;A Discussion</h3>
+<p>Relative to sonomicrometry — a technique in which two sensors are surgically implanted along the length of a fascicle, currently used only in animal research — ultrasound’s main advantages are that it is non-invasive, provides contextual information about the motion of surrounding structures, and is portable and relatively straightforward to synchronize with other data-acquisition systems. Its principal limitations are a relatively low maximum temporal resolution (approximately 200 Hz at full image quality sacrifice) and the reliance on computer-vision algorithms that are imperfect, particularly for very fast or highly perturbed movements.</p>
+<p>In the Q&amp;A discussion, workshop participants raised several practical topics. Dr.&nbsp;Kiisa Nishikawa asked about limitations for highly dynamic movement research; Dr.&nbsp;Jessup indicated that the main constraint is frame rate, but that current tracking algorithms are capable enough that even perturbed-movement studies appear feasible. Jill McNitt-Gray raised the possibility of integrating portable ultrasound into field settings such as a pop-up motion-capture arena, noting the potential for combining muscle-level and whole-body kinematic data. Dr.&nbsp;Monica Daley observed that wireless transmission of ultrasound data would involve significant bandwidth trade-offs relative to wired systems, given how data-intensive ultrasound video is. Participants also discussed the value of universal timestamping as a strategy for synchronizing ultrasound with independently recorded video in non-laboratory settings.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

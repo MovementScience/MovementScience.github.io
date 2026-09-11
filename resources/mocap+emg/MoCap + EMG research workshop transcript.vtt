@@ -1,0 +1,2298 @@
+WEBVTT
+
+1
+00:05:15.940 --> 00:05:18.090
+Emily Smith: No, no, no, no.
+
+2
+00:05:32.130 --> 00:05:34.040
+Autumn Routt: Tess, Tess says no.
+
+3
+00:05:38.900 --> 00:05:39.949
+Autumn Routt: Test, test.
+
+4
+00:06:25.700 --> 00:06:27.030
+Victoria Wood: Good morning, everyone.
+
+5
+00:10:28.410 --> 00:10:44.580
+Victoria Wood: All right. Hi, everyone. Welcome to today's workshop on motion capture. I'm going to hand it over to our workshop leaders in just a second, but I wanted to post the workshop folder in sign-in form again for those of you who might have just joined.
+
+6
+00:10:45.110 --> 00:11:02.620
+Victoria Wood: If you don't have access to that workshop folder, please just request access. I'll be able to monitor and, approve access. I think that, you'll want to download the zip folder there if you plan on following along with the MATLAB tutorial throughout this workshop.
+
+7
+00:11:02.620 --> 00:11:07.719
+Victoria Wood: And then that sign-in form link, trainees, please make sure you use that.
+
+8
+00:11:07.720 --> 00:11:11.989
+Victoria Wood: just to make sure we are able to track attendance.
+
+9
+00:11:12.470 --> 00:11:17.299
+Victoria Wood: Okay, and then I think that that's all. We can go ahead and get started whenever y'all are ready.
+
+10
+00:11:21.410 --> 00:11:39.879
+Autumn Routt: OK, great. Hi, everyone. My name is Autumn Rout. I am a rising fourth-year PhD student co-advised by Lena Ting in the neuromechanics lab here at Emory and Greg Zwicky in the power lab over at Georgia Tech. I'm going to be presenting alongside Kennedy, Emily, and Lauren. I'll let them introduce themselves later.
+
+11
+00:11:39.880 --> 00:11:49.419
+Autumn Routt: Just really quickly, I want to show you all the sign-in form. You can go ahead and scan this QR code now, or at the end of the presentation, just to let everybody know that you were here.
+
+12
+00:11:49.880 --> 00:11:53.390
+Autumn Routt: This presentation is going to cover
+
+13
+00:11:53.710 --> 00:11:57.389
+Autumn Routt: Inverse Kinematics and Inverse Dynamics, by me.
+
+14
+00:11:57.670 --> 00:12:01.250
+Autumn Routt: Best Practices for Motion Capture Data Collection by Emily.
+
+15
+00:12:01.850 --> 00:12:07.200
+Autumn Routt: EMG Signal Processing by Lauren, and Best Practices for EMG by Kennedy and Laure
+
+16
+00:12:09.000 --> 00:12:14.149
+Autumn Routt: So let's talk about inverse kinematics. Why do they matter?
+
+17
+00:12:14.660 --> 00:12:22.639
+Autumn Routt: Inverse kinematics is a technique that is foundational to all motion capture software, You use inverse kinematics.
+
+18
+00:12:22.680 --> 00:12:46.600
+Autumn Routt: Any time that you want to figure out what joint angles are with having limited information. So if we need to estimate the angles of joints that we cannot directly put markers onto, then inverse kinematics is an excellent tool. So that's joint centers that don't have a bony landmark, like in humans, the hip, and a lot of animal models, both because of internal joints and because it's just difficult to put markers onto animals.
+
+19
+00:12:46.600 --> 00:12:56.960
+Autumn Routt: Motion capture relies on inverse kinematics, and any kind of markerless motion capture system is doing inverse kinematics under the hood to make sure that the estimates it's giving you are realistic.
+
+20
+00:12:57.840 --> 00:13:10.710
+Autumn Routt: So, if we have all of the markers on all of the joints that we want to see, we can still use inverse kinematics as a means of validating the accuracy of the joint data from marker data.
+
+21
+00:13:10.920 --> 00:13:21.459
+Autumn Routt: We also use it when we want to fill in gaps, so if a marker is occluded, then we can estimate from the markers that we still have remaining on other joints what the angle of that joint should be using this technique.
+
+22
+00:13:21.460 --> 00:13:43.890
+Autumn Routt: And lastly, if you're making a computational model of movement and you don't want to use any experimental data as training data, then to make that model realistic, you can use inverse kinematics. And then you only need to know the segment lengths of the different joints and where you're aiming for a specific target point on the body to be. And you can estimate various combinations of joint angles that would get that point on the body.
+
+23
+00:13:43.890 --> 00:13:49.499
+Autumn Routt: to where you need it to be, and that's very helpful in making your model actually be realistic and informative.
+
+24
+00:13:50.230 --> 00:13:57.719
+Autumn Routt: So, I'm gonna walk you all through an example of inverse kinematics. This is a person in a squat.
+
+25
+00:13:58.340 --> 00:14:08.620
+Autumn Routt: We are going to say that we know the height of the center of their hip joint, and what we would like to find out, given the length of their femur and the length of their tibia.
+
+26
+00:14:08.720 --> 00:14:09.740
+Autumn Routt: Is…
+
+27
+00:14:10.010 --> 00:14:31.460
+Autumn Routt: what the angle of their ankle and their knee is. There's a lot of different ways that we can define ankle angle and knee angle, and I don't want to get into the specifics of that right now. Just for the sake of this example, we're defining knee angle as being drawn from this line that extends out of the tibia, and ankle angle as being drawn from this vertical line that is extending from, in this case, the ankle to the hip.
+
+28
+00:14:31.540 --> 00:14:33.849
+Autumn Routt: So, with just this information alone.
+
+29
+00:14:33.940 --> 00:14:42.650
+Autumn Routt: you should be able to calculate what these two angles are. I'm gonna give you a little bit of time to do that, but before we jump into that time.
+
+30
+00:14:43.080 --> 00:14:58.510
+Autumn Routt: I'm going to give you all access to the law of cosines. So maybe you've used this recently. Maybe it's been a very long time. Maybe you've never seen this before. The law of cosines is a beautiful thing that we are not going to take time to derive right now. I'm just going to say you can reference this as you work through this problem.
+
+31
+00:14:58.510 --> 00:15:04.369
+Autumn Routt: So I'm going to give you four minutes to work on this problem, and then we will come back together as a group to talk about it.
+
+32
+00:15:04.370 --> 00:15:08.410
+Autumn Routt: Feel free to discuss with anybody who's in the room with you as well.
+
+33
+00:15:08.540 --> 00:15:09.490
+Autumn Routt: I feel lumps.
+
+34
+00:16:26.270 --> 00:16:30.909
+Autumn Routt: And feel free, if you're getting stuck anywhere, you can also raise your hand and unmute to ask a question.
+
+35
+00:18:56.670 --> 00:19:09.619
+Autumn Routt: Alright, we're gonna go ahead and walk through this problem. If you didn't have time to get all the way through it, that is okay. Just compare as far as you got with what I did, and then we're gonna discuss our takeaways.
+
+36
+00:19:10.120 --> 00:19:24.629
+Autumn Routt: So, first, I just took the law of cosines and plugged in the information that was available to me from the figure. So, I'm looking at the angle of the ankle first. Where is my mouse? There we go.
+
+37
+00:19:24.720 --> 00:19:34.409
+Autumn Routt: So, I want to use these two adjacent sides on the right-hand side of the law of cosines equation, and this opposite side as the left-hand side, and that's what I've got here.
+
+38
+00:19:35.440 --> 00:19:40.459
+Autumn Routt: I can then solve for cosine, A theta angle.
+
+39
+00:19:40.900 --> 00:19:43.110
+Autumn Routt: Just by doing some algebra.
+
+40
+00:19:43.850 --> 00:19:49.779
+Autumn Routt: And then, to isolate the angle, I take the arc cosine of that big chunk of algebra.
+
+41
+00:19:51.110 --> 00:19:57.570
+Autumn Routt: And this is the answer that you should end up with. Did anybody get something different than this?
+
+42
+00:19:57.850 --> 00:19:59.250
+Autumn Routt: And want to talk about it.
+
+43
+00:20:02.500 --> 00:20:06.760
+Autumn Routt: It's not something to be embarrassed about, because it means you actually attempted the problem, and that's
+
+44
+00:20:15.240 --> 00:20:18.489
+Autumn Routt: Alright, well, one other question that I have for you all.
+
+45
+00:20:18.800 --> 00:20:24.189
+Autumn Routt: Is there anything that you see in the work that I've put on the slide?
+
+46
+00:20:24.470 --> 00:20:27.409
+Autumn Routt: Where I'm making an assumption I didn't state out loud to you
+
+47
+00:20:31.650 --> 00:20:33.970
+Autumn Routt: You can say it in the chat or you can unmute.
+
+48
+00:20:50.080 --> 00:20:50.620
+Autumn Routt: Thank you.
+
+49
+00:20:50.620 --> 00:20:54.850
+UCI Watch Crew: I'm assuming that all of your segment links are at your joint cent Or from your job site.
+
+50
+00:20:55.090 --> 00:20:55.850
+Autumn Routt: Yeah.
+
+51
+00:20:56.210 --> 00:21:02.009
+Autumn Routt: That's true. I am assuming that all of my segment lengths are going to my joint centers, which is a big assumption.
+
+52
+00:21:02.620 --> 00:21:07.399
+Autumn Routt: And I see somebody said, Where did the initial formula come from?
+
+53
+00:21:07.760 --> 00:21:19.219
+Autumn Routt: Trusting that the law of cosines was derived effectively is an assumption. And someone is saying the last formula. Can you elaborate on what am I making an assumption about in that last formula?
+
+54
+00:21:33.530 --> 00:21:39.579
+Autumn Routt: I think you had it. Someone in this room had it and typed it in the chat and then untyped it.
+
+55
+00:21:50.330 --> 00:22:05.059
+Autumn Routt: Hmm, okay. I actually misread yours. If I was using, like, the Pythagorean theorem, then yes, it would be important that I assume the knee angle's 90 degrees. The nice thing about the law of cosine is it's a little more flexible.
+
+56
+00:22:05.470 --> 00:22:09.650
+Autumn Routt: The big assumption that I made here is when I took arc cosine.
+
+57
+00:22:09.950 --> 00:22:14.769
+Autumn Routt: I could have gotten a negative or a positive answer, and I presumed that it was positive.
+
+58
+00:22:15.140 --> 00:22:35.870
+Autumn Routt: That's a fine thing to do in a biological example. You usually have constraints that you can use to say, of these two answers, only one of them is realistic. But when you use the same sort of math in robotics, a lot of times you do get multiple combinations of joint angles for a certain manipulator that all will get you the same endpoint position and sometimes
+
+59
+00:22:35.870 --> 00:22:39.149
+Autumn Routt: they're possible in those different configurations.
+
+60
+00:22:39.150 --> 00:22:45.980
+Autumn Routt: Yeah, so if I had allowed those angles to be negative, I would basically be saying, what if this person's knee was flipped backwards instead?
+
+61
+00:22:46.080 --> 00:22:49.960
+Autumn Routt: And we just know that in humans, that's not how that works.
+
+62
+00:22:50.700 --> 00:23:03.150
+Autumn Routt: So we have our ankle angle. In order to find our knee angle, we need to find this different angle within the triangle first, and then subtract it from the overall angle of this straight line. So I'm going to find beta first.
+
+63
+00:23:03.150 --> 00:23:12.109
+Autumn Routt: I'm using my law of cosines again, I'm just plugging in things to the formula differently. This time, the adjacent sides are L1 and L2, and the opposite side is H.
+
+64
+00:23:12.570 --> 00:23:15.320
+Autumn Routt: And when I solve that for cosine beta.
+
+65
+00:23:15.800 --> 00:23:19.399
+Autumn Routt: I can then take the arc cosine to find my beta value.
+
+66
+00:23:19.670 --> 00:23:26.770
+Autumn Routt: And subtract that from 180 degrees, which is just the overall angle that these two combine to make, which is just a straight line.
+
+67
+00:23:26.930 --> 00:23:29.249
+Autumn Routt: And that's how I find my knee angle.
+
+68
+00:23:31.190 --> 00:23:36.210
+Autumn Routt: And again, I've made the same assumption that my knee angle is positive and not negative.
+
+69
+00:23:37.030 --> 00:23:40.049
+Autumn Routt: Did anybody get a different answer that wants to talk about it?
+
+70
+00:23:45.970 --> 00:23:48.120
+Autumn Routt: Alright, then we'll keep chugging along.
+
+71
+00:23:48.990 --> 00:24:01.970
+Autumn Routt: So, now, before we move on to inverse dynamics, I just want to know if anyone has overarching questions about inverse kinematics. They can be about those example problems, or when would I actually use this, or how does this actually work, etc.
+
+72
+00:24:08.550 --> 00:24:21.869
+Autumn Routt: Alright, and let's move on to inverse dynamics. So, inverse dynamics is finding joint moments using kinematics, so that joint angle information we just got with inverse kinematics, and forces.
+
+73
+00:24:22.720 --> 00:24:36.679
+Autumn Routt: Inverse dynamics is kind of at the heart of all of the joint moment calculations, so if you're using a software that tells you joint moments, which… joint torques, etc, it's probably doing inverse dynamics in a motion capture space.
+
+74
+00:24:36.910 --> 00:24:52.249
+Autumn Routt: So there are two different ways that we can calculate joint moments using inverse dynamics. The first is a bottom-up approach. So that's where we say we know the ground reaction forces, the GRFs, that's just the force that we can measure with a force plate underneath somebody's feet.
+
+75
+00:24:52.620 --> 00:24:59.930
+Autumn Routt: And we could use those ground reaction forces and find their distance from the different joints that we're interested in.
+
+76
+00:25:00.120 --> 00:25:08.609
+Autumn Routt: That knowledge, along with the knowledge of the mass of the segments and the angles of the joints, lets us work from the bottom up to figure out what the joint moments are across the whole system.
+
+77
+00:25:09.100 --> 00:25:26.359
+Autumn Routt: Or we could do a top-down approach. This is where we say, I'm going to go somewhere in the body where I know the external force, and using just that external force instead of a ground reaction force, I can also work towards the middle of the person, or towards the bottom of the person.
+
+78
+00:25:26.400 --> 00:25:50.810
+Autumn Routt: And find their joint moments, so the most common approach for the top-down strategy is to start at the head and assume that there is no external force on the head, nobody's pressing down on their head. So you can just say, if I know the mass of their head and of all of their other segments, I should be able to figure out the moments about their joints. Another way that this approach is used is when a leg is in swing phase during walking.
+
+79
+00:25:50.810 --> 00:25:57.339
+Autumn Routt: Because you know then that that leg has no forces on it besides the ones generated from the mass of its segment alone.
+
+80
+00:25:58.040 --> 00:26:03.849
+Autumn Routt: So, if anyone here has ever used OpenSim to find joint moments, they're doing
+
+81
+00:26:03.850 --> 00:26:09.440
+Autumn Routt: Both bottom-up and top-down inverse dynamics, and comparing the results of the two.
+
+82
+00:26:09.440 --> 00:26:29.309
+Autumn Routt: In a perfect world where there is no error, those are exactly the same. But because we're using devices and strategies that introduce various amounts of error, there's going to often be some amount of difference in the joint moments calculated with bottom up versus top down. And just minimizing that difference as much as possible is how we ensure that our data is accurate.
+
+83
+00:26:30.460 --> 00:26:37.359
+Autumn Routt: So, this is an inverse dynamics example. I'm gonna show you both a bottom-up and a top-down example.
+
+84
+00:26:37.820 --> 00:26:43.939
+Autumn Routt: This bottom-up example has a ground reaction force coming out of the person's center of pressure.
+
+85
+00:26:44.310 --> 00:26:51.120
+Autumn Routt: And you can see here, these are the distances of that ground reaction force to the ankle and the knee.
+
+86
+00:26:51.440 --> 00:26:59.309
+Autumn Routt: So, with just this information, I'm gonna give you all a little bit of time to work on this. We're gonna say, this time, just 2 minutes.
+
+87
+00:27:00.670 --> 00:27:04.450
+Autumn Routt: And just like before, if you have questions, you can unmute or put them in the chat.
+
+88
+00:27:05.070 --> 00:27:10.269
+Autumn Routt: One thing I want to clarify is that we're defining counterclockwise as positive for our moments here.
+
+89
+00:28:16.790 --> 00:28:36.399
+Autumn Routt: Alright, let's dive into this first example. So, the thing that you really needed to have remembered from prior experience to have success with this problem is that moment is equal to the force times the moment arm. The moment arm is the distance perpendicular to the force that you're talking about.
+
+90
+00:28:36.480 --> 00:28:48.699
+Autumn Routt: from the point of that force to the point about which the moment is being generated. So, these two D values here. And if you didn't remember that, now you have it, so hopefully you can follow along.
+
+91
+00:28:49.400 --> 00:29:02.670
+Autumn Routt: So, when we're finding the moment about the ankle, we want to take this ground reaction force magnitude and multiply it by the distance from the ankle joint center to the center of pressure, which is where the ground reaction force originates from.
+
+92
+00:29:03.200 --> 00:29:05.380
+Autumn Routt: So that's our moment about the ankle.
+
+93
+00:29:05.660 --> 00:29:13.669
+Autumn Routt: And now when finding the moment about the knee, take that same magnitude but multiply it by the distance from the center of pressure to the center of this knee joint.
+
+94
+00:29:14.160 --> 00:29:22.810
+Autumn Routt: And notice that we're… even though they're not in line horizontally, we're still just taking the horizontal distance, just because that's the rule for when we're finding our moment.
+
+95
+00:29:24.380 --> 00:29:27.810
+Autumn Routt: Now, there's something about this that is wrong as well.
+
+96
+00:29:28.530 --> 00:29:31.800
+Autumn Routt: And I'm gonna, again, give you all the opportunity to try and guess.
+
+97
+00:29:55.240 --> 00:29:59.650
+Autumn Routt: I'll give you a hint, it has to do with this convention we've established.
+
+98
+00:30:20.320 --> 00:30:38.689
+Autumn Routt: the knee moment should be negative. Certainly one of these moments should be negative, right? Because they're bending in opposite directions, and we know that because the ground reaction force is on opposite sides of these two joints. For the ankle moment, the ground reaction force is to the right of it, and for the knee moment, the ground reaction force is to the left of it.
+
+99
+00:30:39.260 --> 00:30:57.739
+Autumn Routt: But then, from this information, how do we figure out, actually, which one of these is clockwise, and which one of these is counterclockwise? Well, what we do is we say, this ground reaction force, it's a reactionary force. It should be exactly opposite the force that's generated by the moment the knee is doing, or the moment the ankle is doing. So…
+
+100
+00:30:57.810 --> 00:31:05.199
+Autumn Routt: When we draw an arrow around the knee, we should find ourselves pointing down, since the ground reaction force points up.
+
+101
+00:31:05.390 --> 00:31:08.889
+Autumn Routt: And so, if I were to move clockwise about this joint.
+
+102
+00:31:09.050 --> 00:31:13.999
+Autumn Routt: I would be moving upwards on this side of the knee joint, so I would
+
+103
+00:31:14.110 --> 00:31:19.390
+Autumn Routt: Theoretically, be generating a force Away from the ground instead of into the ground.
+
+104
+00:31:21.520 --> 00:31:23.759
+Autumn Routt: Oh, a free body diagram of the shin.
+
+105
+00:31:24.330 --> 00:31:29.289
+Autumn Routt: That would be helpful if we were looking at forces that were taking place, like, at a bone level.
+
+106
+00:31:29.420 --> 00:31:38.089
+Autumn Routt: we're, right now, just pretending like the segments are massless to be, nice and simple for ourselves. But yes, I agree, if we're being realistic.
+
+107
+00:31:38.590 --> 00:31:53.919
+Autumn Routt: Yeah, so our moment about the knee is counterclockwise because it's going down into the ground reaction force. Our moment about the ankle needs to also go down on the side of it where the ground reaction force is taking place, which means that that joint needs to actually be moving clockwise.
+
+108
+00:31:54.180 --> 00:32:01.989
+Autumn Routt: And so, that… Value, because we define counterclockwise as positive, that clockwise rotation of the ankle should be negative.
+
+109
+00:32:03.550 --> 00:32:09.039
+Autumn Routt: Okay, this is the very last example problem I'm going to give you all before I hand you over to our next speaker.
+
+110
+00:32:09.640 --> 00:32:10.630
+Autumn Routt: So.
+
+111
+00:32:10.880 --> 00:32:22.169
+Autumn Routt: This is a top-down approach, where we're using the hat, which is the head, arms, and torso lumped into one convenient mask for those of us that like to pretend the lower limbs are all that exist.
+
+112
+00:32:22.630 --> 00:32:34.510
+Autumn Routt: It has a downward force caused by gravity, and using only that information, we're going to figure out what the moments are about the ankle and knee. So I'm going to give you another 2 minutes to work on that.
+
+113
+00:34:11.150 --> 00:34:14.239
+Autumn Routt: Okay, let's dive into this top-down example.
+
+114
+00:34:15.219 --> 00:34:17.920
+Autumn Routt: So, again, moment is force times moment arm.
+
+115
+00:34:18.630 --> 00:34:20.630
+Autumn Routt: Now, the moment about the ankle…
+
+116
+00:34:20.780 --> 00:34:29.749
+Autumn Routt: is gonna be that downward force. Oh, I have the wrong number there. But regardless, we're multiplying it by zero, so ultimately the moment about the ankle is just zero.
+
+117
+00:34:31.030 --> 00:34:35.149
+Autumn Routt: And again, this should be 500 Newtons. I'm multiplying the…
+
+118
+00:34:35.699 --> 00:34:39.920
+Autumn Routt: Distance between the knee and this downward vertical force.
+
+119
+00:34:40.250 --> 00:34:42.189
+Autumn Routt: To find the moment about the knee.
+
+120
+00:34:44.210 --> 00:34:47.599
+Autumn Routt: And I think because I used the wrong number, that's not…
+
+121
+00:34:47.940 --> 00:34:56.079
+Autumn Routt: Well, actually, I think the answer's right, but this part's wrong. So yeah, it should be 500 Newtons times 0.32 meters, and that'll be 161 Newton meters.
+
+122
+00:34:58.490 --> 00:34:59.530
+Autumn Routt: Cardiac cancer
+
+123
+00:35:01.870 --> 00:35:11.579
+Autumn Routt: Now, the direction of the moment of the knee is a little bit more difficult to intuit in this example, because when we're working with a force from above.
+
+124
+00:35:11.940 --> 00:35:29.700
+Autumn Routt: we need to figure out, instead of what force causes that reactionary force, what moment would keep this person up, I think is the easiest way to think about it. So in this case, if this person is dealing with all of this force that would make them squat down, then they need an extension that would make them stand back up.
+
+125
+00:35:29.700 --> 00:35:42.440
+Autumn Routt: And because we're working with a force that's coming distally, we need to consider extension from the perspective of the proximal limb swinging outwards. So that's why we have a counterclockwise moment about the knee.
+
+126
+00:35:44.820 --> 00:35:49.150
+Autumn Routt: Does anyone have any questions about inverse dynamics before I hand you over to our next speaker?
+
+127
+00:35:50.630 --> 00:35:53.229
+Autumn Routt: The question about the right-hand Yeah, okay.
+
+128
+00:35:54.480 --> 00:35:56.449
+Autumn Routt: Can you go back? Yeah.
+
+129
+00:35:59.920 --> 00:36:00.970
+Autumn Routt: So.
+
+130
+00:36:01.870 --> 00:36:02.650
+Autumn Routt: Like.
+
+131
+00:36:02.840 --> 00:36:09.229
+Autumn Routt: Can you determine the sign of the moment also by doing that, and where do you put?
+
+132
+00:36:10.010 --> 00:36:11.679
+Autumn Routt: Do you put your hand?
+
+133
+00:36:12.590 --> 00:36:15.470
+Autumn Routt: forces and then An arm.
+
+134
+00:36:16.590 --> 00:36:17.569
+Autumn Routt: It's like.
+
+135
+00:36:17.680 --> 00:36:18.490
+Autumn Routt: Where are you?
+
+136
+00:36:20.860 --> 00:36:24.370
+Autumn Routt: Like, how would you, how would you determine the sign using the In this example.
+
+137
+00:36:25.270 --> 00:36:26.330
+Autumn Routt: Umm.
+
+138
+00:36:26.590 --> 00:36:30.049
+Autumn Routt: That's a good question, and I'm not sure if I know how to answer it, to.
+
+139
+00:36:32.380 --> 00:36:34.950
+Fahimeh Attar: Can we say, because technically.
+
+140
+00:36:34.980 --> 00:36:35.450
+Autumn Routt: Moments.
+
+141
+00:36:35.450 --> 00:36:37.449
+Fahimeh Attar: Moment is,
+
+142
+00:36:38.150 --> 00:36:47.249
+Fahimeh Attar: cross-product between force and moment arm, then we kind of can use the right-hand rule. With that, because we can use the right-hand rule.
+
+143
+00:36:47.760 --> 00:36:49.320
+Fahimeh Attar: Resultant.
+
+144
+00:36:49.560 --> 00:36:56.460
+Fahimeh Attar: From the, for the, we can use the right-hand rule to find the results of a cross-product.
+
+145
+00:36:57.870 --> 00:37:11.719
+Autumn Routt: And so the cross product is R cross F, so I think if you have the moment arm, cross the force, then you put your hand along the R, and then you go around to the F, and then the moment comes out. So…
+
+146
+00:37:11.910 --> 00:37:14.189
+Autumn Routt: It'd be better if you flipped yours.
+
+147
+00:37:15.440 --> 00:37:21.190
+Autumn Routt: Equation, so that it matches the vector form of the equation, which is moment equals… yeah.
+
+148
+00:37:21.750 --> 00:37:25.240
+Autumn Routt: So if you draw your vector, Base out.
+
+149
+00:37:29.010 --> 00:37:30.959
+Autumn Routt: Okay, could everybody hear that online?
+
+150
+00:37:35.650 --> 00:37:36.840
+Autumn Routt: Okay, great.
+
+151
+00:37:37.810 --> 00:37:38.820
+Autumn Routt: Well said.
+
+152
+00:37:39.670 --> 00:37:40.970
+Autumn Routt: Any other questions?
+
+153
+00:37:45.400 --> 00:37:46.859
+Autumn Routt: You can try it on a door.
+
+154
+00:37:49.010 --> 00:37:52.639
+Autumn Routt: Oh, as in? Yeah, like, your joint is at the…
+
+155
+00:37:53.660 --> 00:37:57.120
+Autumn Routt: The hinge and then you draw R out and and then you do an F.
+
+156
+00:37:57.600 --> 00:37:58.419
+Autumn Routt: You get the moment.
+
+157
+00:37:58.660 --> 00:38:04.289
+Autumn Routt: And it should move the door in that way. Oh, yeah. And, like, you know, like, doors in France sometimes have the
+
+158
+00:38:06.050 --> 00:38:07.650
+Autumn Routt: Not in the middle, which…
+
+159
+00:38:08.730 --> 00:38:13.790
+Autumn Routt: Half your moment. Yeah. For the same force. So you get pulled twice as hard.
+
+160
+00:38:16.190 --> 00:38:20.540
+Autumn Routt: And then you can also then figure out the angle that you're pulling it, so if you're pulling it along
+
+161
+00:38:20.840 --> 00:38:25.319
+Autumn Routt: And then you'll get… Zero moment, because it's a cross product.
+
+162
+00:38:25.670 --> 00:38:26.959
+Autumn Routt: I don't get the most.
+
+163
+00:38:27.630 --> 00:38:30.240
+Autumn Routt: Moment when you're perpendicular to that.
+
+164
+00:38:30.400 --> 00:38:36.059
+Autumn Routt: So then, sometimes we just simplify it by getting the perpendicular force and multiplying it, rather than doing
+
+165
+00:38:36.660 --> 00:38:37.430
+Autumn Routt: vector computation.
+
+166
+00:38:39.950 --> 00:38:40.650
+Autumn Routt: Cool.
+
+167
+00:38:44.340 --> 00:38:45.670
+Adwait Mane: I've got a question.
+
+168
+00:38:45.670 --> 00:38:46.740
+Autumn Routt: Oh yeah, go ahead.
+
+169
+00:38:47.370 --> 00:38:48.500
+Adwait Mane: So.
+
+170
+00:38:48.930 --> 00:38:49.500
+Autumn Routt: Something.
+
+171
+00:38:49.500 --> 00:38:50.370
+Adwait Mane: Cool.
+
+172
+00:38:50.370 --> 00:38:52.020
+Autumn Routt: What?
+
+173
+00:38:52.080 --> 00:38:56.660
+Adwait Mane: Oh, oh, oh, do you want me to unmute you?
+
+174
+00:38:56.660 --> 00:38:57.620
+Autumn Routt: Over here.
+
+175
+00:38:59.200 --> 00:39:04.179
+Carissa J Mallonee: I'll just use, there you go. …your… Ping, I think.
+
+176
+00:39:07.770 --> 00:39:09.429
+Carissa J Mallonee: Hello, can you hear me?
+
+177
+00:39:09.430 --> 00:39:10.050
+Autumn Routt: Yes.
+
+178
+00:39:10.460 --> 00:39:20.279
+Carissa J Mallonee: Sorry, we had a bit of an echo issue here. So it seems to me like this analysis you've presented is assuming the entire system is a single rigid body.
+
+179
+00:39:20.430 --> 00:39:24.480
+Carissa J Mallonee: Whereas, in reality, it's a multi-body system.
+
+180
+00:39:24.710 --> 00:39:34.220
+Carissa J Mallonee: So, do you have to change, you know, maybe use a different framework when you're thinking of it as a multi-body system versus a single rigid body?
+
+181
+00:39:34.400 --> 00:39:39.680
+Autumn Routt: You mean because I'm lumping all of the forces into one single… Gravitational force?
+
+182
+00:39:41.090 --> 00:39:43.149
+Carissa J Mallonee: Well, and also that…
+
+183
+00:39:43.380 --> 00:39:44.830
+Autumn Routt: The…
+
+184
+00:39:45.530 --> 00:39:48.570
+Carissa J Mallonee: Like the previous example with the ground reaction force.
+
+185
+00:39:49.680 --> 00:39:52.140
+Carissa J Mallonee: that…
+
+186
+00:39:52.780 --> 00:40:02.010
+Carissa J Mallonee: it's kind of related to what I said about drawing a free body diagram of the shin. If… if we… if we isolate the shin and,
+
+187
+00:40:02.120 --> 00:40:06.249
+Carissa J Mallonee: Try to compute the moment at the knee. That way, do we get the same answer?
+
+188
+00:40:07.290 --> 00:40:09.170
+Carissa J Mallonee: As what we did here.
+
+189
+00:40:09.170 --> 00:40:13.769
+Autumn Routt: If we isolate as in if we don't look at anything above the knee.
+
+190
+00:40:14.570 --> 00:40:17.980
+Carissa J Mallonee: Like, there's a ground reaction force on the foot.
+
+191
+00:40:18.120 --> 00:40:22.770
+Carissa J Mallonee: That foot is connected to the shin, so that.
+
+192
+00:40:22.970 --> 00:40:28.930
+Carissa J Mallonee: Foot ground reaction force is causing an ankle moment, which is…
+
+193
+00:40:29.460 --> 00:40:33.489
+Carissa J Mallonee: Kind of propagating to create that me moment.
+
+194
+00:40:33.790 --> 00:40:34.570
+Autumn Routt: Yah.
+
+195
+00:40:35.640 --> 00:40:44.449
+Carissa J Mallonee: So I'm just curious, would we get the same answer if we… Isolated the shin, and… Used the…
+
+196
+00:40:44.960 --> 00:40:50.590
+Carissa J Mallonee: moment at the ankle to compute the moment at the knee, if that makes sense.
+
+197
+00:40:50.590 --> 00:40:52.970
+Autumn Routt: Yeah, yeah, we should get the same answer.
+
+198
+00:40:52.970 --> 00:40:53.410
+Carissa J Mallonee: Oh, okay.
+
+199
+00:40:53.410 --> 00:41:03.110
+Autumn Routt: That math should fall out. And then also this gets more complicated if we consider the mass of the shin and the mass of the thigh.
+
+200
+00:41:04.210 --> 00:41:04.550
+Carissa J Mallonee: Okay.
+
+201
+00:41:04.550 --> 00:41:06.640
+Autumn Routt: It would be vertical forces opposing it.
+
+202
+00:41:07.290 --> 00:41:09.839
+Autumn Routt: You can draw any free body diagram if you…
+
+203
+00:41:10.270 --> 00:41:14.589
+Autumn Routt: properly, which we haven't talked about. But you can cut it at any joint, even if there's two
+
+204
+00:41:14.720 --> 00:41:18.569
+Autumn Routt: And then consider it a rigid body for the purposes of that.
+
+205
+00:41:18.680 --> 00:41:23.840
+Autumn Routt: Free body diagram and analysis, but then you can always break it again and find the force anywhere.
+
+206
+00:41:24.060 --> 00:41:28.220
+Autumn Routt: You can find the… Reactions, even if you cut the bone.
+
+207
+00:41:29.110 --> 00:41:32.450
+Autumn Routt: But you need data moment, and it's not like a pin joint, so it'.
+
+208
+00:41:33.130 --> 00:41:33.960
+Carissa J Mallonee: Did you hear that?
+
+209
+00:41:33.960 --> 00:41:35.890
+Autumn Routt: With the free body analysis, you can
+
+210
+00:41:36.300 --> 00:41:39.839
+Autumn Routt: Wherever you cut it, then you just, for that instant, treat everything as rigid.
+
+211
+00:41:41.510 --> 00:41:46.250
+Carissa J Mallonee: Sorry, we can't quite hear what the other speaker said.
+
+212
+00:41:46.250 --> 00:41:53.230
+Autumn Routt: Oh, sorry, yeah, that's Lena Ting, my advisor, and she's talking about how, if you were to
+
+213
+00:41:53.230 --> 00:42:11.650
+Autumn Routt: cut this segment in half and look at the interaction forces between the two sides of the bone, you could still model this appropriately. As long as you're taking into account all of your forces, you can break this into as many different pieces as you want, and if you have a reliable free body diagram, you can still get the information you need.
+
+214
+00:42:12.540 --> 00:42:14.200
+Carissa J Mallonee: Got it. Thank you for clarifying.
+
+215
+00:42:14.200 --> 00:42:15.149
+Autumn Routt: Yeah, of course.
+
+216
+00:42:21.220 --> 00:42:26.610
+Autumn Routt: Okay, I'll pass this on. Emily, I believe you're next.
+
+217
+00:42:30.130 --> 00:42:32.200
+Carissa J Mallonee: Yes, sir, just select the zoom number.
+
+218
+00:42:32.200 --> 00:42:35.820
+Emily Smith: Next slide, slide, slide, slide.
+
+219
+00:42:36.130 --> 00:42:37.960
+Carissa J Mallonee: Yeah, anyone else?
+
+220
+00:42:38.470 --> 00:42:41.400
+Emily Smith: Mine's off now. Okay.
+
+221
+00:42:43.450 --> 00:42:44.659
+Emily Smith: I'm on now.
+
+222
+00:42:46.260 --> 00:42:46.990
+Emily Smith: Hi.
+
+223
+00:42:47.310 --> 00:42:50.250
+Emily Smith: Keep going.
+
+224
+00:42:50.920 --> 00:42:59.539
+Emily Smith: While she's finding my first slide. Hi, I'm Emily. I am a BME PhD student here in Lena Ting's lab at Emory.
+
+225
+00:43:00.650 --> 00:43:14.079
+Emily Smith: We are going to be talking about best practices for motion capture. So, now that we've covered how joint angles and moments are calculated, we're going to talk about how to make sure those calculations are
+
+226
+00:43:14.080 --> 00:43:23.989
+Emily Smith: Based on high-quality data, so that they can… their own… those calculations are as… only as real as, the data that you give them.
+
+227
+00:43:24.710 --> 00:43:33.400
+Emily Smith: If I had to summarize how to collect motion capture data in three steps, this is what I would…
+
+228
+00:43:33.400 --> 00:43:38.780
+Emily Smith: advise, and that is to learn from more experienced users.
+
+229
+00:43:38.780 --> 00:43:55.470
+Emily Smith: But trust that there's a limit to what they can teach you, and so that you just need to get in there, collect some data, mess up, and try again. And that, really, that's truly the best way that you're gonna learn it, and very much the phase of learning that I am in right now.
+
+230
+00:43:55.920 --> 00:44:02.940
+Emily Smith: And then finally, document everything as you're processing.
+
+231
+00:44:03.160 --> 00:44:12.589
+Emily Smith: you can get into a rhythm and a method, but that can also work against you when you're trying to troubleshoot later. So
+
+232
+00:44:12.910 --> 00:44:20.820
+Emily Smith: and make an excel spreadsheet. It can be your friend here to remember the steps you took, and any notes that you have along the way.
+
+233
+00:44:21.440 --> 00:44:35.840
+Emily Smith: We have a wide variety of backgrounds who are using a wide variety of motion capture and processing approaches in this group. So this is going to be a very high level overview that will hopefully provide useful tips across the board.
+
+234
+00:44:35.960 --> 00:44:37.099
+Emily Smith: Next slide.
+
+235
+00:44:39.860 --> 00:44:51.529
+Emily Smith: So, this… in this figure, I have to illustrate why, your collection steps, matter. This is, on the left, you'll see data that I have,
+
+236
+00:44:51.530 --> 00:45:02.530
+Emily Smith: was trying to work on last year, and ultimately had to throw out this participant for the abstract I was writing. So
+
+237
+00:45:02.530 --> 00:45:16.380
+Emily Smith: your… my… I put references on the right so you can see what these, plots are supposed to look like, and you can see that we did pretty well with, hip and knee, but went off the rails and,
+
+238
+00:45:16.450 --> 00:45:20.049
+Emily Smith: with our ankle data. And,
+
+239
+00:45:20.790 --> 00:45:39.080
+Emily Smith: that's a reality of collection. We were moving between two labs and collecting labs and, data in two separate labs, which led to a bunch of error, sneaking in, and, I tore my hair out over this, for quite some time. So…
+
+240
+00:45:39.130 --> 00:45:45.040
+Emily Smith: We are going to review like how to resolve these errors.
+
+241
+00:45:45.800 --> 00:45:47.140
+Emily Smith: Next slide.
+
+242
+00:45:48.800 --> 00:46:04.969
+Emily Smith: So motion capture isn't a single measurement. It's a sequence of processing steps. In marker-based motion capture, each camera emits infrared light and records the light reflected back from the passive reflective markers.
+
+243
+00:46:05.050 --> 00:46:20.200
+Emily Smith: A single camera can only determine where a marker is located in its two-dimensional image, but by combining views from multiple calibrated cameras, software triangulates a marker's three-dimensional position.
+
+244
+00:46:21.130 --> 00:46:23.549
+Emily Smith: Markers are placed on the sub… oh, nope.
+
+245
+00:46:24.110 --> 00:46:34.219
+Emily Smith: Markers are placed on the subject, cameras detect them, and their three-dimensional positions are reconstructed, and those trajectories are used to build a biomechanical model.
+
+246
+00:46:34.330 --> 00:46:39.760
+Emily Smith: And finally, we can calculate biomechanical variables from those.
+
+247
+00:46:39.760 --> 00:46:57.029
+Emily Smith: Markerless motion capture uses one or more synchronized cameras and computer vision algorithms, typically neural networks, to identify anatomical landmarks directly from video instead of using tracking reflective markers.
+
+248
+00:46:57.110 --> 00:47:15.719
+Emily Smith: Those systems are particularly useful when markers aren't feasible, such as with very small animals and species that don't tolerate markers well, or behaviors where markers would interfere with easily or be easily occluded by the movement you're studying.
+
+249
+00:47:16.880 --> 00:47:29.159
+Emily Smith: Error can be introduced at every stage, and this error accumulates as you move through this pipeline. We'll break down how error creeps in and what you can do to mitigate it in the next slides.
+
+250
+00:47:32.900 --> 00:47:44.339
+Emily Smith: Before you ever place a marker, think about the question you are trying to answer. A marker to set design for one application may not be appropriate for another.
+
+251
+00:47:44.470 --> 00:47:51.490
+Emily Smith: Choose the simplest marker that captures the variables you actually need with the resources that you have.
+
+252
+00:47:51.840 --> 00:48:00.509
+Emily Smith: Even if you're inheriting a well-studied approach, I encourage you to be thoughtful about why you are choosing the set that you are.
+
+253
+00:48:00.510 --> 00:48:18.379
+Emily Smith: So your lab may have this down to a T about how you collect, but I think it's almost easier to get lost in the sauce when you're when you're trying to process the data on your own. If you don't investigate thoroughly why the people before you made the choices they did.
+
+254
+00:48:18.380 --> 00:48:26.510
+Emily Smith: And then if you're lucky, like me, where you're having to develop a new set for a new study, you need to…
+
+255
+00:48:27.380 --> 00:48:39.800
+Emily Smith: really question, well, do I really need that extra marker? Because that extra marker introduces error and may or may not create problems from you down the road.
+
+256
+00:48:40.610 --> 00:48:41.690
+Emily Smith: Next slide.
+
+257
+00:48:45.200 --> 00:48:49.120
+Emily Smith: Many of the biggest sources of error are preventable.
+
+258
+00:48:49.340 --> 00:48:56.910
+Emily Smith: We place markers on bony landmarks to minimize soft tissue artifact.
+
+259
+00:48:57.020 --> 00:49:13.150
+Emily Smith: So the cameras are tracking the markers, not the bones. If a marker is attached to skin over muscle or other tissue, it can move relative to the underlying bone as the muscles contract or the skin shifts.
+
+260
+00:49:13.420 --> 00:49:21.930
+Emily Smith: The software interprets that marker movement as bone movement, and that introduces error into estimated.
+
+261
+00:49:22.510 --> 00:49:23.600
+Emily Smith: angles.
+
+262
+00:49:23.960 --> 00:49:25.940
+Emily Smith: or twerk.
+
+263
+00:49:26.860 --> 00:49:46.669
+Emily Smith: Use tight-fitting clothing, place markers consistently on anatomical landmarks, remove reflective objects, secure your clusters, and calibrate appropriately. I've now collected data in four different labs. Nope.
+
+264
+00:49:46.710 --> 00:50:01.340
+Emily Smith: That's not including my undergrad. Five different labs, and they all have a unique calibration system. Do not assume that one way you calibrate in one lab works in every other lab. Also, learn that the hard way.
+
+265
+00:50:02.570 --> 00:50:20.429
+Emily Smith: You also want to check your camera coverage. So some of you may have fixed labs cameras above. Some may need to move the cameras. Don't assume that the way you did it one day that was successful is successful on the next day. Every day is a new one.
+
+266
+00:50:20.790 --> 00:50:26.259
+Emily Smith: Taking a few extra minutes here really can save you hours of troubleshooting later.
+
+267
+00:50:27.370 --> 00:50:29.040
+Emily Smith: Next slide.
+
+268
+00:50:31.290 --> 00:50:44.900
+Emily Smith: Stay vigilant. You don't ever want to assume that everything is working correctly. And this is where you have to ask for help from others. One person alone probably can't.
+
+269
+00:50:45.270 --> 00:50:57.050
+Emily Smith: managed to do all this by themselves. So if you enlist someone to help you keep an eye on those marker trajectories over the course of your trials.
+
+270
+00:50:57.280 --> 00:50:59.320
+Emily Smith: And,
+
+271
+00:50:59.740 --> 00:51:13.549
+Emily Smith: Try to give directions as clearly and succinctly and consistently to your participant as possible. One thing I want to mention about force plates and human data, if you're working with gait.
+
+272
+00:51:13.690 --> 00:51:25.899
+Emily Smith: Please consider that if you tell the person to hit the force plate, if you're walking over ground, you are going to change their natural gait.
+
+273
+00:51:26.290 --> 00:51:31.079
+Emily Smith: So that's a choice that you're making to collect the data that you're going.
+
+274
+00:51:31.360 --> 00:51:41.880
+Emily Smith: going to get on a treadmill. It's easier. You just need to maybe let them know where the force plates are, so that they're not crossing over
+
+275
+00:51:41.960 --> 00:52:06.429
+Emily Smith: as they walk, and then we can argue about the ecological relevance of treadmill walking in another workshop. When working with animals. It's important which this may seem very obvious, but it's worth mentioning. You need to habituate your animal to the environment and make sure you can get them over those force plates and get them to the targets that they need.
+
+276
+00:52:07.090 --> 00:52:08.340
+Emily Smith: to reach.
+
+277
+00:52:10.350 --> 00:52:29.160
+Emily Smith: collect many trials and recollect a questionable trial, particularly a calibration trial as immediately. You may feel like you're wasting the time of the people around you, but it doesn't take that long and again, can save you hours of work later.
+
+278
+00:52:29.660 --> 00:52:30.950
+Emily Smith: Next slide.
+
+279
+00:52:33.010 --> 00:52:33.710
+Emily Smith: Okay.
+
+280
+00:52:34.730 --> 00:52:39.680
+Emily Smith: Don't trust anything. Ever.
+
+281
+00:52:40.060 --> 00:52:42.020
+Emily Smith: You,
+
+282
+00:52:43.090 --> 00:53:01.889
+Emily Smith: I'm not going to walk you through every step of this slide, particularly because it seems like this group has quite a bit of experience. But you want to create a lot of stop gaps where you can go back and look to see that the data you meant to collect, you're actually collecting.
+
+283
+00:53:02.130 --> 00:53:10.649
+Emily Smith: for some unexplained reason, or that I have not resolved yet in the latest data set that I'm working on.
+
+284
+00:53:10.830 --> 00:53:22.660
+Emily Smith: 3 of my trials are going to 0, and I can't explain it, and they're all running off of the same code, and I've… I'm still working through it, but such as the process.
+
+285
+00:53:24.160 --> 00:53:34.940
+Emily Smith: If you're using a custom code, just build in safety checks throughout your analysis, and then Pilot.
+
+286
+00:53:35.850 --> 00:53:42.850
+Emily Smith: analyze, look at your data, refine it, and then pilot again, resist temptation to collect a bunch of data and look at
+
+287
+00:53:43.130 --> 00:53:45.280
+Emily Smith: look at everything across a group.
+
+288
+00:53:46.400 --> 00:53:47.350
+Emily Smith: I can start.
+
+289
+00:53:48.640 --> 00:53:50.550
+Emily Smith: Next slide.
+
+290
+00:53:51.920 --> 00:54:02.729
+Emily Smith: Here is a quick little true or false game for all of us to play. Motion capture measures joy angles. True or false?
+
+291
+00:54:05.740 --> 00:54:06.750
+Emily Smith: anyone.
+
+292
+00:54:07.620 --> 00:54:09.150
+Emily Smith: It's not a trick question.
+
+293
+00:54:09.920 --> 00:54:18.300
+Emily Smith: false It's animated. Thumbs down, false, anything.
+
+294
+00:54:18.440 --> 00:54:23.160
+Emily Smith: so you can go advance it.
+
+295
+00:54:23.590 --> 00:54:28.869
+Emily Smith: Great. So if somebody answered, what does motion capture measure?
+
+296
+00:54:31.940 --> 00:54:33.550
+Emily Smith: position of the
+
+297
+00:54:34.120 --> 00:54:44.810
+Emily Smith: It's being the position of markers in space which then help you calculate great joint angles in post processing. Great. No, no, wait.
+
+298
+00:54:44.810 --> 00:54:45.580
+Carissa J Mallonee: Oh, it's.
+
+299
+00:54:45.580 --> 00:54:46.850
+Emily Smith: What is a measure?
+
+300
+00:54:47.080 --> 00:55:03.980
+Emily Smith: What is it actually measuring? A bright dot on… Okay, it's measuring a bright dot on a screen, and you define… And then you have to know where the cameras are, that's how you calibrate, and then you decide if…
+
+301
+00:55:04.170 --> 00:55:15.389
+Emily Smith: this dot on this camera is the same as this dot on that camera, which is also why you get confused if they're too close. So all we're doing is getting black and white images of
+
+302
+00:55:15.550 --> 00:55:16.460
+Emily Smith: Gotcha.
+
+303
+00:55:19.050 --> 00:55:27.190
+Emily Smith: Thank you, Lena. Emphasis on. I'm still a student. Okay, advance. We can go. Okay.
+
+304
+00:55:27.480 --> 00:55:29.560
+Emily Smith: Great.
+
+305
+00:55:29.830 --> 00:55:34.499
+Emily Smith: More markers always improve data quality.
+
+306
+00:55:39.050 --> 00:55:43.949
+Emily Smith: Oh, yeah, the falls. Great. Can somebody talk about?
+
+307
+00:55:46.230 --> 00:55:47.250
+Emily Smith: this one.
+
+308
+00:55:47.950 --> 00:55:53.119
+Emily Smith: why you said false. You've correctly assumed false.
+
+309
+00:55:55.550 --> 00:55:56.540
+Emily Smith: Anyone.
+
+310
+00:55:58.470 --> 00:56:01.590
+Emily Smith: All markers are a source of error.
+
+311
+00:56:02.030 --> 00:56:04.020
+Emily Smith: It's profound. Yes.
+
+312
+00:56:05.900 --> 00:56:08.769
+Emily Smith: more occlusions potentially.
+
+313
+00:56:16.880 --> 00:56:17.700
+Emily Smith: Good.
+
+314
+00:56:17.860 --> 00:56:19.440
+Emily Smith: more confusion.
+
+315
+00:56:19.680 --> 00:56:21.430
+Emily Smith: more confusion.
+
+316
+00:56:21.610 --> 00:56:24.220
+Emily Smith: on labeling, labeling.
+
+317
+00:56:28.230 --> 00:56:35.779
+Emily Smith: Also, there's a minimum distance between markers that it can actually detect. So we had a bunch
+
+318
+00:56:35.960 --> 00:56:38.939
+Emily Smith: on a hand thing depending on your space.
+
+319
+00:56:39.940 --> 00:56:45.660
+Emily Smith: And because they're all getting Can you guys hear that? Did you guys hear that?
+
+320
+00:56:46.290 --> 00:56:47.450
+Emily Smith: I'm
+
+321
+00:56:47.470 --> 00:57:07.250
+Emily Smith: It's important in case you didn't. It's important that you understand the minimum distance between markers. That original slide I showed you with the terrible ankle data, that was indeed the problem. One lab uses markers that's too close together for our lab's cameras and
+
+322
+00:57:07.650 --> 00:57:12.100
+Emily Smith: The marker kept switching trajectories in every frame.
+
+323
+00:57:13.620 --> 00:57:15.620
+Emily Smith: Next?
+
+324
+00:57:15.780 --> 00:57:21.250
+Emily Smith: Marker occlusion is generally more common in quadrupeds than bipeds.
+
+325
+00:57:22.330 --> 00:57:26.560
+Emily Smith: trying to keep the anchor, the animal people in in the game here.
+
+326
+00:57:41.960 --> 00:57:48.199
+Emily Smith: I'll read it again. Marker occlusion is generally more common in quadrupeds than bipeds.
+
+327
+00:57:52.600 --> 00:57:57.419
+Emily Smith: Okay, animal people, you are quiet.
+
+328
+00:57:58.470 --> 00:57:59.360
+Emily Smith: false.
+
+329
+00:58:00.270 --> 00:58:03.769
+Emily Smith: I've done both. So it's
+
+330
+00:58:04.640 --> 00:58:16.040
+Emily Smith: one could argue it's true, and you could extend it to cause you. It's it's they're less predictable. I can control more what a human is gonna do than a
+
+331
+00:58:16.540 --> 00:58:20.109
+Emily Smith: I did. It totally depends. It totally depends. It totally depends.
+
+332
+00:58:20.700 --> 00:58:23.169
+Emily Smith: Why do you think we have people cross their arms?
+
+333
+00:58:23.590 --> 00:58:25.309
+Emily Smith: in our lab. It's
+
+334
+00:58:26.050 --> 00:58:30.210
+Emily Smith: if if you, if they don't cross their arms and their arms are in front of all the markers.
+
+335
+00:58:32.000 --> 00:58:42.729
+Emily Smith: Okay, so this was an unintentional trick question. And then finally, as long as a force plate records a force, the trial is suitable for ender's first dynamics.
+
+336
+00:58:55.100 --> 00:59:02.519
+Emily Smith: I'm gonna just move us along and say that that is indeed false. You need to make sure that
+
+337
+00:59:04.950 --> 00:59:10.990
+Emily Smith: the data you think you're measuring is the data that you have actually collected.
+
+338
+00:59:11.110 --> 00:59:17.950
+Emily Smith: And from the chat, what strategies do you use to avoid marker occlusions in humans?
+
+339
+00:59:18.610 --> 00:59:27.780
+Emily Smith: So, as Lena mentioned, we have, for balance tasks and walking tasks, we will have people cross their arms across their chest, although…
+
+340
+00:59:27.960 --> 00:59:28.870
+Emily Smith: not.
+
+341
+00:59:29.240 --> 00:59:32.419
+Emily Smith: much longer. Good.
+
+342
+00:59:33.060 --> 00:59:34.400
+Emily Smith: And.
+
+343
+00:59:35.000 --> 00:59:37.000
+Emily Smith: I am gonna say here.
+
+344
+00:59:37.660 --> 00:59:54.290
+Emily Smith: with good, with the backing of Luke. Keep the space open as possible. Use marker clusters rely on gap filling in our lab. The marker clusters seem to be giving me the most trouble. So I think also that depends.
+
+345
+00:59:54.370 --> 01:00:06.120
+Emily Smith: Gap filling is indeed your friend. That process is going to be varied across softwares, which is why we didn't talk about it today.
+
+346
+01:00:07.400 --> 01:00:24.970
+Emily Smith: And also, again, stay vigilant, and I have to remind myself that even though I'm asking someone to repeat a trial, it really only takes a couple of extra minutes, and you can account for that time when you're building out your protocol.
+
+347
+01:00:27.540 --> 01:00:35.020
+Emily Smith: That's it for me, unless you can advance it unless anyone has any additional questions.
+
+348
+01:00:40.220 --> 01:00:41.389
+Emily Smith: or a comment.
+
+349
+01:00:41.660 --> 01:00:47.289
+Emily Smith: Lena has a comment. Check your force play output. Our wires were mislabeled from the factory.
+
+350
+01:00:48.210 --> 01:01:08.009
+Emily Smith: our in case you didn't hear that our our wires were mislabeled. Also, if your Vicon is crashing frequently, we have a fix for that. Get thanks to our research engineer who discovered you need to make sure it's a streaming like. The video card priority is on.
+
+351
+01:01:08.050 --> 01:01:11.500
+Emily Smith: icon, and not Youtube.
+
+352
+01:01:11.620 --> 01:01:18.490
+Emily Smith: Yes, video card priority on Vicon. It may change when you do a Microsoft update.
+
+353
+01:01:22.170 --> 01:01:23.150
+Emily Smith: Thanks.
+
+354
+01:01:32.320 --> 01:01:37.500
+Autumn Routt: Alright, next up is Lauren. Do you want me to keep sharing screen for you, Lauren?
+
+355
+01:01:37.850 --> 01:01:40.820
+Lauren Infantino: If you actually don't mind handing it over…
+
+356
+01:01:41.780 --> 01:01:44.949
+Autumn Routt: Say again. Sorry, you were muted. Oh, sorry.
+
+357
+01:01:44.950 --> 01:01:45.650
+Lauren Infantino: You can.
+
+358
+01:01:45.650 --> 01:01:47.589
+Autumn Routt: It's on my end. Yeah, you're.
+
+359
+01:01:47.590 --> 01:01:50.710
+Lauren Infantino: If you don't mind, could I share my screen?
+
+360
+01:01:50.710 --> 01:01:51.490
+Autumn Routt: Totally.
+
+361
+01:01:53.610 --> 01:01:54.430
+Lauren Infantino: Sweet.
+
+362
+01:01:55.950 --> 01:01:58.780
+Lauren Infantino: Show the sky Okay.
+
+363
+01:01:59.970 --> 01:02:01.490
+Lauren Infantino: Do, do, do.
+
+364
+01:02:03.220 --> 01:02:04.200
+Lauren Infantino: Awesome.
+
+365
+01:02:04.720 --> 01:02:09.369
+Lauren Infantino: Cool, so… Can people still hear me, or.
+
+366
+01:02:10.280 --> 01:02:30.680
+Lauren Infantino: Perfect. All right. So Hi, everyone. I'm a 1st year out at Uci in Manny's lab, and we're just gonna briefly talk about electromyography, which is usually a tool that's used in conjunction with motion capture to capture information about animal movement or human movement.
+
+367
+01:02:31.270 --> 01:02:42.309
+Lauren Infantino: So today, we're going to go through five main things about EMG, and then we're going to follow it with a processing activity on MATLAB at the very end.
+
+368
+01:02:42.430 --> 01:02:56.569
+Lauren Infantino: So kind of the itinerary for today is we're 1st going to go through. What information can we actually obtain through EMG. EMG is a tool to capture information about motion. But what information is that?
+
+369
+01:02:56.730 --> 01:03:10.819
+Lauren Infantino: Second thing we're going to go over is, how does it actually work? We're specifically going to talk about bipolar electrodes, because I think that's what majority of people MC are going to be working with. But we're going to talk about the underlying principles of how those work.
+
+370
+01:03:11.090 --> 01:03:22.189
+Lauren Infantino: The third thing we're going to do, and Kennedy is going to help me with that, is we're going to talk about some best practices for EMGs, when working with humans. And then we're also going to discuss a little bit on working with animals.
+
+371
+01:03:22.600 --> 01:03:44.100
+Lauren Infantino: The 4th thing that we're going to do is we're going to talk about processing your raw signals. So let's say you've done a really wonderful job at data collecting. You have this wonderful raw signal. How do you go from the raw signal to the EMG envelope, which is usually what you'll see in the literature and in papers, and that's what you'll be actually interpreting information off of.
+
+372
+01:03:44.600 --> 01:03:49.680
+Lauren Infantino: We have time. We'll go through a brief discussion on what signal decomposition is.
+
+373
+01:03:49.740 --> 01:04:09.520
+Lauren Infantino: And then we'll get into the processing activity on MATLAB. The one thing I recommend for the activity or what you can do is you kind of have two options. You can either — I'm going to share my screen so you can just follow along and watch me go through the live script and the steps, and then you're free to work on it and kind of look at it on your own.
+
+374
+01:04:09.600 --> 01:04:20.950
+Lauren Infantino: or you can like side by side, pull up your Matlab if you have it. I know there's an online version of Matlab that you can also use and you can work through the steps with me. Either one is perfectly fine.
+
+375
+01:04:22.400 --> 01:04:37.290
+Lauren Infantino: So, I think the first part, that we can discuss when we're talking about EMGs is really what information they give you. And all animals, all organisms move through muscular action or contraction.
+
+376
+01:04:37.290 --> 01:05:00.609
+Lauren Infantino: And this is really what we're investigating when we're using EMGs. We're looking at the coordinated action of muscle groups and how animals move and the control of that movement. And so that's kind of the information that we're going to be getting when we're using surface EMGs, intramuscular EMGs, high density arrays is we're really getting at
+
+377
+01:05:00.610 --> 01:05:02.690
+Lauren Infantino: How do animals control their movement?
+
+378
+01:05:02.810 --> 01:05:15.050
+Lauren Infantino: So the information that is mainly going to be encased in our EMG signal is information about the timing, the magnitude, and the duration of muscular action.
+
+379
+01:05:15.330 --> 01:05:31.720
+Lauren Infantino: And so, for the rest of this, I'll usually just say EMGs, but that's in reference to electromyography. So, all of these animals are moving through contracting their muscles, and that's happening from the central nervous system.
+
+380
+01:05:31.720 --> 01:05:48.200
+Lauren Infantino: sending action potentials to our muscles, our muscles are contracting, and they're generating work and movement. So just remember that as we kind of continue on, is the central questions that you can answer with EMG are basically regarding how animals move.
+
+381
+01:05:48.480 --> 01:06:05.559
+Lauren Infantino: So we'll talk about a little bit about what are the underlying principles of how EMGs work, particularly for a bipolar electrode. But we'll kind of start a little bit broader, going back to maybe some things that you've learned out in week one.
+
+382
+01:06:05.580 --> 01:06:18.869
+Lauren Infantino: really the action potential alpha motor neurons and muscle fibers. So we'll start here with our spinal cord. Spinal cord contains the motor neuron cell body.
+
+383
+01:06:19.060 --> 01:06:23.139
+Lauren Infantino: of our alpha motor neurons which innervate our muscle fibers.
+
+384
+01:06:23.760 --> 01:06:34.019
+Lauren Infantino: These motor neurons, these cell bodies, will receive both excitatory signals and inhibitory signals from interneurons and other cells at their dendrites.
+
+385
+01:06:34.520 --> 01:06:45.370
+Lauren Infantino: The sum of those signals can reach a threshold in which an action potential will be sent along this motor neuron to the neuromuscular junction of a single muscle fiber.
+
+386
+01:06:45.440 --> 01:06:50.990
+Lauren Infantino: At that junction acetylcholine is usually released, which is the chemical transmitter.
+
+387
+01:06:51.010 --> 01:07:03.340
+Lauren Infantino: that changes the membrane permeability of our muscle fibers, which triggers an action potential with the influx of sodium into our cells, release of calcium and the contraction of muscles.
+
+388
+01:07:03.340 --> 01:07:11.069
+Lauren Infantino: So just kind of remember a little bit of that background that we learned from week one, because it'll be important in describing how electromyography works.
+
+389
+01:07:12.430 --> 01:07:13.390
+Lauren Infantino: So…
+
+390
+01:07:13.500 --> 01:07:24.620
+Lauren Infantino: If you're going to take away anything from this, it's really what a bipolar, how a bipolar electrode works, which is through detecting the differences in voltages between 2 points.
+
+391
+01:07:24.680 --> 01:07:39.300
+Lauren Infantino: So we have our action potential that has gone. It's synapsed at a neuromuscular junction with our muscle fiber. And now what we have is an action potential that is propagating in either direction. But in this example it's propagating to the right.
+
+392
+01:07:39.890 --> 01:07:49.659
+Lauren Infantino: Let's take the scenario where we have an electrode one on some point on our muscle fiber, and electrode 2 is some distance away from it.
+
+393
+01:07:49.950 --> 01:07:56.360
+Lauren Infantino: As our action potential propagates to the right of our fiber, it'll pass under electrode. One electrode, one will read it.
+
+394
+01:07:56.530 --> 01:08:05.280
+Lauren Infantino: And then at another point in time, based on the conduction velocity of that action potential through this fiber, it'll pass under electrode 2. Electrode 2 will read it.
+
+395
+01:08:05.630 --> 01:08:21.699
+Lauren Infantino: for bipolar electrodes. What they're really doing is they're going to take the difference between those 2 voltages or electrodes at a given instant in time. And really, that's what you get at the end of the day is your baseline waveform.
+
+396
+01:08:22.569 --> 01:08:41.489
+Lauren Infantino: Typically, most of us, I don't think, are going to be doing single fiber electrode readings. Most of us are going to be doing surface EMGs with humans in particular. Some of us will be doing intramuscular EMGs, but surface EMGs and intramuscular EMGs work along the same exact principle.
+
+397
+01:08:41.490 --> 01:08:47.790
+Lauren Infantino: of basically taking the voltage difference between 2 points as an action potential propagates through a muscle.
+
+398
+01:08:48.160 --> 01:08:54.479
+Lauren Infantino: Surface EMGs will look at a volume of muscle, though not an individual fiber.
+
+399
+01:08:54.840 --> 01:09:06.180
+Lauren Infantino: and it'll take a collection of all those motor units that are firing all those action potentials, sum them all up. And this is kind of the output, maybe, that most of us are
+
+400
+01:09:06.390 --> 01:09:15.510
+Lauren Infantino: have typically seen when we're doing EMG readings, which is somewhat of this noisy summation of a bunch of different action potentials of a muscle.
+
+401
+01:09:15.870 --> 01:09:30.110
+Lauren Infantino: But really, EMGs will provide us the information about the state of the muscle, so whether it's, like, on or off, how long is it on, and also the magnitude of how much muscle volume is being recruited.
+
+402
+01:09:30.550 --> 01:09:45.390
+Lauren Infantino: Really, the basis of how bipolar electrodes works kind of inform the standardized practices and principles that we're going to use when we're applying our EMGs onto our subject or inserting our EMGs into a muscle.
+
+403
+01:09:46.220 --> 01:09:59.019
+Lauren Infantino: The reason that bipolar electrodes really need to be along the length of the muscle is because of the way that they read the difference between 2 points. So let's take the theoretical example.
+
+404
+01:09:59.250 --> 01:10:05.659
+Lauren Infantino: that let's say the neuromuscular junction is right in between electrode one and electrode 2.
+
+405
+01:10:06.000 --> 01:10:11.590
+Lauren Infantino: The action potential will propagate in both directions at the same conduction speed.
+
+406
+01:10:11.940 --> 01:10:26.640
+Lauren Infantino: And because the electrodes band over our neuromuscular junction, the voltage difference between electrode one and electrode two will be zero if they read the action potential at the same exact time.
+
+407
+01:10:27.540 --> 01:10:40.000
+Lauren Infantino: Another scenario would be if you put electrode one on fiber one. And let's say we have another fiber running along the length of this one. You put electrode 2 on that neighboring fiber.
+
+408
+01:10:41.090 --> 01:10:46.260
+Lauren Infantino: you'll get an action potential that runs along both fibers at the same conduction speed.
+
+409
+01:10:46.370 --> 01:10:52.349
+Lauren Infantino: electrode one and electrode 2 will pick up that action potential at the exact same time, and the difference will be 0.
+
+410
+01:10:52.690 --> 01:11:00.080
+Lauren Infantino: So the basis on how bipolar electrodes work in measuring the voltage difference really informs.
+
+411
+01:11:00.150 --> 01:11:16.069
+Lauren Infantino: where you're going to put your electrodes on your on your subject, whether they're going to be in parallel with your muscle fibers or not perpendicular with your muscle fibers, and why, if you place it more proximally along the muscle versus more distally along the muscle, you can get completely different readings.
+
+412
+01:11:17.790 --> 01:11:26.659
+Lauren Infantino: So I'll let Kennedy maybe take over this part about discussing kind of human models and the best practices for EMG data collection.
+
+413
+01:11:26.990 --> 01:11:27.560
+Kennedy Kerr: Cool.
+
+414
+01:11:28.750 --> 01:11:38.089
+Kennedy Kerr: Okay, thanks, Lauren. So Hi, everyone. I'm Kennedy. I'm a rising 3rd year Phd. Student advised by Lena Tang and Greg Swicki.
+
+415
+01:11:38.200 --> 01:11:52.680
+Kennedy Kerr: And yeah, so my experience is collecting EMG with human subjects, but I think the… from what I can tell, the main difference between human and animal EMG is that, at least if you're in the US, you're probably not recording intramuscularly.
+
+416
+01:11:52.680 --> 01:12:05.530
+Kennedy Kerr: So because we're using surface EMG, we wanna be really diligent during data collection about our marker placement to make sure that we can be confident that we're measuring from the muscle that we think we are.
+
+417
+01:12:06.680 --> 01:12:07.760
+Kennedy Kerr: So.
+
+418
+01:12:08.340 --> 01:12:17.830
+Kennedy Kerr: Okay, great. So Lauren mentioned the CEM guidelines. This is a really good starting point, for identifying your, electrode placement.
+
+419
+01:12:18.330 --> 01:12:28.819
+Kennedy Kerr: If you can go to the next slide. Okay, here's an example of what they look like. So they kind of give you like all the information you will need in one place, which is nice.
+
+420
+01:12:28.910 --> 01:12:45.570
+Kennedy Kerr: For me, I think the most important parts are the origin, insertion, and function, because that can give you a good idea of what the muscle is actually doing for when you come up with your activation maneuvers for how you're going to identify the muscle in your study.
+
+421
+01:12:45.920 --> 01:12:51.509
+Kennedy Kerr: They also give you their recommended sensor placement procedure, which
+
+422
+01:12:51.510 --> 01:13:08.260
+Kennedy Kerr: I will advise people to take with a grain of salt. This is, showing the medial gastroc, which is a calf muscle that is pretty easy to find on people, because they're telling you that it's involved in ankle flexion. That gives you a good idea that, like, I think what people do a lot of times is just
+
+423
+01:13:08.260 --> 01:13:19.909
+Kennedy Kerr: you can ask the person to go up and down on their toes, and you can find that muscle pretty easily. Here, they are recommending that you have the participant lay on their stomach face down, and do some weird…
+
+424
+01:13:20.280 --> 01:13:29.440
+Kennedy Kerr: plantar flexion of the foot with emphasis on pulling the heel upward more than pushing the forefoot downward, which could maybe be helpful to you, but I think,
+
+425
+01:13:30.210 --> 01:13:37.740
+Kennedy Kerr: just because the advantage of working with humans is we can ask them to volitionally contract their muscles. You can kind of
+
+426
+01:13:38.600 --> 01:13:47.990
+Kennedy Kerr: decide what activation maneuver will be best for you and for your study next slide. And also
+
+427
+01:13:48.730 --> 01:14:00.230
+Kennedy Kerr: I'm sorry if you could go back. In these photos, you might notice it looks to be, like, the models for these, guidelines are able-bodied male subjects. So, again, like.
+
+428
+01:14:00.320 --> 01:14:15.950
+Kennedy Kerr: we are placing electrodes on that person, and so everyone's anatomy is a little bit different. So it's good to use these guidelines, but then also, if you have an understanding of, like, where the muscle is actually and what it's doing, that can help you palpate and actually find that muscle on your participant.
+
+429
+01:14:16.540 --> 01:14:17.680
+Kennedy Kerr: Okay.
+
+430
+01:14:19.020 --> 01:14:20.040
+Kennedy Kerr: Great.
+
+431
+01:14:20.070 --> 01:14:22.689
+Kennedy Kerr: Okay, okay, so
+
+432
+01:14:22.690 --> 01:14:41.849
+Kennedy Kerr: Yeah, like I said, you can use the anatomical location of where you think the muscle is, but always confirm by palpating for it. One thing that we've been telling the trainees in our group when learning to place and palpate for muscles is that light touch is creepy.
+
+433
+01:14:41.850 --> 01:14:49.549
+Kennedy Kerr: So you might think that it's, like, awkward to touch people, but actually it is worse if you try to, like, be gentle.
+
+434
+01:14:49.650 --> 01:15:00.150
+Kennedy Kerr: You won't hurt them by, like, pressing into their skin. So, yeah, feel free to… obviously, with consent, it's good to tell people, like, I'm gonna palpate for this muscle now.
+
+435
+01:15:00.340 --> 01:15:03.279
+Kennedy Kerr: But don't… don't hold back.
+
+436
+01:15:03.550 --> 01:15:07.720
+Kennedy Kerr: And make sure you can actually feel the muscle contracting.
+
+437
+01:15:08.260 --> 01:15:15.850
+Kennedy Kerr: And then keep your population in mind. So if you are collecting on clinical participants, you want to
+
+438
+01:15:15.990 --> 01:15:37.859
+Kennedy Kerr: First, just maximize their comfort as they're participating in the study, but also minimize fatigue that happens before the study even begins. A lot of times, the setup portion is the longest part of the experiment. And so again, keeping in mind with like, if you can riff off of the CDM guidelines, if there's an activation maneuver that you can do while the participant is sitting, for example, that can go a long way.
+
+439
+01:15:38.290 --> 01:15:44.349
+Kennedy Kerr: And another thing to add onto the CDM guidelines is your anatomy textbook.
+
+440
+01:15:44.350 --> 01:15:59.180
+Kennedy Kerr: Lauren stressed the importance of using… of placing the, electrodes parallel to the muscle fibers, so literally just looking at what direction they're going is super important to make sure you're actually recording that difference in voltage along the same muscle.
+
+441
+01:16:00.540 --> 01:16:12.090
+Kennedy Kerr: Great. So once you've found the muscles, you want to prepare the skin to minimize impedance. I think in the olden days, people did this using sandpaper, which is not comfortable.
+
+442
+01:16:12.090 --> 01:16:30.249
+Kennedy Kerr: But now you can use things like new prep, which just to like exfoliate the skin, then use an alcohol wipe to remove oil from the skin. So just minimizing things that are in between the sensor and the muscle you're recording from to get a cleaner signal.
+
+443
+01:16:32.580 --> 01:16:52.330
+Kennedy Kerr: That's new prep. Okay? And then also, you want to secure the electrodes down to the person to prevent movement artifact. So like in this little wired EMG down here, you'd put the electrodes on and then tape down that box. So it's not like waving around which can introduce noise into your signal.
+
+444
+01:16:52.690 --> 01:17:03.200
+Kennedy Kerr: And then always make sure to confirm your placement with visual inspection. Again, if you have your activation maneuvers down, then you can easily
+
+445
+01:17:03.230 --> 01:17:13.829
+Kennedy Kerr: find the muscles, place them, and then before you start recording, look in, whether it's Vicon or whatever software you're using, have people just do that again, and make sure you can see nice bursts, and then you can…
+
+446
+01:17:14.010 --> 01:17:18.729
+Kennedy Kerr: feel confident that you are recording what you think you are.
+
+447
+01:17:19.630 --> 01:17:20.890
+Kennedy Kerr: And.
+
+448
+01:17:21.970 --> 01:17:22.730
+Kennedy Kerr: Yeah.
+
+449
+01:17:23.360 --> 01:17:24.540
+Kennedy Kerr: I think that's me.
+
+450
+01:17:26.970 --> 01:17:27.780
+Lauren Infantino: Awesome.
+
+451
+01:17:27.820 --> 01:17:35.570
+Lauren Infantino: Cool. So animal models are a little bit different than human models. A lot of the same kind of
+
+452
+01:17:35.570 --> 01:17:56.069
+Lauren Infantino: principles apply, but because of the amount of maybe more freedom that you have when using an animal model, there's slight differences on maybe some things to keep in mind when you're doing intramuscular EMGs or fine wire EMGs when you're doing small experiments.
+
+453
+01:17:56.110 --> 01:17:57.130
+Lauren Infantino: So…
+
+454
+01:17:57.140 --> 01:18:11.920
+Lauren Infantino: For animal models, typically we'll use fine wire electrodes, which are a twisted pair of stainless steel wires with bare ends. These bare ends are basically very synonymous to your electrode receiving ends.
+
+455
+01:18:11.920 --> 01:18:24.529
+Lauren Infantino: These wires will usually run from the muscle in which it's inserted in, run from the muscle to an external amplifier through a variety of connectors to a DAC.
+
+456
+01:18:24.670 --> 01:18:47.480
+Lauren Infantino: The main thing about animal models and the placement of the Ems is, you can usually see the muscle. Usually you have the ability to actually physically see the muscle, see the fibers where they're running, what the panation angle is. And so this can provide experimenters a really good idea of exactly where to place the fine wire emgs.
+
+457
+01:18:47.580 --> 01:19:10.719
+Lauren Infantino: A couple tips that I've got from some postdocs and some PIs at UCI about fine wire electrodes. It's because usually we cannot, stimulate the muscle, and record and verify placement. Really testing your wires before you place them into the animal is probably the most critical step.
+
+458
+01:19:10.720 --> 01:19:26.620
+Lauren Infantino: You can use a multimeter to do this. Look for conductivity within your wires. Make sure there's no nicks. Make sure the wires are fully insulated other than the bare tips that you're leaving exposed. And when you're inserting, the wires.
+
+459
+01:19:26.620 --> 01:19:29.810
+Lauren Infantino: usually through a hypodermic needle into the muscle.
+
+460
+01:19:30.250 --> 01:19:47.369
+Lauren Infantino: Usually, if you press down as you're releasing, so those wires don't come back out or pull out, securing the wires to some skin or some other tissues to help keep them secured, minimize the amount of movement that those wires are undergoing, because that can introduce noise.
+
+461
+01:19:47.370 --> 01:19:59.940
+Lauren Infantino: and also maintaining a shorter length of the wires. The more length you have, the more areas that there are for noise to get into the system. And so those are kind of the couple of
+
+462
+01:20:00.150 --> 01:20:04.629
+Lauren Infantino: main things to keep in mind when you're working with animal models and doing emgs.
+
+463
+01:20:05.580 --> 01:20:14.499
+Lauren Infantino: There are also not just fine wire electrodes that are typically used, but there's other very complex EMG arrays.
+
+464
+01:20:14.500 --> 01:20:30.050
+Lauren Infantino: In which these can get at, motor unit action potentials. These are pretty high resolution EMGs, so you can see, this is a myomatrix array that was put into the triceps, of a rat.
+
+465
+01:20:30.050 --> 01:20:33.750
+Lauren Infantino: And it runs along the fibers of the muscle.
+
+466
+01:20:33.750 --> 01:20:35.529
+Lauren Infantino: And you can see,
+
+467
+01:20:35.530 --> 01:21:00.160
+Lauren Infantino: comparing figure B, the locomotion from the array and the locomotion from the firewire electrodes, you can really get at the individual motor unit action potentials. So, depending on your question, arrays are a bit better, and they're usually more feasible to do in animal models, which provides a little bit more resolution and depth about activation and motor control, particularly in animals.
+
+468
+01:21:01.320 --> 01:21:06.449
+Lauren Infantino: But I think Kennedy touched on it. And there's really
+
+469
+01:21:06.620 --> 01:21:29.959
+Lauren Infantino: most critical step is proper placement, a selection of electrode materials and the configuration. These are the most critical steps of any analyses. Your analyses kind of will be shot if the process of preparing your subject and putting the electrodes in or on the skin isn't done with a lot of care and attention in order to do a good analyses.
+
+470
+01:21:30.670 --> 01:21:39.899
+Lauren Infantino: proper placement is the most critical part. So really make sure when you're with subjects, human subjects, animal subjects, you're really taking the time to be precise about this part.
+
+471
+01:21:41.780 --> 01:21:55.290
+Lauren Infantino: So if anyone has any questions before we move on about best practices, how Ems work, we're going to move on next to the signal processing part. But I'll hold for questions if people have any.
+
+472
+01:22:03.300 --> 01:22:28.229
+Lauren Infantino: Cool. We have a bunch of nervous people, but it's okay. So we'll jump into the processing part of EMGs. So this is kind of going to assume that you've taken the necessary steps to properly prep your subject. You've gotten a pretty nice and clean data set already. And so this is now you have kind of your raw data. And now you're going to go on to processing it to
+
+473
+01:22:28.230 --> 01:22:36.559
+Lauren Infantino: create your EMG envelope, which is typically what you'll see in the scientific literature when people are showing you their EMG signals from muscles.
+
+474
+01:22:36.700 --> 01:22:54.220
+Lauren Infantino: So, there are a couple ways that noise can be introduced into the system, and this is stuff that we want to be aware of, and use post-processing algorithms to extract or attenuate and remove. But some common ways that noise can get into an EMG signal
+
+475
+01:22:54.220 --> 01:23:14.269
+Lauren Infantino: One of them is narrowband noise. This is external noise from the environment. So think of your lights. Think of the power cords, things that are plugged in A/C current. All of these contribute invisible noise which you can't see, and it's really hard to minimize.
+
+476
+01:23:14.270 --> 01:23:28.260
+Lauren Infantino: The best advice that I've got is unplug things that don't need to be plugged in and combat this with the proper electronic shielding and grounding of all your equipment. This is the greatest way to get rid of that noise.
+
+477
+01:23:28.260 --> 01:23:45.809
+Lauren Infantino: The second form of noise that's pretty common is biological noise. So this is noise from other tissues. Other tissues are undergoing chemical reactions, they have their own electric fields and potentials, and so this can be picked up by your EMG signal, particularly in surface EMGs that aren't very,
+
+478
+01:23:46.080 --> 01:23:56.840
+Lauren Infantino: aren't very aren't directly on the muscle that they're measuring. These are typically lower frequencies. And you'll usually just post process this signal out.
+
+479
+01:23:57.750 --> 01:24:04.609
+Lauren Infantino: This 3rd one is going to be movement artifacts. So you're you're using a surface. Emg, for example.
+
+480
+01:24:05.510 --> 01:24:15.980
+Lauren Infantino: The hardware itself can vibrate. That vibration or that motion can be detected, picked up by the surface EMG itself.
+
+481
+01:24:15.980 --> 01:24:22.489
+Lauren Infantino: It's typically high-frequency components. These are also passed, can be post-processed out.
+
+482
+01:24:22.490 --> 01:24:39.240
+Lauren Infantino: The main thing that people should take away is that post-processing algorithms are really the way to, take your raw signal into the envelope signal. It can eliminate any extraneous noise that you have and really capture what the underlying muscle is actually doing.
+
+483
+01:24:39.380 --> 01:24:51.090
+Lauren Infantino: And so it's really important to design your algorithm and your filtering process in kind of the correct way, and to always be double checking at every step through that.
+
+484
+01:24:52.770 --> 01:25:08.810
+Lauren Infantino: So a little bit about fast Fourier transformation. So this is a kind of more of a complex topic. But it's actually pretty simple in in just its totality. But let's say you have a raw EMG signal.
+
+485
+01:25:08.900 --> 01:25:12.909
+Lauren Infantino: So along the time domain, meaning the time is on the x-axis.
+
+486
+01:25:13.320 --> 01:25:21.999
+Lauren Infantino: The fast Fourier transformation will basically take your raw signal, break it down into the various frequency components.
+
+487
+01:25:22.110 --> 01:25:34.669
+Lauren Infantino: and provide you an EMG power spectrum, which is just basically the frequencies that are contained within the signal, and how much of their frequencies you have, which is the magnitude.
+
+488
+01:25:35.220 --> 01:25:54.520
+Lauren Infantino: This is a good way to initially, if you're coming in and you have raw EMG and you don't really know how to design your filtering algorithm, it's a really good way to — it's a really good point to start here. Take the fast Fourier transformation of your raw EMG signal. Look at the frequency components that are within your signal.
+
+489
+01:25:54.520 --> 01:25:58.950
+Lauren Infantino: and then kind of deduce what you should be filtering in and out.
+
+490
+01:25:58.950 --> 01:26:17.740
+Lauren Infantino: This will give you a good indication if you have too much high frequency noise coming from external sources. You have that narrow band noise at 50 hertz. So this is a really good tool to use. You can implement this in various computational programs like MATLAB, Python, etc.
+
+491
+01:26:19.840 --> 01:26:21.050
+Lauren Infantino: So…
+
+492
+01:26:21.200 --> 01:26:34.509
+Lauren Infantino: filters. So this is usually what will be within your post processing algorithm is usually a Butterworth filter. These consist of low pass filters, high pass filters, bandpass filters, and notch filters.
+
+493
+01:26:34.510 --> 01:26:43.039
+Lauren Infantino: So for all the images on panel A, these are all ffts or fast Fourier transformations.
+
+494
+01:26:43.040 --> 01:26:48.799
+Lauren Infantino: which have frequency on the X, and then the magnitude of that signal on the Y.
+
+495
+01:26:48.800 --> 01:26:55.079
+Lauren Infantino: So a low pass filter is a filter in which I kind of think of pass low.
+
+496
+01:26:55.280 --> 01:27:11.510
+Lauren Infantino: So we're going to take our cutoff frequency, which is the frequency that we want to tell our filter, hey, don't take anything beyond this point. So for example, this one in panel A for low pass is, let's say, 180 hertz.
+
+497
+01:27:11.590 --> 01:27:21.199
+Lauren Infantino: We'll tell our filter to pass anything lower than 80, 180 Hertz. So 100 Hertz, 50 Hertz, 60 Hertz all gets through.
+
+498
+01:27:22.420 --> 01:27:25.999
+Lauren Infantino: high pass filter pass anything higher.
+
+499
+01:27:26.200 --> 01:27:35.890
+Lauren Infantino: We'll take our cutoff frequency again at 180 Hertz, and we'll tell the system. Pass anything higher than 180 Hertz, 200 Hertz, 250 Hertz, etc.
+
+500
+01:27:36.400 --> 01:27:39.800
+Lauren Infantino: A bandpass filter will take a lower cutoff.
+
+501
+01:27:39.920 --> 01:27:45.389
+Lauren Infantino: and a higher cutoff, and pass only the frequencies within the middle of that range.
+
+502
+01:27:45.750 --> 01:27:55.320
+Lauren Infantino: and then a notch filter will do the exact opposite. You'll take a low cutoff and a high cutoff, and extract the frequencies in the middle and take them out.
+
+503
+01:27:56.340 --> 01:28:08.630
+Lauren Infantino: So, for example, on this one in panel C, we have a fast Fourier transformation with a 50 Hertz interference, which is that narrow band noise from AC circuits and stuff.
+
+504
+01:28:08.910 --> 01:28:23.510
+Lauren Infantino: So when we see this, we'll want to excise that out. We'll want to take it and we'll want to notch filter that out. So you can see the next step is taking that out, eliminating that 50Hz frequencies. They've also done a bandpass filter.
+
+505
+01:28:23.510 --> 01:28:38.839
+Lauren Infantino: and you can see the resulting, best Fourier transformation of the raw and the process signal, and we've gotten rid of that interference. That's not actually EMG or muscle activation, but it's just noise coming from the external environment.
+
+506
+01:28:38.960 --> 01:28:46.369
+Lauren Infantino: So these are typically some of the key terms that you'll hear is filters, high pass filter, low pass filter, band pass filter.
+
+507
+01:28:46.700 --> 01:28:53.040
+Lauren Infantino: As you're running through generating your EMG algorithm to process your raw signal.
+
+508
+01:28:54.510 --> 01:28:55.490
+Lauren Infantino: So…
+
+509
+01:28:56.560 --> 01:29:05.000
+Lauren Infantino: So I'm going to go through kind of the conventional or standard practice when you have a raw signal. And this is
+
+510
+01:29:05.000 --> 01:29:19.269
+Lauren Infantino: pretty much, standardized practice. There's some variation in this, but for most of you who are using human models, this is kind of very much what you'll do, when you have your raw signal to your envelope signal.
+
+511
+01:29:19.640 --> 01:29:37.400
+Lauren Infantino: So usually you'll be using some sort of surface EMG or some EMG. They have internal hardware filtering that usually happens within these like little IMU devices for animals. We also will do internal filtering when we amplify the signal.
+
+512
+01:29:37.630 --> 01:29:38.930
+Lauren Infantino: You'll start there.
+
+513
+01:29:39.600 --> 01:29:50.630
+Lauren Infantino: The 1st thing you'll do is you'll get your raw signal, and then you'll high pass filter. What this does is this removes the DC offset and any motion artifacts and any low frequency noises that are occurring in your signal.
+
+514
+01:29:50.780 --> 01:29:57.850
+Lauren Infantino: This is usually typically around 20 to 30 Hertz, but it depends based on your subject.
+
+515
+01:29:58.760 --> 01:30:17.829
+Lauren Infantino: The next step you'll do is rectification. This is a full wave rectification. So you'll see your signal raw signal goes above and below the X-axis. It has positive and negative values. We'll take the absolute value of our whole signal and just get the positive deflection on a single polarity.
+
+516
+01:30:18.800 --> 01:30:31.880
+Lauren Infantino: And then the final step is the low pass filter. This is usually done around 10 Hertz. This passes right anything lower than 10 Hertz, eliminating any other noise that occurs in the system.
+
+517
+01:30:31.880 --> 01:30:39.530
+Lauren Infantino: And this will give you that nice clean envelope that maybe we're conventionally — that we conventionally see.
+
+518
+01:30:41.660 --> 01:30:59.729
+Lauren Infantino: I'm gonna do a very small discussion, because I don't have much time on signal decomposition, which is kind of a sidetrack from what we've just been talking about. But it is a different way of collecting information about motor control. It's and it's pretty cool way, in my opinion.
+
+519
+01:31:00.040 --> 01:31:09.139
+Lauren Infantino: very similar. So we'll take our raw EMG signal, which is a it's just a summation of a bunch of action potentials from a bunch of different motor neurons.
+
+520
+01:31:09.140 --> 01:31:21.530
+Lauren Infantino: We'll use an electrode array. We'll use a decomposition algorithm that basically takes that randomized signal and breaks it down into individual motor unit trains.
+
+521
+01:31:21.940 --> 01:31:28.659
+Lauren Infantino: of action potentials, and that's what signal decomposition is. Each motor unit
+
+522
+01:31:28.660 --> 01:31:47.780
+Lauren Infantino: based on its fiber type and its diameter, has a different frequency and a different waveform or shape. And these can be identified with decomposition algorithms. And you can, at the end of the day, break your signal down into what motor units are firing and when they're being recruited.
+
+523
+01:31:47.890 --> 01:32:11.209
+Lauren Infantino: This requires pretty high resolution. So intramuscular EMGs or two dimensional rays, it's usually not very feasible with, surface electrode or bipolar surface electrode, requires pretty complex algorithm in order to do it and to map every single, waveform in your raw sum signal into an individual motor unit.
+
+524
+01:32:11.320 --> 01:32:22.920
+Lauren Infantino: typically used to diagnose muscle pathologies. Some. It's kind of used in some rehabilitative senses. But I think this is a cool
+
+525
+01:32:23.570 --> 01:32:28.639
+Lauren Infantino: cool way of understanding motor control at a very fine level.
+
+526
+01:32:30.820 --> 01:32:44.829
+Lauren Infantino: So, what we're gonna do next is we're gonna do a very short activity, because we only have 6 minutes. I'm gonna run through the activity. You're more than welcome to run it on your own afterwards, or run it
+
+527
+01:32:44.960 --> 01:33:01.959
+Lauren Infantino: side by side with me on your own computer if you have MATLAB downloaded, and you also have the signal processing toolbox installed. But if not, don't worry, you can just watch me run it on my own, and then later you can run it for yourself.
+
+528
+01:33:02.040 --> 01:33:18.000
+Lauren Infantino: So if you go to the research workshops, you can download this EMG signal processing zip file, and that contains all the information that you'll need to run this live script.
+
+529
+01:33:18.030 --> 01:33:25.229
+Lauren Infantino: So I'm going to assume that people may have downloaded it. If not, don't worry.
+
+530
+01:33:25.400 --> 01:33:31.219
+Lauren Infantino: and what I want you to open from that.
+
+531
+01:33:31.470 --> 01:33:34.220
+Lauren Infantino: is… in here…
+
+532
+01:33:35.170 --> 01:33:44.769
+Lauren Infantino: I want you to open this EMG signal processing tutorial MLX file. This is the live script file that we'll be using.
+
+533
+01:33:45.330 --> 01:33:49.450
+Lauren Infantino: to kind of run through how EMG signals are processed.
+
+534
+01:33:51.580 --> 01:33:53.520
+Lauren Infantino: So if you open this file.
+
+535
+01:33:53.880 --> 01:33:57.830
+Lauren Infantino: You'll see a little bit of an introduction here.
+
+536
+01:33:57.830 --> 01:34:16.199
+Lauren Infantino: this is really a script that will walk you through critical steps in signal processing. Feel free to take this and use it, and when… as you're going through MC and analyzing your own data, to use this as an outline for yourself to inform how you're going to make your own processing algorithm.
+
+537
+01:34:17.240 --> 01:34:33.380
+Lauren Infantino: This is basically a way to teach students who are new to electromyography how to process EMG, and to kind of allow students to look at the various steps along it, how differences in those steps affect the output, the resulting EMG envelope.
+
+538
+01:34:33.660 --> 01:34:44.650
+Lauren Infantino: a little bit of a goal of what I hope students can learn or people to look at while they're running this script. But we will start in part one.
+
+539
+01:34:45.760 --> 01:34:55.310
+Lauren Infantino: Part one is basically going to take you through the steps that we mentioned the high pass rectification and low pass, all to get your EMG envelope at the end of the day.
+
+540
+01:34:55.910 --> 01:35:14.140
+Lauren Infantino: So what we'll start is we're going to tell. We have a couple of dot map files that are within that zip file. So you should have the human left and right. Ta, and these are files from rats that had Parkinson's disease, and they're walking.
+
+541
+01:35:14.250 --> 01:35:21.950
+Lauren Infantino: For the premise of this, we're going to use the human left TA trial 12 mat file.
+
+542
+01:35:22.260 --> 01:35:29.100
+Lauren Infantino: which has raw EMG data from the tibialis anterior of a human. We're going to select our model to be human.
+
+543
+01:35:30.180 --> 01:35:47.999
+Lauren Infantino: And this is where we can design our own filter. We're going to… the two main design principles or, facets that you'll really be changing while you're doing filtering is the cutoff filter, frequency. And so you can use this little toggle to slide around.
+
+544
+01:35:48.240 --> 01:35:50.240
+Lauren Infantino: and the order.
+
+545
+01:35:50.780 --> 01:35:59.389
+Lauren Infantino: The order is just how how harsh are you going to be at that cutoff frequency? So, for example, a high order means
+
+546
+01:35:59.520 --> 01:36:05.720
+Lauren Infantino: I am not going to allow anything over 70 Hertz under 70 Hertz to get through at all.
+
+547
+01:36:05.820 --> 01:36:18.889
+Lauren Infantino: Versus a lower order means, okay, I let 75 Hz through, I let maybe a little bit of 72 Hz through. That's kind of an idea of what that means.
+
+548
+01:36:18.890 --> 01:36:27.930
+Lauren Infantino: You have the freedom to change the cutoff frequencies and the orders that you use. And then you're going to run this visualize high pass. You're just going to click this button.
+
+549
+01:36:28.180 --> 01:36:39.579
+Lauren Infantino: and what it's going to spit out for you on the side is your raw signal in black, and then your now high pass signal in red, and you can see there are areas of overlap.
+
+550
+01:36:39.600 --> 01:36:53.959
+Lauren Infantino: there's areas that don't overlap. We've clearly corrected the DC offset in our high pass filter, and we've gotten rid of some of these, some of these blips as well. You can go ahead and change this and visualize how that changes the resulting signal.
+
+551
+01:36:55.100 --> 01:37:08.420
+Lauren Infantino: And so you can play around with. How does a high pass filter with different cutoff frequencies or orders affect the resulting signal. So we're going to just run our visualize high pass. Get that output. Remember, the next step is rectification.
+
+552
+01:37:08.540 --> 01:37:21.109
+Lauren Infantino: So rectification is pretty easy. We're just going to take the absolute value of our high pass signal. And we get something that looks like this. So we've taken the negative polarity of our signal and just inverted it. And we have a positive signal.
+
+553
+01:37:21.850 --> 01:37:26.500
+Lauren Infantino: And the next step, remember, is low pass. And this is where we're creating our EMG envelope.
+
+554
+01:37:26.510 --> 01:37:43.709
+Lauren Infantino: Typically, we're around 10 to 20 Hertz. So this is our cutoff. This is our order that we're going to use. And we're going to visualize our low pass the end of the day. We get something that looks like this, which is a little bit of an envelope that tracks our EMG signal.
+
+555
+01:37:44.290 --> 01:37:58.300
+Lauren Infantino: So I encourage you to play around with this on your own time. You can jump to the animal model side of it and play around with the, rat data files. All you have to do is take this out and replace it with the
+
+556
+01:37:58.620 --> 01:38:01.260
+Lauren Infantino: the name of the rat file.
+
+557
+01:38:01.460 --> 01:38:07.849
+Lauren Infantino: This will give you a little bit more information on what orders mean, and a reminder of filters.
+
+558
+01:38:08.090 --> 01:38:14.670
+Lauren Infantino: You can play around also and configure your own filter, which you'll use cutoff frequencies.
+
+559
+01:38:14.820 --> 01:38:32.499
+Lauren Infantino: like we have here, you can define the filter type that you want, and the order of that filter, and visualize its response, how the filter is actually going to work. So we've made a low-pass filter at 5, with an order of 5, that cuts off at 200.
+
+560
+01:38:32.770 --> 01:38:46.089
+Lauren Infantino: So at 200, you can see we've already started passing less and less of our signal, and we have a stop band, which means no signal gets through. And but we're passing everything lower than that from 0 to 200.
+
+561
+01:38:47.340 --> 01:39:05.619
+Lauren Infantino: At the very bottom, there is a fast Fourier transformation as well, and that'll run the fast Fourier transformation from your raw signal, so you're able to see what your raw signal is composed of in terms of frequencies, and then what your filtered or fully processed signal looks like in terms of its frequency composition.
+
+562
+01:39:05.730 --> 01:39:19.479
+Lauren Infantino: So there's a really quick little thing that you can do on your own to explore the process of filtering, and how different orders and filter types affect your resulting envelope.
+
+563
+01:39:20.000 --> 01:39:24.790
+Lauren Infantino: let me go back here.
+
+564
+01:39:26.510 --> 01:39:27.980
+Lauren Infantino: And I think…
+
+565
+01:39:28.560 --> 01:39:34.789
+Lauren Infantino: We have very little time for questions, but if we have any questions we're more than happy to take them.
+
+566
+01:39:34.920 --> 01:39:42.839
+Lauren Infantino: and we have this sign in sheet. If people weren't here earlier and missed the sign in. Just don't forget to sign in on this guy.
+
+567
+01:40:02.780 --> 01:40:06.589
+Victoria Wood: Thanks so much, all of you. This was great.
+
+568
+01:40:07.050 --> 01:40:11.109
+Victoria Wood: overview of so many different topics in one. So this is awesome.
+
+569
+01:40:11.610 --> 01:40:25.310
+Victoria Wood: If… I know we're a little bit short on time here, but if anybody has questions, I'm sure you guys are willing to answer them in the chat as well, in Slack, so please do post them there.
+
+570
+01:40:59.950 --> 01:41:03.029
+Emily Smith: I think we're just migrating. Thanks, guys.
+
+571
+01:42:00.850 --> 01:42:09.210
+Victoria Wood: It's looking like there's no questions left here, so I'm going to go ahead and end the meeting for everybody. Thank you guys all so much. This was great.
+
+572
+01:42:09.600 --> 01:42:10.300
+Kennedy Kerr: Bye.
+
+573
+01:42:10.300 --> 01:42:11.919
+Lauren Infantino: That's good. Thanks, Victor.
+
+574
+01:42:11.920 --> 01:42:12.500
+Victoria Wood: Okay, bye.
+

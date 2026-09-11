@@ -118,5 +118,41 @@
   },
   "resources/WorkLoops101/IMSI Work Loop Workshop Jupyter Notebook.ipynb": {
     "IMSI Work Loop Workshop Jupyter Notebook.html": "ebe3d130"
+  },
+  "all-modules/intro-muscle-anatomy+phys.qmd": {
+    "intro-muscle-anatomy+phys.html": "7ab86217"
+  },
+  "all-modules/best-practices-scientific-programming.qmd": {
+    "best-practices-scientific-programming.html": "15ebe060"
+  },
+  "all-modules/mocap+emg.qmd": {
+    "mocap+emg.html": "560000c7"
+  },
+  "all-modules/biophysical-muscle-models.qmd": {
+    "biophysical-muscle-models.html": "cd98c4d4"
+  },
+  "all-modules/modeling-muscle-spindles.qmd": {
+    "modeling-muscle-spindles.html": "452be8c9"
+  },
+  "all-modules/system-ID.qmd": {
+    "system-ID.html": "7b317a30"
+  },
+  "resources/workloops-101/IMSI Work Loop Workshop Jupyter Notebook.ipynb": {
+    "IMSI Work Loop Workshop Jupyter Notebook.html": "5c424a4d"
+  },
+  "all-modules/intro-xray-diffraction.qmd": {
+    "intro-xray-diffraction.html": "d6a7794e"
+  },
+  "all-modules/cross-bridge-kinetics.qmd": {
+    "cross-bridge-kinetics.html": "208e5c75"
+  },
+  "resources/workloops-101/Practice Work Loop Data Analysis/Answers.ipynb": {
+    "Answers.html": "551ac6ad"
+  },
+  "resources/workloops-101/Practice Work Loop Data Analysis/IMSI Work Loop Workshop Jupyter Notebook.ipynb": {
+    "IMSI Work Loop Workshop Jupyter Notebook.html": "8ab3072d"
+  },
+  "all-modules/emg-filtering.qmd": {
+    "emg-filtering.html": "56ea2dca"
   }
 }

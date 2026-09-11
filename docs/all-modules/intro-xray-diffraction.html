@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.42">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="keywords" content="x-ray diffraction, synchrotron, myofilament lattice, muscle structure, sarcomere">
+
+<title>Introduction to x-ray diffraction – IMSI Movement Science Course</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-d1b12f2568ecbe55642fee6aa00bd082.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">IMSI Movement Science Course</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../pathways.html"> 
+<span class="menu-text">Learning Pathways</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../all_modules.html"> 
+<span class="menu-text">All modules</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools tools-wide">
+    <a href="https://github.com" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
+    <a href="https://www.youtube.com/@IntegrativeMovementScience" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-youtube"></i></a>
+    <a href="https://www.instagram.com/integrative.movement.science/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/integrative-movement-sciences-institute/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://bsky.app/profile/movementscience.bsky.social" title="bluesky" class="quarto-navigation-tool px-1" aria-label="bluesky"><i class="bi bi-"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introduction to x-ray diffraction</h1>
+</div>
+
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>x-ray diffraction, synchrotron, myofilament lattice, muscle structure, sarcomere</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<ol type="1">
+<li>Recognize the main features of a muscle X-ray diffraction pattern — equatorial reflections, meridional reflections, and layer lines — and connect each feature to the underlying structural periodicity in the sarcomere.</li>
+<li>Apply Bragg’s law to convert the angular position of a diffraction reflection into a real-space structural spacing in the myofilament lattice.</li>
+<li>Describe how synchrotron X-ray sources make it possible to record diffraction patterns from living, contracting muscle at millisecond timescales.</li>
+</ol>
+</section>
+<section id="workshop" class="level2">
+<h2 class="anchored" data-anchor-id="workshop">Workshop</h2>
+<p>Video coming soon</p>
+<p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Jiangkun Wei, Casey King, Dr.&nbsp;Simon Sponberg</em></p>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="why-molecular-scale-measurements-matter-in-muscle-biology" class="level3">
+<h3 class="anchored" data-anchor-id="why-molecular-scale-measurements-matter-in-muscle-biology">Why molecular-scale measurements matter in muscle biology</h3>
+<p>Muscle is hierarchically organized from the whole organ down to individual protein filaments. At the sarcomere level, the interdigitating arrays of thick filaments (myosin) and thin filaments (actin) span roughly 1–10 micrometers in length and are conserved in size across species from cockroaches to blue whales. This invariant length scale reflects the deep conservation of the molecular machinery of contraction.</p>
+<p>At the whole-cell scale, muscles are isovolumetric during contraction — a principle demonstrated by Jan Swammerdam around 1666 (the precise year is difficult to confirm from primary sources, as his results were published posthumously; the mid-1660s is generally accepted in historical accounts: Cobb, M., 2002, <em>Nature Reviews Neuroscience</em>, 3, 395–400. DOI: 10.1038/nrn806). Swammerdam placed a frog muscle inside a sealed, fluid-filled chamber with a capillary indicator at the top, then stimulated the attached nerve. The indicator did not move. Muscle volume does not change during contraction, disproving the prevailing idea that a vital fluid was pumped through the nerves to inflate the muscle.</p>
+<p>Isovolumetric behavior at the cell scale, however, does not constrain what happens inside the sarcomere. When a muscle shortens along its long axis, the hexagonal lattice of thick and thin filaments must expand radially. Because those filament-to-filament spacings are in the range of tens of nanometers — far smaller than the wavelength of visible light — a light microscope cannot resolve them. Electron microscopy can, but requires chemical fixation and dehydration, giving a static snapshot that may not reflect true spacings in hydrated, functioning muscle. X-ray diffraction fills this gap: it can measure nanometer-scale lattice parameters in living, contracting muscle with millisecond time resolution.</p>
+</section>
+<section id="what-are-x-rays-and-how-do-they-diffract" class="level3">
+<h3 class="anchored" data-anchor-id="what-are-x-rays-and-how-do-they-diffract">What are X-rays and how do they diffract?</h3>
+<p>X-rays are electromagnetic waves with wavelengths of approximately 0.1–0.2 nm (1–2 Å), comparable to atomic-scale distances in biological molecules. Wavelengths in this range make X-rays particularly useful for probing molecular structure. When an X-ray beam encounters electrons in matter, each electron reradiates a new scattered wave in many directions. If the scattering centers are arranged in a regular, repeating pattern, the scattered waves from successive repeats can add together or cancel depending on the direction of observation.</p>
+<p>At most angles, waves from different repeats arrive with mixed phase relationships and largely cancel (destructive interference), producing little signal. At a specific set of angles, the path difference between waves from successive planes is exactly a whole number of wavelengths, so waves arrive in phase and reinforce (constructive interference), producing a sharp, bright reflection. This condition is Bragg’s law:</p>
+<p><span class="math display">\[n\lambda = 2d\sin\theta\]</span></p>
+<p>where λ is the X-ray wavelength, d is the spacing between repeating planes, θ is the angle between the beam and those planes, and n is an integer. In muscle experiments the diffraction angles are very small (well under 1°), allowing a small-angle approximation: measuring the distance S from the beam center to a reflection on a detector placed a known distance L from the sample gives d = λL/S directly. Reflections closer to the beam center correspond to larger real-space spacings; reflections further away correspond to smaller spacings. This inverse relationship between detector-space position and real-space dimension — called reciprocal space — is central to reading any diffraction pattern.</p>
+<p>Photo 51, the X-ray diffraction image produced by Rosalind Franklin and Raymond Gosling in 1952, illustrates the power of this approach: the characteristic “X” pattern of crossed arcs was direct evidence that DNA has a helical structure (Franklin &amp; Gosling, 1953, <em>Nature</em>, 171, 740–741. DOI: 10.1038/171740a0). Muscle is also a fibrous, ordered system, and the same physical principles apply.</p>
+</section>
+<section id="the-myofilament-lattice-as-a-quasi-crystal" class="level3">
+<h3 class="anchored" data-anchor-id="the-myofilament-lattice-as-a-quasi-crystal">The myofilament lattice as a quasi-crystal</h3>
+<p>Within each sarcomere, thick and thin filaments form a regular hexagonal lattice that repeats across thousands of unit cells in the fiber cross-section. Muscle is not a perfect crystal, but its regularity is sufficient for coherent diffraction — scattered waves from parallel planes accumulate to produce distinct reflections on a detector.</p>
+<p>When an X-ray beam passes along the fiber axis, it illuminates many myofibrils simultaneously, and those myofibrils are randomly rotated around the beam axis. The diffraction pattern is therefore rotationally averaged: rather than discrete spots, reflections appear as arcs at characteristic distances from the beam center. The horizontal axis of the detector is called the equator; the vertical axis is called the meridian. Equatorial reflections report the lateral arrangement of filaments in cross-section, while meridional reflections and off-meridional layer lines report repeating structures along the filament axis.</p>
+</section>
+<section id="equatorial-reflections-reading-the-cross-sectional-lattice" class="level3">
+<h3 class="anchored" data-anchor-id="equatorial-reflections-reading-the-cross-sectional-lattice">Equatorial reflections: reading the cross-sectional lattice</h3>
+<p>Equatorial reflections arise from repeating planes in the hexagonal cross-sectional lattice. Planes are labeled with Miller indices (h, k). The (1,0) planes give rise to the I(1,0) reflection and the (1,1) planes give rise to the I(1,1) reflection — typically the strongest reflections in the pattern. The center-to-center distance between neighboring thick filaments, D10, is calculated from the position of the I(1,0) reflection using the small-angle Bragg relation. Representative values are approximately 40–45 nm for insect and vertebrate muscle under relaxed conditions, varying with activation state and sarcomere length.</p>
+<p>The relative intensities of the equatorial reflections depend not only on lattice spacings but on the distribution of protein mass within the unit cell — specifically, where thin filaments sit relative to thick filaments. In vertebrate skeletal muscle, thin filaments are positioned at trigonal points within the hexagonal lattice (equidistant from three surrounding thick filaments), giving a 2:1 thin-to-thick filament ratio and making I(1,0) and I(1,1) the dominant equatorial features (Franzini-Armstrong &amp; Peachey, 1981, <em>J Cell Biol</em>, 91, 166s–186s. DOI: 10.1083/jcb.91.3.166s). In insect fibrillar flight muscle, a different filament arrangement produces a 3:1 thin-to-thick ratio; the I(1,0) and (2,0) reflections are prominent while I(1,1) is comparatively weak.</p>
+<p>Because myosin heads move radially toward actin when they form cross-bridges, the mass distribution within the unit cell shifts during activation. The I(1,1)/I(1,0) intensity ratio is the standard indicator of cross-bridge attachment in the vertebrate muscle literature: as more heads bind, I(1,0) decreases and I(1,1) increases, reflecting the transfer of mass from the thick-filament region outward toward actin (Haselgrove &amp; Huxley, 1973, <em>J Mol Biol</em>, 77, 549–568. DOI: 10.1016/0022-2836(73)90222-2; Millman, 1998, <em>Physiol Rev</em>, 78, 359–391. DOI: 10.1152/physrev.1998.78.2.359).</p>
+<p>The most celebrated specimen for insect flight muscle X-ray diffraction is <em>Lethocerus</em> — the giant water bug (Order Hemiptera, Family Belostomatidae), sometimes called a toe-biter or electric light bug. Its flight muscle is among the most crystalline of any animal specimen ever characterized by this technique, a property that has made it the standard for high-resolution insect muscle diffraction studies since the 1960s (Reedy, 1968, <em>J Mol Biol</em>, 31, 155–176. DOI: 10.1016/0022-2836(68)90437-3).</p>
+</section>
+<section id="meridional-reflections-and-layer-lines-axial-and-helical-structure" class="level3">
+<h3 class="anchored" data-anchor-id="meridional-reflections-and-layer-lines-axial-and-helical-structure">Meridional reflections and layer lines: axial and helical structure</h3>
+<p>Muscle is ordered in three dimensions. Along the filament axis, both thick and thin filaments have repeating helical structures that produce reflections near or on the meridian, and off-meridional features called layer lines.</p>
+<p>Myosin heads project from the thick filament in levels called crowns, spaced approximately 14.3 nm apart along the filament axis. This regular axial repeat produces the strong M3 meridional reflection, along with higher-order reflections M6 and M15 (Huxley &amp; Brown, 1967, <em>J Mol Biol</em>, 30, 383–434. DOI: 10.1016/S0022-2836(67)80046-9). Changes in M3 intensity and position during contraction report on the displacement and strain of myosin heads in real time.</p>
+<p>F-actin is described as a 13/6 helix: approximately 13 actin monomers span 6 turns of the long-pitch, left-handed genetic helix (Holmes et al., 1990, <em>Nature</em>, 347, 44–49. DOI: 10.1038/347044a0). The full pseudo-repeat spanning those 13 monomers has a spacing of approximately 36.0–36.5 nm. Note that the ~38.5 nm repeat sometimes seen in muscle diffraction is a distinct structural parameter arising from the tropomyosin/troponin regulatory protein repeat, not from the actin helix geometry itself (Egelman et al., 1982, <em>Nature</em>, 298, 131–135. DOI: 10.1038/298131a0). The pitch of the long-pitch helix is approximately 5.9 nm, producing actin layer line 6 (A6). The complementary right-handed helix contributes a spacing of approximately 5.1 nm at actin layer line 7 (A7). These layer lines appear as off-meridional features in diffraction patterns from well-ordered muscles. When a muscle is stretched, the increased actin filament extension shifts these layer lines slightly inward on the detector, reflecting the larger real-space spacing.</p>
+</section>
+<section id="performing-experiments-at-a-synchrotron-beamline" class="level3">
+<h3 class="anchored" data-anchor-id="performing-experiments-at-a-synchrotron-beamline">Performing experiments at a synchrotron beamline</h3>
+<p>Conventional laboratory X-ray sources lack the photon flux to observe weak reflections or capture rapid structural changes in living muscle. Synchrotron facilities overcome this by accelerating electrons near the speed of light in a large storage ring and harvesting extremely intense X-ray beams from those electrons.</p>
+<p>The Advanced Photon Source (APS) at Argonne National Laboratory — home to the BioCAT beamline used for many muscle diffraction experiments — has a storage ring approximately 350 m in diameter (circumference ~1.1 km, about two-thirds of a mile). The intense undulator radiation is passed through a silicon monochromator (Si-111) that selects a single wavelength, producing a focused, coherent beam. This beam is directed through a hydrated muscle specimen to a detector placed 3–5 m away. The angular range needed to capture equatorial reflections from lattice spacings of 40–50 nm is less than 1°, which is why the technique is called small-angle X-ray diffraction.</p>
+<p>Because synchrotron beams are so intense, modern detectors can record complete diffraction patterns at millisecond time resolution — fast enough to follow structural changes through a single twitch contraction. Muscle specimens are kept hydrated and physiologically active during measurement. Force transducers record mechanical output simultaneously, allowing direct comparison of molecular structural changes with macroscopic mechanics. Depending on the experiment, specimens range from single dissected fiber bundles to whole small animals or insects placed directly in the beam path.</p>
+</section>
+<section id="from-molecular-structure-to-whole-muscle-function-a-case-study" class="level3">
+<h3 class="anchored" data-anchor-id="from-molecular-structure-to-whole-muscle-function-a-case-study">From molecular structure to whole-muscle function: a case study</h3>
+<p>A central question in integrative muscle biology is whether nanometer-scale differences in myofilament lattice geometry can explain macroscopic differences in mechanical output. A well-studied example involves the cockroach leg. Two muscles — numbered 178 and 179 — act on the same joint, share a single motor neuron (forming effectively one motor unit), and have the same mass, moment arm, and virtually identical force-length and force-velocity curves. By every standard mechanical characterization they appear identical. Yet work loop experiments reveal that one muscle acts as a net positive work producer (a motor) while the other acts as a net energy absorber (a brake). This functional distinction was first characterized in depth by Ahn &amp; Full (2002, <em>J Exp Biol</em>, 205, 379–389. DOI: 10.1242/jeb.205.3.379).</p>
+<p>Because the steady-state mechanical properties of the two muscles are the same, any structural difference must emerge only under the dynamic conditions of cyclic contraction. Subsequent time-resolved synchrotron X-ray diffraction experiments at the APS beamline — combining lattice spacing measurements with simultaneous work loop protocols — identified differences in myofilament lattice structure between the two muscles. Spatially explicit computational models incorporating lattice geometry can qualitatively reproduce different work loop shapes from muscles with otherwise identical intrinsic cross-bridge kinetics, providing a mechanistic bridge between molecular structure and organ-level mechanics.</p>
+<p>This example illustrates the unique capability of time-resolved synchrotron X-ray diffraction: it can detect structural differences invisible to conventional mechanical assays, and it operates at the length and time scales where molecular mechanisms determine whole-muscle function.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="../about.html">
+<p>About</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="../license.md">
+<p>License</p>
+</a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

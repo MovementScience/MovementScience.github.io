@@ -1,0 +1,136 @@
+
+Saved Filename: 24813R11.msn
+Saved Run Number: 01
+Date and Time of Day: Thu, Aug 15, 2024, 9:26:30 AM
+Time: 63135624391s
+System Name: Rig 1
+User Notes: 
+pCa: 9.00
+Temp: 37.0C, IonStr: 200.0mEq, [Pi]: 0.300mM
+[ATP]: 8.00mM, [PCr]: 35.000mM, [CK]: 300.0mM
+Other: 
+Model Species: Human
+Muscle Name: Myocardium
+Muscle Prep: Skinned Strip
+Muscle Length: 512.0um
+Muscle Diam Major: 213.00um, Minor: 194.00um
+Muscle Cross Sectional Area: 3.245e-02mm^2
+Isometric Force:   0.05mN, Tension:   1.40mN/mm^2
+Perturbation: Multiple Sinusoid
+System Error Filename: Rig1_SysError_2021_11_17_New.msn 
+Pre-Sinusoid Duration: 50 ms
+Amplitude: 0.125 %ML
+Frequency Set: Human37_Set
+Number of Frequencies: 35
+Number of Cycles Skipped: 2 
+Number of Cycles Run: 4 
+Dip Freq = 0.500000 Hz
+Max Work = 0.041375  J/m^3 at Freq = 0.800000 Hz
+Max Power = 0.076060  W/m^3 at Freq = 3.000000 Hz
+A = 77.172859 kN/m^2, k = -0.025134 (unitless)
+B = -9.563628 kN/m^2, b = 0.497751 Hz
+C = 69.042763 kN/m^2, c = 38.646572 Hz
+Freq (Hz)	Elastic_Mod (kN/m^2)	Viscous_Mod (kN/m^2)
+0.25	69.794579	-6.6037736
+0.5	64.381302	-0.037154328
+0.80000001	85.027603	-8.3991795
+1	87.997559	7.9544663
+1.2	88.329628	-3.2165844
+1.5	88.480186	4.706984
+2	97.219612	0.45778471
+2.5	68.025879	7.6202593
+3	89.018814	-5.0483012
+3.5	86.581963	4.0360627
+4	77.985207	3.1268506
+4.5	72.768906	4.4152961
+5	76.150414	5.8593764
+5.5	75.496231	8.702034
+6	76.348869	7.660284
+7	78.394554	11.311038
+8	84.143288	15.265619
+9	86.302765	17.2236
+10	78.43586	15.726882
+12	83.423599	20.96159
+14	93.710129	21.678051
+16	91.391617	24.366678
+20	95.359489	26.143396
+25	103.67777	28.082205
+30	111.51643	31.132872
+35	115.80361	30.731472
+40	113.91885	30.618666
+45	116.44539	29.4688
+55	119.51793	31.920027
+65	123.15194	31.816502
+75	126.46666	32.581764
+85	127.9716	33.755005
+90	128.47292	35.625633
+95	129.64616	35.507923
+100	128.48051	36.313862
+
+Saved Filename: 24813R11.msn
+Saved Run Number: 02
+Date and Time of Day: Thu, Aug 15, 2024, 9:39:40 AM
+Time: 63135625181s
+System Name: Rig 1
+User Notes: 
+pCa: 9.00
+Temp: 37.0C, IonStr: 200.0mEq, [Pi]: 0.300mM
+[ATP]: 8.00mM, [PCr]: 35.000mM, [CK]: 300.0mM
+Other: 
+Model Species: Human
+Muscle Name: Myocardium
+Muscle Prep: Skinned Strip
+Muscle Length: 512.0um
+Muscle Diam Major: 213.00um, Minor: 194.00um
+Muscle Cross Sectional Area: 3.245e-02mm^2
+Isometric Force:   0.48mN, Tension:  14.65mN/mm^2
+Perturbation: Multiple Sinusoid
+System Error Filename: Rig1_SysError_2021_11_17_New.msn 
+Pre-Sinusoid Duration: 50 ms
+Amplitude: 0.125 %ML
+Frequency Set: Human37_Set
+Number of Frequencies: 35
+Number of Cycles Skipped: 2 
+Number of Cycles Run: 4 
+Dip Freq = 3.500000 Hz
+Max Work = 0.218042  J/m^3 at Freq = 2.000000 Hz
+Max Power = 0.436085  W/m^3 at Freq = 2.000000 Hz
+A = 126.138443 kN/m^2, k = 0.165672 (unitless)
+B = 376.007751 kN/m^2, b = 3.904567 Hz
+C = 699.106018 kN/m^2, c = 14.231513 Hz
+Freq (Hz)	Elastic_Mod (kN/m^2)	Viscous_Mod (kN/m^2)
+0.25	158.67064	-7.5136399
+0.5	121.33981	-13.464649
+0.80000001	128.35287	-28.245209
+1	120.9563	-1.4750972
+1.2	146.56982	-30.377333
+1.5	103.5043	-19.244448
+2	119.76276	-44.31469
+2.5	111.84354	-14.008782
+3	81.372589	6.9333167
+3.5	62.303329	51.124901
+4	80.480408	84.45314
+4.5	96.807648	97.618721
+5	82.938446	96.395134
+5.5	104.83722	90.568161
+6	95.954063	106.35252
+7	65.511887	143.621
+8	78.320213	199.65385
+9	99.586334	244.73521
+10	118.0887	275.47092
+12	191.44127	324.96854
+14	254.93376	332.25348
+16	299.31268	346.21027
+20	384.75839	355.43439
+25	460.20459	332.98294
+30	503.53156	303.42978
+35	536.03009	278.89236
+40	555.09827	260.50537
+45	568.34741	243.32852
+55	590.66125	230.33394
+65	606.01276	223.63943
+75	620.0033	223.92456
+85	632.46655	223.52118
+90	637.4339	225.1115
+95	644.46527	226.93971
+100	648.64911	231.49246

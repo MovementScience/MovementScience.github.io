@@ -1,0 +1,2078 @@
+WEBVTT
+
+1
+00:00:17.431 --> 00:00:22.361
+Victoria Wood: Alright, I think we can probably go ahead and start if you're ready, Luke.
+
+
+2
+00:00:23.181 --> 00:00:26.081
+Luke Jessup: Yeah, I'll just share my slides.
+
+
+3
+00:00:40.331 --> 00:00:41.711
+Luke Jessup: Didn't see that fun.
+
+
+4
+00:00:43.111 --> 00:00:47.361
+Monica Daley (she, her): Yeah, I see a video of is that what we should be seeing? Yeah.
+
+
+5
+00:00:47.361 --> 00:00:51.541
+Luke Jessup: That's what you should be seeing cool.
+
+
+6
+00:00:52.291 --> 00:01:17.201
+Luke Jessup: So yeah, today, we're going to be learning a little bit about ultrasound, particularly in the context of tracking vasicle length changes, and we'll start off just by talking about why, tracking vascular length changes is important. We'll talk a little bit about how to distinguish between different structures in our ultrasound images.
+
+
+7
+00:01:17.231 --> 00:01:31.280
+Luke Jessup: And then we'll sort of talk a little bit about the different computer vision methods that allow us to get videos like this, tracking changes in fascicle length.
+
+
+8
+00:01:32.666 --> 00:01:40.920
+Luke Jessup: Before we get started, though. Yeah, I'll give you 30 seconds or so to or for the trainees to sign in
+
+
+9
+00:02:07.856 --> 00:02:15.651
+Luke Jessup: so if we can measure the instantaneous length and velocity changes of
+
+
+10
+00:02:15.751 --> 00:02:33.731
+Luke Jessup: muscle in relation to some optimum that gives us an idea of the instantaneous operating capacity or force generating capacity of that muscle. We know that under really controlled static conditions
+
+
+11
+00:02:33.771 --> 00:02:47.671
+Luke Jessup: the force, length, curve of a muscle has this ascending limb. It has a plateau and a descending limb with maximum active force being able to be produced at this plateau.
+
+
+12
+00:02:48.431 --> 00:03:03.460
+Luke Jessup: On the other hand, we have this sort of sigmoidal relationship between force and muscle velocity with positive values corresponding to muscle shortening and negative values corresponding to muscle lengthening.
+
+
+13
+00:03:03.461 --> 00:03:27.191
+Luke Jessup: But again, if we know the relative length and velocity of a muscle. We can approximate how the operating capacity of that muscle changes which has implications for understanding how and why people move the way that they do, and potentially how we might facilitate movement targeting those length and velocity changes
+
+
+14
+00:03:32.001 --> 00:03:32.751
+Luke Jessup: so
+
+
+15
+00:03:33.911 --> 00:04:01.531
+Luke Jessup: Rubensen et Al. Were able to sort of carefully set up participants in a dynamometer which for those of you not familiar, a dynamometer is a device that can measure the force and power produced by joints, and they had ultrasound over the soleus muscle at the same time. So in the bottom of this ultrasound image, this muscle that I'm hovering over here is Soleus, and above you'll have medial gastrocnemius.
+
+
+16
+00:04:01.941 --> 00:04:11.411
+Luke Jessup: and then within the dynamometer, with the ultrasound over those calf muscles by setting the ankle at different
+
+
+17
+00:04:11.411 --> 00:04:33.020
+Luke Jessup: joint angles, changing then the length of the soleus muscle fibers to shorter or longer lengths, and then, having participants maximally produce force at those different joint angles, they were able to generate force, length, profiles for the soleus muscle for each of their participants.
+
+
+18
+00:04:33.121 --> 00:04:57.671
+Luke Jessup: Then, after creating those profiles, they then kept the ultrasound over those muscles, took them out of the dynamometer and had them walk again with that ultrasound still on to see where, on the force length curve, Soleus tends to operate throughout a walking stride, and you can see that on average it sits around this ascending part
+
+
+19
+00:04:57.671 --> 00:05:21.410
+Luke Jessup: of the plateau here, which would be ideal potentially in terms of balancing between force production and making sure that there's room for muscle to still lengthen, say, in the case of perturbation, needing to be resisted, or having to minimize injury, risk due to rapid stretch or high force.
+
+
+20
+00:05:22.631 --> 00:05:35.971
+Luke Jessup: On the other hand, lie at all. We're interested in the speed at which we decide to transition from a walk to a run, and again with ultrasound over the Soleus muscle.
+
+
+21
+00:05:36.121 --> 00:05:52.161
+Luke Jessup: and with sort of an estimate of the optimal fascicle length of Soleus, they were able to show that the preferred speed to transition from walking, which would be this dark line here
+
+
+22
+00:05:52.321 --> 00:06:08.420
+Luke Jessup: to then running this dashed line here sort of keeps the muscle operating near to optimal fascicle lengths, so as indicated by this fascicle length, equals one or l. Naught.
+
+
+23
+00:06:09.231 --> 00:06:36.641
+Luke Jessup: and it also was able to keep muscles operating at shorter velocities as well. So ultimately, this is all better for force production. Right? And, interestingly enough, if we weren't to transition at this point we were just to keep walking at faster and faster speeds. Without transitioning to running, we would see that the energetic cost of walking would start to exceed the energetic cost of running at those speeds.
+
+
+24
+00:06:38.331 --> 00:06:56.201
+Luke Jessup: And speaking of energetic costs, my group was able to demonstrate these really tight relationships between metabolic cost here, and the amount of fascicle shortening and shortening velocity of calf and quadriceps muscles across different hopping conditions.
+
+
+25
+00:06:57.551 --> 00:07:14.140
+Luke Jessup: And, as I briefly mentioned before, we can also think about this from the perspective of facilitating movement, enhancing muscle dynamics through potentially some sort of assistive device here using passive ankle exoskeleton
+
+
+26
+00:07:14.511 --> 00:07:30.081
+Luke Jessup: during walking to assist Plantar flexion, and varying the stiffness of that exoskeleton knuckles, et Al. Were able to find that stiffness was affecting the force generating capacity of muscle.
+
+
+27
+00:07:30.081 --> 00:07:46.650
+Luke Jessup: They also found that, compared to no exoskeleton assistance, this blue stiffness level actually reduced the metabolic cost of walking, whereas these higher stiffnesses increased the metabolic cost of walking rather. But
+
+
+28
+00:07:46.790 --> 00:08:05.480
+Luke Jessup: the main thing really to take away from this whole slide for the purposes of this presentation, is that ultrasound was used in each of these studies to measure muscle dynamics non-invasively in humans to enhance our mechanistic interpretation.
+
+
+29
+00:08:07.771 --> 00:08:23.080
+Luke Jessup: But that's not all that ultrasound is used for in research at this sort of intersection between human biomechanics and physiology. We also use it to guide the placement of intramuscular sensors
+
+
+30
+00:08:23.381 --> 00:08:35.780
+Luke Jessup: that might be intramuscular emg to really precisely measure muscle activity or a therm sister to a thermistor to measure muscle temperature
+
+
+31
+00:08:36.211 --> 00:08:47.741
+Luke Jessup: and using ultrasound, then allows us to sort of insert these sensors exactly where we want them without nicking surrounding vasculature or nerves along the way.
+
+
+32
+00:08:49.631 --> 00:08:58.550
+Luke Jessup: We can also use ultrasound or 3D. Ultrasound, so similar to what we can get from an MRI,
+
+
+33
+00:08:59.271 --> 00:09:11.801
+Luke Jessup: we can use a 3D. We can use freehand 3D. Ultrasound along the length of a muscle to give us more information structurally about muscle, and how muscles vary between individuals.
+
+
+34
+00:09:12.091 --> 00:09:17.710
+Luke Jessup: we can. We can also use an ultrasound technique called strain elastography.
+
+
+35
+00:09:18.291 --> 00:09:23.820
+Luke Jessup: giving us a measure of the relative stiffness of tissues within and between individuals.
+
+
+36
+00:09:24.431 --> 00:09:40.080
+Luke Jessup: Or we could look at cardiovascular biomechanics again, not only looking at the stiffness potentially of vessel walls, but also the velocity of blood flow in response to maybe different exercise conditions or conditions like hypoxia or hypothermia.
+
+
+37
+00:09:42.571 --> 00:09:44.800
+Luke Jessup: So how does ultrasound work?
+
+
+38
+00:09:45.011 --> 00:09:56.621
+Luke Jessup: You have a transducer that sends ultrasonic waves down into the body. And then they, those waves, bounce back to the transducer when it hits an object
+
+
+39
+00:09:57.091 --> 00:10:23.931
+Luke Jessup: sending information to a computer software to generate an image. Ultimately the speed and strength at which those waves reflect back to the transducer determines how different structures will appear in an image, and so that speed and strength as well. The echogenicity, as we call it, of structures, varies, depending on their physical properties.
+
+
+40
+00:10:25.691 --> 00:10:33.350
+Luke Jessup: And so what are different structures look like in an ultrasound image and fair warning. It's
+
+
+41
+00:10:33.611 --> 00:11:00.470
+Luke Jessup: usually not just as easy as me telling you here. This structure looks like this, and this structure looks like that. This is something that requires sort of getting hands on with the ultrasound, adjusting settings, playing with orientation of the probe, scanning different parts of the body. But hopefully, I can give you a bit of an idea as to the sorts of things to look for, to help, to differentiate between one thing from another
+
+
+42
+00:11:01.521 --> 00:11:05.580
+Luke Jessup: quite simply, blood and other fluids are anechoic.
+
+
+43
+00:11:05.681 --> 00:11:27.320
+Luke Jessup: They don't reflect ultrasound waves and show up as dark in your image. So if we look here at both of these still images up the top. It's quite easy to know that you're looking at a blood vessel, because it'll show up as a dark circle, so we can see this dark circle up here in the top left image, and there's a
+
+
+44
+00:11:27.321 --> 00:11:44.021
+Luke Jessup: big dark circle here in this rightward image, and again it might take a little bit of adjusting the orientation settings of the ultrasound probe. To be able to see these structures really clearly. But once those settings are in, this should be really easy to be able to distinguish.
+
+
+45
+00:11:45.771 --> 00:12:02.111
+Luke Jessup: On the other hand, bone the connective tissue in muscle, tendon, and nerve are echogenic. So they show up. They're really good at reflecting ultrasound waves, and they'll show up as bright white in the image
+
+
+46
+00:12:03.271 --> 00:12:07.120
+Luke Jessup: when we look at bone. So here we have the humerus.
+
+
+47
+00:12:07.361 --> 00:12:21.570
+Luke Jessup: We can see, the outer part of bone shows up as bright white, and there's almost like this shadow underneath it. That's because ultrasonic waves will reflect off of the surface layers of bone, but they can't penetrate deeper than that
+
+
+48
+00:12:22.931 --> 00:12:48.790
+Luke Jessup: when it comes to identifying muscle. It's usually fairly obvious. One thing to note here is that the probe is being held transversely across the limb, which is sort of best for differentiating between different structures. In our application of tracking. Fascicle length changes, though the probe will be held sort of longitudinally along the limb. In either case
+
+
+49
+00:12:49.181 --> 00:13:09.670
+Luke Jessup: muscle is usually super easy to identify. It contains these sort of striations of connective tissue, and usually the aponeurosis sort of surrounding muscle and interspersing between muscle helps to make it obvious that you're looking at muscle, too.
+
+
+50
+00:13:11.791 --> 00:13:28.181
+Luke Jessup: Tendon, on the other hand, is sort of identifiable as being circular, changing in size along its length, and obviously as well extending from muscle. So we should be able to track muscle towards its origin or insertion points and see tendon appear.
+
+
+51
+00:13:29.861 --> 00:13:52.240
+Luke Jessup: Nerves are also circular, but their change, their size doesn't change along its length, so we'll see this a little bit more in a video that I'll show you on the next slide. Typically a nerve is going to be near blood vessels as well. So some of you may have heard the acronym van vein artery nerve.
+
+
+52
+00:13:52.271 --> 00:14:06.140
+Luke Jessup: So you can sort of see in this top right image that we've got this vein structure. Sorry, this nerve structure here, sitting next to this artery structure.
+
+
+53
+00:14:06.499 --> 00:14:13.451
+Luke Jessup: So that's a little bit of a giveaway for this one as well, but this can be a little bit complicated to find sometimes.
+
+
+54
+00:14:14.361 --> 00:14:35.430
+Luke Jessup: but this is a recording that I took of my sciatic nerve. It might be a little bit glitchy on your screen. I'm hoping the videos play with a high enough frame rate. But this is the main nerve that obviously branches off to innervate your leg muscles, and you'll see that it doesn't really change shape too much. As I sort of sweep up and down my thigh.
+
+
+55
+00:14:35.831 --> 00:15:02.691
+Luke Jessup: It might not be as clear in some parts because of the orientation again, and sort of settings of the ultrasound probe that I'm using. But right next to it you'll also be able to see sort of 2 circular dark structures as well again. Sort of giving away that we are looking at a nerve here. So I'll just let this play through to the end again. Hopefully, not too glitchy on your end.
+
+
+56
+00:15:02.891 --> 00:15:07.791
+Luke Jessup: I'm sort of keeping the cursor over where the nerve is.
+
+
+57
+00:15:09.651 --> 00:15:15.621
+Luke Jessup: Here. This sort of bundle of connective tissue and an out of image.
+
+
+58
+00:15:15.621 --> 00:15:18.628
+Caitlin Bemis: Can I ask a little bit of of a question.
+
+
+59
+00:15:19.131 --> 00:15:19.811
+Luke Jessup: Yeah.
+
+
+60
+00:15:20.101 --> 00:15:25.680
+Caitlin Bemis: So what else are we seeing in this? We're not just seeing just the nerve right? This is like the subcutaneous
+
+
+61
+00:15:26.001 --> 00:15:26.830
+Caitlin Bemis: layers of.
+
+
+62
+00:15:26.831 --> 00:15:34.839
+Luke Jessup: Just saying, Yeah, yeah, exactly. So you'll have subcutaneous layers at the top. There's probably some amount of muscle
+
+
+63
+00:15:35.301 --> 00:16:01.240
+Luke Jessup: in and surrounding this nerve. Here again, I've sort of tried to dial in these these ultrasound settings, so I can try to get a good image of the nerve. The other disadvantage of the ultrasound system that I'm using at the moment is that it is sort of dialed in for musculoskeletal ultrasound work I've mainly used it for muscle in the past, but it's not quite as
+
+
+64
+00:16:01.241 --> 00:16:16.070
+Luke Jessup: the images aren't quite as clear as what you'd get from. Like your typical medical ultrasound probe. The handheld sort of probe. I'll show you the different sorts of probes coming up in a later slide. But
+
+
+65
+00:16:16.411 --> 00:16:30.721
+Luke Jessup: just to give you an idea of what this should look like. Not that this is really the main focus of this presentation, but we could then confirm, using Doppler ultrasound, that there is sort of this
+
+
+66
+00:16:31.071 --> 00:16:51.461
+Luke Jessup: pulsing happening next to the nerve again. Unfortunately, you might not be able to see this perfectly, because the video is a little bit glitchy. But you should see this blue pulsing almost next to this nerve structure, which is sort of in white here.
+
+
+67
+00:16:52.471 --> 00:16:53.361
+Luke Jessup: And
+
+
+68
+00:16:53.901 --> 00:17:11.410
+Luke Jessup: typically when we're using ultrasound as well, we've got it in what's called b mode or brightness mode, which is what we use for ultrasound, which is what we use. Sorry for musculoskeletal imaging. Again here I've got it in what's called doppler mode, which is used for measuring blood flow
+
+
+69
+00:17:13.081 --> 00:17:26.091
+Luke Jessup: less about nerves, though, and blood vessels, and more about muscle. And here I've switched the probe from transverse to longitudinal, starting with a probe over the most medial aspect of my medial gastrocnemius, slowly bringing it around my calf.
+
+
+70
+00:17:26.321 --> 00:17:46.421
+Luke Jessup: now over sort of the aponeurosis surrounding my medial, or interspersing between my medial and lateral gastrocnemius. So I'll start again. Medial gastrocnemius really medial part of my medial gastrocnemius going around my calf towards my lateral gastrocnemius.
+
+
+71
+00:17:47.891 --> 00:17:59.221
+Luke Jessup: Here's the aponeurosis coming in that will disperse between my medial and lateral gastrocnemius, now lateral Gastrocnemius with a good shot of soleus below.
+
+
+72
+00:18:00.201 --> 00:18:13.330
+Luke Jessup: and again with sort of the probe held longitudinally. In this case we can really nicely see sort of these striations of of connective tissue, those being the fascicles that we want to track.
+
+
+73
+00:18:16.261 --> 00:18:19.383
+Luke Jessup: And here's sort of a nice video that really,
+
+
+74
+00:18:20.201 --> 00:18:37.141
+Luke Jessup: really nicely shows motion capture data synced up with ultrasound over biceps femoris. And I really want you to appreciate how clearly we can see changes in the length and punation angle of fascicles in each of these different movements.
+
+
+75
+00:18:42.831 --> 00:18:48.081
+Luke Jessup: So again, over biceps femoris, so a hamstring muscle there, through those movements.
+
+
+76
+00:18:49.141 --> 00:18:58.460
+Luke Jessup: and for a muscle like biceps fem where you might have these really long fascicles with quite small penation angles.
+
+
+77
+00:18:58.891 --> 00:19:11.730
+Luke Jessup: we might elect to use 2 ultrasound probes in series with one another, so that when it comes to tracking fascicles we have visual of the insertion and origin of the fascicle
+
+
+78
+00:19:12.131 --> 00:19:18.030
+Luke Jessup: rather than just relying on some sort of extrapolation. So
+
+
+79
+00:19:18.121 --> 00:19:24.370
+Luke Jessup: we're going to talk about sort of these automated methods on the on the next slide.
+
+
+80
+00:19:24.371 --> 00:19:50.791
+Luke Jessup: I'm not too sure where these automated methods are at at the moment in terms of tracking 2 images stitched together in the past. We've had to do all of this sort of tracking manually, frame by frame, which, as you can imagine, is pretty time intensive going from one frame clicking, next frame clicking. When some of these ultrasound videos are
+
+
+81
+00:19:51.441 --> 00:19:55.091
+Luke Jessup: 1,500 frames of data or more.
+
+
+82
+00:19:57.791 --> 00:20:18.221
+Luke Jessup: So the fascical tracking software that we'll be using today revolves around 2 different computer vision methods, optical flow and line detection in optical flow. You're essentially tracking the motion of key points or key pixels
+
+
+83
+00:20:18.761 --> 00:20:28.320
+Luke Jessup: within an image. So you can imagine here the direction of these of these blue points being tracked from one frame to the next.
+
+
+84
+00:20:28.431 --> 00:20:31.631
+Luke Jessup: whereas with line detection methods.
+
+
+85
+00:20:33.159 --> 00:20:36.151
+Luke Jessup: I'm just checking the chat
+
+
+86
+00:20:39.151 --> 00:20:41.717
+Luke Jessup: whereas with line detection methods.
+
+
+87
+00:20:42.806 --> 00:20:45.965
+Luke Jessup: the software will be looking for line, like
+
+
+88
+00:20:46.421 --> 00:21:10.770
+Luke Jessup: structures from one frame to the next. So those line, like structures being fascicles. In our case, optical flow works on consecutive frames, whereas line. Detection works on each frame independently, and what this means for the tracking is that optical flow is really good for handling noise
+
+
+89
+00:21:10.831 --> 00:21:27.681
+Luke Jessup: within a video, but it is prone to drifting over time, whereas line detection, because it's working on each individual frame independently. It doesn't handle noisy images very well, but it is very robust to drift
+
+
+90
+00:21:28.030 --> 00:21:54.891
+Luke Jessup: and I've seen a in the chat from miles. How fast you usually record for ultrasound techniques. We'll talk about that a little bit later. But typically around 150 hertz, so 150 frames per second, they can get up to about 210 to 220 frames per second, if you're really sacrificing image quality. But I think that 150 frames per second is sort of a good trade off between
+
+
+91
+00:21:55.211 --> 00:22:01.870
+Luke Jessup: image quality and frame rate and frame rate's really important for this fascicle tracking.
+
+
+92
+00:22:05.981 --> 00:22:34.131
+Luke Jessup: So we'll get into now the 1st tracking software which fuses optical flow and line detection methods. So it sort of gives you the the best of both worlds in that. It's it's relatively noise and and drift free. And I found that this particular software tends to work really well for relatively dynamic movement
+
+
+93
+00:22:34.541 --> 00:22:56.101
+Luke Jessup: where there's a lot of movement happening in your image, and that's a high possibility of of drift accumulating. I don't find that it works as well for sort of slower, less dynamic movements. We'll talk about a separate tracking software for that, for those types of movements in a minute.
+
+
+94
+00:22:56.231 --> 00:23:12.870
+Luke Jessup: Again, hopefully, you've had a chance to download the files that I put on the Google drive. Sorry the ultrasound data or ultrasound data files are in particular really large.
+
+
+95
+00:23:13.653 --> 00:23:21.300
+Luke Jessup: That's just the way those ultrasound videos go. Unfortunately, and the tracking will take a few minutes. So
+
+
+96
+00:23:21.531 --> 00:23:37.343
+Luke Jessup: I'll get the tracking software up and running. And I'll continue on the presentation while that 1st file is being processed in the software. And I can take some questions while that's all underway as well.
+
+
+97
+00:23:38.411 --> 00:23:47.300
+Luke Jessup: I'm just gonna switch over to my desktop at the moment. I'll just send a request to be able to do that
+
+
+98
+00:23:50.824 --> 00:23:52.231
+Luke Jessup: and also
+
+
+99
+00:23:52.541 --> 00:24:02.621
+Luke Jessup: one thing like ideally, we'll get through today without Matlab throwing any errors at anyone. I've tried to make sure that all of the functions and dependencies for these software. Are
+
+
+100
+00:24:02.911 --> 00:24:20.070
+Luke Jessup: all there on the Google drive. I know it's all gonna work on my end. But if for some reason you do get an error. It's absolutely fine. Just let me know what the error is, and I'll upload the dependency that you're missing after this workshop. So I'm just going to stop my share on this
+
+
+101
+00:24:20.311 --> 00:24:24.791
+Luke Jessup: and screen. Share Matlab over here.
+
+
+102
+00:24:27.711 --> 00:24:35.390
+Luke Jessup: Again, if you can't see this, I'm hoping everyone can sort of see my Matlab screen now.
+
+
+103
+00:24:37.791 --> 00:24:42.751
+Luke Jessup: But the 1st software that we're going to be using is called Ultra Tim track.
+
+
+104
+00:24:43.731 --> 00:24:49.880
+Luke Jessup: Now, firstly, I'm just gonna make sure that all of my files, all my folders, my dependencies are on my path.
+
+
+105
+00:24:50.171 --> 00:24:52.991
+Luke Jessup: So right, click and add those to your path.
+
+
+106
+00:24:54.996 --> 00:24:58.800
+Luke Jessup: Then you should be able to go into ultra Tim track
+
+
+107
+00:25:00.251 --> 00:25:04.361
+Luke Jessup: and then load in ultra timtrak, dot m
+
+
+108
+00:25:06.791 --> 00:25:14.550
+Luke Jessup: you're going to press. Run on the ultra Tim chat code to the side here.
+
+
+109
+00:25:20.571 --> 00:25:26.790
+Luke Jessup: sorry. I'm just going to make sure I'm sharing my screen so you can see everything. There we go.
+
+
+110
+00:25:30.801 --> 00:25:35.350
+Luke Jessup: And this is what the Tim track. Gui will look like
+
+
+111
+00:25:36.262 --> 00:25:41.611
+Luke Jessup: what you're gonna do straight away is go to file open video file
+
+
+112
+00:25:44.261 --> 00:25:56.981
+Luke Jessup: and then navigate your way into back into sort of this main folder setup that has the ultrasound data data folder from the Google drive.
+
+
+113
+00:25:59.471 --> 00:26:06.081
+Luke Jessup: You'll click into ultrasound data and load in the level walking dot mat file.
+
+
+114
+00:26:14.681 --> 00:26:17.801
+Luke Jessup: and that should load up onto your screen. So in this case.
+
+
+115
+00:26:18.481 --> 00:26:29.401
+Luke Jessup: what we're going to be and again, let me know if any errors pop up for you. And again, at the end of this we'll make sure that everything's uploaded for you to use this properly.
+
+
+116
+00:26:30.431 --> 00:26:39.620
+Luke Jessup: So to start with in this software. What we want to do is position. These sort of.
+
+
+117
+00:26:40.071 --> 00:27:04.001
+Luke Jessup: I guess detection windows, we'll call them over the deep and the superficial aponeurosis. So the green window is going to be scaled to encompass your deep aponeurosis. So that's going to be this sort of I hope you can see my cursor here. It's sort of this white aponeurosis down the bottom of
+
+
+118
+00:27:04.151 --> 00:27:07.691
+Luke Jessup: the medial gastrocne, lateral gastrocnemius muscle.
+
+
+119
+00:27:08.721 --> 00:27:11.111
+Luke Jessup: So we want to make sure that that's positioned
+
+
+120
+00:27:11.481 --> 00:27:22.661
+Luke Jessup: over it entirely so the whole field of view encompasses that. And then same sort of idea for this blue
+
+
+121
+00:27:22.861 --> 00:27:30.161
+Luke Jessup: field of view. But over the superficial aponeurosis. So that'll be this top white line here.
+
+
+122
+00:27:36.701 --> 00:27:52.101
+Luke Jessup: Now, there's a whole bunch of settings over on the side here, and I recommend you just keep everything as is to begin with, the main thing that you'll potentially want to play around with is this parameter here?
+
+
+123
+00:27:52.391 --> 00:27:53.751
+Luke Jessup: What this does
+
+
+124
+00:27:53.941 --> 00:28:00.929
+Luke Jessup: is it's going to wait more towards the ultra Tim track side of things. So this
+
+
+125
+00:28:01.471 --> 00:28:21.941
+Luke Jessup: sort of combination of line detection and and and optical flow and lower values, on the other hand, are going to weight more towards just purely optical flow. So if we're going purely optical flow, remember that's going to be relatively sensitive to drift. If we're going
+
+
+126
+00:28:22.710 --> 00:28:41.571
+Luke Jessup: more towards the ultra Tim track, there won't be as much drift. But because we're waiting a little bit more on those line detection methods potentially, there might be a little bit more noise. It might not be able to handle noise in your image quite as well. So we kind of want some sort of intermediate between the 2.
+
+
+127
+00:28:41.911 --> 00:28:46.241
+Luke Jessup: I'll talk about that a little bit more after we've processed the data.
+
+
+128
+00:28:47.091 --> 00:28:50.911
+Luke Jessup: I'm going to click on parallel processing here.
+
+
+129
+00:28:51.301 --> 00:29:16.291
+Luke Jessup: So for those of you who use sort of more powerful computers with more cores, this allows you to sort of have more workers working on this data, processing simultaneously, and sort of speeds up the whole process on just a standard work. Laptop. You might have
+
+
+130
+00:29:16.401 --> 00:29:18.886
+Luke Jessup: 4 to 8 cores sort of thing.
+
+
+131
+00:29:19.741 --> 00:29:40.052
+Luke Jessup: whereas on yeah, your more complex computers, you might have more like 10 or more cores. And I find that on the more powerful laptops, this on the more powerful computers. This really does speed up this whole process quite dramatically on just a standard work computer. It's going to take about for a 10 second video, maybe something like
+
+
+132
+00:29:40.881 --> 00:29:42.211
+Luke Jessup: the
+
+
+133
+00:29:42.441 --> 00:29:51.151
+Luke Jessup: 5 min to process one ultrasound video, whereas on a more powerful computer, it might take only a minute or 2 min.
+
+
+134
+00:29:53.281 --> 00:29:57.801
+Luke Jessup: Then what I'm going to press is this, detect fascicle option.
+
+
+135
+00:29:59.441 --> 00:30:03.091
+Luke Jessup: and then you should get this fascicle pop up on your screen.
+
+
+136
+00:30:04.646 --> 00:30:07.271
+Luke Jessup: And you can sort of confirm that
+
+
+137
+00:30:07.521 --> 00:30:19.250
+Luke Jessup: it looks like these are following these sort of lines of of connective tissue, being your fascicles, and looks like it sort of lines up with your deep and superficial aponeurosis.
+
+
+138
+00:30:19.651 --> 00:30:23.631
+Luke Jessup: And then, once we're happy with that we press process all.
+
+
+139
+00:30:26.931 --> 00:30:33.231
+Luke Jessup: This will probably take me back to this screen, telling me down the bottom here that starting a parallel pool
+
+
+140
+00:30:33.501 --> 00:30:42.560
+Luke Jessup: again, just distributing different parts of this processing to different workers to work on simultaneously to speed up the process
+
+
+141
+00:30:43.601 --> 00:31:04.640
+Luke Jessup: while this is going on. In the background. I'm going to just stop share on that, and we can get back into that once this is run through. But again it started. Now it should take a few minutes to get through, but I'll stop sharing that, and then we can come back over here
+
+
+142
+00:31:05.691 --> 00:31:08.521
+Luke Jessup: and get back into the presentation.
+
+
+143
+00:31:23.751 --> 00:31:29.691
+Luke Jessup: Bear with me a second just trying to in presenter mode.
+
+
+144
+00:31:59.601 --> 00:32:05.481
+Luke Jessup: Okay, does anyone have any questions to this point? Did that work
+
+
+145
+00:32:05.621 --> 00:32:10.030
+Luke Jessup: for everyone? Okay, that gave it a go? Or is it working.
+
+
+146
+00:32:13.811 --> 00:32:15.001
+Monica Daley (she, her): Mine's working.
+
+
+147
+00:32:15.541 --> 00:32:18.415
+Luke Jessup: Awesome, perfect stoked. That's great.
+
+
+148
+00:32:20.621 --> 00:32:26.391
+Luke Jessup: And does anyone have any questions to this point before I sort of go further into this.
+
+
+149
+00:32:31.281 --> 00:32:38.141
+Luke Jessup: Okay, so again, when we sort of typically think about
+
+
+150
+00:32:38.811 --> 00:32:56.561
+Luke Jessup: an ultrasound probe, we typically think of it. Let me get my pointer up in these sort of form factors here on the right, and that's great again, if we want to do sort of freehand medical ultrasound imaging.
+
+
+151
+00:32:56.921 --> 00:33:16.981
+Luke Jessup: But you can imagine that it'd be impossible to hold one of these probes on. Somebody's against somebody's skin in a specific spot while the patient is walking, running, skipping, jumping, and that's ultimately what we want to be able to do with these probes right? Measuring fascicle length changes during these dynamic movements.
+
+
+152
+00:33:17.231 --> 00:33:21.964
+Luke Jessup: Instead, we use this sort of flatter form factor
+
+
+153
+00:33:22.911 --> 00:33:40.030
+Luke Jessup: on the left, which actually allows us to strap the probe to the patient, and these flat probes were actually originally designed for veterinary purposes. But now sort of fairly extensively used in the musculoskeletal biomechanics space.
+
+
+154
+00:33:42.311 --> 00:33:50.690
+Luke Jessup: So here on the left, we have one of these probes over my lateral gastrocnemius, and soleus
+
+
+155
+00:33:52.921 --> 00:33:53.991
+Luke Jessup: and
+
+
+156
+00:33:54.321 --> 00:34:04.850
+Luke Jessup: you can sort of see this nice image here. I'm just going to go through some dorsiflexions and plantar flexions, and you can see those fascicles changing in length, quite nicely in that image.
+
+
+157
+00:34:05.211 --> 00:34:25.831
+Luke Jessup: and we also have the same thing over my vastus lateralis. And again, similar sort of thing, really good sort of fascicle length, or really nice connective tissue. In there you can see it from origin all the way to insertion, changing in length.
+
+
+158
+00:34:26.091 --> 00:34:28.961
+Luke Jessup: with knee extensions and flexions.
+
+
+159
+00:34:30.881 --> 00:34:34.500
+Luke Jessup: And if I just sort of go back
+
+
+160
+00:34:35.191 --> 00:35:04.151
+Luke Jessup: and you'll be able to see that what I like to do as well is have this sort of block of foam, sitting next to the ultrasound probe within the strapping. That's roughly the same dimensions as the probe. I find that this setup, with sort of the extra surface area that this creates in the strapping helps with locking the probe into position and stopping from stopping it from changing its orientation. So again.
+
+
+161
+00:35:04.661 --> 00:35:14.040
+Luke Jessup: can show you those videos to give you a bit of an idea of what we're looking for from an ultrasound image really clear, connective tissue.
+
+
+162
+00:35:14.891 --> 00:35:20.160
+Luke Jessup: And you can nicely see it changing length during those movements.
+
+
+163
+00:35:22.751 --> 00:35:37.380
+Luke Jessup: This might be how your overall setup and device integration looks like you've got some main computer connected to an analog box and motion capture system.
+
+
+164
+00:35:37.851 --> 00:35:42.851
+Luke Jessup: We might have some software on
+
+
+165
+00:35:42.971 --> 00:35:53.550
+Luke Jessup: the main computer that allows us to send signals out of the analog box with a splitter. At this junction we can send signals
+
+
+166
+00:35:54.121 --> 00:36:23.400
+Luke Jessup: to the motion capture system and to the ultrasound module reaching those systems at the same time, so that they can be triggered to start and stop at the same time, which is going to be important right in terms of making sure that our ultrasound and our motion capture data is perfectly synced up. We know this is what happens. This is what happens to this is what is happening to our joint talks, our joint moments, and at this exact time this is what's happening to our ultrasound
+
+
+167
+00:36:23.481 --> 00:36:25.611
+Luke Jessup: or fascicle length changes.
+
+
+168
+00:36:26.391 --> 00:36:55.221
+Luke Jessup: The ultrasound data will be collected on its own ultrasound laptop. And we also have a signal coming out of the ultrasound module back to the analog box connected to the main computer, just verifying when frames of ultrasound data are being collected as one, a bit of a sanity check, or also just to help realign the data down the line. If anything happens to go wrong with the Sync for whatever reason.
+
+
+169
+00:36:57.091 --> 00:37:22.171
+Luke Jessup: And just a note, if you're working with Echo Wave software, which is sort of the main software that we tend to use. There's this sync software that you'll need to have enabled in order for the ultrasound system to be engaged correctly, to register those syncing signals to start and stop capture. This is obviously in place of just manually
+
+
+170
+00:37:22.221 --> 00:37:27.390
+Luke Jessup: pressing space bar on the ultrasound laptop and starting and stopping and cap the capture yourself.
+
+
+171
+00:37:29.451 --> 00:37:32.679
+Luke Jessup: But we can go back now to
+
+
+172
+00:37:33.861 --> 00:37:36.970
+Luke Jessup: I'll just stop sharing here.
+
+
+173
+00:37:37.201 --> 00:37:46.151
+Luke Jessup: and we can go back to that fascicle tracking that we were just doing before, and then
+
+
+174
+00:37:53.771 --> 00:38:03.490
+Luke Jessup: Hannah asked, portable slash wireless ultrasound probes is accurate and reliable compared to ultrasound probes with cables.
+
+
+175
+00:38:05.151 --> 00:38:20.041
+Luke Jessup: I haven't played around with wireless sort of ultrasound probes in the past. So I'm not exactly sure. The answer to that question. But I do notice.
+
+
+176
+00:38:20.724 --> 00:38:23.327
+Luke Jessup: I've done a little bit of
+
+
+177
+00:38:25.821 --> 00:38:49.121
+Luke Jessup: like sort of ultrasound imaging primarily for like physiology research again, sort of looking at cardiovascular biomechanics looking at blood flow in vasculature in the past, and I have found a very big difference between these telemed systems that we're using here, compared to like a proper
+
+
+178
+00:38:49.331 --> 00:39:00.941
+Luke Jessup: full on medical ultrasound imaging setup. In that case that is far better for scanning vasculature and making those blood flow. Velocity measurements.
+
+
+179
+00:39:02.321 --> 00:39:31.071
+Luke Jessup: the main thing here is that you can see those connective tissues nice and cleanly, and that you've got a high enough frame rate. So again, I find that a frame rate of around 150 frames per second is excellent for fascicle tracking. I wouldn't want to go much lower than 120 or 100 Hertz for these automated methods. That's when I find there tends to be a lot more
+
+
+180
+00:39:31.251 --> 00:39:36.670
+Luke Jessup: noise or just inconsistencies in my fascicle length measurements from
+
+
+181
+00:39:37.384 --> 00:39:54.361
+Luke Jessup: the these tracking software. I'm just gonna set there again and try to share my screen.
+
+
+182
+00:40:05.141 --> 00:40:12.761
+Luke Jessup: Okay? And we'll go back to those fascicle length measures. So you'll see here, this is
+
+
+183
+00:40:13.581 --> 00:40:40.131
+Luke Jessup: excellent. You should be really happy if you get this sort of outcome from the ultrasound tracking again. You'd obviously want to verify this against data in the literature or your own sort of data from walking in the past. Again, this is from walking. So after this, you might want to sort of cut up this data
+
+
+184
+00:40:40.351 --> 00:40:43.250
+Luke Jessup: and compare it to walking data in the literature.
+
+
+185
+00:40:44.721 --> 00:40:49.261
+Luke Jessup: But we can also press, then this play button and see how well
+
+
+186
+00:40:49.551 --> 00:41:06.130
+Luke Jessup: it is tracking these fast fuel length changes. It should do a really solid job. Obviously, in data processing, we'll still do a little bit of filtering of these trajectories as well to get rid of some of the noise here. But
+
+
+187
+00:41:06.871 --> 00:41:25.661
+Luke Jessup: that's excellent. Another sort of sanity check as well is that optical flow is a really good method for detecting fascicle length changes again. It is just prone to drift, but it is sort of a good thing to compare
+
+
+188
+00:41:25.661 --> 00:41:43.300
+Luke Jessup: these sort of measures that we get here, which is sort of from an intermediate tracking between optical flow and line detection. But what we can do is change this parameter in this box, and make it much, much smaller
+
+
+189
+00:41:43.321 --> 00:42:06.841
+Luke Jessup: towards what would be optical flow. You should see, then, that this tends to drift out, but it should give you an idea, at least for the 1st couple of fascicle or the 1st couple of movement cycles. Whatever that movement cycle is, it should give you a good idea of what those fascicle length changes should be looking like throughout the entirety
+
+
+190
+00:42:07.491 --> 00:42:21.081
+Luke Jessup: of this ultrasound video. But we can then change this back to 0 point 0 1 if we wanted to, or make it slightly lower if we wanted to favor optical flow a little bit more.
+
+
+191
+00:42:21.461 --> 00:42:44.410
+Luke Jessup: Also, when you're sort of getting started up with this, it's worth pressing this Sa button. What that's going to do is perform a sensitivity analysis. It's going to go through step up by increments of sort of like one decimal place, so it will start at a really really low value for this parameter.
+
+
+192
+00:42:44.931 --> 00:42:50.331
+Luke Jessup: and then slowly work its way up towards one
+
+
+193
+00:42:51.001 --> 00:42:58.211
+Luke Jessup: and then spit out the ultrasound, the fascicle length that is measured for each of those different parameter values.
+
+
+194
+00:42:58.331 --> 00:43:00.630
+Luke Jessup: and then you can sort of
+
+
+195
+00:43:02.621 --> 00:43:08.870
+Luke Jessup: figure out what works best for you and and your ultrasound images with that parameter
+
+
+196
+00:43:10.321 --> 00:43:23.151
+Luke Jessup: And then, if we wanted to. We could go file, save tracking data as save as a matte file export it and then do our data processing on it. Have, you know, force data
+
+
+197
+00:43:23.803 --> 00:43:31.788
+Luke Jessup: from the same time. Cut this up into strides of data. And and look at it in that sense as well.
+
+
+198
+00:43:32.791 --> 00:43:44.740
+Luke Jessup: so that's that software pretty much for now that's all you need to know. But if there are any further questions that pop up down the line after you've played with this a bit more you can let me know, and we can talk about it.
+
+
+199
+00:43:45.717 --> 00:44:01.632
+Luke Jessup: Tim Vanderzee, Dr. Tim Vandersey, who's in this sort of Mc network as well. He's the person who created this software. And I'm sure he'd be able to answer any questions you have. As well,
+
+
+200
+00:44:02.451 --> 00:44:05.860
+Luke Jessup: so we can exit out of that.
+
+
+201
+00:44:06.491 --> 00:44:17.771
+Luke Jessup: And I'm going to sort of talk about the next fascicle length vision.
+
+
+202
+00:44:18.971 --> 00:44:20.031
+Luke Jessup: Yeah, I'm on.
+
+
+203
+00:44:20.031 --> 00:44:22.111
+Monica Daley (she, her): So question while you're switching.
+
+
+204
+00:44:22.301 --> 00:44:22.971
+Luke Jessup: Yeah.
+
+
+205
+00:44:23.541 --> 00:44:32.981
+Monica Daley (she, her): Have you compared manual tracking to this auto tracking for the same videos to see how, how they compare.
+
+
+206
+00:44:33.901 --> 00:44:35.700
+Luke Jessup: I haven't personally but
+
+
+207
+00:44:36.221 --> 00:44:47.780
+Luke Jessup: When I've spoken to Tim about this particular software it was a really extensive process that he went through involving manual tracking. I believe.
+
+
+208
+00:44:47.831 --> 00:45:06.760
+Luke Jessup: at least for this next software that I'm going to show you which is called ultrack, which is just optical flow. We have done those comparisons between the automated methods and the manual methods. And and it's yeah, really solid. So should be confident in what the measures are giving you
+
+
+209
+00:45:09.641 --> 00:45:14.056
+Luke Jessup: so get my bearings for a second.
+
+
+210
+00:45:14.931 --> 00:45:18.350
+Victoria Wood: We have one more question in the chat as well. When you.
+
+
+211
+00:45:18.741 --> 00:45:19.871
+Luke Jessup: 5 seconds.
+
+
+212
+00:45:20.651 --> 00:45:29.380
+Luke Jessup: Does the fascicle software? How does the software choose a fascicle? Is there variability in the length changes among fascicles? This is something that I need to
+
+
+213
+00:45:29.931 --> 00:45:53.990
+Luke Jessup: look into as well myself. A little bit more for this ultra team track stuff. This is a relatively new software. As far as I know, it uses those line detection methods, and we'll take an average of what lines are detected, and select that as its fascicle with those sort of deep and superficial borders created by the aponeuraces that are detected
+
+
+214
+00:45:54.431 --> 00:45:56.870
+Luke Jessup: in this next method that I'll show you
+
+
+215
+00:45:56.981 --> 00:46:25.391
+Luke Jessup: it is done manually, but in most cases it's done manually. But using the simple muscle architecture add-on in Image J. I've used that previously for automatically detecting fascicles within my ultrasound image, and then I've taken the coordinates of that fascicle that's detected in Image J, and
+
+
+216
+00:46:25.761 --> 00:46:46.631
+Luke Jessup: imported that into my ultrasound image as the fascicle. So that's like an automated way of doing it as opposed to manually doing it. So using image J in the simple muscle architecture, analysis, and that was created by Neil Cronin. If you're not familiar.
+
+
+217
+00:46:50.831 --> 00:46:51.546
+Luke Jessup: So
+
+
+218
+00:46:53.678 --> 00:47:01.111
+Luke Jessup: with this software that we're going to be using again. this is again, optical flow
+
+
+219
+00:47:01.841 --> 00:47:08.700
+Luke Jessup: involves a bit of drift problems. But it's insensitive to noise.
+
+
+220
+00:47:09.901 --> 00:47:39.225
+Luke Jessup: and there's going to be some discrepancies between this software versus using ultra tim tracks. optical flow, even though they're using the exact same method. There's something about the fusion of ultra of of methods used by ultra tim track at the moment that limits us from going into full optical flow, or at least it being the exact same output as I get from this ultra track software that I'm about to show you. That's something that Tim and I are working through at the moment.
+
+
+221
+00:47:40.342 --> 00:47:49.609
+Luke Jessup: so that we can just have everything in one software that can handle whatever movement you're interested in in tracking. But
+
+
+222
+00:47:50.191 --> 00:48:11.620
+Luke Jessup: at least, for now we can quite easily use this other software. And again, it's it's really good for sort of slower movements, controlled movements like those in a dynamometer, or movements like a Nordic hamstring curl, or maybe even like a sit to stand. So the video that we'll track in this software
+
+
+223
+00:48:11.731 --> 00:48:18.820
+Luke Jessup: is just from sort of slow, passive rotations of the ankle joint in a dynamometer.
+
+
+224
+00:48:22.461 --> 00:48:25.861
+Luke Jessup: So what we'll do is
+
+
+225
+00:48:27.001 --> 00:48:30.008
+Luke Jessup: go back into like our main
+
+
+226
+00:48:31.291 --> 00:48:34.130
+Luke Jessup: folder set up from the Google drive.
+
+
+227
+00:48:35.771 --> 00:48:40.631
+Luke Jessup: We're going to go into ultra track v. 5.3
+
+
+228
+00:48:41.581 --> 00:48:47.961
+Luke Jessup: and select this ultrack ultra track v. 5.3 matte script.
+
+
+229
+00:48:51.451 --> 00:48:54.771
+Luke Jessup: and then hopefully, that loads for us. Yep.
+
+
+230
+00:48:55.681 --> 00:49:00.720
+Luke Jessup: And then again, just click, run, and you should have this gui that pops up.
+
+
+231
+00:49:03.261 --> 00:49:11.279
+Luke Jessup: So again, I talk about this being, you know, a relatively drift, prone method. But there are ways that we can.
+
+
+232
+00:49:12.271 --> 00:49:15.221
+Luke Jessup: correct for some of that drift.
+
+
+233
+00:49:15.571 --> 00:49:30.597
+Luke Jessup: I'll just talk about that really, briefly, so if I was to open up that video file back from that walking data that we looked at just before. So this level walking map file, you don't have to follow along with this particular thing.
+
+
+234
+00:49:31.091 --> 00:49:36.020
+Luke Jessup: but I'll show you how. I'll show you just a strategy for working around drift here.
+
+
+235
+00:49:37.411 --> 00:49:52.740
+Luke Jessup: We can load in this ultrasound video file. And we can also load in a data file. So I can load in a c 3D file that contains you know, force data or market data.
+
+
+236
+00:49:53.741 --> 00:49:55.710
+Luke Jessup: So this is from the same trial
+
+
+237
+00:49:55.831 --> 00:50:00.020
+Luke Jessup: and down the bottom. Here now, we can see
+
+
+238
+00:50:01.811 --> 00:50:04.911
+Luke Jessup: all of these different options from my c 3D. File.
+
+
+239
+00:50:05.111 --> 00:50:09.330
+Luke Jessup: so I might load in force data
+
+
+240
+00:50:09.611 --> 00:50:20.251
+Luke Jessup: from in the Z in the Z direction. So I can then detect roughly or know where roughly, in the movement cycle I am.
+
+
+241
+00:50:21.121 --> 00:50:28.781
+Luke Jessup: I can then go to a really defined point in that movement cycle. I could then
+
+
+242
+00:50:28.811 --> 00:50:35.451
+Luke Jessup: manually set my fascicle, or manually choose my fascicle.
+
+
+243
+00:50:35.471 --> 00:50:52.860
+Luke Jessup: I could then go to tracking vascular tracking and then save that fascicle. And then in the next ultrasound video that I open up, I can go to that exact same point in the stride cycle load in that fascicle that I've used in the previous
+
+
+244
+00:50:52.861 --> 00:51:05.681
+Luke Jessup: trial. And then we're using the same fascicle for each individual ultrasound video. And that's ultimately what we want to do right for consistency and avoid bias where we can.
+
+
+245
+00:51:07.361 --> 00:51:24.391
+Luke Jessup: But that's really cool. And then again, like, once I go through this next video, this will make a little bit more sense. But we can then, with once this video has been tracked, go to these points in the stride cycle
+
+
+246
+00:51:24.471 --> 00:51:30.940
+Luke Jessup: and add what are called in this case keyframe corrections. So if we go to the exact same point
+
+
+247
+00:51:31.001 --> 00:51:55.081
+Luke Jessup: in the stride, cycle, or movement cycle. Throughout this movement video add keyframes to each point that's going to remove drift between those points. It essentially assumes that okay, this is the fascicle length here. It should be the same here, here, here, here, and then, that removes drift that way. So it should be a relatively flat.
+
+
+248
+00:51:55.261 --> 00:51:58.432
+Luke Jessup: flat output of of vascular length.
+
+
+249
+00:51:59.271 --> 00:51:59.756
+Luke Jessup: But
+
+
+250
+00:52:00.571 --> 00:52:08.500
+Luke Jessup: getting into the actual example that I want to talk about, and this is sort of from these passive ankle rotations. So
+
+
+251
+00:52:09.871 --> 00:52:13.310
+Luke Jessup: just following along with me, open video file.
+
+
+252
+00:52:14.151 --> 00:52:21.081
+Luke Jessup: choose this top. ROM, 24, t, 1,
+
+
+253
+00:52:23.291 --> 00:52:25.991
+Luke Jessup: that will load in this video. This is a
+
+
+254
+00:52:26.141 --> 00:52:32.557
+Luke Jessup: bit of a longer video. This one's about 20 something seconds long, so
+
+
+255
+00:52:33.919 --> 00:52:53.870
+Luke Jessup: or close to 30 seconds long. So this will take a little bit longer to process. And the disadvantage with this software at the moment is that it doesn't have that parallel pro parallel pool. Gee software for for processing, so it might take a little bit longer than ultra Tim track. In some cases.
+
+
+256
+00:52:54.359 --> 00:53:05.171
+Luke Jessup: What we're going to do is we're going to fix the region of interest. If we don't fix that region of interest, we tend to see that the region of interest that we select
+
+
+257
+00:53:05.291 --> 00:53:16.910
+Luke Jessup: again, region of interest will make more sense to you in a second, but that will sort of shift and turn with the optical flow. And sometimes that region of interest just ends up somewhere. We don't want it to be so.
+
+
+258
+00:53:17.031 --> 00:53:19.611
+Luke Jessup: I like to just fix this region of interest.
+
+
+259
+00:53:19.781 --> 00:53:24.730
+Luke Jessup: I'm then going to click, define Roi, define region of interest.
+
+
+260
+00:53:25.081 --> 00:53:27.990
+Luke Jessup: And then we can go onto our ultrasound image.
+
+
+261
+00:53:28.721 --> 00:53:44.801
+Luke Jessup: Starting along this sort of top aponeurosis, you can start along the bottom if you want, but we're just going to create a rectangle defining the region of interest that we're sort of interested in. Go along. This superficial aponeurosis
+
+
+262
+00:53:45.011 --> 00:53:50.171
+Luke Jessup: click on the corners, click down along this bottom
+
+
+263
+00:53:50.851 --> 00:54:01.531
+Luke Jessup: aponeurosis, and you can click as many times as you want. If you have more complex structures that you want to define as you read, as your region of interest or complex shapes.
+
+
+264
+00:54:02.421 --> 00:54:07.810
+Luke Jessup: and then finish it off at the end to, and just double click to do that.
+
+
+265
+00:54:08.651 --> 00:54:12.190
+Luke Jessup: you'll then have this sort of dotted region of interest.
+
+
+266
+00:54:12.791 --> 00:54:18.811
+Luke Jessup: You can then press define facicle. But I just wait a second
+
+
+267
+00:54:19.151 --> 00:54:25.021
+Luke Jessup: before you press, define fascol, or if you do, just double click in this space, and
+
+
+268
+00:54:25.301 --> 00:54:45.710
+Luke Jessup: you can then come back to defining fascal in a second. But you've got this res millimeters per pixel, and this is a value that you're going to have to determine yourself with whatever ultrasound setup you're using, whatever sort of ultrasound settings you're using.
+
+
+269
+00:54:46.595 --> 00:54:48.815
+Luke Jessup: This is essentially converting
+
+
+270
+00:54:49.621 --> 00:55:19.131
+Luke Jessup: length in pixels to length in millimeters. So we've got millimeters per pixel, and for me and for you to enter. In this case that value is going to be 0 point 0 9 3, and I've outlaid the instructions for determining what that value is in the documentation on the Google drive that I've uploaded, but make that value 0 point 0 9 3 and then click on define facicle again.
+
+
+271
+00:55:19.991 --> 00:55:22.601
+Luke Jessup: and then again.
+
+
+272
+00:55:24.331 --> 00:55:46.870
+Luke Jessup: this involves a little bit of experience, knowing where this fascicle should be insert, originating from where it's inserting to know how to define this fascicle. But we do this manually in this case, or like. I said we could use Image J, and then import the coordinates from image J to define your fascicle for you.
+
+
+273
+00:55:49.481 --> 00:55:59.100
+Luke Jessup: So I'm going to say, my fascicles originating from here. And let's just say it's finishing in this top right corner here.
+
+
+274
+00:56:00.547 --> 00:56:02.061
+Luke Jessup: And then
+
+
+275
+00:56:02.871 --> 00:56:18.070
+Luke Jessup: that's all you really need to do from here again you can go into tracking, fascicle tracking, save that fascicle reload in that fascicle for the next ultrasound video that you're processing.
+
+
+276
+00:56:19.161 --> 00:56:26.541
+Luke Jessup: But then we can just go again. Process all this is going to, then
+
+
+277
+00:56:26.911 --> 00:56:47.033
+Luke Jessup: go through process same as the Tim track, and then we'll get an output in the same again. This is just passive ankle rotation should. So it should be a really controlled movement. We're going about 5 degrees per second. So I think Dorsey, flexing
+
+
+278
+00:56:47.871 --> 00:57:01.820
+Luke Jessup: holding still, then Planar flexing, going down, holding still, and then Dorsey flexing again. So you should see a really controlled pattern like that, with the output from this tracking here
+
+
+279
+00:57:04.941 --> 00:57:11.461
+Luke Jessup: and again, while that's sort of taking its time, I might well, how long has that got to go?
+
+
+280
+00:57:13.121 --> 00:57:16.710
+Luke Jessup: We can wait for this. Actually, it shouldn't take too long.
+
+
+281
+00:57:17.161 --> 00:57:21.600
+Luke Jessup: Does anyone have any questions again, while we're waiting about this software.
+
+
+282
+00:57:26.281 --> 00:57:52.271
+Luke Jessup: the other neat thing about this software, too, is that you can sort of jump forward in time to find where maybe the fascicles at its shortest length, so that you've got that insertion and origin really clear in your image when it comes to, then defining your fascicle. This is what I recommend doing, trying to make sure that the fascicles at its shortest length when it comes to defining that. So again, you're not
+
+
+283
+00:57:52.281 --> 00:58:01.481
+Luke Jessup: extrapolating, you know, outside of this image to areas that you can't see too much when it comes to defining the fascicle.
+
+
+284
+00:58:01.791 --> 00:58:06.230
+Luke Jessup: So you can skip forward in this, find where the fascicles at its shortest.
+
+
+285
+00:58:06.361 --> 00:58:12.871
+Luke Jessup: compare or find where you are in the movement cycle based on that force data down the bottom
+
+
+286
+00:58:13.231 --> 00:58:16.981
+Luke Jessup: or whatever data it is. It might be market data and
+
+
+287
+00:58:18.261 --> 00:58:35.020
+Luke Jessup: then process from there. It's going to process forward in time, and then it'll process backwards in time as well to get any frames before before that which is a really neat feature as well.
+
+
+288
+00:58:36.491 --> 00:58:45.830
+Luke Jessup: unfortunately, I didn't have a c 3D. File for this particular for this particular movement. Hence why, I haven't shown you that, and I showed you one for walking instead.
+
+
+289
+00:58:54.301 --> 00:58:55.671
+Luke Jessup: Nearly done now.
+
+
+290
+00:59:01.610 --> 00:59:09.391
+Luke Jessup: So there we go. That's the outputted fascicle length. Trace up in the top right corner there, and you can see?
+
+
+291
+00:59:09.461 --> 00:59:34.921
+Luke Jessup: Not much drift happening at all. Really, really nice, really, really nice tracking in this sort of nice, slow, controlled movement. And again, if we did have C, 3D. File. Here, we'd be able to add those keyframes in different points. I recommend just doing that, anyway, to yeah, make sure we're accounting for any drift
+
+
+292
+00:59:34.931 --> 00:59:41.492
+Luke Jessup: again. I can press, play on this. It's going to go through frame by frame and show you the tracking
+
+
+293
+00:59:42.341 --> 00:59:45.569
+Luke Jessup: as well, and if you wanted to.
+
+
+294
+00:59:46.131 --> 00:59:58.441
+Luke Jessup: I think you can go file and save video as well. So you could save this video for a presentation or whatever you wanted to use it for as well.
+
+
+295
+01:00:00.331 --> 01:00:11.891
+Luke Jessup: and that's essentially the g the gist of that software. As well. If you've got any questions, let me know it's not too much more complicated than that.
+
+
+296
+01:00:14.131 --> 01:00:16.560
+Luke Jessup: I'll stop sharing over here.
+
+
+297
+01:00:21.141 --> 01:00:25.246
+Luke Jessup: Do you have a way to time sync these videos with
+
+
+298
+01:00:28.150 --> 01:00:36.871
+Luke Jessup: movement videos. It looks like the fascal length is maxing out? So for Jill's question,
+
+
+299
+01:00:39.851 --> 01:00:52.437
+Luke Jessup: you would want to have some sort of trigger out coming from your camera that you're using to record those movement videos from
+
+
+300
+01:00:53.731 --> 01:01:02.551
+Luke Jessup: to be able to sync these up down the line. That would be the ideal scenario. If not, you might want to have some sort of
+
+
+301
+01:01:05.081 --> 01:01:24.971
+Luke Jessup: yeah, you really just want to make sure that these are starting and stopping at the same time, or that you have some sort of biomechanical data that allows you to know. Okay, this is where my ultrasound data is at this time, and this is where my movement data is at this time. I haven't done this previously.
+
+
+302
+01:01:25.431 --> 01:01:36.580
+Luke Jessup: so I'm not really sure. The best answer to give you there other than try to make sure you've got some sort of setup. That allows you to trigger
+
+
+303
+01:01:36.791 --> 01:01:48.526
+Luke Jessup: both systems at at the same time. And stop at the same time. For Kisa again. This is exactly what we would want to see.
+
+
+304
+01:01:49.781 --> 01:01:52.571
+Luke Jessup: I'll go back to sharing my screen.
+
+
+305
+01:01:57.041 --> 01:02:10.676
+Luke Jessup: This is exactly what we'd want to see. Because again, we're going through these passive ankle rotations. So again, the the movement itself is actually starting neutral, going to
+
+
+306
+01:02:11.261 --> 01:02:13.491
+Luke Jessup: dorsiflexion.
+
+
+307
+01:02:13.971 --> 01:02:27.950
+Luke Jessup: staying at Dorsiflexion for a few seconds and then going down into plantar flexion. So this is just representing the fact that the ankle is being held still, which is which it is. Yeah, it's not maxing out. Shouldn't have any problems with that.
+
+
+308
+01:02:37.291 --> 01:02:40.681
+Luke Jessup: So I'll get back into the presentation.
+
+
+309
+01:02:57.361 --> 01:03:13.290
+Luke Jessup: So this is probably a slide that you'll want to come back to later on. It's really just showing you the range of settings that I personally think are worth experimenting with. To try to optimize your ultrasound image.
+
+
+310
+01:03:13.391 --> 01:03:27.850
+Luke Jessup: The optimal settings can vary from patient to patient, from muscle to muscle, depending on maybe the patient's body composition depending on the muscles, size, or depth in the image.
+
+
+311
+01:03:28.121 --> 01:03:32.381
+Luke Jessup: But the settings that are put in parentheses
+
+
+312
+01:03:33.001 --> 01:03:48.630
+Luke Jessup: on this slide here, I think, are good defaults to sort of start from, and we'll give you that sort of frame rate of 150 frames per second. With these particular types of ultrasound systems.
+
+
+313
+01:03:49.361 --> 01:04:14.860
+Luke Jessup: Again, one of the trade-offs with these settings is frame rate. So while it's important for the fascicle tracking to have clearly identifiable, deep, superficial ap neuroses and line like structures. So your fascicles, it's just as important to have a really high frame rate with these videos as well again, if you have a low frame rate, the tracking is just going to perform really poorly.
+
+
+314
+01:04:15.461 --> 01:04:26.952
+Luke Jessup: Typically, again, that high frame rate is at the expense of image quality. Maximum frame rate of these systems is around 210 to 220 frames per second.
+
+
+315
+01:04:27.571 --> 01:04:55.081
+Luke Jessup: But again, I think if you're aiming around 150 frames, 160 frames per second, I think that gives you a really good trade off between image quality and frame rate. I've also put an asterisk next to the settings that I've found have a big effect on frame rate as well. Those particular settings will change the depth and width
+
+
+316
+01:04:55.081 --> 01:05:06.741
+Luke Jessup: of the image. So the overall field of view of the image, as well as the number of ultrasonic beams used to scan images as well
+
+
+317
+01:05:07.081 --> 01:05:14.750
+Luke Jessup: again, for when it comes to things like depth and width, I find that with about a 50 depth.
+
+
+318
+01:05:14.751 --> 01:05:37.660
+Luke Jessup: we've got about 80% of view area so essentially width of the image. If you're going to like a 60 depth, you're going to have to reduce that that view area a little bit, let's say to 70%. Because again, we've got a bigger field of view, and that's going to have a significant effect on the
+
+
+319
+01:05:37.691 --> 01:05:43.810
+Luke Jessup: maximum frame rate that you can get out of the system. So these are good starting points.
+
+
+320
+01:05:57.985 --> 01:06:11.977
+Luke Jessup: And there's also this setting as well which is a little bit harder to find. That's in the options. Pane in the echo wave software that we're using.
+
+
+321
+01:06:12.761 --> 01:06:29.931
+Luke Jessup: But this also yeah, has a profound effect on frame rate. It's the sign size which essentially changes the number of frames that can be collected if you just let the software run. So we want to make sure that we Max, that out to get the most out of the system.
+
+
+322
+01:06:30.271 --> 01:06:40.524
+Luke Jessup: Jill's got a software. Is there a way to add a universal timestamp to the ultra to the imaging from the ultrasound setup. That's a really good question.
+
+
+323
+01:06:41.601 --> 01:06:46.241
+Luke Jessup: I'll have a look and get back to you. I again. I haven't really
+
+
+324
+01:06:46.501 --> 01:07:15.740
+Luke Jessup: worked with this outside of like a motion capture setup where we've got sort of sync signals being sent from one device to the other. But I can imagine maybe if you had a universal timestamp, or you know you had the dates and time in real time from the ultrasound machine and from your video recording device, maybe you could sync things up that way. It's a good point. We should look into that and and talk about that
+
+
+325
+01:07:22.381 --> 01:07:27.001
+Luke Jessup: and I guess to sort of wrap up with
+
+
+326
+01:07:27.591 --> 01:07:43.391
+Luke Jessup: sort of listing, listing some advantages and disadvantages of of maybe ultrasound with, say, sonar, micrometry, sonar micrometry, where we're instead sort of surgically implanting 2 sensors along the length of
+
+
+327
+01:07:43.421 --> 01:08:06.250
+Luke Jessup: fascicle to make fascicle length measurements. Of course, this being a technique used for animal research, not humans at the moment, but really a lot of this is pretty intuitive right. The main advantages of using ultrasound are that it's non-invasive. You get a bit more detail about the movement of surrounding structures.
+
+
+328
+01:08:06.251 --> 01:08:15.240
+Luke Jessup: and it's highly importable. It's highly portable and easy to set up and sync with other devices. The main real drawback here
+
+
+329
+01:08:15.621 --> 01:08:39.001
+Luke Jessup: is, sort of the temporal resolution. So maxing out at around 200, if 200 ish frames per second, if you're really sacrificing image quality as well as the fact that there's a reliance on computer vision which obviously isn't without its bugs and problems as well.
+
+
+330
+01:08:39.541 --> 01:09:06.300
+Luke Jessup: But again, I've sort of put together a list of procedures for processing ultrasound data, using the programs that we did that we played around with today. And of course you can reach out to me on, on slack or or this email down the bottom here, if you have any questions as well, and again feel free to sign in if you haven't already and give feedback on all the workshops to this point.
+
+
+331
+01:09:08.311 --> 01:09:13.551
+Luke Jessup: Yeah, if anyone has any more questions, but that's about it for me.
+
+
+332
+01:09:30.681 --> 01:09:32.591
+Monica Daley (she, her): That was really useful. Thank you.
+
+
+333
+01:09:33.451 --> 01:09:34.331
+Monica Daley (she, her): It's cool.
+
+
+334
+01:09:38.791 --> 01:09:55.700
+Luke Jessup: I'm glad. And yeah, it is just one of those things. If you've got access to an ultrasound machine, play around with it, get hands on because a lot of what I talk today it's great to be able to just say that on a presentation. But it's another thing to actually see it for yourself, and play around with these different things.
+
+
+335
+01:10:09.191 --> 01:10:10.040
+Monica Daley (she, her): All right.
+
+
+336
+01:10:10.141 --> 01:10:16.211
+Monica Daley (she, her): Does anybody have any more questions before we wrap up for today?
+
+
+337
+01:10:21.331 --> 01:10:27.781
+Kiisa Carla Nishikawa: Luke, I have a question, and it's more of like a maybe a theoretical question. But I would say,
+
+
+338
+01:10:29.041 --> 01:10:37.210
+Kiisa Carla Nishikawa: you know, what do you think are the limitations for using ultrasound to really study dynamic movement
+
+
+339
+01:10:37.721 --> 01:10:50.261
+Kiisa Carla Nishikawa: so as opposed to, I mean, our is kind of about like how we investigate. You know, dynamic movement versus more static and quasi static type movements. And so.
+
+
+340
+01:10:51.541 --> 01:10:57.651
+Monica Daley (she, her): So what do you think are like the strengths and weaknesses of this approach in particular? For dynamic.
+
+
+341
+01:10:58.721 --> 01:11:18.970
+Luke Jessup: Yeah, you know, I think the main limitation is the frame rate with a lot of the devices that we're using. Obviously, we can get those up to sort of 2,000 hertz, and we like to have them up with a really high frame rate. But for this we are really limited to maybe 150 hertz. If you want a good trade off
+
+
+342
+01:11:19.111 --> 01:11:42.861
+Luke Jessup: a good trade off there. But I think you know, just based on my experience, and we're doing some perturbed movement stuff at the moment where we really want to hone in on sort of that preflex phase of muscle. And I think it's going to be fine even for that sort of stuff as well given the ultrasound tracking algorithms that we've currently got.
+
+
+343
+01:11:42.861 --> 01:11:55.771
+Luke Jessup: I think if you asked me a few years ago what the biggest limitation would be. It would be that we're using optical flow and that it's prone to a lot of drift. But now I think that issue has been taken care of.
+
+
+344
+01:11:56.041 --> 01:12:00.821
+Luke Jessup: So I think it really, the main issue is the frame rate and just
+
+
+345
+01:12:01.411 --> 01:12:05.730
+Luke Jessup: expertise getting hands on using it. And
+
+
+346
+01:12:07.461 --> 01:12:17.851
+Luke Jessup: yeah, I think that's it, and that the integration with motion capture systems initially is a little bit to get your head around. But it's really not too bad, either. So
+
+
+347
+01:12:18.261 --> 01:12:23.930
+Luke Jessup: yeah, I think it's overall pretty good for what we would want to use it for, at least.
+
+
+348
+01:12:26.861 --> 01:12:27.511
+Kiisa Carla Nishikawa: Thanks.
+
+
+349
+01:12:28.111 --> 01:12:28.741
+Luke Jessup: Okay.
+
+
+350
+01:12:31.271 --> 01:12:34.011
+jill mcnitt-gray: Is this something we can try in a pop up arena.
+
+
+351
+01:12:34.981 --> 01:12:42.690
+jill mcnitt-gray: But video stitching at even a hundred 20 frames per second.
+
+
+352
+01:12:45.031 --> 01:12:51.621
+Luke Jessup: Yeah, I'm still not really familiar with the. So pop up arena just being like a pop up just set up just.
+
+
+353
+01:12:51.921 --> 01:13:16.901
+jill mcnitt-gray: So like, so we're exploring ways of integrating information. That's why I was asking all the time sync questions. Right? So yeah, because, like, it gives you context, right of what's happening, the individual muscle, what its role might be in the movement. And it may help bring more people understanding where we are in the context of the
+
+
+354
+01:13:17.051 --> 01:13:34.701
+jill mcnitt-gray: of what's happening at the muscle, in the context of the the bigger task. And so we're looking at ways of streamlining that piece of it so the understanding can come about. So that'd be really awesome to try some of those things and experiment. We're not too far away from each other. Maybe we can arrange for something like that.
+
+
+355
+01:13:35.061 --> 01:13:46.380
+Luke Jessup: Yeah, that'd be awesome. And again, sort of it. It's really nice in that. It is a relatively portable setup. The only problem potentially is that you know it needs
+
+
+356
+01:13:46.431 --> 01:14:07.058
+Luke Jessup: a power source. So you and and you would obviously need to like if you were outside of like a treadmill setup, and you had like a runway or something like that, you would need the module strapped onto the participants back in some way and long enough power cords, or some, you know,
+
+
+357
+01:14:08.338 --> 01:14:28.473
+Luke Jessup: portable charging system as well to to have going with it as well as well as having yeah. Obviously a long enough cord that or USB cord that's going from the device into the laptop that you're recording things from as well. So there's a few challenges there with portability that we'd have to work through. But
+
+
+358
+01:14:29.011 --> 01:14:37.311
+Luke Jessup: yeah, that comment about a universal timestamp is has got me thinking as well. So yeah, we should chat chat more about potentially using it.
+
+
+359
+01:14:37.711 --> 01:14:59.441
+jill mcnitt-gray: Yeah. So we've I mean, with the evolution of telemeter, dmg, and these kind of things we've gone from cords to telemeter, and those kind of things. I just don't know where ultrasound is, and and that space. Some of that technology existed, probably in other domains. So but we can chat further about kind of what we might be able to put together and integrate. So thank you. This is really helpful.
+
+
+360
+01:14:59.771 --> 01:15:00.561
+Luke Jessup: That'd be cool.
+
+
+361
+01:15:01.931 --> 01:15:06.911
+Monica Daley (she, her): I think ultrasound is pretty data intensive. So you might face
+
+
+362
+01:15:07.021 --> 01:15:19.900
+Monica Daley (she, her): some bandwidth limitations with telemeter data where you have to make even more pronounced trade-offs between, like the resolution and frame rate, than you would with the wired version of the system. Right.
+
+
+363
+01:15:19.901 --> 01:15:41.630
+jill mcnitt-gray: Yeah, I keep thinking about our instrumented cross country skiing in the snow with little data processes and butt packs and things like that where it might be saved locally, and then transmitted. So it's not real time, but it would be. The movement would be authentic. But the data could be if time stamped could be integrated a later date. Yeah.
+
+
+364
+01:15:46.541 --> 01:15:55.641
+Luke Jessup: Yeah. And this is sort of the the module and sort of system that I've shown you today is just one system, but it tends to be the one that's used across
+
+
+365
+01:15:55.951 --> 01:16:07.870
+Luke Jessup: all of our sort of labs. I'm not sure I haven't looked too much into like. There was a comment there about wireless ultrasound systems. Again, I suspect Monica's comment would be important for
+
+
+366
+01:16:08.211 --> 01:16:12.201
+Luke Jessup: for that but could be could be cool to look into.
+
+
+367
+01:16:12.431 --> 01:16:16.141
+jill mcnitt-gray: Yeah, especially as we get into like the risk reward. And you know.
+
+
+368
+01:16:16.641 --> 01:16:24.810
+jill mcnitt-gray: challenges and choice. And these kind of things. It's nice to see where we are, and then what what might be feasible in that space.
+
+
+369
+01:16:25.451 --> 01:16:30.330
+Monica Daley (she, her): And it's clearly relevant to the theme of Mc. Of trying to integrate across scales
+
+
+370
+01:16:39.771 --> 01:16:43.961
+Monica Daley (she, her): any other points for discussion questions.
+
+
+371
+01:16:47.391 --> 01:16:51.721
+Monica Daley (she, her): Luke, what's the typical size of the field of view that you're getting.
+
+
+372
+01:16:55.671 --> 01:16:59.331
+Luke Jessup: I measured this the other day. How do I not remember this?
+
+
+373
+01:16:59.431 --> 01:17:10.160
+Luke Jessup: So 50 depth by probably like 40 width.
+
+
+374
+01:17:11.881 --> 01:17:17.160
+Luke Jessup: I think that's about what it is. But again you can go. You can go deeper than that.
+
+
+375
+01:17:17.331 --> 01:17:22.091
+Luke Jessup: But you would sacrifice the width of your image a little bit as well.
+
+
+376
+01:17:24.371 --> 01:17:33.941
+Monica Daley (she, her): It's too bad that it's probably the probes are a little too heavy for a guinea Fowl to be carrying around because you could image most of the entire muscle, plus the muscle tendon junction
+
+
+377
+01:17:33.941 --> 01:17:34.501
+Monica Daley (she, her): with that
+
+
+378
+01:17:34.501 --> 01:17:40.721
+Monica Daley (she, her): field of view in a guinea fowl. But it would be a bit much for it to strap on its leg.
+
+
+379
+01:17:40.721 --> 01:17:47.086
+Luke Jessup: So I think so. Yeah, on its leg especially. It's not just like the the
+
+
+380
+01:17:47.691 --> 01:17:51.091
+Luke Jessup: the weight of it, but the it's just a bulky
+
+
+381
+01:17:52.061 --> 01:17:55.311
+Luke Jessup: in that like in that size, that scale of things. Yeah.
+
+
+382
+01:17:55.311 --> 01:17:58.571
+Monica Daley (she, her): The cable's bulky, so it would restrict movement as well.
+
+
+383
+01:17:59.451 --> 01:18:06.071
+Monica Daley (she, her): Do you? How do you manage? Is cable management a problem for these studies?
+
+
+384
+01:18:06.891 --> 01:18:07.721
+Monica Daley (she, her): How do you deal with that.
+
+
+385
+01:18:07.721 --> 01:18:16.221
+Luke Jessup: And it can be a little bit of a problem. With making sure that the
+
+
+386
+01:18:16.381 --> 01:18:33.471
+Luke Jessup: the cord going out to the ultrasound probe isn't hitting on the treadmill belts when we're doing treadmill studies. So we typically have to like tape down the cord in some way that restricts it from doing that, but
+
+
+387
+01:18:33.651 --> 01:18:45.841
+Luke Jessup: otherwise no, the the cable management isn't too bad. You just got a long cable coming out of your analog box, whatever that is going into your ultrasound system sometimes that can get a little in the way. But
+
+
+388
+01:18:46.211 --> 01:18:54.590
+Luke Jessup: I haven't. Yeah. I haven't had any problems in here, at least in our lab. Haven't had any problems, not not in my lab at Uq either. So.
+
+
+389
+01:18:57.371 --> 01:19:07.921
+Victoria Wood: Similar question about setup. Do you ever have issues with like slippage during your tests and things? It looks like you were just kind of strapping it in with a stand.
+
+
+390
+01:19:08.171 --> 01:19:09.779
+Luke Jessup: Yeah, that's a good question.
+
+
+391
+01:19:10.491 --> 01:19:12.271
+Luke Jessup: and again, I think in the past
+
+
+392
+01:19:12.561 --> 01:19:15.230
+Luke Jessup: we might have had some issues
+
+
+393
+01:19:15.421 --> 01:19:30.735
+Luke Jessup: with that when I didn't have enough when I didn't have that that piece of phone made has made a big difference. Just sitting that next to the ultrasound probe. I know that sounds like pretty like a pretty crude way of doing things. But
+
+
+394
+01:19:31.501 --> 01:19:36.522
+Luke Jessup: having that sitting next to it really helps make sure of that.
+
+
+395
+01:19:37.221 --> 01:20:01.561
+Luke Jessup: I, but I haven't had any issues with slippage or anything. You've just got to make sure that it's strapped down as tight as it can within the participants comfort level, and also making sure obviously, that you're not deforming the muscle too much. Having that probe over the top of it and strapping it down too much, too. So it's a bit of a balance. But really with enough of that. Co. Band. It's
+
+
+396
+01:20:02.391 --> 01:20:11.200
+Luke Jessup: Co. Band is my life. I love Co. Band. Enough of that really does the job? The same.
+
+
+397
+01:20:11.201 --> 01:20:13.601
+Monica Daley (she, her): Buy that stuff in bulk in the lab.
+
+
+398
+01:20:13.601 --> 01:20:21.871
+Luke Jessup: Yeah, yeah, 3, usually. Yeah. 3 roles. A testing session will go through of Co band.
+
+
+399
+01:20:28.551 --> 01:20:29.451
+Monica Daley (she, her): All right.
+
+
+400
+01:20:29.881 --> 01:20:37.101
+Monica Daley (she, her): Well, unless there's any other questions, maybe we're ready. Do we need to do the sign in thing again in case anybody joined late or.
+
+
+401
+01:20:38.042 --> 01:20:42.281
+Victoria Wood: Yeah, I can also put that into the slack.
+
+
+402
+01:20:42.839 --> 01:20:46.151
+Victoria Wood: Here, let me just copy this link. Now on.
+
+
+403
+01:20:47.241 --> 01:20:48.820
+Victoria Wood: Okay, let me use it.
+
+
+404
+01:20:51.121 --> 01:21:02.020
+Victoria Wood: I did also. Want to remind you all. We have the workshop next week, going back to our normal Thursday schedule, and that will be an introduction to mechanics, the muscular skeletal system.
+
+
+405
+01:21:02.381 --> 01:21:20.310
+Victoria Wood: So be sure to join that. And then also I sent out the entry survey earlier this week. So if you didn't receive a link, this would be to trainees and mentors if you didn't receive a link. Let me know, and if you've already started your project. Please be sure to fill that out as soon as you can.
+
+
+406
+01:21:20.989 --> 01:21:34.611
+Victoria Wood: And then, just as a reminder as well as you kind of go through your projects. Remember to take a look at the mentorship curriculum this summer. It's kind of a little bit asynchronous for now, but I will send out more reminders as the live sessions come up.
+
+
+407
+01:21:36.161 --> 01:21:38.880
+Victoria Wood: I think that's all I have.
+
+
+408
+01:21:39.121 --> 01:21:41.071
+Victoria Wood: So thank you all.
+
+
+409
+01:21:41.071 --> 01:21:49.530
+Monica Daley (she, her): Well, thanks, Victoria. And also, thank thanks, Luke, that was really useful. And thanks for sharing the data and the software to play around with. It'll be cool.
+
+
+410
+01:21:49.531 --> 01:21:52.990
+Luke Jessup: It's okay. Cool. Yeah. Let me know if you want more to play around with.
+
+
+411
+01:21:53.591 --> 01:21:54.441
+Monica Daley (she, her): Yeah. Cool.
+
+
+412
+01:21:54.441 --> 01:21:54.991
+Monica Daley (she, her): Thanks.
+
+
+413
+01:21:54.991 --> 01:21:55.441
+Luke Jessup: Thank you.
+
+
+414
+01:21:55.441 --> 01:21:56.520
+Monica Daley (she, her): Bye, bye, everyone.
+
+
+415
+01:21:56.521 --> 01:21:57.421
+Victoria Wood: Hi! Everyone.
+
+
+

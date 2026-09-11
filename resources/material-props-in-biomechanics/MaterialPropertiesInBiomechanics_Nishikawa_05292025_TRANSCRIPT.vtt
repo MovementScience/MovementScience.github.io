@@ -1,0 +1,2163 @@
+WEBVTT
+
+1
+00:00:08.637 --> 00:00:14.437
+Kiisa Carla Nishikawa: Okay? Well, maybe I should go ahead and get started.
+
+
+2
+00:00:15.127 --> 00:00:17.917
+Kiisa Carla Nishikawa: I'll go back and share my screen.
+
+
+3
+00:00:33.097 --> 00:00:48.417
+Kiisa Carla Nishikawa: Okay, Hi, everybody. My name is Kisa Nishikawa for those of you whom I haven't met yet, and I'm a professor at Northern Arizona University, and I'll be giving the workshop today in just a few minutes
+
+
+4
+00:00:48.657 --> 00:01:06.826
+Kiisa Carla Nishikawa: I'll get started. But I wanted to make a few announcements first.st So I wanted to remind you that, you know, starting last week, we are having typically every Thursday workshops, although there is one that's on Wednesday.
+
+
+5
+00:01:07.297 --> 00:01:10.207
+Kiisa Carla Nishikawa: Wednesday, I believe it is due to a holiday.
+
+
+6
+00:01:10.417 --> 00:01:18.947
+Kiisa Carla Nishikawa: So next week, at the same time, Monica daily will talking about. We'll be talking about scaling and dimensional analysis.
+
+
+7
+00:01:19.317 --> 00:01:33.887
+Kiisa Carla Nishikawa: and for trainees you can use this QR. Code to sign in, or the link here, and and please do give feedback on the presentation here.
+
+
+8
+00:01:34.407 --> 00:01:45.907
+Kiisa Carla Nishikawa: and a June 19th workshop is rescheduled to June 18.th So that's the one day that you'll need to remember, it's a Wednesday.
+
+
+9
+00:01:46.947 --> 00:01:50.536
+Kiisa Carla Nishikawa: Okay, so let's see.
+
+
+10
+00:01:50.937 --> 00:02:19.007
+Kiisa Carla Nishikawa: yeah. Okay, so the title of my talk that I started with, you know, several weeks ago, when we were putting the program together is material properties in biomechanics. And actually, I don't know if it was a good thing or a bad thing. Oh, let me just minimize this. So you can see the slides. But I decided to Google material properties in biomechanics. And this is what I found
+
+
+11
+00:02:19.007 --> 00:02:24.847
+Kiisa Carla Nishikawa: material character, mechanical characteristics of bone, cartilage and tendons.
+
+
+12
+00:02:25.497 --> 00:02:37.777
+Kiisa Carla Nishikawa: and I was like what no muscles. So I had to adjust my title a little bit. So what I'm actually going to be talking with you about today is material properties in muscle mechanics.
+
+
+13
+00:02:38.227 --> 00:03:03.907
+Kiisa Carla Nishikawa: So let me just say, at the outset, I guess I can see the chats do pop up for me. So if you have questions along the way, please. Do you know, either put them in the chat, or you know this should be very informal and as much discussion as possible as we go along. So please feel free to just turn on your microphone and interrupt me and ask a question.
+
+
+14
+00:03:06.717 --> 00:03:25.356
+Kiisa Carla Nishikawa: So so I want to, particularly, you know. Thank all the people who've contributed to the things that we've been doing in my lab as well as the funding agencies. But I particularly want to call out Rick Kassler from Mit, who has really been a major
+
+
+15
+00:03:25.507 --> 00:03:29.306
+Kiisa Carla Nishikawa: collaborator, and the work that I'm going to talk about today.
+
+
+16
+00:03:29.967 --> 00:03:40.786
+Kiisa Carla Nishikawa: So how I got started in being interested in biomechanics, and some of you who've known me for 20 plus years know this
+
+
+17
+00:03:41.047 --> 00:03:48.087
+Kiisa Carla Nishikawa: was studying how frogs and toads like the one shown here catch bugs.
+
+
+18
+00:03:48.357 --> 00:04:08.627
+Kiisa Carla Nishikawa: and if you've ever tried to catch a fly, you know, I guess maybe it was the Karate Kid could do it, but most of us can't catch a fly with our bare hands, and when amphibians have these projectile tongues that they can project from their mouths incredibly fast.
+
+
+19
+00:04:08.777 --> 00:04:21.396
+Kiisa Carla Nishikawa: and it turns out that their jaw opening muscles are relatively short. They can never be actively stretched, because that they're at their longest length.
+
+
+20
+00:04:25.457 --> 00:04:42.367
+Kiisa Carla Nishikawa: when the mouth is fully closed, and there's a kind of a catch mechanism, so that the jaws open extremely rapidly, but very short tendons, so these muscles themselves must, you know.
+
+
+21
+00:04:42.367 --> 00:05:01.216
+Kiisa Carla Nishikawa: store enormous amounts of energy. But where in a muscle energy is stored, and how this might happen remains, unclear. But as I'm going to tell you in the end of my story today, it'll all come back to material properties of muscle.
+
+
+22
+00:05:01.647 --> 00:05:26.937
+Kiisa Carla Nishikawa: So this is where it started and where we'll start today. And this is an outline of you know what I want to talk with you about today. So viscoelasticity is the foundation of power, amplification, and that can be whether you're a muscle or a tendon, or even sometimes animals with flexible bones can actually get some power amplification from their bones.
+
+
+23
+00:05:27.057 --> 00:05:52.037
+Kiisa Carla Nishikawa: The basis of viscoelasticity is springs and dampers. So we're going to really start simple right from the beginning, and we'll talk about springs and dampers and types of simple viscoelastic models and their properties. We'll talk about different experiments that can be used to measure viscoelastic properties and some early work that was done in the mid 19 nineties.
+
+
+24
+00:05:52.177 --> 00:06:15.876
+Kiisa Carla Nishikawa: and then I'll talk a little bit about my current work on muscles as tunable viscoelastic materials, and I'll show you some examples from some studies we've done on mouse and frog muscles. And then this last hot off the press part is going to be moving from viscoelasticity and viscoelastic models to understand muscle power and energy storage.
+
+
+25
+00:06:15.977 --> 00:06:25.127
+Kiisa Carla Nishikawa: So we'll talk about power, amplification, and dissipation, and we'll talk about energy, storage and recovery
+
+
+26
+00:06:26.827 --> 00:06:49.297
+Kiisa Carla Nishikawa: so for those of you trainees who are completely new to this field. There will be math very simple math, just, you know, like plain old algebra. I don't think we even have any calculus in the talk. I think I avoided derivatives and integrals.
+
+
+27
+00:06:49.297 --> 00:07:03.316
+Kiisa Carla Nishikawa: and there will also be some physics. So please do interrupt along the way. If you have a question or something isn't clear, because if you're not getting it, there's probably at least 5 other people on the Zoom call who aren't getting it as well.
+
+
+28
+00:07:04.267 --> 00:07:07.337
+Kiisa Carla Nishikawa: So let's start with simple springs.
+
+
+29
+00:07:07.863 --> 00:07:12.736
+Kiisa Carla Nishikawa: So we have a linear spring or spring. We can hang weights
+
+
+30
+00:07:13.007 --> 00:07:39.367
+Kiisa Carla Nishikawa: of, you know, varying mass from masses of varying weight from the spring, and we see that the force exerted on the spring by the mass displaces the spring by an amount. X. And it turns out that for linear springs we have Hooke's law, where the force
+
+
+31
+00:07:40.307 --> 00:08:01.427
+Kiisa Carla Nishikawa: of is equal to the spring, constant K times the displacement. X. Right and and the spring constant is a characteristic of materials. So stiffer materials have a higher spring. Constant, and more compliant materials have a lower spring constant.
+
+
+32
+00:08:01.457 --> 00:08:10.956
+Kiisa Carla Nishikawa: We can also write this in a non-dimensional form, where Sigma is a stress
+
+
+33
+00:08:11.507 --> 00:08:25.736
+Kiisa Carla Nishikawa: E is the elastic modulus, and I should say, and epsilon is the strain or the change in length, and for many materials they will actually have
+
+
+34
+00:08:25.737 --> 00:08:40.807
+Kiisa Carla Nishikawa: sort of a hooky in behavior at small strains. But eventually I don't know if you played with slinkies when you were a kid. But I used to play with slinkies, and I always broke them, and they always got stretched beyond their
+
+
+35
+00:08:40.807 --> 00:08:57.386
+Kiisa Carla Nishikawa: limit, where they yield, and they no longer return to their original shape. So at some, you know, at some high strain, we can, you know, break the the spring, and it won't have a Hookian behavior anymore.
+
+
+36
+00:08:57.587 --> 00:09:07.747
+Kiisa Carla Nishikawa: And the nice thing about you know that as you know, the
+
+
+37
+00:09:08.077 --> 00:09:26.806
+Kiisa Carla Nishikawa: linear springs or any springs, really, as I'll show you in a minute is, we can scale these relationships from the whole muscle level down to, you know, an individual thick filament that might be interacting with 6 Titan molecules and 3 thin filaments in a muscle Sarcomere.
+
+
+38
+00:09:27.087 --> 00:09:35.427
+Kiisa Carla Nishikawa: So so all of these viscoelastic properties are going to scale nicely over large ranges of
+
+
+39
+00:09:39.047 --> 00:09:40.656
+Kiisa Carla Nishikawa: stress and strain.
+
+
+40
+00:09:41.197 --> 00:10:01.757
+Kiisa Carla Nishikawa: And so the next kind of you know, simple viscoelastic property is, you know, the viscous forces, and in the simplest case we have what's called a linear damper, so damping is usually much less familiar to
+
+
+41
+00:10:01.797 --> 00:10:18.036
+Kiisa Carla Nishikawa: you know, my students in my biomechanics class, then, is the spring constant. And so when we think about a damper, we could think of a cylinder filled with fluid and a piston. And so if we apply a force or a stress
+
+
+42
+00:10:18.387 --> 00:10:40.156
+Kiisa Carla Nishikawa: to the piston will compress the fluid, the fluid will, the piston will move downwards. In this case the fluid will be displaced. And what happens is that we, the force that we require to displace the fluid, is going to increase, not with the
+
+
+43
+00:10:40.157 --> 00:11:06.577
+Kiisa Carla Nishikawa: strain, but with the strain rate. So we have a damping force that's equal to the damping, constant times, the rate of displacement which here is denoted by X dot. And we can also have non-dimensional equations for the damping. So we have a non-dimensional damping modulus, just like the elastic modulus.
+
+
+44
+00:11:06.817 --> 00:11:08.714
+Kiisa Carla Nishikawa: and we have
+
+
+45
+00:11:09.627 --> 00:11:17.887
+Kiisa Carla Nishikawa: The stress, then, is equal to. You know the dampy modulus times, the strain rate.
+
+
+46
+00:11:18.277 --> 00:11:25.506
+Kiisa Carla Nishikawa: And one example I like to think about, and I don't know if this one I gave you the example of the slinky before. But
+
+
+47
+00:11:25.687 --> 00:11:40.476
+Kiisa Carla Nishikawa: an example of viscous forces is like when you're trying to remove, you know, snails from the basil in your garden, and the faster you pull the the more force
+
+
+48
+00:11:41.287 --> 00:11:59.656
+Kiisa Carla Nishikawa: the snail exerts. You know it's hard, the faster you pull, the harder it is to pull the snail off your basil, but if you pull really really slowly, you can easily remove it, and the snail can crawl very slowly over your basil leaves while eating them.
+
+
+49
+00:12:00.247 --> 00:12:14.446
+Kiisa Carla Nishikawa: So now, what we can do is we can take these simple elements, springs and dash pots, and we can build up many different models of this different viscoelastic materials, each one with
+
+
+50
+00:12:14.827 --> 00:12:34.437
+Kiisa Carla Nishikawa: unique characteristics. I mean, we can make these more or less complicated. So the simplest 2 element viscoelastic models are called a Maxwell model after the famous physicist Maxwell, which is a spring and a damper in series.
+
+
+51
+00:12:34.757 --> 00:12:39.567
+Kiisa Carla Nishikawa: or we can have a Kelvin Voight, also famous physicist.
+
+
+52
+00:12:39.727 --> 00:13:06.407
+Kiisa Carla Nishikawa: a Kelvin Voight, model of a spring and a damper in parallel. We can build up 3 element models, 4 element models, 5 element models, you know, N. Element models we could have, you know, N. Springs and K dampers in any configuration. And in principle we could analyze the app. You know, we could. We could
+
+
+53
+00:13:06.607 --> 00:13:31.137
+Kiisa Carla Nishikawa: write a math model that would predict how these different viscoelastic materials will behave when we deform them. And I just want to point out a couple of the more common ones. So this is kind of like a standard viscoelastic, solid. Here, where you have a Maxwell element in parallel with a spring.
+
+
+54
+00:13:31.137 --> 00:13:43.717
+Kiisa Carla Nishikawa: a hill model has the same components, but they're arranged in a slightly different way with the spring outside of the Kelvin void, or a spring in series with the Kelvin Voigt element.
+
+
+55
+00:13:43.957 --> 00:13:52.936
+Kiisa Carla Nishikawa: We can have 2 Maxwell elements in parallel. We can have 2 Kelvin Voigt elements in series.
+
+
+56
+00:13:53.167 --> 00:14:04.236
+Kiisa Carla Nishikawa: and we can build up models now where we have, you know, 5 or more elements. And for the purposes of this talk, this is as complicated as we're going to get.
+
+
+57
+00:14:04.897 --> 00:14:12.007
+Kiisa Carla Nishikawa: Okay. So now we can look at some of the behaviors of the different simple models.
+
+
+58
+00:14:12.337 --> 00:14:25.657
+Kiisa Carla Nishikawa: So the Max, the Maxwell model, has a spring and a damper in series, and interestingly, the you know, the behavior of this model is that stress
+
+
+59
+00:14:25.897 --> 00:14:37.976
+Kiisa Carla Nishikawa: in this. So remember that's force divided by area in the spring and the damper are equal. But the strain is unequally distributed between the 2 elements.
+
+
+60
+00:14:38.197 --> 00:14:49.687
+Kiisa Carla Nishikawa: And this is our simple constitutive equation. So if we have stress as a function of time is equal to the elastic modulus times the strain at time. T.
+
+
+61
+00:14:49.877 --> 00:15:03.006
+Kiisa Carla Nishikawa: And that would be this stress in the damper. I'm sorry the stress in the spring, and then we have the stress in the damper, which is the damping modulus times. The strain rate at time. T.
+
+
+62
+00:15:03.557 --> 00:15:27.716
+Kiisa Carla Nishikawa: The Kelvin-void model shows exactly the opposite behavior. So the strain and the spring and the damper are equal, but the stress is distributed. So the total stress as a function of time is equal to the elastic modulus times, the strain at time, t plus the damping modulus times the strain rate at time. T.
+
+
+63
+00:15:27.717 --> 00:15:37.377
+Kiisa Carla Nishikawa: So we see already, even in these very simple models that they behave very differently and distribute stress and strain differently when we deform them.
+
+
+64
+00:15:38.457 --> 00:15:50.157
+Kiisa Carla Nishikawa: And this next slide shows some simple step response properties of these 2 viscoelastic models. So here we're doing a step
+
+
+65
+00:15:52.667 --> 00:15:54.317
+Kiisa Carla Nishikawa: in the strain.
+
+
+66
+00:15:54.447 --> 00:16:06.646
+Kiisa Carla Nishikawa: And here we're doing a step in the force. And you can see the Maxwell model. When we do a step change in
+
+
+67
+00:16:07.287 --> 00:16:15.796
+Kiisa Carla Nishikawa: and strain, we see an initial big response that decays to 0 over time.
+
+
+68
+00:16:16.137 --> 00:16:25.707
+Kiisa Carla Nishikawa: In contrast, when we do a step response in a Kelvin void model, we see a really big increase in the
+
+
+69
+00:16:25.967 --> 00:16:40.137
+Kiisa Carla Nishikawa: strain or force during the stretching, which relaxes very quickly. And what remains is the elastic force at is the elastic force in the spring.
+
+
+70
+00:16:40.907 --> 00:16:50.076
+Kiisa Carla Nishikawa: Likewise, if we do a step change in force, we see a creep behavior in the Maxwell model.
+
+
+71
+00:16:50.127 --> 00:17:12.396
+Kiisa Carla Nishikawa: and we see this time dependent increase and then decay in the Kelvin-void model. And if you just remember this, here, we're going to look at how muscles respond to step changes in strain in a little while, and you'll see that
+
+
+72
+00:17:12.997 --> 00:17:21.057
+Kiisa Carla Nishikawa: there are some similarities and differences between these models, and how muscles respond to similar
+
+
+73
+00:17:21.257 --> 00:17:23.426
+Kiisa Carla Nishikawa: step changes in their length.
+
+
+74
+00:17:25.057 --> 00:17:49.277
+Kiisa Carla Nishikawa: So what we want to be able to do, or what I want to be able to do is, I want to know. You know, what viscoelastic model is going to best fit those toad muscles during that really rapid mouth opening where they must be storing and recovering energy. And these are the models that I'm going to consider. But in order to figure out which is the best model.
+
+
+75
+00:17:50.337 --> 00:18:09.847
+Kiisa Carla Nishikawa: I'm going to have to do some experiments, so I don't know if there's any questions about simple springs and dampers and simple viscoelastic models before we go on. But if not, we'll start talking about some experiments to measure viscoelastic properties.
+
+
+76
+00:18:10.587 --> 00:18:26.467
+Kiisa Carla Nishikawa: So there, I'm going to talk about 3 different types of experiments. One is a ramp stretch and hold experiment. So, for example, we might take a muscle and start at a particular length relative to muscle optimal length.
+
+
+77
+00:18:26.687 --> 00:18:27.827
+Kiisa Carla Nishikawa: We.
+
+
+78
+00:18:27.947 --> 00:18:37.266
+Kiisa Carla Nishikawa: We'll stretch the muscle with some amplitude and some rate, and then hold that stretch at the final length.
+
+
+79
+00:18:38.391 --> 00:18:42.831
+Kiisa Carla Nishikawa: We. Another common experiment that's used to measure
+
+
+80
+00:18:45.476 --> 00:19:07.177
+Kiisa Carla Nishikawa: viscoelastic properties is sinusoidal perturbations. So if we here we have a sinusoidal strain, perturbation. So we're we're changing the strain in a sinusoidal pattern over time. And in these sinusoidal oscillations. Oops. Oh.
+
+
+81
+00:19:07.447 --> 00:19:19.537
+Kiisa Carla Nishikawa: I'm getting ahead of myself. So we have sinusoidal oscillations. And then the 3rd one is white noise, so we can actually randomly change the length of
+
+
+82
+00:19:19.567 --> 00:19:46.946
+Kiisa Carla Nishikawa: of a muscle. We can have a small amplitude here. It's 0 point 4 or a large amplitude here. It's 1.6 and we can also band the frequency. So we can say, Okay, we're only going to allow the frequency to vary between 0 and 15 Hertz, or here it's going to vary between 0 and 90 hertz. So these are the 3 types of experiments that are commonly used
+
+
+83
+00:19:47.327 --> 00:19:50.097
+Kiisa Carla Nishikawa: to measure viscoelastic properties.
+
+
+84
+00:19:50.397 --> 00:19:57.886
+Kiisa Carla Nishikawa: So now we can look at some of the advantages and disadvantages of each of these methods.
+
+
+85
+00:19:58.057 --> 00:20:11.166
+Kiisa Carla Nishikawa: So here we have a ramp, stretch, and hold of mouse soleus muscle. Time is on the X-axis and force or stress is on the y-axis.
+
+
+86
+00:20:11.307 --> 00:20:22.806
+Kiisa Carla Nishikawa: and the blue line is an isometric contraction, where we just stimulate the muscle and hold it at a constant length, and then we deactivate the muscle, and it relaxes
+
+
+87
+00:20:22.927 --> 00:20:24.706
+Kiisa Carla Nishikawa: to some resting length.
+
+
+88
+00:20:25.117 --> 00:20:42.886
+Kiisa Carla Nishikawa: The black case is where we actually completely, passively stretch the muscle, so no activation. And you can see what that response looks like. And this response looks actually really a lot like that single Kelvin void body. If you remember
+
+
+89
+00:20:42.997 --> 00:21:07.996
+Kiisa Carla Nishikawa: in the previous slide. So we have extra force during the stretch that decays. But it doesn't decay ever to 0. It decays to what looks like some, you know, force in a spring, and then when we stretch the active muscle, we see a more, even more complicated behavior. So we get a lot more extra force during stretching.
+
+
+90
+00:21:08.247 --> 00:21:14.566
+Kiisa Carla Nishikawa: actually, almost as much again as the isometric force.
+
+
+91
+00:21:15.097 --> 00:21:18.786
+Kiisa Carla Nishikawa: Right at that, before the stretch
+
+
+92
+00:21:18.977 --> 00:21:26.917
+Kiisa Carla Nishikawa: that decays with some time constant, which we'll talk about later. And then we deactivate the muscle.
+
+
+93
+00:21:27.217 --> 00:21:46.737
+Kiisa Carla Nishikawa: And one other thing that I just wanted to point out really quickly. So here we see the ramp stretch. And now we calculate the stretch velocity. And so the stretch velocity is shown here in orange. So even though we are just stretching at a single velocity.
+
+
+94
+00:21:46.737 --> 00:22:03.426
+Kiisa Carla Nishikawa: We're probing, you know, changes in velocity and acceleration when we start and stop stretching. So we're really looking at the behavior of the material. In this case a muscle over a range of velocities not just the nominal stretch velocity.
+
+
+95
+00:22:03.557 --> 00:22:18.956
+Kiisa Carla Nishikawa: so advantages are that ramp stretches can be, or, I should say, in vivo perturbations can sometimes look quite a bit like a ramp stretch. So they have some biological physiological relevance.
+
+
+96
+00:22:19.177 --> 00:22:29.836
+Kiisa Carla Nishikawa: It's relatively easy to perform these experiments at different activation levels and different start lengths. And we can do a lot of experiments with minimal fatigue.
+
+
+97
+00:22:30.087 --> 00:22:51.747
+Kiisa Carla Nishikawa: And we do have these velocity transients. So we're not probing a single velocity. One disadvantage that's cited in the literature is that the response or the RAM stretches produce a pretty complicated muscle response that turns out to be hard to model
+
+
+98
+00:22:53.227 --> 00:22:59.566
+Kiisa Carla Nishikawa: sinusoidal oscillations. As I was starting to tell you earlier, the elastic
+
+
+99
+00:22:59.697 --> 00:23:24.167
+Kiisa Carla Nishikawa: forces are in phase with oscillatory perturbation, but the viscous forces are out of phase. And so when we have a viscoelastic material depending on its exact damping and elastic moduli, we can get quite a different behavior with some in phase and some out of phase components.
+
+
+100
+00:23:24.537 --> 00:23:39.567
+Kiisa Carla Nishikawa: So advantages of this method are that it's very commonly used in material science. And so if we wanted to compare muscles to other materials in the exact same experiment. You know, this might be the experiment of choice.
+
+
+101
+00:23:39.607 --> 00:23:53.666
+Kiisa Carla Nishikawa: Disadvantages are that each activation level and start length has to be probed separately, which requires significant experimental time, and can induce quite a bit of muscle, fatigue.
+
+
+102
+00:23:53.667 --> 00:24:14.056
+Kiisa Carla Nishikawa: and periodic oscillations are not as similar in general to in vivo perturbations as ramp stretches are. And then, finally, the last type of experiment is this white noise experiment where we're randomly varying the muscle length over time, and we can band the frequency
+
+
+103
+00:24:14.057 --> 00:24:40.147
+Kiisa Carla Nishikawa: range at which the changes in length are occurring. So we have. Each experiment is done with constant activation and a single start length. We have this continuously varying strain, amplitude, and frequency. And one advantage is that you know, we can combine multiple frequencies simultaneously. So anywhere within the band that we choose.
+
+
+104
+00:24:40.197 --> 00:25:00.177
+Kiisa Carla Nishikawa: and that can save having to do a lot of different experiments. But we still have to vary the activation and start level separately. So we have to do a lot of experiments in order to characterize the length and activation dependence of the viscoelastic properties in a muscle.
+
+
+105
+00:25:01.127 --> 00:25:25.716
+Kiisa Carla Nishikawa: So I just want to tell you before we move on about some very early work. This is a paper by Kirsch et Al. In 1994 that appeared in, you know, I triple E transactions in biomedical engineering, and here they used cat soleus. It was an in situ preparation in a d cerebrick cat.
+
+
+106
+00:25:26.427 --> 00:25:51.316
+Kiisa Carla Nishikawa: and so they had 3 models. The 1st model is a simple Kelvin void element like we saw previously. The second model is a hill model, and the 3rd model is that standard viscoelastic, solid. So this model has 2 parameters. These have 3, but they're arranged in slightly different configurations.
+
+
+107
+00:25:51.547 --> 00:26:04.267
+Kiisa Carla Nishikawa: and they probed these 3 models, or they. They tested these 3 models and their ability to predict the force response of the muscles in ramp stretch and white noise experiments.
+
+
+108
+00:26:05.387 --> 00:26:24.157
+Kiisa Carla Nishikawa: So here are the results of the ramp stretch experiments. So they have the in situ cat soleus muscle, and they're doing ramp stretches at 3 amplitudes, 0 point 4 0 point 8 and 1.6
+
+
+109
+00:26:24.267 --> 00:26:29.296
+Kiisa Carla Nishikawa: and these are the actual force versus time responses of the muscles.
+
+
+110
+00:26:29.497 --> 00:26:37.266
+Kiisa Carla Nishikawa: And down here you actually see the fit of the models to the data.
+
+
+111
+00:26:37.477 --> 00:26:45.367
+Kiisa Carla Nishikawa: And so for the 1.6 stretch. All of the models fit the data fairly well.
+
+
+112
+00:26:45.707 --> 00:27:06.626
+Kiisa Carla Nishikawa: But for the lower amplitude stretches only the more complicated. 3 parameter models fit the data, and what you could see is that model one which is this thin black line. It. Really, it relaxes too fast. So it's not holding on to the force
+
+
+113
+00:27:06.777 --> 00:27:10.046
+Kiisa Carla Nishikawa: long enough to make good force prediction.
+
+
+114
+00:27:12.397 --> 00:27:33.707
+Kiisa Carla Nishikawa: Conversely, in the white noise experiments only model. One fit the data and the other models fit the data so poorly that they didn't even show the results in the paper, which is kind of funny. So no models fit both the RAM stretch and the white noise data sets. And so we can see that the single Kelvin void
+
+
+115
+00:27:34.314 --> 00:27:44.816
+Kiisa Carla Nishikawa: element fit the data pretty well. The force prediction looks pretty good. But the when we look at the the
+
+
+116
+00:27:44.927 --> 00:27:55.816
+Kiisa Carla Nishikawa: percent variation in force explained by the model, it was in the range of 80 to 85%, which in this era in the modern era is not very good.
+
+
+117
+00:27:56.267 --> 00:28:21.907
+Kiisa Carla Nishikawa: We want to do. We strive to do better. Okay? So so now we can, you know, sort of start to interrogate this question of what kind of viscoelastic material is muscle and based on our ongoing discussion. We can rule some of these models out. So obviously, muscle isn't a simple spring or a dash pot.
+
+
+118
+00:28:23.937 --> 00:28:42.417
+Kiisa Carla Nishikawa: The Max a single Maxwell element, and 2 Maxwell elements in parallel. Both have the property that the force decays to 0 over time, and we know muscles don't behave that way. And then, finally, you know, a good model of muscle should predict
+
+
+119
+00:28:42.657 --> 00:29:11.276
+Kiisa Carla Nishikawa: force, regardless of the experiment we pick. And so we can. You know we can infer that neither of these 3 models are the best model, because they didn't predict all of the data collected by Kershadow in both of the experiments they did. So we're going to assume that, like the the simplest possible model that's still standing is going to be this 2 Kelvin-void elements in series.
+
+
+120
+00:29:11.697 --> 00:29:20.687
+Kiisa Carla Nishikawa: And so now I'm going to tell you about some of the experimental work that we've done recently, and the results from that.
+
+
+121
+00:29:20.967 --> 00:29:33.997
+Kiisa Carla Nishikawa: And so so what we did kind of by accident. In other words, we didn't. When we collected these data over a series of starting in probably 2010.
+
+
+122
+00:29:34.735 --> 00:29:48.996
+Kiisa Carla Nishikawa: We didn't intend to use the data in exactly this way, but fortuitously, they turned out to be very handy. So in mouse soleus muscles, ex vivo
+
+
+123
+00:29:49.734 --> 00:29:52.717
+Kiisa Carla Nishikawa: on a servo motor force lever.
+
+
+124
+00:29:52.887 --> 00:30:10.167
+Kiisa Carla Nishikawa: we conducted ramp, stretch experiments. We had a stretch amplitude of 5% l. Naught and a velocity of one l. Naught per second. And we did these ramp stretch experiments all across the physiological range of muscle lengths.
+
+
+125
+00:30:10.727 --> 00:30:21.046
+Kiisa Carla Nishikawa: Starting at point 8 l. Naught, and actually going up to 1.2 5 l. Naught in increments of 5 to 10%.
+
+
+126
+00:30:21.287 --> 00:30:31.287
+Kiisa Carla Nishikawa: Actually, we've also done this in frog muscles, I'll tell you in a minute. And the mouse muscles were done at 5% increments, and the frog muscles at 10% increments.
+
+
+127
+00:30:31.687 --> 00:30:42.766
+Kiisa Carla Nishikawa: So at each starting length we stretch muscles both passively and actively on the plateau of the isometric force.
+
+
+128
+00:30:42.957 --> 00:30:52.606
+Kiisa Carla Nishikawa: and we have a sample size of 7 to 9 muscles. So these are from 3 Titan genotypes of Mouse Soleus muscles.
+
+
+129
+00:30:52.787 --> 00:31:09.456
+Kiisa Carla Nishikawa: wild type Mdm. Which is a naturally occurring mutant. And this transgenic mouse, Titan Delta 1, 12, 1, 58, and I'll tell you more about those in a minute. And we also did this in the Bullfrog, and when I say we I mean Natalie Holt.
+
+
+130
+00:31:10.322 --> 00:31:19.146
+Kiisa Carla Nishikawa: and Caitlin man, Ross and Apollo Ibanez
+
+
+131
+00:31:19.714 --> 00:31:25.526
+Kiisa Carla Nishikawa: last summer. We did this as part of the previous Nc. Summer Institute.
+
+
+132
+00:31:26.367 --> 00:31:37.177
+Kiisa Carla Nishikawa: So let me tell you a little bit about the mouse muscles. So we have this transgenic mouse that was made in Hank Grandsere's lab at the University of Arizona.
+
+
+133
+00:31:37.357 --> 00:31:47.337
+Kiisa Carla Nishikawa: And so the Pvk. Titan is what's responsible for passive muscle tension. And so in this case the
+
+
+134
+00:31:47.417 --> 00:32:12.427
+Kiisa Carla Nishikawa: Grandzir lab engineered this big deletion in Pvk. Titan, which goes from Exon, 112 to Exxon, 158. Hence the name. So it's missing more than 1,500 amino acids in Pvk, which is approximately 75% of the total contour length
+
+
+135
+00:32:12.587 --> 00:32:19.346
+Kiisa Carla Nishikawa: of the passive Pvk spring in passive muscles.
+
+
+136
+00:32:19.737 --> 00:32:35.197
+Kiisa Carla Nishikawa: and we also looked at this Mdm. Spontaneous mutant. It has a rearrangement that results in a primary deletion of 50 amino acids, which is very, very small compared to the transgenic mouse.
+
+
+137
+00:32:35.597 --> 00:32:44.827
+Kiisa Carla Nishikawa: and it's right at the well border between the N. 2, a region of Titan and the Pvk. Region of Titan, which I'll show you in a minute.
+
+
+138
+00:32:45.157 --> 00:33:02.417
+Kiisa Carla Nishikawa: But post-transcriptional processing reduces the contour length and therefore increases the stiffness of the Pvk. One and Pvk. 2. But you can see in the Pvk. 3. The wild type and the Mdms are very similar.
+
+
+139
+00:33:03.917 --> 00:33:18.616
+Kiisa Carla Nishikawa: and we know from single molecule atomic force microscopy experiments that Pvk. One and Pvk. 2 are passively stiffer than Pvk. 3. And this will become more interesting later on.
+
+
+140
+00:33:18.897 --> 00:33:30.467
+Kiisa Carla Nishikawa: Here are the frog muscles. So, as I said, this work was done last summer. Well, this slide shows previous work done by Natalie and Hank Ranzer.
+
+
+141
+00:33:30.467 --> 00:33:51.206
+Kiisa Carla Nishikawa: So Natalie measured the active and passive force length characteristics of these 3 different frog muscles, Sartorius, iliofibularis, and semitendinosus, and you can see the Sartorius was the stiffest and developed passive tension at the shortest Sarcomere, length.
+
+
+142
+00:33:51.357 --> 00:33:54.766
+Kiisa Carla Nishikawa: and Semitendinosis was the most compliant.
+
+
+143
+00:33:55.047 --> 00:34:11.176
+Kiisa Carla Nishikawa: Natalie sent muscle samples to Hank's lab, and he ran Titan gels on them, and they found 3. Titan isoforms by the migration distance. In the gels the shortest, stiffest isoform in the dark blue.
+
+
+144
+00:34:11.177 --> 00:34:25.657
+Kiisa Carla Nishikawa: The intermediate length isoform in the green, and the longest, most compliant isoform in the light blue, and so you can see the most compliant muscle has none of the stiff, tight and isoform.
+
+
+145
+00:34:25.757 --> 00:34:29.306
+Kiisa Carla Nishikawa: and the stiffest muscle has the most.
+
+
+146
+00:34:30.437 --> 00:34:33.517
+Kiisa Carla Nishikawa: So so we
+
+
+147
+00:34:34.407 --> 00:34:46.987
+Kiisa Carla Nishikawa: we used system identification to try and identify what viscoelastic model best fit all the data from the mice and the muscles from the mice and the frogs.
+
+
+148
+00:34:47.227 --> 00:35:04.286
+Kiisa Carla Nishikawa: And 1st of all, I'm going to just show you. But we're not really going to talk too much about the constitutive model for the 2 Kelvin voight bodies in series. So you might remember that the model for the simple Maxwell or
+
+
+149
+00:35:04.427 --> 00:35:22.636
+Kiisa Carla Nishikawa: Kelvin Voigt model Kelvin void element. Those were pretty simple equations. But we're getting as we. As we build up complexity in the viscoelastic structure, we add a lot of additional terms to our constitutive equation for the strain versus time.
+
+
+150
+00:35:23.177 --> 00:35:40.337
+Kiisa Carla Nishikawa: So, and we're starting to get into the world of time constants. We'll talk a little bit more about those later. So each Kello, and void element has a time constant. So there's a Tau one for the 1st one, and a Tau, 2 for the second one.
+
+
+151
+00:35:40.697 --> 00:35:51.646
+Kiisa Carla Nishikawa: and the Tau's are equal to in non-dimensional terms the damping modulus divided by the elastic modulus.
+
+
+152
+00:35:53.117 --> 00:36:16.696
+Kiisa Carla Nishikawa: and as some of you will be familiar with and others not, we can use the difference equations to estimate the viscoelastic parameters. But I'm not going to talk too much about that right now. But, interestingly, what we found was that for all of the muscles.
+
+
+153
+00:36:18.667 --> 00:36:19.517
+Kiisa Carla Nishikawa: This
+
+
+154
+00:36:19.627 --> 00:36:32.806
+Kiisa Carla Nishikawa: 2 kelvin-void bodies in series model fit the data with a really high r squared and really small residuals on the order of 10 to the minus 4th power.
+
+
+155
+00:36:33.017 --> 00:36:48.687
+Kiisa Carla Nishikawa: And so what we're able to do is from the system identification. We're able to estimate all the viscoelastic parameters. k, 1 b, one k, 2, b, 2, and the time constants Tau, one and Tau 2.
+
+
+156
+00:36:48.737 --> 00:37:05.807
+Kiisa Carla Nishikawa: And now we can analyze how they change with genotype or muscle type with activation, with starting length and using analysis of variance. We can also look at interactions between these main effects.
+
+
+157
+00:37:06.187 --> 00:37:09.297
+Kiisa Carla Nishikawa: And so here's what the data look like.
+
+
+158
+00:37:10.087 --> 00:37:21.307
+Kiisa Carla Nishikawa: And so here we're looking at the 1st Kelvin Voigt element, and this is the one that's closest to the Z disc of muscle.
+
+
+159
+00:37:22.049 --> 00:37:28.247
+Kiisa Carla Nishikawa: With the K. 2 B, 2 being closest to the M line, we think.
+
+
+160
+00:37:28.867 --> 00:37:32.916
+Kiisa Carla Nishikawa: And so these are the data from the frog muscles.
+
+
+161
+00:37:33.057 --> 00:37:35.947
+Kiisa Carla Nishikawa: So here we have the starting length
+
+
+162
+00:37:36.097 --> 00:37:57.516
+Kiisa Carla Nishikawa: from which we stretch the muscle. And here we have the value of the stiffness, and this is in Newtons per meter, and notice the log scale. So this is like 4 orders of magnitude here, and you can see that the passive tension varies over, you know.
+
+
+163
+00:37:59.497 --> 00:38:05.087
+Kiisa Carla Nishikawa: close to 3 orders of magnitude from the shortest length to the longest length.
+
+
+164
+00:38:05.327 --> 00:38:30.686
+Kiisa Carla Nishikawa: So this is an indication that this k 1 b one is an exponential spring, and furthermore, we know that the Sartorius has the stiffer Titan. It has a higher passive tension, and it also has the higher values of the elastic of the spring. Constant sorry.
+
+
+165
+00:38:30.827 --> 00:38:34.887
+Kiisa Carla Nishikawa: you know across lengths compared to the Semitendinosis.
+
+
+166
+00:38:36.167 --> 00:39:00.086
+Kiisa Carla Nishikawa: And we can look here and see the same data for the mouse muscles, the Mdm muscle and the wild type. And today I'm not going to talk about too much about the Delta. 1, 12, 1, 58, except I could maybe say that this 2 Kelvin void bodies in series didn't fit. Those. One thing that's interesting is that you can see that the frog muscles produce 20 times more force.
+
+
+167
+00:39:00.417 --> 00:39:03.597
+Kiisa Carla Nishikawa: They're about 3 times as long.
+
+
+168
+00:39:03.727 --> 00:39:11.286
+Kiisa Carla Nishikawa: and their cross-sectional areas vary by, I think, like at least a factor of of 20.
+
+
+169
+00:39:11.357 --> 00:39:41.166
+Kiisa Carla Nishikawa: But you can see that the values of their spring constants all fall in approximately the same range. And one thing that's interesting is that we can also scale these down so we can multiply by the number of Sarcomeres in series, and divide by the number of thick filaments per millimeter squared of cross-sectional area, and we see that all of these mouse and frog muscles have similar properties, even when scaled down to the half sarcomere level.
+
+
+170
+00:39:42.427 --> 00:39:47.916
+Kiisa Carla Nishikawa: And so we think that the that the k 1
+
+
+171
+00:39:48.267 --> 00:40:10.936
+Kiisa Carla Nishikawa: b, 1 unit actually corresponds to this. Pvk. One and Pvk. 2. And and that's because the passive k. 1 follows the differences between the wild type and the Mdm. In terms of the Mdm. And also in the frogs. So the the
+
+
+172
+00:40:12.787 --> 00:40:18.855
+Kiisa Carla Nishikawa: so the k 1 b one oops is stiffer in the
+
+
+173
+00:40:21.667 --> 00:40:36.456
+Kiisa Carla Nishikawa: Mdm muscles than in the wild type, and also, you know, just the fact that the the stiffness is varying over 3 orders of magnitude suggests an entropic, exponential spring like Titan.
+
+
+174
+00:40:37.597 --> 00:41:00.147
+Kiisa Carla Nishikawa: So here, to save time, I'm not going to show you the damping constants. I'm just going to show you the time, constants. But the interesting thing about this k 1 b, one unit is the time constants are around 100 ms in the passive muscle, but they increase to up to, you know, a half to
+
+
+175
+00:41:00.327 --> 00:41:02.606
+Kiisa Carla Nishikawa: a full second.
+
+
+176
+00:41:02.717 --> 00:41:12.887
+Kiisa Carla Nishikawa: So and what that means is that these muscles, the the active muscles, can hold on to force the force decays a lot slower than in the passive muscles.
+
+
+177
+00:41:13.427 --> 00:41:31.047
+Kiisa Carla Nishikawa: And the same is for the mice. So we see really, really similar relationships and really, really similar values of the spring and damping constants, and the time constants between these frog and mouse mussels.
+
+
+178
+00:41:32.517 --> 00:41:38.436
+Kiisa Carla Nishikawa: The K 2 unit that's closer to the M line is really interesting.
+
+
+179
+00:41:38.647 --> 00:41:48.916
+Kiisa Carla Nishikawa: and it shows a different behavior from the k 1. So K, 2 is initially less stiff and less damped than
+
+
+180
+00:41:49.137 --> 00:42:04.217
+Kiisa Carla Nishikawa: the k 1 b one. But when we activate, it actually gets stiffer. And, in fact, it goes from being an exponential spring passively to a linear spring with a more or less constant value
+
+
+181
+00:42:04.477 --> 00:42:08.756
+Kiisa Carla Nishikawa: of the spring, constant in the active state.
+
+
+182
+00:42:09.407 --> 00:42:14.166
+Kiisa Carla Nishikawa: and similarly in the mouse muscles.
+
+
+183
+00:42:14.557 --> 00:42:38.056
+Kiisa Carla Nishikawa: And look at what happens to the time constants, and how different they are for the k 2 b 2 than they are for the k 1 b, one. So passively, they're around 10 ms. And when we activate they actually get shorter. So this K, 2 B, 2 unit really can't hang on to force for more than a few milliseconds.
+
+
+184
+00:42:38.337 --> 00:42:41.176
+Kiisa Carla Nishikawa: So this is about 5 ms here.
+
+
+185
+00:42:41.807 --> 00:42:45.006
+Kiisa Carla Nishikawa: And similarly in the mice.
+
+
+186
+00:42:47.007 --> 00:43:01.747
+Kiisa Carla Nishikawa: Okay, so just really quickly. Here's a little cartoon of Titan. This is the entropic Pvk region. We think that the k 1 b one is
+
+
+187
+00:43:03.977 --> 00:43:05.697
+Kiisa Carla Nishikawa: I have this backwards.
+
+
+188
+00:43:05.837 --> 00:43:23.857
+Kiisa Carla Nishikawa: We think that the k 1 b, one is closest to the Z disk, and the K. 2 B. 2 is closest to the M line, and the behavior is between the wild type and the mutant is consistent with these units
+
+
+189
+00:43:24.317 --> 00:43:30.677
+Kiisa Carla Nishikawa: corresponding to Pvk one and Pvk. 2,
+
+
+190
+00:43:30.837 --> 00:43:45.477
+Kiisa Carla Nishikawa: and this k, 1 b, one unit is completely absent in the Titan, 1, 12, 1 58 transgenic mouse and the 2 Kelvin VoIP bodies in series model doesn't fit
+
+
+191
+00:43:45.627 --> 00:43:47.077
+Kiisa Carla Nishikawa: those data.
+
+
+192
+00:43:47.377 --> 00:44:09.757
+Kiisa Carla Nishikawa: So we think, K. 2, B 2 corresponds to Titan Pvk, 3. These results are also consistent with the single molecule atomic force microscopy experiments, and this K. 2 B. 2 is the only unit that's present in the
+
+
+193
+00:44:10.787 --> 00:44:14.877
+Kiisa Carla Nishikawa: Delta, 1, 12, 1 58 transgenic mouse muscles.
+
+
+194
+00:44:15.427 --> 00:44:16.407
+Kiisa Carla Nishikawa: So
+
+
+195
+00:44:16.747 --> 00:44:31.186
+Kiisa Carla Nishikawa: before I spend the rest of my time talking about power and energy. I just want to briefly recap the insights that we think we've gained from the system identification.
+
+
+196
+00:44:31.955 --> 00:44:37.427
+Kiisa Carla Nishikawa: So we think that muscles are tunable. Viscoelastic actuators.
+
+
+197
+00:44:37.607 --> 00:44:45.916
+Kiisa Carla Nishikawa: passive and active muscles have a similar viscoelastic structure that seems to be based on Pvk Titan
+
+
+198
+00:44:46.297 --> 00:44:55.847
+Kiisa Carla Nishikawa: passive stiffness and damping, vary with muscle. Length over 2 to 3 orders of magnitude, which is a signature of an entropic, exponential spring
+
+
+199
+00:44:56.257 --> 00:45:03.346
+Kiisa Carla Nishikawa: muscle, passive tension, and tightened gene expression predict the passive viscoelastic properties.
+
+
+200
+00:45:03.877 --> 00:45:21.466
+Kiisa Carla Nishikawa: And so muscles, we think, are tunable, variable transmission ratio, viscoelastic actuators that can harvest energy from interactions with the environment. And they can release that stored energy to increase the efficiency of movement.
+
+
+201
+00:45:22.517 --> 00:45:45.836
+Kiisa Carla Nishikawa: And Rick and I are in the process of developing open source Lagrangian dynamics models based on our experiments that we hope will replace hill models in simulations of muscle force. And so the Lagrangian dynamics models are going to have these properties.
+
+
+202
+00:45:46.077 --> 00:46:10.797
+Kiisa Carla Nishikawa: They're going to have cross bridge activation dynamics, including the length, dependent overlap of the actin and myosin filaments very similar to what's in hill models. Now, they're going to have n. 2, a actin binding dynamics. So the n. 2, a part of Titan binds to actin and active muscle and sets the muscle equilibrium length at activation.
+
+
+203
+00:46:11.267 --> 00:46:13.833
+Kiisa Carla Nishikawa: They're going to actually have
+
+
+204
+00:46:14.457 --> 00:46:27.617
+Kiisa Carla Nishikawa: thin filament, Titan winding. So the cross bridges not only translate but also rotate the thin filaments, and this produces the variable transmission ratio dynamics.
+
+
+205
+00:46:27.817 --> 00:46:40.357
+Kiisa Carla Nishikawa: And they're going to have the length and activation dependent. Tunable, exponential viscoelastic response by dynamics that I just showed you is very similar in the frog and the mouse muscles.
+
+
+206
+00:46:41.223 --> 00:46:48.356
+Kiisa Carla Nishikawa: And from this, as I'm going to tell you in a minute, we'll be able to completely describe the power.
+
+
+207
+00:46:49.431 --> 00:46:59.106
+Kiisa Carla Nishikawa: amplification and dissipation of the muscles, as well as the energy, storage, energy, dissipation and efficiency.
+
+
+208
+00:47:00.237 --> 00:47:14.466
+Kiisa Carla Nishikawa: So this, briefly, is a model is the model, and I'm not going to walk you through this picture of it, except maybe to say, Here's the M line. Here's the thick filaments. Here are the
+
+
+209
+00:47:16.227 --> 00:47:21.557
+Kiisa Carla Nishikawa: The thin filament is kind of in the background here. And here's the C disk.
+
+
+210
+00:47:21.937 --> 00:47:28.657
+Kiisa Carla Nishikawa: So a way to think about our models conceptually compared to the Hill model.
+
+
+211
+00:47:28.767 --> 00:47:29.887
+Kiisa Carla Nishikawa: And I'll
+
+
+212
+00:47:47.337 --> 00:47:50.207
+Kiisa Carla Nishikawa: thing oh, no.
+
+
+213
+00:47:52.477 --> 00:47:59.777
+Monica Daley (she, her): Yeah, Kisa, you froze for about 30 seconds. So if you could resay, restate what you were just saying, that would be great.
+
+
+214
+00:47:59.777 --> 00:48:02.217
+Kiisa Carla Nishikawa: Okay. Okay.
+
+
+215
+00:48:02.987 --> 00:48:17.626
+Kiisa Carla Nishikawa: I got ahead of myself here. Yes. So the bottom line is that everything in a hill model regarding the activation dynamics we're keeping.
+
+
+216
+00:48:17.797 --> 00:48:29.907
+Kiisa Carla Nishikawa: But what we're saying is that the Cross Bridge forces are not the muscle force because the Cross Bridge forces are transmitted to the
+
+
+217
+00:48:30.217 --> 00:48:52.307
+Kiisa Carla Nishikawa: Z disc by Titan, which actually also changes its structure upon muscle activation. So so our model has all of the conventional cross-bridge dynamics. But we're adding on this tunable viscoelastic transmission of forces.
+
+
+218
+00:48:52.607 --> 00:48:54.187
+Kiisa Carla Nishikawa: Did everybody get that?
+
+
+219
+00:48:55.367 --> 00:48:56.047
+Kiisa Carla Nishikawa: Okay?
+
+
+220
+00:48:56.737 --> 00:49:07.257
+Kiisa Carla Nishikawa: All right. So this is the last part and the new part, and I'll try. I hope I'm going quickly enough, but I think we'll have plenty of time for questions at the end.
+
+
+221
+00:49:07.847 --> 00:49:17.317
+Kiisa Carla Nishikawa: so interestingly as you'll see in a minute. We can directly estimate the power added by the
+
+
+222
+00:49:17.707 --> 00:49:33.036
+Kiisa Carla Nishikawa: Titan transmission to the system as well as the energy, storage and dissipation. So let's go ahead and take a look at each of those, and we'll start just by doing some simple math to define some quantities.
+
+
+223
+00:49:33.237 --> 00:49:42.436
+Kiisa Carla Nishikawa: So force is equal to the mass times. The acceleration work is equal to force, divided by displacement.
+
+
+224
+00:49:42.987 --> 00:50:06.027
+Kiisa Carla Nishikawa: Power is equal to work divided by time, which actually, if you do the math and substitutions, you'll find it's also equal to the force times the velocity, so the positive power amplifies in the transmission, amplifies the Cross Bridge forces, and negative power is going to dissipate the Cross bridge forces.
+
+
+225
+00:50:06.427 --> 00:50:33.106
+Kiisa Carla Nishikawa: and the elastic energy stored by a viscoelastic material is commonly written as one half KX. Squared. Where K. Is the damping constant, and X is the displacement, but by substitution we can also show that the energy stored is equal to one half the force squared, divided by the stiffness.
+
+
+226
+00:50:33.147 --> 00:50:52.366
+Kiisa Carla Nishikawa: So now that we've estimated our stiffnesses from the system identification, we can directly measure the energy stored in the Kelvin void elements during those passive and active stretches.
+
+
+227
+00:50:52.937 --> 00:51:06.396
+Kiisa Carla Nishikawa: and and it turns out, furthermore, that about 2 thirds of the elastic energy stored dissipates in one time constant.
+
+
+228
+00:51:08.547 --> 00:51:26.606
+Kiisa Carla Nishikawa: So now we can look at some data. And I'm just showing here. We're just getting started on this analysis, Rick and me, and eventually we'll do it for every single one of our like 300 and maybe 400 experiments, given all the mice and frogs.
+
+
+229
+00:51:26.797 --> 00:51:42.666
+Kiisa Carla Nishikawa: But just to give you a feeling for some of the calculations. And here I'd be delighted to have some feedback from the audience about. You know the units that we've used to make some comparisons to previous data in the literature.
+
+
+230
+00:51:42.817 --> 00:51:54.916
+Kiisa Carla Nishikawa: So here we actually see in the blue is the stretch, and in the orange is the power versus time. So here we have the.
+
+
+231
+00:51:55.037 --> 00:52:13.267
+Kiisa Carla Nishikawa: and this is for the passive muscles at L 0. So here we are at L 0, and we stretch by 5% l. Naught. And that's the blue line. And what you can see is the total power. So that's in the
+
+
+232
+00:52:13.567 --> 00:52:20.806
+Kiisa Carla Nishikawa: k, 1 b, one plus k, 2 b, 2. So the k, 1 b, one is shown by the
+
+
+233
+00:52:21.917 --> 00:52:27.496
+Kiisa Carla Nishikawa: dotted line, and the K. 2 B. 2 is shown by the dashed line.
+
+
+234
+00:52:27.637 --> 00:52:41.017
+Kiisa Carla Nishikawa: And so what you can see. And so this is for the passive muscle. And then when we activate, you can see this is like joules per second times 10 to the minus 4. And this is actual joules per second.
+
+
+235
+00:52:42.897 --> 00:52:49.206
+Kiisa Carla Nishikawa: So we get a really big increase in the power
+
+
+236
+00:52:49.987 --> 00:52:55.716
+Kiisa Carla Nishikawa: when we activate the muscle and the power of the of the
+
+
+237
+00:52:56.277 --> 00:53:04.186
+Kiisa Carla Nishikawa: viscoelastic transmission. And most of. But not all of this power, particularly in the
+
+
+238
+00:53:04.407 --> 00:53:23.446
+Kiisa Carla Nishikawa: in the active muscle, is in the K. 2 b, 2 in the dotted line, and because the k 1 b one, I'm sorry is in the k 1 b, one, because the k, 2 b 2 gets much stiffer when we activate. So the total power during stretch in the Sartorius
+
+
+239
+00:53:23.447 --> 00:53:39.446
+Kiisa Carla Nishikawa: increases from about like one Watt per kilogram in the passive muscle to almost a hundred watts per kilogram upon activation. And for reference. You know the sort of the standard force velocity
+
+
+240
+00:53:39.537 --> 00:53:44.317
+Kiisa Carla Nishikawa: relationship predicts that the maximum power
+
+
+241
+00:53:44.426 --> 00:53:54.287
+Kiisa Carla Nishikawa: of a muscle is about 250 watts per kilogram. So that's a substantial amount of the total stored in the viscoelastic elements.
+
+
+242
+00:53:55.306 --> 00:54:07.677
+Kiisa Carla Nishikawa: Now we can compare over here. We have the same data from the Sartorius muscle, and here now we have our Semitendinosus muscle, which, interestingly, is much less stiff.
+
+
+243
+00:54:07.857 --> 00:54:35.197
+Kiisa Carla Nishikawa: So in the Sartorius the power increased from like about one and a half to almost 100 watts per kilogram, but in the Semitendinosis it increased from, you know, about 8 watts per kilogram in the passive muscle to almost 200 watts per kilogram upon activation. And so I think it's interesting that the increased stiffness of the Sartorius doesn't necessarily translate into higher power.
+
+
+244
+00:54:37.337 --> 00:55:00.516
+Kiisa Carla Nishikawa: And then, finally, we can look at the energy, storage and dissipation. So here again, similar graph, here we see that this total stretch in blue and the energy in joules in the orange with the solid line being the total in both viscoelastic elements.
+
+
+245
+00:55:01.101 --> 00:55:07.167
+Kiisa Carla Nishikawa: So this is the passive, and this is the active, and you can see that
+
+
+246
+00:55:07.477 --> 00:55:17.816
+Kiisa Carla Nishikawa: in the in both the passive and the active, more energy is stored in the Pvk one. But when we activate because the Pvk
+
+
+247
+00:55:18.007 --> 00:55:20.717
+Kiisa Carla Nishikawa: 3 gets so much stiffer.
+
+
+248
+00:55:21.017 --> 00:55:31.176
+Kiisa Carla Nishikawa: Almost all of the energy and strain is stored in that k, 1 b, one or Pvk, one pvk, 2 element.
+
+
+249
+00:55:31.527 --> 00:55:54.977
+Kiisa Carla Nishikawa: And so it was really a challenge for me to figure out, and I don't know if Natalie's here today, but it was really a challenge for me to figure out units to compare energy storage to the literature. And so I decided to use the 2,003 paper as a basis for comparison.
+
+
+250
+00:55:55.437 --> 00:56:07.316
+Kiisa Carla Nishikawa: So in 2,003, Linari published a paper with Roger Woolidge and Nancy Curtin, where they actually looked at single fibers from Frog tibialis, anterior muscles.
+
+
+251
+00:56:07.507 --> 00:56:17.466
+Kiisa Carla Nishikawa: and they found that the total energy stored during stretching was up to 0 point 0 9 2
+
+
+252
+00:56:17.577 --> 00:56:36.106
+Kiisa Carla Nishikawa: p. Naught times l. Naught. So P. Naught is the maximum isometric force, and L. Naught is the optimum length, and so the units of P. 0 times L. Naught look something like a volume, right or a muscle mass.
+
+
+253
+00:56:36.487 --> 00:56:45.977
+Kiisa Carla Nishikawa: and they measured this by actually using thermopiles to measure the heat production in the muscles as well as the work done by the muscles in stretching.
+
+
+254
+00:56:46.557 --> 00:56:59.277
+Kiisa Carla Nishikawa: and what they wrote at the time was that only about a 3rd of this energy could be explained by cross bridges, thick filaments, thin filaments and tendons.
+
+
+255
+00:56:59.537 --> 00:57:12.207
+Kiisa Carla Nishikawa: and so 2 thirds of the work was unexplained by any mechanism, and the interesting thing is in the Sartorius, and I'll show you some data from the semitendinosis in a minute.
+
+
+256
+00:57:13.027 --> 00:57:27.216
+Kiisa Carla Nishikawa: The work, the energy stored in passive muscle was only about 0 point 0 0 3 4 p. Naught L. Naught but look in. When we activate, it increases to about 0 point 0 6
+
+
+257
+00:57:27.507 --> 00:57:35.277
+Kiisa Carla Nishikawa: 3 2 p. Naught. L. Naught, which is exact is, is, you know, kind of scarily close to how much
+
+
+258
+00:57:35.417 --> 00:57:41.677
+Kiisa Carla Nishikawa: energy. Storage was missing in Linari's a study.
+
+
+259
+00:57:42.807 --> 00:57:47.516
+Kiisa Carla Nishikawa: And when we compare that okay, somebody's got a question. Manny's
+
+
+260
+00:57:48.851 --> 00:57:53.887
+Kiisa Carla Nishikawa: so, manny. It was the internal tendon in the muss, in the in the muscle fiber.
+
+
+261
+00:57:54.077 --> 00:58:09.507
+Kiisa Carla Nishikawa: So he's talking about, I should say, maybe, you know, like the Ecm. Maybe he called it a tendon, but I agree that tendon maybe isn't the greatest word there. But I would say, let's just say parallel elastic structures in the single fiber.
+
+
+262
+00:58:10.207 --> 00:58:11.827
+Kiisa Carla Nishikawa: Good point, though.
+
+
+263
+00:58:12.217 --> 00:58:12.707
+Kiisa Carla Nishikawa: Okay?
+
+
+264
+00:58:13.947 --> 00:58:16.606
+Kiisa Carla Nishikawa: So so
+
+
+265
+00:58:16.827 --> 00:58:38.016
+Kiisa Carla Nishikawa: and in comparison. And again, these are just single individual muscles. And there will be a range. When we look at all, you know, 8 7 to 9 muscles that we've looked at so far, but in the Sartorius it increased from 0 point 0 0 1 1 in passive muscles to 0 point 0 5 4.
+
+
+266
+00:58:38.037 --> 00:58:51.707
+Kiisa Carla Nishikawa: So anyway, it looks like the viscoelastic structures representing Titan and muscle Sarcomeres are storing a substantial amount of energy.
+
+
+267
+00:58:52.757 --> 00:58:53.737
+Kiisa Carla Nishikawa: Okay.
+
+
+268
+00:58:54.227 --> 00:59:04.427
+Kiisa Carla Nishikawa: so, muscles store. Significant, elastic, potential energy. k, 1 b, one stores more than k, 2 B, 2 in passive muscles.
+
+
+269
+00:59:05.301 --> 00:59:10.842
+Kiisa Carla Nishikawa: And that it passive muscles dissipate the energy relatively fast.
+
+
+270
+00:59:11.807 --> 00:59:27.617
+Kiisa Carla Nishikawa: because the k 2 b, 2. Stiffness increases hugely in active muscles. Strain and energy are concentrated in the k 1 b. One, and the time constants increase tenfold with activation
+
+
+271
+00:59:27.757 --> 00:59:48.277
+Kiisa Carla Nishikawa: in the k 1 b one, but decrease in the k 2 b 2. And so, you know, active muscles can not only store significant energy, but they can store it for a significant amount of time, you know, certainly, for, like a whole cycle of
+
+
+272
+00:59:50.047 --> 00:59:58.226
+Kiisa Carla Nishikawa: gate for most animals, and I don't know if we looked at elephants they might even have a
+
+
+273
+00:59:58.647 --> 01:00:06.887
+Kiisa Carla Nishikawa: larger time. Constants, all right. So so you know.
+
+
+274
+01:00:07.417 --> 01:00:14.977
+Kiisa Carla Nishikawa: it's possible that the viscoelastic energy stored in these.
+
+
+275
+01:00:15.757 --> 01:00:30.056
+Kiisa Carla Nishikawa: or, I should say, the elastic energy stored in these viscoelastic structures representing Titan might account for Linari's missing energy. But that's making a lot of assumptions
+
+
+276
+01:00:30.637 --> 01:00:42.776
+Kiisa Carla Nishikawa: because we didn't measure. We so far haven't measured, you know, the total energy from atp hydrolysis that's contributed in these frog muscles.
+
+
+277
+01:00:43.187 --> 01:00:45.997
+Kiisa Carla Nishikawa: Alright, so
+
+
+278
+01:00:47.067 --> 01:01:07.356
+Kiisa Carla Nishikawa: I could stop here. But I'll just maybe briefly say that energy storage is severely compromised in the Mdm muscles. They can store about 10 times less energy in the active muscles than the wild type, whereas, interestingly enough, due to
+
+
+279
+01:01:07.377 --> 01:01:23.367
+Kiisa Carla Nishikawa: expression of genes, I should say due to expression of exons in the K. 2 B. 2. Part of Titan, in the 112, 1 58 transgenic mouse, the phenotype is restored.
+
+
+280
+01:01:24.157 --> 01:01:33.816
+Kiisa Carla Nishikawa: and lastly, we're pretty excited about this type of analysis, because we think that for any mutation
+
+
+281
+01:01:33.817 --> 01:02:01.666
+Kiisa Carla Nishikawa: in cardiac or skeletal muscle, if we know either the Pvk gene expression or the viscoelastic properties from system identification, or both. We can estimate how these changes in Titan or other sarcomeric proteins, including, like myosin binding, protein, c or actin, or myosin might impact
+
+
+282
+01:02:01.697 --> 01:02:05.067
+Kiisa Carla Nishikawa: the energy storage in muscle.
+
+
+283
+01:02:05.167 --> 01:02:10.467
+Kiisa Carla Nishikawa: So the last little part is striated. Muscles are adaptable and efficient.
+
+
+284
+01:02:10.657 --> 01:02:21.436
+Kiisa Carla Nishikawa: Every movement cycle is different, because the external loads applied to the muscles are different, and the viscoelastic properties depend on strain and activation which provides
+
+
+285
+01:02:21.567 --> 01:02:46.357
+Kiisa Carla Nishikawa: embodied mechanical intelligence, and this can reduce the energy and energy cost and computational burden of control. Muscles are efficient. They can use energy from atp hydrolysis as well as energy from applied loads like stretching. They can store this energy across multiple time scales to amplify
+
+
+286
+01:02:46.567 --> 01:02:50.576
+Kiisa Carla Nishikawa: or dissipate cross-bridge forces and power.
+
+
+287
+01:02:50.867 --> 01:02:57.517
+Kiisa Carla Nishikawa: and in evolution individual Titan domains appear to have been selected over millions of years.
+
+
+288
+01:02:58.027 --> 01:03:06.727
+Kiisa Carla Nishikawa: hundreds of millions of years to provide different specialized properties over orders of magnitude, of frequency and force.
+
+
+289
+01:03:07.247 --> 01:03:13.847
+Kiisa Carla Nishikawa: So thanks for listening, and I'll stop sharing, and I'd be happy to take any questions.
+
+
+290
+01:03:28.667 --> 01:03:29.907
+Manny's iPhone X: I'll ask a question.
+
+
+291
+01:03:31.717 --> 01:03:37.916
+Manny's iPhone X: I guess one of the only folks who've known you for more than 20 years, maybe on this call.
+
+
+292
+01:03:39.023 --> 01:03:40.901
+Manny's iPhone X: My question is,
+
+
+293
+01:03:41.637 --> 01:04:02.367
+Manny's iPhone X: why not compare it to an estimate of muscle work in the units of Joules per kilogram, which I think is somewhere around. It's a big range, let's say 60 to 150 joules per kilogram, let's say, and that's even a pretty high estimate, because it's assuming infinitesimally small.
+
+
+294
+01:04:02.877 --> 01:04:10.316
+Manny's iPhone X: shorten the lobbies, and a very large amount of shortening.
+
+
+295
+01:04:12.118 --> 01:04:17.247
+Kiisa Carla Nishikawa: Yeah. So I could actually do that really, really quick. Right now, if you want.
+
+
+296
+01:04:17.247 --> 01:04:21.507
+Manny's iPhone X: Yeah, cause you, yeah, exactly cause you could do your P. Naught. Times. L. Naught. And and.
+
+
+297
+01:04:21.507 --> 01:04:31.137
+Kiisa Carla Nishikawa: Okay, yeah. Cause I, you know. So I I did. Since I did the Watts per kilogram. I have all the data right here. So let's just this. So this is for the semi.
+
+
+298
+01:04:32.007 --> 01:04:38.267
+Kiisa Carla Nishikawa: So that's a joules and the kilograms is
+
+
+299
+01:04:47.257 --> 01:04:51.466
+Kiisa Carla Nishikawa: 19. 0, Manny froze. Maybe I'm frozen.
+
+
+300
+01:04:55.537 --> 01:04:58.077
+Caden W.: Your video is frozen, but your audio isn't.
+
+
+301
+01:04:58.077 --> 01:05:02.777
+Kiisa Carla Nishikawa: I froze. But yeah, 19.6 5 for the
+
+
+302
+01:05:04.587 --> 01:05:07.466
+Manny's iPhone X: That's a that's a good number, I think.
+
+
+303
+01:05:07.467 --> 01:05:16.019
+Kiisa Carla Nishikawa: Yeah, yeah, it's it's not trivial. Right? Okay? And then we can do it for the Sartorius. So that's gonna be
+
+
+304
+01:05:16.847 --> 01:05:18.076
+Kiisa Carla Nishikawa: Let's see
+
+
+305
+01:05:39.737 --> 01:05:40.897
+Kiisa Carla Nishikawa: 15.
+
+
+306
+01:05:42.117 --> 01:05:44.027
+Kiisa Carla Nishikawa: So 15 to 20.
+
+
+307
+01:05:46.907 --> 01:05:55.446
+Kiisa Carla Nishikawa: So not so big that it's everything, but not so small that it's yeah. You negligible. Yeah.
+
+
+308
+01:05:56.997 --> 01:05:58.197
+Manny's iPhone X: Very cool.
+
+
+309
+01:05:58.667 --> 01:06:03.667
+Kiisa Carla Nishikawa: And of course this is a small amplitude stretch at low velocity.
+
+
+310
+01:06:03.927 --> 01:06:06.696
+Kiisa Carla Nishikawa: So so
+
+
+311
+01:06:07.127 --> 01:06:23.077
+Kiisa Carla Nishikawa: Lenari et Al. That paper says that they and this is single fibers, I mean, there's a lot of assumptions, but that paper says that they got the most energy stored at about like 1.6 L, naught per second.
+
+
+312
+01:06:24.273 --> 01:06:29.146
+Kiisa Carla Nishikawa: So yeah. So so, anyway, I think
+
+
+313
+01:06:29.447 --> 01:06:37.556
+Kiisa Carla Nishikawa: you know, I think that this analysis shows that you know this is a pretty. It's a substantial contribution. Yeah.
+
+
+314
+01:06:43.377 --> 01:06:45.527
+Kiisa Carla Nishikawa: other questions.
+
+
+315
+01:06:58.059 --> 01:07:01.497
+Kiisa Carla Nishikawa: I think I thought, Manny, I'd be interested, too, in your
+
+
+316
+01:07:01.807 --> 01:07:08.297
+Kiisa Carla Nishikawa: opinion, but I thought the power amplification was also really reasonable.
+
+
+317
+01:07:09.157 --> 01:07:13.086
+Manny's iPhone X: I agree those numbers seem totally within within reason.
+
+
+318
+01:07:14.129 --> 01:07:23.646
+Manny's iPhone X: I was gonna ask you one thing the the time axis was the same for both. The the data sets you showed it's in seconds. Yeah.
+
+
+319
+01:07:23.647 --> 01:07:24.446
+Manny's iPhone X: yeah. So it's
+
+
+320
+01:07:24.447 --> 01:07:39.636
+Manny's iPhone X: not transient. That's the cool part is that, yeah, you can get transient expressions of power that are pretty high, but over a very, very short time scale. But I think this is over. A timescale that's actually meaningful to an organism's movement.
+
+
+321
+01:07:39.967 --> 01:07:47.068
+Kiisa Carla Nishikawa: That's right. That's the point. I was trying to make that that muscles, you know. Certainly, for the mice and the
+
+
+322
+01:07:47.577 --> 01:07:55.426
+Kiisa Carla Nishikawa: and the frogs. You know, the mussels can hold on to energy for a whole gate cycle.
+
+
+323
+01:07:56.197 --> 01:07:58.727
+Kiisa Carla Nishikawa: Yeah, yeah.
+
+
+324
+01:08:03.547 --> 01:08:10.224
+Kiisa Carla Nishikawa: Yeah. So and you know, for the MoD in terms of the modeling studies that were
+
+
+325
+01:08:11.687 --> 01:08:19.667
+Kiisa Carla Nishikawa: talked about yesterday, you know we hope to, you know. Get, we hope to get the model working soon and
+
+
+326
+01:08:23.967 --> 01:08:27.846
+Kiisa Carla Nishikawa: and then apply it to people's data.
+
+
+327
+01:08:28.862 --> 01:08:30.827
+Kiisa Carla Nishikawa: So go ahead.
+
+
+328
+01:08:30.827 --> 01:08:52.266
+Manny's iPhone X: I think it's exciting to have the addition of the muscle tendon unit prep. Where we know there's an additional spring in series at the end of it, because you could easily tag sort of the 2 body, and another sort of spring in series with them, or some kind of additional configuration that should show up.
+
+
+329
+01:08:52.877 --> 01:09:06.237
+Kiisa Carla Nishikawa: That's right, that's right. So for those of you who don't know one of the summer research projects is going to be done in Manny's lab. And so he's going to do these ramp. Stretch experiments in
+
+
+330
+01:09:06.547 --> 01:09:15.707
+Kiisa Carla Nishikawa: in situ rat medial, gastract muscle plus tendon. And so we expect to have a 5,
+
+
+331
+01:09:15.967 --> 01:09:33.297
+Kiisa Carla Nishikawa: you know, 2 Kelvin void bodies in series with a spring model come out of that, and what we can do is then we can really add, we can compare, we'll be able to compare. What's the power? Amplification by the muscle? What's the power? Amplification by the tendon? How do they
+
+
+332
+01:09:33.587 --> 01:09:54.287
+Kiisa Carla Nishikawa: match up, you know, like, you know, quantitatively so. And savannah's question in the chat was, Would the 2 Kelvin void model be able to fit most types of muscle? And it seems like, you know, it seems like for pure muscle, with no
+
+
+333
+01:09:54.467 --> 01:10:17.076
+Kiisa Carla Nishikawa: tendon attached, which is the way we did our experiments. Ex vivo. Yeah, we expect we expect to find that the 2 Kelvin void bodies should apply I mean 2 out of 2 frog muscles and 2 out of 3 mouse muscles, and the mouse muscle. That it didn't fit. Kind of is the
+
+
+334
+01:10:17.107 --> 01:10:33.376
+Kiisa Carla Nishikawa: exception that proves the rule, because that has been genetically engineered to not have one of the elements. So so yeah, so I think it's going to be fun to to apply
+
+
+335
+01:10:34.677 --> 01:10:46.217
+Kiisa Carla Nishikawa: this model to more muscles, you know. Also, as I tried to intimate, I think, that this is the simplest possible viable model given what we know from previous studies.
+
+
+336
+01:10:46.978 --> 01:10:55.756
+Kiisa Carla Nishikawa: So so it's really interesting that the you know evolution kind of hit on the simplest possible model.
+
+
+337
+01:10:56.524 --> 01:11:07.819
+Kiisa Carla Nishikawa: But I think how those elements in Titan have, you know, evolved over evolution is going to be another really interesting
+
+
+338
+01:11:08.767 --> 01:11:18.807
+Kiisa Carla Nishikawa: another really interesting aspect of, you know, research going forward to look at, you know, like, why not elephants.
+
+
+339
+01:11:19.177 --> 01:11:22.346
+Kiisa Carla Nishikawa: you know we do expect some interesting scaling rules.
+
+
+340
+01:11:22.987 --> 01:11:25.576
+Caitlin Bemis: I have a question kind of on timescale.
+
+
+341
+01:11:25.847 --> 01:11:32.596
+Caitlin Bemis: So right now we're going to look at. Ramp stretches right, and the ramp stretches show us some sort of perturbation, like.
+
+
+342
+01:11:32.847 --> 01:11:33.896
+Caitlin Bemis: you know.
+
+
+343
+01:11:34.227 --> 01:11:50.647
+Caitlin Bemis: behavior in legged locomotion. But what do we do about bigger timescales right like, how does this apply? What's the next step, after looking at ramp stretches, because, like, that's only a very small time scale and dynamic locomotion. So like, where would we go from here?
+
+
+344
+01:11:50.937 --> 01:12:02.898
+Kiisa Carla Nishikawa: Yeah, that's a great question. So there's 2 reasons. Well, so all right. So where we're going is the full scale Lagrangian dynamics model
+
+
+345
+01:12:03.587 --> 01:12:14.557
+Kiisa Carla Nishikawa: and and there's 2 reasons for that. So one is like the whole system. Identification approach is to
+
+
+346
+01:12:14.897 --> 01:12:23.407
+Kiisa Carla Nishikawa: do a linear analysis at an operating point. But what that system identification shows is that muscles aren't. Linear
+
+
+347
+01:12:23.627 --> 01:12:29.007
+Kiisa Carla Nishikawa: muscles are super nonlinear. They have exponential
+
+
+348
+01:12:29.137 --> 01:12:38.347
+Kiisa Carla Nishikawa: stiffness, not linear stiffness. They aren't hooky and springs. And so to capture the dynamic behavior. You need a nonlinear model.
+
+
+349
+01:12:39.558 --> 01:12:48.336
+Kiisa Carla Nishikawa: The other interesting thing. And I think this came up in a earlier. Maybe it was all hands meeting where we were talking about modeling.
+
+
+350
+01:12:48.577 --> 01:13:13.446
+Kiisa Carla Nishikawa: you know, but the you know, the each ramp stretch. Experiment only probes a limited range of stretch velocities right? But the interest and and we know that stretch velocities can occur or stretch can occur at very high frequency during, you know, like natural perturbations, as you know you and Monica have, you know, measured in, and others have measured in guinea fowl.
+
+
+351
+01:13:13.597 --> 01:13:16.236
+Kiisa Carla Nishikawa: and, you know, like up to 40 hertz
+
+
+352
+01:13:16.367 --> 01:13:37.316
+Kiisa Carla Nishikawa: so but but the problem is that when you do rant like, so so one question would be, should we do more? Rant, stretch experiments with different stretch, amplitudes and velocities? And the answer is that because of the cross bridge force, velocity, relationship.
+
+
+353
+01:13:37.977 --> 01:13:40.250
+Kiisa Carla Nishikawa: the the
+
+
+354
+01:13:42.607 --> 01:13:58.747
+Kiisa Carla Nishikawa: the properties that you're going to get out are going to be, you know the the properties of the whole system, and not just the Titan. So so we think that by just measuring. So we're just probing what's the stiffness
+
+
+355
+01:13:58.927 --> 01:14:08.144
+Kiisa Carla Nishikawa: at this length and activation and and we think that you know those values should be
+
+
+356
+01:14:09.477 --> 01:14:28.996
+Kiisa Carla Nishikawa: you know, should allow us to make this dynamic model, and then the dynamic model should be able to accurately predict what happens with different stretch amplitudes and velocities, and we can validate the model by comparing the model predictions to the data that we have.
+
+
+357
+01:14:29.187 --> 01:14:35.437
+Kiisa Carla Nishikawa: you know. And then, if you know, if those predictions aren't good, then maybe it's back to the drawing board, and we need to
+
+
+358
+01:14:35.577 --> 01:14:40.887
+Kiisa Carla Nishikawa: to add parameters. That would account for that. But the intuition is that
+
+
+359
+01:14:40.997 --> 01:14:45.436
+Kiisa Carla Nishikawa: that that the model will take that into account.
+
+
+360
+01:14:48.797 --> 01:14:53.937
+Kiisa Carla Nishikawa: So when you stretch a muscle fast, you know the cross bridges.
+
+
+361
+01:14:55.547 --> 01:15:04.797
+Kiisa Carla Nishikawa: if you stretch it fast enough, no cross bridges are attached, and so then you're not going to have a cross bridge just winding the Titan. You're going to have a different
+
+
+362
+01:15:05.287 --> 01:15:10.756
+Kiisa Carla Nishikawa: and you're going to have different active properties, because that winding isn't occurring? And yeah.
+
+
+363
+01:15:13.797 --> 01:15:15.747
+Kiisa Carla Nishikawa: did that answer your question?
+
+
+364
+01:15:16.017 --> 01:15:18.847
+Caitlin Bemis: Yeah, no, it answered my question. I'm just thinking in the.
+
+
+365
+01:15:19.127 --> 01:15:28.357
+Caitlin Bemis: And how could I apply this to my own research where I'm having problems explaining power, amplification between in situ and exevo research. Right?
+
+
+366
+01:15:28.567 --> 01:15:42.106
+Caitlin Bemis: But it's we're steps away from it. I'm just thinking into the future. How it would be applicable. But right now these are only these stretch amplitudes are all across the same frequency of stretch shortening cycles, correct.
+
+
+367
+01:15:43.662 --> 01:15:49.296
+Kiisa Carla Nishikawa: So we didn't do any stretch shortening cycles. So these are just ramp stretching home.
+
+
+368
+01:15:49.297 --> 01:15:51.227
+Caitlin Bemis: Tramps. Oh, there, I think, yeah, okay.
+
+
+369
+01:15:51.227 --> 01:15:54.036
+Kiisa Carla Nishikawa: Yeah, but we have lots of data sets. So
+
+
+370
+01:15:54.197 --> 01:16:14.756
+Kiisa Carla Nishikawa: 1st thing is, we super want everybody in Mc and lots of people not in Mc, you know, to have the model. So so Ann and Jordan are 1st in line to get the model. And so, as soon as it's done. You know Rick is planning to go visit them in
+
+
+371
+01:16:15.797 --> 01:16:26.437
+Kiisa Carla Nishikawa: Golden, Colorado and get them up and running with it. But, you know we when I was in Boston, you know, I talked with you, her and
+
+
+372
+01:16:27.317 --> 01:16:48.686
+Kiisa Carla Nishikawa: they have some really interesting data sets that we want to apply to the model. And and this the model, you know all. It will be like a hill model. So you will. You the the user will, you know, input length and activation, and the model will tell you the time varying force.
+
+
+373
+01:16:48.797 --> 01:16:58.987
+Kiisa Carla Nishikawa: And what we'll have is like a spreadsheet where you can specify. Okay, like, this is a mouse soleus, or this is a frog semitendinosis. Or
+
+
+374
+01:16:59.277 --> 01:17:04.531
+Kiisa Carla Nishikawa: you know, we could potentially use gene expression data or
+
+
+375
+01:17:10.137 --> 01:17:19.697
+Kiisa Carla Nishikawa: you know, Sizo data or just wild guesses to, you know, potentially. Do you know the human soleus or the human?
+
+
+376
+01:17:19.917 --> 01:17:20.857
+Kiisa Carla Nishikawa: You know?
+
+
+377
+01:17:24.707 --> 01:17:32.786
+Kiisa Carla Nishikawa: Biceps brachi? I think it's really comforting. And it was, came as a surprise to me
+
+
+378
+01:17:33.107 --> 01:17:38.756
+Kiisa Carla Nishikawa: that the mouse and the frog data were so similar.
+
+
+379
+01:17:39.117 --> 01:17:56.416
+Kiisa Carla Nishikawa: given like the twenty-fold, you know, differences in the big differences in size, you know, big differences in species, big differences in locomotor style. And so that gives us some hope that we won't have to make a
+
+
+380
+01:17:56.467 --> 01:18:13.977
+Kiisa Carla Nishikawa: you know. Parameterize, you know all of the parameters differently for every single type of muscle. But there's 1 really interesting thing that I didn't have time to talk about, and that's the difference between fast and slow muscles.
+
+
+381
+01:18:14.287 --> 01:18:22.987
+Kiisa Carla Nishikawa: And so we have done. In addition to you know, the different genotypes. We've also done mouse, Edl, and mouse Soleus.
+
+
+382
+01:18:23.567 --> 01:18:28.917
+Kiisa Carla Nishikawa: And the really interesting thing is that they have the same Pvk structure.
+
+
+383
+01:18:29.337 --> 01:18:34.447
+Kiisa Carla Nishikawa: But the Edl, like the identical
+
+
+384
+01:18:34.847 --> 01:18:39.347
+Kiisa Carla Nishikawa: Exon expression in Pvk. But the Edl is stiffer.
+
+
+385
+01:18:39.787 --> 01:18:49.876
+Kiisa Carla Nishikawa: right? And the Edl develops force faster. And so what's going on? And it turns out that the position of the N. 2 a clutch is different.
+
+
+386
+01:18:50.057 --> 01:18:57.507
+Kiisa Carla Nishikawa: So the clutch is closer to the Z disc in the Edl than it is in the soleus.
+
+
+387
+01:18:57.667 --> 01:19:08.867
+Kiisa Carla Nishikawa: And so so that's so, basically, we think that there are 2 knobs in Titan that evolution has mainly depended upon to change the muscle stiffness.
+
+
+388
+01:19:09.167 --> 01:19:15.956
+Kiisa Carla Nishikawa: and that's like how far from the Z disk is that M. 2 a.
+
+
+389
+01:19:16.247 --> 01:19:30.266
+Kiisa Carla Nishikawa: And how stiff is the Pvk. And so and when you think about like the Lagrangian dynamics, models of fast versus slow muscles. So you're going to have the contribute you're going to have on the one hand.
+
+
+390
+01:19:30.567 --> 01:19:41.246
+Kiisa Carla Nishikawa: the the faster, myosin, you know. Faster cross bridge kinetics combined with the stiffer Titan.
+
+
+391
+01:19:41.357 --> 01:19:52.726
+Kiisa Carla Nishikawa: and what that's and and actually also like the variable transmission ratio that you get from from the winding at different locations relative to the Z disk
+
+
+392
+01:19:53.737 --> 01:20:07.156
+Kiisa Carla Nishikawa: is a thing. So what happens is, it looks like, you know, and Rick could chime in here, but from the mechatronics perspective it looks like the fast. Muscles are running in high gear.
+
+
+393
+01:20:07.687 --> 01:20:13.047
+Kiisa Carla Nishikawa: right? And the slow muscles are running in a lower gear.
+
+
+394
+01:20:13.207 --> 01:20:20.826
+Kiisa Carla Nishikawa: and it turns out that similar differences occur in tight and isoforms in the heart
+
+
+395
+01:20:21.837 --> 01:20:30.767
+Kiisa Carla Nishikawa: and so I think it'll be interesting. Once we have the model, we'll also be able to look at
+
+
+396
+01:20:32.767 --> 01:20:47.957
+Kiisa Carla Nishikawa: how the differences between cardiac and skeletal. How moving these different things changes the energy storage. So I haven't done the energy storage calculations for the
+
+
+397
+01:20:49.957 --> 01:20:52.696
+Kiisa Carla Nishikawa: fast and slow muscles, but I think
+
+
+398
+01:20:53.697 --> 01:21:06.627
+Kiisa Carla Nishikawa: offhand, I would say, like the energy storage that that is going to be greater. But the ability to hang on to that energy is going to be less for the fast muscles compared to the slow.
+
+
+399
+01:21:13.367 --> 01:21:16.403
+Rick Casler: What Kisa was talking about. This is Rick Rick Kessler.
+
+
+400
+01:21:17.557 --> 01:21:22.997
+Rick Casler: hear about the fast twitch and the slow twitch, the fast twitch the Titan
+
+
+401
+01:21:23.217 --> 01:21:27.157
+Rick Casler: connects to the thick filament at a shallower angle.
+
+
+402
+01:21:28.437 --> 01:21:36.977
+Rick Casler: So when you, when you spin up the thin filament, the pitch of the helix is longer.
+
+
+403
+01:21:38.037 --> 01:21:42.056
+Rick Casler: per, you know, per rotation, which means that you're running in high gear.
+
+
+404
+01:21:42.697 --> 01:21:51.247
+Rick Casler: So the thing you know the the fast twitch needs more torque out of the cross bridges.
+
+
+405
+01:21:51.567 --> 01:22:03.297
+Rick Casler: because it's running in high gear. And and so that's why it's able to go so much faster. And why it wears out faster. Because you can. We've modeled the energy consumption.
+
+
+406
+01:22:03.497 --> 01:22:10.347
+Rick Casler: you know, both at the Cross Bridge and in the and in the Titan, and it'll just eat energy.
+
+
+407
+01:22:10.557 --> 01:22:20.566
+Rick Casler: you know, when you're trying to really execute a high bandwidth command, which is what the fast twitches, therefore.
+
+
+408
+01:22:23.787 --> 01:22:26.536
+Kiisa Carla Nishikawa: I guess again, did I stop sharing? Yes, I did.
+
+
+409
+01:22:28.227 --> 01:22:28.997
+Kiisa Carla Nishikawa: Yeah.
+
+
+410
+01:22:43.047 --> 01:23:03.376
+Kiisa Carla Nishikawa: And you know, just going back, Manny and natalie's not here. But we'll have to have a conversation with her about this, too. You guys have data, you know, looking at, you know how, if you change the tending compliance. And I think Greg has some data like this, too. So to be really interesting to
+
+
+411
+01:23:04.279 --> 01:23:16.554
+Kiisa Carla Nishikawa: to try and model those data. So yeah, so so once we get this model going, I'm not gonna have to ever do another experiment.
+
+
+412
+01:23:17.237 --> 01:23:30.717
+Kiisa Carla Nishikawa: But yeah, we do. Wanna disseminate it widely. And you know, over the next 2 months, a few months, I hope you know, they'll be be become available to people.
+
+
+413
+01:23:31.637 --> 01:23:45.376
+Manny's iPhone X: Yeah, my, my student, Miles has has nailed down this injectable cross linking agent that pretty much can almost double tendon stiffness.
+
+
+414
+01:23:50.097 --> 01:23:51.427
+Kiisa Carla Nishikawa: Yeah, that's cool.
+
+
+415
+01:23:51.882 --> 01:23:52.177
+Kiisa Carla Nishikawa: So.
+
+
+416
+01:23:52.177 --> 01:23:52.747
+Manny's iPhone X: So.
+
+
+417
+01:23:52.747 --> 01:23:53.567
+Kiisa Carla Nishikawa: I have some deals.
+
+
+418
+01:23:53.567 --> 01:23:53.887
+Manny's iPhone X: Oh, sure!
+
+
+419
+01:23:55.327 --> 01:24:00.221
+Kiisa Carla Nishikawa: Yeah, I have some data from Hink grandeur that I haven't
+
+
+420
+01:24:01.507 --> 01:24:15.757
+Kiisa Carla Nishikawa: analyzed yet, and his Postdoc, Songwon Han. But they're also drugs that cross Link Pvk and make it stiffer. So I think that that'll be another way to test.
+
+
+421
+01:24:16.547 --> 01:24:26.206
+Kiisa Carla Nishikawa: you know, or you know, to to test the hypothesis. Do these units really correspond to Pvk. Titan. So
+
+
+422
+01:24:34.777 --> 01:24:40.636
+Kiisa Carla Nishikawa: okay, well, I know what I'm I need to share my slides again, because I know what I did
+
+
+423
+01:24:41.187 --> 01:24:43.137
+Kiisa Carla Nishikawa: that I forgot to do
+
+
+424
+01:24:43.577 --> 01:24:48.297
+Kiisa Carla Nishikawa: so. Let's just go on to the next one. So here we are, back at the
+
+
+425
+01:24:48.827 --> 01:25:13.036
+Kiisa Carla Nishikawa: QR. Code. So if you're a trainee and you didn't sign in earlier. You can do that now love to have your feedback, since this is kind of the the 1st time I've presented both the sort of the viscoelasticity primer at the beginning as well as the energy and power results. So I'd love to have your feedback.
+
+
+426
+01:25:13.647 --> 01:25:26.066
+Kiisa Carla Nishikawa: and otherwise we're almost out of time. And don't forget that Monica is going to be talking about dimensional. And you know non-dimensional
+
+
+427
+01:25:26.347 --> 01:25:30.176
+Kiisa Carla Nishikawa: analyses next Thursday. At the same time.
+
+
+428
+01:25:36.437 --> 01:25:37.916
+Monica Daley (she, her): Thanks. Kisa.
+
+
+429
+01:25:37.917 --> 01:25:39.337
+Manny's iPhone X: Thank you. Kisa.
+
+
+430
+01:25:39.697 --> 01:25:40.267
+Caden W.: Thank you.
+
+
+431
+01:25:42.840 --> 01:25:48.157
+Kiisa Carla Nishikawa: Attention and questions. And yeah, looking forward to the next one.
+
+
+432
+01:25:48.517 --> 01:25:49.277
+Kiisa Carla Nishikawa: Okay.
+
+
+

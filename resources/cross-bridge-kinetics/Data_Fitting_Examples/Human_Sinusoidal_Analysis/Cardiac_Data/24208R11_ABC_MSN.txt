@@ -1,0 +1,16 @@
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	2	2B487	control	1.9	1.0000	4.0000	0.3000	8.0000	123.1393	0.2842	969.7891	5.3854	1341.9895	13.3586	0.9902	11.9140	2.0000	1.0000
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	2	2B487	control	1.9	1.0000	4.0000	0.3000	8.0000	123.1393	0.2842	969.7891	5.3854	1341.9895	13.3586	0.9902	11.9140	2.0000	1.0000
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	2	2B487	control	1.9	1.0000	4.0000	0.3000	8.0000	123.1393	0.2842	969.7891	5.3854	1341.9895	13.3586	0.9902	11.9140	2.0000	1.0000
+Filename	CorrFile	FittingFunc	Run	HashCode	Treatment	SL	Series	pCa	Pi (mM)	ATP (mM)	A (kPa)	k	B (kPa)	b (Hz)	C (kPa)	c (Hz)	R2	t_on (ms)	ExitFlag	Quality	
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	1	2B487	control	1.9	1.0000	8.0000	0.3000	8.0000	5.7691	0.3406	0.0000	0.0000	0.0000	0.0000	0.7650	0.0000	1.0000	1.0000
+24208R11	Rig1_SysError_2021_11_17_New.msn	Cardiac_Human_S2	2	2B487	control	1.9	1.0000	4.0000	0.3000	8.0000	123.1393	0.2842	969.7891	5.3854	1341.9895	13.3586	0.9902	11.9140	2.0000	1.0000

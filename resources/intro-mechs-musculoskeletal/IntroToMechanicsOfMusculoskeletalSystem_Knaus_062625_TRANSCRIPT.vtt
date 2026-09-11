@@ -1,0 +1,2368 @@
+WEBVTT
+
+1
+00:00:11.785 --> 00:00:13.144
+Katie Knaus: Might be working.
+
+
+2
+00:00:13.255 --> 00:00:14.674
+Katie Knaus: Does that sound like anything.
+
+
+3
+00:00:15.565 --> 00:00:16.975
+Victoria Wood: Yeah, I can see the slides.
+
+
+4
+00:00:17.825 --> 00:00:18.705
+Katie Knaus: Cool.
+
+
+5
+00:00:18.705 --> 00:00:18.975
+Victoria Wood: Okay.
+
+
+6
+00:00:19.685 --> 00:00:27.245
+Katie Knaus: Alright, bye, have our workshop sign in if anyone is needing the QR. Code.
+
+
+7
+00:00:27.635 --> 00:00:29.635
+Katie Knaus: But maybe, Victoria.
+
+
+8
+00:00:29.815 --> 00:00:35.865
+Katie Knaus: do you want me to copy it, or you want to copy the link into the chat, just if that's easier for people to get to.
+
+
+9
+00:00:35.865 --> 00:00:38.104
+Victoria Wood: Yeah. I had done that just before you joined.
+
+
+10
+00:00:38.105 --> 00:00:41.834
+Katie Knaus: That's cool. Alright you are on it. So I'll give
+
+
+11
+00:00:42.415 --> 00:00:48.305
+Katie Knaus: like one more minute if anyone needs to scan this and then get going.
+
+
+12
+00:00:49.805 --> 00:00:54.635
+Katie Knaus: unless do we have announcements or anything else to cover or jump into it?
+
+
+13
+00:00:55.615 --> 00:00:56.315
+Victoria Wood: Hi.
+
+
+14
+00:00:56.655 --> 00:01:06.563
+Victoria Wood: I guess one quick announcement. I sent an email out just a few minutes ago. We will have our July orientation meeting next week on July second.
+
+
+15
+00:01:07.265 --> 00:01:17.055
+Victoria Wood: that's just for anybody who's participating in summer projects that didn't attend the June orientation, particularly if you have a project starting in July. So that's
+
+
+16
+00:01:17.155 --> 00:01:21.095
+Victoria Wood: faculty. Mentors, trainees, everybody. Please do your best to attend.
+
+
+17
+00:01:22.365 --> 00:01:24.154
+Victoria Wood: Do you have anything else, Monica?
+
+
+18
+00:01:25.685 --> 00:01:27.635
+Monica Daley (she, her): Nope, I think that's it, for now.
+
+
+19
+00:01:28.785 --> 00:01:31.214
+Victoria Wood: Great. Alright. Then you can go ahead and start when you're ready.
+
+
+20
+00:01:31.575 --> 00:01:32.555
+Katie Knaus: Alright cool.
+
+
+21
+00:01:33.295 --> 00:01:55.705
+Katie Knaus: Well, thank you. My name is Katie Knaus, and I'm at Colorado School of Mines. And so my goal for today's workshop is to kind of give some introduction material. So either kind of review, or maybe some kind of 1st look at some vocabulary and concepts for people kind of starting who are new in kind of biomechanics
+
+
+22
+00:01:55.985 --> 00:02:16.394
+Katie Knaus: projects, but happy to kind of take questions along the way. If anyone kind of chimes in, I will try to keep an eye on the chat, or, if you speak up, I may hear you. But our goal today is kind of taking some of our mechanics, concepts and concepts about the musculoskeletal system.
+
+
+23
+00:02:16.605 --> 00:02:31.395
+Katie Knaus: and really kind of bridging between those so coming from, how do we apply our mechanical engineering to the musculoskeletal system. What's helpful to know about musculoskeletal system and tissues in the context of mechanics.
+
+
+24
+00:02:33.485 --> 00:02:57.804
+Katie Knaus: So to start, just want to kind of walk through our basic definitions of mechanics. So this is this field of studying how bodies react to forces acting on them. And we can break this down into these kind of subcategories or boxes which actually form kind of a foundation of our curriculum in mechanical engineering. We take a class in each of these.
+
+
+25
+00:02:57.945 --> 00:03:15.884
+Katie Knaus: and so I want to kind of highlight, some key words. As we think about mechanics, we talk about bodies and then forces. So when we are talking about humans or animals, this becomes human bodies, but also specific structures.
+
+
+26
+00:03:16.045 --> 00:03:29.035
+Katie Knaus: And then we can kind of go into these 2 divisions of statics where these bodies are now in equilibrium, which means those forces acting on them are balanced to the point where they are not moving.
+
+
+27
+00:03:29.655 --> 00:03:48.894
+Katie Knaus: or dynamics where we have movement. And so we have kind of the geometric aspects of motion. So how things are moving, what that looks like, and then kinetics, which is where we incorporate the forces involved in that motion.
+
+
+28
+00:03:49.595 --> 00:03:57.414
+Katie Knaus: and then jumping back to our other side. So statics, we have our bodies in equilibrium, and starting to kind of zoom in inside those bodies.
+
+
+29
+00:03:57.515 --> 00:04:04.915
+Katie Knaus: thinking about the internal loads, and how that translates to stresses, particularly subject
+
+
+30
+00:04:05.025 --> 00:04:08.775
+Katie Knaus: to these materials. So we start to think about how these
+
+
+31
+00:04:09.075 --> 00:04:25.635
+Katie Knaus: things that our bodies are made of are deforming, and how that's related to the forces applied. And so our materials, when we are talking about musculoskeletal system, are these biologic materials, and we call them tissues.
+
+
+32
+00:04:25.955 --> 00:04:36.814
+Katie Knaus: So in our musculoskeletal system, we're going to be talking about tissues of bone, cartilage, ligament tendons and all our connective tissues, and then muscle.
+
+
+33
+00:04:37.895 --> 00:04:58.374
+Katie Knaus: And as we kind of consider, these unique materials, scale becomes important. Right? So we have these structures like a femur, is made out of bone material. But we have different types of bone, and as we zoom in kind of the structure and properties look different as we go from micro scale to macro scale.
+
+
+34
+00:04:59.315 --> 00:05:02.475
+Victoria Wood: Can I jump in real quick? We have a question in the chat.
+
+
+35
+00:05:02.475 --> 00:05:04.425
+Katie Knaus: Yeah, on.
+
+
+36
+00:05:05.205 --> 00:05:07.472
+Victoria Wood: I can read it if you can't find it.
+
+
+37
+00:05:07.725 --> 00:05:09.485
+Katie Knaus: Yeah, go ahead and read it while I.
+
+
+38
+00:05:09.878 --> 00:05:17.755
+Victoria Wood: Benjamin asks, can you elaborate more on what geometric means, and why it's related to kinematics exclusively, and not statics.
+
+
+39
+00:05:18.835 --> 00:05:20.085
+Katie Knaus: Yeah. So
+
+
+40
+00:05:20.645 --> 00:05:46.105
+Katie Knaus: let me see, I can go back here. So the geometric aspects are going to be related to positional changes. So while statics, the position is not changing. In kinematics, we're dealing with aspects of velocity and acceleration. So they're going to be related to position, length, scales with time, but not forces.
+
+
+41
+00:05:49.012 --> 00:05:56.435
+Katie Knaus: So statics we still have those. But our velocity and acceleration are 0. So we are not solving problems related to those.
+
+
+42
+00:05:58.710 --> 00:06:06.655
+Katie Knaus: Yep. So we have our tears, and so kind of coming back to dynamics. Right? Our musculoskeletal system is comprised of these materials.
+
+
+43
+00:06:07.185 --> 00:06:14.165
+Katie Knaus: But as this multibody dynamic system. So yes, we have one body and
+
+
+44
+00:06:14.445 --> 00:06:27.814
+Katie Knaus: give some context. I teach from kind of a human perspective, but certainly same principles apply to many species. But my slides, in particular, probably, are more human leaning.
+
+
+45
+00:06:29.435 --> 00:06:30.625
+Katie Knaus: But our
+
+
+46
+00:06:30.745 --> 00:06:40.305
+Katie Knaus: human body rate is made up of multiple bodies or segments. These kind of rigid bodies we may deal with in our statics and dynamics problems.
+
+
+47
+00:06:41.326 --> 00:06:46.194
+Katie Knaus: So we have these connected segments of our body.
+
+
+48
+00:06:46.545 --> 00:06:56.615
+Katie Knaus: and we define the kind of position or posture right? As we reorient these different sections, segments related to each other.
+
+
+49
+00:06:56.765 --> 00:07:01.904
+Katie Knaus: Alright, we have some terms. We can use these different plane definitions.
+
+
+50
+00:07:02.025 --> 00:07:06.085
+Katie Knaus: We have some kind of specific terms we use
+
+
+51
+00:07:06.225 --> 00:07:20.604
+Katie Knaus: that are helpful from an anatomy point of view. So rather than kind of Xyz. Sometimes we are describing things relative to positions in the body. So we use medial lateral anterior posterior
+
+
+52
+00:07:20.735 --> 00:07:25.955
+Katie Knaus: terms like that to kind of Orient, how we're describing movement and position.
+
+
+53
+00:07:26.858 --> 00:07:28.085
+Katie Knaus: So both
+
+
+54
+00:07:28.385 --> 00:07:46.794
+Katie Knaus: posture motion related to those. And then joint function comes important here, because joints are where our different segments are connected, and so a joint determines how 2 segments may interact with each other, both moving relative to each other and developing forces.
+
+
+55
+00:07:49.165 --> 00:07:54.985
+Katie Knaus: And so our human body is subject to loads. Right? We said, mechanics is bodies
+
+
+56
+00:07:55.215 --> 00:08:00.225
+Katie Knaus: and forces. So some loads kind of at a broad scope
+
+
+57
+00:08:00.375 --> 00:08:03.484
+Katie Knaus: for the body. We have body weight, so
+
+
+58
+00:08:03.715 --> 00:08:07.395
+Katie Knaus: react the mass of the body react and gravity.
+
+
+59
+00:08:07.845 --> 00:08:27.514
+Katie Knaus: Then we have reaction forces. So this is right. Our body is touching something. There is a reaction there. So ground reaction forces, probably all familiar with some extent, or reaction with other things. Right? If you are currently sitting in a chair, you have a reaction force with places. You have contact
+
+
+60
+00:08:28.245 --> 00:08:37.475
+Katie Knaus: as well as forces with interacting objects. We may pick up a heavy object that starts to have forces applied to our body.
+
+
+61
+00:08:38.029 --> 00:08:43.125
+Katie Knaus: And many ways. We interact with our environment that has forces involved.
+
+
+62
+00:08:45.215 --> 00:09:01.454
+Katie Knaus: And so the balance of loads on the body is what determines movement or maybe lack of movement. So statics is when our loads are all in equilibrium, and so there is no movement. Our velocity, our acceleration, are at 0.
+
+
+63
+00:09:02.289 --> 00:09:08.105
+Katie Knaus: Where, when loads become unbalanced, that's when we start to have dynamics.
+
+
+64
+00:09:11.935 --> 00:09:31.495
+Katie Knaus: And so we've kind of talked about the body in general. But, as we said, this is a multi-body system, or we can separate our body into these rigid segments, where kind of the movement of them relative to each other is more significant than maybe deformation that occurs within each section segment.
+
+
+65
+00:09:31.705 --> 00:09:34.774
+Katie Knaus: And so each segment is connected by joints.
+
+
+66
+00:09:36.075 --> 00:09:46.614
+Katie Knaus: And so, as we kind of start to reconsider our equilibrium and our dynamics, and it's the loads acting on these individual body segments.
+
+
+67
+00:09:47.235 --> 00:09:51.645
+Katie Knaus: They're going to have their own center of mass and their own associated maths.
+
+
+68
+00:09:52.185 --> 00:10:00.805
+Katie Knaus: And so we'll get these kind of internal loads of the body that are occurring at joints or at the junction between 2 different segments.
+
+
+69
+00:10:02.425 --> 00:10:12.975
+Katie Knaus: And then our statics and dynamics is no longer just kind of external forces on the body. But starting to be this balance between segments as well.
+
+
+70
+00:10:14.435 --> 00:10:21.375
+Katie Knaus: And so, when we have kind of a static posture, this is really this equilibrium of each rigid segment
+
+
+71
+00:10:21.545 --> 00:10:23.415
+Katie Knaus: keep it in parties.
+
+
+72
+00:10:24.725 --> 00:10:39.235
+Katie Knaus: And so these segments are connected by joints, and we have lots of different joints in the body and so these joints are defined by the musculoskeletal tissue structures involved in them. The shape
+
+
+73
+00:10:39.475 --> 00:10:48.395
+Katie Knaus: and kind of what components of those structures are there. But from a mechanic's point of view, we want to think about how these
+
+
+74
+00:10:48.855 --> 00:10:52.054
+Katie Knaus: joints are going to determine articulation
+
+
+75
+00:10:52.165 --> 00:10:57.564
+Katie Knaus: or movement relative movement between our rigid body segments.
+
+
+76
+00:10:57.755 --> 00:11:06.235
+Katie Knaus: and so kind of the things we think about is, which plane might this allow motion in? If we have 2 segments moving relative to each other.
+
+
+77
+00:11:06.425 --> 00:11:12.265
+Katie Knaus: degrees of freedom. So maybe how many planes we have these different motions at a joint
+
+
+78
+00:11:12.625 --> 00:11:19.454
+Katie Knaus: we have different degrees of freedom in the hip, really, compared to the elbow
+
+
+79
+00:11:19.945 --> 00:11:35.334
+Katie Knaus: the range of motion. So even if a joint allows movement in a particular plane or direction, it may, depending on the structures there, right? There's a limit to how far one segment can move relative to the other, and that looks different for different people, too.
+
+
+80
+00:11:36.295 --> 00:11:37.360
+Katie Knaus: So,
+
+
+81
+00:11:38.565 --> 00:11:48.285
+Katie Knaus: we classify these right? We can talk about rotational degrees of freedom and translational degrees of freedom. So rotation is kind of
+
+
+82
+00:11:49.027 --> 00:11:51.555
+Katie Knaus: movement about an axis.
+
+
+83
+00:11:51.845 --> 00:11:55.954
+Katie Knaus: So a lot of our joints have different rotational degrees of freedom.
+
+
+84
+00:11:56.145 --> 00:12:05.114
+Katie Knaus: and then translation is movement in space, cell, vertical, horizontal motion right?
+
+
+85
+00:12:05.265 --> 00:12:20.514
+Katie Knaus: And then these joints will determine what our reaction loads are so by limiting degrees of freedom, just limiting motion, going to generate forces, those. So, for example, if we look at the hip, a ball and socket joint.
+
+
+86
+00:12:20.915 --> 00:12:23.174
+Katie Knaus: We're going to have this
+
+
+87
+00:12:23.685 --> 00:12:45.235
+Katie Knaus: rotational movement. It has these 3 degrees of freedom. So rotation about XY. And Z. But the ball is constrained to the socket. So we would have a reaction force in the XY and Z. Direction. If we're doing a 3D. Problem right? So it's constrained from those which means we get that force there.
+
+
+88
+00:12:46.095 --> 00:12:55.635
+Katie Knaus: If we look at a hinge joint right? Like sort of like our elbow right in this joint, this.
+
+
+89
+00:12:55.825 --> 00:13:19.134
+Katie Knaus: and if we simplify it, it has one degree of freedom or rotation available around the X-axis here, which means it's constrained in its rotation around the Y and Z. Axis means we'd have reaction moments there and constrained in its translation in XY and Z. So we'd have reaction forces where translation is constrained.
+
+
+90
+00:13:24.185 --> 00:13:24.925
+Katie Knaus: Alright.
+
+
+91
+00:13:25.775 --> 00:13:33.804
+Katie Knaus: So we have our forces applied to the body, but particularly thinking about those musculoskeletal structures.
+
+
+92
+00:13:34.785 --> 00:13:59.954
+Katie Knaus: right? So starting with kind of our ground reaction forces that we've talked about or our joint reaction forces. So we go between segments. But now, thinking about the forces applied to specific structures right? Like a bone contacting a bone, or there may be soft tissues in between. Right as we talk more about our cartilage, or what our tendons and ligaments are involved in
+
+
+93
+00:14:00.355 --> 00:14:12.925
+Katie Knaus: as well as muscle forces become involved, right? So muscles are generating, forces can apply to the bones through tendons. So we have loading and our Achilles tendon. As our
+
+
+94
+00:14:13.095 --> 00:14:26.955
+Katie Knaus: calf muscles contract. We have loads applied to the bone in different directions. That'll determine if that bone and that segment of the body is moving or static equilibrium of those forces are balanced.
+
+
+95
+00:14:30.685 --> 00:14:41.664
+Katie Knaus: And so if we kind of zoom in, we would do work of setting up our problem, probably drawing a simplified diagram called free body diagram.
+
+
+96
+00:14:41.885 --> 00:14:46.895
+Katie Knaus: right to determine where our loads are. A lot of times we'll do these as 2D problems.
+
+
+97
+00:14:47.235 --> 00:14:52.635
+Katie Knaus: And so with this example kind of simplified our arm here, holding a weight.
+
+
+98
+00:14:52.755 --> 00:15:02.284
+Katie Knaus: and we might have our external loads. We have the weight of the arm, the weight of the ball, or whatever heavy thing is in the hand.
+
+
+99
+00:15:02.735 --> 00:15:07.745
+Katie Knaus: Right? And so with these external loads, we could find out
+
+
+100
+00:15:08.055 --> 00:15:14.335
+Katie Knaus: what they would need to be to be in equilibrium, so that this beam or this arm is not moving.
+
+
+101
+00:15:14.735 --> 00:15:24.465
+Katie Knaus: But then we also can use that balance to figure out what the internal loads are. So we're going to cut right here at this line. K,
+
+
+102
+00:15:24.715 --> 00:15:27.434
+Katie Knaus: look inside here. So to balance this
+
+
+103
+00:15:27.945 --> 00:15:38.365
+Katie Knaus: structure, we're going to have these internal loads that are occurring, and as a result of what these external loads and where they're located.
+
+
+104
+00:15:38.745 --> 00:15:43.475
+Katie Knaus: So normal force is going to be a force directed, kind of
+
+
+105
+00:15:43.815 --> 00:15:47.895
+Katie Knaus: perpendicular to our cut surface here normal to it.
+
+
+106
+00:15:48.225 --> 00:16:02.245
+Katie Knaus: Shear force is parallel to that cut surface, and then a moment is applied about it. So a moment is like a rotational force right? So force directed around an axis.
+
+
+107
+00:16:03.435 --> 00:16:17.665
+Katie Knaus: And so this is kind of a 2D. Representation of what those internal loads will look like if we kind of cut at an arbitrary section, and the magnitude of each of these loads would be related to the balance of the external loads.
+
+
+108
+00:16:18.385 --> 00:16:29.204
+Katie Knaus: We can also look at this in 3 dimensions. So now, instead of 2 forces in a moment, we have a force directed in each axis.
+
+
+109
+00:16:29.355 --> 00:16:46.894
+Katie Knaus: so the normal force is still perpendicular to our surface, and then we have shear forces in both directions that are parallel or kind of within that surface. So it's our v 1 and v. 2 here and now, instead of just the moment
+
+
+110
+00:16:47.225 --> 00:17:03.005
+Katie Knaus: that is our 2D. 1, we have a moment about each axis. So the moment in our 2D problem is the moment about our axis kind of sticking out of the page. Sorry M. 2. In this 3D. Picture.
+
+
+111
+00:17:03.135 --> 00:17:09.984
+Katie Knaus: but we also have moments about our other 2 axes, so our vertical axis, and then our axis that's
+
+
+112
+00:17:10.135 --> 00:17:15.724
+Katie Knaus: our longitudinal axis to our kind of normal to our cut surface here.
+
+
+113
+00:17:17.665 --> 00:17:22.484
+Katie Knaus: And so from these internal loads, right? The
+
+
+114
+00:17:23.255 --> 00:17:30.725
+Katie Knaus: stresses that will occur are going to depend on the type of loading. So we have these different types of loading
+
+
+115
+00:17:30.935 --> 00:17:42.855
+Katie Knaus: deal with that are going to relate to these different forms. So kind of looking back at our cut surface here, and our 3D internal loads.
+
+
+116
+00:17:42.965 --> 00:17:45.764
+Katie Knaus: Those different moments are forces
+
+
+117
+00:17:45.875 --> 00:18:13.795
+Katie Knaus: that are internal are related to each of these different types of loading. So tension and compression is when we have that normal force so load internally, that is directed perpendicular to our cut surface here, and then shear is again based on force that is, in the plane of our cut or parallel to it in either our Z or X direction. In this picture.
+
+
+118
+00:18:15.015 --> 00:18:24.385
+Katie Knaus: and so bending occurs from a moment. This is the same moment that we saw in our 2D
+
+
+119
+00:18:24.525 --> 00:18:33.265
+Katie Knaus: option right? But in here we 3D. We can have bending moments in either about the x-axis or about the Z
+
+
+120
+00:18:33.395 --> 00:18:34.225
+Katie Knaus: access.
+
+
+121
+00:18:35.015 --> 00:18:47.105
+Katie Knaus: and then our final one torsion. So this is kind of twisting our entire shape along its length right? So that's the moment about the longitudinal axis or the y-axis here.
+
+
+122
+00:18:57.255 --> 00:19:03.755
+Katie Knaus: So zooming in kind of going with our rod example here.
+
+
+123
+00:19:03.905 --> 00:19:09.804
+Katie Knaus: if we just look at kind of one small region of this structure.
+
+
+124
+00:19:10.305 --> 00:19:39.024
+Katie Knaus: We're going to consider the stresses that are occurring within this. So we've talked about internal loads. And so what stress is is when we have a force that's distributed over an area. So we've taken those internal loads. But now we're considering specific area and how that force is distributed there. So we can have 2 types of stress. We'll talk about a normal stress and a shear stress.
+
+
+125
+00:19:39.605 --> 00:19:43.384
+Katie Knaus: And so we look at kind of, we've selected this section.
+
+
+126
+00:19:43.585 --> 00:19:46.455
+Katie Knaus: And we get this little 3D block
+
+
+127
+00:19:46.625 --> 00:20:10.335
+Katie Knaus: and can consider the stresses occurring in it as a function of those loads, those internal loads we just discussed. So we have stress in XYZ. So we're going to have normal stress again. Normal is directed perpendicular to our surfaces here and then shear is in the direction in the plane
+
+
+128
+00:20:10.715 --> 00:20:29.014
+Katie Knaus: so parallel here. And so we can have shear in both directions within our plane. So for each surface we have a normal stress component and 2 shear stress components. And so this is our general state of stress. I'm still describing 3 dimensions.
+
+
+129
+00:20:29.485 --> 00:20:51.644
+Katie Knaus: But often it's kind of convenient for most of what we're doing to think about plane stresses. Usually we have primary direction, we care about stress. And so if we kind of take our little box here and just consider a 2 dimensional plane. So we're going to ignore everything happening on kind of the top and bottom of the box and direct it in those dimensions.
+
+
+130
+00:20:52.145 --> 00:20:57.615
+Katie Knaus: In our kind of z direction here. So just our Xy directions are represented.
+
+
+131
+00:20:57.725 --> 00:20:58.855
+Katie Knaus: We can
+
+
+132
+00:20:59.225 --> 00:21:19.755
+Katie Knaus: now simplify this to a 2D problem. So this is what it looks like in 3D. But typically, we draw this in this two-dimensional view. So we have our shear stresses and normal stresses for our two-dimensional plane. And so that's what you can kind of see in our little box drawn on our
+
+
+133
+00:21:19.895 --> 00:21:21.065
+Katie Knaus: broad here.
+
+
+134
+00:21:22.145 --> 00:21:27.275
+Katie Knaus: And so the we'll have some combination of
+
+
+135
+00:21:27.455 --> 00:21:33.165
+Katie Knaus: normal stress and shear stress depending on what our loading conditions are.
+
+
+136
+00:21:34.415 --> 00:21:41.934
+Katie Knaus: So let's look back at our different types of bloating. We talked about before and think about our little general stress state
+
+
+137
+00:21:42.075 --> 00:21:42.995
+Katie Knaus: here.
+
+
+138
+00:21:43.515 --> 00:21:49.095
+Katie Knaus: So this case let's consider our y-axis kind of oriented.
+
+
+139
+00:21:49.745 --> 00:21:59.304
+Katie Knaus: So up the page, or this would be the longitudinal axis of our little unloaded tissue here.
+
+
+140
+00:22:00.245 --> 00:22:03.799
+Katie Knaus: And so I want to think about for a minute.
+
+
+141
+00:22:04.465 --> 00:22:08.875
+Katie Knaus: if we're going to just look at these stresses on this
+
+
+142
+00:22:09.825 --> 00:22:15.134
+Katie Knaus: face. So if we were going to cut a slice through our tissue
+
+
+143
+00:22:15.745 --> 00:22:26.574
+Katie Knaus: and then think about what the stresses are, are we going to have normal stress or shear stress on that face occurring from these different
+
+
+144
+00:22:26.915 --> 00:22:28.554
+Katie Knaus: types of loading.
+
+
+145
+00:22:29.977 --> 00:22:31.904
+Katie Knaus: So maybe, for
+
+
+146
+00:22:32.185 --> 00:22:38.124
+Katie Knaus: folks in rooms can kind of chat with each other. I might be able to see
+
+
+147
+00:22:38.465 --> 00:22:42.735
+Katie Knaus: then. So we'll take just a sec and think about that, and then we'll go through it
+
+
+148
+00:23:16.775 --> 00:23:19.925
+Katie Knaus: alright. So talk about these different things
+
+
+149
+00:23:20.295 --> 00:23:27.625
+Katie Knaus: alright, the interactions a bit odd on zoom. But hopefully you all are able to chat and
+
+
+150
+00:23:27.725 --> 00:23:35.825
+Katie Knaus: think about it. But as we look at tension or tensile loading in kind of case B here.
+
+
+151
+00:23:36.175 --> 00:23:47.644
+Katie Knaus: And we want to think about this force, and what stress would be occurring from this load on our little stress state here, specifically kind of the top of this box.
+
+
+152
+00:23:47.845 --> 00:23:57.474
+Katie Knaus: And so in this case, right, our forces are directed normal to that surface. And so we're dealing with normal stress or perpendicular here.
+
+
+153
+00:23:57.865 --> 00:24:06.304
+Katie Knaus: right? Compression very similar. Just we're going to have our force in the opposite direction, but still oriented
+
+
+154
+00:24:06.465 --> 00:24:10.645
+Katie Knaus: perpendicular. So another normal stress component here.
+
+
+155
+00:24:12.115 --> 00:24:25.184
+Katie Knaus: So, looking at our shear, we can see our forces are directed in the parallel direction or kind of across our surface. So this is going to be a shear stress case.
+
+
+156
+00:24:26.715 --> 00:24:32.765
+Katie Knaus: And so bending gets a little bit trickier right? We're dealing with a moment. But if we think about how
+
+
+157
+00:24:33.710 --> 00:24:35.944
+Katie Knaus: this is deforming.
+
+
+158
+00:24:36.055 --> 00:25:00.845
+Katie Knaus: What happens in bending is we have one side of our tissue here is in tension, so it's becoming longer, or pulled in that y-axis, while the other side is in compression, or being shortened in that y-axis, so like our tension and compression in our axial loading. This, again, is going to be some normal stress.
+
+
+159
+00:25:01.985 --> 00:25:14.655
+Katie Knaus: And so torsion, maybe the direction of the arrows is helpful here. But even as a moment's applied, the direction here is going to lead to shear stresses.
+
+
+160
+00:25:15.215 --> 00:25:17.805
+Katie Knaus: So we'll break this down a bit about why.
+
+
+161
+00:25:19.095 --> 00:25:28.254
+Katie Knaus: alright. So back here is our kind of 3D cross-sectional view here. So we have our normal stress or sorry, our normal force
+
+
+162
+00:25:28.365 --> 00:25:38.304
+Katie Knaus: perpendicular to it. And then our 2 shear stresses in this plane. And then we have our 3 moments about each axis, so
+
+
+163
+00:25:38.952 --> 00:25:44.444
+Katie Knaus: our 2 bending moments and our torsional moment about the perpendicular axis.
+
+
+164
+00:25:45.525 --> 00:25:59.624
+Katie Knaus: And so, if we look at our axial force, so this would be kind of a load that, or a force applied perpendicular to the surface, or our in force in the kind of lower corner here.
+
+
+165
+00:26:00.075 --> 00:26:00.945
+Katie Knaus: Alright.
+
+
+166
+00:26:01.125 --> 00:26:12.524
+Katie Knaus: when we think about our stress here, we're taking that force and dividing it over this cross-sectional area, the surface, right? So we said, our stress is going to be force
+
+
+167
+00:26:12.615 --> 00:26:41.975
+Katie Knaus: distributed over an area. And so when we have this axial force, right, we get this uniform distribution across this surface, and so kind of any point on this cross section that we were going to look. We could figure out the stress in that little block like we did before. If we found kind of a little cube there, right? The stress there would be equivalent to. We've divided that surface cross sectional area. We've divided the force by that surface cross sectional area.
+
+
+168
+00:26:43.155 --> 00:27:01.334
+Katie Knaus: And just as a reminder, this is kind of drawn in tension, which means the force is pulling away from the surface. But if we were to have the force directed opposite for compression, we'd have the same effect of this kind of uniform distribution of stress on the surface.
+
+
+169
+00:27:04.204 --> 00:27:07.285
+Katie Knaus: So now let's look at our other
+
+
+170
+00:27:07.415 --> 00:27:15.305
+Katie Knaus: forces. So our V force. So whether it's the force directed kind of vertically or horizontally on that surface.
+
+
+171
+00:27:15.655 --> 00:27:35.134
+Katie Knaus: we get these varying stresses across our cross section. So this parabolic distribution for this constant cross section. And so this is going to be a function of the shape. So our shear stress Tau is related to the shape of this cross section.
+
+
+172
+00:27:36.165 --> 00:27:50.155
+Katie Knaus: and then we have bending. So this is our moment, either about our vertical axis or our horizontal axis. So if we think about a moment or kind of like a curving
+
+
+173
+00:27:50.295 --> 00:27:54.385
+Katie Knaus: force here, right, we're both
+
+
+174
+00:27:55.095 --> 00:28:02.214
+Katie Knaus: pulling and pushing the 2 sides on opposite sides of that axis.
+
+
+175
+00:28:02.425 --> 00:28:19.765
+Katie Knaus: Alright. So what happens is we get this variable stress across the cross section, where at the edges. We have the largest stress, and then in the middle we have this kind of neutral axis zone right where there's no stress
+
+
+176
+00:28:20.055 --> 00:28:33.745
+Katie Knaus: right in the middle, and then largest at the edges, but in opposite directions on the 2 sides. So we kind of look here at a bone right? We talked about before, if we're bending something.
+
+
+177
+00:28:33.955 --> 00:28:59.995
+Katie Knaus: So that moment is either kind of creating compression on one side or tension on the other, so we can see that in this image, where, as the bone bends, the top side is getting longer in tension, and the bottom side is getting shorter in compression. And so, if we look at the stress happening there, right? The greatest compression, compressive stress is at the very bottom edge of this.
+
+
+178
+00:29:00.155 --> 00:29:10.635
+Katie Knaus: where the greatest tension stress is going to be at the very top edge. So these are normal stresses, just like our axial forces that led to compression and tension.
+
+
+179
+00:29:10.765 --> 00:29:23.565
+Katie Knaus: But now we have this distribution, and then this neutral axis is where we define this kind of middle where we have 0 because, we are kind of at that middle ground between
+
+
+180
+00:29:23.685 --> 00:29:25.855
+Katie Knaus: tension and compression.
+
+
+181
+00:29:27.495 --> 00:29:29.135
+Katie Knaus: So that
+
+
+182
+00:29:29.931 --> 00:29:47.384
+Katie Knaus: and we've kind of drawn this one way for our moment about our axis out of the page or axis 3 in this picture, but similarly works for the moment about Axis 2. So that would be kind of bending into the screen here.
+
+
+183
+00:29:49.115 --> 00:29:55.195
+Katie Knaus: And so our final one was our torsional moment. So this is the moment about that longitudinal axis
+
+
+184
+00:29:55.605 --> 00:30:11.634
+Katie Knaus: and kind of similar to when we had bending right. We get this distribution of our stress. So it varies across our cross section here, based on the shape. So we're using a circular shape. This would look slightly different, as we had different shapes
+
+
+185
+00:30:11.885 --> 00:30:40.555
+Katie Knaus: here, and so kind of on the outer edge. That's where there's the greatest stress from torsion, and then approaching 0 in the center of our beam here. Right? So we think about as this twist the center kind of stays where it is, as the outer parts as you move away, has to move more and more so. There's greater stress as we approach the outside and that, again, is the shear stress tau, which is in the surface here.
+
+
+186
+00:30:43.955 --> 00:30:51.284
+Katie Knaus: And so we describe this relationship between stress and then strain or describing our deformation
+
+
+187
+00:30:51.415 --> 00:31:10.805
+Katie Knaus: with material properties. So maybe we've seen a graph that looks sort of like this, where we have stress on the y-axis and then strain on the X-axis. Here. So stress, we said, is our force distributed over an area and then strain
+
+
+188
+00:31:11.295 --> 00:31:37.124
+Katie Knaus: we're describing our deformation or change in shape. So typically, this is a chain. If we're looking at tension in this case, right as our shape becomes longer here relative to its original length. So that's why we have strain as a percentage here. So it's normalized by its original length rather than just the absolute units of length change.
+
+
+189
+00:31:37.985 --> 00:31:51.045
+Katie Knaus: And so for our musculoskelet tissues, right? We get this curve that looks like this, which describes this relationship between the stress and strain. We kind of get these different regions along here.
+
+
+190
+00:31:52.052 --> 00:31:56.194
+Katie Knaus: So our tissues have this toe region where
+
+
+191
+00:31:56.835 --> 00:32:06.554
+Katie Knaus: it's deforming. But not a lot of stress has developed. And then we reach region where there's more of a linear relationship. As for each
+
+
+192
+00:32:06.855 --> 00:32:13.554
+Katie Knaus: unit of strain, we see a proportional rise in the stress of the tissue.
+
+
+193
+00:32:14.425 --> 00:32:32.315
+Katie Knaus: then moving as we get more yielding cell. This is where we start to have some micro failures within our tissue leading to catastrophic failure. So eventually we reach a strain that is beyond the limits of the tissue, and it has failed or fractured or broken.
+
+
+194
+00:32:33.665 --> 00:32:52.865
+Katie Knaus: and so material properties describe the shape of this curve. Right? We have some properties like yield strength, ultimate strength. That's telling us the stress at which we have this transition to yielding. Leaving this linear region, this ultimate strength, right? The stress
+
+
+195
+00:32:53.005 --> 00:32:56.935
+Katie Knaus: from which our tissue is going to fail.
+
+
+196
+00:32:57.385 --> 00:33:03.885
+Katie Knaus: And then Young's modulus here, which is defining the slope of this linear region.
+
+
+197
+00:33:04.505 --> 00:33:23.134
+Katie Knaus: And so Hooke's law is defining this kind of linear stress strain relationship. So the stress is proportional to the strain, and that proportionality constant is E, our young's modulus. So it's defining the slope here. So we may describe
+
+
+198
+00:33:23.135 --> 00:33:34.754
+Katie Knaus: how tissue materials relate to each other. So if you have a larger value for E, we may say a tissue behaves more stiffly, and so that means
+
+
+199
+00:33:34.785 --> 00:33:43.745
+Katie Knaus: to deform more. You would need to apply greater force, and needs to have a higher stress for the same amount of deformation.
+
+
+200
+00:33:45.208 --> 00:33:56.484
+Katie Knaus: If we were going to have kind of a steeper slope here. Similarly, if our slope was less steep. Right? You could get the same amount of deformation under lower stress.
+
+
+201
+00:33:57.065 --> 00:34:07.314
+Katie Knaus: So we can use these material properties to describe this mechanical behavior of our tissues or our materials.
+
+
+202
+00:34:10.525 --> 00:34:21.905
+Katie Knaus: And so, as we look at stress-strain relationships of our biological materials, our tissues of the musculoskeletal system, right? Even though we have kind of this linear region. Here
+
+
+203
+00:34:22.495 --> 00:34:43.625
+Katie Knaus: all of our tissues, right to some extent have a nonlinear stress-strain relationship, and that can vary depending on which strains we're actually kind of working with? Are we only looking at very small deformations? Or as we get larger right? That nonlinear behavior is making that relationship between stress and strain
+
+
+204
+00:34:43.845 --> 00:34:45.314
+Katie Knaus: more complicated.
+
+
+205
+00:34:47.177 --> 00:34:57.345
+Katie Knaus: But in addition to some nonlinearity in the stress strain behavior, right? So we would get this by deforming our tissue measuring force
+
+
+206
+00:34:57.805 --> 00:35:01.975
+Katie Knaus: distributed over an area as we've described right?
+
+
+207
+00:35:02.265 --> 00:35:23.324
+Katie Knaus: But we also have a property of biological tissues that's called anisotropy. So tissues are anisotropic. So an isotropic material is going to have the same stress-strain curve, no matter what direction you load it in. But if we are going to load a tendon or load some bone.
+
+
+208
+00:35:23.605 --> 00:35:33.425
+Katie Knaus: and we have this anisotropy which means kind of the orientation of our tissue sample, will give us a different stress strain, curve.
+
+
+209
+00:35:35.085 --> 00:35:44.415
+Katie Knaus: and then another kind of key aspect of our tissue material properties is viscoelasticity. So this is that the stress strain
+
+
+210
+00:35:44.505 --> 00:36:05.515
+Katie Knaus: is also a function of the strain rate. So right now, these stress strain curves don't tell us anything about time, dependent behavior. And so if we were going to measure this right, the rate of loading, we could actually get different answers, or end up drawing different curves.
+
+
+211
+00:36:06.204 --> 00:36:15.994
+Katie Knaus: And so Kisa did a really nice job kind of describing viscoelasticity of biological materials in an earlier tutorial. And
+
+
+212
+00:36:16.235 --> 00:36:24.745
+Katie Knaus: so it would kind of show up here if we're looking at these stress-strain relationships of a curve generated from maybe a high loading experiment
+
+
+213
+00:36:24.845 --> 00:36:29.935
+Katie Knaus: compared to a low loading rate. So slow loading rate.
+
+
+214
+00:36:30.495 --> 00:36:36.795
+Katie Knaus: So that's the rate at which strain is developed or how quickly we're deforming the tissue.
+
+
+215
+00:36:37.895 --> 00:36:50.084
+Katie Knaus: And so these different kind of material properties, these characteristics of the mechanical behavior is very much related to the structure of these tissues.
+
+
+216
+00:36:50.495 --> 00:37:02.964
+Katie Knaus: And so let's talk a bit more about our musculoskeletal tissues, because by understanding the structure of them, we can start to understand why these mechanical behaviors arise.
+
+
+217
+00:37:04.105 --> 00:37:18.744
+Katie Knaus: So just as an overview, we're going to focus today on connective tissues that are specific to our musculoskeletal system. But connective tissue is kind of this very large category of tissues within the body.
+
+
+218
+00:37:19.105 --> 00:37:32.815
+Katie Knaus: So we have the proper ones so loose and dense connective tissue. So we'll be working more with some of our dense connective tissues here and then our supportive connective tissues. So
+
+
+219
+00:37:33.605 --> 00:37:46.895
+Katie Knaus: the bone and cartilage. And so, as we define a tissue right, these are our biologic materials that we deal with within the mechanics scope of defining materials.
+
+
+220
+00:37:47.165 --> 00:37:54.605
+Katie Knaus: But we're talking about kind of an ensemble biological cellular material that carries out a specific function
+
+
+221
+00:37:54.745 --> 00:38:15.674
+Katie Knaus: so different than describing a specific structure of the musculoskeletal system. Right? We might have. The femur is a bone within the body, but actually comprises more than one type of bony material. So we have both compact and spongy bone within
+
+
+222
+00:38:16.105 --> 00:38:17.145
+Katie Knaus: a bone.
+
+
+223
+00:38:17.325 --> 00:38:34.094
+Katie Knaus: Alright. So we're talking kind of right now about the tissue or the material level. Same with our cartilage. We have these 3 different types of cartilage, which have kind of distinct material properties, and then compare these different structures within our body.
+
+
+224
+00:38:34.555 --> 00:38:51.535
+Katie Knaus: similar with tendons and ligaments. They're actually kind of pretty similar from a material point of view, but create these different structures right? Where tendons are structures that connect muscles to bones and ligaments are connecting bone to other bones.
+
+
+225
+00:38:55.045 --> 00:39:13.694
+Katie Knaus: Kind of an overview here on bone. So we can zoom in right? We said. We have the individual bone structures. But now let's think about bone as a material, particularly as 2 different tissue types or 2 different materials.
+
+
+226
+00:39:14.415 --> 00:39:19.964
+Katie Knaus: So the compact bone is the or sometimes cortical bone.
+
+
+227
+00:39:20.345 --> 00:39:22.124
+Katie Knaus: Right? It's very dense.
+
+
+228
+00:39:22.375 --> 00:39:29.444
+Katie Knaus: tends to be the outside of bones. So you get this kind of layer looking at this cross section of bone.
+
+
+229
+00:39:30.505 --> 00:39:35.004
+Katie Knaus: So the outer edge of this is this thick layer
+
+
+230
+00:39:35.345 --> 00:39:38.455
+Katie Knaus: of dense bone material. Why, it's compact.
+
+
+231
+00:39:39.572 --> 00:39:51.715
+Katie Knaus: And it has different properties than as we kind of go to the center of bones, which is made of spongy bone, or sometimes called trabecular bone, because it has all these windows trabeculae through it.
+
+
+232
+00:39:52.365 --> 00:39:54.455
+Katie Knaus: and so it has kind of a
+
+
+233
+00:39:55.342 --> 00:39:58.684
+Katie Knaus: lesser density, right? And if we zoom in
+
+
+234
+00:39:58.795 --> 00:40:08.145
+Katie Knaus: comes complicated to describe this as material, because we have the spongy, porous material of the spongy bone.
+
+
+235
+00:40:09.205 --> 00:40:14.975
+Katie Knaus: And so, if we kind of look at the makeup of this, the bone
+
+
+236
+00:40:15.075 --> 00:40:23.125
+Katie Knaus: is made up of these Osteons. So we get these layers here of
+
+
+237
+00:40:23.465 --> 00:40:46.955
+Katie Knaus: the lamellae. So this is like dense collagen fibers with mineral content and kind of form. These rings, concentric rings that house the artery veins, nerves that run through our bones right? And so it forms these ring-like structures, and so these are very dense in the
+
+
+238
+00:40:47.075 --> 00:40:51.875
+Katie Knaus: compact bone, though you still have Osteons form in the spongy bone.
+
+
+239
+00:40:53.755 --> 00:41:10.485
+Katie Knaus: And so we have cells that hang out in here. So an Osteocyte is our mature bone cell. So most of our primary cell types have site meaning cell. And then
+
+
+240
+00:41:10.595 --> 00:41:22.035
+Katie Knaus: the this case is an osteocyte referring to bone cell, our cells that are working inside of our tissue. So bone is
+
+
+241
+00:41:22.375 --> 00:41:36.015
+Katie Knaus: much of its density is not cellular. Right? There's cells in between the layers of the luminum, but most of the mass of bone comes from the collagen fibers and the mineral density stored in bone
+
+
+242
+00:41:36.345 --> 00:41:52.624
+Katie Knaus: right? And those components are what's contributing to the material properties. So we talked before about anisotropy or directional characteristics of materials. And so we have this orientation of the osteocytes here. So we can imagine.
+
+
+243
+00:41:52.755 --> 00:42:04.245
+Katie Knaus: if we are going to compress an Osteocyte along its length, and maybe behave differently than if we try to compress across the bone here right? Because this
+
+
+244
+00:42:04.345 --> 00:42:12.405
+Katie Knaus: tissue doesn't have kind of a isotropic or uniform structure in all directions, but it has very direct
+
+
+245
+00:42:12.975 --> 00:42:19.004
+Katie Knaus: clear directionality to its structure, which leads to a clear directionality to its mechanics.
+
+
+246
+00:42:23.645 --> 00:42:32.955
+Katie Knaus: And so then we have cartilage, and there's kind of 3 types of cartilage tissue for the different cartilage structures in our body.
+
+
+247
+00:42:33.255 --> 00:42:39.425
+Katie Knaus: Elastic cartilage makes up things like the cartilage in your external ear.
+
+
+248
+00:42:40.015 --> 00:42:59.475
+Katie Knaus: and then hyaline cartilage is probably the one we talk most about in our musculoskeletal biomechanics, because this is your articular cartilage. This is, what's lining all those joints and providing some cushioning and lubrication, reducing friction at those interactions or articulations between
+
+
+249
+00:42:59.585 --> 00:43:07.645
+Katie Knaus: segments? Right? So our articular cartilage is that joints, and then our fibrocartilage.
+
+
+250
+00:43:08.595 --> 00:43:17.404
+Katie Knaus: So this is like what your vertebral discs are made of. Right maybe labrum and other structures. Your meniscus.
+
+
+251
+00:43:17.931 --> 00:43:25.275
+Katie Knaus: So this is going to be a denser tissue. And so we kind of look at this image. What we're seeing here is the
+
+
+252
+00:43:25.385 --> 00:43:54.914
+Katie Knaus: kind of distribution of cells relative to our extracellular matrix. So that's the components of our tissue that are not actually living cells, but other structures, proteins, molecules that make up that tissue. And so, as we kind of go across here, the less cell dense ones have a greater stiffness, more of that Ecm extracellular matrix
+
+
+253
+00:43:54.985 --> 00:44:03.125
+Katie Knaus: material. And so we get these different mechanical properties. As we have this different distribution of the components of it.
+
+
+254
+00:44:03.795 --> 00:44:16.414
+Katie Knaus: So most of our mechanical behavior in the cartilage is not based on the cells, but rather this kind of interaction of the extracellular portions of this
+
+
+255
+00:44:17.339 --> 00:44:29.095
+Katie Knaus: and so, like our bone collagen fibers play a big role in the mechanics. We have these different collagen fibers interwoven here.
+
+
+256
+00:44:29.915 --> 00:44:38.155
+Katie Knaus: and then we have these molecules called proteoglycans. These are these kind of feathery looking things in the picture.
+
+
+257
+00:44:38.435 --> 00:44:55.724
+Katie Knaus: And so these molecules are hydrophilic, which means they really like water. They attract water. So by having these molecules within the tissue, it pulls fluid in, because fluid plays a big role in the cartilage behavior.
+
+
+258
+00:44:55.885 --> 00:45:01.994
+Katie Knaus: Right? So we have the collagen fibers which can bear tensile loads. So as we
+
+
+259
+00:45:02.195 --> 00:45:07.075
+Katie Knaus: deform our cartilage in different ways. Right? We're stretching those fibers.
+
+
+260
+00:45:07.845 --> 00:45:12.285
+Katie Knaus: But then the fluid also interacts
+
+
+261
+00:45:12.415 --> 00:45:19.565
+Katie Knaus: alright. So as we load, we're getting fluid kind of in or out, right. If we were going to
+
+
+262
+00:45:19.685 --> 00:45:30.325
+Katie Knaus: think of our cartilage like a sponge. If you were going to squish a sponge right, it would push all the fluid out, and then the structure of the sponge would kind of hold together under that load
+
+
+263
+00:45:30.775 --> 00:45:31.655
+Katie Knaus: right?
+
+
+264
+00:45:32.115 --> 00:45:35.465
+Katie Knaus: But it would not be a great thing if our cartilage never
+
+
+265
+00:45:36.045 --> 00:45:52.445
+Katie Knaus: recover that fluid. So that's where the proteoglycans play a role to then draw that fluid back into the tissue. And so this is where we start to get talked about viscoelasticity, which is both kind of properties of a viscous fluid and an elastic solid
+
+
+266
+00:45:52.645 --> 00:45:58.964
+Katie Knaus: alright. So we have this interaction of fluid behavior and solid behavior within our tissues.
+
+
+267
+00:45:59.105 --> 00:46:04.765
+Katie Knaus: and this happens to some extent in all of our connective tissues, and the kind of
+
+
+268
+00:46:04.965 --> 00:46:13.235
+Katie Knaus: amount of fluid behavior is in part regulated by this extracellular matrix structure or these
+
+
+269
+00:46:14.094 --> 00:46:21.934
+Katie Knaus: hydrophilic molecules compared to maybe the collagen and density of other components within this.
+
+
+270
+00:46:24.095 --> 00:46:39.825
+Katie Knaus: and then our last ones kind of lump, tendon and ligament together, because from a tissue or material point of view, they're very similar. We kind of get these bands of fibrous tissue. So majority of the structure comes from collagen fibers.
+
+
+271
+00:46:40.265 --> 00:46:53.685
+Katie Knaus: and we can differentiate them based on how well aligned these collagen fibers are. So both have a very primary direction. Again, that anisotropy or the directional quality to our tissue
+
+
+272
+00:46:53.925 --> 00:47:03.024
+Katie Knaus: and tendon. The fibers are kind of more parallel, and then in ligament we see kind of more nearly parallel, but a little more
+
+
+273
+00:47:03.185 --> 00:47:04.265
+Katie Knaus: cross here.
+
+
+274
+00:47:05.515 --> 00:47:18.964
+Katie Knaus: And so ligaments again, are our structures within the body. So this tissue is what's in those structures that are joining bone to bone. So they're going to have different shapes, lengths depending on which bones we're connecting
+
+
+275
+00:47:19.205 --> 00:47:24.904
+Katie Knaus: right? They're really stability structures holding things together, keeping them stable.
+
+
+276
+00:47:25.605 --> 00:47:31.415
+Katie Knaus: and then a tendon is a tendon. Tissue is part of a structure connecting a muscle to bone.
+
+
+277
+00:47:31.585 --> 00:47:48.515
+Katie Knaus: Again, we have kind of very different shapes and lengths of these structures in the body, but these are really the functional link between the dynamic and static part of our musculoskeletal system right. If our skeleton or our bones is our static frame, and then the ligaments kind of
+
+
+278
+00:47:48.645 --> 00:47:57.614
+Katie Knaus: are supporting that frame, our muscles are the dynamic portion, and the tendons are transferring forces from those muscles for that.
+
+
+279
+00:47:58.395 --> 00:48:01.464
+Katie Knaus: And so kind of thinking. Back, we talked about our
+
+
+280
+00:48:01.855 --> 00:48:11.244
+Katie Knaus: nonlinear tissue behavior. And so, looking at the structure, we could better understand where that nonlinearity comes from. So we had
+
+
+281
+00:48:11.465 --> 00:48:23.845
+Katie Knaus: toe region, whereas strain increases. You know, we don't have a large stress increase right away, but it starts to get steeper and steeper into our linear region. And so if we
+
+
+282
+00:48:24.025 --> 00:48:32.174
+Katie Knaus: think about our kind of collagen fiber structure within our tissue here, right. If we start at our slack length, we have these different lengths of
+
+
+283
+00:48:32.325 --> 00:48:37.414
+Katie Knaus: collagen fibers. And so, as we start to stretch this tendon
+
+
+284
+00:48:37.735 --> 00:49:01.965
+Katie Knaus: right, some of those fibers are now starting to develop a tension in them. So we're getting in this little rise in stress. But some are still kind of wavy. They haven't fully stretched yet. And so, as more of those are kind of stretched to their tension length, they're adding more and more tension. So stress to our tissue right until we reach this point
+
+
+285
+00:49:02.055 --> 00:49:25.704
+Katie Knaus: where we switch to this linear elastic region. So if we kind of see in our picture right, we don't have any of those like longer untensioned fibers going on. So at this point every fiber is bearing a load, and each contributing to that rise in stress with each increment of strain. Right? So we get this proportional relationship between lengthening and force.
+
+
+286
+00:49:25.925 --> 00:49:29.225
+Katie Knaus: So between our strain and our stress
+
+
+287
+00:49:29.555 --> 00:49:33.824
+Katie Knaus: until we reach this point where our fibers start to snap off. We've
+
+
+288
+00:49:33.955 --> 00:49:46.555
+Katie Knaus: exceeded our limits here of how much they will stretch. And so, as they start to break, we're getting longer. But our stress is actually going down because fewer fibers
+
+
+289
+00:49:46.805 --> 00:49:56.354
+Katie Knaus: are involved until we reach this point of failure. So we can better understand this curve from our collagen structure.
+
+
+290
+00:49:57.985 --> 00:50:18.654
+Katie Knaus: And so these different tissues, right? They vary in structure and function. And so we can better understand their mechanics from their structure. Right? We have very similar components to our connective tissues. But the amount and the organization of those components is what's really distinguishing them from each other.
+
+
+291
+00:50:19.615 --> 00:50:36.625
+Katie Knaus: So the cell density. So again, the cells are not the big workers as far as mechanics and load bearing in these tissues think of them more as maintenance workers because they respond to load and help in adaptation and remodeling of these.
+
+
+292
+00:50:36.695 --> 00:50:52.435
+Katie Knaus: And so, if we think of ourselves as kind of our maintenance workers in our tissues, in tissues where we have higher cell density. We can have, more turnover, more maintenance in tissues with lower cell density like our fibrocartilage.
+
+
+293
+00:50:52.595 --> 00:51:08.145
+Katie Knaus: We don't have as much going on there to be able to do that maintenance work right. This is why maybe a damage to tissue like the meniscus of your knee right? Does not heal quickly because we have fewer maintenance workers in that space.
+
+
+294
+00:51:08.525 --> 00:51:16.095
+Katie Knaus: And so they're not so. The cells are not really doing the mechanical work. But the maintenance work of the mechanical structures.
+
+
+295
+00:51:16.505 --> 00:51:24.254
+Katie Knaus: Similarly, we have vascularization. So blood vessels that kind of go through all these tissues, and this will differ for different tissues.
+
+
+296
+00:51:24.375 --> 00:51:49.684
+Katie Knaus: And again, this is kind of, we think about availability of supply delivery to our cells and our tissues. Right? If we have more blood vessels in the tissue. We can bring more supplies to that space versus. If we have low vasculature, we are having less of that supply chain. But again, not as much involved in the mechanical behavior of the tissue.
+
+
+297
+00:51:50.025 --> 00:52:06.174
+Katie Knaus: because for connective tissues that mechanical behavior, those mechanical properties are determined by the extracellular matrix, the ecm, both the components of it. So what structures are there and how they're organized
+
+
+298
+00:52:06.485 --> 00:52:32.665
+Katie Knaus: so primarily collagen fibers? We also have Elastin fibers. So how well aligned those collagen fibers, how dense they are! All of these things contribute to those material properties. Right? If our fibers are all very parallel with each other, our tissue has very different anisotropy than if our fibers are kind of more intertwined and pointing in different directions.
+
+
+299
+00:52:33.605 --> 00:52:46.265
+Katie Knaus: The mineral density, right bone is a hard tissue where our tendons, ligaments, cartilage are softer tissues. Bone has a lot more mineral density, adding to that hardness.
+
+
+300
+00:52:46.475 --> 00:53:02.884
+Katie Knaus: And then those proteoglycans or macromolecules are important in our ecm not in their role in kind of bearing loads, but their role in determining fluid within that tissue, as the fluid mechanics will play a role in those viscoelastic properties.
+
+
+301
+00:53:04.075 --> 00:53:09.895
+Katie Knaus: So those proteoglycans are linked to kind of our fluid content within the tissue.
+
+
+302
+00:53:10.425 --> 00:53:13.595
+Katie Knaus: So we have these different kind of
+
+
+303
+00:53:14.035 --> 00:53:37.835
+Katie Knaus: things within our tissue right? And this will. They all have some cells, vascularization, Ecm fluid, content to some extent. And this is varying between our different tissues. Right? This is how we determine their structure. And then that's linked to their mechanical functions in the body. So they're structured this way because they do different mechanical jobs. They bear different loads
+
+
+304
+00:53:38.035 --> 00:53:47.585
+Katie Knaus: alright. So the characteristics of those loads is going to differ across these tissues, which is why they have different structure to determine those material properties.
+
+
+305
+00:53:49.085 --> 00:54:00.324
+Katie Knaus: So, coming back to our material property curve here. But now, kind of thinking about our fibers, our Ecm structures that are here right? We
+
+
+306
+00:54:00.981 --> 00:54:05.235
+Katie Knaus: these material properties are going to relate to that mechanical function.
+
+
+307
+00:54:05.475 --> 00:54:11.634
+Katie Knaus: So if we think about our different types of loading that can occur, think about our different
+
+
+308
+00:54:11.795 --> 00:54:15.685
+Katie Knaus: tissue type cell. Hopefully, this video
+
+
+309
+00:54:15.865 --> 00:54:24.566
+Katie Knaus: plays decently via zoom. But what we're looking at is kind of a view of the knee joint here, so we can see
+
+
+310
+00:54:25.105 --> 00:54:28.648
+Katie Knaus: the bones moving as the knee bends
+
+
+311
+00:54:29.225 --> 00:54:55.525
+Katie Knaus: and then kind of zooming. Inside the white on the surfaces is the articular cartilage at the knee joint, and then looking at the ligaments binding the femur to the tibia here. So kind of a good view of the Acl. And Pcl. As this joint moves, and so let's maybe take a sec. If we can see this video well, and of these different types of loading, think about what's happening
+
+
+312
+00:54:55.905 --> 00:55:04.395
+Katie Knaus: in these different tissue structures. Which kind. Which of these loads are they experiencing from this we've met.
+
+
+313
+00:56:11.615 --> 00:56:14.015
+Victoria Wood: We have a question in the chat here.
+
+
+314
+00:56:14.755 --> 00:56:21.175
+Katie Knaus: Oh, okay, and see it. So Hannah asked, how do we best identify stress strain curves?
+
+
+315
+00:56:22.079 --> 00:56:40.065
+Katie Knaus: Yeah. So we'll talk about that. Yeah, get to that in just a second of how. So we have this nice curve here, right? But how do we actually know what this curve looks like? That's a great question. So I'll pause, but I will get to in a sec, and then we can circle back if we've answered it.
+
+
+316
+00:56:40.776 --> 00:56:53.275
+Katie Knaus: And so how do we identify these stresses before failure is reached? To prevent injury is also an excellent question, and one, I think many people continue to work
+
+
+317
+00:56:53.395 --> 00:57:11.914
+Katie Knaus: to identify so from better understanding, the stress strain relationships and the dynamics, the conditions right of these forces. So we're kind of doing a very simplified view today. But thinking about, can we use
+
+
+318
+00:57:12.785 --> 00:57:19.914
+Katie Knaus: our tools right? So beyond just kind of hand math to solve internal loads? This is where we use
+
+
+319
+00:57:20.045 --> 00:57:33.565
+Katie Knaus: computer simulations to be able to estimate these forces acting on bodies and then translate that to our internal forces and loads to understand that.
+
+
+320
+00:57:34.005 --> 00:57:34.695
+Katie Knaus: But
+
+
+321
+00:57:35.145 --> 00:57:52.044
+Katie Knaus: before I kind of get into how we know about these properties. Part of it comes from understanding what loads are occurring. If we're thinking about tissues in vivo, because that will help us understand where we might want to, what conditions we might want to measure these in.
+
+
+322
+00:57:52.195 --> 00:57:54.553
+Katie Knaus: And so kind of here.
+
+
+323
+00:57:55.555 --> 00:57:59.254
+Katie Knaus: we hopefully, you've chatted about it with each other.
+
+
+324
+00:57:59.857 --> 00:58:10.835
+Katie Knaus: So maybe thinking about tension. Here, we can kind of see tension occurring in these ligaments. So as the knee moves, they become stretched or elongated.
+
+
+325
+00:58:11.075 --> 00:58:40.615
+Katie Knaus: We have compression occurring as these bones push together, we're compressing those articular cartilage structures on the surface, but also shearing right as they kind of slide past each other, generate some forces there. Just looking at the structure of these ligaments, we might even have some kind of torsion happening, depending on the view we're looking at, right? So not only stretching, but some twisting about the long axis of those that's a kind.
+
+
+326
+00:58:41.135 --> 00:58:51.265
+Katie Knaus: maybe less bending during this, but we kind of zoomed out and thought about loads acting all the way across our bone right? We can have bending.
+
+
+327
+00:58:51.775 --> 00:58:58.574
+Katie Knaus: burning on our bone here, and so great. I walked
+
+
+328
+00:58:59.115 --> 00:59:20.725
+Katie Knaus: carry on to answer Hannah's question of how do we actually know what these material properties look like? And so, even though we think about these properties related to tissue structure, right? And that can help us explain. We actually characterize these empirically based on observation.
+
+
+329
+00:59:21.931 --> 00:59:23.945
+Katie Knaus: So we're
+
+
+330
+00:59:24.645 --> 00:59:35.974
+Katie Knaus: can use the tissue structure to explain. Better understand why they behave this way. But we are observing this behavior right, this relationship between stress and strain
+
+
+331
+00:59:36.195 --> 00:59:45.225
+Katie Knaus: and quantifying this. So we've had some other workshops before this about mathematical models defining these empirical relationships.
+
+
+332
+00:59:46.350 --> 00:59:58.975
+Katie Knaus: But we do this through experiments so particularly tissue mechanics, experiments right? Something like a mechanical tester. Maybe some of you are working with like an instron in labs.
+
+
+333
+00:59:59.661 --> 01:00:04.035
+Katie Knaus: So on this device, we're applying a uniaxial
+
+
+334
+01:00:04.385 --> 01:00:17.264
+Katie Knaus: tension. So we have a force gauge so we can measure the load and then grips holding our tissue. So we're measuring how much it's deforming right? And then can generate those stress strain curves?
+
+
+335
+01:00:18.010 --> 01:00:23.854
+Katie Knaus: And and we could do this different ways. So in this picture, here, this is the
+
+
+336
+01:00:24.385 --> 01:00:50.045
+Katie Knaus: tele tendon. So we could have a section of tissue cut. That's either along the fiber direction. So we'd be if we put this in our instrument and are stretching it right. We're stretching in the longitudinal direction versus if we cut a section kind of across the fibers, we'd stretch the other way, and we get very different results there.
+
+
+337
+01:00:50.635 --> 01:01:08.594
+Katie Knaus: And these approaches. Typically, we're using ex vivo tissue. Right? We have an animal that is already ceased or a human cadaver. Maybe that we're doing this testing on right? We're removing the tissue from
+
+
+338
+01:01:08.895 --> 01:01:13.984
+Katie Knaus: it's kind of native state to be able to do this testing.
+
+
+339
+01:01:14.194 --> 01:01:27.775
+Katie Knaus: Now, sometimes we do mechanical testing. That may be more of what we call an insight. You test or kind of the tissue is still in its place. So kind of thinking back to our knee video. Could we
+
+
+340
+01:01:27.944 --> 01:01:50.955
+Katie Knaus: set up a knee that has ligaments still intact, and maybe through like a robotic, 6 degree of freedom manipulator, be able to apply loads that are more physiologic. These kind of combined loads, like we were looking at in the knee where it was not just tension, but maybe a tension and a torsion. Great start to generate these, that
+
+
+341
+01:01:51.265 --> 01:02:02.135
+Katie Knaus: kind of ultimately to create these curves of stress and strain. We need a measurement of the deformation.
+
+
+342
+01:02:02.335 --> 01:02:03.524
+Katie Knaus: And then
+
+
+343
+01:02:04.065 --> 01:02:19.205
+Katie Knaus: to get strain from that, we have the original shape, or the if we're stretching something right? The original length that we're normalizing by. Similarly, for stress, we can have gauges to measure force.
+
+
+344
+01:02:19.315 --> 01:02:28.335
+Katie Knaus: But we do have to have measurements of cross-sectional areas right? A way to estimate that force as a stress
+
+
+345
+01:02:28.725 --> 01:02:40.894
+Katie Knaus: which comes with different amounts of assumptions and difficulties, kind of depending on the case that we're working with, right, how non-uniform a structure is, how difficult it is to get a direct measurement.
+
+
+346
+01:02:43.875 --> 01:03:01.465
+Katie Knaus: And so we've talked about tissue material properties, and these arise from that kind of underlying microstructure. And so, even though we measure these empirically, we can use these structural characteristics kind of explain this response. We observe between stress and strain.
+
+
+347
+01:03:02.183 --> 01:03:06.254
+Katie Knaus: And we need this normalization to sample size.
+
+
+348
+01:03:06.395 --> 01:03:23.084
+Katie Knaus: right to go from a elongation to a strain, from a force to a stress. And that's because if we kind of look at the mechanics of a connective tissue structure. Right? If we were going to take the full acl right? This
+
+
+349
+01:03:24.745 --> 01:03:54.184
+Katie Knaus: larger macro structure of that of the Acl plays a role as well as its material properties. So sometimes we'll describe the mechanical properties of tissue structure. So rather than just ligament tissue. Right? We're talking about a specific ligament than the body. So this is going to depend on that morphology. So the shape or geometry of it, in addition to the material properties of the tissue type.
+
+
+350
+01:03:54.245 --> 01:04:06.655
+Katie Knaus: So the Acl. We might just have ligament tissue. But if we were talking about the mechanical properties of the femur, we have both the compact and spongy bone involved in that.
+
+
+351
+01:04:07.815 --> 01:04:13.225
+Katie Knaus: and so kind of. For example, if we were going to look at the Acl right
+
+
+352
+01:04:13.806 --> 01:04:25.714
+Katie Knaus: if we in this case our graph is now elongation, so we have absolute units of length, change on the x-axis, and then absolute units of force
+
+
+353
+01:04:25.875 --> 01:04:27.435
+Katie Knaus: on the y-axis.
+
+
+354
+01:04:27.935 --> 01:04:45.735
+Katie Knaus: And so if our tendon or our ligament was longer. In the 1st place, so say we had an acl that was length l. Versus one. That was 2 l. If it had the same underlying material properties, and we applied a certain amount of force to it.
+
+
+355
+01:04:46.155 --> 01:04:52.805
+Katie Knaus: we would have twice the stretch in that longer ligament, but the same force
+
+
+356
+01:04:54.315 --> 01:05:00.515
+Katie Knaus: right, which would point to a smaller slope in our force elongation curve.
+
+
+357
+01:05:00.885 --> 01:05:13.875
+Katie Knaus: So a longer ligament is less stiff mechanically, even if it has the same underlying material properties, if we were to normalize by the original length and the cross-sectional area.
+
+
+358
+01:05:15.075 --> 01:05:34.805
+Katie Knaus: Similarly, if we had a ligament that had a larger cross-sectional area. So again, we have absolute units of length and force on our X and Y axes here, and we have 2 ligaments, one that has cross sectional area of A, and then one that's 2, a. So a ligament that's kind of twice as
+
+
+359
+01:05:35.185 --> 01:05:36.385
+Katie Knaus: thick around.
+
+
+360
+01:05:36.755 --> 01:05:38.315
+Katie Knaus: We're going to see
+
+
+361
+01:05:38.695 --> 01:05:52.224
+Katie Knaus: that we would need kind of twice the force to elongate this thicker ligament, the same amount. So again, that means our stiffness or our slope between our force length. Relationship here
+
+
+362
+01:05:52.225 --> 01:06:12.134
+Katie Knaus: is higher for our thicker ligament. So as we kind of are trying to define the material properties of a tissue, we have to keep this morphology, the shape geometry in mind. And so that's why we have these normalizations in our measurements to create these material property curves.
+
+
+363
+01:06:12.795 --> 01:06:31.854
+Katie Knaus: But in this case of considering, maybe an injury, right? That morphology plays a role. So we're thinking about both the morphology and the material properties of to what extent would a load potentially damage a structure within the body.
+
+
+364
+01:06:37.255 --> 01:06:38.025
+Katie Knaus: No.
+
+
+365
+01:06:38.685 --> 01:06:43.295
+Katie Knaus: So kind of summing up our connective tissue here.
+
+
+366
+01:06:43.415 --> 01:06:51.904
+Katie Knaus: Alright, so just trying to connect our structure to function. Right. We have these natural materials. They have
+
+
+367
+01:06:52.135 --> 01:07:08.924
+Katie Knaus: material properties. They also, as we kind of look at beyond just the tissue level, we have these specific structures in the body, right? Specific bones, specific ligaments, tendons, right? So that's related to their mechanical properties.
+
+
+368
+01:07:09.715 --> 01:07:23.294
+Katie Knaus: And we characterize these empirically through observation. We apply a force and look at how it deforms, or we apply deformation and look at the forces generated.
+
+
+369
+01:07:23.375 --> 01:07:48.485
+Katie Knaus: So we are observing how these things interact to define these relationships. And so that's where our experimental approaches. And this may take different form, depending on what tissue type we're measuring. And in one case, I think we have kind of lots of examples across Mz of some different experimental characterization of tissues.
+
+
+370
+01:07:50.015 --> 01:07:53.524
+Katie Knaus: And so this is going to relate to the type of loading
+
+
+371
+01:07:54.055 --> 01:08:01.284
+Katie Knaus: the direction of loading. So we care about which direction we load tissues because of anisotropy
+
+
+372
+01:08:01.795 --> 01:08:10.674
+Katie Knaus: care about which type of loading we use right? Because some tissues experience more compression, some more tension, some have more bending right?
+
+
+373
+01:08:10.865 --> 01:08:23.605
+Katie Knaus: And then the rate of loading is important as well. So in doing these tests right, like our instron test? Are we doing it at a very slow pace, where we kind of incrementally change the length.
+
+
+374
+01:08:23.745 --> 01:08:32.954
+Katie Knaus: wait for it to reach a steady state, measure the force? Or are we quickly stretching and looking at load over that right? So
+
+
+375
+01:08:33.225 --> 01:08:40.785
+Katie Knaus: all related to that kind of fluid-like behavior, in addition to our solid like behavior of our tissues.
+
+
+376
+01:08:42.355 --> 01:08:53.064
+Katie Knaus: So for today, I'm kind of mostly focused on connective tissue. But muscle is a big part of our musculoskeletal
+
+
+377
+01:08:53.185 --> 01:09:13.425
+Katie Knaus: system, and we have many kind of other Mc workshops that are more muscle centric. So I wanted to just tie in some kind of concepts of muscle that relate to what we've talked about so far, but similar to our connective tissues. We characterize muscle mechanical properties empirically.
+
+
+378
+01:09:14.494 --> 01:09:27.085
+Katie Knaus: So we may have seen this already in kind of former muscle related talks right. But we have this passive force, length, property, this relationship between applied force and elongation.
+
+
+379
+01:09:27.615 --> 01:09:32.044
+Katie Knaus: right kind of looks like our tendon curves that we ato region into linear.
+
+
+380
+01:09:32.585 --> 01:10:02.065
+Katie Knaus: and then we also have active force, length, and force, velocity, properties. Right? So again, kind of simplified. Take here, as we will do more with motor control and the nervous system in other spaces. But when we have our muscle in sense, turn on right, we now are thinking of our force, not only as a function of length and rate of length, change, or velocity, but also that activation level
+
+
+381
+01:10:04.236 --> 01:10:12.364
+Katie Knaus: and, like our connective tissues, right. These mechanical properties arise, due to the characteristics of the muscle structure.
+
+
+382
+01:10:13.035 --> 01:10:41.734
+Katie Knaus: So we have extracellular matrix within muscle plays an important role. But, unlike our connective tissues, the cells, or the muscle fibers within muscle tissue are playing a significant role in the mechanics of this tissue. We have intracellular proteins that also contribute to our passive properties. So we've heard
+
+
+383
+01:10:41.795 --> 01:10:45.676
+Katie Knaus: Lot about Titan so far, and the role it's playing
+
+
+384
+01:10:46.155 --> 01:11:03.715
+Katie Knaus: as well as the proteins within the Sarcomeres that are contributing to active properties. Right? So all of those things come from the cells, while the Ecm or extracellular matrix playing a supportive role in the passive properties.
+
+
+385
+01:11:03.815 --> 01:11:09.544
+Katie Knaus: So that's kind of the big difference as we switch from connective tissue to muscle here.
+
+
+386
+01:11:10.055 --> 01:11:34.114
+Katie Knaus: And like our connective tissues, right? It's a living tissue. It's adapting, remodeling. Those cells are responding to loads right? And we have different types of cells, different type fiber types that are going to have different mechanics, metabolism, plasticity. So how they are kind of working and changing within our body.
+
+
+387
+01:11:41.025 --> 01:11:50.355
+Katie Knaus: So no, I don't know. Here, as we have our active and passive properties of muscle.
+
+
+388
+01:11:50.985 --> 01:11:55.465
+Katie Knaus: Right? We empirically characterize these. And we've seen
+
+
+389
+01:11:55.645 --> 01:12:01.755
+Katie Knaus: some cool examples going into this right? And I think, have other
+
+
+390
+01:12:01.855 --> 01:12:14.895
+Katie Knaus: talks that are more muscle centric. But we have these kind of active and passive current together. Right? So if we are actually measuring muscle force length.
+
+
+391
+01:12:15.015 --> 01:12:22.635
+Katie Knaus: we can't isolate the active from the passive. Once we're at lengths long enough that we're going to have passive properties.
+
+
+392
+01:12:23.015 --> 01:12:29.054
+Katie Knaus: And so if we were going to consider a muscle that we're measuring at these different lengths.
+
+
+393
+01:12:29.885 --> 01:12:36.125
+Katie Knaus: and at length a our short length here, right? If our muscle's passive
+
+
+394
+01:12:36.355 --> 01:12:46.594
+Katie Knaus: wouldn't be measuring any force in this kind of uniaxial tension setup. But if we were to activate this, maybe we have a
+
+
+395
+01:12:46.785 --> 01:12:58.845
+Katie Knaus: vitro setup where we could electrically or through calcium stimulate this muscle right? We could measure the active here, and we would get a point on that active curve specifically.
+
+
+396
+01:12:59.415 --> 01:13:08.045
+Katie Knaus: And if we go to B, where we're right at our slack length, so this is the length right where the passive muscle would begin to generate tension.
+
+
+397
+01:13:08.325 --> 01:13:12.904
+Katie Knaus: If we were to activate it, it'd be pretty close to that peak.
+
+
+398
+01:13:13.005 --> 01:13:15.945
+Katie Knaus: Active force here if we're fully active.
+
+
+399
+01:13:17.255 --> 01:13:27.825
+Katie Knaus: But then, if we go to this length C, where we stretched out our muscle so 1st we'd measure a passive force. Now that we've applied a tension to our muscle.
+
+
+400
+01:13:28.385 --> 01:13:42.004
+Katie Knaus: And so if we were trying to then activate this muscle right, we wouldn't actually get this dot on the green line, because we already have this passive tension. So we get this additive effect or this total
+
+
+401
+01:13:42.135 --> 01:13:57.625
+Katie Knaus: curve. So while we kind of understand the passive and active properties coming from different portions of our muscle, they do come together. And so, as we empirically characterize or characterize these properties through observation.
+
+
+402
+01:13:57.735 --> 01:14:01.885
+Katie Knaus: then we have both of those occurring at once.
+
+
+403
+01:14:03.485 --> 01:14:09.186
+Katie Knaus: I'm going to wrap up here kind of for questions. But
+
+
+404
+01:14:09.955 --> 01:14:18.265
+Katie Knaus: But this was kind of a scratch. The surface of a lot of things in mechanics and musculoskeletal biomechanics and anatomy. So I put together just
+
+
+405
+01:14:18.405 --> 01:14:27.169
+Katie Knaus: some references I have used. If anyone is interested and wants to find books. For that.
+
+
+406
+01:14:28.315 --> 01:14:29.335
+Katie Knaus: just 2.
+
+
+407
+01:14:29.635 --> 01:14:35.664
+Katie Knaus: This is something you're working with, or want more background to be able to dive into.
+
+
+408
+01:14:37.415 --> 01:14:45.494
+Katie Knaus: That was, yeah. So happy if we have questions or things want to talk about. I also have the sign in feedback sheets.
+
+
+409
+01:15:12.605 --> 01:15:13.934
+Katie Knaus: Think I can see that.
+
+
+410
+01:15:18.545 --> 01:15:22.305
+Katie Knaus: Okay, when counting the degrees of freedom. It's the shape of the bone.
+
+
+411
+01:15:22.675 --> 01:15:28.105
+Katie Knaus: The only factor considered, or is actual movement also taken into account.
+
+
+412
+01:15:30.175 --> 01:15:30.855
+Katie Knaus: Oh.
+
+
+413
+01:15:40.025 --> 01:15:41.515
+Katie Knaus: okay. So the wrist
+
+
+414
+01:15:41.925 --> 01:15:50.154
+Katie Knaus: classified as 2 degrees of freedom. Rotation between the elbow and the wrist allows the hand to rotate around 3 axes.
+
+
+415
+01:15:51.905 --> 01:15:52.805
+Katie Knaus: Okay?
+
+
+416
+01:15:54.705 --> 01:15:58.975
+Katie Knaus: So yeah, feel free to chime in if I'm
+
+
+417
+01:15:59.555 --> 01:16:10.714
+Katie Knaus: not getting your question quite right. But I think so. As we describe degrees of freedom of a joint the so the shape of the bone or the
+
+
+418
+01:16:11.065 --> 01:16:14.284
+Katie Knaus: 2 bones that are interacting is going to
+
+
+419
+01:16:14.465 --> 01:16:25.624
+Katie Knaus: play a role in the limits there as well as the supportive structure. So the ligaments involved there. There's also kind of connective tissue capsules that
+
+
+420
+01:16:26.598 --> 01:16:35.334
+Katie Knaus: limit the degrees of freedom right? So each joint would start with 6, and we limit those to not have the joint fall apart.
+
+
+421
+01:16:37.395 --> 01:16:44.824
+Katie Knaus: And so the movement at that particular joint might be defined. So in this case of the wrist.
+
+
+422
+01:16:44.945 --> 01:16:52.665
+Katie Knaus: right kind of 2 degrees of freedom. We have, like, left, right translation and rotation.
+
+
+423
+01:16:54.297 --> 01:16:56.015
+Katie Knaus: This direction, right?
+
+
+424
+01:16:56.345 --> 01:17:13.485
+Katie Knaus: So the wrist becomes complicated, right? Because we actually have multiple bones involved. So I think the question here is like, is it count as the degree of freedom of the wrist to also consider the like pronation supination that happens in the forearm from the elbow.
+
+
+425
+01:17:14.267 --> 01:17:19.215
+Katie Knaus: So it kind of depends on how we're defining the joint. So
+
+
+426
+01:17:19.695 --> 01:17:45.364
+Katie Knaus: if we define a joint as between 2 specific segments, right? That might be between 2 bones or 2 larger segments. So I think in the case you're talking about, the wrist is still 2 degrees of freedom, but we also have different degrees of freedom at the elbow to consider. That's going to affect the overall posture of the body.
+
+
+427
+01:17:45.695 --> 01:18:04.724
+Katie Knaus: And usually, as we move into like musculoskeletal models, we might simplify these joints. So, for example, as we're looking at the ankle, or if we're trying to describe our articulation between the foot and the shank or the lower part of the leg, we may say that's a single joint.
+
+
+428
+01:18:04.985 --> 01:18:17.645
+Katie Knaus: right? With multiple degrees of freedom or define different joints like, we would define the ankle joint for dorsiflexion, plantar flexion, and then separate
+
+
+429
+01:18:17.825 --> 01:18:37.615
+Katie Knaus: the next joint down for our inversion. Eversion, because that's actually occurring between different bones. Right? As we have the talus related to the femur and tibia, so kind of in the sake of modeling, we make some decisions about where we're defining those degrees of freedom.
+
+
+430
+01:18:58.785 --> 01:19:05.875
+Victoria Wood: You tell us about some areas of research in this field that are like particularly exciting for you as you're
+
+
+431
+01:19:06.405 --> 01:19:07.864
+Victoria Wood: working in this area.
+
+
+432
+01:19:08.515 --> 01:19:09.875
+Katie Knaus: Yeah, so
+
+
+433
+01:19:10.155 --> 01:19:23.784
+Katie Knaus: we, this is kind of our like, intro level here. But I've been doing some work specifically with characterizing, like multi axial behavior of skeletal muscle, so
+
+
+434
+01:19:24.225 --> 01:19:29.405
+Katie Knaus: passive muscle properties. We have some information about
+
+
+435
+01:19:29.675 --> 01:19:40.205
+Katie Knaus: kind of axial or along fiber muscle properties, but in my lab we've been looking more into, not only loading in the along fiber direction, but in the cross fiber direction.
+
+
+436
+01:19:40.345 --> 01:19:58.085
+Katie Knaus: And actually how those mechanical relationships differ. If you have combined loading. So did an experiment using biaxial loading where, rather than just loading along the muscle axis or the cross muscle axis. We have loads in both directions simultaneously.
+
+
+437
+01:19:58.235 --> 01:20:01.555
+Katie Knaus: and can vary the amount of loading in each direction.
+
+
+438
+01:20:01.825 --> 01:20:24.555
+Katie Knaus: And so this lets us look at kind of these more complicated loading cases, and how the tissue would behave in vivo, where we have muscle has a pination angle, and so the loads that may be experienced are not necessarily always aligned with the fiber direction, but some combination of kind of on and off axis
+
+
+439
+01:20:24.695 --> 01:20:44.615
+Katie Knaus: loading, as well as in addition to muscle force along the Mtu length, we have compressive forces from other muscles, right as we have bulging and interaction, so trying to better understand not only how tissue behaves under one uniaxial load, but in
+
+
+440
+01:20:44.835 --> 01:20:46.575
+Katie Knaus: different loading cases.
+
+
+441
+01:20:46.915 --> 01:21:14.784
+Katie Knaus: And so while we talked about material properties, kind of generally right and how they're related to the underlying structure, the structure of tissue can vary like in different disease conditions like, if we have muscle, muscular dystrophies, or aging, we see differences in our tissue microstructure, for example, with aging, we see maybe more extracellular, material, or more fat infiltration in our muscles
+
+
+442
+01:21:14.835 --> 01:21:18.494
+Katie Knaus: which affects those passive mechanical properties.
+
+
+443
+01:21:18.795 --> 01:21:34.195
+Katie Knaus: and so kind of through these efforts to characterize that better understanding how that'll affect dynamic function in vivo. If we have kind of different muscle material that we're working with, because, like you said that passive
+
+
+444
+01:21:34.345 --> 01:21:41.125
+Katie Knaus: properties add on to those active properties. So for thinking about how people are using their muscles to move.
+
+
+445
+01:21:41.255 --> 01:21:54.325
+Katie Knaus: the mechanics become complicated as we kind of change our underlying material. So that's where a lot of work in my lab and then a little bit kind of on the tendon side, too, with thinking about tendon structure and
+
+
+446
+01:21:54.555 --> 01:21:55.405
+Katie Knaus: material.
+
+
+447
+01:22:00.705 --> 01:22:05.725
+Katie Knaus: No, and I didn't. This talk wasn't kind of a modeling talk, but
+
+
+448
+01:22:05.765 --> 01:22:25.765
+Katie Knaus: a reason why it's important to characterize these tissue material properties is we apply them mathematically in computational modeling. So we can understand dynamic situations where we may not be able to make direct measurements in a animal or in a human.
+
+
+449
+01:22:25.765 --> 01:22:37.995
+Katie Knaus: but through simulation. But it means we need kind of high fidelity measurements of tissues to be able to mathematically model the behavior of those tissues in a simulation framework.
+
+
+450
+01:22:42.075 --> 01:22:53.495
+Victoria Wood: You mentioned aging and different disease states as a source of variability and structure that you have to account for. Are there any other kinds of sources of variability that you
+
+
+451
+01:22:53.635 --> 01:22:57.255
+Victoria Wood: try to account for in the structure of the materials.
+
+
+452
+01:22:58.305 --> 01:23:01.054
+Katie Knaus: Yeah, I think those could be like.
+
+
+453
+01:23:01.345 --> 01:23:06.154
+Katie Knaus: yeah, kind of one side of a spectrum. Another one thought about is kind of athletic
+
+
+454
+01:23:06.255 --> 01:23:11.135
+Katie Knaus: performance. And so athlete muscle structure looks
+
+
+455
+01:23:11.255 --> 01:23:15.814
+Katie Knaus: bit different. Not only are muscle shapes different, but the muscle
+
+
+456
+01:23:15.925 --> 01:23:27.704
+Katie Knaus: composition. Or sometimes we'll talk about like quality versus quantity of muscle. So how much there is versus what that kind of tissue microstructure looks like, because hypertrophy occurs
+
+
+457
+01:23:27.825 --> 01:23:52.024
+Katie Knaus: through the muscle fibers actually increasing in size. So those cells are getting larger in cross section, and so kind of zooming into the muscle fiber and the Ecm. Within the muscle. It looks different in a highly trained athlete than a even a healthy, but maybe you know, just kind of recreationally active
+
+
+458
+01:23:52.205 --> 01:23:59.964
+Katie Knaus: person. And so I think what we don't know very well at this stage is how different the kind of mechanical properties
+
+
+459
+01:24:00.125 --> 01:24:06.924
+Katie Knaus: are. Even in like kind of those other ends of muscle function.
+
+
+460
+01:24:11.415 --> 01:24:14.656
+Katie Knaus: Which tool are you using?
+
+
+461
+01:24:16.715 --> 01:24:23.964
+Katie Knaus: guess I'm not quite sure this question is this a tool about like which type of mechanical
+
+
+462
+01:24:24.155 --> 01:24:32.184
+Katie Knaus: testing or modeling of computational modeling? Okay, so this could be properties to define, maybe
+
+
+463
+01:24:32.295 --> 01:24:42.634
+Katie Knaus: passive properties in open SIM. So we've kind of played with varying the muscle and tendon passive properties in like a musculoskeletal simulation.
+
+
+464
+01:24:43.215 --> 01:24:52.114
+Katie Knaus: Specifically, I use febio, which is a finite element solver. So this is kind of 3D computational modeling of
+
+
+465
+01:24:53.035 --> 01:25:20.995
+Katie Knaus: these structures. Cell specific muscles and tendons. Fe bio is an open source fe solver kind of specific to biological materials, but also have used like solidworks. Simulation is probably a standard one. A lot of engineering students use. I know we use it here at mines, but is less set up for kind of mathematical representation of specifically these tissues and programming. These
+
+
+466
+01:25:21.185 --> 01:25:35.424
+Katie Knaus: tissue, call them constitutive models, which is kind of the mathematical definition of these complex properties. So these things, like anisotropy and viscoelasticity and nonlinearity.
+
+
+467
+01:25:57.415 --> 01:26:02.245
+Victoria Wood: Alright. Well, I guess we're just coming up on 1030 now.
+
+
+468
+01:26:04.045 --> 01:26:09.564
+Victoria Wood: So thank you so much. This is a great introductory course here.
+
+
+469
+01:26:09.995 --> 01:26:11.704
+Victoria Wood: so I appreciate it a lot.
+
+
+470
+01:26:12.045 --> 01:26:13.754
+Katie Knaus: Yeah, thank you.
+
+
+471
+01:26:14.805 --> 01:26:15.785
+Katie Knaus: Have a good one.
+
+
+472
+01:26:16.155 --> 01:26:16.945
+Victoria Wood: Thanks.
+
+
+473
+01:26:17.895 --> 01:26:19.055
+Victoria Wood: Bye, everyone.
+
+
+

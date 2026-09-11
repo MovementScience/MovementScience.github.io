@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="keywords" content="scaling, dimensional analysis, locomotion, dynamic similarity, gait biomechanics">
 
 <title>Scaling and dimensional analysis – IMSI Movement Science Course</title>
 <style>
@@ -67,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -139,6 +169,12 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>scaling, dimensional analysis, locomotion, dynamic similarity, gait biomechanics</p>
+  </div>
+</div>
 
 </header>
 
@@ -148,28 +184,121 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>Describe the basic energy fluctuation patterns of walking and running in terrestrial gaits, as approximated by spring-loaded inverted pendulum models</p></li>
 <li><p>Understand the basic principles of scaling with geometric similarity (or isometry), and state predictions for changes in strength and loading with increasing body size under the predictions of geometric similarity.</p></li>
-<li><p>State the dynamic similarity hypothesis, and be able to generate predictions for dimensionless quantities according to the predictions of dynamic similarity.&nbsp;</p></li>
+<li><p>State the dynamic similarity hypothesis, and be able to generate predictions for dimensionless quantities according to the predictions of dynamic similarity.</p></li>
 <li><p>Use an example data set on gait of running birds to investigate how stride length and stride frequency vary with size, and visualize how the variation collapses when data are normalized to dimensionless quantities.</p></li>
 </ol>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ySWWyKLoL7M?si=SrzsyBw7GMkP_Z4A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 <p><strong><em>Presented by:</em></strong> <em>Dr.&nbsp;Monica Daley</em></p>
 </section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<section id="gait-types-and-their-mechanical-signatures" class="level3">
+<h3 class="anchored" data-anchor-id="gait-types-and-their-mechanical-signatures">Gait types and their mechanical signatures</h3>
+<p>Legged animals use only a small number of stereotyped movement patterns called gaits. For striding bipeds — including humans, ostriches, and most ground birds — the two primary gaits are walking and running. These gaits can be distinguished both by foot-contact timing and by the dynamics of the body’s center of mass.</p>
+<p><strong>Duty factor</strong> is the ratio of stance duration to stride duration and provides a concise gait descriptor. When duty factor exceeds 0.5, there is a period of double support in which both limbs contact the ground simultaneously; this is the hallmark of walking. When duty factor falls below 0.5, there is an aerial phase in which no limbs contact the ground; this characterizes running gaits. Some birds also use a <em>grounded running</em> gait, in which running-like spring dynamics occur at low duty factors that still retain brief periods of overlapping limb support — a gait not commonly observed in humans.</p>
+<p><strong>Walking — inverted pendulum dynamics.</strong> During walking, the body can be approximated as a point mass vaulting over a relatively stiff leg. As the leg contacts the ground, the body is moving fastest and at its lowest height; as it arcs over the stance leg to mid-stance, it rises to its greatest height and decelerates. Gravitational potential energy and kinetic energy therefore fluctuate out of phase, and this passive exchange reduces the external mechanical work required to move the center of mass. This inverted-pendulum mechanism makes the stance phase of walking mechanically economical.</p>
+<p><strong>Running — spring-mass dynamics.</strong> At higher speeds, the pattern reverses. The leg compresses like a spring during stance, so the body is at its lowest height at mid-stance rather than its highest. Kinetic energy and gravitational potential energy now fluctuate in phase — both decrease during the first half of stance and increase during the second half — making direct exchange between them impossible. Instead, energy is stored in and returned from elastic structures in the limb (tendons, ligaments, and musculotendinous units), analogous to a bouncing mass on a spring.</p>
+</section>
+<section id="physical-models-for-walking-and-running" class="level3">
+<h3 class="anchored" data-anchor-id="physical-models-for-walking-and-running">Physical models for walking and running</h3>
+<p>The mass-spring (or spring-mass) model represents the runner as a point mass supported by a single massless spring leg. Despite its simplicity, this model captures the ground-reaction-force magnitude and timing observed across a wide range of running animals and speeds.</p>
+<p>A key limitation of the single-leg inverted-pendulum model of walking is that it predicts a smooth, single-humped vertical ground-reaction-force trace, whereas the measured force during human (and animal) walking has a characteristic double-humped, M-shaped profile. Geyer, Seyfarth, and Blickhan (2006) resolved this by extending the spring-mass model to two legs. Their two-legged spring model reproduces the M-shaped ground-reaction-force profile and demonstrates that walking gaits can be viewed as a spring-loaded inverted pendulum (SLIP), with the same basic leg-spring mechanics underlying both walking and running. The SLIP model has since become the standard template model for studying gait dynamics across species.</p>
+</section>
+<section id="geometric-similarity-and-the-scaling-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="geometric-similarity-and-the-scaling-challenge">Geometric similarity and the scaling challenge</h3>
+<p>A foundational concept for comparing animals of different sizes is <strong>isometric scaling</strong> (also called geometric similarity): what happens to lengths, areas, and volumes when an animal is simply scaled up in size without changing shape?</p>
+<p>If linear dimensions (such as leg length, <em>L</em>) scale up by some factor, then:</p>
+<ul>
+<li>Cross-sectional area scales as <em>L</em>²</li>
+<li>Volume (and, assuming constant tissue density, body mass) scales as <em>L</em>³</li>
+</ul>
+<p>This creates a fundamental mechanical challenge with increasing body size. Muscular and skeletal strength is proportional to the cross-sectional area of tissues, which scales as <em>L</em>². Body weight, which must be supported and accelerated, scales as <em>L</em>³. The ratio of strength to body weight therefore scales as <em>1/L</em>: larger animals are relatively weaker under isometric scaling. To compensate, larger animals tend to adopt a more upright, straighter-legged posture, which orients the skeleton more vertically and reduces the muscular force required to support body weight in stance.</p>
+</section>
+<section id="the-dynamic-similarity-hypothesis" class="level3">
+<h3 class="anchored" data-anchor-id="the-dynamic-similarity-hypothesis">The dynamic similarity hypothesis</h3>
+<p>Geometric similarity describes shape; it does not predict whether animals of different sizes move in functionally similar ways. To address locomotor function across size, Alexander and Jayes (1983) developed the <strong>dynamic similarity hypothesis</strong>: animals of different sizes move in dynamically similar ways — using mechanically equivalent gaits — if their dimensionless gait parameters are equivalent when normalized by an appropriate set of characteristic physical quantities.</p>
+<p>This is both a theoretical prediction and an empirical hypothesis that can be tested with data. If locomotor function scales in a dynamically similar manner, size-related differences in absolute gait measures (stride frequency, stride length, speed) should disappear once the data are expressed as dimensionless quantities. Deviations from collapse reveal genuine functional differences across size.</p>
+</section>
+<section id="dimensionless-quantities-for-locomotion-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="dimensionless-quantities-for-locomotion-analysis">Dimensionless quantities for locomotion analysis</h3>
+<p>The appropriate set of normalizing quantities for legged terrestrial locomotion can be derived from the physics of the spring-loaded inverted pendulum. The key physical parameters governing these dynamics are body mass (<em>M</em>), leg length (<em>L</em>), and gravitational acceleration (<em>g</em>). Using these as base quantities, dimensionless forms of all gait variables can be derived:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th>Dimensionless form</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Length / distance</td>
+<td>Divide by <em>L</em></td>
+</tr>
+<tr class="even">
+<td>Force</td>
+<td>Divide by <em>Mg</em></td>
+</tr>
+<tr class="odd">
+<td>Time</td>
+<td>Divide by <span class="math inline">\(\sqrt{L/g}\)</span> (pendular period)</td>
+</tr>
+<tr class="even">
+<td>Frequency</td>
+<td>Multiply by <span class="math inline">\(\sqrt{L/g}\)</span></td>
+</tr>
+<tr class="odd">
+<td>Speed</td>
+<td>Divide by <span class="math inline">\(\sqrt{gL}\)</span></td>
+</tr>
+<tr class="even">
+<td>Energy / work</td>
+<td>Divide by <em>MgL</em></td>
+</tr>
+</tbody>
+</table>
+<p>McMahon and Cheng (1990) applied this normalizing framework to the spring-mass running model, formalizing dimensionless parameters for running mechanics that include dimensionless leg stiffness and dimensionless peak force in addition to dimensionless speed.</p>
+<p><strong>Froude number.</strong> A particularly important dimensionless quantity is the Froude number, defined as:</p>
+<p><span class="math display">\[Fr = \frac{V^2}{gL}\]</span></p>
+<p>The Froude number is the ratio of inertial (kinetic) energy to gravitational (potential) energy in the system, and its square root equals the dimensionless speed. The Froude number has a physical significance for walking: as a legged system using inverted-pendulum mechanics increases speed, the centripetal acceleration required to maintain contact with the ground during the arc of stance increases. When <em>Fr</em> = 1, this centripetal acceleration equals gravitational acceleration, and the system is on the verge of becoming airborne at mid-stance. Walking with purely inverted-pendulum dynamics is therefore physically impossible above <em>Fr</em> = 1; an aerial phase naturally emerges. Measured walk-to-run transitions in many animals occur near this theoretical limit, supporting the utility of the Froude number as a dimensionless speed benchmark.</p>
+<p>Note that the dimensionless speed (<em>V</em> / <span class="math inline">\(\sqrt{gL}\)</span>) equals the square root of the Froude number, so these two quantities are related but differ at values away from 1; some sources use one, some the other.</p>
+</section>
+<section id="scaling-patterns-in-avian-bipedal-locomotion" class="level3">
+<h3 class="anchored" data-anchor-id="scaling-patterns-in-avian-bipedal-locomotion">Scaling patterns in avian bipedal locomotion</h3>
+<p>Ground birds offer an excellent comparative system for testing dynamic similarity in locomotion. A compiled dataset spanning a 2,500-fold range in body mass — from painted quail to ostriches, drawing on 21 species from the literature — provides a rigorous test of whether dimensionless normalization collapses cross-species variation in gait (Daley &amp; Birn-Jeffery 2018).</p>
+<p><strong>In absolute (SI) units</strong>, large birds operate at much lower stride frequencies and take longer strides than small birds, and maximum absolute speed increases with body size. These differences are expected simply from size.</p>
+<p><strong>After normalization to dimensionless quantities</strong>, two key patterns emerge:</p>
+<ol type="1">
+<li>The large variation in stride frequency across species compresses substantially, but the rank order <em>inverts</em>: large birds (ostriches) use <em>relatively higher</em> dimensionless stride frequencies than small birds (quail), the opposite of the absolute pattern.</li>
+<li>Large birds use <em>relatively shorter</em> dimensionless stride lengths than small birds.</li>
+</ol>
+<p>These patterns are consistent with differences in center-of-mass trajectory between size classes. Large birds tend to use a more vertically bouncy running gait, with greater vertical oscillation of the center of mass. Small birds tend to use a flatter center-of-mass trajectory with longer relative strides. The vertically bouncy gait of large birds is associated with reduced fore-aft ground-reaction-force fluctuations, which reduces the mechanical work demand per stride — a potential functional advantage at large body size.</p>
+<p>Ostriches are notable outliers even within the large-bird category: they use exceptionally high relative stride frequencies, which has been interpreted as reflecting well-developed elastic energy storage and return mechanisms in the distal limb (tendons and ligaments) that may also assist in accelerating the leg during swing via elastic catapult mechanisms.</p>
+</section>
+<section id="practical-considerations-for-cross-species-and-cross-population-comparisons" class="level3">
+<h3 class="anchored" data-anchor-id="practical-considerations-for-cross-species-and-cross-population-comparisons">Practical considerations for cross-species and cross-population comparisons</h3>
+<p>Several analytical choices affect the validity of dimensionless normalization and should be made deliberately based on the task at hand.</p>
+<p><strong>Defining leg length.</strong> Standing hip height is the most commonly used measure of leg length in comparative locomotion studies, because it approximates the resting leg length and is straightforward to measure consistently across species. However, hip height conflates body size with posture: larger animals adopt more upright postures, so hip height grows faster than skeletal segment length with increasing body mass. Alternative approaches include using the sum of limb-segment lengths (which reflects maximum extension capacity and may be more appropriate for jumping analyses) or limb-segment lengths back-calculated assuming isometric scaling. The appropriate choice depends on which aspect of the mechanical task is most relevant.</p>
+<p><strong>Including or excluding the foot.</strong> Whether the foot should be included in leg length depends on how the animal contacts the ground during the task of interest. Plantigrade animals (full foot contact) have an effective leg length from hip to ankle during walking, but digitigrade or unguligrade animals contact the ground on their toes or hooves, functionally incorporating the foot or metatarsus into the leg. For activities like running where contact point and posture vary, measuring the hip-to-center-of-pressure distance during the actual task provides the most functionally relevant leg length.</p>
+<p><strong>Applying to individuals with atypical anatomy.</strong> The same first-principles reasoning applies when scaling analyses are extended to individuals whose anatomy differs from population norms — for example, in the context of para-athletes or individuals with limb differences. The key quantity to identify is the <em>effective</em> leg length for the specific task: the distance from the body’s center of mass to the point of ground contact, whatever the anatomy in between. Identifying this effective length, and understanding the physics of the task it governs, provides the foundation for meaningful comparison.</p>
+<p><strong>Measuring comparable speed ranges.</strong> Comparing maximum speed across species is methodologically difficult: the speed range an animal will use in a laboratory differs from what it achieves in overground conditions, and the conditions required to elicit true maximum effort differ by species. These sampling differences should be considered carefully when interpreting cross-species comparisons, particularly at the extremes of the speed distribution.</p>
+</section>
+</section>
 <section id="explore-these-concepts-using-the-example-data-sets-from-the-video-above" class="level2">
 <h2 class="anchored" data-anchor-id="explore-these-concepts-using-the-example-data-sets-from-the-video-above">Explore these concepts using the example data sets from the video above</h2>
 <p>Download the Matlab code and example data files used in this workshop:</p>
 <ul>
-<li><p><a href="..//resources/ScalingDimensionalAnalysis/ComparativeAvianScaling_Allbirds_25.m">Matlab script</a></p></li>
-<li><p>Metadata for compiled data sets: <a href="..//resources/ScalingDimensionalAnalysis/Birn_Jeffery_Daley_Table1.xlsx">Birn_Jeffery_Daley_Table1.xlsx</a></p></li>
-<li><p>Speed, stride period and stride length for every species in the data set: <a href="..//resources/ScalingDimensionalAnalysis/Compiled_Data_SP_SL.xlsx">Compiled_Data_SP_SL.xlsx</a></p></li>
-<li><p>Data summary file: <a href="..//resources/ScalingDimensionalAnalysis/LiteratureGaitDataSummary.xlsx">LiteratureGaitDataSummary.xlsx</a></p></li>
+<li><p><a href="..//resources/scaling-dimensional-analysis/ComparativeAvianScaling_Allbirds_25.m">Matlab script</a></p></li>
+<li><p>Metadata for compiled data sets: <a href="..//resources/scaling-dimensional-analysis/Birn_Jeffery_Daley_Table1.xlsx">Birn_Jeffery_Daley_Table1.xlsx</a></p></li>
+<li><p>Speed, stride period and stride length for every species in the data set: <a href="..//resources/scaling-dimensional-analysis/Compiled_Data_SP_SL.xlsx">Compiled_Data_SP_SL.xlsx</a></p></li>
+<li><p>Data summary file: <a href="..//resources/scaling-dimensional-analysis/LiteratureGaitDataSummary.xlsx">LiteratureGaitDataSummary.xlsx</a></p></li>
 </ul>
 </section>
 <section id="additional-reading" class="level2">
 <h2 class="anchored" data-anchor-id="additional-reading">Additional reading</h2>
-<p><a href="..//resources/ScalingDimensionalAnalysis/Alexander_1983_DynamicSimilarityHyp.pdf">Alexander 1983</a><br>
-<a href="..//resources/ScalingDimensionalAnalysis/McMahon_and_Cheng1990.pdf">McMahon and Cheng 1990</a><br>
-<a href="..//resources/ScalingDimensionalAnalysis/Daley_BirnJeffery_2018.pdf">Daley and Birn-Jeffery 2018</a></p>
+<p><a href="..//resources/scaling-dimensional-analysis/Alexander_1983_DynamicSimilarityHyp.pdf">Alexander &amp; Jayes 1983</a><br>
+<a href="..//resources/scaling-dimensional-analysis/McMahon_and_Cheng1990.pdf">McMahon and Cheng 1990</a><br>
+<a href="..//resources/scaling-dimensional-analysis/Daley_BirnJeffery_2018.pdf">Daley and Birn-Jeffery 2018</a></p>
 
 
 </section>

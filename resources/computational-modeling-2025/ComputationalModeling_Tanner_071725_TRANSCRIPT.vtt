@@ -1,0 +1,2833 @@
+WEBVTT
+
+1
+00:00:03.577 --> 00:00:08.377
+Bertrand Tanner: are you guys seeing the like regular slides? Now.
+
+
+2
+00:00:08.707 --> 00:00:09.387
+Victoria Wood: Yes.
+
+
+3
+00:00:10.147 --> 00:00:12.226
+Monica Daley (she, her): I'm seeing a sign in code slide.
+
+
+4
+00:00:12.227 --> 00:00:15.357
+Bertrand Tanner: Signing code. Yeah, I think that's
+
+
+5
+00:00:20.387 --> 00:00:21.217
+Bertrand Tanner: yeah.
+
+
+6
+00:00:23.817 --> 00:00:28.697
+Bertrand Tanner: I don't know if anybody needs to sign in, or if we should sit on that for a second, or
+
+
+7
+00:00:29.457 --> 00:00:31.047
+Bertrand Tanner: go forward.
+
+
+8
+00:00:31.257 --> 00:00:43.217
+Victoria Wood: Oh, sorry. I'm also gonna send it in the chat, if that's easier for people to access versus the QR code. And yeah, just as a reminder. This is for everybody to sign in now, not just trainees to help us.
+
+
+9
+00:00:43.217 --> 00:00:43.907
+Bertrand Tanner: This is new.
+
+
+10
+00:00:44.957 --> 00:00:45.697
+Victoria Wood: The one.
+
+
+11
+00:00:45.927 --> 00:00:47.137
+Bertrand Tanner: Oh, sorry!
+
+
+12
+00:00:47.807 --> 00:00:48.407
+Victoria Wood: Oh!
+
+
+13
+00:00:51.242 --> 00:01:00.297
+Bertrand Tanner: Okay, so with going over
+
+
+14
+00:01:00.477 --> 00:01:06.497
+Bertrand Tanner: the stuff we've been working on with the Institute. This was just from the introduction slide sort of
+
+
+15
+00:01:07.087 --> 00:01:18.507
+Bertrand Tanner: implementing the idea that today we're going to be talking a little bit, or mostly on the bottom end of this, thinking more about what's going on with molecules and sarcomeres.
+
+
+16
+00:01:19.217 --> 00:01:22.266
+Bertrand Tanner: But I think we all know that's related to
+
+
+17
+00:01:22.627 --> 00:01:25.247
+Bertrand Tanner: much larger scale in both directions.
+
+
+18
+00:01:25.707 --> 00:01:28.297
+Bertrand Tanner: and there's a lot of interest in that from
+
+
+19
+00:01:28.477 --> 00:01:34.347
+Bertrand Tanner: everybody that's involved here. And so, as an overview of what goes on in my lab
+
+
+20
+00:01:34.800 --> 00:01:43.727
+Bertrand Tanner: we do a lot of single fiber mechanics, mostly with skin fibers. We do a tiny bit of intact muscle work, but not very much.
+
+
+21
+00:01:43.867 --> 00:01:55.116
+Bertrand Tanner: And we also do some computational modeling. So we try to integrate the computational modeling and the biophysical experiments to investigate the molecular mechanisms of contraction.
+
+
+22
+00:01:55.307 --> 00:01:58.647
+Bertrand Tanner: And so, just as a very
+
+
+23
+00:01:58.787 --> 00:02:15.297
+Bertrand Tanner: small introduction, a lot of the proteins that we're going to be talking about modeling today are shown here at the bottom of the slide, where we've got the thin filaments that are made primarily of actin shown in blue there and then. Do you guys see my cursor that's moving.
+
+
+24
+00:02:17.707 --> 00:02:18.927
+Monica Daley (she, her): Yeah, sometimes.
+
+
+25
+00:02:18.927 --> 00:02:21.107
+Bertrand Tanner: Sometimes okay.
+
+
+26
+00:02:21.107 --> 00:02:22.686
+Monica Daley (she, her): I don't see it right now.
+
+
+27
+00:02:22.987 --> 00:02:23.397
+Bertrand Tanner: Alright!
+
+
+28
+00:02:23.397 --> 00:02:25.737
+Monica Daley (she, her): Oh, yeah, there we go. Yeah, I can see it now.
+
+
+29
+00:02:25.737 --> 00:02:26.787
+Bertrand Tanner: So it's down.
+
+
+30
+00:02:26.787 --> 00:02:31.397
+manny: White. So when the background is white, it's hard to see, but I think it's fine.
+
+
+31
+00:02:31.397 --> 00:02:33.057
+Bertrand Tanner: Okay. Thank you.
+
+
+32
+00:02:34.197 --> 00:02:43.377
+Bertrand Tanner: There's the thick filaments of myosin shown in red, and it's the actin and myosin interactions that generate the force and shortening the power muscle contraction.
+
+
+33
+00:02:43.717 --> 00:02:53.976
+Bertrand Tanner: and so also associated with that are some regulatory proteins, and those can be on the thick. The thin filament, like the troponin and tropomyosin, which are shown in green and pink.
+
+
+34
+00:02:54.177 --> 00:03:11.677
+Bertrand Tanner: and then on the the thick filament there's some regulatory light chains on the neck of the Myosin Cross bridge, and there's also the myosin binding protein C and the C zone of the Sarcomere. And so those can affect how actin and myosin interact. And we've done
+
+
+35
+00:03:12.439 --> 00:03:20.596
+Bertrand Tanner: quite a bit of work trying to understand those cross bridge interactions and how to model them and how to measure them for some of the kinetics.
+
+
+36
+00:03:21.047 --> 00:03:21.632
+Bertrand Tanner: And
+
+
+37
+00:03:22.667 --> 00:03:45.141
+Bertrand Tanner: as an overview. I've got some introductions into some of the history of muscle modeling over the years. And then I've got a couple of examples looking at some spatially explicit modeling. And at the end I've got some code that I can run for. You or you guys can run together if it works. It's in the folder that Victoria had sent out.
+
+
+38
+00:03:45.487 --> 00:03:57.706
+Bertrand Tanner: It's like very stripped down and and basic. But I think that might make it easier to talk about some of the simple parts that we're trying to interact with, and so
+
+
+39
+00:03:58.567 --> 00:04:03.746
+Bertrand Tanner: to get started there, computational modeling in general
+
+
+40
+00:04:03.977 --> 00:04:21.676
+Bertrand Tanner: can go over a bunch of different scales like we showed just a moment ago on that slide. But usually in most general sense, computational modeling is trying to better understand computing, computing, and mathematics and theory, to to try to study complex systems.
+
+
+41
+00:04:21.827 --> 00:04:27.770
+Bertrand Tanner: and how biology works across different organizational scales. And
+
+
+42
+00:04:29.157 --> 00:04:45.377
+Bertrand Tanner: on the most simple level. I just thought maybe we could start with a biomolecular reaction. Imagine we were mixing 2 different things with substance A and B, and that's got some rate K, that goes into C,
+
+
+43
+00:04:45.707 --> 00:04:56.536
+Bertrand Tanner: for example, to make a 3rd substance. And so you can write some differential equations that describe this. And so because A and B go into C,
+
+
+44
+00:04:56.637 --> 00:05:03.216
+Bertrand Tanner: you've got that description of how that changes in time. So the rate
+
+
+45
+00:05:04.237 --> 00:05:10.297
+Bertrand Tanner: that that occurs times, the concentration of a times, the concentration of B will be how
+
+
+46
+00:05:10.647 --> 00:05:15.757
+Bertrand Tanner: C changes in time. So that's how fast C gets created.
+
+
+47
+00:05:15.887 --> 00:05:34.997
+Bertrand Tanner: And then, similarly, the negative of that is going to be consistent with how fast A and B get depleted, and that's what that d of a over d, of t, and D, of B over d, of t are the negative of what is the concentration increase over time for C,
+
+
+48
+00:05:35.267 --> 00:05:39.747
+Bertrand Tanner: and so if you solve those equations for the different
+
+
+49
+00:05:40.127 --> 00:06:03.036
+Bertrand Tanner: A, B and C substances as a function of time, you see that depending on how much A or B you have, it decreases with time. And that turns into C, okay. And as an example, you could imagine that this, how much C you have depends on how much A and B you have. And that's what's kind of shown over here
+
+
+50
+00:06:03.157 --> 00:06:09.287
+Bertrand Tanner: on the right is, as you get increasing amounts of A,
+
+
+51
+00:06:09.677 --> 00:06:14.427
+Bertrand Tanner: you would get increasing amounts ultimately of C,
+
+
+52
+00:06:14.617 --> 00:06:16.996
+Bertrand Tanner: so that's just a very, very simple
+
+
+53
+00:06:17.537 --> 00:06:24.516
+Bertrand Tanner: example of trying to use some math. And technically, that's a model to describe how your system is responding.
+
+
+54
+00:06:24.767 --> 00:06:28.547
+Bertrand Tanner: And so, quite a few years ago,
+
+
+55
+00:06:29.357 --> 00:06:36.357
+Bertrand Tanner: Some of the earliest models to try to describe what was going on with force. Production was from
+
+
+56
+00:06:36.677 --> 00:06:55.637
+Bertrand Tanner: AV. Hill, and he shared the 1922 Nobel Prize for linking heat production and mechanical work and muscles, but he came up with a model that has been widely used for many, many years, and I'll talk on the next slide about some of its
+
+
+57
+00:06:56.147 --> 00:07:01.457
+Bertrand Tanner: properties. But essentially there was this passive element shown here on the left.
+
+
+58
+00:07:01.797 --> 00:07:10.337
+Bertrand Tanner: and then there was this contractile element representing what muscle does to contract, and that was in line with a series
+
+
+59
+00:07:10.537 --> 00:07:31.316
+Bertrand Tanner: element which you could think of. There's a passive and a contractile element of muscle, and that series element might be something related to tendons, or might be something related to other components of the system, but essentially that led to some force production that was a combination of all of those.
+
+
+60
+00:07:31.647 --> 00:07:34.747
+Bertrand Tanner: And so here shows some of the characteristics
+
+
+61
+00:07:35.157 --> 00:07:43.347
+Bertrand Tanner: for imagining you were simulating or measuring a muscle twitch, or the amount of force that is generated with
+
+
+62
+00:07:43.507 --> 00:07:57.307
+Bertrand Tanner: muscle, and so on. That's on the Y-axis and on the X-axis that's relative to the length of the the resting muscle. And so they've shown here that that resting muscle length is 0.
+
+
+63
+00:07:57.577 --> 00:08:03.436
+Bertrand Tanner: And so this happens to be a component where your passive
+
+
+64
+00:08:04.277 --> 00:08:09.486
+Bertrand Tanner: component is very, very low until you start to stretch that resting muscle.
+
+
+65
+00:08:09.987 --> 00:08:14.277
+Bertrand Tanner: and that's shown in blue. And then the active component
+
+
+66
+00:08:14.677 --> 00:08:19.617
+Bertrand Tanner: is sort of overlapped with the green and the red at these shorter lengths.
+
+
+67
+00:08:19.807 --> 00:08:28.557
+Bertrand Tanner: But this starts to show you that active component increases as you're increasing length. And then there's some flat phase there
+
+
+68
+00:08:28.657 --> 00:08:32.466
+Bertrand Tanner: and then that starts to decrease, and this sort of looks
+
+
+69
+00:08:32.587 --> 00:08:51.197
+Bertrand Tanner: like that ascending limb, and then the flat component and the descending limb of the force, length, relationship, and if you add the blue and the red together that gives you green. And so that's why Green comes up and then down, and then starts to go back up, because at very, very long muscle lengths.
+
+
+70
+00:08:51.387 --> 00:08:57.297
+Bertrand Tanner: you start to change that overlap. And so you're decreasing how much
+
+
+71
+00:08:57.727 --> 00:09:10.237
+Bertrand Tanner: forces produced by the cross bridge interactions. But you're also stretching the muscle. And those passive elements start to, you know, like tighten or collagen, or depending. If you have tendon in the system, a lot of that starts to
+
+
+72
+00:09:10.377 --> 00:09:13.247
+Bertrand Tanner: take over and increase how much force is being
+
+
+73
+00:09:13.887 --> 00:09:30.417
+Bertrand Tanner: generated or measured from the passive elements. So there's sort of a trade off there at the longer lengths, and this concept has been very, very useful for many applications, even though it sort of is just a simple description of how forces
+
+
+74
+00:09:30.937 --> 00:09:33.626
+Bertrand Tanner: change with the length of the muscle.
+
+
+75
+00:09:33.997 --> 00:09:35.497
+Bertrand Tanner: And so
+
+
+76
+00:09:35.697 --> 00:09:49.386
+Bertrand Tanner: the next real big iteration iteration in this was trying to understand, maybe on a smaller scale, what might be going on at the molecular level. And so this came out of Andrew Huxley in this really
+
+
+77
+00:09:49.617 --> 00:09:54.457
+Bertrand Tanner: classic, 1957 paper. And there was like, this is a very long paper.
+
+
+78
+00:09:54.657 --> 00:10:08.266
+Bertrand Tanner: but there's a section of it that he puts forward some ideas about the Crossbridge theory that ultimately becomes like Crossbridge theory and active myosin binding interactions. And so there was this idea, perhaps.
+
+
+79
+00:10:08.407 --> 00:10:23.337
+Bertrand Tanner: that you've got your myosin filament and you've got your actin filament and they're sliding past each other as the muscle shortening. And maybe there's some sort of an interaction here which is shown by this little M with in between the springs
+
+
+80
+00:10:23.707 --> 00:10:37.066
+Bertrand Tanner: where this M being myosin is trying to bind to a actin and depending on how fast they're going past each other, and how close M. And A. Are together that might change how much force is produced.
+
+
+81
+00:10:37.517 --> 00:10:45.627
+Bertrand Tanner: And so it was, this idea of some sort of spatial distribution of a interaction between the molecules.
+
+
+82
+00:10:45.887 --> 00:11:10.036
+Bertrand Tanner: And so they described how those interactions might be with this stuff, these these rates of binding that are called F, and that would be like how that A and M interact to go from an unbound state to a bound state, and then that detachment event would be what they call the G for the rate constant G, and that's for detachment, and they made these dependent on
+
+
+83
+00:11:10.487 --> 00:11:15.977
+Bertrand Tanner: the position or the distortion, or how close that A. And M. Were, where.
+
+
+84
+00:11:16.407 --> 00:11:23.577
+Bertrand Tanner: if and M. Were very, very well aligned. And there wasn't any stretch in these springs.
+
+
+85
+00:11:23.997 --> 00:11:27.196
+Bertrand Tanner: It would be a very
+
+
+86
+00:11:27.757 --> 00:11:43.487
+Bertrand Tanner: low force dependent, or it would have a interaction, and then that increases, the rate increases as you get closer and closer and closer to this H. And that H is sort of defined on how close X and
+
+
+87
+00:11:43.867 --> 00:11:51.446
+Bertrand Tanner: Hr. To stretching the springs, and I'm not saying that very well, but the idea is that there's some position dependent binding.
+
+
+88
+00:11:51.887 --> 00:12:00.782
+Bertrand Tanner: And then the detachment events depending on. If you're stretching them, have a different rate, that is, position dependent. But if you.
+
+
+89
+00:12:01.397 --> 00:12:04.106
+Bertrand Tanner: if they're going past each other very quickly.
+
+
+90
+00:12:04.287 --> 00:12:14.546
+Bertrand Tanner: so your H. Is going negative. Then you see, this G is very, very high. So if you're stretching one way, you're producing force with less of a
+
+
+91
+00:12:14.687 --> 00:12:20.576
+Bertrand Tanner: less of a rate to detach. And if you're strained the other way, you're going to detach very, very quickly.
+
+
+92
+00:12:21.097 --> 00:12:28.087
+Bertrand Tanner: And so what came out of some of those ideas which this little thing in the top is in the way I apologize.
+
+
+93
+00:12:28.207 --> 00:12:33.056
+Bertrand Tanner: but what you're seeing is when you're not moving at all, where there's no sliding between the filaments.
+
+
+94
+00:12:33.567 --> 00:12:35.657
+Bertrand Tanner: There's a high
+
+
+95
+00:12:36.208 --> 00:12:51.577
+Bertrand Tanner: level of binding or a high amount of force that's generated, and then, as you start to shorten faster and faster and faster from each other. So as your velocity of shortening is going, you know, from 10 v. Max. To 25% Vmax to all the way. V. Max.
+
+
+96
+00:12:51.697 --> 00:12:53.607
+Bertrand Tanner: 2 things start to happen.
+
+
+97
+00:12:53.697 --> 00:13:06.686
+Bertrand Tanner: Number one, you sort of get these different distributions of binding in terms of how much force can be produced, depending on how far those springs are stretched, but also how much force is produced as they're sliding past each other.
+
+
+98
+00:13:06.707 --> 00:13:30.496
+Bertrand Tanner: So where up here, there's no force produced in the negative stretching direction here. There's some little bit of force that's produced, and this starts to flatten and smear out over the distribution. So there's a lot more information in the paper about what the implications of this would be. But this sort of is some of the foundational theory about how these molecular interactions might occur in muscles.
+
+
+99
+00:13:31.017 --> 00:13:44.936
+Bertrand Tanner: And so this was a nice summary figure from a review written by Walter Hertzog, where it sort of shows the evolution of what people have thought about over the years. And so this is what I just described to you. But then, in the 19 seventies.
+
+
+100
+00:13:46.467 --> 00:14:03.577
+Bertrand Tanner: the Huxley and Simmons had a 1971 paper where there was sort of this idea of a cross bridge, sort of ratchet or position in head or movement of the the head. And then that sort of summarized nicely here, with some of the atomic structure that came out of a
+
+
+101
+00:14:03.687 --> 00:14:14.086
+Bertrand Tanner: X-ray diffraction model from Ivan Raymond in 1993. So where they're sort of showing that as Atp comes in and hydrolyzes.
+
+
+102
+00:14:14.587 --> 00:14:16.387
+Bertrand Tanner: then you
+
+
+103
+00:14:16.707 --> 00:14:34.696
+Bertrand Tanner: come around the circle and you bind, and your cross bridges bind, and then there's this sort of a power stroke thing. If you look here at the bottom and number 4, the neck of the cross bridge is sort of like this, and then it goes like that from 4 to 5. And this would be the force generating event.
+
+
+104
+00:14:34.897 --> 00:14:40.427
+Bertrand Tanner: And then, as you detach, you get this sort of re
+
+
+105
+00:14:41.047 --> 00:14:47.366
+Bertrand Tanner: positioning back to where it was originally with the hydrolysis. And so some of these ideas sort of all came together
+
+
+106
+00:14:47.827 --> 00:14:56.587
+Bertrand Tanner: over the years for what people try to use and put mathematics to to describe how muscle might work.
+
+
+107
+00:14:56.907 --> 00:15:02.746
+Bertrand Tanner: And so the spatially explicit modeling is even
+
+
+108
+00:15:03.157 --> 00:15:15.336
+Bertrand Tanner: one level of sort of system interactions higher than just the actin and myosin Crossbridge, where we're trying to simulate what's going on inside of a cross bridge or sorry me inside of a sarcomere.
+
+
+109
+00:15:15.627 --> 00:15:26.256
+Bertrand Tanner: And so most generally, you could imagine, you've got this thick and thin filament interactions in a system. A lot of what I'm showing you today is all modeled in a half circumer.
+
+
+110
+00:15:26.367 --> 00:15:41.776
+Bertrand Tanner: and that takes advantage of some of the symmetry around the M. Or the Z line in terms of what a Sarcomere would do to generate force and shortening where you only can model half of it. And I assume that's what the whole Sarcomere might be doing
+
+
+111
+00:15:41.957 --> 00:15:43.127
+Bertrand Tanner: so then
+
+
+112
+00:15:43.617 --> 00:16:07.186
+Bertrand Tanner: some of the inputs to that model would be perhaps calcium, or perhaps sarcomere length, where you've got changes in the overlap and some of the outputs you might be interested in modeling might be the force that's produced or how fast actin myosin are using atp. So if you're interested in energetics. Or maybe you're interested in how many cross bridges are bound, or how much
+
+
+113
+00:16:08.115 --> 00:16:12.197
+Bertrand Tanner: how much of the thin filament is available for binding.
+
+
+114
+00:16:12.467 --> 00:16:19.297
+Bertrand Tanner: But within all of that, there's components to try to describe what's going on in the circumvere in terms of
+
+
+115
+00:16:19.757 --> 00:16:25.476
+Bertrand Tanner: what you're trying to describe with the geometry or the kinetics or the mechanics.
+
+
+116
+00:16:25.687 --> 00:16:31.526
+Bertrand Tanner: and a lot of what led to this spatially explicit modeling had a lot to do with the mechanics.
+
+
+117
+00:16:31.637 --> 00:16:36.072
+Bertrand Tanner: and this is sort of a subtle assumption that I'll try to get across today. But,
+
+
+118
+00:16:37.737 --> 00:16:38.977
+Bertrand Tanner: There were
+
+
+119
+00:16:40.207 --> 00:16:49.457
+Bertrand Tanner: a lot of measurements that were in the mid nineties from some X-ray diffraction measurements that started suggesting that the filaments were actually stretchy
+
+
+120
+00:16:49.687 --> 00:17:01.686
+Bertrand Tanner: and extensible, because over many, many years that everybody had assumed that the filaments couldn't stretch, and that everything went on was just the actinomyosin interactions. And so if the filaments couldn't stretch
+
+
+121
+00:17:02.717 --> 00:17:12.146
+Bertrand Tanner: and it was just modeling the interactions between actinomyosin. Then what you're describing with, like one actinomycin, could represent the entire population.
+
+
+122
+00:17:12.597 --> 00:17:13.886
+Bertrand Tanner: And so.
+
+
+123
+00:17:14.707 --> 00:17:32.696
+Bertrand Tanner: if the system starts to be able to stretch, then that distribution, or that distortion or the springs between the position of the actinomyosin versus the neighboring actinmycin might start to become different if the filaments become extensible or stretchy.
+
+
+124
+00:17:32.877 --> 00:17:37.695
+Bertrand Tanner: and that came out of actual. 1st it came out of some
+
+
+125
+00:17:39.027 --> 00:17:50.707
+Bertrand Tanner: biophysical measurements, but then this led to the idea of the spatially explicit modeling, trying to say, Well, what happens if we stack up a system of cross bridges and binding sites
+
+
+126
+00:17:50.897 --> 00:17:51.937
+Bertrand Tanner: and
+
+
+127
+00:17:53.017 --> 00:18:01.277
+Bertrand Tanner: a bunch of like just initially, this was a 2 filament model where there was spring a system of springs
+
+
+128
+00:18:01.787 --> 00:18:07.197
+Bertrand Tanner: for describing how stiff the thick filament is versus how stiff the thin filament is.
+
+
+129
+00:18:07.307 --> 00:18:17.627
+Bertrand Tanner: and then how stiff the cross bridge might be, and that started to try to test the implications of if the filaments could stretch, what might that
+
+
+130
+00:18:18.707 --> 00:18:20.277
+Bertrand Tanner: be? An outcome from there?
+
+
+131
+00:18:20.527 --> 00:18:25.217
+Bertrand Tanner: And so that started this idea of the mechanical properties might matter.
+
+
+132
+00:18:25.307 --> 00:18:44.617
+Bertrand Tanner: And so the geometry that was 1st used by this Daniel et Al. 1998. Model was just 2 filaments and a simple system with 20 thick filament nodes, or where 20 cross bridges would come off of the thick filament. And these nodes are sort of shown in white here.
+
+
+133
+00:18:44.667 --> 00:19:05.777
+Bertrand Tanner: So this yi minus one, and yi and y, for example, are the thick filament nodes, and that's where the cross bridges extend from and between each node there's a spring. I know it's a little difficult to see with this particular figure, but there's a spring that is between the nodes, and then you describe a similar system, for where
+
+
+134
+00:19:05.867 --> 00:19:10.897
+Bertrand Tanner: those cross bridges combined occur along the thin filament as shown here on the bottom.
+
+
+135
+00:19:11.047 --> 00:19:21.297
+Bertrand Tanner: and so because there's differences in how far apart the cross bridges are spaced when they like line up with each other versus where the binding sites would be.
+
+
+136
+00:19:21.537 --> 00:19:38.077
+Bertrand Tanner: That's why there's 20 thick filament nodes, and 30 actin binding sites, because the periodicity of the helical coil or twist on the cross bridges is 43 nanometers for the thin, thick filament and about 37 nanometers for the thin filament.
+
+
+137
+00:19:39.247 --> 00:19:45.856
+Bertrand Tanner: And so I'm gonna go over kinetics later. But you had to describe how these interactions would occur.
+
+
+138
+00:19:45.987 --> 00:20:01.517
+Bertrand Tanner: and the kinetics involve some position dependent cross bridge cycle. And it ended up that it's very, very difficult to solve a large system of equations with ordinary differential equations, or even partial differential equations.
+
+
+139
+00:20:01.637 --> 00:20:15.986
+Bertrand Tanner: to describe how the system might interact. So they implemented what's called Monte Carlo algorithms or stochastic kinetics are driven with probabilities of binding rather than and then that made some of the solutions
+
+
+140
+00:20:16.317 --> 00:20:18.977
+Bertrand Tanner: to the forces a little easier.
+
+
+141
+00:20:21.047 --> 00:20:35.186
+Bertrand Tanner: And so some of what came out of that is what I've got going forward with how force might change, depending on the mechanics of the system and the geometry of the system, and we'll get into a few more examples
+
+
+142
+00:20:36.217 --> 00:20:46.926
+Bertrand Tanner: on these next 2 bullet points, where I've actually got some results to try to show you. But before I get into all of that. I wanted to revisit some of the basic
+
+
+143
+00:20:47.167 --> 00:20:55.287
+Bertrand Tanner: muscle properties and model formulations that are trying to be described by some of these spatially explicit models. Does anybody have
+
+
+144
+00:20:56.087 --> 00:21:01.667
+Bertrand Tanner: any questions so far on just some of the backgrounds of the modeling?
+
+
+145
+00:21:04.897 --> 00:21:07.036
+Bertrand Tanner: Are we? Good? I'll go on.
+
+
+146
+00:21:10.557 --> 00:21:12.107
+Bertrand Tanner: Okay. So
+
+
+147
+00:21:14.677 --> 00:21:22.917
+Bertrand Tanner: this is supposed to represent kind of the end view. Looking down the sarcomere of what would look like the thick and the thin filaments
+
+
+148
+00:21:23.067 --> 00:21:29.317
+Bertrand Tanner: and part of a lot of what I'm gonna talk to you about is trying to understand what might be going on
+
+
+149
+00:21:30.007 --> 00:21:45.067
+Bertrand Tanner: with just one interaction of like one pair of thick and thin filaments versus multiple, thick and thin filaments working together. And so that's a lot of the difference between some of the work I've done versus some of the original
+
+
+150
+00:21:45.446 --> 00:21:48.816
+Bertrand Tanner: spatially explicit. 2 filament model that I just showed you.
+
+
+151
+00:21:49.147 --> 00:21:58.956
+Bertrand Tanner: And so, as we've all mentioned, the basic components of muscle are turning mechanical energy or chemical energy into mechanical energy.
+
+
+152
+00:21:59.497 --> 00:22:06.806
+Bertrand Tanner: and the tenants that we try to describe. There are the mechanics, the geometry, and the kinetics that might underlie this.
+
+
+153
+00:22:07.587 --> 00:22:13.757
+Bertrand Tanner: And so there's characteristics all the way, from the whole muscle
+
+
+154
+00:22:13.886 --> 00:22:18.846
+Bertrand Tanner: down to just the the myosin and the actin.
+
+
+155
+00:22:18.997 --> 00:22:20.277
+Bertrand Tanner: With how these
+
+
+156
+00:22:20.406 --> 00:22:27.156
+Bertrand Tanner: spatial properties occur, and what leads to the structure of the Sarcomere that we try to simulate.
+
+
+157
+00:22:27.277 --> 00:22:34.156
+Bertrand Tanner: and some of this, as I mentioned before, is calcium dependent, depending on the troponin and Tropomyosin characteristics.
+
+
+158
+00:22:35.207 --> 00:22:45.247
+Bertrand Tanner: and then adding on, there is some of this cross-sectional geometry that we can try to say, what are the implications between just 2 filaments versus multiple filament interactions.
+
+
+159
+00:22:47.097 --> 00:23:04.477
+Bertrand Tanner: And so just to describe some of the kinetic interactions that you'll see today, or what's behind them has to do with some sort of a kinetic scheme where you have no calcium binding, then calcium comes into the system, then that'll activate the thin filament.
+
+
+160
+00:23:04.727 --> 00:23:09.266
+Bertrand Tanner: and then that that this particular state will have
+
+
+161
+00:23:09.387 --> 00:23:17.366
+Bertrand Tanner: thin filament being activated. But the cross bridge is not attached with the Adp. And atp the hydrolysis
+
+
+162
+00:23:18.127 --> 00:23:23.107
+Bertrand Tanner: after atp hydrolysis, and then, as the cross bridges bind.
+
+
+163
+00:23:23.817 --> 00:23:40.477
+Bertrand Tanner: then they will go through some sort of a power stroke, or that, like neck transition changes as phosphates released, and then that adp will dissociate into the ragger state, and then Atp comes on for hydrolysis and all that starts all over again.
+
+
+164
+00:23:41.327 --> 00:23:45.336
+Bertrand Tanner: But we're actually trying to model, as mentioned just a minute ago.
+
+
+165
+00:23:45.497 --> 00:23:53.857
+Bertrand Tanner: some of the implications of what's going on as these filaments are rearranging, and one cross bridge is pulling on another cross bridge
+
+
+166
+00:23:54.137 --> 00:23:58.987
+Bertrand Tanner: or pulling on a filament, and how that affects the system response.
+
+
+167
+00:24:01.687 --> 00:24:09.116
+Bertrand Tanner: And so, as I mentioned, we're scaling up from this Huxley model for one myosin
+
+
+168
+00:24:09.247 --> 00:24:15.836
+Bertrand Tanner: to this 2 filament model, and then trying to look at. Maybe what are some of the implications of these multiple filaments?
+
+
+169
+00:24:16.137 --> 00:24:31.407
+Bertrand Tanner: And we always try to do the best we can to use some of the literature values or our own experiments to try to describe and predict what's going on with the model predictions versus the actual measurements to validate the model.
+
+
+170
+00:24:31.957 --> 00:24:35.586
+Bertrand Tanner: And so a couple of examples here.
+
+
+171
+00:24:36.167 --> 00:24:38.376
+Bertrand Tanner: we'll go over in the next few minutes.
+
+
+172
+00:24:38.687 --> 00:24:44.397
+Bertrand Tanner: and then we'll maybe get to running some code as well. Okay, so
+
+
+173
+00:24:48.907 --> 00:24:55.967
+Bertrand Tanner: 2 important things to think about is we've got the mechanics. So cross. Bridges are elastic. Filaments are elastic.
+
+
+174
+00:24:56.117 --> 00:25:07.797
+Bertrand Tanner: We've got geometry having a component that affects kinetics where there's position dependent and strain that changes the system. And then we have, like bound or unbound
+
+
+175
+00:25:07.937 --> 00:25:08.947
+Bertrand Tanner: forces.
+
+
+176
+00:25:10.217 --> 00:25:21.471
+Bertrand Tanner: And then this shows you scaling up from what was assumed like that well mixed population of cross bridges, and one particular interaction, as we've shown before, versus a system
+
+
+177
+00:25:22.927 --> 00:25:32.916
+Bertrand Tanner: where there can be some flexibility and the linearly elastic springs between the different Myosins. And what are the implications of that? And so this is a summary
+
+
+178
+00:25:33.067 --> 00:25:41.197
+Bertrand Tanner: of trying to show you what people found. So this is the conclusion before I'm showing you the results. But it seems to be that this
+
+
+179
+00:25:41.197 --> 00:26:03.676
+Bertrand Tanner: extensibility, or compliance or stretchiness of the filaments seems to coordinate the cross bridge binding, and that showed that compliant realignment from that cross bridge, binding and moving one filament relative to the other, leads to increased cross bridge binding in the system. And so the way that that goes as an example might be that this cross bridge binds.
+
+
+180
+00:26:04.167 --> 00:26:10.757
+Bertrand Tanner: and then, as it goes through its power stroke. It moves the filament, the thin filament relative to the thick filament.
+
+
+181
+00:26:10.887 --> 00:26:25.447
+Bertrand Tanner: and that leads to more favorable realignment and more favorable binding of the next nearest Crossbridge head. Perhaps. So you see that that favors binding with better realignment between the pink head and the
+
+
+182
+00:26:26.287 --> 00:26:28.437
+Bertrand Tanner: yellow binding site.
+
+
+183
+00:26:29.707 --> 00:26:35.066
+Bertrand Tanner: And so that was for 2 filaments what I just showed you, and then
+
+
+184
+00:26:36.117 --> 00:26:58.107
+Bertrand Tanner: it looks like, then that compares to just one active Myosin Crossbridge. Some of the findings from this suggest that the lattice compliant increases cross bridge bind, and then I'll go on to also suggest that as you get more filaments interacting that amplifies or increases the relative effect of that compliant realignment that I just tried to show you.
+
+
+185
+00:26:58.677 --> 00:27:01.157
+Bertrand Tanner: And so this is just summarizing
+
+
+186
+00:27:01.837 --> 00:27:09.027
+Bertrand Tanner: how the mechanics and the geometry might play a role in favoring binding of the nearest neighbors.
+
+
+187
+00:27:11.637 --> 00:27:14.237
+Bertrand Tanner: And so with the 2 filament model.
+
+
+188
+00:27:14.467 --> 00:27:27.656
+Bertrand Tanner: One of the things that 1st came out of this was if you were changing the stiffness. So this is shown on the ka axis on the bottom here, and the vertical axis this T. Naught has to do with how much force is produced.
+
+
+189
+00:27:27.997 --> 00:27:33.657
+Bertrand Tanner: And then, if you're changing the cross bridge stiffness on this other axis over here. Kxb.
+
+
+190
+00:27:33.917 --> 00:27:36.087
+Bertrand Tanner: as you vary the relative
+
+
+191
+00:27:36.377 --> 00:27:48.506
+Bertrand Tanner: stiffness values of the filaments versus the cross bridges that leads to some sort of tuning or some sort of surface, where you get sometimes very low forces that are produced.
+
+
+192
+00:27:48.697 --> 00:28:00.087
+Bertrand Tanner: because that could be. There's either very little cross bridge binding or on a very compliant system. For example, when you have very low Cross bridge forces.
+
+
+193
+00:28:01.430 --> 00:28:02.432
+Bertrand Tanner: You can get
+
+
+194
+00:28:03.157 --> 00:28:10.616
+Bertrand Tanner: very low force production, even though you get high cross bridge binding. And there's some sort of sweet spot where you can get high force production.
+
+
+195
+00:28:10.737 --> 00:28:14.316
+Bertrand Tanner: and that leads to where I put this little
+
+
+196
+00:28:14.977 --> 00:28:29.537
+Bertrand Tanner: white star is sort of on the shoulder there, where you're getting pretty high force production and pretty decent cross bridge binding that would be equivalent to the rough values that are thought to exist in the muscle.
+
+
+197
+00:28:32.597 --> 00:28:47.307
+Bertrand Tanner: And so the next thing that we went on to ask a little better. Well, what is the implications here of that ratio of filaments? It's not just a 1 thick and one thin. There's actually a ratio where there's 2 thin filaments
+
+
+198
+00:28:47.847 --> 00:28:57.397
+Bertrand Tanner: and one thick filament, where essentially every thick filament interacts with 6 thin filaments, and every thin filament interacts with 3 thick filaments.
+
+
+199
+00:28:57.567 --> 00:29:19.886
+Bertrand Tanner: And this is also a calcium regulated process. And so the 1st step that was tried to look at this was a paper by Bryant Chase, where they did tried to look at a system that was sort of as shown here. But there were some complications with what would go on with the edge effects because it didn't have
+
+
+200
+00:29:20.988 --> 00:29:30.386
+Bertrand Tanner: the boundary conditions were different on the outsides versus where all the thick filaments were interacting with the thin filaments on the inside of these hexagons.
+
+
+201
+00:29:31.057 --> 00:29:37.027
+Bertrand Tanner: And so what I tried to do was figure out a way to get rid of those boundary conditions for my Phd.
+
+
+202
+00:29:37.137 --> 00:29:58.446
+Bertrand Tanner: And we put together some ideas of how to represent and how to model this, trying to use that physiological ratio of thin filaments, adding in the calcium regulation, and then that would lead to something that was a 3 state cycle, as I showed you before, for thin filament activation as well as cross bridge binding, and one of the things that
+
+
+203
+00:29:59.327 --> 00:30:06.396
+Bertrand Tanner: helped was putting where this dashed line is shown. Here. On the right
+
+
+204
+00:30:06.657 --> 00:30:36.527
+Bertrand Tanner: is we simulated 4 thick filaments and 8 thin filaments, but we only simulated the interactions that would be within this dashed line. But at that dashed line we made periodic boundary conditions, such that what would be going on, for example, on the other half of this thick filament would be occurring right here. So we were sort of wrapping the edges onto each other, and that removed some of those edge effects of that prior model from Bryant Chase that helped
+
+
+205
+00:30:36.787 --> 00:30:44.437
+Bertrand Tanner: simulate what would be infinite lattice space with just a finite number of filaments.
+
+
+206
+00:30:45.447 --> 00:30:52.817
+Bertrand Tanner: And so then this shows you how we've got same structure as I showed before, where you've got a thin filament
+
+
+207
+00:30:53.017 --> 00:31:06.986
+Bertrand Tanner: made of the thin filament nodes with springs between each node, and you've got a thick filament made of thick filament nodes with spring between each node. But then in a Collinear plane as shown in the slide there.
+
+
+208
+00:31:07.137 --> 00:31:13.447
+Bertrand Tanner: we would have then 2 cross bridges coming off of each node to interact with those same collinear
+
+
+209
+00:31:13.597 --> 00:31:15.456
+Bertrand Tanner: planes of the
+
+
+210
+00:31:16.127 --> 00:31:24.952
+Bertrand Tanner: thin filaments that it's facing. And that would occur as you'd move throughout the system radially as well to try to simulate all those interactions that I just showed
+
+
+211
+00:31:25.457 --> 00:31:27.367
+Bertrand Tanner: within this lattice space.
+
+
+212
+00:31:29.557 --> 00:31:36.266
+Bertrand Tanner: And so to show you some of what we found with that, I was gonna skip over this because we sort of
+
+
+213
+00:31:36.417 --> 00:31:40.837
+Bertrand Tanner: showed you before, unless there were questions. That's sort of there as a placeholder.
+
+
+214
+00:31:41.227 --> 00:32:05.556
+Bertrand Tanner: And we saw that physiological filament geometry amplifies those interactions of the cross bridges and the compliant realignment like I showed before. And so if we use the same exact model and only allow for interactions between this row of Actin and myosin, as outlined by the oval versus the whole rest of the system.
+
+
+215
+00:32:05.717 --> 00:32:11.996
+Bertrand Tanner: You saw that there was a whole lot more 1st produced with the multiple filament model versus the 2 filament model.
+
+
+216
+00:32:12.727 --> 00:32:16.037
+Bertrand Tanner: except that might be what you'd expect.
+
+
+217
+00:32:16.237 --> 00:32:23.256
+Bertrand Tanner: because there's so many more interactions. So if you then even go and scale that to the relative force
+
+
+218
+00:32:24.097 --> 00:32:28.076
+Bertrand Tanner: in terms of the amount of force produced divided by the myosin
+
+
+219
+00:32:28.844 --> 00:32:42.207
+Bertrand Tanner: I wanted to. This is what the relative forces look like as a function of time on top. For A, then number 2 or panel B is the thin filament activation levels.
+
+
+220
+00:32:42.687 --> 00:32:55.587
+Bertrand Tanner: And then the bottom is the cross bridge binding as a function of time. And then this is what's shown here is for 3 different Pca levels. So if if we thought about.
+
+
+221
+00:32:56.037 --> 00:33:25.086
+Bertrand Tanner: we see that the fractional activation is very similar between the 2 models. And so at Pca 4, you have a lot more activation, which is a high calcium level. At Pca 6, you have medium level of activation, which is a medium calcium level. And at low calcium you have very low activation. And so, even though the fractional activation is the same, you see that you get very, very different relative values of the force that's produced
+
+
+222
+00:33:25.157 --> 00:33:27.046
+Bertrand Tanner: permyosin in the system
+
+
+223
+00:33:27.567 --> 00:33:35.977
+Bertrand Tanner: for the multiple filament model, where that's quite a bit larger, and that comes from quite a bit more cross bridge binding as well.
+
+
+224
+00:33:36.277 --> 00:33:42.597
+Bertrand Tanner: And so one of the take home messages is that you get more binding and more compliant realignment with the multiple filament model.
+
+
+225
+00:33:42.987 --> 00:33:45.568
+Bertrand Tanner: and some of the implications of that would be then
+
+
+226
+00:33:46.017 --> 00:33:50.746
+Bertrand Tanner: at at Pca. 4. That predicted relative force would be about
+
+
+227
+00:33:50.937 --> 00:34:00.627
+Bertrand Tanner: 2 piconewtons per myosin versus about half of a piconewton, or sorry 2 piconewtons per cross bridge instead of about half
+
+
+228
+00:34:01.287 --> 00:34:02.936
+Bertrand Tanner: for the 2 filament model.
+
+
+229
+00:34:03.077 --> 00:34:09.896
+Bertrand Tanner: and that seemed to line up. It turns out a little bit better with what was been measured with single molecule measurements.
+
+
+230
+00:34:10.177 --> 00:34:15.827
+Bertrand Tanner: And then, if we thought about, was the differences between the fractional myosin binding.
+
+
+231
+00:34:16.077 --> 00:34:34.036
+Bertrand Tanner: you saw that there was greater cross bridge binding, and there was greater cross bridge, turnover going through the cycle faster. And so all of what was going on with the forces, the level of binding, and how the dynamic turnover of the system was happening seemed to be much more in line
+
+
+232
+00:34:34.457 --> 00:34:38.446
+Bertrand Tanner: with some of the measured values from muscle experiments
+
+
+233
+00:34:38.847 --> 00:34:46.757
+Bertrand Tanner: for the multiple filament model, trying to simulate or emulate the regular physiological geometry compared to the 2 filament model.
+
+
+234
+00:34:47.297 --> 00:34:52.416
+Bertrand Tanner: And so that seemed to be more consistent with the experimental literature, and
+
+
+235
+00:34:52.537 --> 00:34:55.197
+Bertrand Tanner: that was one finding that came out of
+
+
+236
+00:34:55.517 --> 00:35:01.217
+Bertrand Tanner: the geometry, amplifying or coordinating Crossbridge recruitment and Crossbridge cycling.
+
+
+237
+00:35:03.747 --> 00:35:09.386
+Bertrand Tanner: And so it seems like that coupled cross bridge activity depends on how many
+
+
+238
+00:35:09.827 --> 00:35:15.776
+Bertrand Tanner: myosin are able to generate force which depends on the geometry or the system structure.
+
+
+239
+00:35:16.747 --> 00:35:17.937
+Bertrand Tanner: And so
+
+
+240
+00:35:22.827 --> 00:35:37.167
+Bertrand Tanner: that's sort of the end of the results of what I wanted to show you. I've got a little bit of a wrap up of some conclusions and some other models that have tried to implement some other things with this idea of the spatially explicit modeling.
+
+
+241
+00:35:37.377 --> 00:35:44.316
+Bertrand Tanner: And then I've got this 2 filament code example. If we'd like to go over that, or if anybody wanted to try to run
+
+
+242
+00:35:44.837 --> 00:35:49.826
+Bertrand Tanner: any simulations, or I can run them on my screen, and we can talk about them there too.
+
+
+243
+00:35:50.667 --> 00:35:54.166
+Bertrand Tanner: So, in conclusion, from what I showed you. But today
+
+
+244
+00:35:55.937 --> 00:36:07.137
+Bertrand Tanner: these mechanics, geometry and kinetics are all linked, and they're hard to separate, but they're also a little bit difficult to model with these larger systems. Compared to some of the simpler models I showed you before.
+
+
+245
+00:36:07.477 --> 00:36:17.147
+Bertrand Tanner: The physiological geometry seems to coordinate cross bridge activity and increase the this should be
+
+
+246
+00:36:17.647 --> 00:36:36.937
+Bertrand Tanner: thick filament binding, not thin filament activation, because we saw that the thin filament activation was very, very similar between the 2 systems. So this is a type of I apologize. And then those cross bridge dynamics seem to scale with the population of what's going on with the cross bridges that are generating force.
+
+
+247
+00:36:37.667 --> 00:36:55.886
+Bertrand Tanner: And so all of what I showed you today assumed that there were only interactions within one direction. And even though I was kind of showing that they had interactions sort of vertically, between the filaments. I really only measure all the forces and calculate the forces in one dimension.
+
+
+248
+00:36:56.147 --> 00:37:07.337
+Bertrand Tanner: So some people have tried to move forward with saying, Well, what might the implications be of, rather than just having every, all the forces balancing in one direction?
+
+
+249
+00:37:08.157 --> 00:37:11.816
+Bertrand Tanner: Cross bridges actually sort of have this weird sort of
+
+
+250
+00:37:12.077 --> 00:37:22.496
+Bertrand Tanner: movement of both a swing and a transition as they go through that has a vertical component or a torsional component as well as a
+
+
+251
+00:37:23.207 --> 00:37:38.817
+Bertrand Tanner: longitudinal component. And so there's been some models that have tried to estimate or model what goes on as the distances between those filaments might change, which usually occurs as you change the length of the of the muscle.
+
+
+252
+00:37:40.137 --> 00:37:48.506
+Bertrand Tanner: and then some other models have tried to implement some of the components of the passive elements, such as Titan, for example.
+
+
+253
+00:37:49.157 --> 00:37:54.726
+Bertrand Tanner: where Titan runs along the thick and the thin filament here, and trying to say, well.
+
+
+254
+00:37:54.967 --> 00:38:05.107
+Bertrand Tanner: rather than just having the myosin just be there at a free end. There's actually Titan that ties it to the Z disk, and they put a spring constant in there for Titan.
+
+
+255
+00:38:05.367 --> 00:38:12.137
+Bertrand Tanner: and you could see that depending on what's going on with the passive forces. And you're changing the length of the circumer.
+
+
+256
+00:38:12.387 --> 00:38:21.686
+Bertrand Tanner: The effects of Titan have a significant impact on what's going on with the passive contributions like we had shown even with those hill models.
+
+
+257
+00:38:22.527 --> 00:38:27.736
+Bertrand Tanner: And so other folks have said, well, what might be the implications of
+
+
+258
+00:38:28.117 --> 00:38:34.497
+Bertrand Tanner: myosin binding protein? C, for example, because it's thought that myosin binding protein c
+
+
+259
+00:38:35.277 --> 00:38:42.466
+Bertrand Tanner: stabilizes or doesn't let the cross bridges bind as well, and so they put together some kinetic models where
+
+
+260
+00:38:42.957 --> 00:38:49.146
+Bertrand Tanner: myosin binding protein C, which is in the C zone of the filament. It
+
+
+261
+00:38:49.397 --> 00:38:59.736
+Bertrand Tanner: it competes with trying to hold down myosin versus allowing myosin to bind. And so that's 1 example that came out of this fibersome model.
+
+
+262
+00:39:00.097 --> 00:39:05.487
+Bertrand Tanner: And then another group has tried to simulate twitches.
+
+
+263
+00:39:05.747 --> 00:39:14.867
+Bertrand Tanner: and Simon presented a workshop earlier, and they tried to look at what was going on with trying to simulate twitches and trying to simulate workloops.
+
+
+264
+00:39:14.977 --> 00:39:19.817
+Bertrand Tanner: to try to understand some of the differences between
+
+
+265
+00:39:19.947 --> 00:39:26.026
+Bertrand Tanner: the the stresses and the strains and the energy use and simulated workloads.
+
+
+266
+00:39:27.107 --> 00:39:32.967
+Bertrand Tanner: So those are just some different applications of these ideas of the spatially explicit model
+
+
+267
+00:39:33.357 --> 00:39:49.876
+Bertrand Tanner: and part of this and part of what we're ultimately trying to work on as a group is bridging over these different scales to try to better understand what might be going on down here at the molecular and Sarcomere level with trying to scale that up.
+
+
+268
+00:39:50.547 --> 00:40:09.717
+Bertrand Tanner: to better understand what's going up at the, you know, with the muscle, tendon architecture, or the effects of the excitation, contraction, coupling or neural mechanical control of locomotion. And so some of these ideas are trying to see how you can go across these different
+
+
+269
+00:40:09.887 --> 00:40:15.347
+Bertrand Tanner: scales, both mathematically and with some of our experimental measurements.
+
+
+270
+00:40:16.097 --> 00:40:25.147
+Bertrand Tanner: And so that's essentially the end of the presentation. And if we wanted to go into some of the
+
+
+271
+00:40:25.277 --> 00:40:27.377
+Bertrand Tanner: 2 filament code examples.
+
+
+272
+00:40:27.727 --> 00:40:38.096
+Bertrand Tanner: I don't know how it's best to start to do that. I've got some additional slides that describe in more detail some of what the code does, and some of what
+
+
+273
+00:40:38.207 --> 00:40:42.806
+Bertrand Tanner: the mathematics are using to describe, even just a simple 2 fillment model.
+
+
+274
+00:40:43.027 --> 00:40:48.416
+Bertrand Tanner: And I can also. So I can go through those. Or I can also just run simulations.
+
+
+275
+00:40:48.567 --> 00:40:53.156
+Bertrand Tanner: Does anybody have any ideas or suggestions on next steps.
+
+
+276
+00:40:57.737 --> 00:41:01.347
+Monica Daley (she, her): I think it'd be great if you walk us through the simulations. If you.
+
+
+277
+00:41:01.347 --> 00:41:13.536
+Bertrand Tanner: That sounds good. So, and I can walk us through a simulation, and then I can also show you some of the like. So I've just got to show you the slides that I have that we can come back to.
+
+
+278
+00:41:13.757 --> 00:41:19.002
+Bertrand Tanner: I tried to describe what goes on with like balancing forces in the system.
+
+
+279
+00:41:20.035 --> 00:41:26.727
+Bertrand Tanner: In terms of when cross bridges bind what happens, and then some of the math behind that to balance those forces.
+
+
+280
+00:41:27.307 --> 00:41:29.606
+Bertrand Tanner: and why we use linear algebra.
+
+
+281
+00:41:29.987 --> 00:41:36.617
+Bertrand Tanner: And then I just wanted to have another snapshot of the kinetics if there were any questions there, although
+
+
+282
+00:41:36.777 --> 00:41:45.686
+Bertrand Tanner: what I have today for the 2 filament example doesn't have any of this stuff on the left side with any calcium regulation. It's just sort of the cross Bridge interactions.
+
+
+283
+00:41:45.997 --> 00:41:53.157
+Bertrand Tanner: And then I also wanted to make sure to put in there this whole sort of concept of these
+
+
+284
+00:41:53.257 --> 00:42:01.706
+Bertrand Tanner: in the spatially explicit models, because there's positions on where myosin and actin can interact and bind
+
+
+285
+00:42:02.227 --> 00:42:15.967
+Bertrand Tanner: that when they when the cross bridge binds, sometimes it can be stretched out quite a lot, and that might be a low probability of being stretched out to bind, or it can be like in a resting position where there's a high probability of binding.
+
+
+286
+00:42:16.127 --> 00:42:31.287
+Bertrand Tanner: But the point behind all the kinetics is. They all depend on distortion of the cross bridge head. So rather than just like a rate constant, it's a rate constant as a function of distortion. So they're actually rate functions. And so like this would be
+
+
+287
+00:42:31.547 --> 00:42:36.106
+Bertrand Tanner: an example. This is sort of looks like a Gaussian function for the attachment.
+
+
+288
+00:42:36.417 --> 00:42:47.346
+Bertrand Tanner: And then these are sort of position, dependent power stroke, or detachment events that I just wanted to make sure were resources that were there. If we wanted to come back to them.
+
+
+289
+00:42:50.717 --> 00:42:54.727
+Bertrand Tanner: So I need to end this for now.
+
+
+290
+00:42:55.717 --> 00:42:58.467
+Bertrand Tanner: And so if I were to
+
+
+291
+00:43:04.337 --> 00:43:09.467
+Bertrand Tanner: in like the research workshop folder that Victoria had sent out.
+
+
+292
+00:43:09.637 --> 00:43:15.066
+Bertrand Tanner: If you were interested in downloading any of this stuff or seeing how it worked for yourself.
+
+
+293
+00:43:15.557 --> 00:43:18.656
+Bertrand Tanner: If you click on that computational modeling link.
+
+
+294
+00:43:19.177 --> 00:43:22.887
+Bertrand Tanner: These are all Matlab files.
+
+
+295
+00:43:23.447 --> 00:43:29.876
+Bertrand Tanner: And to summarize like I wrote, a very basic
+
+
+296
+00:43:32.277 --> 00:43:35.216
+Bertrand Tanner: sort of summary of what was in there.
+
+
+297
+00:43:35.667 --> 00:43:40.757
+Bertrand Tanner: And essentially what I've put forward is what is
+
+
+298
+00:43:41.127 --> 00:43:43.867
+Bertrand Tanner: a set of code that's very similar to that
+
+
+299
+00:43:43.997 --> 00:43:53.436
+Bertrand Tanner: code that was used for that 2 filament model published by Daniel at all in 1998 where there's links to the paper that are right here.
+
+
+300
+00:43:54.099 --> 00:43:58.896
+Bertrand Tanner: The main code that I'm gonna run for you is this called to fill
+
+
+301
+00:44:00.017 --> 00:44:09.407
+Bertrand Tanner: mc blah blah blah right? And then that calls some scripts and functions within it where there's a parameter file.
+
+
+302
+00:44:09.807 --> 00:44:15.446
+Bertrand Tanner: and I can bury some of those parameters, and we can see some of the parameters what the different outcomes are.
+
+
+303
+00:44:15.997 --> 00:44:20.726
+Bertrand Tanner: There's this build, M core model and that build. M. Core model
+
+
+304
+00:44:21.657 --> 00:44:25.497
+Bertrand Tanner: has a lot to do with trying to line up
+
+
+305
+00:44:26.137 --> 00:44:29.317
+Bertrand Tanner: positions of like all the nodes
+
+
+306
+00:44:29.437 --> 00:44:36.486
+Bertrand Tanner: and who interacts with which other node and how far apart, like Node Mj. Would be from
+
+
+307
+00:44:37.477 --> 00:44:45.457
+Bertrand Tanner: AI, if you're thinking about this node and this particular cross bridge that's shown by C. So that is
+
+
+308
+00:44:45.887 --> 00:44:48.956
+Bertrand Tanner: a pretty complicated thing to go through. But
+
+
+309
+00:44:49.157 --> 00:44:51.807
+Bertrand Tanner: that's what keeps track of all the interactions.
+
+
+310
+00:44:52.447 --> 00:44:57.756
+Bertrand Tanner: And then there's a kinetics rate function which that describes
+
+
+311
+00:44:59.437 --> 00:45:10.170
+Bertrand Tanner: what I've shown here in terms of like, who's interacting with whom that gets called quite a bit. And then, at the end of the simulation, I just fit the response to an exponential function.
+
+
+312
+00:45:10.607 --> 00:45:24.156
+Bertrand Tanner: and you can totally comment this out. If you don't have whatever toolbox is required to do, the optimization to minimize that function which I think is the optimization toolbox.
+
+
+313
+00:45:26.447 --> 00:45:30.397
+Bertrand Tanner: And so those are. That's a summary of what's in that folder.
+
+
+314
+00:45:30.597 --> 00:45:33.427
+Bertrand Tanner: And so if I go and look at
+
+
+315
+00:45:37.177 --> 00:45:41.517
+Bertrand Tanner: Matlab, for example, this is the 2 filament. Mc.
+
+
+316
+00:45:42.127 --> 00:45:45.527
+Bertrand Tanner: And if I were to just run this from scratch.
+
+
+317
+00:45:46.487 --> 00:45:50.107
+Bertrand Tanner: I get something that pops up where I made 2 figures.
+
+
+318
+00:45:52.067 --> 00:45:55.776
+Bertrand Tanner: and I don't know how well you guys can see these. Do you want me to make them bigger.
+
+
+319
+00:45:58.057 --> 00:45:59.946
+Monica Daley (she, her): Bigger would be a little bit. Yeah, that's.
+
+
+320
+00:45:59.947 --> 00:46:05.097
+Bertrand Tanner: This figure happens to do with the mean force that's produced.
+
+
+321
+00:46:05.267 --> 00:46:08.287
+Bertrand Tanner: And the reason, I say mean force is.
+
+
+322
+00:46:09.487 --> 00:46:14.937
+Bertrand Tanner: I'll show you in a in a moment that I run the model over and over again, and then average
+
+
+323
+00:46:15.317 --> 00:46:23.327
+Bertrand Tanner: the forces across each run, and this little exponential fit here is shown in the black line where the
+
+
+324
+00:46:23.727 --> 00:46:32.986
+Bertrand Tanner: asymptotic value would be, how high things get on the flat, asymptotic side that should have units equivalent to Pico Newtons in this example.
+
+
+325
+00:46:33.327 --> 00:46:42.047
+Bertrand Tanner: and I also keep track of whatever that rate would be in terms of the rate to the half maximum which should be in units of per second.
+
+
+326
+00:46:42.397 --> 00:46:44.356
+Bertrand Tanner: So this is a little
+
+
+327
+00:46:44.477 --> 00:46:56.546
+Bertrand Tanner: little bit sloppy there, for all you code aficionados. And then this is just the mean of the fractions of the heads that are bound, and you can see that whether you're looking at force
+
+
+328
+00:46:56.887 --> 00:47:04.947
+Bertrand Tanner: or whether you're looking at the heads that are bound they're pretty similar. But I just wanted to show a couple of
+
+
+329
+00:47:06.107 --> 00:47:12.086
+Bertrand Tanner: the outputs, for example. And so one thing to imagine.
+
+
+330
+00:47:13.887 --> 00:47:17.857
+Bertrand Tanner: if I were to, I swear I had it in here. But maybe I
+
+
+331
+00:47:24.587 --> 00:47:30.106
+Bertrand Tanner: if I were to look at what this parameter file were, for example, right?
+
+
+332
+00:47:30.347 --> 00:47:37.297
+Bertrand Tanner: Say, we wanted to only run this one time
+
+
+333
+00:47:38.237 --> 00:47:43.737
+Bertrand Tanner: if it's not gonna average anything and just show you like what one run might look like. Okay.
+
+
+334
+00:47:48.137 --> 00:47:50.567
+Bertrand Tanner: I might have to save that whoops.
+
+
+335
+00:47:55.677 --> 00:48:05.397
+Bertrand Tanner: So here, you see that this is like much more
+
+
+336
+00:48:06.467 --> 00:48:11.977
+Bertrand Tanner: variable right? And so, as you see your forces binding, this is sort of
+
+
+337
+00:48:13.047 --> 00:48:23.207
+Bertrand Tanner: very choppy by comparison to the averaging that I showed you before. And part of what's interesting is, if you think of like how the forces are balancing every time step
+
+
+338
+00:48:23.467 --> 00:48:30.207
+Bertrand Tanner: versus what's going on with just the cross bridges. Right? So this essentially is telling you almost
+
+
+339
+00:48:30.957 --> 00:48:39.226
+Bertrand Tanner: so. There's a cross bridge binds here, and then it stays bound. But then another one bound binds but just for a second.
+
+
+340
+00:48:39.357 --> 00:48:51.217
+Bertrand Tanner: and that goes off, and then you have one bound and then another one comes on, but now it seems to stay on, and that recruits a neighbor. But then the neighbor comes off, and that recruits a neighbor. But then the neighbor comes off.
+
+
+341
+00:48:51.537 --> 00:48:55.916
+Bertrand Tanner: and now across bridges. That 3rd Cross bridge seems to stay bound.
+
+
+342
+00:48:56.167 --> 00:49:16.777
+Bertrand Tanner: and then maybe the 4th one comes on as an example. Right? So that's what's going on is this is showing you how the cross bridges are coming on and off, but as you go in time, you're starting to stretch out that filament as you're producing greater forces, and that stretching out of the filament is starting to recruit additional cross bridges.
+
+
+343
+00:49:18.897 --> 00:49:25.866
+Bertrand Tanner: But the reason that I had run it, for example, like you know 25 times is, it
+
+
+344
+00:49:26.267 --> 00:49:30.297
+Bertrand Tanner: seems to average things and be a little more easy to interpret.
+
+
+345
+00:49:30.827 --> 00:49:34.847
+Bertrand Tanner: But you can change that, or I can change that. However, you want me to
+
+
+346
+00:49:42.047 --> 00:49:50.657
+Bertrand Tanner: and like. So if we go back to that original stimulation as an example.
+
+
+347
+00:49:53.307 --> 00:50:01.907
+Bertrand Tanner: right? You see that our level of force we're producing is around 18 Pico Newtons, and
+
+
+348
+00:50:05.937 --> 00:50:12.857
+Bertrand Tanner: if we were to maybe say we wanted to see what would go on with
+
+
+349
+00:50:13.697 --> 00:50:19.867
+Bertrand Tanner: making the spring constant of the of the thin filament like
+
+
+350
+00:50:25.417 --> 00:50:30.187
+Bertrand Tanner: the 10th as stiff.
+
+
+351
+00:50:32.617 --> 00:50:34.337
+Bertrand Tanner: What might happen there.
+
+
+352
+00:50:45.947 --> 00:50:48.747
+Bertrand Tanner: Here, you see, even though the numbers
+
+
+353
+00:50:49.117 --> 00:50:55.556
+Bertrand Tanner: not hugely different, you get a little bit less force because a lot of the energy is going into
+
+
+354
+00:50:56.357 --> 00:51:00.886
+Bertrand Tanner: stretching out the filaments rather than actually generating forces.
+
+
+355
+00:51:01.407 --> 00:51:03.327
+Bertrand Tanner: And I had forgotten.
+
+
+356
+00:51:03.617 --> 00:51:09.225
+Bertrand Tanner: you know, in terms of the bound cross bridges that looks like it's about 14% or something.
+
+
+357
+00:51:14.087 --> 00:51:18.447
+Bertrand Tanner: Which I had not remembered what it was before. But I think that's greater.
+
+
+358
+00:51:18.767 --> 00:51:22.367
+Bertrand Tanner: That's greater cross bridge binding, even though you're getting less forces.
+
+
+359
+00:51:27.997 --> 00:51:30.896
+Bertrand Tanner: As like one particular example.
+
+
+360
+00:51:34.137 --> 00:51:44.536
+Bertrand Tanner: So those were just a couple of things. If you know anybody wanted to play around or see how that would work. That code is available there.
+
+
+361
+00:51:44.717 --> 00:51:52.897
+Bertrand Tanner: And the code that's available there is largely associated.
+
+
+362
+00:51:54.007 --> 00:51:55.547
+Bertrand Tanner: Where's that? Pdf.
+
+
+363
+00:51:57.107 --> 00:51:57.987
+Bertrand Tanner: With
+
+
+364
+00:52:01.137 --> 00:52:02.987
+Bertrand Tanner: this particular
+
+
+365
+00:52:07.357 --> 00:52:10.136
+Bertrand Tanner: publication. That was just the 2 filaments.
+
+
+366
+00:52:15.127 --> 00:52:20.367
+Bertrand Tanner: So I don't know if anybody has questions, or if you want me to go through some more stuff.
+
+
+367
+00:52:20.667 --> 00:52:23.997
+Bertrand Tanner: or if we wanted to talk about anything.
+
+
+368
+00:52:25.017 --> 00:52:31.197
+Bertrand Tanner: But that's mostly what I had prepared for the presentation side of things.
+
+
+369
+00:53:03.657 --> 00:53:16.417
+Bertrand Tanner: Well, there's lots of different levels or versions of computational modeling. And that's 1 example. And I tried to show a few examples as the sort of historical progression of some of the ideas
+
+
+370
+00:53:17.587 --> 00:53:21.346
+Bertrand Tanner: and computational modeling of muscle that are used.
+
+
+371
+00:53:32.817 --> 00:53:36.381
+Kiisa Carla Nishikawa: So, bird, I guess I I have some questions.
+
+
+372
+00:53:38.517 --> 00:53:46.546
+Kiisa Carla Nishikawa: So maybe to start with. You know, there's this whole idea of thick filament activation. Now.
+
+
+373
+00:53:48.675 --> 00:53:54.896
+Kiisa Carla Nishikawa: That's fairly new, and I think so to what extent like
+
+
+374
+00:53:56.157 --> 00:53:59.637
+Kiisa Carla Nishikawa: could you modify your model to include.
+
+
+375
+00:54:00.407 --> 00:54:04.747
+Kiisa Carla Nishikawa: you know, new ideas about like super relaxed. And
+
+
+376
+00:54:06.387 --> 00:54:10.376
+Kiisa Carla Nishikawa: I mean, is that a direction that you think people might take this or.
+
+
+377
+00:54:10.747 --> 00:54:11.977
+Bertrand Tanner: Well, so
+
+
+378
+00:54:16.467 --> 00:54:22.656
+Bertrand Tanner: I'd have to think about which model that was used. But there was a paper published in
+
+
+379
+00:54:22.807 --> 00:54:25.416
+Bertrand Tanner: 2018 from
+
+
+380
+00:54:28.457 --> 00:54:36.417
+Bertrand Tanner: Ken Campbell, where, if you give me a second, I could probably almost pull it up.
+
+
+381
+00:54:37.287 --> 00:54:40.687
+Bertrand Tanner: But there's quite a few ideas about how to model that.
+
+
+382
+00:54:41.147 --> 00:54:47.767
+Bertrand Tanner: and it largely comes from trying to think about a transition potentially.
+
+
+383
+00:54:47.927 --> 00:54:51.116
+Bertrand Tanner: whether you're doing a spatial model or not a spatial model.
+
+
+384
+00:54:51.337 --> 00:54:53.676
+Bertrand Tanner: The idea would be that
+
+
+385
+00:54:54.697 --> 00:55:02.457
+Bertrand Tanner: you know, in the super relaxed state. The heads are maybe down or laying on the filament or not able to interact with
+
+
+386
+00:55:02.987 --> 00:55:13.547
+Bertrand Tanner: the thin filament as well. Whether that's totally stabilized, or something in the middle. It's clearly different than like the disordered, relaxed state.
+
+
+387
+00:55:14.327 --> 00:55:25.806
+Bertrand Tanner: But there! There's the idea that that transition between the super relaxed state to a disordered, relaxed state. Where, then, the myosin could interact with actin has something to do with force.
+
+
+388
+00:55:25.957 --> 00:55:27.907
+Bertrand Tanner: and whether that's force
+
+
+389
+00:55:28.467 --> 00:55:36.216
+Bertrand Tanner: in total in the system, or whether that's the local force, right? Like a cross bridge, node itself and a spatial model.
+
+
+390
+00:55:36.637 --> 00:55:43.257
+Bertrand Tanner: the concept would be that whatever that rate transition would be coming from the disordered, relaxed date to the
+
+
+391
+00:55:43.417 --> 00:55:44.966
+Bertrand Tanner: super relaxed state.
+
+
+392
+00:55:45.397 --> 00:55:51.840
+Bertrand Tanner: or sorry I messed those up super relaxed state to the disordered, relaxed state that transition would have something to do
+
+
+393
+00:55:52.347 --> 00:55:54.046
+Bertrand Tanner: with integrating
+
+
+394
+00:55:54.367 --> 00:56:00.716
+Bertrand Tanner: the force that is being measured in the system. Or if you were doing some sort of a population cross bridge model
+
+
+395
+00:56:01.126 --> 00:56:15.127
+Bertrand Tanner: it'd have to do with probably how many cross bridges were bound if you were just doing a cross bridge model like is the level of cross bridges increase. You'd imagine that that would recruit or bring on
+
+
+396
+00:56:15.277 --> 00:56:20.266
+Bertrand Tanner: more cross bridges from the super relaxed to the disordered, relaxed state. I think.
+
+
+397
+00:56:20.427 --> 00:56:23.626
+Bertrand Tanner: in the spatial model. You'd probably want to try to.
+
+
+398
+00:56:25.407 --> 00:56:29.896
+Bertrand Tanner: I would think, to try to have that be dependent on
+
+
+399
+00:56:31.916 --> 00:56:35.217
+Bertrand Tanner: this. The the sort of strain
+
+
+400
+00:56:35.407 --> 00:56:41.797
+Bertrand Tanner: or the stress along the intermediate portions between the nodes of the thick filament.
+
+
+401
+00:56:42.416 --> 00:56:53.426
+Bertrand Tanner: Because that's where you'd sort of have the thick filament feeling those forces, or what would be where the thick filament would be stretching out that could destabilize that super relaxed state to some degree.
+
+
+402
+00:56:53.807 --> 00:56:56.427
+Bertrand Tanner: So it'd be putting into the kinetics
+
+
+403
+00:56:57.137 --> 00:57:02.627
+Bertrand Tanner: something that was a mechanical term, in addition to the
+
+
+404
+00:57:03.557 --> 00:57:10.207
+Bertrand Tanner: spatial or distortion dependent term like I showed with some of those rate functions, so it would be
+
+
+405
+00:57:11.296 --> 00:57:14.557
+Bertrand Tanner: adding a parameter that would have something to do with that
+
+
+406
+00:57:16.717 --> 00:57:20.676
+Bertrand Tanner: as a that's my simplest answer that I can come up with.
+
+
+407
+00:57:21.937 --> 00:57:25.897
+Kiisa Carla Nishikawa: That seems like a really good answer.
+
+
+408
+00:57:25.897 --> 00:57:35.247
+Bertrand Tanner: I mean, I've thought about it a lot. I just haven't put it into the model. And I've thought about a lot of the model that I've got, and like how it needs to sort of be started over
+
+
+409
+00:57:36.600 --> 00:57:43.146
+Bertrand Tanner: cause. There's a lot of stuff that I used to do with it very, very well, but there's a lot of new stuff I want to do differently.
+
+
+410
+00:57:44.307 --> 00:57:47.657
+Bertrand Tanner: So I'm sort of grappling at
+
+
+411
+00:57:48.027 --> 00:57:50.537
+Bertrand Tanner: what the right direction is for that.
+
+
+412
+00:57:53.277 --> 00:57:54.067
+Kiisa Carla Nishikawa: Thanks.
+
+
+413
+00:57:55.527 --> 00:58:00.307
+Bertrand Tanner: So it looks like Hannah has a question about
+
+
+414
+00:58:08.307 --> 00:58:13.116
+Bertrand Tanner: how this would have something to do with clinical studies and injury disease.
+
+
+415
+00:58:13.277 --> 00:58:17.126
+Bertrand Tanner: or how to integrate some of this stuff into the human tissue.
+
+
+416
+00:58:17.757 --> 00:58:27.226
+Bertrand Tanner: And so I think those are really good things to think about in terms of injury and disease.
+
+
+417
+00:58:27.727 --> 00:58:29.156
+Bertrand Tanner: It could be
+
+
+418
+00:58:31.347 --> 00:58:41.107
+Bertrand Tanner: changing. Perhaps some of the geometry, or some of the mechanics, or some of the stiffness values depending on, you know, as muscles are injured.
+
+
+419
+00:58:41.327 --> 00:58:55.466
+Bertrand Tanner: Usually something gets laid down with a collagen response to try to add some mechanical integrity to the system while it heals. Sometimes it stays there, sometimes it goes away so whether that would be
+
+
+420
+00:58:56.017 --> 00:59:00.437
+Bertrand Tanner: changing the mechanical characteristics of just the filaments, or trying to put
+
+
+421
+00:59:00.597 --> 00:59:10.307
+Bertrand Tanner: something back to like what I was thinking about with maybe that parallel passive element
+
+
+422
+00:59:10.517 --> 00:59:17.907
+Bertrand Tanner: that had like in that hill model, even as an example. If I were to go back to that
+
+
+423
+00:59:25.357 --> 00:59:28.616
+Bertrand Tanner: trying to share. But I'm doing it really badly.
+
+
+424
+00:59:30.917 --> 00:59:34.758
+Bertrand Tanner: So, you know, even thinking back to
+
+
+425
+00:59:37.587 --> 00:59:40.887
+Bertrand Tanner: that 1st thing I wrote about the Hill model
+
+
+426
+00:59:44.627 --> 00:59:52.286
+Bertrand Tanner: a lot of what I just showed you, for those spatially explicit models were essentially something to do with contraction
+
+
+427
+00:59:53.177 --> 00:59:59.776
+Bertrand Tanner: of a lot of these contract elements and series elements kind of all lined up together. If you were to imagine
+
+
+428
+00:59:59.887 --> 01:00:13.787
+Bertrand Tanner: that is like what the cross bridge was doing along the thick filaments. But then, across the whole Sarcomere there might be something that is a deposit of collagen or scar tissue, for example.
+
+
+429
+01:00:13.897 --> 01:00:20.466
+Bertrand Tanner: Or maybe you could imagine there was an additional element coming off the end of the half sarcomere that represented
+
+
+430
+01:00:21.267 --> 01:00:29.766
+Bertrand Tanner: the tendon. And maybe there was differences in the muscle tendon dynamics or the muscle tendon characteristics with injury versus disease.
+
+
+431
+01:00:30.587 --> 01:00:31.887
+Bertrand Tanner: So there's
+
+
+432
+01:00:32.357 --> 01:00:44.626
+Bertrand Tanner: a lot of different ways that you could try to model that Hannah. And that's 1 of the like really cool things about the computational modeling. But one of the more difficult things is.
+
+
+433
+01:00:44.857 --> 01:00:53.027
+Bertrand Tanner: there's a lot of ways you could do it. But what's the right way to do it, and sometimes the right way to do it is to just try to get started somehow.
+
+
+434
+01:00:54.837 --> 01:01:01.576
+Bertrand Tanner: And it's no problem to be novice with modeling. I mean, it's good to think about these things, and to try to just learn and
+
+
+435
+01:01:02.097 --> 01:01:12.786
+Bertrand Tanner: think about where you might apply some of those parameters to represent the injury, to represent the disease, like as on the molecular level. For example, if there was something to do with
+
+
+436
+01:01:12.937 --> 01:01:15.906
+Bertrand Tanner: changes in any of the mutations
+
+
+437
+01:01:16.277 --> 01:01:22.227
+Bertrand Tanner: that affected thin filament activation due to troponin and tropomyosin, or changes
+
+
+438
+01:01:22.967 --> 01:01:41.727
+Bertrand Tanner: in mutations in myosin that affected. Maybe it was prolonged cross-bridge attachment, so it didn't detach as well. You could try to do a lot of that with changing the kinetic characteristics of what you have in the system. If you were trying to simulate some of the molecular mechanisms of disease.
+
+
+439
+01:01:42.267 --> 01:01:46.706
+Bertrand Tanner: So there's a few different scales. You could tackle that on. And
+
+
+440
+01:01:47.507 --> 01:01:53.227
+Bertrand Tanner: whether it was in humans or other species, a lot of
+
+
+441
+01:01:54.077 --> 01:01:56.346
+Bertrand Tanner: the components I showed you today
+
+
+442
+01:01:56.467 --> 01:02:01.216
+Bertrand Tanner: are very similar at the molecular and sarcomere and fiber level.
+
+
+443
+01:02:03.527 --> 01:02:09.027
+Hannah (She/Her): I have another question kind of going off of what you said. So you're mentioning
+
+
+444
+01:02:09.717 --> 01:02:13.646
+Hannah (She/Her): changing some of the the mechanics behind
+
+
+445
+01:02:13.967 --> 01:02:20.347
+Hannah (She/Her): the tropomycin and troponin, I believe. And so do you think
+
+
+446
+01:02:20.637 --> 01:02:36.956
+Hannah (She/Her): that is something that is going on? I hear a lot about gene replacement therapy or gene editing is that kind of more or less what you're getting at? And are people using those to integrate into disease related states? Or.
+
+
+447
+01:02:38.507 --> 01:02:39.227
+Hannah (She/Her): yeah.
+
+
+448
+01:02:41.677 --> 01:02:43.957
+Bertrand Tanner: People might be. I haven't
+
+
+449
+01:02:44.227 --> 01:02:46.747
+Bertrand Tanner: seen it very much just yet.
+
+
+450
+01:02:51.397 --> 01:02:53.066
+Bertrand Tanner: And I haven't seen it
+
+
+451
+01:02:53.547 --> 01:02:59.296
+Bertrand Tanner: very much just yet with any of the spatially explicit modeling. There's some more similar.
+
+
+452
+01:03:00.257 --> 01:03:09.357
+Bertrand Tanner: like differential equation modeling like the the actin and myosin Crossbridge interactions with assuming sort of
+
+
+453
+01:03:09.757 --> 01:03:16.636
+Bertrand Tanner: those system of chemical reactions. You can write that similarly for the camel mechanical interactions
+
+
+454
+01:03:16.827 --> 01:03:20.057
+Bertrand Tanner: that represent actin and myosin. I've seen it a little bit
+
+
+455
+01:03:21.257 --> 01:03:24.977
+Bertrand Tanner: with that, trying to simulate the effects of different mutations.
+
+
+456
+01:03:26.927 --> 01:03:33.967
+Bertrand Tanner: But I haven't seen a lot of the implications of like a gene therapy.
+
+
+457
+01:03:34.417 --> 01:03:37.107
+Bertrand Tanner: showing how that would improve something.
+
+
+458
+01:03:38.077 --> 01:03:44.047
+Bertrand Tanner: either from like the computational or the experimental side
+
+
+459
+01:03:44.717 --> 01:03:50.567
+Bertrand Tanner: that obviously is illustrating it from a theoretical and mathematical perspective.
+
+
+460
+01:03:51.647 --> 01:03:57.806
+Hannah (She/Her): Okay, yeah, I was just curious. You know, these are just little things that pop in my mind and snippets from
+
+
+461
+01:03:58.117 --> 01:04:02.247
+Hannah (She/Her): all of the other lectures. So just curious. Thank you.
+
+
+462
+01:04:02.807 --> 01:04:06.886
+Bertrand Tanner: No problem. I saw somebody else had a hand up there for a little while.
+
+
+463
+01:04:07.397 --> 01:04:09.597
+Bertrand Tanner: but I didn't know who it was.
+
+
+464
+01:04:20.847 --> 01:04:25.176
+Monica Daley (she, her): I might jump in with a broader question while we wait for that person to
+
+
+465
+01:04:25.617 --> 01:04:29.639
+Monica Daley (she, her): raise their hand again. If they're interested, or put their question in the chat.
+
+
+466
+01:04:30.657 --> 01:04:36.557
+Monica Daley (she, her): I was wondering. Sort of Hannah's questions brought me made me think more broadly about.
+
+
+467
+01:04:37.077 --> 01:04:39.916
+Monica Daley (she, her): I was wondering if you could share how you think about
+
+
+468
+01:04:40.347 --> 01:04:52.717
+Monica Daley (she, her): deciding the right level of or right kind of modeling approach for a given question, because a lot of the folks here might be new to computationally model computational modeling.
+
+
+469
+01:04:52.927 --> 01:05:12.996
+Monica Daley (she, her): And within Mc, we have people who are developing computational models at very different levels of organizational scale from molecular to whole body. So I was wondering if you could share some of your thoughts about how you kind of reason through the choice of model level for a given question.
+
+
+470
+01:05:18.727 --> 01:05:25.726
+Bertrand Tanner: So I can totally answer that the one thing that
+
+
+471
+01:05:26.117 --> 01:05:32.357
+Bertrand Tanner: so to think about the choice of model question, as you sort of need to think about the question you're trying to ask.
+
+
+472
+01:05:32.877 --> 01:05:35.066
+Bertrand Tanner: and you would like to have.
+
+
+473
+01:05:36.987 --> 01:05:45.347
+Bertrand Tanner: whatever your model is doing, to have some parameter or some subsystem, or some
+
+
+474
+01:05:47.387 --> 01:05:52.386
+Bertrand Tanner: portion of what you're trying to describe represented by the process
+
+
+475
+01:05:52.867 --> 01:05:56.106
+Bertrand Tanner: at that level or across those multiple levels.
+
+
+476
+01:05:56.377 --> 01:06:06.887
+Bertrand Tanner: So if you wanted to ask a question about like what's going on as tendon characteristics are changing versus
+
+
+477
+01:06:06.987 --> 01:06:09.386
+Bertrand Tanner: the level of activation in a muscle.
+
+
+478
+01:06:10.517 --> 01:06:13.017
+Bertrand Tanner: Well, there's a few different ways you could tackle that.
+
+
+479
+01:06:13.117 --> 01:06:21.317
+Bertrand Tanner: But you'd for sure have to be thinking about some of the mechanical characteristics of the tendon
+
+
+480
+01:06:21.457 --> 01:06:24.396
+Bertrand Tanner: and mechanical characteristics of the muscle.
+
+
+481
+01:06:24.957 --> 01:06:30.526
+Bertrand Tanner: And then some of the activation dynamics. So you need to put a description
+
+
+482
+01:06:31.257 --> 01:06:38.976
+Bertrand Tanner: of the system of what you're trying to tackle, because if you don't have a parameter that you can test, or if you don't have
+
+
+483
+01:06:39.447 --> 01:06:45.007
+Bertrand Tanner: like a control knob in your model that you can change, to try to
+
+
+484
+01:06:48.037 --> 01:06:51.977
+Bertrand Tanner: show some effect of that control knob on your outcome.
+
+
+485
+01:06:52.357 --> 01:06:58.937
+Bertrand Tanner: Then you're missing what you need to include and what's really hard
+
+
+486
+01:06:59.707 --> 01:07:03.087
+Bertrand Tanner: is figuring out how much to include and how little to include
+
+
+487
+01:07:04.417 --> 01:07:07.997
+Bertrand Tanner: and how to communicate across the different skills.
+
+
+488
+01:07:08.537 --> 01:07:10.287
+Bertrand Tanner: Which is why I think
+
+
+489
+01:07:11.087 --> 01:07:20.656
+Bertrand Tanner: there's a lot of excitement to try to close the gap on that with the modeling core group, but I don't think there's been a lot of progress made on that, because of
+
+
+490
+01:07:21.617 --> 01:07:26.457
+Bertrand Tanner: some of the differences on the scale and differences in the complexity there.
+
+
+491
+01:07:27.467 --> 01:07:34.006
+Bertrand Tanner: So one of the tiny things I think we've made some progress on largely has to do with what Keith has been doing
+
+
+492
+01:07:34.377 --> 01:07:39.627
+Bertrand Tanner: with Rick Kessler, and
+
+
+493
+01:07:40.137 --> 01:07:45.257
+Bertrand Tanner: when she and I have been working together on that a whole lot of what I've been trying to describe
+
+
+494
+01:07:45.747 --> 01:07:52.526
+Bertrand Tanner: in there and make sure we have in. There is some of the components that would go on related to
+
+
+495
+01:07:52.667 --> 01:07:57.997
+Bertrand Tanner: actin and myosin interactions and effects of sarcomere length, their filament overlap
+
+
+496
+01:07:58.417 --> 01:08:04.526
+Bertrand Tanner: and passive and active contributions of the Sarcomere, and a lot of what
+
+
+497
+01:08:05.507 --> 01:08:10.306
+Bertrand Tanner: Rick and Kisa have been trying to do is sort of wrap that into a higher level.
+
+
+498
+01:08:11.997 --> 01:08:20.717
+Bertrand Tanner: So we've been coming at it sort of from different sides, and I think because I think there has been some really good progress on that concept.
+
+
+499
+01:08:21.227 --> 01:08:25.677
+Bertrand Tanner: But that doesn't have very much to do with any of these spatial mechanisms, because
+
+
+500
+01:08:26.107 --> 01:08:29.496
+Bertrand Tanner: if we wanted to put the spatial mechanisms into that.
+
+
+501
+01:08:29.837 --> 01:08:33.096
+Bertrand Tanner: they're a lot more computationally demanding.
+
+
+502
+01:08:34.287 --> 01:08:37.017
+Bertrand Tanner: And you start to run into problems if you're not
+
+
+503
+01:08:37.187 --> 01:08:45.387
+Bertrand Tanner: doing things in a clever manner. But it it takes a lot for your models to run, or a lot of time or computational time.
+
+
+504
+01:08:45.997 --> 01:08:49.007
+Bertrand Tanner: And so the balance between the complexity
+
+
+505
+01:08:49.117 --> 01:08:56.416
+Bertrand Tanner: and the simplicity is where I think the hard part really shows its head, though.
+
+
+506
+01:09:09.257 --> 01:09:16.075
+Kiisa Carla Nishikawa: Yeah. So if I chime in, maybe here, I think, like the the hope is that
+
+
+507
+01:09:16.587 --> 01:09:27.047
+Kiisa Carla Nishikawa: that you might be able to derive some, you know, simple rules from the spatial level
+
+
+508
+01:09:27.647 --> 01:09:36.877
+Kiisa Carla Nishikawa: that could be implemented relatively, simply at a higher level without having to, you know.
+
+
+509
+01:09:37.067 --> 01:10:05.940
+Kiisa Carla Nishikawa: have every simulation go all the way from the nanometer to the, you know, higher level scales every single time, and I'll just say, like, you know, Manny and I and Miles and I have been playing around with like adding a tendon on. And man, oh, man, does that have a really big effect on the viscoelastic behavior? So we're gonna have an interesting conversation about that later today. But
+
+
+510
+01:10:06.527 --> 01:10:15.927
+Kiisa Carla Nishikawa: but it's it's really, you know, like, yeah, every time you add another level, things get more
+
+
+511
+01:10:16.577 --> 01:10:22.672
+Kiisa Carla Nishikawa: complicated in some in unpredictable ways. And but I think
+
+
+512
+01:10:23.427 --> 01:10:31.252
+Kiisa Carla Nishikawa: what's exciting for me, and I think I speak for for Bert as well. Here is.
+
+
+513
+01:10:32.557 --> 01:10:43.236
+Kiisa Carla Nishikawa: you know, we've just been thinking about things in a very kind of quasi static way, and like opening it up to the dynamic
+
+
+514
+01:10:44.919 --> 01:10:50.677
+Kiisa Carla Nishikawa: aspects just really is exciting. So we.
+
+
+515
+01:10:51.087 --> 01:11:00.167
+Kiisa Carla Nishikawa: you know, we have a path forward to to make the models more realistic and more applicable to real world movement.
+
+
+516
+01:11:10.607 --> 01:11:12.357
+Victoria Wood: Very cute dog, Monica.
+
+
+517
+01:11:12.853 --> 01:11:16.701
+Monica Daley (she, her): She decided that it was time for me to pay attention to her.
+
+
+518
+01:11:16.997 --> 01:11:17.377
+Victoria Wood: Yes.
+
+
+519
+01:11:20.642 --> 01:11:22.351
+Monica Daley (she, her): Go ahead!
+
+
+520
+01:11:23.207 --> 01:11:32.768
+Victoria Wood: I was just gonna ask is there a way that these models can kinda look at at like fatigue and different kind of
+
+
+521
+01:11:33.837 --> 01:11:43.217
+Victoria Wood: I don't know. More systems, level changes that might affect the the lower level mechanics of these molecules. Or is that something that's, you know, still.
+
+
+522
+01:11:43.497 --> 01:11:44.607
+Victoria Wood: down the line?
+
+
+523
+01:11:49.227 --> 01:11:49.916
+Victoria Wood: If that question.
+
+
+524
+01:11:51.167 --> 01:11:58.037
+Bertrand Tanner: I think it might depend on what characteristic of fatigue you were interested in putting in there. My brain
+
+
+525
+01:11:58.347 --> 01:11:59.817
+Bertrand Tanner: jumps to
+
+
+526
+01:12:01.317 --> 01:12:12.707
+Bertrand Tanner: some of the changes that go on with fatigue in terms of increasing phosphate levels. And I think, is it increasing Ph levels with fatigue
+
+
+527
+01:12:13.017 --> 01:12:17.496
+Bertrand Tanner: that would maybe have an effect on how the actin and myosin
+
+
+528
+01:12:18.197 --> 01:12:23.957
+Bertrand Tanner: interactions would go through their cycle is. But that sort of
+
+
+529
+01:12:24.627 --> 01:12:34.096
+Bertrand Tanner: I might be biased in my response that it's a lot of things at the molecular level that I'd think about modeling. But I think there's other things with fatigue
+
+
+530
+01:12:34.267 --> 01:12:36.406
+Bertrand Tanner: that maybe are at the higher level
+
+
+531
+01:12:36.897 --> 01:12:41.427
+Bertrand Tanner: that I don't know as much about, so it would depend on
+
+
+532
+01:12:41.577 --> 01:12:45.346
+Bertrand Tanner: what those characteristics might look like in terms of.
+
+
+533
+01:12:45.807 --> 01:12:47.606
+Bertrand Tanner: I don't know if you're
+
+
+534
+01:12:49.287 --> 01:12:56.507
+Bertrand Tanner: I mean you'd change your energetics of the system in terms of what fatigue is having an effect on.
+
+
+535
+01:12:56.777 --> 01:13:04.396
+Bertrand Tanner: You might change some effects of what's going on with your excitation contraction coupling. But I'm not very.
+
+
+536
+01:13:05.137 --> 01:13:08.967
+Bertrand Tanner: not very knowledgeable on that.
+
+
+537
+01:13:09.127 --> 01:13:12.336
+Bertrand Tanner: There might be some impacts on
+
+
+538
+01:13:12.947 --> 01:13:18.507
+Bertrand Tanner: the mechanical characteristics of either the tissue or the fibers, though I'm not sure
+
+
+539
+01:13:19.457 --> 01:13:22.506
+Bertrand Tanner: that's known or not known, but maybe it is
+
+
+540
+01:13:24.768 --> 01:13:31.277
+Bertrand Tanner: so I think it has to do with what property of fatigue you'd want to be adding in
+
+
+541
+01:13:31.947 --> 01:13:39.047
+Bertrand Tanner: very similar to some of what maybe, I said to Monica's broader question
+
+
+542
+01:13:39.827 --> 01:13:44.797
+Bertrand Tanner: is, what what are the properties that we're trying to ask questions about? At which level.
+
+
+543
+01:13:46.647 --> 01:13:48.187
+Victoria Wood: That makes sense. Thank you.
+
+
+544
+01:14:04.467 --> 01:14:05.197
+Bertrand Tanner: Oh.
+
+
+545
+01:14:08.037 --> 01:14:16.167
+Bertrand Tanner: I don't know. I I hope that was sort of somewhat informative or a little bit helpful for a different perspective.
+
+
+546
+01:14:17.187 --> 01:14:23.076
+Bertrand Tanner: I know there's a lot that everybody's been covering this summer. Some of it seems
+
+
+547
+01:14:23.187 --> 01:14:27.676
+Bertrand Tanner: easier to grasp than others, so I hope it wasn't too complicated.
+
+
+548
+01:14:30.587 --> 01:14:32.826
+Victoria Wood: This was great. Thank you so much.
+
+
+549
+01:14:33.757 --> 01:14:35.356
+Victoria Wood: I learned a lot.
+
+
+550
+01:14:36.867 --> 01:14:42.228
+Kiisa Carla Nishikawa: Yeah, for for sure. We'll be trying out your code.
+
+
+551
+01:14:46.599 --> 01:14:49.764
+Victoria Wood: I am going to post
+
+
+552
+01:14:50.697 --> 01:14:54.047
+Bertrand Tanner: Do you want me to reload the the ending slide.
+
+
+553
+01:14:54.077 --> 01:15:01.756
+Victoria Wood: Oh, yeah, that that could be helpful, too. I'm gonna post the link in the chat, too. But if people are in watch parties the QR code might be helpful.
+
+
+554
+01:15:03.167 --> 01:15:06.287
+Victoria Wood: I'll post the feedback form in the chat.
+
+
+555
+01:15:07.249 --> 01:15:12.297
+Victoria Wood: And then, if people joined late and want to sign in, you can use that other QR code as well.
+
+
+556
+01:15:14.327 --> 01:15:18.287
+Bertrand Tanner: Is that big enough for people, or do I need to turn the screen on.
+
+
+557
+01:15:19.767 --> 01:15:21.016
+Victoria Wood: Think that should be big enough.
+
+
+558
+01:15:24.367 --> 01:15:25.027
+Victoria Wood: Okay.
+
+
+559
+01:15:26.057 --> 01:15:34.927
+Victoria Wood: okay? So we can leave that on. Just for a second. I did want to pull this up real quick.
+
+
+560
+01:15:35.057 --> 01:15:55.357
+Victoria Wood: We will not have a research workshop next week. We will. We have a mentoring workshop on Wednesday, so make sure that you attend that. If you haven't had a chance to go to the mentoring workshops yet, I'll send out some details about that when I send out the recap for this workshop with the link.
+
+
+561
+01:15:56.317 --> 01:15:59.577
+Victoria Wood: But that's all the announcements that I have.
+
+
+562
+01:16:00.667 --> 01:16:02.696
+Victoria Wood: If nobody else has any questions.
+
+
+563
+01:16:03.617 --> 01:16:06.477
+Victoria Wood: we can probably go ahead and finish up.
+
+
+564
+01:16:10.167 --> 01:16:14.046
+Victoria Wood: Okay, thank you so much, Bert. This was great.
+
+
+565
+01:16:14.517 --> 01:16:16.816
+Bertrand Tanner: Alright, guys, thanks for your help.
+
+
+566
+01:16:18.617 --> 01:16:19.827
+Victoria Wood: Bye, everyone.
+
+
+

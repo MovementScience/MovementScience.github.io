@@ -1,0 +1,2633 @@
+WEBVTT
+
+1
+00:00:13.905 --> 00:00:16.135
+Manny Azizi: Was that enough time, or did I move too fast?
+
+
+2
+00:00:16.705 --> 00:00:17.205
+Victoria Wood: I think that's great.
+
+
+3
+00:00:17.205 --> 00:00:18.034
+Manny Azizi: I think it's mine.
+
+
+4
+00:00:18.365 --> 00:00:19.375
+Manny Azizi: …
+
+
+5
+00:00:19.375 --> 00:00:43.195
+Manny Azizi: Great. Thank you guys for joining in. My name's Manny Azizi, I'm from the University of California, Irvine, and this workshop's going to be largely about in-series elasticity, which in and of itself, if you focus just on the tissue, can be a little bit dry and boring, but it'll be really in the context of trying to understand implications for muscle mechanics and whole animal
+
+
+6
+00:00:43.195 --> 00:00:45.305
+Manny Azizi: Or Whole Person Energetics.
+
+
+7
+00:00:45.705 --> 00:00:56.875
+Manny Azizi: So, that's where we're headed. What is in-series elasticity? So, I'm going to start with some really basic stuff first, just to give context to our trainees, before diving into some more complicated stuff.
+
+
+8
+00:00:57.175 --> 00:01:05.575
+Manny Azizi: So, in-series elasticity, is really considered, … do you guys see that, that,
+
+
+9
+00:01:05.695 --> 00:01:09.855
+Manny Azizi: the share screen on my screen right now? Should I move it?
+
+
+10
+00:01:10.865 --> 00:01:12.475
+Manny Azizi: The little thing that says stop sharing?
+
+
+11
+00:01:13.415 --> 00:01:13.835
+Manny Azizi: Nope.
+
+
+12
+00:01:13.835 --> 00:01:15.764
+Victoria Wood: No, we just slides.
+
+
+13
+00:01:15.765 --> 00:01:16.405
+Manny Azizi: Great.
+
+
+14
+00:01:16.715 --> 00:01:32.534
+Manny Azizi: So, in-series elasticity exists in both invertebrates and vertebrates. I consider this really a ubiquitous part of the animal kingdom. I think there's some elasticity and elastic tissues in nearly all organisms.
+
+
+15
+00:01:32.935 --> 00:01:54.115
+Manny Azizi: In invertebrates, which I'm not going to focus on much today, you can think of things like the epidem, modified exoskeleton structures as well, like the semilunar process or the exoskeleton itself, are really good elastic structures that are capable of deforming, storing mechanical energy temporarily, and releasing that.
+
+
+16
+00:01:54.615 --> 00:01:55.565
+Manny Azizi: …
+
+
+17
+00:01:55.905 --> 00:02:07.084
+Manny Azizi: And in fact, some of the most resilient materials come from the invertebrate world, where the resilience of that material can be quite high.
+
+
+18
+00:02:07.165 --> 00:02:21.844
+Manny Azizi: In vertebrates, mostly what we talk about when we talk about in-series elasticity are tendons, which we know quite a bit about, and aponeuroses, which I also consider to be sort of tendons, except that they're more like
+
+
+19
+00:02:21.845 --> 00:02:32.475
+Manny Azizi: Broad, sheet-like tendons that allow for muscle fibers to attach to a broader insertion site than a long, free tendon, for example.
+
+
+20
+00:02:32.475 --> 00:02:44.645
+Manny Azizi: And we've done some work on aponeuroses in the past, showing the complexity of how they're loaded relative to free tendons, but for today, I'm going to sort of focus primarily on tendons.
+
+
+21
+00:02:45.445 --> 00:02:53.334
+Manny Azizi: Tendons, as most of you know, are made primarily of collagen, and so when we look at this hierarchical structure of
+
+
+22
+00:02:53.375 --> 00:03:08.345
+Manny Azizi: of the tendon. We can see that tropical collagen is one of the primary proteins, and the helices that form are collagen fibers in that 10 to 50 micron range.
+
+
+23
+00:03:08.375 --> 00:03:22.995
+Manny Azizi: That then leads into higher levels of organization, like tendon fascicles, which is a level of organization where we've done some work where you can isolate tendon fascicles and pull on them individually.
+
+
+24
+00:03:22.995 --> 00:03:47.914
+Manny Azizi: And then you get to the whole tendon, which is made up of many fascicles. Interesting things about tendons is that they're fairly acellular. There are tenocytes and fibroblasts in place that are laying down and repairing collagen, and there's some vasculature, but the general metabolic activity of tendons is pretty low. And that can result in a lot of downstream consequences
+
+
+25
+00:03:47.915 --> 00:03:58.335
+Manny Azizi: Particularly when you think about the fact that when you're operating in series with a muscle, the properties of the tendon and the properties of the muscle need to be well-tuned.
+
+
+26
+00:03:58.335 --> 00:04:10.825
+Manny Azizi: And if remodeling rates differ significantly between these tissues, you can start to have mismatch as a result of things like, weightlifting or bed rest.
+
+
+27
+00:04:10.825 --> 00:04:19.985
+Manny Azizi: Anything that changes muscle properties rapidly, those changes don't really show up in tendons for a long time, and so you can have these periods of mismatch.
+
+
+28
+00:04:20.815 --> 00:04:25.195
+Manny Azizi: Now, what we do, frequently in my lab is simply just
+
+
+29
+00:04:25.405 --> 00:04:33.684
+Manny Azizi: Grab a piece of tendon, or grab a tendon fascicle, pull on it, and measure the deformation and the force that occurs.
+
+
+30
+00:04:33.685 --> 00:04:51.614
+Manny Azizi: Tendons we can think of as nonlinear in their behavior, in that, unlike what would be considered a true spring, or a hooky and spring, they really have two regions. They have this toe region down here, where it's relatively compliant.
+
+
+31
+00:04:51.615 --> 00:05:00.224
+Manny Azizi: Leading into a more linear region here, where we can characterize the linear stiffness of that material.
+
+
+32
+00:05:00.615 --> 00:05:08.395
+Manny Azizi: This nonlinearity in the toe region really results from the fact that the collagen fibers that are in tendon
+
+
+33
+00:05:08.445 --> 00:05:32.665
+Manny Azizi: are sitting in a crimped position at a low length. And so, you can see here, this sort of crimping looks like bad hairdo from the 80s. That really results in some compliance in the very low strain regime of tendons, where that initial pull is actually straightening out those crimps, rather than directly pulling on the material itself.
+
+
+34
+00:05:33.755 --> 00:05:48.234
+Manny Azizi: So, we have some nonlinearity that's interesting, and then we can normalize this so that we can compare across sizes or different systems. If you normalize force by cross-sectional area and normalize the length change as a proportional length change.
+
+
+35
+00:05:48.235 --> 00:05:55.425
+Manny Azizi: We can then get to something that's much more comparable across systems, which is the elastic modulus rather than the stiffness itself.
+
+
+36
+00:05:56.125 --> 00:06:03.164
+Manny Azizi: Now, most often, tendons aren't just stretched, they are cycled through length changes.
+
+
+37
+00:06:03.165 --> 00:06:17.444
+Manny Azizi: And so, if we take a tendon and we drive it through some sinusoidal length change, what we notice is that it does return a good portion of that energy back to us, so as we load energy into the system, and then bring that system back.
+
+
+38
+00:06:17.445 --> 00:06:23.575
+Manny Azizi: What we see is that we've got this area under that loop that's the energy lost in that cycle.
+
+
+39
+00:06:23.765 --> 00:06:25.185
+Manny Azizi: The, …
+
+
+40
+00:06:25.275 --> 00:06:46.585
+Manny Azizi: That really defines the resilience of a material, the amount of energy lost as you cycle through it, and for tendons, that happens to be somewhere between 80% on the low end, that's the energy we're getting back, to almost 90% on the high end, which would be the… so we'd be getting back 90% of the energy that we would load into a tendon.
+
+
+41
+00:06:46.895 --> 00:07:10.914
+Manny Azizi: However, the fact that it does lose energy with every cycle suggests that this isn't really a spring, that it's really more of a viscoelastic tissue, and that we should really start thinking about it that way. And the work loop, or the hysteresis, is not the only source of that viscoelastic behavior. If we take a tendon, for example, and we just put
+
+
+42
+00:07:10.915 --> 00:07:13.574
+Manny Azizi: Pull it, and then hold it at that longer length.
+
+
+43
+00:07:13.575 --> 00:07:17.585
+Manny Azizi: What we see is that the force goes up, but it doesn't stay up here.
+
+
+44
+00:07:17.585 --> 00:07:42.524
+Manny Azizi: we have this creep and loss in force, which is the stress relaxation behavior of tendons, which is also a characteristic feature of viscoelastic materials. So really, we're thinking about this as, yes, it's a pretty good spring, but it's really a viscoelastic material, and we have MC projects that are ongoing, working with KISA and Miles Valencia, to start to characterize… use system ID
+
+
+45
+00:07:42.525 --> 00:07:47.515
+Manny Azizi: to characterize the spring stiffness and the damping coefficient of the material.
+
+
+46
+00:07:47.515 --> 00:07:53.144
+Manny Azizi: And to start to think of it more as a material that's viscoelastic.
+
+
+47
+00:07:53.705 --> 00:08:05.924
+Manny Azizi: Okay, that's tendon in isolation. I want to move past that, because really what we care about is how are these tissues used in movement, and what now seems like
+
+
+48
+00:08:06.175 --> 00:08:25.785
+Manny Azizi: doesn't seem like that long ago to me, but it's been a while. Tom Roberts and I came up with a general framework for understanding the function of tendons, and we really borrowed from a 2000 paper by Michael Dickinson and the Integrative Biology Biomechanics group at Berkeley.
+
+
+49
+00:08:25.785 --> 00:08:42.344
+Manny Azizi: That really started to define muscle function as being varied, and really being defined as a behavior that… or behaviors where the muscle acts as a motor and produces mechanical energy, as a strut, where it just produces force.
+
+
+50
+00:08:42.345 --> 00:08:56.534
+Manny Azizi: or as a break, where it's actually dissipating energy with every contraction. And so we really thought about tendons in that same way to try to understand, well, what are tendons likely to do in these various muscle function scenarios?
+
+
+51
+00:08:56.785 --> 00:09:09.755
+Manny Azizi: And so, we really thought about 3 ways in which tendons can operate during locomotion. First being power conservation, the second being power amplification, and the third being power attenuation.
+
+
+52
+00:09:10.065 --> 00:09:19.704
+Manny Azizi: Power conservation is the one that's most well known, and was when we wrote this paper, and so we'll start there, although I won't spend much time on that today.
+
+
+53
+00:09:20.035 --> 00:09:44.964
+Manny Azizi: With power conservation, what we're really thinking about are behaviors that are cyclical, where the mechanical energy of the center of mass from the previous stride can be transferred to the subsequent stride. And the way to do that is to cycle that energy through the tendon. And so, if we look at this schematic that I have there, the red indicates where there is a high mechanical
+
+
+54
+00:09:44.965 --> 00:09:45.825
+Manny Azizi: energy.
+
+
+55
+00:09:45.825 --> 00:10:09.435
+Manny Azizi: And so, what we see in power conservation is that the center of mass has high kinetic and potential energy, it's in the air, it's about to come down, and when the foot hits the ground, for example, and the ankle flexes, the mechanical energy from the center of mass gets loaded into our tendon, while the muscle is simply producing force and operating isometrically.
+
+
+56
+00:10:09.435 --> 00:10:33.935
+Manny Azizi: So this would be a scenario where the muscle is operating as a strut, but the tendon is really the one that's cycling the energy from the center of mass with each subsequent stride, allowing us to recycle the energy from a previous cycle into the next cycle. So, in this case, we have energy flowing from the body to the tendon, and then as that tendon recoils.
+
+
+57
+00:10:33.935 --> 00:10:36.584
+Manny Azizi: It helps accelerate the body once again.
+
+
+58
+00:10:37.215 --> 00:10:52.944
+Manny Azizi: So, in this case, the muscle is really isometric, and so this is where the muscle is behaving like a strut, but much of that strain energy is being cycled directly through the tendon. So, behaviors like walking, running, and hopping are great examples where
+
+
+59
+00:10:52.945 --> 00:11:03.725
+Manny Azizi: The tendon is helping us minimize the metabolic cost of locomotion by allowing muscles to minimize the amount of mechanical work that they're doing.
+
+
+60
+00:11:04.945 --> 00:11:18.734
+Manny Azizi: Okay, I will say, anytime anybody has a question, you can raise your hand. I'll try to keep an eye on the chat as well, but if Victoria can keep an eye on the chat and transfer questions, I would be greatly appreciative of that.
+
+
+61
+00:11:19.205 --> 00:11:20.525
+Manny Azizi: Okay.
+
+
+62
+00:11:20.525 --> 00:11:39.405
+Manny Azizi: Next, I want to talk about power amplification, which is one where the body is actually starting from a standstill. So you can think of this as behaviors where we really want to increase the mechanical energy of our center of mass. So let's say we're starting from a standstill and we're accelerating.
+
+
+63
+00:11:39.525 --> 00:11:57.015
+Manny Azizi: So, behaviors like jumping, where we're low and we want to get higher, and so that's obviously an increase in mechanical energy. Accelerating or running up a hill, all those are behaviors that require our muscles to impart additional energy onto our center of mass.
+
+
+64
+00:11:57.775 --> 00:12:20.324
+Manny Azizi: In these scenarios, we can amplify the mechanical power of our muscles through the utilization of in-series elasticity. And in this case, as we're looking at the energy flow, what we really have is from a standstill, we have the muscle firing. The muscle is producing mechanical energy, which is being transferred directly to the tendon in this case.
+
+
+65
+00:12:20.455 --> 00:12:39.414
+Manny Azizi: Now, an important step or requirement here is that we need something to resist the tendency for that ankle or that joint to extend as that muscle is producing force. So these behaviors require something like a latch that, at one point.
+
+
+66
+00:12:39.415 --> 00:12:48.315
+Manny Azizi: Resists the forces that the muscle are producing, allowing time for that energy to be stored in the tendon.
+
+
+67
+00:12:48.525 --> 00:12:56.174
+Manny Azizi: Once that latch is released, the energy from that tendon is released, allowing the center of mass to get accelerated.
+
+
+68
+00:12:56.225 --> 00:13:11.465
+Manny Azizi: Okay? So, behaviors like jumping, accelerating, or inclined running really rely on a combination of muscle work being transferred to the tendon, and then being released onto the center of mass.
+
+
+69
+00:13:11.485 --> 00:13:29.954
+Manny Azizi: The key here is muscles are going to be much more power-limited than tendons are, and so the benefit here is really that by having a latch in place, our muscle can contract much more slowly and economically, and generate much higher forces.
+
+
+70
+00:13:29.955 --> 00:13:41.534
+Manny Azizi: then would be required to actually directly accelerate this mass. So the muscle can perform at a much slower and more optimal place
+
+
+71
+00:13:41.885 --> 00:14:05.574
+Manny Azizi: allowing that energy to be stored in the tendon, which gets released much more rapidly. So where we get the power amplification is that the amount of mechanical work is the same, because it came from the muscle, but the duration over which that mechanical work is released is much shorter in a tendon than it would be for a muscle. So we're really playing with time constants here as we're
+
+
+72
+00:14:05.575 --> 00:14:09.595
+Manny Azizi: Increasing the power that's associated with the behavior.
+
+
+73
+00:14:10.605 --> 00:14:21.905
+Manny Azizi: So, in this case, what we really have is a flow of mechanical energy going from the muscle, being loaded into the tendon, and then being rapidly released to accelerate the body.
+
+
+74
+00:14:23.285 --> 00:14:39.024
+Manny Azizi: Okay, final one I'm going to talk about is power attenuation, which occurs during behaviors where the muscle is aiming to dissipate mechanical energy, things like landing from a jump, so the back half of that jump is you're going to come down and hit the ground.
+
+
+75
+00:14:39.185 --> 00:15:03.305
+Manny Azizi: or decelerating, or running downhill. All those are behaviors where the… where the center of mass has high amounts of mechanical energy that we want to get rid of. We want to slow the system down, and our muscles really are good at that, by stretching actively, and really converting mechanical energy into heat and dissipating it as that.
+
+
+76
+00:15:04.155 --> 00:15:15.284
+Manny Azizi: So, in power attenuation, what we really get is a flow of mechanical energy that goes from the body, so the mechanical state of the body is quite high to start with.
+
+
+77
+00:15:15.285 --> 00:15:24.434
+Manny Azizi: As the person, let's say, lands, that energy goes into the tendon before the tendon actually does work back on the muscle.
+
+
+78
+00:15:24.435 --> 00:15:36.714
+Manny Azizi: You may think, okay, well, why can't the muscle do that directly? It can. The benefits of utilizing tendons for power attenuation is that they minimize the direct
+
+
+79
+00:15:36.715 --> 00:15:54.645
+Manny Azizi: high velocity or high power input to the muscle, and are much more controlled in the way that the tendon releases energy back onto the muscle. So it's a much more predictable way to load the muscle compared to directly loading it with the environment.
+
+
+80
+00:15:54.645 --> 00:16:08.814
+Manny Azizi: So we really, in this case, have the tendon acting as this buffer between the energy that's coming from the environment, or the center of mass, and the muscle that's ultimately having to be stretched in order to dissipate that energy.
+
+
+81
+00:16:10.005 --> 00:16:11.055
+Manny Azizi: Okay.
+
+
+82
+00:16:11.175 --> 00:16:23.015
+Manny Azizi: Those are going to be the three things I'm going to talk about, and so let me start by talking a bit about power conservation, and I'm going to use some classic work to sort of make this point.
+
+
+83
+00:16:23.795 --> 00:16:33.464
+Manny Azizi: In 1992, Russ Bodnette made a really interesting observation, which is that if you track
+
+
+84
+00:16:33.505 --> 00:16:50.785
+Manny Azizi: The rate of oxygen uptake, or rate of oxygen consumption in a locomoting animal, and if you have, let's say, a 5 kilogram animal that's running, we know that as the speed increases, the metabolic cost of that behavior increases linearly across most animals.
+
+
+85
+00:16:50.795 --> 00:17:08.094
+Manny Azizi: That's simply because as our speed increases, our stance time gets shorter and shorter, we still have to support our body weight with every stride, and as a result, we're either having to utilize more expensive muscle fibers, or have our fibers contract more rapidly, …
+
+
+86
+00:17:08.695 --> 00:17:23.354
+Manny Azizi: to accommodate that shorter stance period. That's a well-established pattern that had existed in the literature. What was found with wallaby hopping was that, in fact, once they start hopping.
+
+
+87
+00:17:23.535 --> 00:17:39.395
+Manny Azizi: around 3 meters per second, they transition from a weird quadrupedal running gate to a hopping gate. Once they transition to that hopping gate, their gait, or their metabolic expenditure, is largely independent of speed.
+
+
+88
+00:17:39.775 --> 00:17:49.055
+Manny Azizi: Okay? And so, regardless of how short that stands time is, it appears that that doesn't bear a significant cost in terms of metabolic expenditure.
+
+
+89
+00:17:50.445 --> 00:18:07.035
+Manny Azizi: Following that observation, Russ worked with Andy B. Winter to actually make muscle measurements in wallabies, and here we have force in the top, we've got length of the muscle fascicles in the middle, and EMG activity shown there.
+
+
+90
+00:18:07.235 --> 00:18:12.235
+Manny Azizi: What I want you to take away from this is that, yes, during stance, there's this large period of force.
+
+
+91
+00:18:12.345 --> 00:18:16.755
+Manny Azizi: However, there is very little length change in that muscle.
+
+
+92
+00:18:17.055 --> 00:18:27.804
+Manny Azizi: And so, what was found is that, okay, the muscles really aren't doing much mechanical work at all during the stance phase of locomotion, they're operating isometrically.
+
+
+93
+00:18:27.805 --> 00:18:40.425
+Manny Azizi: And we know that the ankle, in this case, is undergoing significant flexion and extension as the animal is hopping along, and so we know that there's length change going on somewhere, it's just not happening in the muscles.
+
+
+94
+00:18:40.555 --> 00:18:54.815
+Manny Azizi: So where it's really happening is that that length change is being cycled through the tendon in order to… or during the stance phase where force is being produced, and the muscles are really producing force isometrically.
+
+
+95
+00:18:55.645 --> 00:19:13.964
+Manny Azizi: So, what they mapped in that paper was that if you track the amount of elastic energy that's being stored versus the amount of muscle work that's being done, what we see is that as the animal is increasing speed, it is not increasing the amount of mechanical work it's doing.
+
+
+96
+00:19:14.045 --> 00:19:19.295
+Manny Azizi: It's increasing the amount of elastic strain energy that's being cycled through the tendon.
+
+
+97
+00:19:19.505 --> 00:19:26.555
+Manny Azizi: That is metabolically inexpensive, it's largely free, right? Rather than, …
+
+
+98
+00:19:26.595 --> 00:19:42.944
+Manny Azizi: the work that muscles are doing. So, this flat pattern of muscle work across that speed range really helped explain this pattern where… or this independence, the speed independence of metabolic expenditure.
+
+
+99
+00:19:43.865 --> 00:19:55.065
+Manny Azizi: So, just to schematize it, what they suggested was as the foot hits the ground, as the ankle flexes, the muscle is producing force isometrically, the tendon is being stretched.
+
+
+100
+00:19:55.605 --> 00:20:03.335
+Manny Azizi: In the second half, as the ankle is extending, that tendon is releasing that energy and accelerating the animal forward.
+
+
+101
+00:20:04.105 --> 00:20:05.175
+Manny Azizi: Now.
+
+
+102
+00:20:05.365 --> 00:20:16.354
+Manny Azizi: This has some important implications for, metabolic expenditure, but it doesn't get quite at the mechanism of what is, what is allowing that savings to occur.
+
+
+103
+00:20:16.555 --> 00:20:21.494
+Manny Azizi: There's really two alternate hypotheses, here, one being that
+
+
+104
+00:20:22.115 --> 00:20:28.304
+Manny Azizi: Doing mechanical work is simply more expensive than just producing force.
+
+
+105
+00:20:28.535 --> 00:20:33.205
+Manny Azizi: That's a work-based metabolic hypothesis.
+
+
+106
+00:20:33.305 --> 00:20:46.344
+Manny Azizi: The alternate hypothesis is one that focuses more on force, and the cost that is required to generate the amount of force needed to support your body weight.
+
+
+107
+00:20:47.075 --> 00:20:47.995
+Manny Azizi: So…
+
+
+108
+00:20:48.035 --> 00:20:59.305
+Manny Azizi: to sort of unravel this pattern, Natalie Holt had this really excellent paper in 2014, where she did some really painstaking work.
+
+
+109
+00:20:59.305 --> 00:21:13.595
+Manny Azizi: To not just vary the pattern of length change in the muscle and measure its force, but to also measure the heat that it's producing, which is a direct measure of metabolic expenditure at the muscle level.
+
+
+110
+00:21:13.675 --> 00:21:30.835
+Manny Azizi: And so she was really measuring the cost of a muscle contraction when, in A, the muscle is isometric. In B, it's undergoing a stretch-shorten cycle, in C, it's just shortening, and in D, it's really being hit when it's lengthening.
+
+
+111
+00:21:30.965 --> 00:21:33.945
+Manny Azizi: So she varied that strain pattern.
+
+
+112
+00:21:34.145 --> 00:21:42.534
+Manny Azizi: In order to determine, well, does it actually cost more when a muscle produces mechanical work versus an isometric contraction?
+
+
+113
+00:21:43.435 --> 00:21:56.575
+Manny Azizi: What she found was that, no, in fact, it doesn't. When she plots energy for three conditions, the isometric, the stretch-shortened cycle, or the one where it's undergoing shortening.
+
+
+114
+00:21:56.575 --> 00:22:07.715
+Manny Azizi: What she showed is that, in fact, the isometric contraction costs just as much. It's largely indistinguishable from a stretch-shorten cycle or even direct shortening.
+
+
+115
+00:22:08.285 --> 00:22:12.845
+Manny Azizi: So, the idea that muscles doing work.
+
+
+116
+00:22:12.955 --> 00:22:20.725
+Manny Azizi: cost more than muscles producing force, I think doesn't quite hold up. And so this really supports the,
+
+
+117
+00:22:21.075 --> 00:22:44.745
+Manny Azizi: the cost of force hypothesis, which simply suggests that, yes, there is a benefit to being isometric, but that's largely because as you start to shorten with some reasonable speed, you are having a reduction in your force capacity to some degree. And that that reduction in force capacity will then require you, if you're trying to match the same level of force
+
+
+118
+00:22:44.745 --> 00:22:50.744
+Manny Azizi: Force to start to recruit a larger volume of your muscles in order to meet that force requirement.
+
+
+119
+00:22:51.045 --> 00:23:09.234
+Manny Azizi: So, this seems pretty reasonable to me. I'm certainly in the cost of force camp when it comes to the metabolic cost of locomotion, though I realize that deformations associated with sliding filaments likely have some small amount of cost associated with them as well.
+
+
+120
+00:23:10.145 --> 00:23:18.815
+Manny Azizi: So, … This… the observations of… Maintaining an isometric behavior,
+
+
+121
+00:23:19.045 --> 00:23:30.994
+Manny Azizi: have their benefit regardless of what model of the metabolic cost of locomotion you believe in. If tendons allow muscles to stay isometric, they do bear a benefit.
+
+
+122
+00:23:31.735 --> 00:23:43.074
+Manny Azizi: So, during power conservation, we have some metabolic savings that are associated with the recycling of metabolic energy from one cycle to the next. Kisa, go ahead, please.
+
+
+123
+00:23:44.145 --> 00:24:02.315
+Kiisa Carla Nishikawa: Yeah, Manny, so I just had a question about the previous slide and that, paper by, that beautiful paper by Natalie, and, yeah, so, and I guess what I just wanted to say is that, you know, there's a lot of evidence that
+
+
+124
+00:24:02.395 --> 00:24:15.945
+Kiisa Carla Nishikawa: when you stretch a muscle, like in a SSC, you know, and there's human work and other work on this, before it shortens, like, you can actually see this energy
+
+
+125
+00:24:15.945 --> 00:24:28.565
+Kiisa Carla Nishikawa: and this is at the muscle level without any tendons, is substantially lower. So, I just wanted to say, I think, like, that this is evidence for energy storage also in the muscles.
+
+
+126
+00:24:28.645 --> 00:24:32.955
+Kiisa Carla Nishikawa: And, yeah, that was my main point, is that I think…
+
+
+127
+00:24:33.135 --> 00:24:45.875
+Kiisa Carla Nishikawa: That we've kind of systematically underestimated how much energy, like, the actual muscles are storing, particularly, you know, when tendons aren't super stiff.
+
+
+128
+00:24:46.065 --> 00:24:46.615
+Manny Azizi: Yeah.
+
+
+129
+00:24:46.785 --> 00:24:47.655
+Manny Azizi: I agree.
+
+
+130
+00:24:48.465 --> 00:24:49.145
+Kiisa Carla Nishikawa: Okay.
+
+
+131
+00:24:52.475 --> 00:24:53.245
+Manny Azizi: Okay.
+
+
+132
+00:24:53.305 --> 00:24:58.465
+Manny Azizi: … Next, I'm going to focus on power amplification.
+
+
+133
+00:24:58.465 --> 00:25:17.045
+Manny Azizi: This is an area where we did a significant amount of work, particularly in collaboration with a large interdisciplinary team. We worked for many years on various aspects of this in lots of different systems. So I'm just going to really sort of skim the very top of this.
+
+
+134
+00:25:17.045 --> 00:25:22.074
+Manny Azizi: In 2019, we had a paper, by Mark Ilton,
+
+
+135
+00:25:22.295 --> 00:25:30.315
+Manny Azizi: Where we really developed an extremely simple model of the components that are required to,
+
+
+136
+00:25:30.565 --> 00:25:44.495
+Manny Azizi: to utilize this kind of power amplification. We came up with four components, a four-component toy model. We have the motor in red, we have the spring in blue, we have a latch, and then we have a projectile.
+
+
+137
+00:25:44.655 --> 00:25:47.625
+Manny Azizi: So, what we have is the motor.
+
+
+138
+00:25:48.495 --> 00:25:57.475
+Manny Azizi: Producing mechanical energy. In this case, it's going to shorten, and it's going to push our projectile down, and it's going to store energy in this spring.
+
+
+139
+00:25:57.995 --> 00:26:04.915
+Manny Azizi: This latch… holds the position of, our loaded system.
+
+
+140
+00:26:06.135 --> 00:26:15.355
+Manny Azizi: Once the latch moves out of the way, that allows this spring to then accelerate this projectile and send it into the air, okay?
+
+
+141
+00:26:15.695 --> 00:26:26.304
+Manny Azizi: This is exactly the same as a bow and arrow, or a slingshot. This is really utilizing a combination of
+
+
+142
+00:26:26.734 --> 00:26:42.915
+Manny Azizi: motors, springs, and projectiles with a latching mechanism in place in order to increase or amplify the output of that system. So you can imagine that in a bow and arrow, for example, your arm is the motor.
+
+
+143
+00:26:43.035 --> 00:27:00.314
+Manny Azizi: The bow itself is the spring. You're loading energy into that spring. Your fingers holding the arrow are really the latch. When they let go, you've unlatched the system, and that arrow is gonna fly, and it's gonna fly much further than you can throw it.
+
+
+144
+00:27:00.505 --> 00:27:02.234
+Manny Azizi: Right? So…
+
+
+145
+00:27:02.495 --> 00:27:19.464
+Manny Azizi: This increases the output of the, let's say, the power output. You can think of it as kinetic energy at takeoff, the height that that projectile goes to, it doesn't really matter what performance parameter it is. It's going to generally do better than the muscle.
+
+
+146
+00:27:20.365 --> 00:27:40.535
+Manny Azizi: So, we sort of thought about it this way. During the loading phase, we're loading potential energy into our spring. It's going to be latched, and so we're going to have that energy sort of stay up here. There's going to be an unlatching phase, which is the rate at which that yellow box gets out of the way.
+
+
+147
+00:27:41.125 --> 00:27:49.795
+Manny Azizi: And then once it gets out of the way, we see that there's some rapid extension of that spring that then sends our projectile up into the air.
+
+
+148
+00:27:50.215 --> 00:27:54.084
+Manny Azizi: What's key in these systems are really a couple of things.
+
+
+149
+00:27:54.215 --> 00:28:12.545
+Manny Azizi: One is how good that latch is, okay? And we played around with making that box a rounded edge, lots of very… and changing the speed at which you pull it back, and so on. The shorter that unlatching phase is, the higher the performance of the system.
+
+
+150
+00:28:12.965 --> 00:28:23.124
+Manny Azizi: Anytime that slows down, you're actually losing energy to the latch itself, because during the unlatching, you're starting to lose some of the energy here.
+
+
+151
+00:28:23.255 --> 00:28:34.124
+Manny Azizi: Okay, so the longer it takes, the poorer the latch, the more of that energy gets sapped from the system before you're actually applying it to the projectile that you're accelerating.
+
+
+152
+00:28:34.935 --> 00:28:35.865
+Manny Azizi: …
+
+
+153
+00:28:35.985 --> 00:28:45.725
+Manny Azizi: So that's one thing. Latching's extremely important, and it's actually really regulating the flow of mechanical energy, so it's really the critical piece in this puzzle.
+
+
+154
+00:28:45.795 --> 00:29:03.214
+Manny Azizi: The second is, if you start to play around with the material… the mechanical properties of the motor and the spring, their tuned relationship is also critical. That, in fact, if those are not really working particularly well together, you're simply not going to have the system perform as well.
+
+
+155
+00:29:03.935 --> 00:29:08.724
+Manny Azizi: So, taking this model, we really thought, okay, well, we gotta place,
+
+
+156
+00:29:08.855 --> 00:29:25.505
+Manny Azizi: we have to replace that generic motor with behaviors that are more muscle-like. And so we know that the force-length properties of skeletal muscle really restrict deformation, or limit the amount of length changes that are available to the system.
+
+
+157
+00:29:27.925 --> 00:29:44.184
+Manny Azizi: when they do, that's likely to influence the properties of the spring that make sense. So in this case, what we… what we were able to show was that, in fact, if you start from some long length, but your spring is really compliant.
+
+
+158
+00:29:45.285 --> 00:29:54.854
+Manny Azizi: rather than load a lot of energy into that system. And so, what I'm doing here is I'm starting a spring, and then I'm ending it here, right? So…
+
+
+159
+00:29:54.875 --> 00:30:07.124
+Manny Azizi: As the muscle contracts against the spring, the spring's very compliant, the muscle shortens a lot quickly, but because there isn't a lot of force associated with that spring, there isn't a lot of energy being stored in it.
+
+
+160
+00:30:07.125 --> 00:30:16.945
+Manny Azizi: So when it's too compliant, we get to lengths where muscles aren't producing great force before we've been able to load a lot of energy into the system.
+
+
+161
+00:30:17.185 --> 00:30:18.685
+Manny Azizi: Okay.
+
+
+162
+00:30:20.555 --> 00:30:25.905
+Manny Azizi: If we're too stiff, the…
+
+
+163
+00:30:26.395 --> 00:30:33.295
+Manny Azizi: There's very little shortening that's occurring in the tendon, so that… so the muscle effectively is…
+
+
+164
+00:30:33.615 --> 00:30:41.804
+Manny Azizi: More isometric with little shortening of the tendon itself, and so the area under that curve is also a little bit small.
+
+
+165
+00:30:42.545 --> 00:30:50.475
+Manny Azizi: Those are both, cases where we're able to calculate what actually the optimal is, which is right in between those.
+
+
+166
+00:30:50.675 --> 00:31:02.795
+Manny Azizi: Where the optimal is not too stiff, not too compliant, allows a significant amount of shortening, but doesn't shorten so much to where the muscle's forces start to really drop off.
+
+
+167
+00:31:03.175 --> 00:31:21.554
+Manny Azizi: And so the biggest area we get, the area under that curve is really the energy that's stored in the tendon, and so the size of that triangle should be interpreted as how much energy I was able to put into that tendon. So this matching between tendon and muscle properties really starts to be critical.
+
+
+168
+00:31:23.265 --> 00:31:36.544
+Manny Azizi: We thought we could test this in a system that I'd worked on for a while, which are jumping frogs. And in this jumping frog, we're going to see it jump off this force plate. In this case.
+
+
+169
+00:31:36.615 --> 00:31:50.184
+Manny Azizi: The tendons are the springs, the hindlimb muscles are the motors, the latch in this case, is actually the mechanical advantage of the limb itself, which changes dynamically throughout the jump.
+
+
+170
+00:31:50.185 --> 00:32:04.804
+Manny Azizi: So when the animal is in this posture where the limb is highly flexed, the mechanical advantage is quite low, and as the muscle produces force, that low mechanical advantage, combined with the inertia of the body itself.
+
+
+171
+00:32:04.925 --> 00:32:13.214
+Manny Azizi: Hold the animal long enough for it to store energy in its tendons before it starts to extend its limbs
+
+
+172
+00:32:13.465 --> 00:32:20.705
+Manny Azizi: Creating a positive feedback loop where the increase in its mechanical advantage starts to release the energy in the tendon.
+
+
+173
+00:32:21.845 --> 00:32:25.114
+Manny Azizi: Here's the animal taking off, and you can see that it's
+
+
+174
+00:32:25.675 --> 00:32:29.365
+Manny Azizi: Quite an excellent jumper, accelerating nicely out of our view.
+
+
+175
+00:32:31.205 --> 00:32:48.255
+Manny Azizi: We thought the idea of matching muscle and tendon properties could potentially help us with a conundrum that we had when we compared three species of frogs and showed that their behavior during jumps are significantly different.
+
+
+176
+00:32:48.455 --> 00:33:00.405
+Manny Azizi: So these are, power in watts per kilogram of muscle mass plotted against time for a jumping tree frog, a bullfrog, and a toad.
+
+
+177
+00:33:00.695 --> 00:33:09.455
+Manny Azizi: So we see that the tree frog generates significantly higher power outputs during a jump compared to the bullfrog, and the toad comes in dead last.
+
+
+178
+00:33:10.635 --> 00:33:14.545
+Manny Azizi: Now, our original foray was to try to explain
+
+
+179
+00:33:14.785 --> 00:33:21.245
+Manny Azizi: this difference through the capacity of their muscles. This was in 2011.
+
+
+180
+00:33:21.505 --> 00:33:26.125
+Manny Azizi: But it turns out that despite the fact that the jump power
+
+
+181
+00:33:26.435 --> 00:33:36.134
+Manny Azizi: increases substantially across these three species. Their muscle power, shown in white, is largely constant across all of those.
+
+
+182
+00:33:36.495 --> 00:33:48.824
+Manny Azizi: So, differences in mechanical power capacity of skeletal muscles, we're not really able to explain, the differences that we observe across these three species and their jump performance.
+
+
+183
+00:33:49.735 --> 00:34:00.924
+Manny Azizi: What we were able to show, once we started to really dig into the mechanical properties of the tendons and muscles, is that what we found was that
+
+
+184
+00:34:01.465 --> 00:34:18.904
+Manny Azizi: If you track the behavior of the muscle and the tendon, and so in this case, I'm showing you a sample where the muscle's starting here, shortening to some, to some length, producing force, and the area gives us the capacity for that muscle to store mechanical energy.
+
+
+185
+00:34:19.165 --> 00:34:20.085
+Manny Azizi: Go ahead.
+
+
+186
+00:34:20.685 --> 00:34:22.565
+Kiisa Carla Nishikawa: Finish your slide, and then I'll chime in.
+
+
+187
+00:34:22.565 --> 00:34:23.255
+Manny Azizi: Okay.
+
+
+188
+00:34:23.655 --> 00:34:32.775
+Manny Azizi: So, what we see is that the area, defines the amount of mechanical energy that each of those muscles can store in their tendons.
+
+
+189
+00:34:32.985 --> 00:34:42.664
+Manny Azizi: What we see is that a couple of things differ when it comes to the tree frogs potentially explaining their high performance. One.
+
+
+190
+00:34:42.895 --> 00:34:51.904
+Manny Azizi: The specific force, or their stress capacity, is quite a bit higher, particularly if you normalize it to muscle mass.
+
+
+191
+00:34:52.115 --> 00:35:03.745
+Manny Azizi: They have highly pinnate muscles that are capable of higher forces per muscle mass, and are able to get to these higher forces than the other species.
+
+
+192
+00:35:04.395 --> 00:35:23.844
+Manny Azizi: Matching that high force capacity is the fact that their tendons are also stiffer. And the way you can interpret that is, what does the slope look like in that line, when the muscle is shortening against the stretch of tendon? Really, the slope of these lines is also the stiffness of the tendon.
+
+
+193
+00:35:23.955 --> 00:35:32.965
+Manny Azizi: So here, what we see is that tree frogs have evolved higher force capacity through changes in the structural properties of their muscles.
+
+
+194
+00:35:32.965 --> 00:35:45.015
+Manny Azizi: And are operating with higher, with stiffer tendons in order to increase the amount of mechanical energy that they can store, in their tendons during a jump.
+
+
+195
+00:35:45.365 --> 00:35:58.685
+Manny Azizi: So this mismatch, this idea that the tendons and muscles have to match really does provide some level of explanation for the variation in jumping performance that we see across three species.
+
+
+196
+00:35:59.245 --> 00:36:00.335
+Manny Azizi: Kisa?
+
+
+197
+00:36:01.585 --> 00:36:12.685
+Kiisa Carla Nishikawa: Yeah, so I guess my question is, how did you estimate the peak power of the muscles, and, you know, was that, like, the isotonic peak power?
+
+
+198
+00:36:12.685 --> 00:36:13.585
+Manny Azizi: It is.
+
+
+199
+00:36:13.585 --> 00:36:22.824
+Kiisa Carla Nishikawa: Yeah, yeah. So, like, my little chirpy, you know, sort of, comment would be.
+
+
+200
+00:36:23.275 --> 00:36:39.914
+Kiisa Carla Nishikawa: So, you know, that might or might not differ, you know, if we did, like, some… if we can… if our group can think of a measurement of how we might estimate the dynamic muscle power when you actually have changing load.
+
+
+201
+00:36:40.215 --> 00:36:48.274
+Kiisa Carla Nishikawa: It might be the same still across the different species, but it might just be that the isotonic
+
+
+202
+00:36:48.605 --> 00:36:55.575
+Kiisa Carla Nishikawa: Constrain is… is maybe systematically underestimating what the muscle power actually is.
+
+
+203
+00:36:56.365 --> 00:37:01.285
+Manny Azizi: Well, it has to be sustained, though, because this is a behavior that takes
+
+
+204
+00:37:01.665 --> 00:37:06.295
+Manny Azizi: Let's say 300 milliseconds of loading, and so…
+
+
+205
+00:37:06.685 --> 00:37:17.674
+Manny Azizi: if you think about the muscle power requirements, they can't be transients. They can't be transient measures of muscle power, they have to be sustained measures of muscle power.
+
+
+206
+00:37:17.825 --> 00:37:27.605
+Kiisa Carla Nishikawa: Right, I would just say, like, the… that the, … you know, I was thinking of, like, if you look, for example, at the recent paper, you know, from, …
+
+
+207
+00:37:27.745 --> 00:37:31.554
+Kiisa Carla Nishikawa: Peterson and Roberts.
+
+
+208
+00:37:31.715 --> 00:37:41.244
+Kiisa Carla Nishikawa: you know, that there is some elastic recoil of the muscles as well, and so, so I think…
+
+
+209
+00:37:41.465 --> 00:37:44.335
+Kiisa Carla Nishikawa: that… ….
+
+
+210
+00:37:44.335 --> 00:37:44.935
+Manny Azizi: with the election.
+
+
+211
+00:37:44.935 --> 00:37:46.625
+Kiisa Carla Nishikawa: For a given, for….
+
+
+212
+00:37:46.625 --> 00:37:48.314
+Manny Azizi: in the wrong direction.
+
+
+213
+00:37:48.355 --> 00:37:53.304
+Kiisa Carla Nishikawa: Well, I think for a given… I think for what…
+
+
+214
+00:37:53.665 --> 00:38:12.605
+Kiisa Carla Nishikawa: My interpretation is, is that, and we can talk about more about this offline, but for a given velocity, muscles can actually produce quite a bit more force when their load is reducing than they can when the load is constant.
+
+
+215
+00:38:14.205 --> 00:38:15.125
+Manny Azizi: I agree.
+
+
+216
+00:38:15.555 --> 00:38:17.034
+Kiisa Carla Nishikawa: Yes. Yeah.
+
+
+217
+00:38:20.035 --> 00:38:20.765
+Manny Azizi: Okay.
+
+
+218
+00:38:21.325 --> 00:38:28.065
+Manny Azizi: The other, the other bit of information that we were able to glean from, that
+
+
+219
+00:38:28.645 --> 00:38:32.645
+Manny Azizi: That little, toy model that we came up with.
+
+
+220
+00:38:33.135 --> 00:38:41.185
+Manny Azizi: Was that, in fact, there's a really interesting scaling relationship between when these tendon-driven behaviors,
+
+
+221
+00:38:41.315 --> 00:38:52.414
+Manny Azizi: Make sense, and are useful, and are beneficial in terms of performance, and when really just directly actuating the system with muscles is more beneficial.
+
+
+222
+00:38:52.415 --> 00:39:11.455
+Manny Azizi: And the way this was derived was for a very specific set of scenarios where we gave some muscle-like properties to our motor, and we ran sort of two different spring models, one where it's an ideal spring and one where it's got some mass and some realistic properties.
+
+
+223
+00:39:12.125 --> 00:39:28.234
+Manny Azizi: What we found was if you measure, let's say, maximum power, we also did this for maximum kinetic energy of the projectile, maximum momentum, so we had lots of different metrics that we looked at. The pattern was quite consistent, although the mass
+
+
+224
+00:39:28.385 --> 00:39:36.464
+Manny Azizi: It was a little different based on what metric you use, not significantly, though, on a large scale. What we found was that if you are small.
+
+
+225
+00:39:37.485 --> 00:39:39.735
+Manny Azizi: Springs make a ton of sense.
+
+
+226
+00:39:40.055 --> 00:39:53.484
+Manny Azizi: And that your power outputs being spring-driven significantly outperform muscle-driven behavior, where you're directly actuating the system with skeletal muscles.
+
+
+227
+00:39:53.895 --> 00:39:58.325
+Manny Azizi: And then you get to some transitional length, or size.
+
+
+228
+00:39:58.435 --> 00:40:13.485
+Manny Azizi: Where beyond that point, you start to really lose the benefit of rapid delivery of mechanical power from a tendon that exceeds the rate at which power can be produced by the skeletal muscle.
+
+
+229
+00:40:14.255 --> 00:40:20.304
+Manny Azizi: That happens to be on the order of, let's say, 5 to 10 gram masses.
+
+
+230
+00:40:20.345 --> 00:40:34.655
+Manny Azizi: And the way that we… and the reasoning behind that is that the… as you get bigger, that… the mass is going to have inertia associated with it. It's going to take time to accelerate that mass.
+
+
+231
+00:40:35.055 --> 00:40:53.444
+Manny Azizi: That time effectively saps that power that the tendon is producing. So it doesn't matter how fast the tendon is recoiling, if the mass is so high that its inertia is going to take some amount of time to get to its high… to its peak velocity anyway.
+
+
+232
+00:40:53.695 --> 00:41:05.995
+Manny Azizi: So, in this case, the higher, higher body masses tend to have this higher inertial, constraint, which then limits their utility, the utility of spring-driven systems.
+
+
+233
+00:41:07.175 --> 00:41:08.855
+Manny Azizi: What was interesting was.
+
+
+234
+00:41:08.885 --> 00:41:25.994
+Manny Azizi: I was on this team, my system was frogs, and so we were really right in that transitional zone where, for some species, it made a lot of sense to be spring-driven, and for some species, it made a lot of sense to be… to be directly muscle-driven.
+
+
+235
+00:41:25.995 --> 00:41:32.155
+Manny Azizi: The way we started to think about this was that, well, maybe these things, at some point, …
+
+
+236
+00:41:32.375 --> 00:41:34.764
+Manny Azizi: These things may not be mutually exclusive.
+
+
+237
+00:41:34.825 --> 00:41:53.545
+Manny Azizi: That you may not simply be a spring-driven system or a muscle-driven system, but that those things may be able to work in concert once the system gets slow enough for the muscle to be able to generate the powers needed to continue to contribute to the, to the takeoff phase.
+
+
+238
+00:41:53.665 --> 00:42:05.454
+Manny Azizi: And so, we came up with this prediction that, well, I think frogs are in this nice little range where they can utilize both, simultaneously utilize both spring and muscle actuation.
+
+
+239
+00:42:05.715 --> 00:42:07.774
+Manny Azizi: During their takeoff phase.
+
+
+240
+00:42:08.185 --> 00:42:16.955
+Manny Azizi: The way we tested this prediction, was through, what we call virtual reality muscle experiments.
+
+
+241
+00:42:17.135 --> 00:42:36.774
+Manny Azizi: In these experiments, what we effectively have is a… an isolated muscle tendon unit, where we're independently measuring the length changes of the muscle fascicles. In turn, that gives us the length changes of the tendon. We're also stimulating this muscle artificially.
+
+
+242
+00:42:37.245 --> 00:42:51.394
+Manny Azizi: However, rather than just measuring the force output of various contractions, what we have is a real-time feedback controller that's in place that allows us to take the force output of our muscle in every time step.
+
+
+243
+00:42:51.415 --> 00:43:02.294
+Manny Azizi: Feed it into a, an in-silico model of a jointed system where we've got a mass up on top.
+
+
+244
+00:43:02.535 --> 00:43:09.524
+Manny Azizi: This is really not there. That's actually the muscle tendon unit in real life that's, that's producing the forces.
+
+
+245
+00:43:09.525 --> 00:43:24.805
+Manny Azizi: And it's actuating it through this jointed system that's got some leverage that we matched to our frogs. It's got a mass that we match to our frogs. And so, we're really doing these sort of hybrid experiments where you have real biological tissues.
+
+
+246
+00:43:24.805 --> 00:43:27.865
+Manny Azizi: Interacting in real time with a model.
+
+
+247
+00:43:28.085 --> 00:43:38.534
+Manny Azizi: Okay, so this is a vertical jumping model. It's a pretty simple thing that we could… that we could code up, and have the muscle interact with it in real time.
+
+
+248
+00:43:39.505 --> 00:43:55.085
+Manny Azizi: And then, in order to really test the relative contributions of muscles and springs in this system, we did this one additional manipulation, which is that we altered the temperature of our system.
+
+
+249
+00:43:55.255 --> 00:43:59.924
+Manny Azizi: That allows us to alter our muscle properties significantly.
+
+
+250
+00:44:00.075 --> 00:44:16.824
+Manny Azizi: while retaining our tendon properties. So tendons are not really temperature sensitive, they're not undergoing enzymatic reactions, they're a mechanical tissue, whereas muscles are undergoing enzymatic reactions, and so as a result, they're going to be much more temperature sensitive.
+
+
+251
+00:44:17.375 --> 00:44:22.524
+Manny Azizi: So, we ran this model and these experiments, and so, …
+
+
+252
+00:44:22.905 --> 00:44:38.134
+Manny Azizi: Same with the frog system. The mechanical advantage of that jointed model is increasing through time. It's storing energy, it's releasing energy, it's behaving in ways that we think resemble our frogs pretty well. So here we've got
+
+
+253
+00:44:38.185 --> 00:44:50.085
+Manny Azizi: The joint angle of the model at 10 and 20 degrees, those sort of get to the same place, they all take off, regardless of the temperature, it just takes a while longer for the 10 degree to do that.
+
+
+254
+00:44:50.525 --> 00:45:07.895
+Manny Azizi: Here we have muscle force. We have higher forces in red. That's not really a thermal effect, that's more of an effect of the rate of force development increasing significantly with, with our, with our increase in temperature.
+
+
+255
+00:45:08.565 --> 00:45:20.804
+Manny Azizi: And then we've got the, our fascicle lengths, that's our muscle shortening during this behavior in order to store energy into the tendon and then release it when the force starts to come down.
+
+
+256
+00:45:21.195 --> 00:45:35.364
+Manny Azizi: The part of this trace that we were really interested in were these parts down here, where you have significant amount of shortening, really near the end, like, really close to the takeoff of this muscle… of this model.
+
+
+257
+00:45:36.725 --> 00:45:52.334
+Manny Azizi: Here's what we were able to find. So, I have force length curves plotted here. I've got two conditions, cold in blue, hot in red. We have our muscle, shortening.
+
+
+258
+00:45:52.605 --> 00:46:02.535
+Manny Azizi: That dashed line is kind of the inertial constraint of our model. We have to get to that force before the model starts to accelerate.
+
+
+259
+00:46:03.125 --> 00:46:20.885
+Manny Azizi: What we see is that when it's hot, muscle develops force, shortens to stretch the tendon, but it overshoots that threshold, because its rate of force development's pretty high. Stores a good amount of energy in that first phase, which is
+
+
+260
+00:46:20.985 --> 00:46:30.214
+Manny Azizi: pre-threshreshold, then it overshoots the threshold in Phase 2, and then it continues to shorten
+
+
+261
+00:46:30.345 --> 00:46:38.604
+Manny Azizi: during Phase 3, which is when the tendon is also recoiling. So, in the first part, we have the muscle loading the tendon.
+
+
+262
+00:46:38.885 --> 00:46:51.035
+Manny Azizi: Actually, in the first two parts, we have the muscle loading the tendon, and in phase three, the tendon is unloading, but the muscle is also continuing to shorten rapidly and produce high power outputs.
+
+
+263
+00:46:51.825 --> 00:47:08.565
+Manny Azizi: So, what we really have is evidence of a system where the muscle is storing energy into the tendon, the tendon begins to recoil, but the muscle is not done and is not getting out of the way. It can continue to impart mechanical energy into the system during the takeoff phase.
+
+
+264
+00:47:08.955 --> 00:47:09.725
+Manny Azizi: Okay?
+
+
+265
+00:47:10.375 --> 00:47:22.315
+Manny Azizi: So, what we see when we compare the two temperatures is that as you slow the rate of force development down, we don't overshoot our threshold by much when the muscle gets cold.
+
+
+266
+00:47:22.765 --> 00:47:42.425
+Manny Azizi: But interestingly, where we see the biggest difference is in this third phase, where the muscle is imparting additional power onto the system, we see that when we decrease the temperature, and we decrease the capacity of the muscle to generate mechanical power, that that's the part where we start to lose.
+
+
+267
+00:47:43.125 --> 00:47:57.904
+Manny Azizi: Now, what this helped explain was something interesting, which was that it's been long held that elastically driven behaviors are not really going to be temperature sensitive.
+
+
+268
+00:47:58.125 --> 00:48:02.714
+Manny Azizi: But also, that frog jumping is highly temperature sensitive.
+
+
+269
+00:48:02.715 --> 00:48:22.174
+Manny Azizi: And so that mismatch in ideas is really explained by the fact that this isn't a purely elastic behavior driven by springs, but it's that it's really a combination. And that the part you start to lose when the temperature gets cold is that additional muscle power during the unloading phase of the behavior.
+
+
+270
+00:48:23.315 --> 00:48:34.794
+Manny Azizi: I can show that more quantitatively here. What we see is that the amount of energy stored slowly during that early phase is the same across temperature.
+
+
+271
+00:48:35.605 --> 00:48:41.265
+Manny Azizi: The overshoot helps us load a little bit more energy when things get hotter.
+
+
+272
+00:48:42.585 --> 00:48:44.164
+Manny Azizi: But interestingly.
+
+
+273
+00:48:44.885 --> 00:48:56.384
+Manny Azizi: The power in the… the power of the recoil of the tendon and the power of the muscle during unloading is where we see the highest
+
+
+274
+00:48:56.665 --> 00:48:58.265
+Manny Azizi: temperature effects.
+
+
+275
+00:48:58.415 --> 00:49:15.464
+Manny Azizi: And in fact, what we see is that there's almost a 50-50 split between the amount of energy that's coming out of the tendon and the amount of additional energy that's being put back into the system by the muscle during the unloading phase of the behavior.
+
+
+276
+00:49:15.545 --> 00:49:16.935
+Manny Azizi: So, really.
+
+
+277
+00:49:16.945 --> 00:49:35.784
+Manny Azizi: what… what I take away from this is that the utilization of elastic energy doesn't have to be perfect, it doesn't have to be discrete, where you… where you describe a system either as utilizing spring actuation or utilizing muscle… direct muscle actuation, and that those two things
+
+
+278
+00:49:35.785 --> 00:49:37.445
+Manny Azizi: can coexist.
+
+
+279
+00:49:37.745 --> 00:49:50.015
+Manny Azizi: And to me, that really broadens the realm of the utilization of elastic energy, because it provides the opportunity to use it alongside muscle-driven behavior.
+
+
+280
+00:49:51.885 --> 00:49:52.815
+Manny Azizi: Okay.
+
+
+281
+00:49:52.945 --> 00:49:54.475
+Victoria Wood: Can I ask a quick question here?
+
+
+282
+00:49:54.475 --> 00:49:55.265
+Manny Azizi: Sure.
+
+
+283
+00:49:55.265 --> 00:49:59.834
+Victoria Wood: The temperatures here, the cold and the hot in these,
+
+
+284
+00:49:59.835 --> 00:50:01.905
+Manny Azizi: simulations. Yep. ….
+
+
+285
+00:50:02.045 --> 00:50:09.204
+Victoria Wood: Is that, like, an average across the overall system? Like, where is the temperature actually.
+
+
+286
+00:50:09.205 --> 00:50:14.104
+Manny Azizi: Yeah, so this is the bath that the muscle tendon unit is sitting.
+
+
+287
+00:50:14.105 --> 00:50:14.555
+Victoria Wood: sitting in.
+
+
+288
+00:50:14.555 --> 00:50:30.564
+Manny Azizi: is literally at that temperature. So our model is agnostic to the temperature, but our muscle tendon unit is being affected by varying the temperature of the system. So we're really varying the muscle dynamics directly here.
+
+
+289
+00:50:30.565 --> 00:50:36.925
+Victoria Wood: Okay, that makes sense. And is that… because it's in a bath, I assume the temperature stays pretty constant throughout the whole system?
+
+
+290
+00:50:36.925 --> 00:50:41.064
+Manny Azizi: It's a… it's a circulating bath set at a constant temperature, yeah.
+
+
+291
+00:50:41.285 --> 00:50:52.344
+Victoria Wood: In vivo, then, does the temperature of the whole system kind of stay pretty constant there as well, or does it kind of vary throughout as you go deeper into the body and things like that?
+
+
+292
+00:50:52.345 --> 00:51:08.255
+Manny Azizi: very sick… I mean, these are ectothermic animals, so they're not… so they're at the will of their environment. However, I will give this nice anecdote, which is that, when we went to the Calaveras County frog jumping competition.
+
+
+293
+00:51:08.385 --> 00:51:12.015
+Victoria Wood: That sounds fun. All of the best competitors.
+
+
+294
+00:51:12.015 --> 00:51:13.035
+Manny Azizi: had this
+
+
+295
+00:51:13.225 --> 00:51:26.745
+Manny Azizi: secret bath that the frogs were in just before the competition. And to me, that is just heating up the frog up to a certain temperature in order to maximize its power output.
+
+
+296
+00:51:26.985 --> 00:51:29.195
+Manny Azizi: Amazing. But interestingly.
+
+
+297
+00:51:29.975 --> 00:51:38.864
+Manny Azizi: Really, we're able to explain why there is a temperature effect in a system that we long thought was elastically driven.
+
+
+298
+00:51:38.865 --> 00:51:39.595
+Victoria Wood: Hmm.
+
+
+299
+00:51:41.095 --> 00:51:45.635
+Jill McNitt-Gray: I have a quick… I have a quick question. So, I'm really curious to…
+
+
+300
+00:51:46.485 --> 00:51:50.794
+Jill McNitt-Gray: Is there a latching mechanism that can be applied in this scenario?
+
+
+301
+00:51:51.145 --> 00:51:57.995
+Manny Azizi: Yeah, so the latch here is the same as the latch in the frog, which is that we're starting the….
+
+
+302
+00:51:57.995 --> 00:52:06.945
+Jill McNitt-Gray: We're starting our model in a highly crouched posture that is, effectively operating with a really low mechanical advantage.
+
+
+303
+00:52:06.945 --> 00:52:16.674
+Manny Azizi: And then the mass has sort of an inertial constraint, that's kind of that dotted line, that you have to overcome that inertia in order for the mass to start to accelerate.
+
+
+304
+00:52:16.885 --> 00:52:20.494
+Jill McNitt-Gray: Where I'm going with my question is, I'm thinking about
+
+
+305
+00:52:21.565 --> 00:52:27.024
+Jill McNitt-Gray: Skilled jumpers in technical situations where they can manipulate that.
+
+
+306
+00:52:27.025 --> 00:52:27.495
+Manny Azizi: Yes.
+
+
+307
+00:52:27.495 --> 00:52:30.584
+Jill McNitt-Gray: Yeah, so this is very, very interesting.
+
+
+308
+00:52:31.285 --> 00:52:39.825
+Jill McNitt-Gray: Yeah. The most interesting thing we've done with this system, is to jump these animals off of compliance substrates.
+
+
+309
+00:52:39.825 --> 00:52:56.175
+Manny Azizi: effectively adding a, … you're adding a spring in series, an additional spring in series, effectively, by having them jump off a diving board effectively. And what's interesting is, I don't think they're consciously doing this.
+
+
+310
+00:52:56.195 --> 00:53:00.614
+Manny Azizi: But they… their behavior slows down because they're, ….
+
+
+311
+00:53:00.615 --> 00:53:01.115
+Jill McNitt-Gray: Yeah.
+
+
+312
+00:53:01.115 --> 00:53:14.544
+Manny Azizi: And they're able to utilize more of the recoil of the substrate simply because their latching mechanism works less well when the ground gives under them and forces their limb to extend prematurely.
+
+
+313
+00:53:15.015 --> 00:53:22.444
+Jill McNitt-Gray: This is something that's highly regulated in divers, so this is very interesting, because you want to get the most out at the right time.
+
+
+314
+00:53:22.445 --> 00:53:38.305
+Manny Azizi: Exactly. The timing of that… so, jumping straight, yeah, you've seen… you can see divers, like, hit the wrong timing, and it just looks super awkward, because they just did not get… get that push from the substrate.
+
+
+315
+00:53:38.565 --> 00:53:45.334
+Manny Azizi: But we do have… we have another paper coming out that utilizes our virtual reality system.
+
+
+316
+00:53:45.335 --> 00:53:45.705
+Jill McNitt-Gray: Thanks.
+
+
+317
+00:53:45.705 --> 00:53:49.264
+Manny Azizi: with a compliant substrate as well.
+
+
+318
+00:53:49.645 --> 00:53:52.775
+Manny Azizi: And we were able to recapitulate that,
+
+
+319
+00:53:52.935 --> 00:54:03.615
+Manny Azizi: The model stays in contact longer because the takeoff powers and velocities are dampened by reducing the quality of the latch.
+
+
+320
+00:54:04.175 --> 00:54:05.805
+Jill McNitt-Gray: Interesting. And…
+
+
+321
+00:54:05.805 --> 00:54:13.495
+Jill McNitt-Gray: And there's also, like, just so in the diver part, too, is there's some strategy of leaving some force generation capabilities
+
+
+322
+00:54:13.495 --> 00:54:34.104
+Jill McNitt-Gray: during the recall. So you get max board bend on the way down, but the rotation happens on the way up. And so our model simulations were able to show that, right? So, but it's, like, strategically determining how to regulate the latch and reorienting the force. So it's very… this is really wonderful, so keep going. Thank you.
+
+
+323
+00:54:34.105 --> 00:54:35.025
+Manny Azizi: Okay.
+
+
+324
+00:54:35.285 --> 00:54:48.344
+Manny Azizi: So, I could talk about power amplification for hours, and I did just recently give, like, a two and a half hour talk on this topic, over a long period. So.
+
+
+325
+00:54:48.405 --> 00:55:01.834
+Manny Azizi: Lots of other systems we could talk about, and I will say my systems, which were the frogs, were probably the least interesting of them all, compared to these amazing invertebrate systems and the capacities that they have, …
+
+
+326
+00:55:02.725 --> 00:55:03.585
+Manny Azizi: Kisa.
+
+
+327
+00:55:05.765 --> 00:55:14.654
+Kiisa Carla Nishikawa: So, Manny, I just have a question here, and that is, like, I don't know whether you know this pretty cool paper from…
+
+
+328
+00:55:14.715 --> 00:55:25.855
+Kiisa Carla Nishikawa: Ulit Farahat and Hugh Heard was published in PLOS back in, like, 2010. There's a two-muscle system. Yeah, I think it also relates to Jill's
+
+
+329
+00:55:26.935 --> 00:55:44.684
+Kiisa Carla Nishikawa: area. So the idea is that, you know, what they found is that a pair of antagonistic muscles operating together that were impedance matched to the load, which seems to really fit into your paradigm.
+
+
+330
+00:55:44.705 --> 00:55:55.294
+Kiisa Carla Nishikawa: Could produce 7 times as much mechanical power, 7 times as much mechanical power as a single muscle.
+
+
+331
+00:55:55.635 --> 00:55:59.255
+Kiisa Carla Nishikawa: So, I think the question is, like.
+
+
+332
+00:55:59.645 --> 00:56:02.814
+Kiisa Carla Nishikawa: Can you start to incorporate, like…
+
+
+333
+00:56:03.105 --> 00:56:11.544
+Kiisa Carla Nishikawa: You know, antagonistic muscles acting at a single joint into this kind of analysis.
+
+
+334
+00:56:12.055 --> 00:56:17.734
+Manny Azizi: Yeah, you know, initially, when we were working on these, these topics.
+
+
+335
+00:56:18.035 --> 00:56:20.415
+Manny Azizi: I was of the opinion that
+
+
+336
+00:56:20.795 --> 00:56:27.585
+Manny Azizi: Muscle relaxation rates are simply too slow, to really be any good as a latch.
+
+
+337
+00:56:28.225 --> 00:56:42.355
+Manny Azizi: I've come around on that to some degree, mainly because my view of systems that utilize elastic energy storage is great… has been greatly broadened. And to me.
+
+
+338
+00:56:42.355 --> 00:56:57.964
+Manny Azizi: the idea of chasing the fastest and the most perfect system, I think has actually hindered our understanding of these systems, because we've focused on these, sort of, these high-performance, isolated examples.
+
+
+339
+00:56:58.125 --> 00:57:00.015
+Manny Azizi: Which…
+
+
+340
+00:57:00.055 --> 00:57:11.094
+Manny Azizi: Which effectively made me think, no, you know, even the fastest fiber type, that relaxation rate simply takes too long for the force to get out of the way.
+
+
+341
+00:57:11.095 --> 00:57:20.474
+Manny Azizi: if an antagonist is holding it. But I'm of the opinion now that there are scenarios where bad latches are okay, where
+
+
+342
+00:57:20.895 --> 00:57:36.784
+Manny Azizi: In fact, the compliance substrate is a great example where messing up the latch actually was beneficial to the overall performance of the system. So, I'm much less constrained in my thinking about what can and can't be a latch.
+
+
+343
+00:57:36.785 --> 00:57:42.985
+Manny Azizi: And I have come around to the idea that you can use an antagonist as a latch
+
+
+344
+00:57:42.985 --> 00:58:04.135
+Manny Azizi: Particularly if that antagonist not only is deactivating, but that you have a… the capacity, or you have other structural features that allow the moment arm of that muscle to also change rapidly during deactivation. Now you're really amplifying that drop in force, which is what you need to have a good latch.
+
+
+345
+00:58:04.395 --> 00:58:21.864
+Manny Azizi: You need that force to get out of the way. Like, you need it to be high enough to hold the system, but to get out of the way as fast as possible. But in… yeah, so I'm starting to come around to the idea that you could play around with muscle moment arms,
+
+
+346
+00:58:22.165 --> 00:58:26.985
+Manny Azizi: And make that deactivation fast enough to act as a latch.
+
+
+347
+00:58:27.665 --> 00:58:28.335
+Kiisa Carla Nishikawa: Yes.
+
+
+348
+00:58:28.335 --> 00:58:29.595
+Jill McNitt-Gray: Girls… go ahead.
+
+
+349
+00:58:29.885 --> 00:58:31.094
+Kiisa Carla Nishikawa: After you, Jill.
+
+
+350
+00:58:31.095 --> 00:58:50.735
+Jill McNitt-Gray: I was going to say, going back to the two-joint muscle parts of this, see, the two-joint muscles are really interesting, because it controls, like, 50% of the mass above the hip, if you will. So, you can get kind of a two-for-one here in controlling center mass position, as well as the inertial aspects of it, like to hold it.
+
+
+351
+00:58:51.185 --> 00:59:08.604
+Jill McNitt-Gray: get, you know, this again is that resistance part, but this is, like, why… going back to, I think, where you're going, Keith says, looking at the system, right? The combination of multi-joint control and how that effectively regulates these things that you've been able to simplify in your model, which is very exciting, right? So…
+
+
+352
+00:59:08.605 --> 00:59:13.785
+Jill McNitt-Gray: That was all it's going to say, because I think there's something about the system dynamics that we want to bring back in.
+
+
+353
+00:59:13.885 --> 00:59:18.525
+Jill McNitt-Gray: For these latching mechanisms, as well as the team of muscles that are involved.
+
+
+354
+00:59:19.295 --> 00:59:27.215
+Manny Azizi: I agree, and I think, in fact, I really feel like this aspect of the field has been hindered by
+
+
+355
+00:59:27.405 --> 00:59:37.795
+Manny Azizi: Chasing the fastest, the highest accelerations, like, the most impressive systems, which are fascinating and amazing, but…
+
+
+356
+00:59:38.615 --> 00:59:52.515
+Manny Azizi: But they are divorced from some of the constraints that lots of other systems deal with, and I think of this as being ubiquitous. If you have a tendinous structure in series with the muscle, you simply can't get around it.
+
+
+357
+00:59:52.685 --> 01:00:02.204
+Manny Azizi: When the muscle produces force, that will… the tendon will stretch, whether you want it to or not, like, there's no way around it. And so….
+
+
+358
+01:00:02.535 --> 01:00:14.604
+Manny Azizi: There's lots of interesting complexity that I think we can learn from studying slower, less impressive systems where some cycling of energy is still going through the tendon.
+
+
+359
+01:00:15.124 --> 01:00:35.075
+Kiisa Carla Nishikawa: Yeah, and my final point was just going to be that when muscles are changing length, we tend to think of, like, there's a canonical EC coupling delay. There's a canonical, you know, rate of muscle relaxation, but those are measured under isometric conditions, and as soon as you let the system move.
+
+
+360
+01:00:35.275 --> 01:00:47.594
+Kiisa Carla Nishikawa: Those pretty much go out the window, and so, like, the length dependence of the rate of force development and the length dependence of the rate of force decay
+
+
+361
+01:00:47.704 --> 01:00:55.895
+Kiisa Carla Nishikawa: Could substantially, you know, sort of, you know, obviate some of the, you know.
+
+
+362
+01:00:56.525 --> 01:01:01.295
+Kiisa Carla Nishikawa: Thinking about really long delays and muscles being Bad latches.
+
+
+363
+01:01:01.485 --> 01:01:02.034
+Manny Azizi: Yep.
+
+
+364
+01:01:03.385 --> 01:01:14.945
+Manny Azizi: Great. Okay, last but not least, I want to talk about power attenuation. I think this is actually the… an area that really needs our attention.
+
+
+365
+01:01:15.145 --> 01:01:24.004
+Manny Azizi: there's only been a handful of folks who focused on this aspect of tendon function. I think, I think it's really cool and has some broad implications.
+
+
+366
+01:01:24.105 --> 01:01:25.225
+Manny Azizi: So.
+
+
+367
+01:01:25.425 --> 01:01:34.895
+Manny Azizi: Here's a couple of experiments we did, really simple stuff, like, nothing… nothing hard. Like, this is as simple as it gets. We have…
+
+
+368
+01:01:34.994 --> 01:01:46.095
+Manny Azizi: an isolated muscle tendon unit, right there, where we're stimulating. We are driving it through this little stretch, and the gray is when we're stimulating it.
+
+
+369
+01:01:47.255 --> 01:01:58.945
+Manny Azizi: Then, we just change the rate at which, or the velocity of that stretch that's applied to our muscle. So, really, we're just altering the velocity of that stretch.
+
+
+370
+01:01:58.955 --> 01:02:14.254
+Manny Azizi: We're trying to actively stretch the muscle, but as you'll see, what we have is a pretty compliant spring in series with our muscle, and so as a result, it's actually pretty challenging to stretch the muscle fibers, okay? So…
+
+
+371
+01:02:14.745 --> 01:02:29.965
+Manny Azizi: Here's a pattern that we get. So, we've got length up on top, we have force on the bottom panel, we have length of the muscle tendon unit up on top. That is the… that's effectively the length change we're imposing onto the muscle tendon unit.
+
+
+372
+01:02:30.565 --> 01:02:36.094
+Manny Azizi: The dark black is where we get the highest velocity for the muscle tendon unit.
+
+
+373
+01:02:36.465 --> 01:02:48.915
+Manny Azizi: What we actually see in terms of the behavior of the muscle fiber is that as we activate the muscle fiber, even though the muscle tendon unit is being stretched, our muscle fiber is shortening.
+
+
+374
+01:02:49.715 --> 01:02:53.344
+Manny Azizi: It's shortening for much of the stretch phase.
+
+
+375
+01:02:53.695 --> 01:03:06.175
+Manny Azizi: And then, the tendon is stretching our fascicle. So, in this first phase, the muscle is shortening, we're stretching the MTU, so we know the tendon is stretching.
+
+
+376
+01:03:06.955 --> 01:03:12.465
+Manny Azizi: And once we get past peak force, the tendon is loading our fascicle.
+
+
+377
+01:03:13.095 --> 01:03:24.145
+Manny Azizi: What's most interesting is look at the velocity of stretch applied to the MTU compared to the velocity of stretch applied to the fascicle by the tendon.
+
+
+378
+01:03:24.975 --> 01:03:42.225
+Manny Azizi: the fascicle velocity is much lower, which is a good thing, because when we stretch our muscle fascicles at a high rate, they tend to get damaged. When we stretch those muscle fibers to really long lengths, they tend to get damaged. So here, what we're seeing is
+
+
+379
+01:03:42.325 --> 01:03:47.275
+Manny Azizi: The muscle is shortening, so it's moving it to a safer spot.
+
+
+380
+01:03:47.615 --> 01:03:53.445
+Manny Azizi: Then it's being stretched by the tendon at a lower velocity than we were stretching the MTU.
+
+
+381
+01:03:53.515 --> 01:04:13.244
+Manny Azizi: So really, the tendon here is acting as a mechanical buffer to limit the power input to our fascicles. We're still dissipating the same amount of energy, we're just doing it in a much safer way by operating at shorter lengths, and by operating at lower stretch velocities.
+
+
+382
+01:04:13.875 --> 01:04:14.865
+Manny Azizi: Plus.
+
+
+383
+01:04:14.995 --> 01:04:36.354
+Manny Azizi: The tendon is a known entity to the muscle, whereas the environment is an unknown and unpredictable entity. So having this material in between our environment and our muscle allows us to load the system in a much more repeatable and dependable way.
+
+
+384
+01:04:37.805 --> 01:04:56.545
+Manny Azizi: Here's the summary of that data, and this was work I did with Tom Roberts when I was a postdoc. We have fascicle velocity, and if the fascicle velocity was the same as the, as the MTU stretch we're applying to it, so let's say there's no tendon in place, you would simply follow that dotted line.
+
+
+385
+01:04:56.805 --> 01:04:57.635
+Manny Azizi: Right?
+
+
+386
+01:04:57.795 --> 01:05:12.265
+Manny Azizi: However, the fact that the tendon is slowing down the rate of stretch that's applied to our muscle fiber means that we're getting lower stretch velocities applied to our fascicle.
+
+
+387
+01:05:12.615 --> 01:05:16.635
+Manny Azizi: Even as our rates of stretch start to get higher.
+
+
+388
+01:05:17.935 --> 01:05:18.865
+Manny Azizi: Kisa?
+
+
+389
+01:05:21.835 --> 01:05:34.624
+Kiisa Carla Nishikawa: This is really cool, Manny. So, I'm just struggling to understand, is the gray bar activation, and is the activation coming on exactly at the beginning of the stretch?
+
+
+390
+01:05:34.625 --> 01:05:38.245
+Manny Azizi: In these experiments, they came on right at the beginning of stretch, yeah.
+
+
+391
+01:05:38.425 --> 01:05:51.264
+Kiisa Carla Nishikawa: And how… have you looked at how the dynamics of the MTU fascicle interaction change if you change the timing of the activation?
+
+
+392
+01:05:51.265 --> 01:05:51.865
+Manny Azizi: Yep.
+
+
+393
+01:05:52.295 --> 01:05:58.555
+Manny Azizi: I had that in there, but I took that experiment out for, for time purposes.
+
+
+394
+01:05:58.905 --> 01:06:07.494
+Manny Azizi: Long story short, Well, first of all, Pre-activation, anticipatory activation.
+
+
+395
+01:06:07.645 --> 01:06:15.435
+Manny Azizi: Prior to an impact or an impending eccentric kind of behavior is very, very common.
+
+
+396
+01:06:15.555 --> 01:06:32.554
+Manny Azizi: Like, it is the norm, and so we did want to look at, well, what are the benefits of turning that thing on earlier, prior to the stretch? So we did experiments where we did it 50 milliseconds before the stretch, right at the onset of stretch, 50 milliseconds after the onset of stretch.
+
+
+397
+01:06:32.755 --> 01:06:40.944
+Manny Azizi: And what we found was actually the rates were… the maximum loading rates onto the fascicle were largely the same.
+
+
+398
+01:06:41.405 --> 01:06:46.625
+Manny Azizi: What really differed between those was the operating lengths.
+
+
+399
+01:06:47.265 --> 01:06:59.315
+Manny Azizi: by… if you start the… if you activate early, you get much more shortening. It moves you onto the ascending limb of the force-length curve before the stretch happens.
+
+
+400
+01:06:59.545 --> 01:07:22.574
+Manny Azizi: So it kind of shoves everything onto safer and shorter lengths by going early, whereas the late activation didn't have that. There was less shortening, and then the stretch, and so you were sort of operating at maybe questionable lengths. And we would start those at, like, 1.25 of L0, for example, just to be at sort of
+
+
+401
+01:07:22.575 --> 01:07:27.685
+Manny Azizi: slightly longer lanes. But yeah, it has a… it has an important effect on
+
+
+402
+01:07:27.685 --> 01:07:33.224
+Manny Azizi: Where you're operating on the force-length relationship when you turn on… when you do the activation.
+
+
+403
+01:07:33.225 --> 01:07:39.154
+Manny Azizi: There were a couple of other interesting pieces of data.
+
+
+404
+01:07:39.155 --> 01:07:55.385
+Manny Azizi: total energy is the same, because we're imparting the same amount of energy into the system every time, and all we're doing is changing the timing. So it's just kind of like the shape of that fascicle length change trajectory is what differs.
+
+
+405
+01:07:56.015 --> 01:08:03.675
+Jill McNitt-Gray: That's really important for risk. Indeed. Right? Yeah, so this is a nice part where it's not just energy, but risk aversion, right?
+
+
+406
+01:08:03.675 --> 01:08:04.055
+Manny Azizi: Absolutely.
+
+
+407
+01:08:04.055 --> 01:08:09.474
+Jill McNitt-Gray: And this is really important in this unsteady movement things that we're trying to all study.
+
+
+408
+01:08:09.475 --> 01:08:10.055
+Manny Azizi: Indeed.
+
+
+409
+01:08:10.055 --> 01:08:11.035
+Jill McNitt-Gray: Very cool.
+
+
+410
+01:08:12.225 --> 01:08:12.595
+Manny Azizi: Okay.
+
+
+411
+01:08:12.595 --> 01:08:25.944
+Kiisa Carla Nishikawa: I also… maybe I could just say this, sorry. I mean, this is just a dumb comment, but maybe something that's worth looking into in the future is, like, from the stuff that I've done modeling, you know, Monica's guinea fowl and…
+
+
+412
+01:08:26.085 --> 01:08:41.315
+Kiisa Carla Nishikawa: And, James Wakeling and Nikolai Kona's rats, which are bipedal and quadrupedal. It seems like if you're quadrupedal, you have more, I mean, less pre-activation, so you can kind of save that…
+
+
+413
+01:08:42.015 --> 01:08:54.345
+Kiisa Carla Nishikawa: So you have maybe a shorter total duration of activation, and you're saving the energy, because if you've got 4 legs, you just don't have the… you have more bandwidth for….
+
+
+414
+01:08:55.415 --> 01:09:12.784
+Manny Azizi: spreading risk across four lists. Yeah, yeah, and to my knowledge, nobody's really looked at that, but I think it would be an interesting question. I mean, I'll show some in vivo data on turkeys that we have, but that's a bipedal system, so…
+
+
+415
+01:09:13.055 --> 01:09:14.535
+Manny Azizi: they pre-activate.
+
+
+416
+01:09:15.435 --> 01:09:20.664
+Manny Azizi: Okay, last experiment I want to talk about, same exact thing.
+
+
+417
+01:09:20.915 --> 01:09:28.185
+Manny Azizi: The only difference we did was we changed the temperature again, mainly because what we found was that
+
+
+418
+01:09:28.695 --> 01:09:35.574
+Manny Azizi: Let me go back, actually. What we found was… The rate of, …
+
+
+419
+01:09:36.265 --> 01:09:43.444
+Manny Azizi: This rate here really depends on the rate of relaxation in the muscle.
+
+
+420
+01:09:44.115 --> 01:09:48.744
+Manny Azizi: Because… That's really what's determining the…
+
+
+421
+01:09:48.925 --> 01:09:51.944
+Manny Azizi: Release of force from the tendon.
+
+
+422
+01:09:52.125 --> 01:09:59.275
+Manny Azizi: So, if… the faster the muscle deactivates, the faster the tendon is going to load the muscle.
+
+
+423
+01:09:59.685 --> 01:10:06.005
+Manny Azizi: So, deactivation rate ended up being really a critical parameter for determining that maximum velocity.
+
+
+424
+01:10:06.695 --> 01:10:07.315
+Jill McNitt-Gray: Hmm.
+
+
+425
+01:10:08.075 --> 01:10:19.155
+Manny Azizi: And so, we decided to try to shift it by doing these temperature perturbations, where we can increase the deactivation rate as the system gets hotter.
+
+
+426
+01:10:19.405 --> 01:10:24.555
+Manny Azizi: So, here are the patterns we see at 10 degrees and at 30 degrees.
+
+
+427
+01:10:24.835 --> 01:10:35.375
+Manny Azizi: What you'll notice is at 30 degrees, because the muscle can develop force much more rapidly, we get this initial shortening right there.
+
+
+428
+01:10:35.575 --> 01:10:38.724
+Manny Azizi: Before the tendon stretches the muscle.
+
+
+429
+01:10:39.265 --> 01:10:45.965
+Manny Azizi: Whereas at 10 degrees, because the muscle is being kind of slow, we're not seeing that initial shortening happen.
+
+
+430
+01:10:46.375 --> 01:10:48.795
+Manny Azizi: And so, in fact, …
+
+
+431
+01:10:49.755 --> 01:10:55.345
+Manny Azizi: That early shift in the position of where the muscle's operating, that's no longer there.
+
+
+432
+01:10:55.985 --> 01:11:00.815
+Manny Azizi: And then, more importantly, as we change our…
+
+
+433
+01:11:00.995 --> 01:11:08.015
+Manny Azizi: properties, what we see is that, okay, that fascicle shortening is much less at 10 degrees early on.
+
+
+434
+01:11:08.095 --> 01:11:26.295
+Manny Azizi: But then later on, we find that the fascicle lengthening is a little bit more when we have it at higher, at, higher temperatures, and the rate at which it's being loaded is significantly higher as well. So, ….
+
+
+435
+01:11:26.355 --> 01:11:30.594
+Jill McNitt-Gray: The stretch rate applied to our muscle fascicles.
+
+
+436
+01:11:30.595 --> 01:11:35.475
+Manny Azizi: Increases as temperature increases, because we're increasing the deactivation rate.
+
+
+437
+01:11:36.395 --> 01:11:37.714
+Manny Azizi: And in fact.
+
+
+438
+01:11:37.825 --> 01:11:51.515
+Manny Azizi: those two things, so this was the relaxation rate that we quantified in our, in our experiments. Really consistent pattern across those two variables. To me, this not only explains
+
+
+439
+01:11:51.615 --> 01:12:02.444
+Manny Azizi: okay, well, what makes sense in terms of protecting the muscles? It also explains an interesting pattern in the literature, where some folks have shown that
+
+
+440
+01:12:02.515 --> 01:12:12.514
+Manny Azizi: Fast, fast glycolytic fiber types tend to have more propensity for eccentric muscle damage than slow oxidative fibers.
+
+
+441
+01:12:12.575 --> 01:12:28.155
+Manny Azizi: That, to me, is consistent with the idea that if the tendon is loading the muscle, that rate really depends on the muscle's relaxation rate, and if you increase that relaxation rate, you're increasing the rate at which the tendon loads the muscle.
+
+
+442
+01:12:31.725 --> 01:12:33.054
+Manny Azizi: Does that make sense there?
+
+
+443
+01:12:34.215 --> 01:12:35.724
+Jill McNitt-Gray: Say that one more time.
+
+
+444
+01:12:36.005 --> 01:12:38.195
+Jill McNitt-Gray: So, the relaxation rate….
+
+
+445
+01:12:38.675 --> 01:12:57.575
+Manny Azizi: So, as you increase the rate of relaxation, that drop in force is really the re… is equivalent to the recoil of the tendon, right? You're… so then you're recoiling… you're allowing the tendon to recoil faster if you are… if your muscle is relaxing faster.
+
+
+446
+01:12:59.735 --> 01:13:00.595
+Manny Azizi: Okay.
+
+
+447
+01:13:01.025 --> 01:13:02.675
+Manny Azizi: Last but not least.
+
+
+448
+01:13:02.735 --> 01:13:15.865
+Manny Azizi: Here's in vivo data of that same phenomena, where we have a turkey that's dropping from the ceiling. We took it up about 2 meters high, maybe it was 1.5 meters, in a harness, no wings, wings are clipped.
+
+
+449
+01:13:15.865 --> 01:13:29.245
+Manny Azizi: So it can't really slow itself down. It's a direct drop onto its hind limbs, it's a bipedal animal, and what we find is… you see that pre-activation right there? That's in the aerial phase.
+
+
+450
+01:13:29.465 --> 01:13:33.824
+Manny Azizi: So the muscle's turning on well in advance of impact.
+
+
+451
+01:13:34.245 --> 01:13:37.915
+Manny Azizi: Once impact occurs, we have that rapid rise in force.
+
+
+452
+01:13:38.495 --> 01:13:47.405
+Manny Azizi: However, at impact, when we have a rapid rise in force and an ankle that's flexing, and we're measuring activity from the extensors.
+
+
+453
+01:13:48.055 --> 01:13:50.765
+Manny Azizi: We see our muscle fibers
+
+
+454
+01:13:51.075 --> 01:13:58.994
+Manny Azizi: shortening, like we did in our isolated muscle preparation. So in this case, our fascicle lengths are shortening.
+
+
+455
+01:13:59.445 --> 01:14:09.375
+Manny Azizi: Even though our ankle angle is flexing, which would tend to stretch our muscle fibers. So this is really energy going into the tendon at impact.
+
+
+456
+01:14:10.025 --> 01:14:16.224
+Manny Azizi: Whereas later on, as the muscle begins, as we get to the sort of forced decay phase.
+
+
+457
+01:14:17.525 --> 01:14:25.105
+Manny Azizi: Here, we see that that's when our muscle fascicle gets stretched. So during force rise.
+
+
+458
+01:14:25.345 --> 01:14:43.885
+Manny Azizi: we're not stretching the muscle, the muscle's shortening, but during force decay or relaxation, that's when we start to see the stretch. We would argue that that is a much slower stretch applied to the muscle fascicles than would otherwise be occurring without having that tendon in the middle.
+
+
+459
+01:14:44.965 --> 01:14:47.225
+Manny Azizi: You can sort of see that
+
+
+460
+01:14:47.475 --> 01:14:54.585
+Manny Azizi: the MTU power is shown here in black, that input energy into the MTU is
+
+
+461
+01:14:54.585 --> 01:15:10.435
+Manny Azizi: you know, 600 watts per kilogram, but the input power into our muscle fascicles is more like 200 watts per kilogram. So, we're really buffering the mechanical power input, we're attenuating that power that's being applied directly to
+
+
+462
+01:15:10.515 --> 01:15:16.604
+Manny Azizi: our muscles. And so this schematic simply shows that as we're coming down. When we land.
+
+
+463
+01:15:16.605 --> 01:15:31.765
+Manny Azizi: The ankle flexes, stretches that tendon while the muscle is actually shortening, then the tendon recoils, allowing, imparting that stretch onto the muscle in a much more predictable and more, and safer way.
+
+
+464
+01:15:32.635 --> 01:15:33.985
+Manny Azizi: Okay.
+
+
+465
+01:15:34.825 --> 01:15:37.234
+Manny Azizi: I've talked for an hour 20.
+
+
+466
+01:15:37.595 --> 01:15:40.584
+Manny Azizi: Let's see what Kisa has to say.
+
+
+467
+01:15:41.885 --> 01:16:00.975
+Kiisa Carla Nishikawa: Sorry, I think this is all just so cool, and I'm really excited about it, but I was just gonna say, I think it would be really, really interesting in this particular experiment to see how much of, like, the… the MTU force is due to, like, the viscosity
+
+
+468
+01:16:01.215 --> 01:16:03.114
+Kiisa Carla Nishikawa: of the tendon.
+
+
+469
+01:16:03.115 --> 01:16:27.885
+Kiisa Carla Nishikawa: in addition to the elastic force. So, like, one of my little pet peeves is that, you know, we do these stretches, and we measure the force, and we tend to assume that everything is just a spring, but I think, like, this is a case where the time constants and the viscoelastic behavior could be super, super important in determining the dynamics.
+
+
+470
+01:16:29.385 --> 01:16:34.985
+Manny Azizi: I… I don't disagree. I think that's… that's absolutely true.
+
+
+471
+01:16:35.845 --> 01:16:40.774
+Manny Azizi: Certainly, Tenth, you know, at the very least.
+
+
+472
+01:16:40.885 --> 01:16:50.174
+Manny Azizi: 10% of that energy is going to be dissipated by the tendon itself, because it's got hysteresis, probably more like 20, plus
+
+
+473
+01:16:50.175 --> 01:17:08.835
+Manny Azizi: I don't think we've really studied the behaviors under faster, more sort of physiological, rates to see if that hysteresis is… what the number is in terms of once you start to really push the rate of loading up, some…
+
+
+474
+01:17:09.235 --> 01:17:12.844
+Manny Azizi: So, I agree. And…
+
+
+475
+01:17:13.255 --> 01:17:26.245
+Manny Azizi: the stiffness of the system could change as a function of the loading velocity as well. That's probably something we could look at, because in this experiment, we did have drops of, I think.
+
+
+476
+01:17:26.595 --> 01:17:43.875
+Manny Azizi: half a meter, one meter, and one and a half meter height drops for the bird. And so, the loading rates are going to differ to some degree, and we could potentially back out some of the tendon properties and compare them across those conditions.
+
+
+477
+01:17:44.645 --> 01:17:45.325
+Manny Azizi: Er….
+
+
+478
+01:17:45.325 --> 01:17:48.095
+Jill McNitt-Gray: Are you able to look at what's happening above?
+
+
+479
+01:17:48.295 --> 01:18:00.115
+Jill McNitt-Gray: just the ankle? Because that, like, things in human landings, the ankle will bottom out at some point. You'll hit max dorsiflexion, but this is where the other rest of the system comes in play.
+
+
+480
+01:18:00.265 --> 01:18:05.175
+Manny Azizi: We can, but we didn't, is the… the….
+
+
+481
+01:18:05.175 --> 01:18:08.324
+Jill McNitt-Gray: Is it hard to… I imagine it just adds layers of compliance.
+
+
+482
+01:18:08.735 --> 01:18:10.105
+Jill McNitt-Gray: Yeah, but….
+
+
+483
+01:18:10.105 --> 01:18:13.975
+Manny Azizi: To me, it's kind of annoying in birds, because it's, like, hidden.
+
+
+484
+01:18:14.605 --> 01:18:14.985
+Jill McNitt-Gray: ….
+
+
+485
+01:18:14.985 --> 01:18:27.165
+Manny Azizi: So, in terms of joint dynamics, you kind of lose it in the body of the bird. So, you know, you're seeing where the knee is, you know.
+
+
+486
+01:18:27.165 --> 01:18:37.225
+Manny Azizi: It's up here. So in some of those, it gets a little bit obscured by the rest of the body, but it's doable. Particularly, like.
+
+
+487
+01:18:37.325 --> 01:19:00.594
+Manny Azizi: you know, the body compresses when it lands, and so that's when it becomes obscure. That's why… that's why so many people study the ankle of birds, because it's so nicely visible, and the knee kind of gets shafted. Admittedly, this is a biarticular muscle, and so the actions of the… at the knee are also influencing the behavior of the system.
+
+
+488
+01:19:00.925 --> 01:19:11.925
+Jill McNitt-Gray: Because I… because I think that plays into Keisa's question, because it's like, it's not all responsible. This… the ankle joint is not totally responsible for everything, right? So, …
+
+
+489
+01:19:11.925 --> 01:19:29.725
+Jill McNitt-Gray: But, you know, I think this is also a great time to ask, what's enough? You know, it's like, maybe we can't see the knee, and we're not doing joint kinetics or whatever, but what we really want to know is how the team of muscles might work to deal with that inertial regulation, right? So there may be ways to get insight without having to…
+
+
+490
+01:19:29.875 --> 01:19:35.635
+Jill McNitt-Gray: make it too difficult. I don't know, just curious. No, it's doable, and I think….
+
+
+491
+01:19:35.635 --> 01:19:36.545
+Manny Azizi: …
+
+
+492
+01:19:37.535 --> 01:19:51.074
+Manny Azizi: the better way to do it is, with the… with an X-ray system, with a high-speed X-ray system, where you can visualize the skeletal elements much, much better, regardless of whether they're… they're obscured externally or not.
+
+
+493
+01:19:52.485 --> 01:20:00.114
+Kiisa Carla Nishikawa: Could you also do it, like, with Sano instead of just the ankle can… oh, I guess you have the fascicle length.
+
+
+494
+01:20:00.115 --> 01:20:07.355
+Manny Azizi: So it seems like you could back out the knee angle change from the fascicle length and the ankle angle.
+
+
+495
+01:20:07.755 --> 01:20:12.955
+Manny Azizi: … You'd have to make some assumptions about tendon stiffness, but yeah.
+
+
+496
+01:20:13.305 --> 01:20:15.884
+Kiisa Carla Nishikawa: But you know segment lengths, right? And….
+
+
+497
+01:20:15.885 --> 01:20:19.004
+Jill McNitt-Gray: You know, deformation of the whole system, so you can…
+
+
+498
+01:20:19.305 --> 01:20:22.334
+Jill McNitt-Gray: Yes. You know, things are all connected there, so it's a geometry.
+
+
+499
+01:20:22.335 --> 01:20:37.214
+Manny Azizi: No, we… in fact, we had center… center of mass sits right above the hip, and so we know exactly where our center of mass markers are relative to the hip, and so we could back out exactly, actually, where the joints are.
+
+
+500
+01:20:38.085 --> 01:20:43.285
+Kiisa Carla Nishikawa: And it seems like that on the, you know, sort of in the… well…
+
+
+501
+01:20:44.405 --> 01:20:56.285
+Kiisa Carla Nishikawa: Sort of after 100 milliseconds, when the black and the red lines are deviating, that, like, in direction particularly, that that's gonna be the effect of the knee angle, which seems like it's big.
+
+
+502
+01:20:56.285 --> 01:20:56.815
+Manny Azizi: Yeah.
+
+
+503
+01:20:57.485 --> 01:20:59.035
+Manny Azizi: Yeah, I agree.
+
+
+504
+01:21:01.235 --> 01:21:09.084
+Jill McNitt-Gray: And from a control perspective, I really enjoy the fact that there's recognition that the control might be different earlier rather than later.
+
+
+505
+01:21:09.085 --> 01:21:16.675
+Manny Azizi: Which is… right? Yeah. This gets missed all the time, and so I really appreciate this. Well, it's…
+
+
+506
+01:21:17.045 --> 01:21:31.554
+Manny Azizi: I think in terms of… sensory motor, information, I think it's… This suggests that particularly the 1B afferents.
+
+
+507
+01:21:32.365 --> 01:21:40.025
+Manny Azizi: aren't really to be trust… aren't really a… aren't really getting directly relevant information. …
+
+
+508
+01:21:40.065 --> 01:21:50.094
+Manny Azizi: in a system with a lot of compliance, present in series, simply because the MTU is stretching and the fascicle is shortening, and so,
+
+
+509
+01:21:50.105 --> 01:22:02.575
+Manny Azizi: it's really going to attenuate the proprioceptive signals that are being sent to the central nervous system. So, I think an interesting way to sort of think about this is.
+
+
+510
+01:22:03.885 --> 01:22:27.385
+Manny Azizi: does Golgi information now become much more important in these systems compared to stretch receptors, where we've largely decoupled the behavior of the fascicle from the external mechanics of the system? So, to me, I think there's something really interesting about hierarchy of information in systems where you've got a spring kind of in the middle.
+
+
+511
+01:22:28.965 --> 01:22:33.454
+Jill McNitt-Gray: And this is a part of a practice in a habitat, right? So…
+
+
+512
+01:22:33.715 --> 01:22:50.725
+Jill McNitt-Gray: because it's a predictive thing, right? You've got to turn on before contact. You kind of have to know what you're encountering, and then that plays into some of the foot position relative to center mass trajectory, and are you in the ranges of step lengths and rates that you prefer, or now have we pushed you beyond?
+
+
+513
+01:22:50.725 --> 01:22:59.484
+Jill McNitt-Gray: So this is the part, some of the Summer Institute stuff that Craig McGown's group and Clint's been doing in the field will feed nicely into the conversation.
+
+
+514
+01:22:59.485 --> 01:23:01.205
+Manny Azizi: Absolutely. Great.
+
+
+515
+01:23:01.305 --> 01:23:02.885
+Manny Azizi: Yeah, I think…
+
+
+516
+01:23:03.185 --> 01:23:14.755
+Manny Azizi: this… this part really brought a couple things to my mind when I… when I put it together. One was that… that the limits of… of stretch receptors and the information they send, but also.
+
+
+517
+01:23:14.755 --> 01:23:33.674
+Manny Azizi: If you're not stretching the… if you're not able to stretch the fascicles at any reasonable velocity, it also has implications for things like residual force enhancement and passive force enhancement, if you're sort of buffering the… the fascicles from experiencing much stretch in vivo.
+
+
+518
+01:23:33.685 --> 01:23:40.245
+Manny Azizi: So, it… It's… yeah, it's a system that's buffered by sort of a viscoelastic spring.
+
+
+519
+01:23:42.915 --> 01:23:58.484
+Manny Azizi: Okay, I think that's all I had. I just wanted to rehash where we've been. We can conserve power, we can amplify it, or we can attenuate it utilizing in-series elastic elements, which really should be thought of as viscoelastic.
+
+
+520
+01:24:00.025 --> 01:24:07.235
+Manny Azizi: Okay, we have 2 minutes left. I think maybe we can give that back to folks, but I will put the feedback
+
+
+521
+01:24:07.415 --> 01:24:12.485
+Manny Azizi: the workshop feedback, QR code up for people who need it.
+
+
+522
+01:24:15.095 --> 01:24:19.935
+Victoria Wood: Great, thank you so much. This was a great presentation. I know I learned a lot, so I appreciate it.
+
+
+523
+01:24:19.935 --> 01:24:20.744
+Manny Azizi: Thank you, Victoria.
+
+
+524
+01:24:20.745 --> 01:24:23.044
+Jill McNitt-Gray: Thank you, Manny. Thank you, guys.
+
+
+525
+01:24:23.935 --> 01:24:25.085
+Victoria Wood: Alright, bye everyone.
+
+
+526
+01:24:25.095 --> 01:24:26.214
+Manny Azizi: Alright, bye-bye.
+
+
+

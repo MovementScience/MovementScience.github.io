@@ -22,4 +22,4 @@ TBD
 
 Download the code used in this workshop:
 
--   [Jupyter Notebook file ](..//resources/WorkLoops101/IMSI Work Loop Workshop Jupyter Notebook.ipynb)
+-   [Jupyter Notebook file](..//resources/WorkLoops101/IMSI%20Work%20Loop%20Workshop%20Jupyter%20Notebook.ipynb)

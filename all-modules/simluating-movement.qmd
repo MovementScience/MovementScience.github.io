@@ -3,12 +3,15 @@ title: "So you want to simulate movement?"
 toc: false
 presenter: [Dr. Christian Hubicki]
 complexity: beginner
-topic: []
+topic: [simulation, mathematical modeling, biomechanics]
+keywords: [dynamical systems, Euler's method, ordinary differential equations, spring-loaded inverted pendulum, numerical integration]
 ---
 
 ## Learning objectives
 
-TBD
+1. Explain that simulating movement means numerically solving differential equations that describe how a system's state changes over time.
+2. Apply Euler's method to step a simple first-order ordinary differential equation forward in time using a small, fixed time step.
+3. Describe how to convert a second-order equation of motion into a system of first-order ODEs using state variables, and identify the state vector for a simple spring-mass system.
 
 ## Workshop
 
@@ -17,3 +20,33 @@ TBD
 </iframe>
 
 ***Presented by:*** *Dr. Christian Hubicki*
+
+## Overview
+
+### Why Simulate Movement?
+
+Simulation connects experimental biology and robotics. Computer simulations of locomotion complement physical experiments by allowing researchers to test hypotheses and explore conditions that would be impossible or unethical to impose on a live animal. The guinea fowl—studied experimentally to understand how animals manage unexpected perturbations during locomotion—is one example of a biological system where simulation provides insight beyond what experiments alone can offer.
+
+### Math Models Come in Many Forms
+
+Mathematical models of movement range from highly detailed musculoskeletal models—such as those built in OpenSim, a platform downloaded hundreds of thousands of times—to very simple reduced-order models. A 2006 study by Monica Daley used a spring-loaded inverted pendulum (SLIP) model to examine how a guinea fowl maintains stability when stepping into an obstacle. Simple models are also central to robotics: a bio-inspired reduced-order model can, in principle, yield animal-like movement as a consequence of optimizing control within that model.
+
+### Dynamical Systems and Differential Equations
+
+Simulating movement requires a mathematical model of the system—specifically, a dynamical system: a system whose behavior changes over time and is described by the time derivatives of key variables called state variables. These relationships are expressed as differential equations, equations that contain derivatives. A simple population growth model (dP/dt = αP) provides a first example: its exact analytical solution is the exponential function P(t) = Ce^(αt), where the constant C is set by the initial condition (the starting population). The pendulum, by contrast, has a governing differential equation (d²θ/dt² = −(g/L)sin(θ)) that cannot be solved exactly using elementary functions such as sines, cosines, or exponentials—a long-established mathematical fact—and therefore requires a different approach.
+
+### Euler's Method: Numerical Approximation
+
+Because many differential equations cannot be solved analytically, simulation relies on approximate numerical solutions. The simplest such approach is Euler's method, derived directly from the definition of a derivative: X(t+Δt) ≈ X(t) + (dX/dt)·Δt. By repeatedly applying this update rule with a small time step Δt, the simulation steps forward through time. Implementing Euler's method in MATLAB with the population growth model produces an exponential growth curve consistent with the analytical solution. Accuracy depends critically on the size of the time step: using too large a Δt causes a simulated conservative spring system to spuriously gain energy over time, while reducing Δt substantially corrects the error.
+
+### State Variables and Systems of First-Order ODEs
+
+Euler's method as derived applies only to first-order ordinary differential equations (ODEs)—equations containing a single time derivative. Mechanical systems governed by Newton's second law (F = ma) typically involve second-order derivatives (acceleration). To handle this, state variables are introduced: by defining both position and velocity as separate variables, a second-order equation can be rewritten as two coupled first-order ODEs. The collection of these variables is called the state vector. The state vector must contain exactly the information needed to simulate the system forward in time—for a moving mass, that is its current position and velocity.
+
+### Simulating the 1D Spring-Loaded Inverted Pendulum in MATLAB
+
+A one-dimensional SLIP model consists of a point mass on a spring under gravity, with vertical position Z(t) as the single coordinate. The equation of motion, derived by summing forces (gravity downward and spring force upward), is MZ̈ = −Mg + K(L₀ − Z), where M is the mass, g is gravitational acceleration, K is the spring constant, and L₀ is the spring rest length. Defining state variables Z and dZ/dt yields two coupled first-order ODEs. Implementing Euler's method in MATLAB uses a for loop with pre-allocated output arrays for efficiency. MATLAB's built-in ODE45 solver provides a more accurate alternative: it automatically adapts its time step by comparing the results of 4th- and 5th-order Runge-Kutta integration steps, producing more accurate simulations without manual tuning of Δt.
+
+### Hybrid Dynamics and Liftoff
+
+To allow the SLIP model to leave the ground and hop, the system must be treated as a hybrid dynamical system—one whose governing equations switch between different forms depending on the phase of motion (stance versus flight). In the flight phase, only gravity acts on the mass; in stance, the spring force is also active. This switching condition can be implemented as a simple conditional in MATLAB: when height Z exceeds the spring rest length L₀, the spring force is set to zero. The physical basis for this condition is that ground contact is unilateral—the ground can only push upward and cannot pull the foot downward—so once the spring passes its natural length and would otherwise tug the mass earthward, the foot leaves the ground and flight begins. ODE45 includes an event detection feature that can identify the precise moment of liftoff or touchdown, enabling more accurate handling of these phase transitions than a simple conditional check within a fixed-step loop.

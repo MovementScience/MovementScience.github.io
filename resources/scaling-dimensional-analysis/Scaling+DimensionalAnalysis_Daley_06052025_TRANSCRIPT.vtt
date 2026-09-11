@@ -1,0 +1,2687 @@
+WEBVTT
+
+1
+00:00:02.471 --> 00:00:07.320
+Monica Daley (she, her): Okay, is everybody seeing just my slides right now?
+
+
+2
+00:00:08.681 --> 00:00:09.391
+Victoria Wood: Yep.
+
+
+3
+00:00:09.691 --> 00:00:10.311
+Caitlin Bemis: Yes.
+
+
+4
+00:00:10.311 --> 00:00:14.360
+Monica Daley (she, her): At some point I will be showing, trying to show different things on my computer. So
+
+
+5
+00:00:15.361 --> 00:00:33.191
+Monica Daley (she, her): so, Hi, everyone for those who don't know me yet. I'm Monica Daly, and I am a professor at University of California, Irvine, in the Department of Ecology and Evolutionary Biology, and I'm also the Director of the Integrative Movement Sciences Institute.
+
+
+6
+00:00:33.321 --> 00:00:44.861
+Monica Daley (she, her): So I'm excited for the summer. It's an interesting time for us here at Uci, because we haven't finished our spring term yet. So it's a little bit hectic with.
+
+
+7
+00:00:44.901 --> 00:01:13.500
+Monica Daley (she, her): because many of our Summer Institute partners are on the semester system and have already finished. But we're in the quarter system, and we haven't yet finished. So it's been an interesting kind of transition period here where we're starting up workshops. But we haven't actually started projects here yet, so if there are any trainees in the room who are doing projects at Uc. Irvine, you haven't heard from me much yet, but don't worry. You will before we actually get started.
+
+
+8
+00:01:13.981 --> 00:01:22.631
+Monica Daley (she, her): So today I proposed a very broad topic for the original title. And it's a little bit too big. Scaling
+
+
+9
+00:01:22.731 --> 00:01:31.040
+Monica Daley (she, her): is really generally the topic of considering how function changes with size, and
+
+
+10
+00:01:31.091 --> 00:01:59.311
+Monica Daley (she, her): we often use dimensionless quantities in the analysis of changing function with changing size. But since that's a very big topic that can be applied to many different problems. I'm really going to focus today on one area that is familiar to me because we have lots of we do lots of studies of bipedal locomotion in our lab and specifically bipedal locomotion in ground birds. So I'll be using some data sets
+
+
+11
+00:01:59.331 --> 00:02:05.480
+Monica Daley (she, her): from our own lab to illustrate principles of scaling in like a terrestrial locomotion
+
+
+12
+00:02:05.521 --> 00:02:14.510
+Monica Daley (she, her): and using a data set on ground birds that we used from a big meta analysis of the data available on ground birds from the literature.
+
+
+13
+00:02:15.031 --> 00:02:35.411
+Monica Daley (she, her): So these birds illustrated here are the study species that we have had in the lab at some point in time, ranging from little Bob White. Quail and pheasants up to ostriches. Ostriches are pretty expensive and difficult to keep in the lab, so we don't have them anymore. We mostly work on
+
+
+14
+00:02:35.661 --> 00:02:49.020
+Monica Daley (she, her): guinea fowl, which are an intermediate size bird. But okay, before we get started for the trainees, you should go ahead and sign in. So please use this QR. Code to register your attendance
+
+
+15
+00:02:49.151 --> 00:02:53.481
+Monica Daley (she, her): as we get started. How long do I need to keep this up. I don't know.
+
+
+16
+00:02:58.441 --> 00:03:00.431
+Monica Daley (she, her): Let me know when you've got it
+
+
+17
+00:03:04.471 --> 00:03:06.800
+Monica Daley (she, her): all right. See.
+
+
+18
+00:03:08.741 --> 00:03:25.670
+Monica Daley (she, her): I'm trying to arrange things here so I can see people. So if you have any questions as we go. Please do feel free to just unmute yourself and speak up, or you can raise your hand, but I can't promise. I'll be able to see everybody when you raise your hand, because I'm sharing my screen. Okay?
+
+
+19
+00:03:26.351 --> 00:03:27.151
+Monica Daley (she, her): So
+
+
+20
+00:03:28.331 --> 00:03:38.370
+Monica Daley (she, her): some of the a lot of the work we do starts at the whole animal level, trying to think about how animals move in terms of their whole body dynamics.
+
+
+21
+00:03:38.461 --> 00:03:43.601
+Monica Daley (she, her): And one of the questions that we have asked is, how does locomotion
+
+
+22
+00:03:43.671 --> 00:04:12.031
+Monica Daley (she, her): vary with body size and among terrestrial mammals? Size can range over a 10 to the 6 fold range from the tiniest trues up to the elephant up to elephants, and so scaling has been used to try to understand how the mechanical demands of movement and function in terms of gait change with body size.
+
+
+23
+00:04:12.751 --> 00:04:13.791
+Monica Daley (she, her): But
+
+
+24
+00:04:14.251 --> 00:04:32.690
+Monica Daley (she, her): I'm not going to be able to address all of the scaling issues today. I'll try to give an overview of the general principles. And first, st I wanted to kind of take a minute to think about what we already know about gate from our own personal experiences, because we spend a lot of our time moving about in the world, right for those of you who
+
+
+25
+00:04:32.871 --> 00:04:57.580
+Monica Daley (she, her): maybe this is like a generational thing. I don't know how many people in the room are familiar with Monty Python, but those of my generation at least, will know this famous skit. You can look it up on Youtube from Monty Python about the Ministry of silly walks. And it's a pretty funny skit, because it's a lot of physical comedy where people
+
+
+26
+00:04:57.701 --> 00:05:04.110
+Monica Daley (she, her): are just who are in the work in the ministry of silly walks, basically tried to compete with each other for the silliest walk.
+
+
+27
+00:05:04.361 --> 00:05:11.070
+Monica Daley (she, her): And really it highlights how you know, there are many different possible ways to move
+
+
+28
+00:05:11.581 --> 00:05:16.851
+Monica Daley (she, her): that we don't use right and yet, and and in fact.
+
+
+29
+00:05:16.971 --> 00:05:25.241
+Monica Daley (she, her): people walk in very, very specific ways and run in specific ways, and there's only a few gates that bipeds use. Right?
+
+
+30
+00:05:25.401 --> 00:05:29.271
+Monica Daley (she, her): So if I show you even a snap of still shots
+
+
+31
+00:05:29.401 --> 00:05:38.940
+Monica Daley (she, her): of various bipeds right here you can look at a single image and often tell whether they're walking, for example, or running
+
+
+32
+00:05:39.151 --> 00:05:40.061
+Monica Daley (she, her): right?
+
+
+33
+00:05:40.481 --> 00:05:41.551
+Monica Daley (she, her): So
+
+
+34
+00:05:41.761 --> 00:05:51.591
+Monica Daley (she, her): legged animals only move in a few specific ways. And these specific ways of moving are termed called gates. Right bipedal gaits.
+
+
+35
+00:05:51.731 --> 00:06:00.200
+Monica Daley (she, her): striding bipeds like humans typically use walking and running gaits, walking at slow speeds and running at higher speeds. And
+
+
+36
+00:06:00.291 --> 00:06:20.640
+Monica Daley (she, her): interestingly, if you look across very diverse species of bipeds, they use remarkably similar walking and running gaits. So you can see in this image from an old lab picture of a graduate student and an ostrich in the lab, right and in the left picture you can see from the still shot.
+
+
+37
+00:06:20.641 --> 00:06:30.591
+Monica Daley (she, her): 2 legs are in contact with the ground, and they're in the middle of a walking gate, and on the right you can see that there's an aerial phase, and they're in a running gate.
+
+
+38
+00:06:31.091 --> 00:06:37.461
+Monica Daley (she, her): Now, if you actually just put a motion capture marker on the hip
+
+
+39
+00:06:37.601 --> 00:06:39.460
+Monica Daley (she, her): of an ostrich in the hip
+
+
+40
+00:06:39.581 --> 00:06:53.481
+Monica Daley (she, her): of a human and watched the motions, they would be remarkably similar walking and running. You would not be able to tell whether it was an ostrich or a human. If you just watched the center of mass motions during the gait cycle. Right?
+
+
+41
+00:06:54.675 --> 00:06:56.381
+Monica Daley (she, her): So you can kind of see
+
+
+42
+00:06:56.891 --> 00:07:09.670
+Monica Daley (she, her): that despite the fact that we can move. It's possible to move in many ways. We actually typically move in very specific ways. And that suggests that the physics of the system
+
+
+43
+00:07:10.141 --> 00:07:15.001
+Monica Daley (she, her): play an important role in governing how we move right? And in humans.
+
+
+44
+00:07:15.231 --> 00:07:24.040
+Monica Daley (she, her): we learn that through lots of experience, this is a still frame of my son Thomas about 9 years ago, when he was learning to walk. Right. Humans take
+
+
+45
+00:07:24.221 --> 00:07:30.250
+Monica Daley (she, her): hundreds of thousands of steps to learn to walk the way they do. But interestingly, ostriches
+
+
+46
+00:07:30.391 --> 00:07:44.360
+Monica Daley (she, her): can walk and run 24 h after birth, and yet use similar gaits as humans, so very different development, very different evolutionary histories. And yet we do converge as adults to similar gaits.
+
+
+47
+00:07:46.701 --> 00:07:50.490
+Monica Daley (she, her): So if we characterize the motions of walking and running
+
+
+48
+00:07:52.691 --> 00:08:16.770
+Monica Daley (she, her): you can. The classic way to characterize gaits is to look at foot contact patterns. But the modern way of looking at gates is to consider the dynamics of the center of mass during the gate cycle. And so I'll talk a little bit about that. And in the 2 gates that we are going to be talking about today because it's relevant to the data set we'll be using are walking and running gaits right.
+
+
+49
+00:08:17.021 --> 00:08:24.130
+Monica Daley (she, her): illustrating walking on the left. It's characterized by alternating right and left foot contacts.
+
+
+50
+00:08:24.491 --> 00:08:32.361
+Monica Daley (she, her): and in walking there is a double support phase where both feet are in contact with the ground. Right?
+
+
+51
+00:08:33.577 --> 00:08:44.250
+Monica Daley (she, her): One of the characteristic quantities that we use to characterize gates is called duty factor, which is the ratio of stance duration to stride duration
+
+
+52
+00:08:44.551 --> 00:09:13.201
+Monica Daley (she, her): where, if the duty factor is greater than 0 point 5, that means that there's a double support period. And if the duty factor is less than 0 point 5, that means that there's an aerial phase when there are no feet in contact with the ground. And that is what characterizes running gates. Right? So we can see illustration of the foot contact pattern for running gait here where there's still alternating right and left contacts. But there's an aerial phase between contacts.
+
+
+53
+00:09:15.469 --> 00:09:18.971
+Monica Daley (she, her): But it's not just the foot contact patterns that distinguish them.
+
+
+54
+00:09:19.967 --> 00:09:23.601
+Monica Daley (she, her): Walking is actually characterized by
+
+
+55
+00:09:23.941 --> 00:09:42.230
+Monica Daley (she, her): the dynamics of the center of mass in which the body can be approximated as a point mass that is vaulting over a relatively stiff limb. In humans we tend to lock out the knee. So the leg is relatively rigid and operates at a fixed length during the stance phase.
+
+
+56
+00:09:42.271 --> 00:09:57.760
+Monica Daley (she, her): and that results in dynamics of an inverted pendulum like motion during the stance phase. And so we can look at the mechanical energy fluctuations of the center of mass during that stance phase.
+
+
+57
+00:09:57.791 --> 00:10:16.710
+Monica Daley (she, her): It would look like this, something like this graph here. This is from real guinea fowl data where we're plotting. In this case the gravitational potential energy in blue and the and the dashed line and the kinetic energy of the center of mass in red.
+
+
+58
+00:10:16.971 --> 00:10:44.471
+Monica Daley (she, her): And they are alternating and out of phase, so as the leg vaults. When it 1st contacts the ground, it is at its maximum velocity, and then it converts kinetic energy to potential energy as it reaches its peak, height, mid stance. And that's when the potential energy is highest. And then it reaccelerates and converts that potential energy back to kinetic energy in the second half of stance.
+
+
+59
+00:10:44.791 --> 00:11:00.780
+Monica Daley (she, her): So there's an passive energy exchange between the kinetic and potential energies due to this inverted pendulum like motion which helps to make the stand space of walking very economical in that. It doesn't require external mechanical work on the center of mass of the body.
+
+
+60
+00:11:02.201 --> 00:11:13.570
+Monica Daley (she, her): But as animals increase in speed. The magnitude of the kinetic energy is much, much greater than the magnitude of potential energy fluctuations in stance
+
+
+61
+00:11:14.304 --> 00:11:18.961
+Monica Daley (she, her): and we get different energy fluctuation patterns. So typically in running.
+
+
+62
+00:11:19.481 --> 00:11:26.960
+Monica Daley (she, her): running is characterized basically as a bouncing motion rather than a vaulting motion.
+
+
+63
+00:11:27.231 --> 00:11:33.101
+Monica Daley (she, her): And what we find is it's like bouncing a mass on a spring.
+
+
+64
+00:11:33.251 --> 00:11:43.610
+Monica Daley (she, her): So in this case the leg acts as a compliant element and center of mass height decreases during the stance phase rather than increasing.
+
+
+65
+00:11:43.891 --> 00:11:56.291
+Monica Daley (she, her): And so, as a result, the body height, being lowest at mid stance, means that now both kinetic energy and potential energy are decreasing. During the 1st half of stance
+
+
+66
+00:11:56.711 --> 00:11:59.591
+Monica Daley (she, her): and increasing during the second half of stance.
+
+
+67
+00:11:59.751 --> 00:12:20.341
+Monica Daley (she, her): and this in phase. Cycling of gravitational potential energy and kinetic energy means that there can't be an exchange between the 2. But instead, in this, in running gates, there is energy stored in the elastic springs, in the connective tissues, like the tendons and ligaments and muscles of the limb.
+
+
+68
+00:12:20.341 --> 00:12:30.921
+Monica Daley (she, her): Right? And so there's in phase fluctuations of the external mechanical energies that are out of phase with energy stored in the spring which isn't shown here.
+
+
+69
+00:12:31.537 --> 00:12:37.001
+Monica Daley (she, her): Because we can't typically measure it from directly from external measures.
+
+
+70
+00:12:39.041 --> 00:12:44.781
+Monica Daley (she, her): So walking and running are characterized by these different dynamics.
+
+
+71
+00:12:45.041 --> 00:12:50.181
+Monica Daley (she, her): and they also, along with these different dynamics, have different ground reaction force patterns.
+
+
+72
+00:12:50.331 --> 00:12:57.751
+Monica Daley (she, her): So we can look at the ground reaction force patterns in these gates and in walking. This is
+
+
+73
+00:12:57.901 --> 00:13:21.311
+Monica Daley (she, her): typical of the walking gait. We see that there is a double support phase. This is a walking gate with a duty factor of 0 point 6. So there's about a 10% overlap in the contact periods. The vertical force fluctuates around one body weight. This is force in Newtons divided by body mass times gravity to make it in multiples of body weight.
+
+
+74
+00:13:22.061 --> 00:13:24.861
+Monica Daley (she, her): and the fore aft force is
+
+
+75
+00:13:25.091 --> 00:13:35.071
+Monica Daley (she, her): when the foot, when the leg 1st comes into contact with ground. There's a deceleration. And so that's the initial half of stance decelerating. And then
+
+
+76
+00:13:35.311 --> 00:13:41.081
+Monica Daley (she, her): the it. There's a reacceleration in the second half of stance shown here. Okay.
+
+
+77
+00:13:41.231 --> 00:13:43.500
+Monica Daley (she, her): As animals increase in speed.
+
+
+78
+00:13:43.741 --> 00:14:00.981
+Monica Daley (she, her): the duration of contact decreases, and the magnitude of the vertical forces increases to compensate, because animals have to support their body weight against gravity in the vertical direction. So we have these characteristic forces in running.
+
+
+79
+00:14:01.131 --> 00:14:17.141
+Monica Daley (she, her): One thing to note is that simply is that when speed increases, the fluctuations in vertical force increase in magnitude, right and the peak forces and the minimum forces, the peak forces increase and the minimum forces decrease.
+
+
+80
+00:14:17.321 --> 00:14:21.470
+Monica Daley (she, her): So these are examples of the characteristic ground reaction forces in running.
+
+
+81
+00:14:22.121 --> 00:14:39.190
+Monica Daley (she, her): I'm showing an example of grounded running, because that's a gait that birds use. Humans actually don't use grounded running. We have an abrupt transition between walking and aerial running. We don't ever run with overlapping limb support, but birds actually do.
+
+
+82
+00:14:39.341 --> 00:14:47.800
+Monica Daley (she, her): and if you can, we can discuss some of the reasons for that. Once we kind of talk about all of these principles, but it's an interesting observation
+
+
+83
+00:14:47.951 --> 00:14:54.880
+Monica Daley (she, her): that in particular small ground birds use grounded running for most of their speed range.
+
+
+84
+00:14:55.021 --> 00:14:55.831
+Monica Daley (she, her): But
+
+
+85
+00:14:56.181 --> 00:15:15.261
+Monica Daley (she, her): in any case, points here to highlight are the peak forces increase in speed in a very predictable way that relates to the magnitude of forces required to support body weight and the duty factor associated with that gait pattern. Okay?
+
+
+86
+00:15:16.271 --> 00:15:17.461
+Monica Daley (she, her): And so
+
+
+87
+00:15:18.101 --> 00:15:39.261
+Monica Daley (she, her): based on the empirical observations of the mechanical energy fluctuations and the force patterns. Simple physical models for gait have been developed. And so the classic model that's been used to characterize running gaits or bouncing motion that are characterized by bouncing motions is the mass spring model. Okay?
+
+
+88
+00:15:39.521 --> 00:16:08.111
+Monica Daley (she, her): And interestingly, this mass spring model can predict the ground reaction force patterns, not just for bipeds that have one limb in contact with the ground at a time, but also for multi-legged animals. If you approximate the entire system as a point mass with all of the legs acting together during a trotting gait, type, gait, all of the legs in contact act together as one virtual leg right?
+
+
+89
+00:16:08.651 --> 00:16:15.701
+Monica Daley (she, her): And in the so these, this mass spring model fits the ground reaction force, magnitude.
+
+
+90
+00:16:16.171 --> 00:16:24.521
+Monica Daley (she, her): the fluctuations in peak force and their timing based on the body mass.
+
+
+91
+00:16:24.671 --> 00:16:39.560
+Monica Daley (she, her): gravity acting on that body mass in the vertical direction, and the specific contact geometries of the leg during and their duration during stance, but in steady gaits
+
+
+92
+00:16:39.771 --> 00:17:02.031
+Monica Daley (she, her): you can predict the magnitude of the forces based on simple physics, like very simple Newtonian physics, that over one complete gait cycle. The average vertical forces have to support body weight to maintain stable, steady locomotion. And so we're considering the vertical direction as a ground reaction force in the Y direction. Here
+
+
+93
+00:17:02.161 --> 00:17:26.900
+Monica Daley (she, her): the average vertical force has to equal the mass of the body. Times G and the horizontal foraft forces have to average out to 0 to maintain a steady speed. And so you can see an example of some real ground reaction force traces and the mass spring modeled ground reaction forces which approximate the basic magnitude and timing very well, although it doesn't get all of the details right because it's such a simple model.
+
+
+94
+00:17:28.581 --> 00:17:30.621
+Monica Daley (she, her): So this model.
+
+
+95
+00:17:30.731 --> 00:17:41.531
+Monica Daley (she, her): although it's extremely simple, right? It's been used to demonstrated that it can characterize gaits over a diverse range of species with many different body sizes, many different legs.
+
+
+96
+00:17:42.241 --> 00:17:54.981
+Monica Daley (she, her): And but in this this simple case this model only has one leg right? And so the original versions of this model could not characterize walking gaits
+
+
+97
+00:17:55.141 --> 00:17:55.961
+Monica Daley (she, her): and
+
+
+98
+00:17:57.251 --> 00:18:11.841
+Monica Daley (she, her): So a couple of decades ago, people started considering whether, if you add a leg to the mass spring model, whether you can model walking gates with a similar with similar dynamics. Right?
+
+
+99
+00:18:12.031 --> 00:18:15.998
+Monica Daley (she, her): And so a paper by Geyer,
+
+
+100
+00:18:16.891 --> 00:18:26.161
+Monica Daley (she, her): Seyfarth, and Blicken examined this by developing highlighting, that although we characterize walking and running with separate dynamics.
+
+
+101
+00:18:26.341 --> 00:18:46.550
+Monica Daley (she, her): The inverted pendulum model does not fully predict the actual shape of the ground reaction forces that's observed in walking a simple, inverted pendulum that has no compliance would have ground reaction forces that look like the trace in red. But, in fact, the walking
+
+
+102
+00:18:46.971 --> 00:18:51.351
+Monica Daley (she, her): forces have this characteristic M shape associated with it.
+
+
+103
+00:18:52.021 --> 00:19:15.580
+Monica Daley (she, her): And so what they did was developed, basically a combination model which you can think about is combining. So it's basically taking a mass spring model and adding 2 legs, and then, considering how variation in contact conditions and leg stiffness can model multiple walking and running gaits.
+
+
+104
+00:19:16.061 --> 00:19:20.671
+Monica Daley (she, her): So this schematic figure, here sorry.
+
+
+105
+00:19:21.711 --> 00:19:28.890
+Monica Daley (she, her): shows the the model that they used. It's a simple point mass with 2 legs.
+
+
+106
+00:19:30.066 --> 00:19:31.041
+Monica Daley (she, her): When
+
+
+107
+00:19:31.301 --> 00:19:40.870
+Monica Daley (she, her): in a single support phase of walking there's only one leg in contact. And then it's illustrating different time points where in double support, in walking, there's 2 legs in contact.
+
+
+108
+00:19:41.181 --> 00:19:45.821
+Monica Daley (she, her): there's a transition. And then there's a transition to another single leg contact.
+
+
+109
+00:19:46.061 --> 00:20:11.770
+Monica Daley (she, her): And what they they found is that with different combinations of leg contact, angle, and leg stiffness, they can replicate the ground reaction force patterns for walking. And so what this is saying is that walking is not strictly like an inverted pendulum. It's a spring loaded inverted pendulum, where there is some compliance in the leg as it contacts the ground.
+
+
+110
+00:20:11.971 --> 00:20:17.341
+Monica Daley (she, her): and to replicate the mass. Spring dynamics that we observe in
+
+
+111
+00:20:17.961 --> 00:20:29.601
+Monica Daley (she, her): human and other biped animal walking. You can replicate that characteristic M shape that's observed in experiments by
+
+
+112
+00:20:31.951 --> 00:21:01.031
+Monica Daley (she, her): varying different leg contact angles and the stiffness of the leg. And so this is just showing some characteristic sort of shapes that emerge from this model for different combinations. They all have the same total mechanical energy of the body, but they have different contact conditions and different leg stiffness conditions which replicates different kinds of characteristic ground reaction force shapes that replicates some of the variation we see in gates with speed as well.
+
+
+113
+00:21:01.821 --> 00:21:21.390
+Monica Daley (she, her): So these studies have shown that basically walking and running are characterized by a combination of inverted pendulum and mass spring dynamics, and that you can put them together as a spring loaded, inverted pendulum model. That accounts for both of these dynamics and their coupling.
+
+
+114
+00:21:23.251 --> 00:21:39.730
+Monica Daley (she, her): So that's some background to try to kind of frame what we what the field thinks, how the field thinks about bipedal gaits. Now I want to turn to some actual data and observations from animals.
+
+
+115
+00:21:40.161 --> 00:22:05.570
+Monica Daley (she, her): And so we're interested in the question of how does movement change with body size? That question could be asked in the context of development? And there are some studies that have looked at changes in human gait with increasing size. This is an example of Edgar the ostrich, at several weeks old, and at 12 months old
+
+
+116
+00:22:05.981 --> 00:22:20.340
+Monica Daley (she, her): you can see that the characteristic motions of the body generally look very similar, but obviously the small bird is operating its legs at a higher frequency and taking shorter steps because of its smaller size. Right?
+
+
+117
+00:22:21.241 --> 00:22:33.291
+Monica Daley (she, her): And so we want to be able to rigorously analyze and compare right gates between these animals. And so we need to think about, how do we actually meaningfully compare animals of different size?
+
+
+118
+00:22:33.661 --> 00:22:40.800
+Monica Daley (she, her): We can also look at different species of different size. So these are videos of a Bob white quail.
+
+
+119
+00:22:40.961 --> 00:22:49.730
+Monica Daley (she, her): I think the picture is technically a different kind of quail, but a Very has a similar dingle whapper. And
+
+
+120
+00:22:51.701 --> 00:22:58.321
+Monica Daley (she, her): if you watch these videos for a minute, you might notice that there are.
+
+
+121
+00:22:58.721 --> 00:23:06.680
+Monica Daley (she, her): do appear to be some difference in the characteristics of movement between our small quail and an ostrich.
+
+
+122
+00:23:06.971 --> 00:23:26.250
+Monica Daley (she, her): The ostrich running tends to have a more vertically bouncy running gait, where the quail tends to have sort of a flatter trajectory where it's using longer strides and sort of keeping its center mass less bouncy in comparison. Right?
+
+
+123
+00:23:26.641 --> 00:23:40.901
+Monica Daley (she, her): But we want to be able to rigorously compare this right. And so I want to talk about some of the the basics of scaling, and how we build up the tools to rigorously compare that, and then we'll apply them to a data set on these birds. Okay?
+
+
+124
+00:23:41.771 --> 00:23:50.860
+Monica Daley (she, her): All right. So one of the 1st principles that we need to consider when we're trying to compare animals of different sizes. The principle of isometric scaling
+
+
+125
+00:23:51.650 --> 00:24:04.021
+Monica Daley (she, her): or it's also called geometric similarity. I'm using a cube to illustrate this principle. But then you can imagine this is if you took a quail, and you just, you know.
+
+
+126
+00:24:04.440 --> 00:24:08.210
+Monica Daley (she, her): magnified it in size without changing its shape. Right?
+
+
+127
+00:24:08.420 --> 00:24:12.250
+Monica Daley (she, her): Then how would all of the dimensions change right?
+
+
+128
+00:24:12.371 --> 00:24:27.440
+Monica Daley (she, her): So when we think about isometric scaling, if we take the same cube right just to illustrate the concepts here right? And we have a cube of length, one in arbitrary units, and then we double its length on all sides.
+
+
+129
+00:24:27.641 --> 00:24:44.381
+Monica Daley (she, her): and consider how that changes the cube right. It will have length of 2 on all sides, right? The larger cube. When we consider cross-sectional areas that would be taking a length times a width right? And that's going to be length squared.
+
+
+130
+00:24:44.521 --> 00:24:51.680
+Monica Daley (she, her): so the one with twice the length will have 4 times the cross-sectional area.
+
+
+131
+00:24:52.001 --> 00:24:54.440
+Monica Daley (she, her): and then, when, if we take consider volume
+
+
+132
+00:24:54.651 --> 00:25:05.920
+Monica Daley (she, her): or mass, if we we consider the mass to be proportional to volume, if we assume that all vertebrates are made of similarly dense tissues, right
+
+
+133
+00:25:06.371 --> 00:25:09.591
+Monica Daley (she, her): then the cube that has twice the length.
+
+
+134
+00:25:10.080 --> 00:25:14.031
+Monica Daley (she, her): The the volume is the length times, the width times the height.
+
+
+135
+00:25:14.491 --> 00:25:21.991
+Monica Daley (she, her): and that is then therefore length cubed, which is 8, and so this is a fundamental challenge of getting bigger.
+
+
+136
+00:25:22.291 --> 00:25:28.571
+Monica Daley (she, her): that mass scales much more rapidly than cross-sectional area.
+
+
+137
+00:25:28.761 --> 00:25:41.871
+Monica Daley (she, her): So if we take the ratio of cross-sectional area to mass for this simple example, right? The larger cube has half the ratio right? Because we can consider the
+
+
+138
+00:25:42.081 --> 00:25:55.561
+Monica Daley (she, her): cross-sectional area increasing length squared, the volume increasing as the length cubed and the ratio cross-sectional area to mass as one over length with increasing size. Here.
+
+
+139
+00:25:55.951 --> 00:25:57.700
+Monica Daley (she, her): why is this? A problem?
+
+
+140
+00:25:58.031 --> 00:26:05.751
+Monica Daley (she, her): Well, strengths in musculoskeletal tissues are. Strength is proportional to the cross-sectional area which scales with length. Squared
+
+
+141
+00:26:05.991 --> 00:26:20.220
+Monica Daley (she, her): loading is proportional to body mass, which scales as length cubed, and so the ratio decreases with increasing size, meaning that if animals get larger without changing shape they become relatively weaker. Right?
+
+
+142
+00:26:20.421 --> 00:26:34.441
+Monica Daley (she, her): So as animals get larger, they will be placing relatively higher stresses on their tissues, unless they do something to change their shape to compensate for this.
+
+
+143
+00:26:34.691 --> 00:26:47.361
+Monica Daley (she, her): And so this is one of the reasons that it has been observed that there's actually a significant change in posture with body size. I won't get into all of the details of that, but this has been observed across mammals as well as birds.
+
+
+144
+00:26:47.581 --> 00:27:07.560
+Monica Daley (she, her): weight scales much faster than strength, and this posture aligns. The large animals have a more upright, straight-legged posture, which aligns the bones in the vertical direction that helps to support body weight and reduce the muscular effort required to stand upright.
+
+
+145
+00:27:08.731 --> 00:27:11.260
+Monica Daley (she, her): And so we know that posture changes
+
+
+146
+00:27:12.161 --> 00:27:20.800
+Monica Daley (she, her): so that raises a question, do they actually maintain functionally or dynamically similar movements? And how can we characterize that?
+
+
+147
+00:27:21.171 --> 00:27:22.895
+Monica Daley (she, her): So we've covered
+
+
+148
+00:27:23.691 --> 00:27:42.421
+Monica Daley (she, her): geometric scaling? But to address whether they function in a similar way. We need a theory that actually considers the dynamics of movement. And so Alexander, in the seventies and eighties developed the dynamic similarity, hypothesis for understanding locomotion.
+
+
+149
+00:27:43.351 --> 00:27:58.591
+Monica Daley (she, her): And this was also, you know, variations of this been used to analyze, to develop the mass spring model that I introduced to you earlier. Right? So the dynamic similarity hypothesis is that if locomotor function remains, this constant.
+
+
+150
+00:27:58.731 --> 00:28:20.401
+Monica Daley (she, her): then size related differences will disappear once the data are normalized to dimensionless values, using a standard set of characteristic physical quantities. And so what we need to do is decide what the appropriate set of characteristic physical quantities are for legged terrestrial locomotion. Okay?
+
+
+151
+00:28:20.511 --> 00:28:25.771
+Monica Daley (she, her): And so, based on these papers, they highlight these
+
+
+152
+00:28:25.891 --> 00:28:29.971
+Monica Daley (she, her): characteristic dynamics of walking like an inverted pendulum
+
+
+153
+00:28:30.151 --> 00:28:34.051
+Monica Daley (she, her): and running like a bouncing mass, spring system.
+
+
+154
+00:28:34.261 --> 00:28:46.320
+Monica Daley (she, her): and all walking and running gaits can be considered a combination of spring loaded, inverted pendulum dynamics, a coupling between those 2 modes of motion.
+
+
+155
+00:28:46.611 --> 00:28:54.991
+Monica Daley (she, her): And so we can think about what the characteristic physical quantities are for the for these dynamics. Okay.
+
+
+156
+00:28:55.291 --> 00:28:58.411
+Monica Daley (she, her): if we think about just the inverted pendulum for a minute.
+
+
+157
+00:29:00.661 --> 00:29:14.010
+Monica Daley (she, her): we can. The pendulum. The angular frequency of a pendulum is related to the square root of G over l. The length of the pendulum. In this case the length is leg length.
+
+
+158
+00:29:15.481 --> 00:29:19.841
+Monica Daley (she, her): and if we wanted to calculate a characteristic
+
+
+159
+00:29:20.221 --> 00:29:32.290
+Monica Daley (she, her): stance period, then it's going to be the inverse of that right. So the period of the pendulum is going to be related to 2 pi square root of
+
+
+160
+00:29:32.571 --> 00:29:38.606
+Monica Daley (she, her): L over. G, okay, so that's 1 characteristic
+
+
+161
+00:29:39.561 --> 00:29:52.200
+Monica Daley (she, her): physical quantity for the system, and it relates to leg length and gravity. Okay, so we can. We probably want to use that in our standard set of characteristic physical quantities. Right
+
+
+162
+00:29:52.341 --> 00:30:01.200
+Monica Daley (she, her): now we can consider. If we consider the mass spring system, we have to think about the resonance of the characteristic bounce of a mass spring system.
+
+
+163
+00:30:01.341 --> 00:30:11.121
+Monica Daley (she, her): and the equation for the the characteristic frequency of a mass spring system is related to the stiffness of the system.
+
+
+164
+00:30:11.291 --> 00:30:14.850
+Monica Daley (she, her): Square root of the stiffness of the system divided by its mass.
+
+
+165
+00:30:15.041 --> 00:30:15.631
+Monica Daley (she, her): Okay?
+
+
+166
+00:30:16.421 --> 00:30:23.861
+Monica Daley (she, her): And so if we think about if we want to characterize one stance period, that's actually a half
+
+
+167
+00:30:24.161 --> 00:30:30.513
+Monica Daley (she, her): a cycle of a residence bounce, because that we were talking about here a half cycle.
+
+
+168
+00:30:31.251 --> 00:30:40.401
+Monica Daley (she, her): then you take this half of this quantity. So you have the stance characteristic stance period should relate to
+
+
+169
+00:30:40.561 --> 00:30:44.010
+Monica Daley (she, her): pi times the square root of body mass over
+
+
+170
+00:30:44.401 --> 00:30:57.991
+Monica Daley (she, her): K vert. Right? So that the characteristic stance period is the inverse of this. So we have body mass as an important quantity in the system and the stiffness. So what is vertical stiffness related to
+
+
+171
+00:30:58.331 --> 00:31:17.210
+Monica Daley (she, her): if we think about stiffness is characterized by the change in force over the change in length of this system. So we're just considering the vertical direction for the moment. So we're talking about vertical stiffness. So it would be the change in vertical force over the vertical change in leg length.
+
+
+172
+00:31:17.431 --> 00:31:38.930
+Monica Daley (she, her): And that's proportional, because we know that in the vertical direction the animal has to support its body weight against gravity. We know this force is proportional to mass times gravity right? And we know that the we can consider that the leg length, the compression of the leg is going to relate to leg length
+
+
+173
+00:31:39.031 --> 00:31:54.951
+Monica Daley (she, her): in some way right? If we think that in a dynamically, functionally similar system that the overall compression of the leg would be some consistent fraction of the resting length of the leg potentially right.
+
+
+174
+00:31:55.541 --> 00:32:01.720
+Monica Daley (she, her): So, considering these characteristic time periods and the parameters involved in them.
+
+
+175
+00:32:02.341 --> 00:32:05.160
+Monica Daley (she, her): Mcmahon and Chang proposed
+
+
+176
+00:32:05.571 --> 00:32:33.770
+Monica Daley (she, her): body, mass, leg, length, and gravity as the set of base quantities for legged terrestrial locomotion from which you can derive your dimensionless quantities. Okay, so they propose that if you normalize everything based on this set of base quantities, then you can calculate dimensionless quantities for all of the gate characteristics and all of the size variation, related variation should collapse. Okay.
+
+
+177
+00:32:34.131 --> 00:33:02.410
+Monica Daley (she, her): now, this is a hypothesis, because, of course, we know that animals don't scale in a perfectly geometrically similar way, and we also expect that they might not function in a perfectly symmetric similar way. But this is basically a model based hypothesis that we can use, then to compare our data and see, we can test the hypothesis that the variation collapses when we normalize based on these quantities. So if you work through
+
+
+178
+00:33:02.891 --> 00:33:05.681
+Monica Daley (she, her): going through these quantities, all lengths.
+
+
+179
+00:33:06.001 --> 00:33:13.991
+Monica Daley (she, her): distances, traveled, etc. would be normalized, based on nominal leg length. We can talk about different ways to measure that.
+
+
+180
+00:33:14.431 --> 00:33:23.910
+Monica Daley (she, her): because that is an area that has. You know, you have to make some choices. Forces are going to be normalized by body mass times, gravity. Mg.
+
+
+181
+00:33:24.351 --> 00:33:42.971
+Monica Daley (she, her): time is going to be. We're going to use the characteristic pendular period as our time base. You can derive time in different ways, and people have argued about that. But we're going to say that because all of the motions the gates are characterized as a spring-loaded, inverted pendulum.
+
+
+182
+00:33:43.001 --> 00:33:55.831
+Monica Daley (she, her): That inverted pendulum motion is an important component, and in the swing phase which we haven't talked about, the leg does act as a pendulum. So this quantity is an important characteristic.
+
+
+183
+00:33:56.291 --> 00:34:05.010
+Monica Daley (she, her): Frequency is just the inverse of the time characteristic. So it's going to be related to G, the square root of g divided by leg, length.
+
+
+184
+00:34:05.381 --> 00:34:10.631
+Monica Daley (she, her): and velocity can be calculated as
+
+
+185
+00:34:10.921 --> 00:34:23.141
+Monica Daley (she, her): g times leg length, the square root of g times leg length. So if you think about working this out in standard Si units. G is going to be 9.8 1 meters per second. Squared
+
+
+186
+00:34:23.421 --> 00:34:32.450
+Monica Daley (she, her): leg length is going to be in units of meters. And so you'll have meters squared per second squared. And when you take the square root of that, it's meters per second.
+
+
+187
+00:34:33.731 --> 00:34:34.781
+Monica Daley (she, her): So
+
+
+188
+00:34:35.071 --> 00:34:47.840
+Monica Daley (she, her): to normalize things to dimensionless quantities. You would calculate these values and then divide all of your quantities in Si units by these values to make them dimensionless quantities. Okay.
+
+
+189
+00:34:49.921 --> 00:35:17.781
+Monica Daley (she, her): these are some of the basic ones you can also calculate, based on these same reasoning, how to normalize energy or work. Right? If we have, I'm using simple terminology that I know Simon won't approve of here, but just trying to keep things basic here. For today. Work is energy or work are going to be related times to force times, a displacement. And so we can use Mgl.
+
+
+190
+00:35:18.478 --> 00:35:22.731
+Monica Daley (she, her): to normalize energy and work values. Okay.
+
+
+191
+00:35:23.671 --> 00:35:41.250
+Monica Daley (she, her): one additional quantity I want to talk about which is used a lot in the literature is frud number. Frude number is a dimensionless quantity that's based on the ratio of inertial forces to gravitational forces in an inverted pendulum.
+
+
+192
+00:35:41.371 --> 00:35:48.920
+Monica Daley (she, her): It's also used something to do with fluid dynamics originally. But I'm not a fluid dynamicist. So I'm not going to get into that?
+
+
+193
+00:35:50.230 --> 00:35:51.281
+Monica Daley (she, her): So
+
+
+194
+00:35:51.471 --> 00:36:08.391
+Monica Daley (she, her): because inertial forces and gravitational forces are, you know, important for determining those mechanical energy fluctuations. And so, without getting into the dynamics too much. I'll just also note that frud number can be derived by the ratio of kinetic energy to potential energy in the system.
+
+
+195
+00:36:08.691 --> 00:36:10.940
+Monica Daley (she, her): And so if you calculate that out.
+
+
+196
+00:36:11.161 --> 00:36:16.121
+Monica Daley (she, her): The kinetic energy is body mass, times V squared, Mv squared.
+
+
+197
+00:36:16.311 --> 00:36:31.770
+Monica Daley (she, her): and the potential energy is going to be body mass, times, gravity, times, leg, length, body mass cancels right? Because it's on both sides. And so you have fruit number is V squared over G times leg length.
+
+
+198
+00:36:32.391 --> 00:36:37.021
+Monica Daley (she, her): and then I'll also just note that the square root of fruit number
+
+
+199
+00:36:37.181 --> 00:36:44.691
+Monica Daley (she, her): is V over square root of G times, leg length, which is the dimensionless velocity. Okay?
+
+
+200
+00:36:45.191 --> 00:37:08.951
+Monica Daley (she, her): And so some people use frude number as the dimensionless velocity. And other people will normalize, just using dimensionless velocity. So just note that those are. They are related to each other, and they're equal to each other at one right, because the square root of one is one, but they do then differ from each other. When you go, when you're at dimensionless speeds
+
+
+201
+00:37:09.481 --> 00:37:11.510
+Monica Daley (she, her): or fruit numbers away from one.
+
+
+202
+00:37:12.061 --> 00:37:22.461
+Monica Daley (she, her): But the reason fruit number is important is because it is physically impossible for a legged system to walk at fruit numbers greater than one.
+
+
+203
+00:37:22.791 --> 00:37:32.311
+Monica Daley (she, her): because the centripetal acceleration accelerations of the point of the point mass rotating about its foot as it does the arc
+
+
+204
+00:37:33.118 --> 00:37:38.130
+Monica Daley (she, her): during stance will exceed the gravitational acceleration required to
+
+
+205
+00:37:38.251 --> 00:37:40.211
+Monica Daley (she, her): to keep the system on the ground.
+
+
+206
+00:37:40.451 --> 00:37:47.491
+Monica Daley (she, her): and an aerial phase occurs. So as speed increases and approaches fruit numbers of one.
+
+
+207
+00:37:47.671 --> 00:37:59.871
+Monica Daley (she, her): The system naturally starts the an inverted pendulum system naturally would fly off the ground unless there's some actual anchor to keep it on the ground. So that would require an additional force.
+
+
+208
+00:38:01.121 --> 00:38:01.961
+Monica Daley (she, her): Okay?
+
+
+209
+00:38:02.211 --> 00:38:04.231
+Monica Daley (she, her): So now we're going to get to data.
+
+
+210
+00:38:04.821 --> 00:38:11.850
+Monica Daley (she, her): So I want to tell you a little bit about the data. If you haven't already, I'd encourage you to download
+
+
+211
+00:38:11.981 --> 00:38:19.201
+Monica Daley (she, her): the files from the shared drive to your desktop. If you actually want to look at the data
+
+
+212
+00:38:19.481 --> 00:38:33.881
+Monica Daley (she, her): I'm going to be using Matlab. Some of you may not have experience with Matlab yet, so I'm going to just walk through and run it. But you can also try to run the Matlab code on your own computer if you do have Matlab.
+
+
+213
+00:38:34.261 --> 00:38:52.901
+Monica Daley (she, her): So we have data from ground birds over a 500 fold range in body mass from our own study. And we've also compiled literature data from 21 different additional species over that span, a size range of 2,500. Okay?
+
+
+214
+00:38:54.151 --> 00:39:06.371
+Monica Daley (she, her): So if you kind of if you, I'm gonna just pause here and stop sharing so that I can show you some of the data and let give you a minute to open the files and have a look around yourself.
+
+
+215
+00:39:06.481 --> 00:39:09.161
+Monica Daley (she, her): I just stop sharing that.
+
+
+216
+00:39:09.501 --> 00:39:14.230
+Monica Daley (she, her): And while you're downloading the data. Does anybody have any questions or discussion points?
+
+
+217
+00:39:29.861 --> 00:39:35.211
+Monica Daley (she, her): No, okay.
+
+
+218
+00:39:35.211 --> 00:39:37.001
+Caitlin Bemis: See the data in action.
+
+
+219
+00:39:37.001 --> 00:39:37.571
+Monica Daley (she, her): See the day.
+
+
+220
+00:39:37.571 --> 00:39:39.351
+Caitlin Bemis: I see it applied before.
+
+
+221
+00:39:39.351 --> 00:39:43.199
+Monica Daley (she, her): Okay, we're gonna do the application. Okay, so
+
+
+222
+00:39:43.901 --> 00:39:47.501
+Monica Daley (she, her): how to best do this. I've got a ton of windows. But 1st
+
+
+223
+00:39:47.721 --> 00:39:55.770
+Monica Daley (she, her): let's see if you go to, I might just have to share my desktop to make this sorry if I'm not looking at the camera for a bit.
+
+
+224
+00:39:57.421 --> 00:40:02.271
+Monica Daley (she, her): I'm going to share my whole desktop and
+
+
+225
+00:40:02.701 --> 00:40:06.309
+Monica Daley (she, her): hope there's not some weird stuff in the background.
+
+
+226
+00:40:10.251 --> 00:40:13.830
+Monica Daley (she, her): Do you see this whole screen here right now?
+
+
+227
+00:40:14.081 --> 00:40:15.041
+Monica Daley (she, her): Okay.
+
+
+228
+00:40:15.231 --> 00:40:17.900
+Monica Daley (she, her): And so we have a folder
+
+
+229
+00:40:18.421 --> 00:40:29.850
+Monica Daley (she, her): with the workshop materials and everybody can. Can you see the folder that I'm highlighting? It's hard because I don't see the what you're seeing. So okay.
+
+
+230
+00:40:30.671 --> 00:40:36.411
+Monica Daley (she, her): so we have a folder. The 1st thing I'd like you to do is open the burn, Jeffrey daily table one
+
+
+231
+00:40:37.131 --> 00:40:39.941
+Monica Daley (she, her): and double click on that. Open it up.
+
+
+232
+00:40:40.661 --> 00:40:44.581
+Monica Daley (she, her): And Nope, I already have it open. So that.
+
+
+233
+00:40:44.751 --> 00:40:46.740
+Monica Daley (she, her): And so I have it here.
+
+
+234
+00:40:47.181 --> 00:40:53.100
+Monica Daley (she, her): And this basically just show it's the metadata for all of the compiled data sets.
+
+
+235
+00:40:53.401 --> 00:40:57.640
+Monica Daley (she, her): and it shows the author the year it was published.
+
+
+236
+00:40:57.811 --> 00:41:09.891
+Monica Daley (she, her): the common name, species, name, classification, and some morphometric data that we're going to be using to calculate our dimensionless quantities. Okay, so
+
+
+237
+00:41:10.341 --> 00:41:19.820
+Monica Daley (she, her): most importantly, body mass and hip height. Now, one thing that has been debated in the literature is how to
+
+
+238
+00:41:20.731 --> 00:41:35.700
+Monica Daley (she, her): how to measure leg length in terrestrial animals consistently, because standing hip height is the standard way to do that. But, as I noted earlier. There's a change in posture with body size, and so hip height.
+
+
+239
+00:41:35.831 --> 00:41:37.980
+Monica Daley (she, her): measuring hip height confounds
+
+
+240
+00:41:38.191 --> 00:41:57.651
+Monica Daley (she, her): a body, size, effect, and a posture effect in one measure right. And so one thing that people have questioned is whether it's appropriate to use hip height, or, for example, some of the segment lengths as the standard length. And so in the paper that we got this data from in the review paper, we analyzed
+
+
+241
+00:41:58.321 --> 00:42:20.940
+Monica Daley (she, her): multiple possibilities for how you actually characterize leg length. But for today, we're going to use hip height and body mass, just because that's the actual standard approach most people have used in the literature. Okay, so this has the metadata. The second data sheet that we're going to be using in the code is called compiled data, spsl, stride period and stride length.
+
+
+242
+00:42:21.629 --> 00:42:27.601
+Monica Daley (she, her): If you open that, you will see that it has.
+
+
+243
+00:42:27.891 --> 00:42:36.930
+Monica Daley (she, her): It's an excel file with a separate sheet for every study that has the speed, stride, period, and stride length for every species in the data set.
+
+
+244
+00:42:37.701 --> 00:42:52.510
+Monica Daley (she, her): And so the Matlab script is going to load in all of the data for all of these different studies. But you're welcome to browse and look at the individual. Study data sets at your leisure. Okay?
+
+
+245
+00:42:53.381 --> 00:43:04.351
+Monica Daley (she, her): And then the next thing to open is the Matlab script. So it's called comparative avian scaling all birds. 25. And you can open that
+
+
+246
+00:43:04.741 --> 00:43:05.970
+Monica Daley (she, her): double click.
+
+
+247
+00:43:10.101 --> 00:43:12.661
+Monica Daley (she, her): Can y'all see my code now?
+
+
+248
+00:43:13.081 --> 00:43:13.851
+Monica Daley (she, her): Okay.
+
+
+249
+00:43:14.551 --> 00:43:24.241
+Monica Daley (she, her): so the 1st thing to do, if you're trying to run this on your own computer will be to within your Matlab workspace. I'm gonna move things over so you can see.
+
+
+250
+00:43:24.351 --> 00:43:29.221
+Monica Daley (she, her): My, oh, got things trying to automatically.
+
+
+251
+00:43:31.781 --> 00:43:41.830
+Monica Daley (she, her): Okay is to in your workspace. Go browse to the folder where you downloaded your data to make sure that it's the current directory in Matlab.
+
+
+252
+00:43:42.121 --> 00:43:45.771
+Monica Daley (she, her): So I've already done that.
+
+
+253
+00:43:46.791 --> 00:43:57.631
+Monica Daley (she, her): And so I'm just gonna go back here right? So you should be able to see the data files in the current folder here, and then you can go back to the script
+
+
+254
+00:44:00.711 --> 00:44:17.010
+Monica Daley (she, her): and we're just gonna kind of 1st operate things cell by cell, the 1st cell. Here. It just sets the directory for loading in the data, using the functions in this script. So you can just click.
+
+
+255
+00:44:17.241 --> 00:44:22.400
+Monica Daley (she, her): If you have this open, you can click, run section and it should run the current section. That's highlighted.
+
+
+256
+00:44:22.932 --> 00:44:28.381
+Monica Daley (she, her): And then I'm going to run the next section. This
+
+
+257
+00:44:28.691 --> 00:44:36.941
+Monica Daley (she, her): I didn't have time to clean this up because I dug this out of the archives. But what this is doing is reading in the excel file.
+
+
+258
+00:44:37.418 --> 00:44:45.181
+Monica Daley (she, her): That has all of the Literature gate data summary in a slightly different format than the nice clean data table I showed you.
+
+
+259
+00:44:45.894 --> 00:44:49.771
+Monica Daley (she, her): But it has the same basic data.
+
+
+260
+00:44:49.901 --> 00:44:50.981
+Monica Daley (she, her): And
+
+
+261
+00:44:51.231 --> 00:44:58.970
+Monica Daley (she, her): this don't worry about the details of this part of the script. But basically what it's doing is it's loading in the metadata as well as
+
+
+262
+00:44:59.391 --> 00:45:07.060
+Monica Daley (she, her): body mass, hip height and the other morphometric variables from the data set. Okay, so if you run that block
+
+
+263
+00:45:08.911 --> 00:45:11.831
+Monica Daley (she, her): and you've done that. Actually, I'm gonna just go.
+
+
+264
+00:45:18.291 --> 00:45:24.120
+Monica Daley (she, her): So I'm gonna have a fresh start here so that you can see things appear correctly when I run things
+
+
+265
+00:45:25.741 --> 00:45:31.880
+Monica Daley (she, her): from the section. After you run that section, you should have some data populated into your Matlab workspace.
+
+
+266
+00:45:32.021 --> 00:45:32.841
+Monica Daley (she, her): Okay?
+
+
+267
+00:45:33.691 --> 00:45:40.850
+Monica Daley (she, her): And then we're going to load in the individual date gate gate data sets from our spreadsheet here.
+
+
+268
+00:45:42.441 --> 00:45:44.411
+Monica Daley (she, her): And that will take a minute
+
+
+269
+00:45:44.521 --> 00:45:48.400
+Monica Daley (she, her): because it's big. But it's once you have that
+
+
+270
+00:45:48.501 --> 00:45:51.406
+Monica Daley (she, her): you have even more data in your
+
+
+271
+00:45:52.441 --> 00:46:00.610
+Monica Daley (she, her): in your workspace. But most notably we have our gate data in Si units
+
+
+272
+00:46:00.721 --> 00:46:03.431
+Monica Daley (she, her): in a structure in Matlab. So here.
+
+
+273
+00:46:03.751 --> 00:46:15.971
+Monica Daley (she, her): speed. This would be in meters per second stride period in seconds stride, frequency in Hertz stride, length in meters, and the Max. The maximum velocity that was observed in the data set.
+
+
+274
+00:46:16.661 --> 00:46:27.151
+Monica Daley (she, her): And we also have the normalized gate data which has been calculated using a function in the Matlab code
+
+
+275
+00:46:27.351 --> 00:46:44.601
+Monica Daley (she, her): to normalize all the data into dimensionless quantities, using the quantities that I went through in the presentation. Okay? And so now, we will have the same variables. But they're in dimensionless quantities in this one. Okay.
+
+
+276
+00:46:45.071 --> 00:46:54.161
+Monica Daley (she, her): So next, once it's loaded, we're going to plot the data in Si units. And look at the variation.
+
+
+277
+00:46:57.501 --> 00:46:59.021
+Monica Daley (she, her): Can everybody see the graph?
+
+
+278
+00:47:00.231 --> 00:47:01.221
+Monica Daley (she, her): Okay?
+
+
+279
+00:47:02.561 --> 00:47:23.530
+Monica Daley (she, her): So here's the data, and it's color coded so that the larger animals are in red colors, and the smaller animals are in blue colors. The species list is here with some abbreviations. Don't worry about it too much. The really small quail are in blue, and the ostrich data sets are in orangey reds.
+
+
+280
+00:47:24.168 --> 00:47:26.911
+Monica Daley (she, her): We're compiling data from multiple studies.
+
+
+281
+00:47:27.811 --> 00:47:36.851
+Monica Daley (she, her): What are some observations you can make about this data set. So this is where I want people to actually get interact a little bit more interactive because I've been talking too much.
+
+
+282
+00:47:38.121 --> 00:47:44.421
+Monica Daley (she, her): What observations do you make about the data? If we're comparing across species here? So we have stride, frequency
+
+
+283
+00:47:45.071 --> 00:47:47.941
+Monica Daley (she, her): and stride length against speed.
+
+
+284
+00:47:49.171 --> 00:47:53.121
+Monica Daley (she, her): For something like 21 different species.
+
+
+285
+00:48:04.761 --> 00:48:06.638
+Monica Daley (she, her): Anybody gonna help me out here.
+
+
+286
+00:48:08.471 --> 00:48:12.130
+Caitlin Bemis: It seems like they take different approaches
+
+
+287
+00:48:12.641 --> 00:48:15.161
+Caitlin Bemis: to increase their speed, based on size.
+
+
+288
+00:48:15.761 --> 00:48:19.921
+Monica Daley (she, her): Yeah. So if you're looking in terms of Si quantities, right?
+
+
+289
+00:48:20.468 --> 00:48:24.510
+Monica Daley (she, her): There are certainly differences in the stride, frequency and stride length
+
+
+290
+00:48:24.631 --> 00:48:30.311
+Monica Daley (she, her): relationships in terms of the slope of each of them with with speed. If when we're looking at in
+
+
+291
+00:48:31.168 --> 00:48:36.501
+Monica Daley (she, her): in Si units, so any other thoughts.
+
+
+292
+00:48:41.941 --> 00:48:49.051
+Monica Daley (she, her): and it's certainly the case that the small animals are operating at absolutely higher frequencies, right
+
+
+293
+00:48:49.681 --> 00:48:52.461
+Monica Daley (she, her): compared to our ostrich
+
+
+294
+00:48:52.651 --> 00:49:06.051
+Monica Daley (she, her): ostrich, operating a very low frequencies in Si units, and also has a shallower slope. Right? So if we compare the data in absolute terms.
+
+
+295
+00:49:08.421 --> 00:49:17.540
+Monica Daley (she, her): you can see that they have different relationships, and also the maximum speed is increases with size.
+
+
+296
+00:49:17.901 --> 00:49:27.361
+Monica Daley (she, her): Yeah, that was gonna be my question. So like, how do you normalize for maximum speed? Right? Because you can only compare so far in body size.
+
+
+297
+00:49:27.501 --> 00:49:34.710
+Caitlin Bemis: For the smaller body, and then, like you have a much wider range. I mean, the slope is pretty low in the strides.
+
+
+298
+00:49:34.711 --> 00:49:35.381
+Monica Daley (she, her): It's actually.
+
+
+299
+00:49:35.381 --> 00:49:35.711
+Caitlin Bemis: Minimum.
+
+
+300
+00:49:35.711 --> 00:49:50.481
+Monica Daley (she, her): It's a little misleading, because I've added a an exceptionally the ostrich data set from our from one of our studies that we've included here has one of the biggest speed ranges recorded because we did it overground outside.
+
+
+301
+00:49:50.961 --> 00:49:56.590
+Monica Daley (she, her): And so one of the challenges that we always have when we're trying to compare across species is whether or not the
+
+
+302
+00:49:56.731 --> 00:50:17.081
+Monica Daley (she, her): measurements were made in comparable ways, right? And most of these studies were actually lab based studies, if you ignore. So that like this light red data set, there's actually a dark red data set of ostrich data that's over here. That's a subset of the speed range of the larger data set. And that's the ostrich data that was collected in a lab.
+
+
+303
+00:50:17.591 --> 00:50:19.630
+Monica Daley (she, her): So there's basically
+
+
+304
+00:50:20.221 --> 00:50:32.890
+Monica Daley (she, her): it is really a challenge to compare maximum speed across species, because you have to figure out how to know when you've elicited an actual maximum speed or
+
+
+305
+00:50:33.881 --> 00:50:51.260
+Monica Daley (she, her): get them to perform a similar range of speed under similar conditions, which is not really very feasible. So this is one of the big challenges. There's been a lot of work trying to compare maximum speed with body size, but I think there's always challenges with knowing when you have how you actually estimate the maximum speed
+
+
+306
+00:50:52.021 --> 00:50:52.771
+Monica Daley (she, her): right.
+
+
+307
+00:50:53.011 --> 00:50:57.121
+Jill McNitt-Gray: So could I ask a question about how they got the speed.
+
+
+308
+00:50:57.361 --> 00:51:01.511
+Jill McNitt-Gray: So let's like in the stride length, for example.
+
+
+309
+00:51:02.061 --> 00:51:05.941
+Jill McNitt-Gray: Is there more vertical velocity, you know, like.
+
+
+310
+00:51:06.371 --> 00:51:10.090
+Monica Daley (she, her): Stride length. This stride length is just based on distance traveled so.
+
+
+311
+00:51:10.091 --> 00:51:22.060
+Jill McNitt-Gray: Right. But how they got that? Is there a way to add another dimension to figure out? If did it end up being more up and down like the trajectory of the center mass shifted to achieve that. Or I'm trying to.
+
+
+312
+00:51:22.061 --> 00:51:23.841
+Monica Daley (she, her): Very simple measures here, and we'll.
+
+
+313
+00:51:23.841 --> 00:51:24.361
+Jill McNitt-Gray: Yeah.
+
+
+314
+00:51:24.361 --> 00:51:27.170
+Monica Daley (she, her): If we get to it we'll talk a little bit about that, because.
+
+
+315
+00:51:27.171 --> 00:51:27.761
+Jill McNitt-Gray: Okay. Cool.
+
+
+316
+00:51:27.761 --> 00:51:33.640
+Monica Daley (she, her): There's there are differences in that. Certainly this is, you know, these
+
+
+317
+00:51:34.261 --> 00:51:49.771
+Jill McNitt-Gray: And and some of that emerges from when we think about things in dimensionless quantities. So let's kind of looked at this graph. And you can kind of continue looking at it at your leisure. But I'm actually going to add more. So I'm going to go back to our code for a minute.
+
+
+318
+00:51:52.531 --> 00:52:05.380
+Monica Daley (she, her): And now, in the next section of the code, it's creating a graph where we plot the S data in Si units side by side with the dimensionless quantities to compare.
+
+
+319
+00:52:05.681 --> 00:52:12.460
+Monica Daley (she, her): So before I run that anybody want to guess what it's going to do to the graph like, what do you expect to happen
+
+
+320
+00:52:19.231 --> 00:52:25.131
+Monica Daley (she, her): if they were dynamically similar, what should happen.
+
+
+321
+00:52:27.721 --> 00:52:29.520
+Skylar Taylor: I'm expecting to have a similar slope.
+
+
+322
+00:52:30.761 --> 00:52:37.641
+Monica Daley (she, her): Right? So basically, our expectation based on the dynamic similarity hypothesis would be
+
+
+323
+00:52:37.811 --> 00:53:02.800
+Monica Daley (she, her): if we normalize everything to dimensionless quantities. Everything should collapse down onto a single relationship, right? All of the variation should disappear. That's our expectation. And that's basically the null hypothesis that we're trying to test right? How close do birds get to that full collapse of the data down to with the dimensionless quantities? Right? Okay? So I'm going to run it.
+
+
+324
+00:53:02.981 --> 00:53:05.231
+Monica Daley (she, her): And we'll see how it does.
+
+
+325
+00:53:12.981 --> 00:53:14.391
+Monica Daley (she, her): Can you see the graph?
+
+
+326
+00:53:18.751 --> 00:53:20.150
+Monica Daley (she, her): So what do we think
+
+
+327
+00:53:23.571 --> 00:53:25.750
+Monica Daley (she, her): anybody want to make some observations?
+
+
+328
+00:53:27.251 --> 00:53:29.890
+Monica Daley (she, her): Okay, so now look at the scale note.
+
+
+329
+00:53:30.071 --> 00:53:33.081
+Monica Daley (she, her): The scale has changed. So on the right
+
+
+330
+00:53:33.962 --> 00:53:44.650
+Monica Daley (she, her): the scale was from 0 to 12 meters per second. And now it goes from 0 to about 3 ish in the data in dimensionless speed.
+
+
+331
+00:53:45.561 --> 00:53:54.810
+Monica Daley (she, her): In terms of relative stride frequency. It go. The range is like, you know, point one to point 8 here. Okay.
+
+
+332
+00:53:55.740 --> 00:54:03.410
+Monica Daley (she, her): relative stride length. We have ranges from a little bit under one up to around 6.
+
+
+333
+00:54:03.851 --> 00:54:10.691
+Monica Daley (she, her): Okay, whereas in absolute stride, length in meters, the range was
+
+
+334
+00:54:10.951 --> 00:54:16.111
+Monica Daley (she, her): 0 to 6. So that's that. Scaling is pretty similar, I guess. But here, right.
+
+
+335
+00:54:17.741 --> 00:54:23.990
+Caitlin Bemis: I don't know, I would say potentially. There's a threshold in leg length where you begin to alter
+
+
+336
+00:54:25.251 --> 00:54:30.251
+Caitlin Bemis: the dynamics because the larger size is different, has a different pattern than the rest.
+
+
+337
+00:54:30.911 --> 00:54:34.481
+Monica Daley (she, her): Well, so what's interesting like? So here.
+
+
+338
+00:54:34.761 --> 00:54:47.870
+Monica Daley (she, her): what's interesting is that it did collapse down the variation in frequency, but and it inverted the pattern inverted the apparent trend. Okay? So where it used to look like.
+
+
+339
+00:54:48.321 --> 00:54:58.870
+Monica Daley (she, her): well, of course, small birds use higher frequencies than large birds. Now, you can see in terms of relative terms. The largest bird uses
+
+
+340
+00:54:59.379 --> 00:55:04.821
+Monica Daley (she, her): a higher frequency compared to the smaller birds which are using relatively lower frequency
+
+
+341
+00:55:05.081 --> 00:55:11.041
+Monica Daley (she, her): and in relative stride length these, the largest birds using a relatively lower stride length.
+
+
+342
+00:55:11.531 --> 00:55:19.590
+Monica Daley (she, her): Now this kind of gets back to your question, Jill, about the differences in the gate.
+
+
+343
+00:55:20.461 --> 00:55:32.790
+Monica Daley (she, her): and if you are using a more vertically bouncy gait, more of your motion in the vertical direction, it tends to correspond with a gate with relatively shorter stride lengths for your size.
+
+
+344
+00:55:33.251 --> 00:55:36.961
+Monica Daley (she, her): And so part of this difference in the stride, length, pattern reflects
+
+
+345
+00:55:37.081 --> 00:55:40.700
+Monica Daley (she, her): that difference we observe between small and large birds.
+
+
+346
+00:55:40.821 --> 00:55:52.151
+Monica Daley (she, her): that small birds are using a relatively flat center of mass trajectory and minimizing the vertical bounciness. And large birds are using a very vertically bouncy center of mass trajectory.
+
+
+347
+00:55:53.871 --> 00:55:55.001
+Monica Daley (she, her): And so
+
+
+348
+00:55:56.271 --> 00:56:06.630
+Monica Daley (she, her): we, you know, we could use model-based simulations and analysis to try to understand what that means in terms of the functional consequences for the differences in gait.
+
+
+349
+00:56:07.021 --> 00:56:15.411
+Monica Daley (she, her): But it's interesting. The that ostriches have pretty exceptionally high relative stride frequencies.
+
+
+350
+00:56:15.651 --> 00:56:30.860
+Monica Daley (she, her): and people have speculated that that's because I mean they're they're exceptional across the board. If you compare them to humans, they use much higher stride frequencies. And people have speculated that that's why they're the fastest bipeds, because they have
+
+
+351
+00:56:30.981 --> 00:56:43.181
+Monica Daley (she, her): basically some well-developed elastic mechanisms in the leg that allow them to not only cycle elastic energy during the stance phase, but use some of that elastic energy to like
+
+
+352
+00:56:43.371 --> 00:56:50.961
+Monica Daley (she, her): catapult the leg forward for the swing phase so that they're using sort of like elastic catapult mechanisms to help
+
+
+353
+00:56:51.141 --> 00:56:55.080
+Monica Daley (she, her): achieve higher stride frequencies and cycle times compared to
+
+
+354
+00:56:55.351 --> 00:56:57.570
+Monica Daley (she, her): animals that don't have those mechanisms.
+
+
+355
+00:56:58.691 --> 00:57:00.350
+Jill McNitt-Gray: So this is a
+
+
+356
+00:57:01.041 --> 00:57:08.830
+Jill McNitt-Gray: I'm not familiar with a lot of this, but I'm wondering about that time domain and bringing that up right, because, taking advantage of those elastic
+
+
+357
+00:57:09.141 --> 00:57:28.621
+Jill McNitt-Gray: properties, I keep thinking of the material properties and how it gives them what you get for the deformation that might be happening or the spring, like settings right those kind of things. And is that brought into this level this kind of an analysis like a 3rd dimension, to see what you just said graphically. Do you know what I mean?
+
+
+358
+00:57:28.621 --> 00:57:29.701
+Monica Daley (she, her): So to get that.
+
+
+359
+00:57:29.701 --> 00:57:30.590
+Jill McNitt-Gray: Yeah, it is. Yeah.
+
+
+360
+00:57:30.591 --> 00:57:33.500
+Monica Daley (she, her): Get to that level, we actually have to do simulation. So.
+
+
+361
+00:57:33.501 --> 00:57:34.111
+Jill McNitt-Gray: Okay.
+
+
+362
+00:57:35.151 --> 00:57:38.291
+Monica Daley (she, her): So if I can go back to my slides, hold on.
+
+
+363
+00:57:38.291 --> 00:57:39.690
+Jill McNitt-Gray: Want to take you off track, either.
+
+
+364
+00:57:39.691 --> 00:57:40.321
+Monica Daley (she, her): No worries.
+
+
+365
+00:57:40.321 --> 00:57:40.931
+Jill McNitt-Gray: Yeah, yeah.
+
+
+366
+00:57:40.931 --> 00:57:42.161
+Monica Daley (she, her): Transition actually.
+
+
+367
+00:57:42.161 --> 00:57:42.691
+Jill McNitt-Gray: Okay. Cool.
+
+
+368
+00:57:42.691 --> 00:57:47.891
+Monica Daley (she, her): So I'm gonna go. I'm gonna find my slides and find you again. I've got too many windows going on
+
+
+369
+00:57:53.791 --> 00:58:02.919
+Monica Daley (she, her): okay, data and code. Okay, so we've seen these graphs. Now, I put them in here just in case you want to refer to them later.
+
+
+370
+00:58:03.551 --> 00:58:23.960
+Monica Daley (she, her): and one of the things. You know, the question is like, how would you interpret the data differently? And what does it mean for function? We do need to get to model-based studies. And also I had a slide in here to prompt us to think about the problems of velocity, that measuring comparable ranges of speed that Caitlin brought up right
+
+
+371
+00:58:24.041 --> 00:58:34.451
+Monica Daley (she, her): is that we do need to consider how the data were collected. Right? This is, these are our ostriches. Were our ostriches. They're retired now, but
+
+
+372
+00:58:34.671 --> 00:58:44.220
+Monica Daley (she, her): we did overground measures for the ostriches. And so if you actually compare the data sets for the ostriches overground versus in the outside versus in the lab.
+
+
+373
+00:58:44.719 --> 00:58:46.671
+Monica Daley (she, her): This is what it looks like. So
+
+
+374
+00:58:46.911 --> 00:58:51.470
+Monica Daley (she, her): this is the A graph from the data where we were looking at walk, run, transition.
+
+
+375
+00:58:51.471 --> 00:58:53.471
+Caitlin Bemis: We don't see the graph right now.
+
+
+376
+00:58:53.480 --> 00:58:56.110
+Monica Daley (she, her): Oh, you don't see my graph. Okay, I have to
+
+
+377
+00:58:56.550 --> 00:59:01.220
+Monica Daley (she, her): thank you for speaking up. Jeez, sorry about that. Okay.
+
+
+378
+00:59:02.510 --> 00:59:07.720
+Monica Daley (she, her): so we have to consider how the data were collected. You can see this now, right? You can see my ostriches.
+
+
+379
+00:59:08.280 --> 00:59:12.104
+Monica Daley (she, her): Okay? So we collected in the ostriches.
+
+
+380
+00:59:13.120 --> 00:59:16.040
+Monica Daley (she, her): we chased him around with Atvs outside
+
+
+381
+00:59:16.160 --> 00:59:45.810
+Monica Daley (she, her): to get the high speeds basically right. And so we were able to get a higher speed range in the lab. Ostriches are actually pretty skittish, and the humans are cautious because they don't want to get disemboweled by the ostrich kicking them. So there are multiple factors that mean that the range of speed you're going to get an ostrich to do in the lab is limited. Right? So you have to think about the conditions under which you collect the data. And here you can see in Black X's are the data collected in the lab.
+
+
+382
+00:59:45.970 --> 00:59:52.740
+Monica Daley (she, her): and it's a as a relative speed range. It's very narrow compared to the data that we collected over ground.
+
+
+383
+00:59:53.120 --> 01:00:13.870
+Monica Daley (she, her): Most of the data that we see is collected in the lab. And so we'll have, you know, depending on the species, and whether it's willing to perform in that setting different speed ranges. But so we got to think about that. But wearable sensors are exciting, because we can use those to try to get overground data. So figuring out how to get good quality gate data from wearable sensors is a fun
+
+
+384
+01:00:13.910 --> 01:00:29.020
+Monica Daley (she, her): topic to think about as Mc. If we want to measure a diverse range of species and their gait patterns over a range of size, anyway. So how do we fairly compare species? Is a question. And then we want to get back to
+
+
+385
+01:00:29.150 --> 01:00:36.270
+Monica Daley (she, her): what does all of this mean? Do they have dynamically similar movements? So to answer your question, Jill, to actually
+
+
+386
+01:00:36.560 --> 01:00:43.410
+Monica Daley (she, her): analyze what this means in terms of elastic energy, cycling, mechanical work potential. You have to run simulations.
+
+
+387
+01:00:43.480 --> 01:00:55.190
+Monica Daley (she, her): So you can do that, using the characteristic. Here's the, you know, like the characteristic gate parameters for each species. You can then use the Mass spring model to model the forces
+
+
+388
+01:00:55.190 --> 01:01:17.000
+Monica Daley (she, her): as well as the energy stored in the leg spring, and the mechanical energy fluctuations involved in the gait that characterizes each of these species. Right? So here we did simulations, for, like a hypothetical range from the 100 gram quail to 100 kg ostrich.
+
+
+389
+01:01:17.090 --> 01:01:23.990
+Monica Daley (she, her): and the scaling patterns we observe is that, you know. As body mass increases.
+
+
+390
+01:01:24.260 --> 01:01:34.640
+Monica Daley (she, her): relative stride, length decreases, and relative stride, frequency increases. If you simulate that and estimate the
+
+
+391
+01:01:34.940 --> 01:01:40.250
+Monica Daley (she, her): work done associated with the gap that gate modeled, using a mass spring model.
+
+
+392
+01:01:40.610 --> 01:01:54.720
+Monica Daley (she, her): These gates that the small birds use involves much more work in the leg because you're compressing the leg spring more, and there are larger fluctuations in the fore aft forces.
+
+
+393
+01:01:55.180 --> 01:02:03.130
+Monica Daley (she, her): whereas the larger birds have smaller fluctuations in the foref forces. So basically by having a vertically bouncy gait.
+
+
+394
+01:02:03.290 --> 01:02:15.670
+Monica Daley (she, her): The vertical fluctuations are higher, but the fore aft fluctuations are reduced, and that reduces the mechanical work and the potential for muscle work demand during the stance phase.
+
+
+395
+01:02:16.176 --> 01:02:26.600
+Monica Daley (she, her): But then the question is like, how do they? How does this happen at a mechanistic level? We don't have the measurements from this sort of analysis, right? We'd have to get into.
+
+
+396
+01:02:27.187 --> 01:02:36.650
+Monica Daley (she, her): You know, more detailed measures at the level of the, you know, muscle and the tendon and things like that. Does that kind of get at your question that you were thinking about.
+
+
+397
+01:02:37.380 --> 01:02:58.700
+Jill McNitt-Gray: Yeah, I keep thinking about the lake, how it's being regulated, and where, right? Especially when we think about context of in humans, we would say, ankle, knee, and hip, right? So you can get the same support moment, but do it different ways, and we see it very much regulated, especially in athletes of different sports, because different strategies
+
+
+398
+01:02:58.791 --> 01:03:11.840
+Jill McNitt-Gray: provide different advantages. You know these kinds of things. So so while there's a center of mass displacement, where is that coming from? And especially if we're trying to get to muscle level modeling. I think about that right.
+
+
+399
+01:03:12.011 --> 01:03:12.331
+Monica Daley (she, her): Yeah.
+
+
+400
+01:03:12.331 --> 01:03:24.950
+Jill McNitt-Gray: The other part of it, as you said, you know, like we did the vector. Overlays with the person running, and the ostrich is the demand imposed by the reaction force relative to the segment angles will also change that
+
+
+401
+01:03:25.061 --> 01:03:48.670
+Jill McNitt-Gray: the magnitude of the net joint moments, for example. So and then we have other things like where you may have a very big moment, but very little change in angle. So we see this a lot in the leg stiffening where you have a huge moment at the knee, but no change in the angle. So there's not going to be a net joint moment work that shows up. So those are the kinds of things like I wonder about.
+
+
+402
+01:03:48.671 --> 01:04:10.411
+Jill McNitt-Gray: And then, especially when you're pushing limits right where you're trying to go, get those faster speeds. What can you change? What does the time constraints allow you to? And because we deal with athletes? If you know what those limits are, you then know where to train them to see if you can overcome those constraints. So that's where I was going with the question.
+
+
+403
+01:04:10.980 --> 01:04:16.751
+Jill McNitt-Gray: I know it gets into a level of complexity. But really, looking at that leg trunk, action is also an issue
+
+
+404
+01:04:16.811 --> 01:04:33.121
+Jill McNitt-Gray: where many skilled movements don't just have the trunk upwards. They have a trunk leg action. So the center of mass gets the trajectory you want. But it's a combination of a leg trunk angle that allows it. So that's where I was going with the questions.
+
+
+405
+01:04:33.121 --> 01:04:35.491
+Monica Daley (she, her): Yeah, I think one thing so kind of like
+
+
+406
+01:04:35.671 --> 01:04:41.391
+Monica Daley (she, her): to zoom out here and think about one of the goals of Mc is to think about how we integrate understanding across.
+
+
+407
+01:04:41.601 --> 01:04:41.981
+Jill McNitt-Gray: Right.
+
+
+408
+01:04:41.981 --> 01:05:11.771
+Monica Daley (she, her): Scales, structural scales. And you know, my analysis and talk today is really the whole body dynamics, and it doesn't get at the mechanisms. But it is really interesting to think about this spring-loaded, inverted pendulum model is really what we call a dynamic template model. It's very simple approximation of the gate dynamics. But it's useful for telling us what are the Peak force demands and what is the timing of the force demand
+
+
+409
+01:05:12.361 --> 01:05:21.201
+Monica Daley (she, her): for a particular gate? And then we could think about then how we integrate from that template model down to the more mechanistic scales
+
+
+410
+01:05:21.351 --> 01:05:26.062
+Monica Daley (she, her): where we think, okay, if somebody has different
+
+
+411
+01:05:26.891 --> 01:05:42.891
+Monica Daley (she, her): hip strength or triceps serrace strength, you know, ankle strength. How does that influence our ability to exert forces in specific directions? And how might that constrain the gait choices available to them. Right? And so I think
+
+
+412
+01:05:43.161 --> 01:05:43.741
+Monica Daley (she, her): you.
+
+
+413
+01:05:43.741 --> 01:05:44.071
+Jill McNitt-Gray: Yeah.
+
+
+414
+01:05:44.071 --> 01:05:53.550
+Monica Daley (she, her): Possible to map between these 2 scales. But then, how you do that will depend on your question. I see that there's some questions in the chat that I didn't.
+
+
+415
+01:05:54.111 --> 01:05:55.640
+Monica Daley (she, her): I want to get to those 2. So.
+
+
+416
+01:05:55.641 --> 01:05:56.281
+Caitlin Bemis: Okay.
+
+
+417
+01:05:56.521 --> 01:05:58.861
+Monica Daley (she, her): Yeah. Oh, sorry you can go, for
+
+
+418
+01:05:59.201 --> 01:06:00.810
+Monica Daley (she, her): you were going to say something, Katie.
+
+
+419
+01:06:01.562 --> 01:06:09.191
+Caitlin Bemis: Yeah, it's I mean, it kind of is slightly related to Jordan's question, but slightly different. So this is all assuming like geometrical
+
+
+420
+01:06:09.521 --> 01:06:32.830
+Caitlin Bemis: similarity while scaling right? So we assume that as leg length increases, body mass is going to increase. But are there any instances where leg length increases because that would change some of our dimensionless quantities right when body mass doesn't increase, because you're showing body, mass, and leg length as being kind of not one to one. But you know what I'm saying as they increase.
+
+
+421
+01:06:32.831 --> 01:06:35.221
+Monica Daley (she, her): Well, the interesting thing is that in
+
+
+422
+01:06:35.571 --> 01:06:52.721
+Monica Daley (she, her): that when you look at food number, for example, right body mass cancels out in the relationship. And so gravity and leg length are the most important quantities there. And so yes, if you had an animal that increases its leg length
+
+
+423
+01:06:52.831 --> 01:07:10.520
+Monica Daley (she, her): relative to its size that you would want to measure the actual leg length right? And so then, people that's where analytical choices have to be made. So we compared in the review article like, Okay, what if you used a leg length that assumed isometric scaling?
+
+
+424
+01:07:11.051 --> 01:07:36.421
+Monica Daley (she, her): And how? What does that? How does that compare to? If you use. Hip, height, standing, hip, height. And how does that compare if you use the sum of the segment lengths, because that represents, like your maximum extension? So I think that the choice there depends on your question, because if you use standing hip height, that's a good approximation of like
+
+
+425
+01:07:36.791 --> 01:07:40.591
+Monica Daley (she, her): the resting length of this animal's leg, right.
+
+
+426
+01:07:41.081 --> 01:07:43.111
+Monica Daley (she, her): And so it's effective leg.
+
+
+427
+01:07:43.311 --> 01:07:47.130
+Monica Daley (she, her): But if you were analyzing something like jumping
+
+
+428
+01:07:47.371 --> 01:07:56.990
+Monica Daley (she, her): where the maximum extension of the leg is important, yeah, relevant leg length. Quantity is probably going to be the sum of the segment lengths instead.
+
+
+429
+01:07:57.331 --> 01:08:06.851
+Monica Daley (she, her): And so I've just, you know, you know, we're just scratching the surface here, because when you're doing this kind of analysis, you really do need to think about
+
+
+430
+01:08:07.221 --> 01:08:09.470
+Monica Daley (she, her): what are the physics of this task.
+
+
+431
+01:08:09.801 --> 01:08:35.900
+Monica Daley (she, her): and how can I come up with the right set of characteristic quantities that relate correctly to the physics of this task. Right? And so it is different for walking versus jumping, for example, right? You would want to measure different. And there's a related question in here from Hannah you mentioned normalizing for size. Does this include other anatomical features, such as feet.
+
+
+432
+01:08:36.291 --> 01:08:39.431
+Monica Daley (she, her): Do you include the foot in the leg length? Right?
+
+
+433
+01:08:39.781 --> 01:08:48.911
+Monica Daley (she, her): And the answer to that question probably depends on the task right, or depends on the posture that animal uses. So
+
+
+434
+01:08:49.471 --> 01:08:51.971
+Monica Daley (she, her): you know, for planted grade animals.
+
+
+435
+01:08:52.801 --> 01:09:02.301
+Monica Daley (she, her): you might argue in walking humans with their foot fully in contact with the ground. Then the leg length that they're using is basically like the hip to the
+
+
+436
+01:09:02.581 --> 01:09:12.881
+Monica Daley (she, her): ankle. But if you suddenly walk on your toes, you've got to include the amount, the part of your leg that your foot that now forms part of your leg right?
+
+
+437
+01:09:13.811 --> 01:09:19.280
+Monica Daley (she, her): And so some people have done things like, if you're characterizing running.
+
+
+438
+01:09:19.441 --> 01:09:33.310
+Monica Daley (she, her): for example, there's variation in human posture. Some people are like heel strike runners, and some people are forefoot runners. And so what they've done in that case is, they basically measure the hip, the leg length of the runner
+
+
+439
+01:09:33.461 --> 01:09:47.311
+Monica Daley (she, her): at the point where they contact the ground. They actually measure it physically, based on their posture in running rather than their standing hip, like hip height. Right? Because that, then, is more functionally relevant to the running task.
+
+
+440
+01:09:49.121 --> 01:09:54.870
+Monica Daley (she, her): But interesting question is like variation in feet, and how that contributes to gait because
+
+
+441
+01:09:56.621 --> 01:10:01.441
+Monica Daley (she, her): but it can't be captured by a simple mass spring model, because that model doesn't have a foot at all.
+
+
+442
+01:10:04.641 --> 01:10:09.420
+Monica Daley (she, her): Okay, there's question from Jordan or Hannah. Do you want to chime in.
+
+
+443
+01:10:09.421 --> 01:10:22.914
+Hannah (She/Her): Yeah, sorry. I was just gonna say, you know, I don't know anything about really looking at the photo while you're talking, and they look like, you know, they're really built to run
+
+
+444
+01:10:23.731 --> 01:10:24.141
+Monica Daley (she, her): After.
+
+
+445
+01:10:24.141 --> 01:10:27.040
+Hannah (She/Her): They don't really. I mean, they have a heel, but
+
+
+446
+01:10:27.241 --> 01:10:50.370
+Hannah (She/Her): it's very. It's a high arch. So they're built. Their foot is built for speed. And they have this huge toe. And then, humans, the big toe is our our aid for balance, and it's our aid for propulsion. So when you look at that. I wasn't, you know, surprised to see that overall. They're they're faster and they have longer strides.
+
+
+447
+01:10:50.970 --> 01:10:59.970
+Hannah (She/Her): It's you know. They're they're just built for that. So I was just curious. You know, I was just at the beach, and you know, you see, the seagulls, they're they're flat foot.
+
+
+448
+01:11:00.111 --> 01:11:03.921
+Hannah (She/Her): but it's just completely different environment. So I was just curious.
+
+
+449
+01:11:04.071 --> 01:11:09.180
+Monica Daley (she, her): I think that's like foot function is a really important question. Junior is my
+
+
+450
+01:11:09.291 --> 01:11:37.721
+Monica Daley (she, her): 1st year. Phd. Student is his whole. Thesis is going to be focused on foot function. So I'm excited about that. And I also want to. Just yeah, add to that that like, there's some really interesting differences in humans versus ostriches that you can think about so. And when you and using the dimensionless dimensional analysis to put things in dimensionless quantities, actually helps with that analysis, because once you do that, you can see that humans have a much wider
+
+
+451
+01:11:38.161 --> 01:11:41.231
+Monica Daley (she, her): speed range for walking compared to ostriches.
+
+
+452
+01:11:42.028 --> 01:11:53.800
+Monica Daley (she, her): And part of the reason for that is because we have this plantigrade foot that allows us to roll the center of pressure forward during stance and basically cheat our leg length when we're walking. So.
+
+
+453
+01:11:53.801 --> 01:11:54.211
+Hannah (She/Her): I mean.
+
+
+454
+01:11:54.211 --> 01:12:01.590
+Monica Daley (she, her): Increase the maximum speed. We can walk before that critical food number limit kind of becomes a problem.
+
+
+455
+01:12:01.961 --> 01:12:09.081
+Monica Daley (she, her): whereas birds when they're walking, they're not making. They're they're not really designed for walking.
+
+
+456
+01:12:09.301 --> 01:12:30.780
+Monica Daley (she, her): They have a very narrow preferred speed range for walking, and they transition to running at a relatively lower speed compared to humans. And that's interesting because they really do seem like they're more built and specialized specifically for running rather than walking. As compared to humans, we seem to be striking some compromises to be able to do both economically.
+
+
+457
+01:12:31.161 --> 01:12:42.981
+Hannah (She/Her): Right. I have another quick question, and I don't want to take too too much time. But you know, how would you suggest to scale for somebody with abnormal anatomy.
+
+
+458
+01:12:43.611 --> 01:12:45.800
+Monica Daley (she, her): Hmm. Can you give an example?
+
+
+459
+01:12:46.131 --> 01:12:53.530
+Hannah (She/Her): But so I study movement in para athletes. And so one body
+
+
+460
+01:12:53.641 --> 01:12:55.910
+Hannah (She/Her): typically doesn't look like the next.
+
+
+461
+01:12:56.061 --> 01:13:01.531
+Hannah (She/Her): So if I wanted to use this scaling model. How do I start to apply this.
+
+
+462
+01:13:02.181 --> 01:13:12.271
+Monica Daley (she, her): I think you would want to think about what's the effective length of the leg in the in the like particular activity in question.
+
+
+463
+01:13:12.381 --> 01:13:26.520
+Monica Daley (she, her): And so if you were talking about walking or running, that's usually the distance between the center of mass and the center of pressure, where the foot or the equivalent of the foot is applying force to the ground.
+
+
+464
+01:13:28.371 --> 01:13:36.320
+Monica Daley (she, her): And so you would basically want to measure that distance as the effective leg length. Whatever the anatomy looks like in between.
+
+
+465
+01:13:38.641 --> 01:13:41.810
+Monica Daley (she, her): Do you agree with that, Jill? You probably have an opinion on this.
+
+
+466
+01:13:42.081 --> 01:13:50.731
+Jill McNitt-Gray: Yeah. And I, I think this is the key piece, right? Is really thinking about in the activity. Right? So what are they taking advantage of you're getting an idea of.
+
+
+467
+01:13:50.921 --> 01:14:10.065
+Jill McNitt-Gray: But you know, because with para athletes it's always what they do have right. And what also gets interesting is the control issues as well. Right in terms of there may be built in stiffness regulators that become an asset that may not, that could be leveraged for the depending on what the sport is right. So
+
+
+468
+01:14:10.601 --> 01:14:31.861
+Jill McNitt-Gray: look, I think the advice to look in the context of the task is really good advice, and begin there and then then figure out what attributes and characteristics might be advantageous for the physics of the task. So I really agree with what Monica laid out there which is really nicely done. So I would start there and give a framework, and then go from there, because I think that grounds the question.
+
+
+469
+01:14:32.471 --> 01:14:33.081
+Hannah (She/Her): Yeah.
+
+
+470
+01:14:33.701 --> 01:14:43.001
+Monica Daley (she, her): So we we 1st have to identify from, like the most simple high level physics of the task that we can come up with and then identify what are the
+
+
+471
+01:14:43.131 --> 01:14:50.700
+Monica Daley (she, her): characteristic quantities that relate to achieving that task? And then we can think about how that applies to any specific anatomy. Right.
+
+
+472
+01:14:51.831 --> 01:15:08.531
+Jill McNitt-Gray: I would also think, especially in the context of the foot is, there's going to be mechanical objectives of what you want horizontally and vertically. But you also need to think about. You may not want angular momentum generation. So angular impulse. Generation is maybe a negative rather than a positive.
+
+
+473
+01:15:08.531 --> 01:15:25.091
+Jill McNitt-Gray: and the ability to have the force move along the foot is actually a huge multiplier for angular impulse. Generation. So be aware of. There may be things you want, and there may be things you don't want, and they all have to be satisfied, and usually a relatively short ground contact.
+
+
+474
+01:15:25.641 --> 01:15:26.281
+Monica Daley (she, her): Yeah.
+
+
+475
+01:15:26.541 --> 01:15:35.501
+Monica Daley (she, her): grab another couple of good questions. So in the chat. So Jordan asked about long necks in birds, and how that might
+
+
+476
+01:15:36.151 --> 01:15:43.570
+Monica Daley (she, her): compare across species. If you I did. I haven't measured the necks
+
+
+477
+01:15:43.881 --> 01:15:57.741
+Monica Daley (she, her): to say for sure, but you know one of the things is like with the small birds, the quail. They're very floofy borbs, you know. They look round, but that's all feathers. And underneath they actually have very long, slender necks.
+
+
+478
+01:15:57.841 --> 01:16:03.260
+Monica Daley (she, her): It's just that you can't tell as easily as you can with an ostrich that has more of a
+
+
+479
+01:16:03.391 --> 01:16:12.761
+Monica Daley (she, her): you know, less floofy neck situation. But all birds do use like they're they're
+
+
+480
+01:16:13.781 --> 01:16:26.541
+Monica Daley (she, her): stabilizing their gaze. And so their neck and proprioception in the neck, combined with vestibular, input. Is being used to control their gaze which moves relatively separately from the body. And so
+
+
+481
+01:16:27.181 --> 01:16:28.511
+Monica Daley (she, her): that's like a
+
+
+482
+01:16:28.651 --> 01:16:40.551
+Monica Daley (she, her): gets into whole level of complexity that you'd need a fancier model to be able to address, because we're not really like thinking about the independent control of gays versus body dynamics. But it's pretty.
+
+
+483
+01:16:41.021 --> 01:16:52.181
+Monica Daley (she, her): One side note is that birds, unlike all other vertebrates have a balance sensor in their lumbar spinal cord
+
+
+484
+01:16:52.821 --> 01:16:54.890
+Monica Daley (she, her): that allows them to sense
+
+
+485
+01:16:55.561 --> 01:17:03.261
+Monica Daley (she, her): and balance, have balanced sense of the body independent of the head and neck, and one potential
+
+
+486
+01:17:03.591 --> 01:17:08.711
+Monica Daley (she, her): function of that is enabling independent control of gaze, stabilization and body dynamics.
+
+
+487
+01:17:09.651 --> 01:17:11.541
+Monica Daley (she, her): How that emerged.
+
+
+488
+01:17:11.741 --> 01:17:17.931
+Monica Daley (she, her): and at what point in the evolutionary history of birds is kind of a mystery that I don't know the answer to. But
+
+
+489
+01:17:19.191 --> 01:17:24.771
+Monica Daley (she, her): and then there's a question. Will range of motion affect leg length specifically in runners.
+
+
+490
+01:17:25.211 --> 01:17:28.201
+Monica Daley (she, her): And how would we consider limited range of motion?
+
+
+491
+01:17:29.201 --> 01:17:31.710
+Monica Daley (she, her): That's a good question. I think.
+
+
+492
+01:17:32.031 --> 01:17:33.191
+Monica Daley (she, her): Leg length
+
+
+493
+01:17:33.781 --> 01:17:52.460
+Monica Daley (she, her): is emerges from sort of like, how far can the body, the inverted pendulum motion of the body? What's the angular range it can achieve during that stance phase. And for humans specifically running that's going to depend on hip range of motion.
+
+
+494
+01:17:52.641 --> 01:18:01.581
+Monica Daley (she, her): but also possibly ankle range of motion as well, or it depends on whether they're doing forefoot, striking or heel striking. I don't know, Jill, do you have a thought about that?
+
+
+495
+01:18:02.721 --> 01:18:10.531
+Jill McNitt-Gray: Yeah. And I also. One thing popped in my mind, too, is what the objective of the task is, because, again, a lot of the things
+
+
+496
+01:18:10.701 --> 01:18:19.421
+Jill McNitt-Gray: experimentally or steady state. And one of the things we're trying to explore is unsteady state. So things like an acceleration. You may actually
+
+
+497
+01:18:19.551 --> 01:18:30.421
+Jill McNitt-Gray: purposely put the foot further behind than you might normally swing to. So you can accelerate quickly because you're in a better position to accelerate in the direction you want to go. So this is getting to the
+
+
+498
+01:18:30.791 --> 01:18:44.501
+Jill McNitt-Gray: the Force direction being linked to the task. So again, I think it, it serves you well to say, what are you trying to do? How are you going to take what you have to accomplish it? And then thinking it whole body and then limb
+
+
+499
+01:18:44.711 --> 01:18:50.599
+Jill McNitt-Gray: level? So it. I hate to say it depends, but it depends right.
+
+
+500
+01:18:50.991 --> 01:18:54.956
+Monica Daley (she, her): We might, you know, it might be interesting to. For example, you could
+
+
+501
+01:18:56.011 --> 01:19:07.960
+Monica Daley (she, her): look at if you were to look at like specialized sprinters versus Marathon runners. Do you have predictions about how their range of motion would differ at joints, at specific joints?
+
+
+502
+01:19:09.521 --> 01:19:36.661
+Jill McNitt-Gray: Yeah, because sometimes, again, it depends right? Like, so so I worked with horizontal jumpers are coming in at 10 meters per second. They basically plant a leg. They can't yield too much, but sometimes they're taking away range of motion because they can't control the range of motion when they're experiencing 10 times body weight on one leg. So if you get into high, level sprinters they don't land on their toes. They're trained to override landing on their toes and landing more flat foot.
+
+
+503
+01:19:36.971 --> 01:19:49.351
+Jill McNitt-Gray: partly because they can't control. I would hypothesize. They can't control the moment being applied to the ankle. So you're taking that away because of the way you're interacting with the ground. I mean, if you look at
+
+
+504
+01:19:49.351 --> 01:20:14.321
+Jill McNitt-Gray: how to train a sprinter, they're actually taking away some of that range that might be available because it can't be controlled. So the context is huge. Here. It's like you have to do the task and you have to control it. The magnitude of loads that you have to deal with, with, whatever the interaction is. And this might be very different if you're like on a springboard like in diving. You have to apply the load for a long period of time to ride
+
+
+505
+01:20:14.321 --> 01:20:26.620
+Jill McNitt-Gray: board versus something. If you're doing sprinting where the ground context is shorter and shorter the faster you run. So this is where the time dependency also makes a big difference in terms of how that interaction
+
+
+506
+01:20:27.101 --> 01:20:36.331
+Jill McNitt-Gray: is achieved. So orientation of segments relative to the reaction force is A is a big issue, and if you can't control it, usually you avoid it.
+
+
+507
+01:20:38.721 --> 01:20:42.410
+Kiisa Carla Nishikawa: It seems like there might be some really interesting
+
+
+508
+01:20:42.631 --> 01:20:51.400
+Kiisa Carla Nishikawa: relationships between like sprinting and Marathon to what you were talking about in the birds earlier, too, Monica. So
+
+
+509
+01:20:51.701 --> 01:21:08.441
+Kiisa Carla Nishikawa: you know the analysis that I've read it, which is purely in the popular literature of sprinting, is that the winner takes the fewest steps. That means that they have the longest stride length, and so they have a much bigger range of motion at the hip, and it seems like
+
+
+510
+01:21:09.262 --> 01:21:18.881
+Kiisa Carla Nishikawa: you know. It seems like there's some similarities to the posture and leg length things that you were talking about with the ostriches versus the smaller birds, as well.
+
+
+511
+01:21:18.881 --> 01:21:19.531
+Monica Daley (she, her): Yeah.
+
+
+512
+01:21:20.091 --> 01:21:20.841
+Monica Daley (she, her): But
+
+
+513
+01:21:21.011 --> 01:21:32.521
+Monica Daley (she, her): Savannah's asked a question. That kind of relates to this thinking about gait and trade-offs, between stride, length and stride frequency. Right? If you want to maximize, stride length.
+
+
+514
+01:21:32.681 --> 01:21:44.671
+Monica Daley (she, her): if you you consider the forces required that does require very large foraft forces. And so this is one this can lead to potentially like
+
+
+515
+01:21:45.431 --> 01:21:56.150
+Monica Daley (she, her): overuse injuries and things like that, too, because one thing that for people who are prone to like shin splints
+
+
+516
+01:21:56.361 --> 01:22:13.861
+Monica Daley (she, her): often one of the things that the coaches try to tell them to do is increase their cadence. So they're effectively decreasing their stride length and trading off with stride frequency, so that basic so that they're not exerting such large fore aft forces when they're with every stride and
+
+
+517
+01:22:14.645 --> 01:22:18.690
+Monica Daley (she, her): just simply like training people to
+
+
+518
+01:22:19.297 --> 01:22:35.400
+Monica Daley (she, her): run at a like 10% faster. Cadence can sometimes be enough to help limit the recurrence of the of those injuries. So but that's with people who are prone to injury. I don't know how that like, you know. I imagine that
+
+
+519
+01:22:37.901 --> 01:22:41.251
+Monica Daley (she, her): there's different trade-offs depending on just like
+
+
+520
+01:22:41.931 --> 01:22:47.301
+Monica Daley (she, her): other factors, like your relative segment lengths and your proportions, and
+
+
+521
+01:22:47.461 --> 01:23:00.210
+Monica Daley (she, her): those sorts of things like, if you're a person who naturally has very large hip muscles and a lightweight, distal limb, you're going to probably be one of those people who can naturally do faster cycle times right?
+
+
+522
+01:23:01.131 --> 01:23:07.821
+Monica Daley (she, her): And so there's probably trade-offs in how individuals trade off between stride, length and stride frequency based on their own anatomy, too. Right?
+
+
+523
+01:23:08.601 --> 01:23:14.900
+Monica Daley (she, her): That then, probably influences what specific events that they're they're best at.
+
+
+524
+01:23:15.061 --> 01:23:19.531
+Jill McNitt-Gray: I think one of the things to think about, too, is you think about how we measure
+
+
+525
+01:23:20.113 --> 01:23:44.381
+Jill McNitt-Gray: legs right? It's like toe to toe distance right? How do you get that? Well, remember, there's center mass flight here. Right? So with more vertical velocity, you will travel further before you land. So part of it's the impulse, generation and time in the air. And then the other part about looking at the quality of the leg interaction with the ground is, have you configured
+
+
+526
+01:23:44.391 --> 01:24:09.541
+Jill McNitt-Gray: the segments like split shank, thigh, and trunk, such that when that force comes back at you you can generate the set of moments you need to control that interaction. So if you start quote over striding, I would argue that you're really, you may be significantly changing the moments that are required to control that leg when you do the higher frequency. It may also be you're putting your legs in a configuration. You could better control the leg. So I don't think
+
+
+527
+01:24:09.691 --> 01:24:18.290
+Jill McNitt-Gray: sometimes the stride right stride length. Literature doesn't get to the joint kinetics, and I think that's an area where we could probably fill in some gaps.
+
+
+528
+01:24:19.031 --> 01:24:30.651
+Monica Daley (she, her): Oh, interesting. That's an interesting thought. Okay, I think it's time to sign off. So just before everybody goes, I want to show people the surveys to give feedback. So I'm going to just quickly share my screen. One more time.
+
+
+529
+01:24:31.997 --> 01:24:43.650
+Monica Daley (she, her): For trainees. If you didn't sign in at the start, please go ahead and sign in now and for everybody else. We'd appreciate your feedback so you can use the QR code to provide feedback on the workshop.
+
+
+530
+01:24:43.981 --> 01:24:56.720
+Jill McNitt-Gray: And as an advertisement for next week. This is, you know. Bring your sneakers. This is going to be a workshop by where you're going to explore movement. And we're going to actually leverage a lot of what Monica talked about today to really consider
+
+
+531
+01:24:56.811 --> 01:25:20.921
+Jill McNitt-Gray: the mechanical objectives of different kinds of hopping tasks and what you can learn from them, and what you'd like to learn about your participants. So we'll be trying some things out in small groups. Victoria is going to help us with breakout groups, and so we'll be applying a lot of what Monica set us up very nicely for today and really exploring. What? Why are we looking at the movements we are looking at? So think about that for the next week, and we'll see what we can come up with as a group
+
+
+532
+01:25:22.101 --> 01:25:24.078
+Jill McNitt-Gray: cool. I'm looking forward to it. Jill.
+
+
+533
+01:25:24.361 --> 01:25:24.931
+Jill McNitt-Gray: Okay.
+
+
+534
+01:25:26.961 --> 01:25:27.951
+Monica Daley (she, her): All right.
+
+
+535
+01:25:28.191 --> 01:25:29.571
+Monica Daley (she, her): Well, thanks, everybody.
+
+
+536
+01:25:30.011 --> 01:25:31.391
+Monica Daley (she, her): See you again next week.
+
+
+537
+01:25:32.521 --> 01:25:34.660
+Jill McNitt-Gray: Bye, bye, thanks, Monica.
+
+
